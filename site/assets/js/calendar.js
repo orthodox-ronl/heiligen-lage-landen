@@ -2560,7 +2560,6 @@
         if (!key || !/^\d{2}$/.test(key)) return;
         if (key === activeMonth) return;
         activeMonth = key;
-        updateSynaxarionMonthLabel();
         renderSynaxarionMonthStepsOnly();
       },
       {
