@@ -8,9 +8,16 @@ Dit zijn **contracten**, geen how-to’s. Een contract zegt wat er op een
 paginasoort in elk blok wel en niet hoort. Hoe u YAML of code wijzigt,
 staat onder [Voor beheerders]({{% ref "/beheer" %}}) bij de how-to’s.
 
-Kop, hoofdnavigatie en footer zijn sitebreed. De contracten hieronder
-gaan over het middenstuk van elke soort. Deze pagina’s staan **niet** in
-de hoofdnavigatie; de ingang is de footer → Voor beheerders.
+Kop, hoofdnavigatie en footer zijn sitebreed. De sitenavbar blijft op
+**alle** pagina’s zichtbaar tijdens scrollen. Pagina-afhankelijke
+headerregels (titel, filters, kolomkoppen) blijven eveneens sticky;
+wat erin staat staat in het contract van die paginasoort. Keuzes en
+selecties horen in die header; bij meer dan een paar opties komt er
+een knop **Weergave** met uitklapformulier.
+
+De contracten hieronder gaan over het middenstuk van elke soort. Deze
+pagina’s staan **niet** in de hoofdnavigatie; de ingang is de footer →
+Voor beheerders.
 
 **Contract, geen echte inhoud** staat bovenaan elk skelet. Een open
 keuze (als die er is) staat als **Open besluit**: tot die keuze geen

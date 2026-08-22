@@ -2,10 +2,12 @@
 <section class="section-list" data-heiligen-index>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <p class="filter-bar">
-    <label class="search-label" for="heiligen-zoek">Zoeken (naam of plaats)</label>
-    <input type="search" id="heiligen-zoek" class="search-input" placeholder="bijv. Utrecht, Vlaanderen, Goedele…" autocomplete="off">
-  </p>
+  <div class="heiligen-sticky-head">
+    <p class="filter-bar">
+      <label class="search-label" for="heiligen-zoek">Zoeken (naam of plaats)</label>
+      <input type="search" id="heiligen-zoek" class="search-input" placeholder="bijv. Utrecht, Vlaanderen, Goedele…" autocomplete="off">
+    </p>
+  </div>
   <div id="heiligen-kaart" class="heiligen-kaart" role="region" aria-label="Kaart van plaatsen"></div>
   <p class="hint" id="heiligen-zoek-leeg" hidden>Geen heilige met die naam of plaats in dit overzicht.</p>
   <ul class="entry-list" data-heiligen-lijst>

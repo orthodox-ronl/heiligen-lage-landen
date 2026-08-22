@@ -1815,6 +1815,7 @@
     const scroll = !opts || opts.scroll !== false;
     const updateUrl = !opts || opts.updateUrl !== false;
     const behavior = (opts && opts.behavior) || "auto";
+    const preferToday = Boolean(opts && opts.preferToday);
     viewYear = clampYear(year);
     roosterMonth = String(monthNum).padStart(2, "0");
     try {
@@ -1828,18 +1829,44 @@
       window.history.replaceState({}, "", url);
     }
     if (scroll) {
-      const key = roosterMonthKey(viewYear, parseInt(roosterMonth, 10));
-      const el = document.querySelector(
-        `#rooster-tables [data-month-key="${key}"]`
-      );
+      let el = null;
+      if (preferToday) {
+        const now = new Date();
+        if (
+          viewYear === now.getFullYear() &&
+          parseInt(roosterMonth, 10) === now.getMonth() + 1
+        ) {
+          el = document.querySelector(
+            `#rooster-tables .rooster-row.is-today`
+          );
+        }
+      }
+      if (!el) {
+        const key = roosterMonthKey(viewYear, parseInt(roosterMonth, 10));
+        el = document.querySelector(
+          `#rooster-tables [data-month-key="${key}"]`
+        );
+      }
       if (el) {
         roosterSyncingFromScroll = true;
-        el.scrollIntoView({ block: "start", behavior: behavior });
+        el.scrollIntoView({
+          block: preferToday ? "center" : "start",
+          behavior: behavior,
+        });
         window.setTimeout(() => {
           roosterSyncingFromScroll = false;
         }, behavior === "smooth" ? 600 : 50);
       }
     }
+  }
+
+  function listMonthBreakHtml(labelText, monthKey) {
+    return (
+      `<div class="list-month-break" role="separator" ` +
+      `aria-label="${escapeHtml(labelText)}" data-month-key="${monthKey}">` +
+      `<span class="list-month-break-label">${escapeHtml(labelText)}</span>` +
+      `</div>`
+    );
   }
 
   function wireRoosterScrollSync() {
@@ -1876,8 +1903,8 @@
       },
       {
         root: null,
-        rootMargin: "-20% 0px -70% 0px",
-        threshold: 0,
+        rootMargin: "-15% 0px -75% 0px",
+        threshold: [0, 0.01, 0.1],
       }
     );
     rows.forEach((row) => roosterScrollObserver.observe(row));
@@ -1935,15 +1962,14 @@
     let html = "";
     let rows = 0;
     let prevKey = "";
+    const civilToday = civilTodayMmdd();
+    const nowYear = new Date().getFullYear();
     for (let year = yearBounds.min; year <= yearBounds.max; year++) {
       for (let month = 1; month <= 12; month++) {
         const daysInMonth = new Date(year, month, 0).getDate();
         const monthKey = roosterMonthKey(year, month);
         if (prevKey) {
-          html +=
-            `<div class="rooster-month-break" role="separator" ` +
-            `aria-label="Maandovergang ${MONTHS[month]} ${year}" ` +
-            `data-month-key="${monthKey}"></div>`;
+          html += listMonthBreakHtml(`${MONTHS[month]} ${year}`, monthKey);
         }
         prevKey = monthKey;
         for (let day = 1; day <= daysInMonth; day++) {
@@ -1972,11 +1998,18 @@
             apostel = apostel || "—";
             evangelie = evangelie || "—";
           }
+          const isToday = year === nowYear && civilMmdd === civilToday;
           html +=
-            `<div class="rooster-row" role="row" data-month-key="${monthKey}" ` +
-            `data-year="${year}" data-month="${String(month).padStart(2, "0")}">` +
+            `<div class="rooster-row${isToday ? " is-today" : ""}" role="row" ` +
+            `data-month-key="${monthKey}" data-year="${year}" ` +
+            `data-month="${String(month).padStart(2, "0")}" ` +
+            `data-mmdd="${civilMmdd}"` +
+            (isToday ? ` aria-current="date"` : "") +
+            `>` +
             `<div class="rooster-cell rooster-cell-dag" role="cell">` +
-            `<a href="${dagUrl}">${dayNumber(civilMmdd)}</a></div>` +
+            `<a href="${dagUrl}">${dayNumber(civilMmdd)}</a>` +
+            (isToday ? `<span class="date-list-today-mark"> vandaag</span>` : "") +
+            `</div>` +
             `<div class="rooster-cell" role="cell">${(lez && lez.daglabel) || ""}</div>` +
             `<div class="rooster-cell" role="cell">${apostel}</div>` +
             `<div class="rooster-cell" role="cell">${evangelie}</div>` +
@@ -1998,11 +2031,11 @@
           scroll: true,
           updateUrl: true,
           behavior: "auto",
+          preferToday: first,
         });
         window.setTimeout(() => {
           roosterSyncingFromScroll = false;
           wireRoosterScrollSync();
-          // Herbevestig label/knoppen na initiële scroll.
           renderRoosterToolbarOnly(style);
         }, first ? 120 : 80);
       });
@@ -2363,6 +2396,15 @@
     );
   }
 
+  function synaxarionTodayMmdd(style) {
+    const civil = civilTodayMmdd();
+    const year = new Date().getFullYear();
+    if (style === "juliaans") {
+      return mmddFromDate(civilToLiturgical(year, civil));
+    }
+    return civil;
+  }
+
   function synaxarionTableHtml(rows) {
     if (!rows.length) {
       return "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
@@ -2412,6 +2454,148 @@
       `<th scope="col">Soort</th>` +
       `</tr></thead><tbody>${body}</tbody></table>`
     );
+  }
+
+  function entryMmddForList(entry) {
+    if (entry && entry.feestdatum) return entry.feestdatum;
+    if (entry && entry.van) return entry.van;
+    const key = entryFixedSortKey(entry || {});
+    if (/^\d{2}-\d{2}/.test(key)) return key.slice(0, 5);
+    return "01-01";
+  }
+
+  function synaxarionEntryRowHtml(entry, mmdd, opts) {
+    const isToday = Boolean(opts && opts.isToday);
+    const thumb = entryThumbHtml(entry);
+    const href = assetUrl(String(entry.url || "").replace(/^\//, ""));
+    const dagHref = pageUrl("synaxarion/", { dag: mmdd });
+    const monthKey = (opts && opts.monthKey) || mmdd.slice(0, 2);
+    return (
+      `<div class="date-list-row${isToday ? " is-today" : ""}" role="row" ` +
+      `data-month-key="${monthKey}" data-mmdd="${mmdd}"` +
+      (isToday ? ` aria-current="date"` : "") +
+      `>` +
+      `<div class="date-list-dag" role="cell">` +
+      `<a href="${dagHref}">${dayNumber(mmdd)}</a>` +
+      (isToday ? `<span class="date-list-today-mark"> vandaag</span>` : "") +
+      `</div>` +
+      `<div class="date-list-naam" role="cell">${thumb}` +
+      `<a href="${href}">${escapeHtml(entry.naam)}</a></div>` +
+      `<div class="date-list-soort" role="cell">${escapeHtml(kindLabel(entry))}</div>` +
+      `</div>`
+    );
+  }
+
+  function synaxarionEmptyTodayRowHtml(mmdd) {
+    const dagHref = pageUrl("synaxarion/", { dag: mmdd });
+    const monthKey = mmdd.slice(0, 2);
+    return (
+      `<div class="date-list-row is-today" role="row" ` +
+      `data-month-key="${monthKey}" data-mmdd="${mmdd}" aria-current="date">` +
+      `<div class="date-list-dag" role="cell">` +
+      `<a href="${dagHref}">${dayNumber(mmdd)}</a>` +
+      `<span class="date-list-today-mark"> vandaag</span></div>` +
+      `<div class="date-list-naam" role="cell">` +
+      `<span class="muted">Geen vaste feestdag in deze selectie</span></div>` +
+      `<div class="date-list-soort" role="cell"></div>` +
+      `</div>`
+    );
+  }
+
+  let synaxarionScrollObserver = null;
+  let synaxarionDidInitialScroll = false;
+  let synaxarionSyncingFromScroll = false;
+
+  function updateSynaxarionMonthLabel() {
+    const el = document.getElementById("synaxarion-month-label");
+    if (!el) return;
+    const monthNum = parseInt(activeMonth, 10);
+    el.textContent = MONTHS[monthNum] || activeMonth;
+  }
+
+  function setSynaxarionMonth(monthNum, opts) {
+    const scroll = !opts || opts.scroll !== false;
+    const preferToday = Boolean(opts && opts.preferToday);
+    const behavior = (opts && opts.behavior) || "auto";
+    activeMonth = String(monthNum).padStart(2, "0");
+    updateSynaxarionMonthLabel();
+    if (!scroll) return;
+    let el = null;
+    if (preferToday) {
+      el = document.querySelector("#synaxarion-list .date-list-row.is-today");
+    }
+    if (!el) {
+      el = document.querySelector(
+        `#synaxarion-list [data-month-key="${activeMonth}"]`
+      );
+    }
+    if (!el) return;
+    synaxarionSyncingFromScroll = true;
+    el.scrollIntoView({
+      block: preferToday ? "center" : "start",
+      behavior,
+    });
+    window.setTimeout(() => {
+      synaxarionSyncingFromScroll = false;
+    }, behavior === "smooth" ? 600 : 50);
+  }
+
+  function wireSynaxarionScrollSync() {
+    if (synaxarionScrollObserver) {
+      synaxarionScrollObserver.disconnect();
+      synaxarionScrollObserver = null;
+    }
+    const root = document.getElementById("synaxarion-list");
+    if (!root || !("IntersectionObserver" in window)) return;
+    const rows = root.querySelectorAll(".date-list-row[data-month-key]");
+    if (!rows.length) return;
+    synaxarionScrollObserver = new IntersectionObserver(
+      (entries) => {
+        if (synaxarionSyncingFromScroll) return;
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (!visible.length) return;
+        const key = visible[0].target.getAttribute("data-month-key");
+        if (!key || !/^\d{2}$/.test(key)) return;
+        if (key === activeMonth) return;
+        activeMonth = key;
+        updateSynaxarionMonthLabel();
+        renderSynaxarionMonthStepsOnly();
+      },
+      {
+        root: null,
+        rootMargin: "-15% 0px -75% 0px",
+        threshold: [0, 0.01, 0.1],
+      }
+    );
+    rows.forEach((row) => synaxarionScrollObserver.observe(row));
+  }
+
+  function renderSynaxarionMonthStepsOnly() {
+    const steps = document.getElementById("synaxarion-month-steps");
+    if (!steps || steps.hidden) return;
+    const monthNum = parseInt(activeMonth, 10);
+    const atMin = monthNum <= 1;
+    const atMax = monthNum >= 12;
+    steps.innerHTML =
+      `<button type="button" class="title-step" data-syn-month-delta="-1" ` +
+      `aria-label="Vorige maand"${atMin ? " disabled" : ""}>‹</button>` +
+      `<span class="action-bar-label" id="synaxarion-month-label">` +
+      `${MONTHS[monthNum]}</span>` +
+      `<button type="button" class="title-step" data-syn-month-delta="1" ` +
+      `aria-label="Volgende maand"${atMax ? " disabled" : ""}>›</button>`;
+    steps.querySelectorAll("[data-syn-month-delta]").forEach((btn) => {
+      btn.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        if (btn.disabled) return;
+        const delta = Number(btn.dataset.synMonthDelta);
+        const next = monthNum + delta;
+        if (next < 1 || next > 12) return;
+        setSynaxarionMonth(next, { scroll: true, behavior: "smooth" });
+        renderSynaxarionMonthStepsOnly();
+      });
+    });
   }
 
   function synaxarionWeergaveSummary() {
@@ -2476,7 +2660,7 @@
           "(Geen feest/gedachtenis van een Heilige van de Lage Landen)"
         ) +
         "</p>";
-      } else {
+    } else {
       const whenHtml = escapeHtml(label(mmdd));
       list.innerHTML = synaxarionTableHtml(
         matched.map((entry) => ({ whenHtml, whenKey: mmdd, entry }))
@@ -2495,7 +2679,9 @@
     const list = document.getElementById("synaxarion-list");
     const hint = document.getElementById("synaxarion-hint");
     const letterNav = document.getElementById("letter-nav");
-    const monthNav = document.getElementById("month-nav");
+    const monthSteps = document.getElementById("synaxarion-month-steps");
+    const colHead = document.getElementById("synaxarion-col-head");
+    const styleSlot = document.getElementById("synaxarion-style-slot");
     if (!list) return;
     if (dayRoot) dayRoot.hidden = true;
     if (browse) browse.hidden = false;
@@ -2503,10 +2689,25 @@
     wireWeergavePanel("synaxarion");
     updateSynaxarionWeergaveSummary();
 
+    if (synaxarionScrollObserver) {
+      synaxarionScrollObserver.disconnect();
+      synaxarionScrollObserver = null;
+    }
+
+    const style = getStyle();
+    if (styleSlot) {
+      styleSlot.innerHTML = styleToggleHtml("Kalenderstijl Nieuw/Oud");
+      setStyle(style);
+      wireInfoTips(styleSlot);
+    }
+
     const shows = checkedShows("show");
     const filtered = filterEntries(entries, shows)
       .filter(isFixedCycleEntry)
       .filter((e) => matchesSearch(e, searchQuery));
+    const todayMmdd = synaxarionTodayMmdd(style);
+    const showContinuous =
+      browseMode === "maand" && !searchQuery;
 
     if (letterNav) {
       letterNav.hidden = browseMode !== "letter" || Boolean(searchQuery);
@@ -2523,28 +2724,11 @@
       });
     }
 
-    if (monthNav) {
-      monthNav.hidden = browseMode !== "maand" || Boolean(searchQuery);
-      monthNav.innerHTML = MONTHS.slice(1)
-        .map((name, i) => {
-          const mm = String(i + 1).padStart(2, "0");
-          const count = filtered.filter((e) => entryTouchesMonthFixed(e, mm))
-            .length;
-          const pressed = mm === activeMonth ? "true" : "false";
-          return `<button type="button" class="letter-btn" data-month="${mm}" aria-pressed="${pressed}" ${count ? "" : "disabled"}>${name.slice(0, 3)}</button>`;
-        })
-        .join("");
-      monthNav.querySelectorAll(".letter-btn").forEach((btn) => {
-        btn.onclick = () => {
-          activeMonth = btn.dataset.month;
-          renderSynaxarionBrowse(entries);
-        };
-      });
-      const pressed = monthNav.querySelector('[aria-pressed="true"]');
-      if (pressed && typeof pressed.scrollIntoView === "function") {
-        pressed.scrollIntoView({ inline: "center", block: "nearest" });
-      }
+    if (monthSteps) {
+      monthSteps.hidden = !showContinuous;
+      if (showContinuous) renderSynaxarionMonthStepsOnly();
     }
+    if (colHead) colHead.hidden = false;
 
     if (searchQuery) {
       const subset = filtered
@@ -2558,13 +2742,17 @@
         hint.hidden = false;
         hint.textContent = `Zoekresultaten: ${subset.length} item(s).`;
       }
-      list.innerHTML = synaxarionTableHtml(
-        subset.map((entry) => ({
-          whenHtml: escapeHtml(entryWhenLabel(entry)),
-          whenKey: entryFixedSortKey(entry) + "\0" + entryWhenLabel(entry),
-          entry,
-        }))
-      );
+      list.innerHTML = subset.length
+        ? subset
+            .map((entry) => {
+              const mmdd = entryMmddForList(entry);
+              return synaxarionEntryRowHtml(entry, mmdd, {
+                isToday: mmdd === todayMmdd,
+                monthKey: mmdd.slice(0, 2),
+              });
+            })
+            .join("")
+        : "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
       return;
     }
 
@@ -2580,37 +2768,88 @@
         hint.hidden = false;
         hint.textContent = `Letter ${activeLetter}: ${subset.length} item(s).`;
       }
-      list.innerHTML = synaxarionTableHtml(
-        subset.map((entry) => ({
-          whenHtml: escapeHtml(entryWhenLabel(entry)),
-          whenKey: entryFixedSortKey(entry) + "\0" + entryWhenLabel(entry),
-          entry,
-        }))
-      );
+      list.innerHTML = subset.length
+        ? subset
+            .map((entry) => {
+              const mmdd = entryMmddForList(entry);
+              return synaxarionEntryRowHtml(entry, mmdd, {
+                isToday: mmdd === todayMmdd,
+                monthKey: mmdd.slice(0, 2),
+              });
+            })
+            .join("")
+        : "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
       return;
     }
 
-    const daysInMonth = new Date(2024, parseInt(activeMonth, 10), 0).getDate();
-    const rows = [];
-    for (let day = 1; day <= daysInMonth; day++) {
-      const mmdd = activeMonth + "-" + String(day).padStart(2, "0");
-      const dayEntries = filtered
-        .filter((e) => fixedEntryOnMmdd(e, mmdd))
-        .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
-      if (!dayEntries.length) continue;
-      const whenHtml =
-        `<a href="${pageUrl("synaxarion/", { dag: mmdd })}">${label(mmdd)}</a>`;
-      dayEntries.forEach((entry) => {
-        rows.push({ whenHtml, whenKey: mmdd, entry });
-      });
-    }
     if (hint) {
       hint.textContent = "";
       hint.hidden = true;
     }
-    list.innerHTML = rows.length
-      ? synaxarionTableHtml(rows)
-      : "<p>Geen vaste dagen in deze maand.</p>";
+
+    let html = "";
+    let rowCount = 0;
+    let prevMonth = "";
+    let sawToday = false;
+    for (let month = 1; month <= 12; month++) {
+      const mm = String(month).padStart(2, "0");
+      const daysInMonth = new Date(2024, month, 0).getDate();
+      if (prevMonth) {
+        html += listMonthBreakHtml(MONTHS[month], mm);
+      }
+      prevMonth = mm;
+      for (let day = 1; day <= daysInMonth; day++) {
+        const mmdd = mm + "-" + String(day).padStart(2, "0");
+        const isToday = mmdd === todayMmdd;
+        const dayEntries = filtered
+          .filter((e) => fixedEntryOnMmdd(e, mmdd))
+          .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+        if (!dayEntries.length) {
+          if (isToday) {
+            html += synaxarionEmptyTodayRowHtml(mmdd);
+            sawToday = true;
+            rowCount += 1;
+          }
+          continue;
+        }
+        dayEntries.forEach((entry) => {
+          html += synaxarionEntryRowHtml(entry, mmdd, {
+            isToday,
+            monthKey: mm,
+          });
+          rowCount += 1;
+          if (isToday) sawToday = true;
+        });
+      }
+    }
+    if (!sawToday) {
+      // Vandaag buiten 1–12/29-feb: alsnog markeren.
+      html += synaxarionEmptyTodayRowHtml(todayMmdd);
+      rowCount += 1;
+    }
+    list.innerHTML =
+      rowCount > 0
+        ? html
+        : "<p>Geen vaste dagen in deze selectie.</p>";
+
+    if (rowCount > 0) {
+      const first = !synaxarionDidInitialScroll;
+      synaxarionDidInitialScroll = true;
+      synaxarionSyncingFromScroll = true;
+      requestAnimationFrame(() => {
+        const todayMonth = parseInt(todayMmdd.slice(0, 2), 10);
+        setSynaxarionMonth(first ? todayMonth : parseInt(activeMonth, 10), {
+          scroll: true,
+          preferToday: first,
+          behavior: "auto",
+        });
+        window.setTimeout(() => {
+          synaxarionSyncingFromScroll = false;
+          wireSynaxarionScrollSync();
+          renderSynaxarionMonthStepsOnly();
+        }, first ? 120 : 80);
+      });
+    }
   }
 
   function renderSynaxarion(entries) {
@@ -2631,6 +2870,7 @@
           document.querySelectorAll(".browse-mode .style-btn").forEach((b) => {
             b.setAttribute("aria-pressed", b === btn ? "true" : "false");
           });
+          updateSynaxarionWeergaveSummary();
           renderSynaxarionBrowse(entries);
         };
       });
@@ -2649,6 +2889,9 @@
         });
       }
     }
+    // Start bij de maand van vandaag (feestdatum-telling).
+    activeMonth = synaxarionTodayMmdd(getStyle()).slice(0, 2);
+    synaxarionDidInitialScroll = false;
     renderSynaxarion(entries);
   }
 
@@ -3065,15 +3308,30 @@
     refresh();
   });
 
+  function syncSiteHeaderOffset() {
+    const header = document.querySelector(".site-header");
+    if (!header) return;
+    const h = Math.ceil(header.getBoundingClientRect().height);
+    if (h > 0) {
+      document.documentElement.style.setProperty(
+        "--site-header-offset",
+        `${h}px`
+      );
+    }
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
+      syncSiteHeaderOffset();
       wireInfoTips(document);
       maybeShowSiteIntro();
       refresh();
     });
   } else {
+    syncSiteHeaderOffset();
     wireInfoTips(document);
     maybeShowSiteIntro();
     refresh();
   }
+  window.addEventListener("resize", syncSiteHeaderOffset);
 })();

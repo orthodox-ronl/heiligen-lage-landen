@@ -23,6 +23,7 @@ how-to YAML; een tweede beleidstekst naast de uitleg.
 **Wel:** zoeken op naam (inclusief alternatieve namen) of plaats.
 Label **Zoeken (naam of plaats)** in dezelfde lettergrootte als de
 lopende tekst, op dezelfde basislijn als de voorbeeldtekst in het veld.
+Het zoekveld staat in een sticky header onder de sitenavbar.
 
 **Niet:** filter op interne `selectie` of `bronlaag` voor bezoekers.
 

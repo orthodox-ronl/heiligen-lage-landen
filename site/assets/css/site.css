@@ -98,13 +98,23 @@ a:hover {
   margin-inline: auto;
 }
 
+:root {
+  --site-header-offset: 3.25rem;
+}
+
+@media (max-width: 719px) {
+  :root {
+    --site-header-offset: 5.25rem;
+  }
+}
+
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--header-bg);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 20;
 }
 
 .header-inner {
@@ -555,7 +565,8 @@ h2 {
   margin: 0 0 0.65rem;
 }
 
-.rooster-sticky-head {
+.rooster-sticky-head,
+.synaxarion-sticky-head {
   position: sticky;
   top: 3.25rem;
   z-index: 5;
@@ -567,9 +578,23 @@ h2 {
 }
 
 @media (max-width: 719px) {
-  .rooster-sticky-head {
+  .rooster-sticky-head,
+  .synaxarion-sticky-head {
     top: 5.25rem;
   }
+}
+
+.synaxarion-page-title {
+  font-size: 1.35rem;
+  margin: 0 0 0.65rem;
+}
+
+.date-list-today-mark {
+  display: inline;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--gold);
+  margin-left: 0.15rem;
 }
 
 .rooster-toolbar {
@@ -644,6 +669,132 @@ h2 {
   height: 0;
   margin: 0.55rem 0 0.35rem;
   border-top: 2px solid color-mix(in srgb, var(--gold) 40%, var(--line));
+}
+
+.list-month-break {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.65rem 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.list-month-break::before,
+.list-month-break::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 0;
+  border-top: 2px solid color-mix(in srgb, var(--gold) 40%, var(--line));
+}
+
+.list-month-break-label {
+  flex: 0 0 auto;
+}
+
+.rooster-row.is-today,
+.date-list-row.is-today {
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.rooster-row.is-today .rooster-cell-dag a,
+.date-list-row.is-today .date-list-dag a,
+.date-list-row.is-today .date-list-dag {
+  color: var(--gold);
+}
+
+.day-surface-sticky-title {
+  position: sticky;
+  top: 3.25rem;
+  z-index: 4;
+  margin: 0 0 0.75rem;
+  padding: 0.25rem 0 0.55rem;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 719px) {
+  .day-surface-sticky-title {
+    top: 5.25rem;
+  }
+}
+
+.heiligen-sticky-head {
+  position: sticky;
+  top: 3.25rem;
+  z-index: 4;
+  margin: 0 0 0.85rem;
+  padding: 0.35rem 0 0.55rem;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 719px) {
+  .heiligen-sticky-head {
+    top: 5.25rem;
+  }
+}
+
+.heiligen-sticky-head .filter-bar {
+  margin: 0;
+}
+
+.date-list-col-head,
+.date-list-row {
+  display: grid;
+  gap: 0.35rem 0.65rem;
+  align-items: start;
+}
+
+.date-list-col-head {
+  padding: 0.45rem 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.synaxarion-date-list .date-list-col-head,
+.synaxarion-date-list .date-list-row {
+  grid-template-columns: 2.75rem minmax(0, 1.6fr) minmax(0, 0.9fr);
+}
+
+.date-list-row {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  font-size: 0.92rem;
+  scroll-margin-top: 9rem;
+}
+
+@media (max-width: 719px) {
+  .date-list-row {
+    scroll-margin-top: 11rem;
+  }
+}
+
+.date-list-dag {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.date-list-dag a {
+  text-decoration: none;
+}
+
+.date-list-dag a:hover {
+  text-decoration: underline;
+}
+
+.date-list-naam {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
 }
 
 .rooster-month {

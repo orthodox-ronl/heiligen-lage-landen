@@ -8,6 +8,11 @@ git_date: 2026-08-22
 `/kalender/`. Bron: handmatig [`site/content/kalender/_index.md`]({{% ref "/kalender" %}})
 + JS.
 
+## Sticky (sitebreed)
+
+**Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
+pagina-header (zie hieronder), ook tijdens scrollen.
+
 ## Sticky header
 
 **Wel:** legenda (kleuren) en Nieuw/Oud. Blijft zichtbaar tijdens scrollen.
@@ -20,9 +25,10 @@ Juliaans-raster naast deze.
 
 **Wel:** doorlopende reeks maanden over het ICS-venster (huidig jaar
 −2 … +5); 1 / 2 / 3 / 4 kolommen naar schermbreedte; dagen klikbaar
-naar de datumpagina van die burgerlijke dag; huidige maand herkenbaar.
-Tussen december van jaar *j* en januari van *j*+1 een duidelijke
-jaarovergangslijn.
+naar de datumpagina van die burgerlijke dag; huidige maand herkenbaar;
+**vandaag** in de cel gemarkeerd. Tussen december van jaar *j* en
+januari van *j*+1 een duidelijke jaarovergangslijn met gecentreerd
+jaartal.
 
 **Niet:** namen van alle universele heiligen in de cel; vastenregel in
 de cel (alleen kleur); beheer-notities.

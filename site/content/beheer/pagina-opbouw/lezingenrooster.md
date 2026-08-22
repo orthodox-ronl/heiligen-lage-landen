@@ -9,6 +9,11 @@ URL: `/lezingenrooster/`. Bron: handmatig
 [`site/content/lezingenrooster/_index.md`]({{% ref "/lezingenrooster" %}})
 + JS.
 
+## Sticky (sitebreed)
+
+**Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
+pagina-header (zie hieronder), ook tijdens scrollen.
+
 ## Sticky header
 
 **Wel:** maandnavigatie `‹ {maand jjjj} ›`; Nieuw/Oud; knop Weergave.
@@ -33,7 +38,9 @@ lectionarium-verschuiving (otstupka) op dit scherm (dat hoort op
 **Wel:** doorlopende dagen over het beschikbare venster; Apostel en
 Evangelie als verwijzing (zelfde links als op de datumpagina); dagen
 zonder liturgie van dit type als korte status; maandovergangen met een
-scheidingslijn; in de dagkolom alleen het dagnummer (bijv. `5`).
+scheidingslijn en gecentreerd label `{maand jjjj}`; in de dagkolom
+alleen het dagnummer (bijv. `5`); de rij van **vandaag** herkenbaar
+gemarkeerd. Bij bezoek is die rij in beeld; daarna op/neer scrollen.
 
 **Niet:** volledige Bijbeltekst; heiligenvita’s in de roosterrij;
 selectiestatus; volledige datums zoals `5 augustus` in de dagkolom.
