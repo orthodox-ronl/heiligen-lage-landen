@@ -596,6 +596,23 @@ h2 {
   padding-right: 1.5rem;
 }
 
+.vierdatum-oud {
+  cursor: help;
+  text-decoration: underline dotted color-mix(in srgb, var(--muted) 70%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.vierdatum-oud:hover,
+.vierdatum-oud:focus-visible {
+  text-decoration-color: var(--gold-soft);
+  outline: none;
+}
+
+.infobox-table .vierdatum-oud {
+  display: inline;
+  margin-left: 0.15rem;
+}
+
 .rooster-table td:nth-child(3),
 .rooster-table td:nth-child(4) {
   font-variant-numeric: tabular-nums;

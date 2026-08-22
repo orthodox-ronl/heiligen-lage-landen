@@ -2,7 +2,7 @@
 title: "Feestdatum"
 description: "De naam van een feestdag in het kerkelijk jaar, in nieuw en oud dezelfde"
 uitleg_stijl: feestdatum
-git_date: 2026-08-17
+git_date: 2026-08-22
 ---
 
 Een vast feest of een heilige heeft een **feestdatum**: de naam van die dag
@@ -14,6 +14,11 @@ Die dagnaam is in de nieuwe en de oude kalender **dezelfde**. Ontslapen is
 15 augustus in beide. Wat wél kan verschillen, is de **burgerlijke** dag
 waarop uw parochie viert — de dag zoals Nederland die noemt. Dat hangt af van
 de knop [Nieuw/Oud]({{% ref "/uitleg/nieuw-oud" %}}).
+
+Op de pagina van een heilige of vast feest kan een tweede, burgerlijke datum
+tussen haakjes staan: alleen die datum, bijvoorbeeld 15 augustus (28 augustus).
+Dat is geen tweede feestdatum. Het is wanneer oude-kalenderparochies vieren.
+Zie [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 
 ## Vaste dagen en dagen die meeschuiven
 

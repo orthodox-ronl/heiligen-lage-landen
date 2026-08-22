@@ -18,7 +18,7 @@ vastenniveau: streng
 onderdrukt_wekelijks_vasten: true
 ---
 
-**Komende jaren (wereldlijk / Gregoriaans):**
+**Komende jaren (burgerlijk):**
 
 <div class="table-wrap">
 <table class="komende-jaren">

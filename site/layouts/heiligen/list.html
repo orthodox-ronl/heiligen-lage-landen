@@ -37,8 +37,11 @@
             <span class="meta">{{ delimit . ", " }}</span>
           {{ end }}
         {{ end }}
-        {{ with .Params.feestdatum }}
-          <span class="meta">{{ partial "feestdatum-kort.html" . }}</span>
+        {{ if .Params.feestdatum }}
+          <span class="meta">
+            {{ partial "feestdatum-kort.html" .Params.feestdatum }}
+            {{- with .Params.vierdatum_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          </span>
         {{ end }}
       </li>
     {{ end }}

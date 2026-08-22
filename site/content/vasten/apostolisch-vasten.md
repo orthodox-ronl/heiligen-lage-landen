@@ -10,6 +10,7 @@ lage_landen: false
 source_path: "data/vasten/apostolisch-vasten.yaml"
 van_offset_dagen: 57
 tot: 06-28
+tot_oud: 07-11
 alternatief:
   - "Apostolisch vasten"
   - "Apostelenvasten"
@@ -19,17 +20,17 @@ vastenniveau: lichter
 onderdrukt_wekelijks_vasten: true
 ---
 
-**Komende jaren (wereldlijk / Gregoriaans):**
+**Komende jaren (burgerlijk):**
 
 <div class="table-wrap">
 <table class="komende-jaren">
 <thead><tr><th>Jaar</th><th>Van</th><th>Tot</th></tr></thead>
 <tbody>
-<tr><td>2026</td><td>8 juni</td><td>28 juni</td></tr>
-<tr><td>2027</td><td>28 juni</td><td>28 juni</td></tr>
-<tr><td>2028</td><td>12 juni</td><td>28 juni</td></tr>
-<tr><td>2029</td><td>4 juni</td><td>28 juni</td></tr>
-<tr><td>2030</td><td>24 juni</td><td>28 juni</td></tr>
+<tr><td>2026</td><td>8 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2027</td><td>28 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2028</td><td>12 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2029</td><td>4 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2030</td><td>24 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
 </tbody>
 </table>
 </div>

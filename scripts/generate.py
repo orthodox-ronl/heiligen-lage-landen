@@ -35,6 +35,7 @@ from vasten import (  # noqa: E402
 from kalender import (  # noqa: E402
     format_mmdd,
     gregorian_to_julian_calendar,
+    julian_feast_to_civil_date,
     mmdd_from_date,
     parse_mmdd,
     pascha_offset_date,
@@ -95,19 +96,48 @@ def komende_jaren(today: date | None = None) -> range:
     return range(today.year, today.year + KOMENDE_JAREN_AANTAL)
 
 
-def julian_dag_label(d: date) -> str:
-    _jy, jm, jd = gregorian_to_julian_calendar(d)
-    return f"{jd} {MONTH_NAMES_NL[jm]}"
+def burgerlijk_label(d: date, *, jaar: int | None = None) -> str:
+    """Burgerlijke datum als '31 mei'; voeg het jaar toe als het van ``jaar`` verschilt."""
+    label = f"{d.day} {MONTH_NAMES_NL[d.month]}"
+    if jaar is not None and d.year != jaar:
+        label += f" {d.year}"
+    return label
+
+
+def oud_vierdatum_html(inner: str) -> str:
+    """Alleen de oude burgerlijke datum tussen haakjes; popover legt uit."""
+    return (
+        f'<span class="vierdatum-oud" tabindex="0" '
+        f'data-info-tip="vierdatum-oud" '
+        f'title="Datum op de oude kalender">'
+        f"({html_escape(inner)})</span>"
+    )
+
+
+def cel_nieuw_met_oud(nieuw: str, oud: str | None) -> str:
+    """Burgerlijke datum, plus haakjes met alleen de oude datum als die verschilt."""
+    if not oud or oud == nieuw:
+        return html_escape(nieuw)
+    return f"{html_escape(nieuw)} {oud_vierdatum_html(oud)}"
+
+
+KOMENDE_JAREN_KOP = "**Komende jaren (burgerlijk):**"
 
 
 def komende_jaren_tabel_html(
-    headers: list[str], rows: list[list[str]]
+    headers: list[str],
+    rows: list[list[str]],
+    *,
+    raw_rows: bool = False,
 ) -> list[str]:
     """HTML-tabel voor de body; kolommen blijven onderling uitgelijnd."""
     head = "".join(f"<th>{html_escape(h)}</th>" for h in headers)
     body_rows = []
     for row in rows:
-        cells = "".join(f"<td>{html_escape(c)}</td>" for c in row)
+        if raw_rows:
+            cells = "".join(f"<td>{c}</td>" for c in row)
+        else:
+            cells = "".join(f"<td>{html_escape(c)}</td>" for c in row)
         body_rows.append(f"<tr>{cells}</tr>")
     return [
         '<div class="table-wrap">',
@@ -351,9 +381,16 @@ def write_entry_page(entry: dict[str, Any]) -> None:
     ]
     if feestdatum and vorm == "dag":
         fm.append(f"feestdatum: {feestdatum}")
+        oud = julian_feast_to_civil_date(date.today().year, feestdatum)
+        fm.append(f"vierdatum_oud: {mmdd_from_date(oud)}")
     if dn.get("van") and dn.get("tot"):
         fm.append(f"van: {dn['van']}")
         fm.append(f"tot: {dn['tot']}")
+        jaar = date.today().year
+        van_oud = julian_feast_to_civil_date(jaar, dn["van"])
+        tot_oud = julian_feast_to_civil_date(jaar, dn["tot"])
+        fm.append(f"van_oud: {mmdd_from_date(van_oud)}")
+        fm.append(f"tot_oud: {mmdd_from_date(tot_oud)}")
     if dn.get("weekdagen"):
         fm.append("weekdagen:")
         for d in dn["weekdagen"]:
@@ -372,6 +409,8 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             fm.append(f"tot_offset_dagen: {dn['tot_offset_dagen']}")
         if dn.get("tot_mmdd"):
             fm.append(f"tot: {dn['tot_mmdd']}")
+            tot_oud = julian_feast_to_civil_date(date.today().year, dn["tot_mmdd"])
+            fm.append(f"tot_oud: {mmdd_from_date(tot_oud)}")
     if entry.get("titels"):
         fm.append("titels:")
         for t in entry["titels"]:
@@ -435,54 +474,61 @@ def write_entry_page(entry: dict[str, Any]) -> None:
     # Hier alleen toelichting die niet compact in de box past (jaarlijsten e.d.).
     if entry.get("cyclus") == "paascyclus" and vorm in {"periode", "periode_hybride"}:
         van_o = dn["van_offset_dagen"]
-        body.append("**Komende jaren (wereldlijk / Gregoriaans):**")
+        hybride = vorm == "periode_hybride"
+        body.append(KOMENDE_JAREN_KOP)
         body.append("")
         rows: list[list[str]] = []
         for y in komende_jaren():
             start = pascha_offset_date(y, van_o)
-            if vorm == "periode":
+            if hybride:
+                end = date(y, *parse_mmdd(dn["tot_mmdd"]))
+                end_oud = julian_feast_to_civil_date(y, dn["tot_mmdd"])
+            else:
                 end = pascha_offset_date(y, dn["tot_offset_dagen"])
-            else:
-                tm, td = parse_mmdd(dn["tot_mmdd"])
-                end = date(y, tm, td)
+                end_oud = None
+            van_l = burgerlijk_label(start, jaar=y)
             if start > end:
-                rows.append([str(y), "geen dagen", "begin na einddatum"])
+                if hybride and start <= end_oud:
+                    tot_l = cel_nieuw_met_oud(
+                        "geen dagen",
+                        burgerlijk_label(end_oud, jaar=y),
+                    )
+                else:
+                    tot_l = html_escape("geen dagen")
             else:
-                rows.append(
-                    [
-                        str(y),
-                        mmdd_label(mmdd_from_date(start)),
-                        mmdd_label(mmdd_from_date(end)),
-                    ]
+                tot_l = cel_nieuw_met_oud(
+                    burgerlijk_label(end, jaar=y),
+                    burgerlijk_label(end_oud, jaar=y) if end_oud else None,
                 )
-        body.extend(komende_jaren_tabel_html(["Jaar", "Van", "Tot"], rows))
+            rows.append(
+                [html_escape(str(y)), html_escape(van_l), tot_l]
+            )
+        body.extend(
+            komende_jaren_tabel_html(
+                ["Jaar", "Van", "Tot"],
+                rows,
+                raw_rows=True,
+            )
+        )
     elif entry.get("cyclus") == "paascyclus":
         offset = dn["paascyclus_offset"]
-        body.append("**Komende jaren (wereldlijk / Gregoriaans):**")
+        body.append(KOMENDE_JAREN_KOP)
         body.append("")
         rows = []
         for y in komende_jaren():
             d = pascha_offset_date(y, offset)
-            rows.append(
-                [
-                    str(y),
-                    mmdd_label(mmdd_from_date(d)),
-                    julian_dag_label(d),
-                ]
-            )
-        body.extend(
-            komende_jaren_tabel_html(["Jaar", "Wereldlijk", "Juliaans"], rows)
-        )
+            rows.append([str(y), burgerlijk_label(d, jaar=y)])
+        body.extend(komende_jaren_tabel_html(["Jaar", "Datum"], rows))
     elif vorm == "weekdag_relatief":
         body.append(
             "Geen vaste feestdatum; hangt af van de weekdag van het anker."
         )
         body.append("")
-        body.append("**Komende jaren (nieuwe kalender, wereldlijk):**")
+        body.append(KOMENDE_JAREN_KOP)
         body.append("")
         rows = []
         for y in komende_jaren():
-            d = weekday_relative_date(
+            d_nieuw = weekday_relative_date(
                 y,
                 dn["anker"],
                 dn["weekdag"],
@@ -490,16 +536,36 @@ def write_entry_page(entry: dict[str, Any]) -> None:
                 dn["richting"],
                 stijl="nieuw",
             )
-            wereldlijk = mmdd_label(mmdd_from_date(d))
-            if d.year != y:
-                wereldlijk = f"{wereldlijk} {d.year}"
-            rows.append([str(y), wereldlijk, julian_dag_label(d)])
+            d_oud = weekday_relative_date(
+                y,
+                dn["anker"],
+                dn["weekdag"],
+                dn["welke"],
+                dn["richting"],
+                stijl="oud",
+            )
+            rows.append(
+                [
+                    html_escape(str(y)),
+                    cel_nieuw_met_oud(
+                        burgerlijk_label(d_nieuw, jaar=y),
+                        burgerlijk_label(d_oud, jaar=y),
+                    ),
+                ]
+            )
         body.extend(
-            komende_jaren_tabel_html(["Jaar", "Wereldlijk", "Juliaans"], rows)
+            komende_jaren_tabel_html(
+                ["Jaar", "Datum"],
+                rows,
+                raw_rows=True,
+            )
         )
     elif vorm == "dag" and feestdatum:
+        oud = julian_feast_to_civil_date(date.today().year, feestdatum)
+        oud_l = burgerlijk_label(oud)
         body.append(
-            f"**Feestdag:** [{mmdd_label(feestdatum)}](/datum/?dag={feestdatum})"
+            f"**Feestdag:** [{mmdd_label(feestdatum)}](/datum/?dag={feestdatum}) "
+            f"{oud_vierdatum_html(oud_l)}"
         )
         body.append("")
         if dn.get("gregoriaans") or dn.get("juliaans"):
@@ -518,7 +584,11 @@ def write_entry_page(entry: dict[str, Any]) -> None:
                 continue
             toel = (extra.get("toelichting") or "").strip()
             link = f"[{mmdd_label(fd)}](/datum/?dag={fd})"
-            extra_lines.append(f"- {link} — {toel}" if toel else f"- {link}")
+            oud_ex = julian_feast_to_civil_date(date.today().year, fd)
+            haak = oud_vierdatum_html(burgerlijk_label(oud_ex))
+            extra_lines.append(
+                f"- {link} {haak} — {toel}" if toel else f"- {link} {haak}"
+            )
         if extra_lines:
             body.append("**Andere gedenkdagen:**")
             body.append("")

@@ -10,6 +10,8 @@ lage_landen: false
 source_path: "data/vasten/ontslapen-vasten.yaml"
 van: 08-01
 tot: 08-14
+van_oud: 08-14
+tot_oud: 08-27
 alternatief:
   - "Ontslapenvasten"
   - "Ontslapen-vasten"

@@ -207,6 +207,7 @@ def test_entry_page_infobox_velden_in_front_matter(
     assert meta["vastenniveau"] == "vis"
     assert meta["onderdrukt_wekelijks_vasten"] is True
     assert meta["feestdatum"] == "11-07"
+    assert meta["vierdatum_oud"] == "11-20"
     assert "*Apostel van de Friezen*" not in body
     assert "**Periode:**" not in body
     assert "**Vastenniveau" not in body
@@ -272,7 +273,11 @@ def test_entry_page_feestdag_link_en_geen_synaxarion_voet(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )
     assert meta["feestdatum"] == "11-07"
+    assert meta["vierdatum_oud"] == "11-20"
     assert "**Feestdag:** [7 november](/datum/?dag=11-07)" in body
+    assert "vierdatum-oud" in body
+    assert "(20 november)" in body
+    assert "20 november oude kalender" not in body
     assert "Synaxarion:" not in body
     assert "/synaxarion/" not in body
 
@@ -299,6 +304,8 @@ def test_entry_page_andere_gedenkdagen(
     assert "**Feestdag:** [7 november](/datum/?dag=11-07)" in body
     assert "**Andere gedenkdagen:**" in body
     assert "[23 december](/datum/?dag=12-23)" in body
+    assert "(5 januari)" in body
+    assert "5 januari oude kalender" not in body
     assert "gedachtenis op de Orthodoxe kalender" in body
 
 
@@ -557,14 +564,17 @@ def test_paascyclus_feest_komende_jaren_tabel(
     _, body = _split_hugo_markdown(text)
     assert 'class="komende-jaren"' in body
     assert "<th>Jaar</th>" in body
-    assert "<th>Wereldlijk</th>" in body
-    assert "<th>Juliaans</th>" in body
+    assert "<th>Datum</th>" in body
+    assert "<th>Wereldlijk</th>" not in body
+    assert "<th>Juliaans</th>" not in body
     assert "<td>2026</td>" in body
     assert "<td>2030</td>" in body
     assert "<td>2024</td>" not in body
     assert "<td>2031</td>" not in body
     assert "- 2026:" not in body
     assert "31 mei" in body
+    assert "18 mei" not in body
+    assert "komende-jaren-note" not in body
     assert body.count("<tr>") == 6  # kop + 5 jaren
 
 
@@ -596,6 +606,107 @@ def test_paascyclus_periode_komende_jaren_tabel(
     assert "<th>Tot</th>" in body
     assert "<td>2026</td>" in body
     assert "<td>2031</td>" not in body
+    assert "komende-jaren-note" not in body
+    assert "oude kalender" not in body
+
+
+def test_apostelvasten_tot_heeft_oude_kalender_haakjes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    monkeypatch.setattr("generate.komende_jaren", lambda today=None: range(2026, 2031))
+    write_entry_page(
+        _feest(
+            id="apostolisch-vasten",
+            soort="vasten",
+            cyclus="paascyclus",
+            observances=["vasten"],
+            datum_norm={
+                "feestdatum": None,
+                "vorm": "periode_hybride",
+                "stijl": "gregoriaans",
+                "van_offset_dagen": 57,
+                "tot_mmdd": "06-28",
+            },
+        )
+    )
+    text = (content / "vasten" / "apostolisch-vasten.md").read_text(encoding="utf-8")
+    meta, body = _split_hugo_markdown(text)
+    assert meta["tot"] == "06-28"
+    assert meta["tot_oud"] == "07-11"
+    assert "28 juni" in body
+    assert "(11 juli)" in body
+    assert "11 juli oude kalender" not in body
+    assert "vierdatum-oud" in body
+    assert "komende-jaren-note" not in body
+    assert "Tussen haakjes" not in body
+    assert "<th>Juliaans</th>" not in body
+    assert body.count('data-info-tip="vierdatum-oud"') == 5
+
+
+def test_weekdag_relatief_tabel_burgerlijk_nieuw_en_oud(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    monkeypatch.setattr("generate.komende_jaren", lambda today=None: range(2026, 2031))
+    write_entry_page(
+        _feest(
+            id="zondag-vaderen-voor-kerst",
+            cyclus="jaar",
+            datum_norm={
+                "feestdatum": None,
+                "vorm": "weekdag_relatief",
+                "stijl": "gregoriaans",
+                "anker": "12-25",
+                "weekdag": 7,
+                "welke": 1,
+                "richting": "voor",
+            },
+        )
+    )
+    text = (content / "feesten" / "zondag-vaderen-voor-kerst.md").read_text(
+        encoding="utf-8"
+    )
+    _, body = _split_hugo_markdown(text)
+    assert "<th>Datum</th>" in body
+    assert "<th>Juliaans</th>" not in body
+    assert "20 december" in body
+    assert "(3 januari 2027)" in body
+    assert "3 januari 2027 oude kalender" not in body
+    assert "vierdatum-oud" in body
+    assert "Tussen haakjes" not in body
+    assert "komende-jaren-note" not in body
+
+
+def test_vaste_vastenperiode_heeft_van_oud_tot_oud(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _feest(
+            id="ontslapen-vasten",
+            soort="vasten",
+            cyclus="jaar",
+            observances=["vasten"],
+            datum_norm={
+                "feestdatum": None,
+                "vorm": "periode",
+                "stijl": "gregoriaans",
+                "van": "08-01",
+                "tot": "08-14",
+            },
+        )
+    )
+    text = (content / "vasten" / "ontslapen-vasten.md").read_text(encoding="utf-8")
+    meta, body = _split_hugo_markdown(text)
+    assert meta["van"] == "08-01"
+    assert meta["tot"] == "08-14"
+    assert meta["van_oud"] == "08-14"
+    assert meta["tot_oud"] == "08-27"
+    assert "**Komende jaren" not in body
 
 
 def test_feest_pagina_betekenis_na_verhaal(

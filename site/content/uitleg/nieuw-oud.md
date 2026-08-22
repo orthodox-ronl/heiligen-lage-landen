@@ -2,7 +2,7 @@
 title: "Nieuwe en Oude kalender"
 description: "Welke kalender uw parochie volgt, en wat de knop Nieuw/Oud doet"
 uitleg_stijl: nieuw-oud
-git_date: 2026-08-17
+git_date: 2026-08-22
 ---
 
 In de Orthodoxe Kerk vieren niet alle parochies de vaste feesten op dezelfde
@@ -50,6 +50,33 @@ burgerlijke dag. Alle Orthodoxe kerken gebruiken daarvoor dezelfde berekening.
 
 De knop Nieuw/Oud verplaatst dus alleen de *vaste* feesten (Kerst, Theofanie,
 heiligen met een vaste dag, en zo verder). Pascha blijft staan.
+
+Dit is iets anders dan het verschil tussen westers en Orthodox Pasen. Dat
+gaat over twee berekeningen van Pascha, niet over nieuw of oud binnen de
+Orthodoxe Kerk.
+
+## Op een feest- of vastenpagina
+
+Daar staan **burgerlijke** data: de dag zoals Nederland die noemt, waarop
+nieuwe-kalenderparochies vieren of vasten.
+
+Als de oude kalender een andere burgerlijke dag heeft, staat die **alleen
+de datum** tussen haakjes: 25 december (7 januari). Wijst u op de haakjes,
+dan legt een korte toelichting uit hoe u dat leest.
+
+Dat is geen tweede [feestdatum]({{% ref "/uitleg/feestdatum" %}}). Kerst
+heet in beide kalenders 25 december.
+
+Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag (Pascha en
+wat daarvan afhangt).
+
+| | Zo weergegeven |
+| --- | --- |
+| Kerst | 25 december (7 januari) |
+| Ontslapen | 15 augustus (28 augustus) |
+| Willibrord | 7 november (20 november) |
+| Pinksteren 2026 | 31 mei |
+| Apostelvasten 2026 | 8 juni tot 28 juni (11 juli) |
 
 ## Wat u op deze site ziet
 
