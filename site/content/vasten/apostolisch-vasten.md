@@ -26,15 +26,14 @@ onderdrukt_wekelijks_vasten: true
 <table class="komende-jaren">
 <thead><tr><th>Jaar</th><th>Van</th><th>Tot</th></tr></thead>
 <tbody>
-<tr><td>2026</td><td>8 juni</td><td>28 juni (11 juli oude kalender)</td></tr>
-<tr><td>2027</td><td>28 juni</td><td>28 juni (11 juli oude kalender)</td></tr>
-<tr><td>2028</td><td>12 juni</td><td>28 juni (11 juli oude kalender)</td></tr>
-<tr><td>2029</td><td>4 juni</td><td>28 juni (11 juli oude kalender)</td></tr>
-<tr><td>2030</td><td>24 juni</td><td>28 juni (11 juli oude kalender)</td></tr>
+<tr><td>2026</td><td>8 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2027</td><td>28 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2028</td><td>12 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2029</td><td>4 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2030</td><td>24 juni</td><td>28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
 </tbody>
 </table>
 </div>
-<p class="komende-jaren-note vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Uitleg nieuwe en oude kalender">Tussen haakjes staat wanneer oude-kalenderparochies dit houden.</p>
 
 Van de maandag na Allerheiligen tot de vooravond van Petrus en Paulus (29 juni).
 

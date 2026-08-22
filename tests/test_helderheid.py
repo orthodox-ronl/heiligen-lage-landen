@@ -42,6 +42,7 @@ def test_site_intro_popover_tekst() -> None:
     assert "ontleend aan" in js
     assert 'kind === "vierdatum-oud"' in js
     assert "oude-kalenderparochies" in js
+    assert "Oude kalender" in js
 
 
 def test_homepage_verwijst_naar_uitleg_heiligen() -> None:

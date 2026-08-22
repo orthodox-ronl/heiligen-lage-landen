@@ -40,7 +40,7 @@ muiswiel (dat scrollt de pagina).
 ## Lijst
 
 **Wel:** naam (link), «ook …» bij andere namen, plaatsen (streek
-cursief), feestdatum, klein icoon indien aanwezig. Alle heiligen in de
-catalogus (ook grensgevallen).
+cursief), feestdatum met haakjes voor de oude burgerlijke datum, klein
+icoon indien aanwezig. Alle heiligen in de catalogus (ook grensgevallen).
 
 **Niet:** de vita in de rij; `selectie_toelichting`; GitHub-paden.

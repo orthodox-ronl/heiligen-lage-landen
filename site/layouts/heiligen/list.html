@@ -38,7 +38,10 @@
           {{ end }}
         {{ end }}
         {{ with .Params.feestdatum }}
-          <span class="meta">{{ partial "feestdatum-kort.html" . }}</span>
+          <span class="meta">
+            {{ partial "feestdatum-kort.html" . }}
+            {{- with $.Params.vierdatum_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          </span>
         {{ end }}
       </li>
     {{ end }}

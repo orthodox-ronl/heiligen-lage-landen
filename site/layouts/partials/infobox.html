@@ -52,15 +52,15 @@
         <th scope="row">Feestdag</th>
         <td>
           <a href="{{ printf "/datum/?dag=%s" $p.feestdatum | relURL }}">{{ partial "feestdatum-kort.html" $p.feestdatum }}</a>
-          {{- with $p.vierdatum_oud }} {{ partial "vierdatum-oud.html" (dict "datum" .) }}{{ end }}
+          {{- with $p.vierdatum_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
         </td>
       </tr>
       {{- else if and $p.van $p.tot }}
       <tr>
         <th scope="row">Periode</th>
         <td>
-          {{ partial "feestdatum-kort.html" $p.van }} – {{ partial "feestdatum-kort.html" $p.tot }}
-          {{- if and $p.van_oud $p.tot_oud }} {{ partial "vierdatum-oud.html" (dict "van" $p.van_oud "tot" $p.tot_oud) }}{{ end }}
+          {{ partial "feestdatum-kort.html" $p.van }}{{- with $p.van_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          – {{ partial "feestdatum-kort.html" $p.tot }}{{- with $p.tot_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
         </td>
       </tr>
       {{- else if $p.weekdagen }}
@@ -91,7 +91,7 @@
             tot {{ if ge $to 0 }}+{{ end }}{{ $to }} dagen t.o.v. Pascha
           {{- else if $p.tot }}
             tot {{ partial "feestdatum-kort.html" $p.tot }}
-            {{- with $p.tot_oud }} {{ partial "vierdatum-oud.html" (dict "datum" .) }}{{ end }}
+            {{- with $p.tot_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
           {{- end }}
         </td>
       </tr>

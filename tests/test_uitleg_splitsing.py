@@ -335,6 +335,7 @@ def test_nieuw_oud_uitleg_beschrijft_haakjes() -> None:
     hoofd, _voet = body.split("## Voor wie de site bijhoudt", 1)
     assert "Op een feest- of vastenpagina" in hoofd
     assert "tussen haakjes" in hoofd
+    assert "Willibrord" in hoofd
     assert "Pinksteren" in hoofd
     assert "westers" in hoofd.lower()
     _fmeta, fbody = _meta_body(UITLEG / "feestdatum.md")

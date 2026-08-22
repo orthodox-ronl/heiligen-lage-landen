@@ -596,12 +596,6 @@ h2 {
   padding-right: 1.5rem;
 }
 
-.entry-body .komende-jaren-note {
-  margin: -0.5rem 0 1.25rem;
-  font-size: 0.92rem;
-  color: var(--muted);
-}
-
 .vierdatum-oud {
   cursor: help;
   text-decoration: underline dotted color-mix(in srgb, var(--muted) 70%, transparent);

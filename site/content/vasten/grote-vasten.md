@@ -33,7 +33,6 @@ onderdrukt_wekelijks_vasten: true
 </tbody>
 </table>
 </div>
-<p class="komende-jaren-note">Alle Orthodoxe parochies houden deze periode op dezelfde burgerlijke dagen.</p>
 
 Van Schone Maandag tot en met Lazarus-zaterdag (veertigdagen); daarna volgt de Grote Week.
 

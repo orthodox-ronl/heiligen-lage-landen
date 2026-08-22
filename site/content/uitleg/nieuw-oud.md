@@ -60,20 +60,23 @@ Orthodoxe Kerk.
 Daar staan **burgerlijke** data: de dag zoals Nederland die noemt, waarop
 nieuwe-kalenderparochies vieren of vasten.
 
-Staat er een tweede datum tussen haakjes, dan is dat wanneer
-**oude-kalenderparochies** hetzelfde feest of vasten houden — ook burgerlijk.
-Dat is geen tweede [feestdatum]({{% ref "/uitleg/feestdatum" %}}).
+Als de oude kalender een andere burgerlijke dag heeft, staat die **alleen
+de datum** tussen haakjes: 25 december (7 januari). Wijst u op de haakjes,
+dan legt een korte toelichting uit hoe u dat leest.
 
-Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag.
+Dat is geen tweede [feestdatum]({{% ref "/uitleg/feestdatum" %}}). Kerst
+heet in beide kalenders 25 december.
 
-| | Nieuwe kalender | Oude kalender (tussen haakjes) |
-| --- | --- | --- |
-| Kerst | 25 december | 7 januari |
-| Ontslapen | 15 augustus | 28 augustus |
-| Pinksteren 2026 | 31 mei | dezelfde dag |
-| Apostelvasten 2026 | 8 tot 28 juni | tot 11 juli |
+Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag (Pascha en
+wat daarvan afhangt).
 
-Wijst u op de haakjes, dan verschijnt een korte toelichting.
+| | Zo weergegeven |
+| --- | --- |
+| Kerst | 25 december (7 januari) |
+| Ontslapen | 15 augustus (28 augustus) |
+| Willibrord | 7 november (20 november) |
+| Pinksteren 2026 | 31 mei |
+| Apostelvasten 2026 | 8 juni tot 28 juni (11 juli) |
 
 ## Wat u op deze site ziet
 

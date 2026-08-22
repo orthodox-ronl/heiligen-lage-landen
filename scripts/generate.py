@@ -105,49 +105,41 @@ def burgerlijk_label(d: date, *, jaar: int | None = None) -> str:
 
 
 def oud_vierdatum_html(inner: str) -> str:
-    """Haakjes met burgerlijke vierdatum voor oude-kalenderparochies (popover)."""
+    """Alleen de oude burgerlijke datum tussen haakjes; popover legt uit."""
     return (
         f'<span class="vierdatum-oud" tabindex="0" '
         f'data-info-tip="vierdatum-oud" '
-        f'title="Uitleg nieuwe en oude kalender">'
-        f"({html_escape(inner)} oude kalender)</span>"
+        f'title="Datum op de oude kalender">'
+        f"({html_escape(inner)})</span>"
     )
 
 
 def cel_nieuw_met_oud(nieuw: str, oud: str | None) -> str:
-    """Tabelcel als platte tekst: haakjes zonder popover (die zit op het bijschrift)."""
+    """Burgerlijke datum, plus haakjes met alleen de oude datum als die verschilt."""
     if not oud or oud == nieuw:
-        return nieuw
-    return f"{nieuw} ({oud} oude kalender)"
+        return html_escape(nieuw)
+    return f"{html_escape(nieuw)} {oud_vierdatum_html(oud)}"
 
 
 KOMENDE_JAREN_KOP = "**Komende jaren (burgerlijk):**"
-
-CAPTION_PAASCYCLUS_DAG = (
-    "Alle Orthodoxe parochies vieren dit op dezelfde burgerlijke dag."
-)
-CAPTION_PAASCYCLUS_PERIODE = (
-    "Alle Orthodoxe parochies houden deze periode op dezelfde burgerlijke dagen."
-)
-CAPTION_HAAKJES = (
-    "Tussen haakjes staat wanneer oude-kalenderparochies dit houden."
-)
 
 
 def komende_jaren_tabel_html(
     headers: list[str],
     rows: list[list[str]],
     *,
-    caption: str | None = None,
-    caption_tip: bool = False,
+    raw_rows: bool = False,
 ) -> list[str]:
     """HTML-tabel voor de body; kolommen blijven onderling uitgelijnd."""
     head = "".join(f"<th>{html_escape(h)}</th>" for h in headers)
     body_rows = []
     for row in rows:
-        cells = "".join(f"<td>{html_escape(c)}</td>" for c in row)
+        if raw_rows:
+            cells = "".join(f"<td>{c}</td>" for c in row)
+        else:
+            cells = "".join(f"<td>{html_escape(c)}</td>" for c in row)
         body_rows.append(f"<tr>{cells}</tr>")
-    out = [
+    return [
         '<div class="table-wrap">',
         '<table class="komende-jaren">',
         f"<thead><tr>{head}</tr></thead>",
@@ -156,22 +148,8 @@ def komende_jaren_tabel_html(
         "</tbody>",
         "</table>",
         "</div>",
+        "",
     ]
-    if caption:
-        attrs = ""
-        if caption_tip:
-            attrs = (
-                ' tabindex="0" data-info-tip="vierdatum-oud" '
-                'title="Uitleg nieuwe en oude kalender"'
-            )
-        cls = "komende-jaren-note"
-        if caption_tip:
-            cls += " vierdatum-oud"
-        out.append(
-            f'<p class="{cls}"{attrs}>{html_escape(caption)}</p>'
-        )
-    out.append("")
-    return out
 
 
 def _append_occ(bucket: dict[str, list[str]], d: date) -> None:
@@ -513,22 +491,23 @@ def write_entry_page(entry: dict[str, Any]) -> None:
                 if hybride and start <= end_oud:
                     tot_l = cel_nieuw_met_oud(
                         "geen dagen",
-                        f"tot {burgerlijk_label(end_oud, jaar=y)}",
+                        burgerlijk_label(end_oud, jaar=y),
                     )
                 else:
-                    tot_l = "geen dagen"
+                    tot_l = html_escape("geen dagen")
             else:
                 tot_l = cel_nieuw_met_oud(
                     burgerlijk_label(end, jaar=y),
                     burgerlijk_label(end_oud, jaar=y) if end_oud else None,
                 )
-            rows.append([str(y), van_l, tot_l])
+            rows.append(
+                [html_escape(str(y)), html_escape(van_l), tot_l]
+            )
         body.extend(
             komende_jaren_tabel_html(
                 ["Jaar", "Van", "Tot"],
                 rows,
-                caption=CAPTION_HAAKJES if hybride else CAPTION_PAASCYCLUS_PERIODE,
-                caption_tip=hybride,
+                raw_rows=True,
             )
         )
     elif entry.get("cyclus") == "paascyclus":
@@ -539,13 +518,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         for y in komende_jaren():
             d = pascha_offset_date(y, offset)
             rows.append([str(y), burgerlijk_label(d, jaar=y)])
-        body.extend(
-            komende_jaren_tabel_html(
-                ["Jaar", "Datum"],
-                rows,
-                caption=CAPTION_PAASCYCLUS_DAG,
-            )
-        )
+        body.extend(komende_jaren_tabel_html(["Jaar", "Datum"], rows))
     elif vorm == "weekdag_relatief":
         body.append(
             "Geen vaste feestdatum; hangt af van de weekdag van het anker."
@@ -573,7 +546,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             )
             rows.append(
                 [
-                    str(y),
+                    html_escape(str(y)),
                     cel_nieuw_met_oud(
                         burgerlijk_label(d_nieuw, jaar=y),
                         burgerlijk_label(d_oud, jaar=y),
@@ -584,8 +557,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             komende_jaren_tabel_html(
                 ["Jaar", "Datum"],
                 rows,
-                caption=CAPTION_HAAKJES,
-                caption_tip=True,
+                raw_rows=True,
             )
         )
     elif vorm == "dag" and feestdatum:

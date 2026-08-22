@@ -16,9 +16,9 @@ waarop uw parochie viert — de dag zoals Nederland die noemt. Dat hangt af van
 de knop [Nieuw/Oud]({{% ref "/uitleg/nieuw-oud" %}}).
 
 Op de pagina van een heilige of vast feest kan een tweede, burgerlijke datum
-tussen haakjes staan. Dat is geen tweede feestdatum. Het is wanneer
-oude-kalenderparochies vieren. Zie
-[Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
+tussen haakjes staan: alleen die datum, bijvoorbeeld 15 augustus (28 augustus).
+Dat is geen tweede feestdatum. Het is wanneer oude-kalenderparochies vieren.
+Zie [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 
 ## Vaste dagen en dagen die meeschuiven
 

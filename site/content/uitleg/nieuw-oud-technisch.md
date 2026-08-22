@@ -31,22 +31,23 @@ Code: `scripts/kalender.py` (`julian_feast_to_civil_date`,
 
 ## Weergave op feest- en vastenpagina’s
 
-Entry-pagina’s tonen **burgerlijke vierdata** (conventie B): de datum waarop
-nieuwe-kalenderparochies vieren of vasten, en tussen haakjes die van
-oude-kalenderparochies als die verschilt (`vierdatum_oud`, `van_oud` /
-`tot_oud` in de Hugo-front matter; `oud_vierdatum_html` in `generate.py`).
+Entry-pagina’s (en de overzichten) tonen **burgerlijke vierdata**: de datum
+waarop nieuwe-kalenderparochies vieren of vasten, en tussen haakjes **alleen**
+de burgerlijke datum van oude-kalenderparochies als die verschilt
+(`vierdatum_oud`, `van_oud` / `tot_oud`; `oud_vierdatum_html` in
+`generate.py`). De haakjes hebben popover `data-info-tip="vierdatum-oud"`.
+Geen bijschrift onder de jaartabel.
 
 Dat is **niet** de Juliaanse dagnaam van dezelfde burgerlijke dag. Pinksteren
-2026 is 31 mei voor iedereen; er komt geen «18 mei» tussen haakjes.
+2026 is 31 mei voor iedereen; daar komen geen haakjes.
 
-- Vaste dag: feestdatum plus haakjes (`julian_feast_to_civil_date`).
+- Vaste dag (heiligen en feesten): feestdatum plus haakjes.
+- Vaste periode: elke randdatum plus haakjes (`1 aug (14 aug) – 14 aug (27 aug)`).
 - Paascyclus-dag of -periode (beide einden t.o.v. Pascha): één burgerlijke
-  datum of van–tot, met bijschrift dat alle Orthodoxe parochies dezelfde
-  burgerlijke dagen houden.
-- Hybride periode (Apostelvasten) en weekdag-relatief: haakjes, omdat het
-  einde of het anker een vaste feestdatum is.
-- Popover `data-info-tip="vierdatum-oud"`; geen tweede Nieuw/Oud-knop op de
-  entry-pagina.
+  datum of van–tot, zonder haakjes.
+- Hybride periode (Apostelvasten) en weekdag-relatief: haakjes bij de
+  datum die van een vaste feestdatum afhangt.
+- Geen tweede Nieuw/Oud-knop op de entry-pagina.
 
 ## Offset
 
