@@ -15,7 +15,7 @@ def test_jaarkalender_legenda_vier_basiskleuren() -> None:
         encoding="utf-8"
     )
     assert "day-vastenvrij" in kal
-    assert kal.count("<li>") == 4
+    assert kal.count("<li") == 4
 
 
 def test_day_beide_heeft_strakke_kleurstop() -> None:
