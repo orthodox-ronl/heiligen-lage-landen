@@ -29,10 +29,23 @@ def test_synaxarion_stapelt_in_een_rij() -> None:
     js = JS.read_text(encoding="utf-8")
     assert "synaxarion-stack" in js
     assert "function entryImportance" in js
-    chunk = js.split("function synaxarionTableHtml", 1)[1]
-    chunk = chunk.split("function synaxarionWeergaveSummary", 1)[0]
+    chunk = js.split("function synaxarionDayRowHtml", 1)[1]
+    chunk = chunk.split("function synaxarionEmptyTodayRowHtml", 1)[0]
     assert "synaxarion-stack" in chunk
     assert "rowspan=" not in chunk
+
+
+def test_heiligen_sorteerknoppen() -> None:
+    html = (
+        ROOT / "site" / "layouts" / "partials" / "heiligen-overzicht.html"
+    ).read_text(encoding="utf-8")
+    assert "data-heiligen-sort" in html
+    assert 'data-heiligen-sort="naam"' in html
+    assert 'data-heiligen-sort="datum"' in html
+    filt = (ROOT / "site" / "assets" / "js" / "entry-filter.js").read_text(
+        encoding="utf-8"
+    )
+    assert "data-heiligen-sort" in filt
 
 
 def test_teruggave_transfiguratie_bestaat() -> None:
@@ -52,18 +65,6 @@ def test_agenda_heeft_vastenvrij_keuze() -> None:
     js = JS.read_text(encoding="utf-8")
     assert "vastenvrij" in js
     assert 'kinds.has("vastenvrij")' in js
-
-
-def test_heiligen_sorteerknoppen() -> None:
-    html = (ROOT / "site" / "layouts" / "heiligen" / "list.html").read_text(
-        encoding="utf-8"
-    )
-    assert "data-heiligen-sort" in html
-    assert "heiligen-toolbar" in html
-    filt = (ROOT / "site" / "assets" / "js" / "entry-filter.js").read_text(
-        encoding="utf-8"
-    )
-    assert "data-heiligen-sort" in filt
 
 
 def test_vierdatum_gelijk_tip() -> None:
