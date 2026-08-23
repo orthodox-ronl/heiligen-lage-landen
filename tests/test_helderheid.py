@@ -192,3 +192,59 @@ def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
     )
     assert "vierdatum_oud" in filter_js
     assert "vierdatum-oud" in filter_js
+
+
+def _title_in_sticky(html: str, sticky_class: str) -> None:
+    start = html.find(sticky_class)
+    assert start != -1, f"{sticky_class} ontbreekt"
+    chunk = html[start : start + 800]
+    assert "<h1" in chunk, f"h1 staat niet in {sticky_class}"
+
+
+def test_paginatitel_zit_in_sticky_header() -> None:
+    layouts = SITE / "layouts"
+    _title_in_sticky(
+        (layouts / "_default" / "kalender.html").read_text(encoding="utf-8"),
+        "kalender-sticky-head",
+    )
+    _title_in_sticky(
+        (layouts / "_default" / "synaxarion.html").read_text(encoding="utf-8"),
+        "synaxarion-sticky-head",
+    )
+    _title_in_sticky(
+        (layouts / "_default" / "lezingenrooster.html").read_text(encoding="utf-8"),
+        "rooster-sticky-head",
+    )
+    _title_in_sticky(
+        (layouts / "partials" / "heiligen-overzicht.html").read_text(
+            encoding="utf-8"
+        ),
+        "heiligen-sticky-head",
+    )
+    _title_in_sticky(
+        (layouts / "_default" / "list.html").read_text(encoding="utf-8"),
+        "list-sticky-head",
+    )
+    css = (SITE / "assets" / "css" / "site.css").read_text(encoding="utf-8")
+    for cls in (
+        ".kalender-sticky-head",
+        ".synaxarion-sticky-head",
+        ".rooster-sticky-head",
+        ".heiligen-sticky-head",
+        ".list-sticky-head",
+        ".day-surface-sticky-title",
+        "main.main > :is(article, section) > h1",
+    ):
+        assert cls in css
+        block_start = css.find(cls)
+        block = css[block_start : block_start + 400]
+        assert "position: sticky" in block
+
+    entry = css[css.find(".page-entry") : css.find(".page-entry") + 160]
+    assert "flow-root" in entry
+    assert not re.search(
+        r"overflow(?:-[xy])?\s*:\s*(auto|hidden|scroll|clip)", entry
+    )
+    main_block = css[css.find("\n.main {") : css.find("\n.main {") + 180]
+    assert "overflow: visible" in main_block
+

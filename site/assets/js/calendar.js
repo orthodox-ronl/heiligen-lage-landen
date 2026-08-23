@@ -1340,15 +1340,14 @@
     if (kind === "vierdatum-oud") {
       title.textContent = "Oude kalender";
       body.innerHTML =
-        `<p>De datum <em>voor</em> de haakjes is de burgerlijke dag ` +
-        `(Nederlandse agenda) waarop <strong>nieuwe-kalenderparochies</strong> ` +
-        `vieren of vasten.</p>` +
-        `<p>Tussen haakjes staat alleen de burgerlijke dag waarop ` +
-        `<strong>oude-kalenderparochies</strong> hetzelfde houden. ` +
-        `Dat is geen tweede feestdatum: het feest heet in beide kalenders ` +
+        `<p>Tussen haakjes staat alleen de burgerlijke dag (Nederlandse agenda) ` +
+        `waarop <strong>oude-kalenderparochies</strong> vieren of vasten. ` +
+        `Dat is geen andere feestdatum: het feest heet in beide kalenders ` +
         `hetzelfde (Kerst blijft 25&nbsp;december).</p>` +
-        `<p>Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag ` +
-        `(Pascha en wat daarvan afhangt).</p>`;
+        `<p>De datum <em>voor</em> de haakjes is de burgerlijke dag waarop ` +
+        `<strong>nieuwe-kalenderparochies</strong> hetzelfde vieren of vasten.</p>` +
+        `<p>Geen haakjes: de nieuwe- en oude-kalenderparochies vasten of vieren ` +
+        `op dezelfde burgerlijke dag (zoals bij Pascha en wat daaraan gerelateerd is).</p>`;
       fillNieuwOudMeer(meer);
       return;
     }
@@ -1548,7 +1547,24 @@
     return LETTERS.includes(ch) ? ch : "#";
   }
 
+  let vastenNiveausGeladen = false;
+
+  async function loadVastenNiveaus() {
+    if (vastenNiveausGeladen) return;
+    try {
+      const res = await fetch(assetUrl("data/vasten-niveaus.json"));
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.labels) Object.assign(VASTEN_LABELS, data.labels);
+      if (data.uitleg) Object.assign(VASTEN_UITLEG, data.uitleg);
+      vastenNiveausGeladen = true;
+    } catch (_) {
+      /* fallback: VASTEN_LABELS / VASTEN_UITLEG hierboven */
+    }
+  }
+
   async function loadEntries() {
+    await loadVastenNiveaus();
     const url = assetUrl("data/entries.json");
     const res = await fetch(url);
     if (!res.ok) throw new Error(`entries.json (${res.status}) ${url}`);
@@ -2684,12 +2700,15 @@
   function renderSynaxarionDay(entries, mmdd) {
     const dayRoot = document.getElementById("synaxarion-day");
     const browse = document.getElementById("synaxarion-browse");
+    const browseHead = document.getElementById("synaxarion-browse-head");
     const heading = document.getElementById("synaxarion-heading");
     const nav = document.getElementById("synaxarion-day-nav");
     const list = document.getElementById("synaxarion-day-entries");
     if (!dayRoot || !list) return;
     if (browse) browse.hidden = true;
+    if (browseHead) browseHead.hidden = true;
     dayRoot.hidden = false;
+    list.hidden = false;
     if (heading) heading.textContent = label(mmdd);
     closeWeergavePanel("synaxarion");
     const prev = shiftMmdd(mmdd, -1);
@@ -2765,6 +2784,8 @@
   function renderSynaxarionBrowse(entries) {
     const dayRoot = document.getElementById("synaxarion-day");
     const browse = document.getElementById("synaxarion-browse");
+    const browseHead = document.getElementById("synaxarion-browse-head");
+    const dayEntries = document.getElementById("synaxarion-day-entries");
     const heading = document.getElementById("synaxarion-heading");
     const list = document.getElementById("synaxarion-list");
     const hint = document.getElementById("synaxarion-hint");
@@ -2774,7 +2795,9 @@
     const styleSlot = document.getElementById("synaxarion-style-slot");
     if (!list) return;
     if (dayRoot) dayRoot.hidden = true;
+    if (dayEntries) dayEntries.hidden = true;
     if (browse) browse.hidden = false;
+    if (browseHead) browseHead.hidden = false;
     if (heading) heading.textContent = "Synaxarion";
     wireWeergavePanel("synaxarion");
     updateSynaxarionWeergaveSummary();

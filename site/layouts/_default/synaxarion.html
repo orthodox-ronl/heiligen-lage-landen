@@ -1,19 +1,15 @@
 {{ define "main" }}
 <section class="overzicht-page synaxarion-page" data-synaxarion>
-  <h1 class="synaxarion-page-title" id="synaxarion-heading">{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="synaxarion-sticky-head">
+    <h1 class="synaxarion-page-title" id="synaxarion-heading">{{ .Title }}</h1>
 
-  <div id="synaxarion-day" hidden>
-    <div class="synaxarion-sticky-head">
+    <div id="synaxarion-day" hidden>
       <div class="rooster-toolbar">
         <div class="page-action-bar" id="synaxarion-day-nav" aria-label="Dag"></div>
       </div>
     </div>
-    <div id="synaxarion-day-entries" class="table-wrap">Laden…</div>
-  </div>
 
-  <div id="synaxarion-browse">
-    <div class="synaxarion-sticky-head">
+    <div id="synaxarion-browse-head">
       <div class="rooster-toolbar">
         <div class="page-action-bar" id="synaxarion-action-bar" aria-label="Bladeren">
           <nav class="letter-nav" id="letter-nav" hidden aria-label="Letters"></nav>
@@ -64,7 +60,13 @@
         <span role="columnheader">Soort</span>
       </div>
     </div>
+  </div>
 
+  {{ .Content }}
+
+  <div id="synaxarion-day-entries" class="table-wrap" hidden>Laden…</div>
+
+  <div id="synaxarion-browse">
     <p class="hint" id="synaxarion-hint"></p>
     <div id="synaxarion-list" class="synaxarion-date-list" role="table" aria-label="Synaxarion"></div>
   </div>
