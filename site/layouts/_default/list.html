@@ -1,6 +1,8 @@
 {{ define "main" }}
 <section class="section-list">
-  <h1>{{ .Title }}</h1>
+  <div class="list-sticky-head">
+    <h1>{{ .Title }}</h1>
+  </div>
   {{ .Content }}
   <ul class="entry-list">
     {{ range sort .Pages "Params.overzicht_sortering" }}
