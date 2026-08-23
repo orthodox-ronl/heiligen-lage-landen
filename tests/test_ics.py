@@ -23,8 +23,9 @@ from lezingen import build_lezingen_dagen_payload  # noqa: E402
 from load_entries import load_entries  # noqa: E402
 
 YEARS = [2025, 2026]
-ALLES = frozenset({"heilige", "feest", "vasten"})
+ALLES = frozenset({"heilige", "feest", "vasten", "vastenvrij"})
 VASTEN = frozenset({"vasten"})
+VASTENVRIJ = frozenset({"vastenvrij"})
 HEILIGEN = frozenset({"heilige"})
 
 _ENTRIES: list | None = None
@@ -82,6 +83,7 @@ def _build(kinds: frozenset[str], stijl: str = "nieuw", years: list[int] | None 
         ALLES: "alles",
         VASTEN: "vasten",
         HEILIGEN: "heiligen",
+        VASTENVRIJ: "vastenvrij",
     }[kinds]
     return build_ics(
         entries,
@@ -146,6 +148,18 @@ def test_vasten_only_grote_vasten_en_lege_dinsdag() -> None:
     assert events["20260304"]["summary"] == "streng · Grote Vasten"
     assert events["20260307"]["summary"] == "wijn en olie · Grote Vasten"
     assert "20260113" not in events
+
+
+def test_lichte_week_niet_in_alleen_vasten() -> None:
+    events = parse_events(_build(VASTEN))
+    assert "20260412" not in events
+    assert "20260413" not in events
+
+
+def test_lichte_week_in_vastenvrij() -> None:
+    events = parse_events(_build(VASTENVRIJ))
+    ev = events["20260412"]
+    assert "vastenvrij" in ev["summary"].lower()
 
 
 def test_heiligen_only_geen_vastenprefix() -> None:

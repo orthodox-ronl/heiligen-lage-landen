@@ -582,7 +582,12 @@
                 ? "vasten"
                 : "feest",
           ];
-    for (const o of obs) set.add(o);
+    const vastenvrij = entry.vastenniveau === "vrij";
+    for (const o of obs) {
+      if (vastenvrij && o === "vasten") continue;
+      set.add(o);
+    }
+    if (vastenvrij) set.add("vastenvrij");
   }
 
   function label(mmdd) {
@@ -1332,6 +1337,16 @@
         `hetzelfde (Kerst blijft 25&nbsp;december).</p>` +
         `<p>Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag ` +
         `(Pascha en wat daarvan afhangt).</p>`;
+      fillNieuwOudMeer(meer);
+      return;
+    }
+    if (kind === "vierdatum-gelijk") {
+      title.textContent = "Zelfde burgerlijke dag";
+      body.innerHTML =
+        `<p>Nieuw en oud vallen hier op <strong>dezelfde burgerlijke dag</strong> ` +
+        `(Nederlandse agenda). Dat geldt voor Pascha en de dagen die daarvan ` +
+        `afhangen.</p>` +
+        `<p>Er staat daarom geen tweede datum tussen haakjes.</p>`;
       fillNieuwOudMeer(meer);
       return;
     }
@@ -2115,12 +2130,17 @@
   function dayClass(kinds) {
     const hasF = kinds.has("feest");
     const hasH = kinds.has("heilige");
-    const hasV = kinds.has("vasten");
+    const hasFree = kinds.has("vastenvrij");
+    const hasV = kinds.has("vasten") && !hasFree;
     if (hasF && hasH && hasV) return "day-feest-heilige-vasten";
+    if (hasF && hasH && hasFree) return "day-feest-heilige-vastenvrij";
     if (hasF && hasV) return "day-feest-vasten";
     if (hasH && hasV) return "day-heilige-vasten";
+    if (hasF && hasFree) return "day-feest-vastenvrij";
+    if (hasH && hasFree) return "day-heilige-vastenvrij";
     if (hasF && hasH) return "day-beide";
     if (hasV) return "day-vasten";
+    if (hasFree) return "day-vastenvrij";
     if (hasF) return "day-feest";
     if (hasH) return "day-heilige";
     return "";
@@ -2381,9 +2401,36 @@
   }
 
   function entryWhenLabel(e) {
-    if (e.van && e.tot) return `${label(e.van)} – ${label(e.tot)}`;
-    if (e.feestdatum) return label(e.feestdatum);
+    if (e.van && e.tot) return `${shortLabel(e.van)} – ${shortLabel(e.tot)}`;
+    if (e.feestdatum) return shortLabel(e.feestdatum);
     return "—";
+  }
+
+  function entryImportance(entry) {
+    const id = (entry && entry.id) || "";
+    if (entry.soort === "feest") {
+      if (
+        id.startsWith("voorfeest-") ||
+        id.startsWith("nafeest-") ||
+        id.startsWith("synaxis-") ||
+        id.startsWith("teruggave-")
+      ) {
+        return 2;
+      }
+      return 0;
+    }
+    if (entry.soort === "heilige") return 1;
+    if (entry.soort === "vasten") {
+      if (entry.vorm === "weekdagen") return 4;
+      return 3;
+    }
+    return 5;
+  }
+
+  function compareSynaxarionEntries(a, b) {
+    const d = entryImportance(a) - entryImportance(b);
+    if (d) return d;
+    return (a.naam || "").localeCompare(b.naam || "", "nl");
   }
 
   function entryThumbHtml(e) {
@@ -2407,7 +2454,7 @@
     if (!rows.length) {
       return "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
     }
-    // Groepeer opeenvolgende rijen met dezelfde datumlabel → één cel met rowspan.
+    // Groepeer opeenvolgende rijen met dezelfde datumlabel.
     const groups = [];
     for (const row of rows) {
       const key = row.whenKey != null ? row.whenKey : row.whenHtml;
@@ -2424,24 +2471,30 @@
     }
     const body = groups
       .map((group) => {
-        const span = group.entries.length;
-        return group.entries
-          .map((entry, i) => {
+        const entries = group.entries.slice().sort(compareSynaxarionEntries);
+        const names = entries
+          .map((entry) => {
             const thumb = entryThumbHtml(entry);
             const href = assetUrl(String(entry.url || "").replace(/^\//, ""));
-            const dateCell =
-              i === 0
-                ? `<td${span > 1 ? ` rowspan="${span}"` : ""} class="synaxarion-date-cell">${group.whenHtml}</td>`
-                : "";
             return (
-              `<tr>` +
-              dateCell +
-              `<td>${thumb}<a href="${href}">${escapeHtml(entry.naam)}</a></td>` +
-              `<td>${escapeHtml(kindLabel(entry))}</td>` +
-              `</tr>`
+              `<div class="synaxarion-stack-item">${thumb}` +
+              `<a href="${href}">${escapeHtml(entry.naam)}</a></div>`
             );
           })
           .join("");
+        const kinds = entries
+          .map(
+            (entry) =>
+              `<div class="synaxarion-stack-item">${escapeHtml(kindLabel(entry))}</div>`
+          )
+          .join("");
+        return (
+          `<tr>` +
+          `<td class="synaxarion-date-cell">${group.whenHtml}</td>` +
+          `<td class="synaxarion-stack">${names}</td>` +
+          `<td class="synaxarion-stack">${kinds}</td>` +
+          `</tr>`
+        );
       })
       .join("");
     return (
@@ -2466,22 +2519,27 @@
     const isToday = Boolean(opts && opts.isToday);
     const monthKey = (opts && opts.monthKey) || mmdd.slice(0, 2);
     const dagHref = pageUrl("synaxarion/", { dag: mmdd });
-    const names = (entries || [])
+    const sorted = (entries || []).slice().sort(compareSynaxarionEntries);
+    const names = sorted
       .map((entry) => {
         const thumb = entryThumbHtml(entry);
         const href = assetUrl(String(entry.url || "").replace(/^\//, ""));
         return (
-          `<span class="date-list-naam-item">${thumb}` +
+          `<span class="synaxarion-stack-item date-list-naam-item">${thumb}` +
           `<a href="${href}">${escapeHtml(entry.naam)}</a></span>`
         );
       })
       .join("");
-    const kinds = Array.from(
-      new Set((entries || []).map((e) => kindLabel(e)))
-    ).join(", ");
+    const kinds = sorted
+      .map(
+        (entry) =>
+          `<span class="synaxarion-stack-item">${escapeHtml(kindLabel(entry))}</span>`
+      )
+      .join("");
     const naamHtml = names
-      ? names
+      ? `<span class="synaxarion-stack">${names}</span>`
       : `<span class="muted">Geen vaste feestdag in deze selectie</span>`;
+    const soortHtml = kinds ? `<span class="synaxarion-stack">${kinds}</span>` : "";
     return (
       `<div class="date-list-row${isToday ? " is-today" : ""}" role="row" ` +
       `data-month-key="${monthKey}" data-mmdd="${mmdd}"` +
@@ -2490,7 +2548,7 @@
       `<div class="date-list-dag" role="cell">` +
       `<a href="${dagHref}">${dayNumber(mmdd)}</a></div>` +
       `<div class="date-list-naam" role="cell">${naamHtml}</div>` +
-      `<div class="date-list-soort" role="cell">${escapeHtml(kinds)}</div>` +
+      `<div class="date-list-soort" role="cell">${soortHtml}</div>` +
       `</div>`
     );
   }
@@ -2643,11 +2701,7 @@
     const shows = checkedShows("show");
     const matched = filterEntries(entries, shows)
       .filter((e) => isFixedCycleEntry(e) && fixedEntryOnMmdd(e, mmdd))
-      .sort(
-        (a, b) =>
-          entryFixedSortKey(a).localeCompare(entryFixedSortKey(b)) ||
-          a.naam.localeCompare(b.naam, "nl")
-      );
+      .sort(compareSynaxarionEntries);
     if (!matched.length) {
       list.innerHTML =
         `<p class="muted today-geen-heilige">` +
@@ -2807,7 +2861,7 @@
         const isToday = mmdd === todayMmdd;
         const dayEntries = filtered
           .filter((e) => fixedEntryOnMmdd(e, mmdd))
-          .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+          .sort(compareSynaxarionEntries);
         if (!dayEntries.length) {
           if (isToday) {
             html += synaxarionEmptyTodayRowHtml(mmdd);
@@ -2973,7 +3027,10 @@
       (e) => kinds.has(e.soort) && (e.soort === "heilige" || e.soort === "feest")
     );
     const vasten = mixVastenniveau(dayEntries, weekday, mmdd);
-    const showVasten = kinds.has("vasten") && vasten;
+    const isVrij = Boolean(vasten && vasten.niveau === "vrij");
+    const showVasten =
+      Boolean(vasten) &&
+      (isVrij ? kinds.has("vastenvrij") : kinds.has("vasten"));
     let kop = icsKopFeesten(visible);
     let headline = kop.map(entryNaam).join(", ");
     if (!headline && kinds.has("feest") && year && style && mmdd) {
@@ -3043,22 +3100,17 @@
       "nieuw";
     if (!shows.length) return null;
     const set = new Set(shows);
-    const mapping = [
-      [["heilige", "feest", "vasten"], "alles"],
-      [["heilige"], "heiligen"],
-      [["feest"], "feesten"],
-      [["vasten"], "vasten"],
-      [["heilige", "feest"], "heiligen-feesten"],
-      [["heilige", "vasten"], "heiligen-vasten"],
-      [["feest", "vasten"], "feesten-vasten"],
-    ];
-    let key = null;
-    for (const [need, name] of mapping) {
-      if (need.length === set.size && need.every((k) => set.has(k))) {
-        key = name;
-        break;
-      }
+    const order = ["heilige", "feest", "vasten", "vastenvrij"];
+    const file = {
+      heilige: "heiligen",
+      feest: "feesten",
+      vasten: "vasten",
+      vastenvrij: "vastenvrij",
+    };
+    if (order.every((k) => set.has(k)) && set.size === 4) {
+      return `alles-${stijl}.ics`;
     }
+    const key = order.filter((k) => set.has(k)).map((k) => file[k]).join("-");
     return key ? `${key}-${stijl}.ics` : null;
   }
 
@@ -3080,7 +3132,12 @@
     if (!shows.length || !heeftBestand) {
       return "Kies minstens één soort dag. Daarna krijgt de knop hieronder een betekenis.";
     }
-    const labels = { heilige: "heiligen", feest: "feesten", vasten: "vasten" };
+    const labels = {
+      heilige: "heiligen",
+      feest: "feesten",
+      vasten: "vasten",
+      vastenvrij: "vastenvrij",
+    };
     const wat = nlOpsomming(shows.map((s) => labels[s] || s));
     const kal =
       stijl === "oud" ? "de oude kalender" : "de nieuwe kalender";

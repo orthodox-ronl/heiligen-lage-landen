@@ -31,7 +31,8 @@ how-to YAML; een tweede beleidstekst naast de uitleg.
 ## Sticky header
 
 **Wel:** zoekveld; sorteerkeuze Naam (default) / Datum / Plaats;
-kolomkoppen die bij de sorteerkeuze horen.
+kolomkoppen die bij de sorteerkeuze horen. Op een breed scherm staan
+zoeken en sorteerknoppen in dezelfde rij.
 
 **Niet:** filter op interne `selectie` of `bronlaag` voor bezoekers.
 

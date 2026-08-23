@@ -18,7 +18,8 @@ beheer-generate-uitleg.
 
 ## Stap 1: wat
 
-**Wel:** heiligen, feesten, vasten (één, twee of drie).
+**Wel:** heiligen, feesten, vasten, vastenvrij (één of meer). Vasten
+is vasten; vastenvrij is de uitzondering (Lichte Week, Kerst, …).
 
 **Niet:** universeel menologion als optie.
 
@@ -37,8 +38,8 @@ momentopname.
 
 ## Voorbeeldweek
 
-**Wel:** hoe een dag in de app-titel oogt; vasten als kort label als
-aangevinkt.
+**Wel:** hoe een dag in de app-titel oogt; vasten of vastenvrij als
+kort label als aangevinkt.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
 titellogica.

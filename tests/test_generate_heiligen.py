@@ -276,7 +276,7 @@ def test_entry_page_feestdag_link_en_geen_synaxarion_voet(
     assert meta["vierdatum_oud"] == "11-20"
     assert "**Feestdag:** [7 november](/datum/?dag=11-07)" in body
     assert "vierdatum-oud" in body
-    assert "(20 november)" in body
+    assert "(20 nov)" in body
     assert "20 november oude kalender" not in body
     assert "Synaxarion:" not in body
     assert "/synaxarion/" not in body
@@ -304,7 +304,7 @@ def test_entry_page_andere_gedenkdagen(
     assert "**Feestdag:** [7 november](/datum/?dag=11-07)" in body
     assert "**Andere gedenkdagen:**" in body
     assert "[23 december](/datum/?dag=12-23)" in body
-    assert "(5 januari)" in body
+    assert "(5 jan)" in body
     assert "5 januari oude kalender" not in body
     assert "gedachtenis op de Orthodoxe kalender" in body
     assert "23 december —" not in body
@@ -681,7 +681,7 @@ def test_apostelvasten_tot_heeft_oude_kalender_haakjes(
     assert meta["tot"] == "06-28"
     assert meta["tot_oud"] == "07-11"
     assert "28 juni" in body
-    assert "(11 juli)" in body
+    assert "(11 jul)" in body
     assert "11 juli oude kalender" not in body
     assert "vierdatum-oud" in body
     assert "komende-jaren-note" not in body
@@ -718,7 +718,7 @@ def test_weekdag_relatief_tabel_burgerlijk_nieuw_en_oud(
     assert "<th>Datum</th>" in body
     assert "<th>Juliaans</th>" not in body
     assert "20 december" in body
-    assert "(3 januari 2027)" in body
+    assert "(3 jan 2027)" in body
     assert "3 januari 2027 oude kalender" not in body
     assert "vierdatum-oud" in body
     assert "Tussen haakjes" not in body

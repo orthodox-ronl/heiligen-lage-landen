@@ -20,7 +20,9 @@ vastenperiodes en wekelijkse vastendagen).
 
 **Wel:** naam (link naar de detailpagina); feestdatum als die er is,
 met haakjes voor de oude burgerlijke datum; bij een vaste vastenperiode
-van–tot met dezelfde haakjes. Sortering zoals de layout nu doet.
+van–tot met dezelfde haakjes. Sortering: eerst de jaarcyclus in
+**kerkelijk jaar** (1 september → 31 augustus), daarna de paascyclus op
+offset t.o.v. Pascha, tenslotte wekelijkse dagen.
 
 **Niet:** icoon verplicht; vita in de rij; paascyclus-dagen zonder
 feestdatum weglaten uit het feestenoverzicht (ze horen in de lijst,

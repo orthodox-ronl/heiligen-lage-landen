@@ -2,25 +2,21 @@
 title: "Kleuren in de jaarkalender"
 description: "Wat de kleuren op de jaarkalender betekenen"
 uitleg_stijl: kleuren
-git_date: 2026-08-17
+git_date: 2026-08-23
 ---
 
 Op de [jaarkalender]({{% ref "/kalender" %}}) heeft elke dag een kleur. Die
 zegt in één oogopslag *wat voor soort dag* het is: een feest, een heilige,
-vasten, of een combinatie.
+vasten of vastenvrij.
 
-Een dag kan meer dan één ding tegelijk zijn. De Onthoofding van Johannes is
-een feest én een vastendag. De kalender toont dat met een eigen kleur, zodat
-u beide ziet.
+Een dag kan meer dan één ding tegelijk zijn. Dan deelt de cel de kleuren
+strak; u ziet dan de combinatie van de soorten hieronder.
 
 <ul class="legend compact kleuren-legenda">
 <li><span class="swatch day-feest"></span> een vast feest</li>
 <li><span class="swatch day-heilige"></span> een of meer heiligen</li>
-<li><span class="swatch day-beide"></span> feest én heilige op dezelfde dag</li>
 <li><span class="swatch day-vasten"></span> vasten (een periode of woensdag/vrijdag)</li>
-<li><span class="swatch day-feest-vasten"></span> feest én vasten</li>
-<li><span class="swatch day-heilige-vasten"></span> heilige én vasten</li>
-<li><span class="swatch day-today"></span> vandaag</li>
+<li><span class="swatch day-vastenvrij"></span> expliciet vastenvrij (bijvoorbeeld de Lichte Week)</li>
 </ul>
 
 De kleur zegt niet *hoe streng* het vasten is. Dat staat op de dag zelf, als

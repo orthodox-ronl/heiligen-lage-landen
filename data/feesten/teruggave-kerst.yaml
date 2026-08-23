@@ -1,0 +1,30 @@
+id: teruggave-kerst
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van Kerst
+  alternatief:
+  - Apodosis van de Geboorte van Christus
+observances:
+  - feest
+datum:
+  waarde: "12-31"
+  stijl: juliaans
+icoon:
+  bestand: iconen/kerst.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Kerst.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Kerst"
+    url: "https://orthodoxwiki.org/Nativity"
+    geraadpleegd: "2026-08-17"

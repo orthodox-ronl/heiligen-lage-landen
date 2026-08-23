@@ -8,6 +8,7 @@ cyclus: jaar
 bronlaag: nagekeken
 lage_landen: false
 source_path: "data/vasten/ontslapen-vasten.yaml"
+overzicht_sortering: "1-11-01-ontslapen-vasten"
 van: 08-01
 tot: 08-14
 van_oud: 08-14
@@ -21,12 +22,12 @@ vastenniveau: streng
 onderdrukt_wekelijks_vasten: true
 ---
 
-Vasten van 1 tot en met 14 augustus, ter voorbereiding op het Ontslapen.
+Vasten van 1 tot en met 14 augustus <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(27 aug)</span>, ter voorbereiding op het Ontslapen.
 
 ## Verhaal
 
 Het Moeder Gods vasten bereidt voor op het feest van het Ontslapen van de
-Moeder Gods (15 augustus). In veel tradities is hij streng (vergelijkbaar met
+Moeder Gods (15 augustus <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(28 aug)</span>). In veel tradities is hij streng (vergelijkbaar met
 de Grote Vasten: geen vlees/zuivel; vis vaak beperkt, o.a. op bepaalde feesten
 in augustus). Exacte versoepelingen hangen van typikon en parochie af.
 

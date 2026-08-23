@@ -32,15 +32,19 @@ Gedefinieerd in `site/assets/css/site.css`, gezet door
 | --- | --- |
 | `day-feest` | alleen feest |
 | `day-heilige` | alleen heilige(n) |
-| `day-beide` | feest én heilige |
+| `day-beide` | feest én heilige (strakke helft/helft) |
 | `day-vasten` | alleen vasten |
+| `day-vastenvrij` | alleen expliciet vastenvrij |
 | `day-feest-vasten` | feest én vasten |
 | `day-heilige-vasten` | heilige én vasten |
-| `day-feest-heilige-vasten` | feest, heilige én vasten (op de kalender; niet in de compacte legenda) |
+| `day-feest-heilige-vasten` | feest, heilige én vasten |
+| `day-feest-vastenvrij` / `day-heilige-vastenvrij` / `day-feest-heilige-vastenvrij` | dezelfde combinaties met vastenvrij in plaats van vasten |
 
-«Vandaag» is geen observantie maar een markering (`day.is-today` / swatch
-`day-today`).
+De compacte **legenda** toont alleen de vier basiskleuren (feest, heilige,
+vasten, vastenvrij). Combinaties op de kalender zijn strakke vlakken van
+die kleuren. «Vandaag» is een omlijning, geen extra legenda-swatch.
 
 Wekelijks wo/vr-vasten telt mee als vasten, tenzij een periode of
-`onderdrukt_wekelijks_vasten` het onderdrukt. Het **niveau** (streng, vis,
+`onderdrukt_wekelijks_vasten` het onderdrukt. Expliciet `vastenniveau: vrij`
+kleurt **vastenvrij** (groen), niet vasten. Het **niveau** (streng, vis,
 …) is een aparte indicatie, geen extra kleur.

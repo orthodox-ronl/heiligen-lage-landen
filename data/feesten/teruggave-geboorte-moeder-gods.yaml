@@ -1,0 +1,30 @@
+id: teruggave-geboorte-moeder-gods
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van de Geboorte van de Moeder Gods
+  alternatief:
+  - Apodosis van de Geboorte van de Moeder Gods
+observances:
+  - feest
+datum:
+  waarde: "09-12"
+  stijl: juliaans
+icoon:
+  bestand: iconen/geboorte-moeder-gods.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Geboorte van de Moeder Gods.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Geboorte van de Moeder Gods"
+    url: "https://orthodoxwiki.org/Nativity_of_the_Theotokos"
+    geraadpleegd: "2026-08-17"

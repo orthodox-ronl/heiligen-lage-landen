@@ -277,14 +277,14 @@ def test_jaarkalender_en_uitleg_zelfde_legenda_swatches() -> None:
     for cls in (
         "day-feest",
         "day-heilige",
-        "day-beide",
         "day-vasten",
-        "day-feest-vasten",
-        "day-heilige-vasten",
-        "day-today",
+        "day-vastenvrij",
     ):
         assert cls in kal, cls
         assert cls in uitleg, cls
+    assert "day-beide" not in kal
+    assert "day-today" not in kal
+    assert "day-beide" not in uitleg
     assert ".kalender-page .legend.compact" in css
     assert "display: none;" in css.split(".kalender-page .legend.compact")[1][:80]
 

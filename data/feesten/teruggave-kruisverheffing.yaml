@@ -1,0 +1,30 @@
+id: teruggave-kruisverheffing
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van de Kruisverheffing
+  alternatief:
+  - Apodosis van de Kruisverheffing
+observances:
+  - feest
+datum:
+  waarde: "09-21"
+  stijl: juliaans
+icoon:
+  bestand: iconen/kruisverheffing.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Kruisverheffing.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Kruisverheffing"
+    url: "https://orthodoxwiki.org/Exaltation_of_the_Cross"
+    geraadpleegd: "2026-08-17"

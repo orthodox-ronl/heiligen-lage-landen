@@ -8,6 +8,7 @@ cyclus: wekelijks
 bronlaag: nagekeken
 lage_landen: false
 source_path: "data/vasten/woensdag-vasten.yaml"
+overzicht_sortering: "3-woensdag-vasten"
 weekdagen:
   - 3
 alternatief:

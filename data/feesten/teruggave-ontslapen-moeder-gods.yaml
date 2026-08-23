@@ -1,0 +1,30 @@
+id: teruggave-ontslapen-moeder-gods
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van het Ontslapen van de Moeder Gods
+  alternatief:
+  - Apodosis van het Ontslapen
+observances:
+  - feest
+datum:
+  waarde: "08-23"
+  stijl: juliaans
+icoon:
+  bestand: iconen/ontslapen-moeder-gods.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Ontslapen.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Ontslapen"
+    url: "https://orthodoxwiki.org/Dormition"
+    geraadpleegd: "2026-08-17"
