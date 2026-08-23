@@ -1,4 +1,4 @@
-# Heiligen van de Lage Landen — orthodoxe kalender
+# Heiligen van de Lage Landen
 
 Overzicht van **heiligen van de Lage Landen**, met orthodoxe **vaste feesten**
 (jaarcyclus) en kalender.

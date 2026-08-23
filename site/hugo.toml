@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "nl"
 defaultContentLanguage = "nl"
-title = "Heiligen van de Lage Landen — orthodoxe kalender"
+title = "Heiligen van de Lage Landen"
 enableRobotsTXT = true
 canonifyURLs = true
 disableKinds = ["taxonomy", "term"]

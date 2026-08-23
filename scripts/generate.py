@@ -992,7 +992,7 @@ def ensure_hand_owned_indexes() -> None:
     specs = [
         {
             "path": CONTENT / "_index.md",
-            "title": "Heiligen van de Lage Landen — orthodoxe kalender",
+            "title": "Heiligen van de Lage Landen",
             "layout": None,
         },
         {

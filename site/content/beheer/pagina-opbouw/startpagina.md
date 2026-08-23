@@ -20,7 +20,7 @@ die hoort op [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
 
 **Wel:** orthodox kruis (zelfde merkteken als de andere
 orthodox-ronl-sites) links van de sitenaam. Sitenaam:
-**Heiligen van de Lage Landen — orthodoxe kalender**, link naar `/`
+**Heiligen van de Lage Landen**, link naar `/`
 (dit overzicht). Het kruis opent een popover: eerst het
 heiligenoverzicht, dan dat de kalender daarbij hoort, en dat de site
 nog jong is. Eerste bezoek aan `/`: de popover gaat vanzelf open.
