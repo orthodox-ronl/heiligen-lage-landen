@@ -5,17 +5,12 @@ uitleg_stijl: datumpagina
 git_date: 2026-08-18
 ---
 
-Klik op de [jaarkalender]({{% ref "/kalender" %}}) op een dag, of blader vanaf
-*Vandaag* met de pijltjes. U krijgt dan **die dag in dat jaar** te zien:
-feesten, heiligen, dagen van de paascyclus en vasten die op die
-**burgerlijke** datum vallen — de datum zoals Nederland die noemt. De titel
-tussen de pijlen is de weekdag, de datum, en *(vandaag)* als het vandaag
-is. Rechts van de pijl naar de volgende dag staat de
-[toon van de week]({{% ref "/uitleg/toon" %}}) (Toon 1 tot 8), met een
-eigen korte uitleg.
-
-De startpagina (logo) is dezelfde weergave als een datumpagina, maar dan
-voor de huidige dag.
+De startpagina is het [overzicht van heiligen van de Lage Landen]({{% ref "/heiligen" %}}).
+*Vandaag* in het menu opent **deze dag in dit jaar**: feesten, heiligen,
+dagen van de paascyclus en vasten op die **burgerlijke** datum — de datum
+zoals Nederland die noemt. Klik anders op de [jaarkalender]({{% ref "/kalender" %}})
+op een dag, of blader vanaf Vandaag met de pijltjes. De titel tussen de
+pijlen is de weekdag, de datum, en *(vandaag)* als het vandaag is.
 
 Dat is iets anders dan het [Synaxarion]({{% ref "/uitleg/synaxarion" %}}). Het Synaxarion
 zegt: wat hoort *altijd* bij 15 augustus? Een datumpagina zegt: wat valt er

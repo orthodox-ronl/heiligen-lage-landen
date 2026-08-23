@@ -26,13 +26,15 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <div class="brand-block">
-        <button type="button" class="brand-mark" data-info-tip="site" title="Over deze kalender" aria-label="Over deze kalender">
+        <button type="button" class="brand-mark" data-info-tip="site" title="Over deze site" aria-label="Over deze site">
           <img src="{{ "images/favicon-32x32.png" | relURL }}" width="32" height="32" alt="">
         </button>
         <a class="brand" href="{{ "" | relURL }}">{{ .Site.Title }}</a>
       </div>
       <div class="header-tools">
         <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="{{ "" | relURL }}">Heiligen</a>
+          <a href="{{ "datum/" | relURL }}">Vandaag</a>
           {{/* absURL: relURL "kalender/" botst met Pages-base /kalender/ + canonifyURLs */}}
           <a href="{{ "kalender/" | absURL }}">Kalender</a>
           <a href="{{ "lezingenrooster/" | relURL }}">Lezingenrooster</a>
@@ -40,7 +42,6 @@
           <details class="nav-dropdown">
             <summary>Overzichten</summary>
             <div class="nav-dropdown-panel">
-              <a href="{{ "heiligen/" | relURL }}">Heiligen</a>
               <a href="{{ "feesten/" | relURL }}">Feesten</a>
               <a href="{{ "vasten/" | relURL }}">Vasten</a>
             </div>

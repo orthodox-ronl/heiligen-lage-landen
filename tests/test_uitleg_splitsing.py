@@ -326,8 +326,8 @@ def test_zoeklabel_zelfde_lettergrootte() -> None:
 
 def test_startpagina_identiteit_via_popover() -> None:
     _meta, body = _meta_body(BEHEER / "pagina-opbouw" / "startpagina.md")
-    assert "**Gesloten.**" in body
-    assert "HTML-commentaar blijft commentaar" in body
+    assert "heiligenoverzicht" in body
+    assert "dagkaart van vandaag staat **niet** hier" in body
 
 
 def test_nieuw_oud_uitleg_beschrijft_haakjes() -> None:

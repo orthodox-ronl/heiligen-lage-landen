@@ -680,14 +680,11 @@
   }
 
   function daySurfaceHref(year, mmdd, style, opts) {
-    const isToday =
-      year === new Date().getFullYear() && mmdd === todayMmdd(style);
     const bindStyle = Boolean(opts && opts.bindStyle);
     const params = {};
     if (bindStyle || style === "juliaans") {
       params.stijl = style === "juliaans" ? "juliaans" : "gregoriaans";
     }
-    if (isToday) return pageUrl("", params);
     return pageUrl("datum/", { datum: year + "-" + mmdd, ...params });
   }
 
@@ -702,21 +699,8 @@
     return Boolean(document.querySelector("[data-datum]"));
   }
 
-  /** Home = vandaag; andere dagen = /datum/. */
-  function redirectDaySurfaceIfNeeded(style) {
-    const onHome = isHomeSurface();
-    const onDatum = isDatumSurface();
-    if (!onHome && !onDatum) return false;
-    const view = getViewDate(style);
-    const isToday = isViewToday(style);
-    if (onHome && !isToday) {
-      window.location.replace(daySurfaceHref(view.year, view.mmdd, style));
-      return true;
-    }
-    if (onDatum && isToday) {
-      window.location.replace(daySurfaceHref(view.year, view.mmdd, style));
-      return true;
-    }
+  /** Dagkaart leeft op /datum/; de startpagina is het heiligenoverzicht. */
+  function redirectDaySurfaceIfNeeded(_style) {
     return false;
   }
 
@@ -1258,11 +1242,11 @@
       return;
     }
     if (kind === "site") {
-      title.textContent = "Over deze kalender";
+      title.textContent = "Over deze site";
       body.innerHTML =
-        `<p>Praktisch hulpmiddel voor orthodoxe gelovigen in de Lage Landen ` +
-        `(vooral de Russische traditie). Gedachtenissen beperken zich tot ` +
-        `de Heiligen van de Lage Landen.</p>` +
+        `<p>Overzicht van heiligen die in de Lage Landen hebben gewerkt, ` +
+        `of na het schisma de Orthodoxie hier hebben opgebouwd. De kalender, ` +
+        `lezingen en vasten horen daarbij (vooral de Russische traditie).</p>` +
         `<p>De site is nog jong. Hij ziet er al bruikbaar uit, maar de ` +
         `teksten zijn nog niet nagekeken door mensen die van huis uit ` +
         `orthodox zijn. We zoeken die toets; tot die tijd is dit geen ` +
@@ -1270,7 +1254,8 @@
       if (meer) {
         meer.hidden = false;
         meer.innerHTML =
-          `<a class="text-link" href="${assetUrl("uitleg/")}">Meer uitleg</a>`;
+          `<a class="text-link" href="${assetUrl("heiligen/")}">Het overzicht</a>` +
+          ` · <a class="text-link" href="${assetUrl("uitleg/")}">Meer uitleg</a>`;
       }
       return;
     }
@@ -1729,7 +1714,7 @@
     setStyle(style);
     wireInfoTips(cardEntries);
     wireBijbelVertaling(cardEntries);
-    if (isDatumSurface() || isHomeSurface()) {
+    if (isDatumSurface()) {
       const site = document.title.includes(" · ")
         ? document.title.slice(document.title.lastIndexOf(" · ") + 3)
         : document.title;

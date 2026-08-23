@@ -687,20 +687,73 @@ def write_entry_page(entry: dict[str, Any]) -> None:
     write_text(CONTENT / kind / f"{entry['id']}.md", "\n".join(fm + ["", *body]))
 
 
-def write_generated_indexes() -> None:
-    """Sectie-indexes die bij --clean opnieuw worden aangemaakt."""
-    write_text(
-        CONTENT / "heiligen" / "_index.md",
-        """---
-title: "Heiligen"
----
+VOORBEELD_HEILIGEN = (
+    "willibrord",
+    "servatius",
+    "gertrudis",
+    "johannes-van-shanghai",
+)
 
-Overzicht van <span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">heiligen van de Lage Landen in deze kalender</span>.
-Zoeken vindt ook andere namen van dezelfde heilige, en plaatsen
-(bijvoorbeeld Utrecht, Vlaanderen of Friesland). De kaart toont die
-plaatsen; streken staan cursief in de lijst.
-""",
+
+def _nl_en_lijst(items: list[str]) -> str:
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} en {items[1]}"
+    return ", ".join(items[:-1]) + f" en {items[-1]}"
+
+
+def write_generated_indexes(entries: list[dict[str, Any]] | None = None) -> None:
+    """Sectie-indexes die bij --clean opnieuw worden aangemaakt."""
+    heiligen = [e for e in (entries or []) if e.get("soort") == "heilige"]
+    aantal = len(heiligen)
+    by_id = {e["id"]: e for e in heiligen}
+    voorbeelden: list[str] = []
+    for hid in VOORBEELD_HEILIGEN:
+        entry = by_id.get(hid)
+        if entry is None:
+            continue
+        naam = entry["namen"]["primair"]
+        voorbeelden.append(f"[{naam}]({entry_permalink(entry)})")
+    if aantal:
+        kop = (
+            f"Overzicht van **{aantal}** "
+            '<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">'
+            "heiligen van de Lage Landen</span>."
+        )
+    else:
+        kop = (
+            "Overzicht van "
+            '<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">'
+            "heiligen van de Lage Landen</span>."
+        )
+    delen = [
+        "---",
+        'title: "Heiligen van de Lage Landen"',
+        "---",
+        "",
+        kop,
+        "",
+        "Wie hier predikte, stichtte of leed, of na het schisma de Orthodoxie "
+        "in Nederland of België hielp opbouwen. Niet iedere heilige van de "
+        "Kerk staat hier. [Wie erin hoort](/uitleg/heiligen/).",
+        "",
+    ]
+    if voorbeelden:
+        delen.extend(
+            [f"Bekende namen: {_nl_en_lijst(voorbeelden)}.", ""]
+        )
+    delen.extend(
+        [
+            "Zoeken vindt ook andere namen van dezelfde heilige, en plaatsen",
+            "(bijvoorbeeld Utrecht, Vlaanderen of Friesland). De kaart toont die",
+            "plaatsen; streken staan cursief in de lijst.",
+            "",
+        ]
     )
+    write_text(CONTENT / "heiligen" / "_index.md", "\n".join(delen))
     write_text(
         CONTENT / "feesten" / "_index.md",
         """---
@@ -837,7 +890,7 @@ def ensure_hand_owned_indexes() -> None:
     specs = [
         {
             "path": CONTENT / "_index.md",
-            "title": "Orthodoxe Kalender met Heiligen van de Lage Landen",
+            "title": "Heiligen van de Lage Landen — orthodoxe kalender",
             "layout": None,
         },
         {
@@ -1278,7 +1331,7 @@ def main() -> int:
     ensure_hand_owned_indexes()
     ensure_achtergrond_topics()
     write_vasten_uitleg()
-    write_generated_indexes()
+    write_generated_indexes(entries)
     for entry in entries:
         write_entry_page(entry)
     write_entries_json(entries)

@@ -10,10 +10,11 @@ git_date: 2026-08-21
 
 ## Inleiding
 
-**Wel:** wat deze site is (praktische kalender voor NL/BE); wat zij
-niet is (geen volledig menologion, geen typikon, geen liturgisch
-boek); wat haar bijzonder maakt. Verwijzing dat technische details op
-bijlagen en [Voor beheerders]({{% ref "/beheer" %}}) staan.
+**Wel:** wat deze site is (overzicht van heiligen van de Lage Landen,
+met orthodoxe kalender voor NL/BE); wat zij niet is (geen volledig
+menologion, geen typikon, geen liturgisch boek); wat haar bijzonder
+maakt. Verwijzing dat technische details op bijlagen en
+[Voor beheerders]({{% ref "/beheer" %}}) staan.
 
 **Niet:** how-to YAML; de selectielijst; `*-technisch` in deze
 inleiding als leesstof.

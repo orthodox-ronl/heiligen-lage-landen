@@ -1,13 +1,8 @@
 {{ define "main" }}
-<section class="home" data-home>
-  <h1 class="page-title-row day-surface-sticky-title" id="today-heading-row">
-    <span class="title-nav" id="today-heading">Vandaag</span>
-  </h1>
-
-  <div class="today-card" id="today-card" aria-live="polite">
-    <div id="today-entries">Laden…</div>
-  </div>
-
-  {{ .Content }}
-</section>
+{{ $sec := site.GetPage "/heiligen" }}
+{{ with $sec }}
+  {{ partial "heiligen-overzicht.html" . }}
+{{ else }}
+  <p>Het heiligenoverzicht kon niet worden geladen.</p>
+{{ end }}
 {{ end }}

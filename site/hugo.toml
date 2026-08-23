@@ -1,13 +1,13 @@
 baseURL = "/"
 languageCode = "nl"
 defaultContentLanguage = "nl"
-title = "Orthodoxe Kalender met Heiligen van de Lage Landen"
+title = "Heiligen van de Lage Landen — orthodoxe kalender"
 enableRobotsTXT = true
 canonifyURLs = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Orthodoxe vaste feesten en heiligen van de Lage Landen — kalender, verhalen en ICS-abonnement."
+  description = "Overzicht van heiligen van de Lage Landen, met orthodoxe kalender, verhalen en ICS-abonnement."
   github = "https://github.com/orthodox-ronl/kalender"
   org = "https://github.com/orthodox-ronl"
   feedback_email = "orthodoxronl@duck.com"

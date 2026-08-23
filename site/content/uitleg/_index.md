@@ -3,10 +3,11 @@ title: "Uitleg"
 git_date: 2026-08-18
 ---
 
-Deze site is een **praktische orthodoxe kalender** voor Nederland en België.
-Op een burgerlijke dag ziet u vasten, Apostel en Evangelie, feesten, en de
-**heiligen van de Lage Landen**. U bladert per dag, zoekt een heilige of
-plaats, of zet de kalender in uw eigen agenda.
+Deze site is een **overzicht van heiligen van de Lage Landen**, met daarbij
+een praktische orthodoxe kalender voor Nederland en België. Op een
+burgerlijke dag ziet u vasten, Apostel en Evangelie, feesten, en die
+heiligen. U bladert per dag, zoekt een heilige of plaats, of zet de
+kalender in uw eigen agenda.
 
 Zij is **geen** universeel menologion: niet iedere heilige van de Kerk staat
 hier. Zij vervangt het typikon van uw parochie of klooster niet, en is geen

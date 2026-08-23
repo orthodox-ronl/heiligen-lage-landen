@@ -19,7 +19,8 @@ ISSUES = ROOT / ".github" / "ISSUE_TEMPLATE"
 
 def test_nav_heeft_heiligen_en_uitleg() -> None:
     html = (SITE / "layouts" / "_default" / "baseof.html").read_text(encoding="utf-8")
-    assert 'href="{{ "heiligen/" | relURL }}">Heiligen</a>' in html
+    assert 'href="{{ "" | relURL }}">Heiligen</a>' in html
+    assert 'href="{{ "datum/" | relURL }}">Vandaag</a>' in html
     assert "Overzichten" in html
     assert 'href="{{ "feesten/" | relURL }}">Feesten</a>' in html
     assert 'href="{{ "vasten/" | relURL }}">Vasten</a>' in html
@@ -32,6 +33,11 @@ def test_nav_heeft_heiligen_en_uitleg() -> None:
     assert "brand-mark" in html
     assert "images/favicon-32x32.png" in html
     assert 'data-home=' in html
+    heiligen_pos = html.find(">Heiligen</a>")
+    dropdown_pos = html.find("<details")
+    assert 0 <= heiligen_pos < dropdown_pos
+    panel = html[html.find("<details") : html.find("</details>")]
+    assert ">Heiligen</a>" not in panel
 
 
 def test_site_intro_popover_tekst() -> None:
@@ -44,12 +50,26 @@ def test_site_intro_popover_tekst() -> None:
     assert 'kind === "vierdatum-oud"' in js
     assert "oude-kalenderparochies" in js
     assert "Oude kalender" in js
+    assert "Over deze site" in js
+    assert 'assetUrl("heiligen/")' in js
 
 
-def test_homepage_verwijst_naar_uitleg_heiligen() -> None:
-    text = (CONTENT / "_index.md").read_text(encoding="utf-8")
-    assert "Wat er wel en niet in staat" in text
-    assert "/uitleg/heiligen" in text
+def test_homepage_is_heiligenoverzicht() -> None:
+    home = (SITE / "layouts" / "index.html").read_text(encoding="utf-8")
+    listing = (SITE / "layouts" / "heiligen" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'partial "heiligen-overzicht.html"' in home
+    assert 'GetPage "/heiligen"' in home
+    assert 'partial "heiligen-overzicht.html"' in listing
+    nav = (SITE / "layouts" / "_default" / "baseof.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'href="{{ "" | relURL }}">Heiligen</a>' in nav
+    assert 'href="{{ "datum/" | relURL }}">Vandaag</a>' in nav
+    js = (SITE / "assets" / "js" / "calendar.js").read_text(encoding="utf-8")
+    assert 'pageUrl("datum/"' in js
+    assert 'if (isToday) return pageUrl("", params);' not in js
 
 
 def test_footer_heeft_reactie() -> None:
@@ -141,9 +161,13 @@ def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
     default_list = (SITE / "layouts" / "_default" / "list.html").read_text(
         encoding="utf-8"
     )
-    heiligen_list = (SITE / "layouts" / "heiligen" / "list.html").read_text(
+    heiligen_list = (SITE / "layouts" / "partials" / "heiligen-overzicht.html").read_text(
         encoding="utf-8"
     )
+    listing = (SITE / "layouts" / "heiligen" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'partial "heiligen-overzicht.html"' in listing
     assert "{{ if .Params.feestdatum }}" in default_list
     assert "{{ else if and .Params.van .Params.tot }}" in default_list
     assert ".Params.vierdatum_oud" in default_list
