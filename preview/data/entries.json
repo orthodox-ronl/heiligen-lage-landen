@@ -163,7 +163,7 @@
       "Teruggave van Theofanie"
     ],
     "titels": [],
-    "samenvatting": "Nafeest van Theofanie tot en met de teruggave op 14 januari.",
+    "samenvatting": "Nafeest van Theofanie tot en met de [teruggave](/feesten/teruggave-theofanie/) op 14 januari.",
     "url": "/feesten/nafeest-theofanie/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -230,6 +230,29 @@
       "brussel"
     ],
     "feestdatum": "01-08",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-theofanie",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van Theofanie",
+    "alternatief": [
+      "Apodosis van Theofanie"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Theofanie.",
+    "url": "/feesten/teruggave-theofanie/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/theofanie.jpg",
+    "feestdatum": "01-14",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -359,7 +382,7 @@
       "Teruggave Ontmoeting"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 9 februari (volle jaarcyclus).",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-ontmoeting-in-de-tempel/) op 9 februari (volle jaarcyclus).",
     "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -436,6 +459,29 @@
       "doornik"
     ],
     "feestdatum": "02-06",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-ontmoeting-in-de-tempel",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van de Ontmoeting in de Tempel",
+    "alternatief": [
+      "Apodosis van de Ontmoeting"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Ontmoeting in de tempel.",
+    "url": "/feesten/teruggave-ontmoeting-in-de-tempel/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+    "feestdatum": "02-09",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -1909,7 +1955,7 @@
       "Teruggave Transfiguratie"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 13 augustus.",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-transfiguratie/) op 13 augustus.",
     "url": "/feesten/nafeest-transfiguratie/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -1921,6 +1967,29 @@
     "van": "08-07",
     "tot": "08-13",
     "feestdatum": "08-07"
+  },
+  {
+    "id": "teruggave-transfiguratie",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van de Transfiguratie",
+    "alternatief": [
+      "Apodosis van de Transfiguratie"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Transfiguratie.",
+    "url": "/feesten/teruggave-transfiguratie/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/transfiguratie.jpg",
+    "feestdatum": "08-13",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
   },
   {
     "id": "voorfeest-ontslapen-moeder-gods",
@@ -2015,7 +2084,7 @@
       "Teruggave Ontslapen"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 23 augustus.",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-ontslapen-moeder-gods/) op 23 augustus.",
     "url": "/feesten/nafeest-ontslapen-moeder-gods/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -2058,6 +2127,29 @@
       "noordwijk"
     ],
     "feestdatum": "08-17",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-ontslapen-moeder-gods",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van het Ontslapen van de Moeder Gods",
+    "alternatief": [
+      "Apodosis van het Ontslapen"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Ontslapen.",
+    "url": "/feesten/teruggave-ontslapen-moeder-gods/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/ontslapen-moeder-gods.jpg",
+    "feestdatum": "08-23",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2305,7 +2397,7 @@
       "Teruggave Geboorte van de Moeder Gods"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 12 september.",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-geboorte-moeder-gods/) op 12 september.",
     "url": "/feesten/nafeest-geboorte-moeder-gods/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -2348,6 +2440,29 @@
       "maastricht"
     ],
     "feestdatum": "09-10",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-geboorte-moeder-gods",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van de Geboorte van de Moeder Gods",
+    "alternatief": [
+      "Apodosis van de Geboorte van de Moeder Gods"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Geboorte van de Moeder Gods.",
+    "url": "/feesten/teruggave-geboorte-moeder-gods/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/geboorte-moeder-gods.jpg",
+    "feestdatum": "09-12",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2413,7 +2528,7 @@
       "Teruggave Kruisverheffing"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 21 september.",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-kruisverheffing/) op 21 september.",
     "url": "/feesten/nafeest-kruisverheffing/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -2459,6 +2574,29 @@
       "toelichting": "Sint-Lambertuskathedraal"
     },
     "feestdatum": "09-17",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-kruisverheffing",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van de Kruisverheffing",
+    "alternatief": [
+      "Apodosis van de Kruisverheffing"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Kruisverheffing.",
+    "url": "/feesten/teruggave-kruisverheffing/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/kruisverheffing.jpg",
+    "feestdatum": "09-21",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2986,7 +3124,7 @@
       "Teruggave Tempelgang"
     ],
     "titels": [],
-    "samenvatting": "Nafeest tot en met de teruggave op 25 november.",
+    "samenvatting": "Nafeest tot en met de [teruggave](/feesten/teruggave-tempelgang-moeder-gods/) op 25 november.",
     "url": "/feesten/nafeest-tempelgang-moeder-gods/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -3031,6 +3169,29 @@
       "toelichting": "Onze-Lieve-Vrouwekerk (schrijn)"
     },
     "feestdatum": "11-23",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-tempelgang-moeder-gods",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van de Tempelgang van de Moeder Gods",
+    "alternatief": [
+      "Apodosis van de Tempelgang"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Tempelgang van de Moeder Gods.",
+    "url": "/feesten/teruggave-tempelgang-moeder-gods/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/tempelgang-moeder-gods.jpg",
+    "feestdatum": "11-25",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -3614,7 +3775,7 @@
       "Teruggave van Kerst"
     ],
     "titels": [],
-    "samenvatting": "Nafeest van Kerst tot en met de teruggave op 31 december.",
+    "samenvatting": "Nafeest van Kerst tot en met de [teruggave](/feesten/teruggave-kerst/) op 31 december.",
     "url": "/feesten/nafeest-kerst/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
@@ -3649,6 +3810,29 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
     "feestdatum": "12-26",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "teruggave-kerst",
+    "soort": "feest",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Teruggave van Kerst",
+    "alternatief": [
+      "Apodosis van de Geboorte van Christus"
+    ],
+    "titels": [],
+    "samenvatting": "Laatste dag van het nafeest van Kerst.",
+    "url": "/feesten/teruggave-kerst/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/kerst.jpg",
+    "feestdatum": "12-31",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },

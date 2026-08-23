@@ -1,0 +1,3129 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orthodox-ronl//kalender//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vastenvrij (oud)
+X-WR-TIMEZONE:UTC
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240119
+DTEND;VALUE=DATE:20240120
+DTSTAMP:20260823T140307Z
+UID:64a0f112-3711-5a79-8a98-62830bd172ea
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2024-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240226
+DTEND;VALUE=DATE:20240227
+DTSTAMP:20260823T140307Z
+UID:dcb5a58b-bb80-53bb-8a4d-32a872373078
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2024-02-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-02-26&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240227
+DTEND;VALUE=DATE:20240228
+DTSTAMP:20260823T140307Z
+UID:4343c23a-02ad-5f62-8abe-12699998027b
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2024-02-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-02-27&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240228
+DTEND;VALUE=DATE:20240229
+DTSTAMP:20260823T140307Z
+UID:be96d2e3-7d69-5089-bbb4-c19fed3870dd
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2024-02-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-02-28&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240229
+DTEND;VALUE=DATE:20240301
+DTSTAMP:20260823T140307Z
+UID:41d34e5a-0e5d-52ed-9641-0f38b3fd9f2e
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2024-02-29&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-02-29&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240301
+DTEND;VALUE=DATE:20240302
+DTSTAMP:20260823T140307Z
+UID:2aa594eb-e35d-5479-b498-bf82fab85745
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2024-03-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-03-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240302
+DTEND;VALUE=DATE:20240303
+DTSTAMP:20260823T140307Z
+UID:9946eb29-0dac-50a3-bdcc-75580c7fdf41
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2024-03-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-03-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240303
+DTEND;VALUE=DATE:20240304
+DTSTAMP:20260823T140307Z
+UID:93fbf3bf-0d9b-5dfd-b098-4a57d507a261
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2024-03-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-03-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240505
+DTEND;VALUE=DATE:20240506
+DTSTAMP:20260823T140307Z
+UID:54645bdd-513e-5502-88e0-2aa0cb35d477
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2024-
+ 05-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240506
+DTEND;VALUE=DATE:20240507
+DTSTAMP:20260823T140307Z
+UID:8f201c08-63a4-5685-b462-57de9f5db667
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2024-05-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240507
+DTEND;VALUE=DATE:20240508
+DTSTAMP:20260823T140307Z
+UID:89381a72-c7fc-520e-b116-13070aafd304
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 024-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240508
+DTEND;VALUE=DATE:20240509
+DTSTAMP:20260823T140307Z
+UID:6cc3bb10-db47-5445-9d30-7e179cf208f5
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 24-05-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240509
+DTEND;VALUE=DATE:20240510
+DTSTAMP:20260823T140307Z
+UID:0557d3cf-5f7e-583c-beec-ebe7157fdb46
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=202
+ 4-05-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240510
+DTEND;VALUE=DATE:20240511
+DTSTAMP:20260823T140307Z
+UID:206a1c75-977f-564f-a712-867662d8d754
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2024
+ -05-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240511
+DTEND;VALUE=DATE:20240512
+DTSTAMP:20260823T140307Z
+UID:d4c2bca3-09b6-5655-b9db-970d068d4369
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 24-05-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-05-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240623
+DTEND;VALUE=DATE:20240624
+DTSTAMP:20260823T140307Z
+UID:f4ec4a39-a305-51ac-a9df-a098ae12b1cd
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2024-06-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240624
+DTEND;VALUE=DATE:20240625
+DTSTAMP:20260823T140307Z
+UID:356543dd-0cb7-5c8f-93b5-6b65f54f883e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2024-06-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-24&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240625
+DTEND;VALUE=DATE:20240626
+DTSTAMP:20260823T140307Z
+UID:5a92612c-d564-5454-9314-e32f443606a2
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2024-06-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-25&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240626
+DTEND;VALUE=DATE:20240627
+DTSTAMP:20260823T140307Z
+UID:f024f36b-a56d-5915-a4fc-45e5ade21250
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2024-06-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-26&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240627
+DTEND;VALUE=DATE:20240628
+DTSTAMP:20260823T140307Z
+UID:b77bf0ac-4462-5055-a592-d1615fb84bb8
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2024-06-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-27&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240628
+DTEND;VALUE=DATE:20240629
+DTSTAMP:20260823T140307Z
+UID:9d80dd04-cde8-5509-b88c-81b1e5a8aa18
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2024-06-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-28&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240629
+DTEND;VALUE=DATE:20240630
+DTSTAMP:20260823T140307Z
+UID:575977b7-fff7-5cf0-90ea-3633c103dc6c
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2024-06-29&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-29&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240630
+DTEND;VALUE=DATE:20240701
+DTSTAMP:20260823T140307Z
+UID:e4ea552b-04f9-51f1-9a8a-9fd10df82f47
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2024-06-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2024-06-30&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250107
+DTEND;VALUE=DATE:20250108
+DTSTAMP:20260823T140307Z
+UID:df7e01f3-edbf-54ca-9f18-78c7c1ce180d
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2025-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250108
+DTEND;VALUE=DATE:20250109
+DTSTAMP:20260823T140307Z
+UID:278358e8-f784-539f-9971-9c3aff658164
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2025-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250109
+DTEND;VALUE=DATE:20250110
+DTSTAMP:20260823T140307Z
+UID:b7452cff-8449-55a1-89bd-ae16179b59c9
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 7:1-6\nEvangelie:
+  Mark. 1:29-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datu
+ m=2025-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250110
+DTEND;VALUE=DATE:20250111
+DTSTAMP:20260823T140307Z
+UID:f0c34b9f-3766-5e44-93ba-0569af015c41
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 7:18-25\nEvangeli
+ e: Mark. 2:18-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2025-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250111
+DTEND;VALUE=DATE:20250112
+DTSTAMP:20260823T140307Z
+UID:7a5881fd-e580-5742-b522-2445542bf2d9
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Ef. 2:11-13\nEvangelie
+ : Matt. 20:29-34\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2025-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250112
+DTEND;VALUE=DATE:20250113
+DTSTAMP:20260823T140307Z
+UID:e99bd8e9-8e95-5282-9164-6e3c21f3efcf
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:5-8\nEvangeli
+ e: Mark. 1:1-8\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datu
+ m=2025-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250113
+DTEND;VALUE=DATE:20250114
+DTSTAMP:20260823T140307Z
+UID:4d620cd1-c01f-54d6-9fab-a936a1cef935
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 8:7-13\nEvangelie
+ : Mark. 8:11-21\nMeer: https://orthodox-ronl.github.io/kalender/datum/?dat
+ um=2025-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250119
+DTEND;VALUE=DATE:20250120
+DTSTAMP:20260823T140307Z
+UID:837ee515-98af-5a6e-ac1f-53611365009b
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2025-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250210
+DTEND;VALUE=DATE:20250211
+DTSTAMP:20260823T140307Z
+UID:65563f23-f368-59c4-a82c-70bc3a64a5b2
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2025-02-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250211
+DTEND;VALUE=DATE:20250212
+DTSTAMP:20260823T140307Z
+UID:b675fa59-a98c-5727-a589-89e32e9a3c30
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2025-02-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250212
+DTEND;VALUE=DATE:20250213
+DTSTAMP:20260823T140307Z
+UID:8bd7d3d0-2592-5003-b3a0-0eab3677099f
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 13
+ :7-16\nEvangelie: Matt. 5:14-19\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2025-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250213
+DTEND;VALUE=DATE:20250214
+DTSTAMP:20260823T140307Z
+UID:8452ed9b-b7f0-53a9-ad2c-e3fb2c78f6cd
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2025-02-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250214
+DTEND;VALUE=DATE:20250215
+DTSTAMP:20260823T140307Z
+UID:8c28c4f9-1206-534c-8c04-e8b81d4392a5
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2025-02-14&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-14&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250216
+DTSTAMP:20260823T140307Z
+UID:1f09b14f-4604-5efa-a697-b51c5b5aaaa7
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 7:
+ 7-17\nEvangelie: Luc. 2:22-40\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2025-02-15&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-15&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250216
+DTEND;VALUE=DATE:20250217
+DTSTAMP:20260823T140307Z
+UID:df0c46ab-cb41-5299-b0b9-3c13fac43374
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2025-02-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-02-16&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250420
+DTEND;VALUE=DATE:20250421
+DTSTAMP:20260823T140307Z
+UID:53fe0304-bc56-5c67-80fa-938601cb2f3d
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2025-
+ 04-20&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-20&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250421
+DTEND;VALUE=DATE:20250422
+DTSTAMP:20260823T140307Z
+UID:7631d9a3-0ddd-5f6b-a54f-b22cfdf76f66
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2025-04-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-21&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250422
+DTEND;VALUE=DATE:20250423
+DTSTAMP:20260823T140307Z
+UID:d8f35962-0a87-5ccb-8b8f-3f57c11d5139
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 025-04-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+DTSTAMP:20260823T140307Z
+UID:a614af72-97f5-50be-9ff1-0096f6c84460
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 25-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250425
+DTSTAMP:20260823T140307Z
+UID:28316bfa-af60-5b48-8948-ae164300986d
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=202
+ 5-04-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-24&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250425
+DTEND;VALUE=DATE:20250426
+DTSTAMP:20260823T140307Z
+UID:1f9fdefa-7c39-5015-8773-966e0634739d
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2025
+ -04-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-25&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250426
+DTEND;VALUE=DATE:20250427
+DTSTAMP:20260823T140307Z
+UID:1a0bc772-53f4-58bf-86cd-a88b4cb82854
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 25-04-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-04-26&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250608
+DTEND;VALUE=DATE:20250609
+DTSTAMP:20260823T140307Z
+UID:66847e8f-7e7a-5dbb-8e7a-6ad0463256e9
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2025-06-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250609
+DTEND;VALUE=DATE:20250610
+DTSTAMP:20260823T140307Z
+UID:51e253f6-4df9-5a55-bf00-67f31e062ba1
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2025-06-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250610
+DTEND;VALUE=DATE:20250611
+DTSTAMP:20260823T140307Z
+UID:c76f6560-351a-57dd-881b-1f800fcfc287
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2025-06-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250611
+DTEND;VALUE=DATE:20250612
+DTSTAMP:20260823T140307Z
+UID:dfc6e714-bb2d-5077-a494-c8e85f7060bf
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2025-06-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250612
+DTEND;VALUE=DATE:20250613
+DTSTAMP:20260823T140307Z
+UID:2ba68c19-2483-5698-a639-057fc60ee151
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2025-06-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250613
+DTEND;VALUE=DATE:20250614
+DTSTAMP:20260823T140307Z
+UID:1f902ac1-4c3f-519e-9ad6-46ff0b8fcbb4
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2025-06-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250614
+DTEND;VALUE=DATE:20250615
+DTSTAMP:20260823T140307Z
+UID:e89879ed-a641-5dee-9e94-03d342f325df
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2025-06-14&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-14&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250615
+DTEND;VALUE=DATE:20250616
+DTSTAMP:20260823T140307Z
+UID:2f53c906-0565-5525-9237-cd09322923da
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2025-06-15&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2025-06-15&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260107
+DTEND;VALUE=DATE:20260108
+DTSTAMP:20260823T140307Z
+UID:d038406a-eb38-51e8-a62c-ad50dc87c933
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2026-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260108
+DTEND;VALUE=DATE:20260109
+DTSTAMP:20260823T140307Z
+UID:03414ce4-ca8b-5522-8ed9-fd5631e7a156
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2026-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260109
+DTEND;VALUE=DATE:20260110
+DTSTAMP:20260823T140307Z
+UID:d2d24c5c-7ac2-53b6-bf5a-43054e147506
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.2:1-13\nEvangelie:
+  Mark. 10:23-32\nMeer: https://orthodox-ronl.github.io/kalender/datum/?dat
+ um=2026-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260110
+DTEND;VALUE=DATE:20260111
+DTSTAMP:20260823T140307Z
+UID:fa2ab966-907b-52f6-9522-c3c258075f53
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Kol. 1:3-6\nEvangelie:
+  Luc. 16:10-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datu
+ m=2026-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260111
+DTEND;VALUE=DATE:20260112
+DTSTAMP:20260823T140307Z
+UID:93b4f9df-e078-5b0a-8330-9190958de1f3
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2026-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260112
+DTEND;VALUE=DATE:20260113
+DTSTAMP:20260823T140307Z
+UID:47c4cccf-995e-5b11-8a5f-8e5f14a32eed
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.2:14-26\nEvangelie
+ : Mark. 10:46-52\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2026-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260113
+DTEND;VALUE=DATE:20260114
+DTSTAMP:20260823T140307Z
+UID:a479b03f-e661-52b0-97ff-8927f369729f
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.3:1-10\nEvangelie:
+  Mark. 11:11-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?dat
+ um=2026-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+DTSTAMP:20260823T140307Z
+UID:811782f0-8127-5871-95b7-aa5e1f95bcf3
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2026-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+DTSTAMP:20260823T140307Z
+UID:fca9bce0-89e3-53f7-9672-a5f68bb46e6d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2026-02-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260203
+DTEND;VALUE=DATE:20260204
+DTSTAMP:20260823T140307Z
+UID:532805d3-667e-58d4-a7eb-4c6801747ba4
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2026-02-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260204
+DTEND;VALUE=DATE:20260205
+DTSTAMP:20260823T140307Z
+UID:a07d4405-3a44-5d82-a5f4-e4441e9e2b1c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2026-02-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260205
+DTEND;VALUE=DATE:20260206
+DTSTAMP:20260823T140307Z
+UID:f5839486-12dd-5494-b854-417f1ed552cb
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2026-02-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+DTSTAMP:20260823T140307Z
+UID:5be1c5a9-b64e-54a3-a2e9-44cc01af1f71
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2026-02-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260207
+DTEND;VALUE=DATE:20260208
+DTSTAMP:20260823T140307Z
+UID:152505eb-0165-50e2-b22f-6c42001ae301
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2026-02-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260209
+DTSTAMP:20260823T140307Z
+UID:2049deab-09c3-57ce-aa08-4d1721e14797
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2026-02-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-02-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+DTSTAMP:20260823T140307Z
+UID:54bc8f90-ee2f-577b-ad93-b55ca504f763
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2026-
+ 04-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+DTSTAMP:20260823T140307Z
+UID:27cbcd78-0b43-5b4d-b7a6-36230e834520
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2026-04-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+DTSTAMP:20260823T140307Z
+UID:1366ed3a-604d-54dd-81a1-146b0e433a9f
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 026-04-14&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-14&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260415
+DTEND;VALUE=DATE:20260416
+DTSTAMP:20260823T140307Z
+UID:4ac5726b-ac32-5e14-b9b5-6fd4e8569f58
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 26-04-15&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-15&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260416
+DTEND;VALUE=DATE:20260417
+DTSTAMP:20260823T140307Z
+UID:b24615b3-f04f-5220-9b54-4ee611e9e507
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=202
+ 6-04-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-16&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260418
+DTSTAMP:20260823T140307Z
+UID:08a1603d-b233-5f12-bb35-c9100d449158
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2026
+ -04-17&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-17&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+DTSTAMP:20260823T140307Z
+UID:4b16c48e-2578-5583-954e-8aaa5ca774a0
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 26-04-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-04-18&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+DTSTAMP:20260823T140307Z
+UID:e42ff132-3b31-5ed7-9834-0df30544b843
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2026-05-31&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-05-31&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+DTSTAMP:20260823T140307Z
+UID:f7fb2502-cd2a-5d38-98ee-9baba6fb7de6
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2026-06-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260603
+DTSTAMP:20260823T140307Z
+UID:5d175bf6-d2aa-54a4-bc78-ed6fcb2af276
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2026-06-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260604
+DTSTAMP:20260823T140307Z
+UID:d092a6fe-7969-573e-b818-65e5feae2f3d
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2026-06-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+DTSTAMP:20260823T140307Z
+UID:f7ab6dd4-4b8f-5205-82de-aaecfdf4be8e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2026-06-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+DTSTAMP:20260823T140307Z
+UID:5b78a0f6-85b9-526d-a67d-903f4054919f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2026-06-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260607
+DTSTAMP:20260823T140307Z
+UID:8ab38930-f838-59fd-bede-c0c14d24c93b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2026-06-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+DTSTAMP:20260823T140307Z
+UID:20b694bd-c986-51c3-8463-9749222bd22b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2026-06-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2026-06-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+DTSTAMP:20260823T140307Z
+UID:db90651c-f28b-516a-bd7a-3a915ba5c201
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2027-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+DTSTAMP:20260823T140307Z
+UID:4a57826d-9411-5a7e-a4b8-db1d42536b9a
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2027-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+DTSTAMP:20260823T140307Z
+UID:8b2f6b20-ca4c-5d8d-a19c-45b016d75bc3
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Tess. 5:14-23\nEvang
+ elie: Luc. 17:3-10\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2027-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+DTSTAMP:20260823T140307Z
+UID:cb54447d-b4a0-525f-bc6e-906f1a2a9e84
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2027-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+DTSTAMP:20260823T140307Z
+UID:07f292ba-d533-5fe3-b4b5-80ecb1273a40
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.2:21-3:9\nEvang
+ elie: Mark. 12:13-17\nMeer: https://orthodox-ronl.github.io/kalender/datum
+ /?datum=2027-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+DTSTAMP:20260823T140307Z
+UID:ffd34ef2-d71d-548f-b5ba-f1914044b35a
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.3:10-22\nEvange
+ lie: Mark. 12:18-27\nMeer: https://orthodox-ronl.github.io/kalender/datum/
+ ?datum=2027-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+DTSTAMP:20260823T140307Z
+UID:07424d65-e112-5091-b915-83749d5c5687
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.4:1-11\nEvangel
+ ie: Mark. 12:28-37\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2027-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+DTSTAMP:20260823T140307Z
+UID:88c5b7ea-0c29-55d2-9d77-0beb2f0efffb
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2027-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+DTSTAMP:20260823T140307Z
+UID:797361c6-f62b-5d40-85c2-9a05d0d20102
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2027-02-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+DTSTAMP:20260823T140307Z
+UID:35111c75-132e-5860-9a45-3ffb2a217cd6
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2027-02-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+DTSTAMP:20260823T140307Z
+UID:6f50dafe-f18c-5b5b-a011-69a3093e3b14
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2027-02-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-24&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+DTSTAMP:20260823T140307Z
+UID:0197a255-431d-506f-9963-f674665c8305
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2027-02-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-25&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+DTSTAMP:20260823T140307Z
+UID:684ed9c5-4831-5c2a-8275-7df9893c26b3
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2027-02-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-26&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+DTSTAMP:20260823T140307Z
+UID:7223d3a0-42ed-564b-824b-1a98fdd7bae3
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2027-02-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-27&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+DTSTAMP:20260823T140307Z
+UID:3fbcaa23-58cd-5b63-b10b-17eef361234f
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2027-02-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-02-28&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+DTSTAMP:20260823T140307Z
+UID:b6e5a362-ef85-5a58-93b5-0991d0a00bbb
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2027-
+ 05-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+DTSTAMP:20260823T140307Z
+UID:f324ba07-3714-5bf3-8b7f-602d046117bf
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2027-05-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+DTSTAMP:20260823T140307Z
+UID:2370b2ca-3b9f-50d0-9669-19ee55b6df0e
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 027-05-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+DTSTAMP:20260823T140307Z
+UID:01e756b9-82ac-51e5-8fda-28956a48ec39
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 27-05-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+DTSTAMP:20260823T140307Z
+UID:4bc0d27d-c116-5f9b-8210-93557bea62aa
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 12:1-11\nEvangelie: Jo
+ h. 15:17-16:2\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum
+ =2027-05-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+DTSTAMP:20260823T140307Z
+UID:adec2a79-79ea-5727-8646-c2319f2dd4db
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2027
+ -05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+DTSTAMP:20260823T140307Z
+UID:87f45985-92a3-5f5f-9143-46bd8c427aab
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 27-05-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-05-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+DTSTAMP:20260823T140307Z
+UID:3c3acd31-348b-55ac-9ac9-572ff3662352
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2027-06-20&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-20&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+DTSTAMP:20260823T140307Z
+UID:9190ab3b-da3d-51f7-a7da-2ed87059a54a
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2027-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-21&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+DTSTAMP:20260823T140307Z
+UID:fc686ef7-9774-5dd6-922d-d318a77d1be8
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2027-06-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+DTSTAMP:20260823T140307Z
+UID:047931fb-0f86-554d-a09e-a4081ed162cd
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2027-06-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+DTSTAMP:20260823T140307Z
+UID:c585d36f-3325-588d-a6dc-758569cb3129
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2027-06-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-24&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+DTSTAMP:20260823T140307Z
+UID:1ec5424c-36db-5be8-ac51-d093e289411b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2027-06-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-25&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+DTSTAMP:20260823T140307Z
+UID:7ef6ce24-6ea0-5fcf-98f7-f8985e74fa7c
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2027-06-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-26&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+DTSTAMP:20260823T140307Z
+UID:14214fdc-fddd-504a-a31d-1c667ca92964
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2027-06-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2027-06-27&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280107
+DTEND;VALUE=DATE:20280108
+DTSTAMP:20260823T140307Z
+UID:3f32e8e1-4555-5259-b5eb-14f5167cbec3
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2028-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280108
+DTEND;VALUE=DATE:20280109
+DTSTAMP:20260823T140307Z
+UID:8946d36c-58ec-5dbf-a828-d96af2cf9985
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2028-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280109
+DTEND;VALUE=DATE:20280110
+DTSTAMP:20260823T140307Z
+UID:9222cadc-bc11-5566-b26f-0e77ad430696
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2028-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280110
+DTEND;VALUE=DATE:20280111
+DTSTAMP:20260823T140307Z
+UID:70536067-1f09-5fd8-a121-ae63bfe8f823
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 8:7-13\nEvangelie
+ : Mark. 8:11-21\nMeer: https://orthodox-ronl.github.io/kalender/datum/?dat
+ um=2028-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280111
+DTEND;VALUE=DATE:20280112
+DTSTAMP:20260823T140307Z
+UID:f62733cf-21c9-5673-b6f1-b85011d29207
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 9:8-10\, 15-23\nE
+ vangelie: Mark. 8:22-26\nMeer: https://orthodox-ronl.github.io/kalender/da
+ tum/?datum=2028-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280112
+DTEND;VALUE=DATE:20280113
+DTSTAMP:20260823T140307Z
+UID:66c12dcd-1738-5c80-8e90-099e452af60d
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:1-18\nEvangeli
+ e: Mark. 8:30-34\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2028-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280113
+DTEND;VALUE=DATE:20280114
+DTSTAMP:20260823T140307Z
+UID:2b5572fc-11ec-5273-9799-7dff715d1fbd
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:35-11:7\nEvang
+ elie: Mark. 9:10-16\nMeer: https://orthodox-ronl.github.io/kalender/datum/
+ ?datum=2028-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280119
+DTEND;VALUE=DATE:20280120
+DTSTAMP:20260823T140307Z
+UID:26471f09-4b9a-5352-9290-3fa20dc06eef
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2028-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280207
+DTEND;VALUE=DATE:20280208
+DTSTAMP:20260823T140307Z
+UID:8178c23f-0863-5aee-bdb2-e13a378fa4bd
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2028-02-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280208
+DTEND;VALUE=DATE:20280209
+DTSTAMP:20260823T140307Z
+UID:44ea4069-17b4-57a6-b082-232b6f93389d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2028-02-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280209
+DTEND;VALUE=DATE:20280210
+DTSTAMP:20260823T140307Z
+UID:0d1f598e-a41e-52cc-983d-d6472db36e36
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2028-02-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280210
+DTEND;VALUE=DATE:20280211
+DTSTAMP:20260823T140307Z
+UID:bd6c83d1-65cd-5071-bc8a-f2744923212f
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2028-02-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280211
+DTEND;VALUE=DATE:20280212
+DTSTAMP:20260823T140307Z
+UID:e2732456-003c-5186-9a77-85e20b04ab5c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2028-02-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280212
+DTEND;VALUE=DATE:20280213
+DTSTAMP:20260823T140307Z
+UID:90bea4d8-b05c-59f0-9226-b8dad20c1c1c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 13
+ :7-16\nEvangelie: Matt. 5:14-19\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2028-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280213
+DTEND;VALUE=DATE:20280214
+DTSTAMP:20260823T140307Z
+UID:ff131b2b-cba7-5c2a-b298-9816fcfcf5a0
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2028-02-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-02-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+DTSTAMP:20260823T140307Z
+UID:6abcd1f9-df3e-53fb-a9b9-5bdd4b9f8dec
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2028-
+ 04-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-16&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+DTSTAMP:20260823T140307Z
+UID:06c6afa2-7456-570c-90b8-8e883ac06289
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2028-04-17&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-17&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280418
+DTEND;VALUE=DATE:20280419
+DTSTAMP:20260823T140307Z
+UID:376b5f26-6011-5b92-802f-32df64987699
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 028-04-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-18&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280419
+DTEND;VALUE=DATE:20280420
+DTSTAMP:20260823T140307Z
+UID:c4eb890c-8c40-547b-94a4-85e81e90ad0b
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 28-04-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280420
+DTEND;VALUE=DATE:20280421
+DTSTAMP:20260823T140307Z
+UID:8fe5c141-a158-5b4d-93de-3006ebaf502d
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=202
+ 8-04-20&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-20&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280421
+DTEND;VALUE=DATE:20280422
+DTSTAMP:20260823T140307Z
+UID:1d1c8710-3296-55e6-88b2-e792d585c473
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2028
+ -04-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-21&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280422
+DTEND;VALUE=DATE:20280423
+DTSTAMP:20260823T140307Z
+UID:ef4ec1ec-1d6a-5550-b9f6-cf573d2d085b
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 28-04-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-04-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+DTSTAMP:20260823T140307Z
+UID:3e9dde11-3371-5f61-aeff-3684a565e2ad
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2028-06-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280605
+DTEND;VALUE=DATE:20280606
+DTSTAMP:20260823T140307Z
+UID:2b391852-785b-5b40-ad32-9fe0c45c20a2
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2028-06-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280606
+DTEND;VALUE=DATE:20280607
+DTSTAMP:20260823T140307Z
+UID:c31a9603-a020-5a39-9c99-beff74db6625
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2028-06-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280607
+DTEND;VALUE=DATE:20280608
+DTSTAMP:20260823T140307Z
+UID:3b06a7ba-c91d-5418-ba78-8701f587af9b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2028-06-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280608
+DTEND;VALUE=DATE:20280609
+DTSTAMP:20260823T140307Z
+UID:4fc1afb5-3315-5db6-b866-f1df8b8b09c0
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2028-06-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280609
+DTEND;VALUE=DATE:20280610
+DTSTAMP:20260823T140307Z
+UID:87fb0f93-41f4-58de-ac4e-605a9cfefe3b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2028-06-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280610
+DTEND;VALUE=DATE:20280611
+DTSTAMP:20260823T140307Z
+UID:09d8e61d-a537-5bce-9b6b-d498c86caaf1
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2028-06-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280611
+DTEND;VALUE=DATE:20280612
+DTSTAMP:20260823T140307Z
+UID:1037e043-fdb5-553f-a9f6-feeb1ac78c41
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2028-06-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2028-06-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290107
+DTEND;VALUE=DATE:20290108
+DTSTAMP:20260823T140307Z
+UID:d2274230-f2fd-5614-b6d1-0edab61c61a0
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2029-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290108
+DTEND;VALUE=DATE:20290109
+DTSTAMP:20260823T140307Z
+UID:07ad6529-86e7-551f-af9d-73057cae9ac2
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2029-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290109
+DTEND;VALUE=DATE:20290110
+DTSTAMP:20260823T140307Z
+UID:88dcc611-71cd-5978-8458-e01bc59ef1cc
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.3:1-10\nEvangelie:
+  Mark. 11:11-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?dat
+ um=2029-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290110
+DTEND;VALUE=DATE:20290111
+DTSTAMP:20260823T140307Z
+UID:421c51ac-08ad-55e6-8719-d7e441d0c4c7
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.3:11-4:6\nEvangeli
+ e: Mark. 11:23-26\nMeer: https://orthodox-ronl.github.io/kalender/datum/?d
+ atum=2029-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290111
+DTEND;VALUE=DATE:20290112
+DTSTAMP:20260823T140307Z
+UID:5cc9888a-5f76-5d90-b37f-68c2bb9e2dde
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.4:7-5:9\nEvangelie
+ : Mark. 11:27-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2029-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290112
+DTEND;VALUE=DATE:20290113
+DTSTAMP:20260823T140307Z
+UID:d06064c9-27d0-590e-99be-2d0109ab85e6
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.1:1-2\, 10-12\;
+  2:6-10\nEvangelie: Mark. 12:1-12\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2029-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290113
+DTEND;VALUE=DATE:20290114
+DTSTAMP:20260823T140307Z
+UID:d69ce093-b66f-5131-9a91-e4afbb3dbd43
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Tim. 3:14-4:5\nEvang
+ elie: Matt. 3:1-11\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2029-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290119
+DTEND;VALUE=DATE:20290120
+DTSTAMP:20260823T140307Z
+UID:4973d4cf-edab-5df4-b095-fbbbd885eeb2
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2029-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290129
+DTEND;VALUE=DATE:20290130
+DTSTAMP:20260823T140307Z
+UID:47b8e788-a916-5142-a292-6896a23f8f9c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2029-01-29&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-29&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290130
+DTEND;VALUE=DATE:20290131
+DTSTAMP:20260823T140307Z
+UID:4546eca1-8530-57a2-9191-89767024437f
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2029-01-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-30&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290131
+DTEND;VALUE=DATE:20290201
+DTSTAMP:20260823T140307Z
+UID:6cf52f7a-f4e0-5a41-b3c4-3fae358597a2
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2029-01-31&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-01-31&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290201
+DTEND;VALUE=DATE:20290202
+DTSTAMP:20260823T140307Z
+UID:528e5177-f334-559d-a5e0-d71eae878b13
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2029-02-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-02-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290202
+DTEND;VALUE=DATE:20290203
+DTSTAMP:20260823T140307Z
+UID:71b5e207-d5c4-5dfb-ac80-e69b43f988e7
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2029-02-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-02-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290203
+DTEND;VALUE=DATE:20290204
+DTSTAMP:20260823T140307Z
+UID:dbc5a429-b77a-5f98-a8f1-616d72ad8a88
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2029-02-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-02-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290204
+DTEND;VALUE=DATE:20290205
+DTSTAMP:20260823T140307Z
+UID:805dedf9-061a-5c3e-a2c7-e3efa9f85811
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2029-02-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-02-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290408
+DTEND;VALUE=DATE:20290409
+DTSTAMP:20260823T140307Z
+UID:cfa17c0f-135c-55be-8744-7374c4865087
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2029-
+ 04-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290409
+DTEND;VALUE=DATE:20290410
+DTSTAMP:20260823T140307Z
+UID:454770d8-53be-5bb2-9c87-c73c20895775
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2029-04-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290410
+DTEND;VALUE=DATE:20290411
+DTSTAMP:20260823T140307Z
+UID:539ee0a4-559e-54ff-a4e5-d9ec13f265cb
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 029-04-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290411
+DTEND;VALUE=DATE:20290412
+DTSTAMP:20260823T140307Z
+UID:0546bd48-d02e-5cd5-bbd8-5851cc5389c6
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 29-04-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290412
+DTEND;VALUE=DATE:20290413
+DTSTAMP:20260823T140307Z
+UID:83ac2616-868f-5652-adce-028b339a7859
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=202
+ 9-04-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+DTSTAMP:20260823T140307Z
+UID:731e10d2-041b-5f06-9861-a5e62dcb8769
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2029
+ -04-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+DTSTAMP:20260823T140307Z
+UID:8f975ab5-10e0-5987-b279-f1d348508489
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 29-04-14&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-04-14&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+DTSTAMP:20260823T140307Z
+UID:c9020972-b363-5f60-b8ce-d23d76a9b8a8
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2029-05-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-05-27&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290528
+DTEND;VALUE=DATE:20290529
+DTSTAMP:20260823T140307Z
+UID:bcc87267-93f9-516a-88c7-32ca15c6f02d
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2029-05-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-05-28&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290529
+DTEND;VALUE=DATE:20290530
+DTSTAMP:20260823T140307Z
+UID:3b5ad103-fc3d-5752-ac48-cc6a5cc5f122
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2029-05-29&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-05-29&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290530
+DTEND;VALUE=DATE:20290531
+DTSTAMP:20260823T140307Z
+UID:67b4c4dd-1ed0-5c02-88ae-d0fbd1be7551
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2029-05-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-05-30&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290531
+DTEND;VALUE=DATE:20290601
+DTSTAMP:20260823T140307Z
+UID:8dd3ea08-37e3-5be8-897d-0eb4ed00aa35
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2029-05-31&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-05-31&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290601
+DTEND;VALUE=DATE:20290602
+DTSTAMP:20260823T140307Z
+UID:e2144a47-8d55-5f23-ac70-1ab0091d6989
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2029-06-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-06-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290602
+DTEND;VALUE=DATE:20290603
+DTSTAMP:20260823T140307Z
+UID:68a21ed2-bc61-5b94-ba67-c243eae41af6
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2029-06-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-06-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290603
+DTEND;VALUE=DATE:20290604
+DTSTAMP:20260823T140307Z
+UID:b32af071-70cb-5988-8df6-dff18de5057e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2029-06-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2029-06-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300107
+DTEND;VALUE=DATE:20300108
+DTSTAMP:20260823T140307Z
+UID:7ea1b83c-d335-5b70-be75-b192c51dcce5
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2030-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300108
+DTEND;VALUE=DATE:20300109
+DTSTAMP:20260823T140307Z
+UID:60731cd5-6870-5868-8cc4-bf3978560614
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2030-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300109
+DTEND;VALUE=DATE:20300110
+DTSTAMP:20260823T140307Z
+UID:4fe512db-c0f5-552a-a89d-f495ab598d4e
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.4:1-11\nEvangel
+ ie: Mark. 12:28-37\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2030-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300110
+DTEND;VALUE=DATE:20300111
+DTSTAMP:20260823T140307Z
+UID:ceea8bc9-871d-5093-b6a4-79eea1c52c54
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr. 4:12-5:5\nEvan
+ gelie: Mark. 12:38-44\nMeer: https://orthodox-ronl.github.io/kalender/datu
+ m/?datum=2030-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300111
+DTEND;VALUE=DATE:20300112
+DTSTAMP:20260823T140307Z
+UID:a00ac83b-c077-5433-8e3d-6645abde3013
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Petr. 1:1-10\nEvange
+ lie: Mark. 13:1-8\nMeer: https://orthodox-ronl.github.io/kalender/datum/?d
+ atum=2030-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300112
+DTEND;VALUE=DATE:20300113
+DTSTAMP:20260823T140307Z
+UID:627c9071-cdb5-5a8e-81c7-c32cf2d87ac0
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Tim. 3:14-4:5\nEvang
+ elie: Matt. 3:1-11\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2030-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300113
+DTEND;VALUE=DATE:20300114
+DTSTAMP:20260823T140307Z
+UID:5d920f4f-73e1-57f8-b713-e225c5e6f935
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:5-8\nEvangeli
+ e: Mark. 1:1-8\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datu
+ m=2030-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300119
+DTEND;VALUE=DATE:20300120
+DTSTAMP:20260823T140307Z
+UID:e5b3b46a-867a-5439-8381-40d27ef0d17a
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2030-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300218
+DTEND;VALUE=DATE:20300219
+DTSTAMP:20260823T140307Z
+UID:91840118-246d-529b-a4f0-7ec48aeeb30c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2030-02-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-18&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300219
+DTEND;VALUE=DATE:20300220
+DTSTAMP:20260823T140307Z
+UID:a0b2aa69-c2a8-5f78-9ca8-f606915e71d7
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2030-02-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300220
+DTEND;VALUE=DATE:20300221
+DTSTAMP:20260823T140307Z
+UID:68a698b0-1da4-5fb6-ae8e-f3c7b934e517
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2030-02-20&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-20&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300221
+DTEND;VALUE=DATE:20300222
+DTSTAMP:20260823T140307Z
+UID:3888e7e2-d97c-58fe-8a3e-310b1ae745b4
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2030-02-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-21&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300222
+DTEND;VALUE=DATE:20300223
+DTSTAMP:20260823T140307Z
+UID:e280cd95-2b69-5d9f-b3db-82bc24d45aa2
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2030-02-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300223
+DTEND;VALUE=DATE:20300224
+DTSTAMP:20260823T140307Z
+UID:014a518f-e573-521c-8b61-35dcd048446c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2030-02-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300224
+DTEND;VALUE=DATE:20300225
+DTSTAMP:20260823T140307Z
+UID:542d32ba-2c1f-5395-8088-f3fd64174783
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2030-02-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-02-24&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300428
+DTEND;VALUE=DATE:20300429
+DTSTAMP:20260823T140307Z
+UID:f3425175-a59d-5b26-affc-6d52b7ab47c1
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2030-
+ 04-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-04-28&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300429
+DTEND;VALUE=DATE:20300430
+DTSTAMP:20260823T140307Z
+UID:9e89d5d3-12d0-53e7-8fca-9bb7960c6f6a
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2030-04-29&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-04-29&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300430
+DTEND;VALUE=DATE:20300501
+DTSTAMP:20260823T140307Z
+UID:dde195d5-5e53-5a4c-b694-77c820072362
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 030-04-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-04-30&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+DTSTAMP:20260823T140307Z
+UID:6a6d1343-4a45-5535-9245-62ea6fbbbd90
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 30-05-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-05-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300502
+DTEND;VALUE=DATE:20300503
+DTSTAMP:20260823T140307Z
+UID:3c7ebc5d-b3e0-59cb-ab10-8d3940e3421e
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=203
+ 0-05-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-05-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300503
+DTEND;VALUE=DATE:20300504
+DTSTAMP:20260823T140307Z
+UID:0feb8988-c42c-54a6-a898-7994268dd193
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2030
+ -05-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-05-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300504
+DTEND;VALUE=DATE:20300505
+DTSTAMP:20260823T140307Z
+UID:30ed790b-c7fd-54e4-808d-0deb38a50e42
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 30-05-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-05-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300616
+DTEND;VALUE=DATE:20300617
+DTSTAMP:20260823T140307Z
+UID:53e53c37-a578-5acf-8c15-4b7d84c72291
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2030-06-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-16&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300617
+DTEND;VALUE=DATE:20300618
+DTSTAMP:20260823T140307Z
+UID:3df441d7-f798-5ccf-896a-bdcb657831ed
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2030-06-17&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-17&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300618
+DTEND;VALUE=DATE:20300619
+DTSTAMP:20260823T140307Z
+UID:b3414ec7-82f8-5cce-9724-c67d27382beb
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2030-06-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-18&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300619
+DTEND;VALUE=DATE:20300620
+DTSTAMP:20260823T140307Z
+UID:f8d2ac8b-d941-5a0d-8de4-19daaa8e3ab7
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2030-06-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300620
+DTEND;VALUE=DATE:20300621
+DTSTAMP:20260823T140307Z
+UID:6f848326-1fff-5ccc-9fc5-83cc44dbbc0d
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2030-06-20&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-20&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300621
+DTEND;VALUE=DATE:20300622
+DTSTAMP:20260823T140307Z
+UID:a016aa17-f3b9-5dc3-b30e-3cf6f615a809
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2030-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-21&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300622
+DTEND;VALUE=DATE:20300623
+DTSTAMP:20260823T140307Z
+UID:324a8a71-4840-5ce3-9aef-06f081de8f15
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2030-06-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-22&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300623
+DTEND;VALUE=DATE:20300624
+DTSTAMP:20260823T140307Z
+UID:a30aa343-7529-52b9-a341-11213b70f866
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2030-06-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2030-06-23&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310107
+DTEND;VALUE=DATE:20310108
+DTSTAMP:20260823T140307Z
+UID:de60354a-5712-53a8-b51c-19590160f702
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2031-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310108
+DTEND;VALUE=DATE:20310109
+DTSTAMP:20260823T140307Z
+UID:2aca7df1-fb4e-5ae1-8d84-22129d1afd02
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2031-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310109
+DTEND;VALUE=DATE:20310110
+DTSTAMP:20260823T140307Z
+UID:6aa5d743-f21a-5c00-bd70-76ffbc04c491
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:35-11:7\nEvang
+ elie: Mark. 9:10-16\nMeer: https://orthodox-ronl.github.io/kalender/datum/
+ ?datum=2031-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310110
+DTEND;VALUE=DATE:20310111
+DTSTAMP:20260823T140307Z
+UID:1ce145d2-46a0-5144-9853-3f217982294e
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 11:8\, 11-16\nEva
+ ngelie: Mark. 9:33-41\nMeer: https://orthodox-ronl.github.io/kalender/datu
+ m/?datum=2031-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310111
+DTEND;VALUE=DATE:20310112
+DTSTAMP:20260823T140307Z
+UID:fe76095e-81b4-5eec-a0bd-65d67f9cc85e
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Ef. 5:1-8\nEvangelie: 
+ Luc. 14:1-11\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=
+ 2031-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310112
+DTEND;VALUE=DATE:20310113
+DTSTAMP:20260823T140307Z
+UID:b26ec4f8-c0d1-54c3-ba3b-79ec690ec440
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:5-8\nEvangeli
+ e: Mark. 1:1-8\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datu
+ m=2031-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310113
+DTEND;VALUE=DATE:20310114
+DTSTAMP:20260823T140307Z
+UID:eecea598-a5ae-537c-821a-3d6bf9898a2a
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 11:17-23\, 27-31\
+ nEvangelie: Mark. 9:42-10:1\nMeer: https://orthodox-ronl.github.io/kalende
+ r/datum/?datum=2031-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310119
+DTEND;VALUE=DATE:20310120
+DTSTAMP:20260823T140307Z
+UID:d4f28f69-3004-54d6-a3bf-b15391514ba4
+SUMMARY:vastenvrij · Theofanie (Doop des Heren)
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2031-01-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-01-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310203
+DTEND;VALUE=DATE:20310204
+DTSTAMP:20260823T140307Z
+UID:d83fa9d4-bf5a-5cb1-9bc5-57f05a482c63
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2031-02-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310204
+DTEND;VALUE=DATE:20310205
+DTSTAMP:20260823T140307Z
+UID:b963b392-9387-5982-9d3e-49a29b7783f3
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2031-02-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310205
+DTEND;VALUE=DATE:20310206
+DTSTAMP:20260823T140307Z
+UID:ccfa8273-f105-576f-aa40-43fd660f962d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ kalender/datum/?datum=2031-02-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310206
+DTEND;VALUE=DATE:20310207
+DTSTAMP:20260823T140307Z
+UID:fc8e9127-56ab-53e9-9146-3b90e76c7b45
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/kalender/datum/?datum=2031-02-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310207
+DTEND;VALUE=DATE:20310208
+DTSTAMP:20260823T140307Z
+UID:8955a2d6-5818-576d-857f-b2581019b538
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/kal
+ ender/datum/?datum=2031-02-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310208
+DTEND;VALUE=DATE:20310209
+DTSTAMP:20260823T140307Z
+UID:b02347c1-d70a-5eb4-8bc5-bb4c459e9257
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2031-02-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310209
+DTEND;VALUE=DATE:20310210
+DTSTAMP:20260823T140307Z
+UID:51beece0-2ad3-5acc-902c-fe16d961fbc5
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2031-02-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-02-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310413
+DTEND;VALUE=DATE:20310414
+DTSTAMP:20260823T140307Z
+UID:e122bd55-1b50-5de7-a41f-cce411490fe2
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2031-
+ 04-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310414
+DTEND;VALUE=DATE:20310415
+DTSTAMP:20260823T140307Z
+UID:c2f702a0-6fde-58bd-a9d9-48499c2709fa
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2031-04-14&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-14&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310415
+DTEND;VALUE=DATE:20310416
+DTSTAMP:20260823T140307Z
+UID:66c3bcad-1f5b-532b-9e71-d933a5d4ff80
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2
+ 031-04-15&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-15&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310416
+DTEND;VALUE=DATE:20310417
+DTSTAMP:20260823T140307Z
+UID:25a18920-52b1-5d68-a385-80a2f6162281
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 31-04-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-16&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310417
+DTEND;VALUE=DATE:20310418
+DTSTAMP:20260823T140307Z
+UID:3f08c376-2b24-584d-99dd-0468f718a2ee
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=203
+ 1-04-17&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-17&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310418
+DTEND;VALUE=DATE:20310419
+DTSTAMP:20260823T140307Z
+UID:c40f6a9a-0c79-539e-8713-cc6e27fef74a
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=2031
+ -04-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-18&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310419
+DTEND;VALUE=DATE:20310420
+DTSTAMP:20260823T140307Z
+UID:ee608ada-649e-54ce-a64a-6a8b9244fa34
+SUMMARY:vastenvrij · Lichte Week
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/kalender/datum/?datum=20
+ 31-04-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-04-19&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310601
+DTEND;VALUE=DATE:20310602
+DTSTAMP:20260823T140307Z
+UID:e65b88d2-e985-5463-8ef2-19cdda410a84
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /kalender/datum/?datum=2031-06-01&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-01&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310602
+DTEND;VALUE=DATE:20310603
+DTSTAMP:20260823T140307Z
+UID:e00b3cee-2544-53c5-a93b-ca97a2de0834
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2031-06-02&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-02&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310603
+DTEND;VALUE=DATE:20310604
+DTSTAMP:20260823T140307Z
+UID:ed321f0d-071a-5a4a-b31f-be86a9bc0c91
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/kalender/datum/?datum=2031-06-03&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-03&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310604
+DTEND;VALUE=DATE:20310605
+DTSTAMP:20260823T140307Z
+UID:f1143ada-499f-57a4-8283-6e43d7984f33
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2031-06-04&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-04&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310605
+DTEND;VALUE=DATE:20310606
+DTSTAMP:20260823T140307Z
+UID:81bfad37-0dbc-5c7e-9bac-ee14b2ac4a33
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2031-06-05&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-05&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310606
+DTEND;VALUE=DATE:20310607
+DTSTAMP:20260823T140307Z
+UID:8af2af9c-d21c-55ff-bac0-04017a3e0c61
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/kalen
+ der/datum/?datum=2031-06-06&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-06&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310607
+DTEND;VALUE=DATE:20310608
+DTSTAMP:20260823T140307Z
+UID:844d16e9-5ea6-5ab9-81e7-305dab31d5ec
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/kalend
+ er/datum/?datum=2031-06-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310608
+DTEND;VALUE=DATE:20310609
+DTSTAMP:20260823T140307Z
+UID:e225c0e4-833c-540d-a47b-9fe08ace2636
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/kalender/datum/?datum=2031-06-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2031-06-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320107
+DTEND;VALUE=DATE:20320108
+DTSTAMP:20260823T140307Z
+UID:b833dedc-8edf-5079-8e37-e4625d6a9abd
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus)
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/kale
+ nder/datum/?datum=2032-01-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-07&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320108
+DTEND;VALUE=DATE:20320109
+DTSTAMP:20260823T140307Z
+UID:9601de2a-9c53-51b8-b00d-ea910477d196
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2032-01-08&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-08&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320109
+DTEND;VALUE=DATE:20320110
+DTSTAMP:20260823T140307Z
+UID:10e58c5e-d1d3-56ec-9175-3d7f1e16fb19
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.1:1-2\, 10-12\;
+  2:6-10\nEvangelie: Mark. 12:1-12\nMeer: https://orthodox-ronl.github.io/k
+ alender/datum/?datum=2032-01-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-09&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320110
+DTEND;VALUE=DATE:20320111
+DTSTAMP:20260823T140307Z
+UID:c8f04307-f985-5d4c-bf2e-bf3690640599
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Tess. 5:14-23\nEvang
+ elie: Luc. 17:3-10\nMeer: https://orthodox-ronl.github.io/kalender/datum/?
+ datum=2032-01-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-10&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320111
+DTEND;VALUE=DATE:20320112
+DTSTAMP:20260823T140307Z
+UID:1ccee64c-522f-5dfe-a1d7-17600efbe716
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/kalender/datum/?da
+ tum=2032-01-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-11&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320112
+DTEND;VALUE=DATE:20320113
+DTSTAMP:20260823T140307Z
+UID:02c08cf8-7af2-58bb-a136-47aff5faf4c4
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.2:21-3:9\nEvang
+ elie: Mark. 12:13-17\nMeer: https://orthodox-ronl.github.io/kalender/datum
+ /?datum=2032-01-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-12&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20320113
+DTEND;VALUE=DATE:20320114
+DTSTAMP:20260823T140307Z
+UID:4c00f167-ef3f-57aa-b1f6-fbfdbf7b6d7d
+SUMMARY:vastenvrij · Nafeest van Kerst
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Petr.3:10-22\nEvange
+ lie: Mark. 12:18-27\nMeer: https://orthodox-ronl.github.io/kalender/datum/
+ ?datum=2032-01-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/kalender/datum/?datum=2032-01-13&stijl=
+ juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
