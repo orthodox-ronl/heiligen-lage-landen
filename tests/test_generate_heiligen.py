@@ -307,6 +307,39 @@ def test_entry_page_andere_gedenkdagen(
     assert "(5 januari)" in body
     assert "5 januari oude kalender" not in body
     assert "gedachtenis op de Orthodoxe kalender" in body
+    assert "23 december —" not in body
+
+
+def test_andere_gedenkdagen_zonder_dubbele_datum_in_toelichting(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _heilige(
+            selectie="voldoet",
+            datum_extra_norm=[
+                {"feestdatum": "08-21", "toelichting": "21 augustus"},
+                {
+                    "feestdatum": "11-08",
+                    "toelichting": "8 november (met alle heilige bisschoppen van Utrecht)",
+                },
+                {
+                    "feestdatum": "11-14",
+                    "toelichting": "14 november (gangbare gedenkdag)",
+                },
+            ],
+        )
+    )
+    body = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )[1]
+    assert "[21 augustus](/datum/?dag=08-21)" in body
+    assert "— 21 augustus" not in body
+    assert "(met alle heilige bisschoppen van Utrecht)" in body
+    assert "— 8 november (met" not in body
+    assert "(gangbare gedenkdag)" in body
+    assert "— 14 november (gangbare" not in body
 
 
 def test_entry_page_over_bronnen_toelichting(
@@ -484,6 +517,7 @@ def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
         encoding="utf-8"
     )
     assert "zoekHay" in js
+    assert "siteUrl" in js
     assert "toLocaleLowerCase" in js
     assert 'params.get("plaats")' in js
     assert "heiligen-filter" in js

@@ -121,6 +121,19 @@ def cel_nieuw_met_oud(nieuw: str, oud: str | None) -> str:
     return f"{html_escape(nieuw)} {oud_vierdatum_html(oud)}"
 
 
+def extra_toelichting_na_link(toel: str, feestdatum: str) -> str:
+    """Toelichting na de datumlink, zonder herhaalde dagnaam."""
+    toel = toel.strip()
+    if not toel:
+        return ""
+    label = mmdd_label(feestdatum)
+    if toel.casefold() == label.casefold():
+        return ""
+    if toel.casefold().startswith(label.casefold()):
+        return toel[len(label) :].strip()
+    return toel
+
+
 KOMENDE_JAREN_KOP = "**Komende jaren (burgerlijk):**"
 
 
@@ -631,9 +644,11 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             link = f"[{mmdd_label(fd)}](/datum/?dag={fd})"
             oud_ex = julian_feast_to_civil_date(date.today().year, fd)
             haak = oud_vierdatum_html(burgerlijk_label(oud_ex))
-            extra_lines.append(
-                f"- {link} {haak} — {toel}" if toel else f"- {link} {haak}"
-            )
+            suffix = extra_toelichting_na_link(toel, fd)
+            line = f"- {link} {haak}"
+            if suffix:
+                line += f" — {suffix}"
+            extra_lines.append(line)
         if extra_lines:
             body.append("**Andere gedenkdagen:**")
             body.append("")

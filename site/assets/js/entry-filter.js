@@ -62,6 +62,23 @@
     }
   } catch (_) {}
 
+  function siteBase() {
+    const fromBody = document.body && document.body.getAttribute("data-base");
+    if (fromBody) {
+      return fromBody.endsWith("/") ? fromBody : fromBody + "/";
+    }
+    return "/";
+  }
+
+  function siteUrl(path) {
+    const rel = String(path || "").replace(/^\//, "");
+    try {
+      return new URL(rel, siteBase()).href;
+    } catch (_) {
+      return rel;
+    }
+  }
+
   function escapeHtml(s) {
     return String(s || "")
       .replace(/&/g, "&amp;")
@@ -104,10 +121,7 @@
   function datumHref(mmdd) {
     if (!mmdd) return "";
     try {
-      const base = document.body.getAttribute("data-base") || "/";
-      const u = new URL("datum/", base.endsWith("/") ? base : base + "/");
-      u.searchParams.set("dag", mmdd);
-      return u.href;
+      return new URL(`datum/?dag=${mmdd}`, siteBase()).href;
     } catch (_) {
       return `/datum/?dag=${mmdd}`;
     }
@@ -140,7 +154,7 @@
 
   function naamCell(e) {
     const icoon = e.icoon
-      ? `<img class="list-icoon" src="${escapeHtml(e.icoon)}" alt="" width="28" height="28">`
+      ? `<img class="list-icoon" src="${escapeHtml(siteUrl(e.icoon))}" alt="" width="28" height="28">`
       : "";
     const alts =
       e.alternatief && e.alternatief.length
@@ -148,7 +162,7 @@
         : "";
     return (
       `<span class="heiligen-namen">${icoon}` +
-      `<a href="${escapeHtml(e.url)}">${escapeHtml(e.naam)}</a>${alts}</span>`
+      `<a href="${escapeHtml(siteUrl(e.url))}">${escapeHtml(e.naam)}</a>${alts}</span>`
     );
   }
 
