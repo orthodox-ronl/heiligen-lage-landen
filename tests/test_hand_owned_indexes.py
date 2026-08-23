@@ -16,6 +16,7 @@ from generate import (  # noqa: E402
     _split_hugo_markdown,
     ensure_achtergrond_topics,
     ensure_hand_owned_indexes,
+    write_generated_indexes,
 )
 
 
@@ -154,3 +155,38 @@ def test_repo_hand_owned_indexes_ok() -> None:
     assert (CONTENT / "datum" / "_index.md").is_file()
     assert (CONTENT / "uitleg" / "nieuw-oud.md").is_file()
     assert (CONTENT / "beheer" / "_index.md").is_file()
+
+
+def test_write_generated_heiligen_index(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_generated_indexes(
+        [
+            {
+                "id": "willibrord",
+                "soort": "heilige",
+                "namen": {"primair": "Willibrord"},
+            },
+            {
+                "id": "servatius",
+                "soort": "heilige",
+                "namen": {"primair": "Servatius"},
+            },
+            {
+                "id": "kerstfeest",
+                "soort": "feest",
+                "namen": {"primair": "Kerstfeest"},
+            },
+        ]
+    )
+    text = (content / "heiligen" / "_index.md").read_text(encoding="utf-8")
+    assert 'title: "Heiligen van de Lage Landen"' in text
+    assert "**2**" in text
+    assert "Willibrord" in text
+    assert "/heiligen/willibrord/" in text
+    assert "Servatius" in text
+    assert "Kerstfeest" not in text
+    assert (content / "feesten" / "_index.md").is_file()
+    assert (content / "vasten" / "_index.md").is_file()

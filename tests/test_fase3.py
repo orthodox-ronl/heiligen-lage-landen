@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 JS = ROOT / "site" / "assets" / "js" / "calendar.js"
-HEILIGEN_LIST = ROOT / "site" / "layouts" / "heiligen" / "list.html"
+HEILIGEN_OVERZICHT = ROOT / "site" / "layouts" / "partials" / "heiligen-overzicht.html"
 
 
 def test_titel_toont_toon() -> None:
@@ -31,7 +31,7 @@ def test_lijsticonen_in_synaxarion_en_heiligenoverzicht() -> None:
     assert "class=\"list-icoon\"" in js or "class='list-icoon'" in js
     assert "synaxarion-table" in js
     assert "function synaxarionTableHtml" in js
-    html = HEILIGEN_LIST.read_text(encoding="utf-8")
+    html = HEILIGEN_OVERZICHT.read_text(encoding="utf-8")
     assert "list-icoon" in (
         ROOT / "site" / "assets" / "js" / "entry-filter.js"
     ).read_text(encoding="utf-8")

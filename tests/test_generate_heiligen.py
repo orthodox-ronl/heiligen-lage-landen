@@ -502,9 +502,13 @@ def test_write_beheer_selectie_naar_beheer_map(
 
 
 def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
-    layout = (ROOT / "site" / "layouts" / "heiligen" / "list.html").read_text(
+    layout = (ROOT / "site" / "layouts" / "partials" / "heiligen-overzicht.html").read_text(
         encoding="utf-8"
     )
+    listing = (ROOT / "site" / "layouts" / "heiligen" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'partial "heiligen-overzicht.html"' in listing
     assert "heiligen-zoek" in layout
     assert "alternatief" in layout
     assert "entry-filter.js" in layout

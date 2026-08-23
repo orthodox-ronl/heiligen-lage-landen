@@ -5,8 +5,10 @@ git_date: 2026-08-23
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
-`/heiligen/`. Bron: gegenereerde `_index.md` uit YAML + layout
-`heiligen/list.html`. Ingang: hoofdnavigatie **Overzichten** → Heiligen.
+`/heiligen/` (zelfde weergave op `/`). Bron: gegenereerde `_index.md`
+uit YAML + partial `heiligen-overzicht.html`. Ingang: sitenaam of
+hoofdnavigatie **Heiligen**. **Vandaag** in de nav opent de
+[datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}).
 
 ## Sticky (sitebreed)
 
@@ -15,10 +17,13 @@ pagina-header (zoeken, sorteren, kolomkoppen).
 
 ## Titel en korte inleiding
 
-**Wel:** dat dit de heiligen **van de Lage Landen** zijn. Die
+**Wel:** titel **Heiligen van de Lage Landen**. Inleiding: hoeveel
+heiligen erin staan; dat dit heiligen **van de Lage Landen** zijn (die
 woordgroep krijgt een popover: kort het criterium, plus link naar
-[uitleg heiligen]({{% ref "/uitleg/heiligen" %}}). Verder: zoeken vindt
-ook andere namen en plaatsen; streken cursief.
+[uitleg heiligen]({{% ref "/uitleg/heiligen" %}})); wie hier predikte,
+stichtte of leed, of na het schisma de Orthodoxie hier hielp opbouwen;
+niet iedere heilige van de Kerk; enkele bekende namen als link; zoeken
+vindt ook andere namen en plaatsen; streken cursief.
 
 **Niet:** de selectielijst (`voldoet` / nader onderzoek / kandidaat);
 how-to YAML; een tweede beleidstekst naast de uitleg.

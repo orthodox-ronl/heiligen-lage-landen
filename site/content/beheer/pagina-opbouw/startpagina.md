@@ -1,38 +1,36 @@
 ---
-title: "Startpagina (Vandaag)"
-description: "Contract: identiteit van de site plus de dagkaart van vandaag"
-git_date: 2026-08-21
+title: "Startpagina (heiligenoverzicht)"
+description: "Contract: het overzicht van heiligen van de Lage Landen is de voordeur"
+git_date: 2026-08-23
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL: `/`.
-Bron: handmatig `site/content/_index.md` (URL `/`) plus dezelfde
-JS-dagkaart als de datumpagina.
+Bron: layout `index.html` toont dezelfde inhoud als
+[Heiligenoverzicht]({{% ref "/beheer/pagina-opbouw/heiligenoverzicht" %}})
+(`site.GetPage "/heiligen"` + partial `heiligen-overzicht.html`).
+`site/content/_index.md` levert alleen de sitenaam in de kop; de
+inleiding komt uit de gegenereerde heiligenindex.
 
-De startpagina *is* de datumpagina van de huidige burgerlijke dag. Alle
-slots van [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
-gelden hier ook. Extra, alleen hier:
+De startpagina *is* het heiligenoverzicht (titel, aantal, criterium,
+kaart, zoeken, tabel). De dagkaart van vandaag staat **niet** hier;
+die hoort op [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
+(`/datum/`, nav **Vandaag**).
 
 ## Sitenaam (kop)
 
 **Wel:** orthodox kruis (zelfde merkteken als de andere
-orthodox-ronl-sites) links van de sitenaam. De sitenaam is een link
-naar vandaag. Het kruis opent een popover: wat de site is, en dat ze
-nog jong is (teksten nog niet nagekeken door mensen die van huis uit
-orthodox zijn; die toets wordt gezocht). Eerste bezoek aan `/`: de
-popover gaat vanzelf open en sluit na klik of enkele seconden; daarna
-gedraagt het kruis zich als elke andere info-tip. Terugkerende
-gebruikers: geen identiteitszin in de body.
+orthodox-ronl-sites) links van de sitenaam. Sitenaam:
+**Heiligen van de Lage Landen — orthodoxe kalender**, link naar `/`
+(dit overzicht). Het kruis opent een popover: eerst het
+heiligenoverzicht, dan dat de kalender daarbij hoort, en dat de site
+nog jong is. Eerste bezoek aan `/`: de popover gaat vanzelf open.
+In de popover: link naar het overzicht en naar Uitleg.
 
-**Niet:** een tweede navigatie; interne padnamen (`data/`, YAML);
-«ras-orthodoxen» in de UI.
+**Niet:** een tweede navigatie; interne padnamen; «ras-orthodoxen».
 
-## Identiteitszin (body van `_index.md`)
+## Overzicht
 
-**Gesloten.** De zin in HTML-commentaar blijft commentaar (niet
-zichtbaar). Identiteit hoort bij de sitenaam-popover, niet in de body.
+Zelfde slots als [Heiligenoverzicht]({{% ref "/beheer/pagina-opbouw/heiligenoverzicht" %}}).
+`/heiligen/` blijft dezelfde weergave (bestaande links).
 
-## Dagkaart
-
-Zie [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
-(titelrij sticky onder de sitenavbar, vasten, Nieuw/Oud, dagtype,
-lezingen, heiligen).
+**Niet:** de volledige dagkaart; YAML-paden; selectielijst.

@@ -1,6 +1,7 @@
-# Orthodoxe Kalender met Heiligen van de Lage Landen
+# Heiligen van de Lage Landen — orthodoxe kalender
 
-Statische site met orthodoxe **vaste feesten** (jaarcyclus) en **heiligen van de Lage Landen**.
+Overzicht van **heiligen van de Lage Landen**, met orthodoxe **vaste feesten**
+(jaarcyclus) en kalender.
 MVP: vaste feesten + heiligen van de Lage Landen + Orthodoxe paascyclus
 (ICS: huidig jaar −2 … +5).
 

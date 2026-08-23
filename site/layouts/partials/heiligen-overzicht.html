@@ -1,0 +1,53 @@
+<section class="section-list" data-heiligen-index>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="heiligen-sticky-head">
+    <p class="filter-bar">
+      <label class="search-label" for="heiligen-zoek">Zoeken (naam of plaats)</label>
+      <input type="search" id="heiligen-zoek" class="search-input" placeholder="bijv. Utrecht, Vlaanderen, Goedele…" autocomplete="off">
+    </p>
+    <div class="heiligen-sort" role="group" aria-label="Sorteren">
+      <span class="heiligen-sort-label">Sorteren:</span>
+      <button type="button" class="style-btn" data-heiligen-sort="naam" aria-pressed="true">Naam</button>
+      <button type="button" class="style-btn" data-heiligen-sort="datum" aria-pressed="false">Datum</button>
+      <button type="button" class="style-btn" data-heiligen-sort="plaats" aria-pressed="false">Plaats</button>
+    </div>
+    <div class="heiligen-col-head is-sort-naam" id="heiligen-col-head" role="row">
+      <span role="columnheader">Naam</span>
+      <span role="columnheader">Plaatsen</span>
+      <span role="columnheader">Feestdatum</span>
+    </div>
+  </div>
+  <div id="heiligen-kaart" class="heiligen-kaart" role="region" aria-label="Kaart van plaatsen"></div>
+  <p class="hint" id="heiligen-zoek-leeg" hidden>Geen heilige met die naam of plaats in dit overzicht.</p>
+  <div id="heiligen-table" class="heiligen-table" data-heiligen-lijst role="table" aria-label="Heiligen"></div>
+  {{- $items := slice -}}
+  {{- range sort .Pages "Title" -}}
+    {{- $plaatsen := slice -}}
+    {{- range (.Params.locatie_items | default slice) -}}
+      {{- $plaatsen = $plaatsen | append (dict "id" .id "naam" .naam "soort" .soort) -}}
+    {{- end -}}
+    {{- $icoon := "" -}}
+    {{- with .Params.icoon -}}{{- $icoon = . | relURL -}}{{- end -}}
+    {{- $item := dict
+      "naam" .Title
+      "url" .RelPermalink
+      "feestdatum" (.Params.feestdatum | default "")
+      "vierdatum_oud" (.Params.vierdatum_oud | default "")
+      "icoon" $icoon
+      "alternatief" (.Params.alternatief | default slice)
+      "plaats_ids" (.Params.locatie_ids | default slice)
+      "plaatsen" $plaatsen
+      "locatie_zoek" (.Params.locatie_zoek | default "")
+    -}}
+    {{- $items = $items | append $item -}}
+  {{- end -}}
+  <script type="application/json" id="heiligen-data">{{ $items | jsonify | safeJS }}</script>
+</section>
+{{ $leafletCss := "vendor/leaflet/leaflet.css" | relURL }}
+<link rel="stylesheet" href="{{ $leafletCss }}">
+{{ $leaflet := resources.Get "js/heiligen-kaart.js" | resources.Minify | resources.Fingerprint }}
+{{ $filter := resources.Get "js/entry-filter.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
+<script src="{{ $leaflet.RelPermalink }}" defer></script>
+<script src="{{ $filter.RelPermalink }}" defer></script>

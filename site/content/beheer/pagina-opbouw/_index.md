@@ -25,12 +25,12 @@ live wijziging vanwege dat slot.
 
 | Soort | Voor wie | Canonieke URL | Bron |
 | --- | --- | --- | --- |
-| [Startpagina (Vandaag)]({{% ref "/beheer/pagina-opbouw/startpagina" %}}) | Bezoeker | `/` | Handmatig `_index.md` + JS |
-| [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}) | Bezoeker | `/datum/?datum=jjjj-mm-dd` | Handmatig `_index.md` + JS |
+| [Startpagina (heiligenoverzicht)]({{% ref "/beheer/pagina-opbouw/startpagina" %}}) | Bezoeker | `/` | Layout + heiligenindex |
+| [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}) | Bezoeker | `/datum/?datum=jjjj-mm-dd` (nav: Vandaag) | Handmatig `_index.md` + JS |
 | [Jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}}) | Bezoeker | `/kalender/` | Handmatig + JS |
 | [Lezingenrooster]({{% ref "/beheer/pagina-opbouw/lezingenrooster" %}}) | Bezoeker / clerus | `/lezingenrooster/` | Handmatig + JS |
 | [Synaxarion]({{% ref "/beheer/pagina-opbouw/synaxarion" %}}) | Bezoeker | `/synaxarion/` | Handmatig + JS |
-| [Heiligenoverzicht]({{% ref "/beheer/pagina-opbouw/heiligenoverzicht" %}}) | Bezoeker | `/heiligen/` (nav: Overzichten) | Gegenereerde index + layout |
+| [Heiligenoverzicht]({{% ref "/beheer/pagina-opbouw/heiligenoverzicht" %}}) | Bezoeker | `/` en `/heiligen/` | Gegenereerde index + layout |
 | [Heilige (detail)]({{% ref "/beheer/pagina-opbouw/heilige" %}}) | Bezoeker | `/heiligen/<id>/` | Gegenereerd uit YAML |
 | [Feest (detail)]({{% ref "/beheer/pagina-opbouw/feest" %}}) | Bezoeker | `/feesten/<id>/` | Gegenereerd uit YAML |
 | [Vastenperiode (detail)]({{% ref "/beheer/pagina-opbouw/vastenperiode" %}}) | Bezoeker | `/vasten/<id>/` | Gegenereerd uit YAML |
