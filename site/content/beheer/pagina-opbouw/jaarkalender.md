@@ -21,8 +21,11 @@ dat u de kalender op telefoon of tablet kunt zetten, met link naar
 
 ## Sticky header
 
-**Wel:** legenda (kleuren) en Nieuw/Oud. Blijft zichtbaar tijdens scrollen.
-Op smal scherm blijft alleen Nieuw/Oud zichtbaar (legenda verborgen).
+**Wel:** op één regel de sitenaam **Jaarkalender** en Nieuw/Oud; daaronder
+de compacte kleurenlegenda: de woorden staan op dezelfde achtergrondkleur
+als de dagcellen (geen aparte swatch). Blijft zichtbaar tijdens scrollen,
+ook op smal scherm (daar is het label *vastenvrij* ingekort tot *vrij*;
+op een cover-scherm van ca. 320px zijn titel en Nieuw/Oud extra compact).
 
 **Niet:** jaartal-navigatie (‹ ›) in de sticky header; een tweede
 Juliaans-raster naast deze.
@@ -51,9 +54,8 @@ betekenis als
 [Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}).
 
 **Niet:** hoe streng het vasten is (dat hoort op de dag zelf);
-afwijkende swatches tussen deze pagina en de uitleg; «vandaag» als
-extra legenda-swatch (dat is een omlijning op de cel).
+afwijkende kleuren tussen deze pagina en de uitleg; «vandaag» als
+extra legendaitem (dat is een omlijning op de cel).
 
-**Gesloten.** Op smal scherm blijft de compacte legenda verborgen. De
-basiskleuren op de kalender en op
+**Gesloten.** De basiskleuren op de kalender en op
 [Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}) zijn dezelfde.

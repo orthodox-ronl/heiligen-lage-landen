@@ -1441,8 +1441,9 @@ button.button {
 
 .kalender-page-title {
   font-size: 1.35rem;
-  flex: 1 1 100%;
-  margin: 0 0 0.35rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
 }
 
 .kalender-page-title .info-term {
@@ -1455,43 +1456,98 @@ button.button {
   top: var(--site-header-offset);
   z-index: 15;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3rem 0;
   margin: 0 0 0.75rem;
-  padding: 0.35rem 0 0.65rem;
+  padding: 0.35rem 0 0.55rem;
   background: color-mix(in srgb, var(--bg) 92%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
 
-.kalender-sticky-tools {
-  flex: 1 1 100%;
+.kalender-sticky-title-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem 1rem;
+  gap: 0.5rem 0.75rem;
+  min-width: 0;
 }
 
 .kalender-sticky-head .legend {
   margin: 0;
-  flex: 1 1 auto;
+}
+
+.legend-chip {
+  display: inline-block;
+  padding: 0.12rem 0.4rem;
+  border-radius: 0.2rem;
+  line-height: 1.3;
+  color: var(--ink);
 }
 
 .kalender-sticky-style {
   flex: 0 0 auto;
-  margin-left: auto;
+}
+
+.legend-label-short {
+  display: none;
 }
 
 @media (max-width: 719px) {
-  .kalender-sticky-head {
-    top: var(--site-header-offset);
+  .kalender-page-title {
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
 
-  .kalender-page .legend.compact {
+  .kalender-sticky-head .style-btn {
+    padding: 0.28rem 0.55rem;
+    font-size: 0.78rem;
+  }
+
+  .kalender-sticky-head .legend {
+    gap: 0.25rem 0.35rem;
+    font-size: 0.78rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .kalender-sticky-head .legend-chip {
+    padding: 0.08rem 0.32rem;
+  }
+
+  .kalender-sticky-head .legend-label-long {
     display: none;
+  }
+
+  .kalender-sticky-head .legend-label-short {
+    display: inline;
+  }
+}
+
+/* Cover-scherm Z Fold 3 (~320px) en Fold 4 (~345px). */
+@media (max-width: 360px) {
+  .kalender-page-title {
+    font-size: 1rem;
+  }
+
+  .kalender-sticky-title-row {
+    gap: 0.35rem;
+  }
+
+  .kalender-sticky-head .style-btn {
+    padding: 0.22rem 0.4rem;
+    font-size: 0.72rem;
+  }
+
+  .kalender-sticky-head .legend {
+    gap: 0.18rem 0.28rem;
+    font-size: 0.72rem;
+  }
+
+  .kalender-sticky-head .legend-chip {
+    padding: 0.06rem 0.28rem;
   }
 }
 

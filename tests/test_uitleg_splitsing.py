@@ -285,8 +285,11 @@ def test_jaarkalender_en_uitleg_zelfde_legenda_swatches() -> None:
     assert "day-beide" not in kal
     assert "day-today" not in kal
     assert "day-beide" not in uitleg
-    assert ".kalender-page .legend.compact" in css
-    assert "display: none;" in css.split(".kalender-page .legend.compact")[1][:80]
+    assert "kalender-sticky-title-row" in kal
+    assert "legend-chip" in kal
+    assert "legend-label-short" in kal
+    assert ".kalender-sticky-title-row" in css
+    assert ".kalender-page .legend.compact" not in css
 
 
 def test_generate_raakt_pagina_opbouw_niet() -> None:
