@@ -1,18 +1,18 @@
 {{ define "main" }}
 <section class="kalender-page" data-kalender>
   <div class="kalender-sticky-head">
-    <h1 class="kalender-page-title">
-      <span class="info-term" tabindex="0" data-info-tip="jaarkalender" title="Kalender op telefoon of tablet">{{ .Title }}</span>
-    </h1>
-    <div class="kalender-sticky-tools">
-      <ul class="legend compact" aria-label="Legenda">
-        <li><span class="swatch day-feest"></span> feest</li>
-        <li><span class="swatch day-heilige"></span> heilige</li>
-        <li><span class="swatch day-vasten"></span> vasten</li>
-        <li><span class="swatch day-vastenvrij"></span> vastenvrij</li>
-      </ul>
+    <div class="kalender-sticky-title-row">
+      <h1 class="kalender-page-title">
+        <span class="info-term" tabindex="0" data-info-tip="jaarkalender" title="Kalender op telefoon of tablet">{{ .Title }}</span>
+      </h1>
       <div class="kalender-sticky-style" id="kalender-style-slot"></div>
     </div>
+    <ul class="legend compact legend-chips" aria-label="Legenda">
+      <li><span class="legend-chip day-feest">feest</span></li>
+      <li><span class="legend-chip day-heilige">heilige</span></li>
+      <li><span class="legend-chip day-vasten">vasten</span></li>
+      <li title="vastenvrij"><span class="legend-chip day-vastenvrij"><span class="legend-label-long">vastenvrij</span><span class="legend-label-short">vrij</span></span></li>
+    </ul>
   </div>
   {{ .Content }}
   <div id="year-grid" class="year-grid"></div>
