@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Wie erin hoort, staat op [Heiligen van de Lage Landen](https://orthodox-ronl.github.io/kalender/uitleg/heiligen/).
+        Wie erin hoort, staat op [Heiligen van de Lage Landen](https://orthodox-ronl.github.io/heiligen-lage-landen/uitleg/heiligen/).
         Patroon van een parochie is op zich niet genoeg.
   - type: input
     id: naam

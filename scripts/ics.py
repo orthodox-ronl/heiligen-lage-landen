@@ -25,7 +25,7 @@ from vasten import (
     mix_vastenniveau,
 )
 
-SITE_PUBLIC_URL = "https://orthodox-ronl.github.io/kalender"
+SITE_PUBLIC_URL = "https://orthodox-ronl.github.io/heiligen-lage-landen"
 
 KIND_ORDER = ("heilige", "feest", "vasten", "vastenvrij")
 KIND_FILE = {

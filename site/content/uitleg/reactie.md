@@ -11,7 +11,7 @@ kalender hoort? Stuur dat per **e-mail**. Daarvoor is geen account nodig.
 {{< reactie-form >}}
 
 Wie al een GitHub-account heeft, kan in plaats daarvan een
-[issue](https://github.com/orthodox-ronl/kalender/issues/new/choose)
+[issue](https://github.com/orthodox-ronl/heiligen-lage-landen/issues/new/choose)
 openen (heilige voorstellen, correctie, of vraag).
 
 Technische wijzigingen in YAML of code horen bij

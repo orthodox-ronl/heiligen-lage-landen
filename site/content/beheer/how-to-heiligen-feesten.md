@@ -9,9 +9,9 @@ Heiligen en feesten bestaan als **bron** in YAML. De pagina’s die u op de
 site ziet, zijn een afdruk. Wijzig de YAML; laat `site/content/heiligen/`
 en `site/content/feesten/` met rust.
 
-Datamodel: [docs/datamodel.md](https://github.com/orthodox-ronl/kalender/blob/main/docs/datamodel.md).
+Datamodel: [docs/datamodel.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/datamodel.md).
 Schema’s (velden + auteursrichtlijnen):
-[schemas/README.md](https://github.com/orthodox-ronl/kalender/blob/main/schemas/README.md).
+[schemas/README.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/schemas/README.md).
 Schema entry: `schemas/entry.schema.json`. Publiceren:
 [site bouwen]({{% ref "/beheer/how-to-publiceren" %}}).
 
@@ -173,7 +173,7 @@ pagina: **Verder lezen en kijken**.
 
 Criteria in gewone taal: [Heiligen van de Lage Landen]({{% ref "/uitleg/heiligen" %}}).
 Velden: [technisch]({{% ref "/uitleg/heiligen-technisch" %}}) en
-[docs/datamodel.md](https://github.com/orthodox-ronl/kalender/blob/main/docs/datamodel.md).
+[docs/datamodel.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/datamodel.md).
 
 Pagina-opbouw (na de infobox): zie het
 [contract Heilige]({{% ref "/beheer/pagina-opbouw/heilige" %}})
@@ -203,8 +203,8 @@ selectie_toelichting_publiek: "…"  # optioneel; lezersversie
   `selectie_toelichting_publiek`, anders `selectie_toelichting`.
 - Extra top-level YAML-velden mogen (notities/experimenten); ze komen niet
   op de site tot generate/UI ze kent. Zie
-  [schemas/README.md](https://github.com/orthodox-ronl/kalender/blob/main/schemas/README.md).
-- Beslissingslog: [docs/inventaris.md](https://github.com/orthodox-ronl/kalender/blob/main/docs/inventaris.md)
+  [schemas/README.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/schemas/README.md).
+- Beslissingslog: [docs/inventaris.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/inventaris.md)
   (geen vaste aantallen). Live overzicht:
   [Selectie heiligen]({{% ref "/beheer/selectie" %}}).
 - `betekenis_lage_landen` is een **apart** stuk, niet hetzelfde als
@@ -235,7 +235,7 @@ Schrijf vanuit ontvangen **kerkvaders** en het **dienstboek**. Hopko
 (*The Orthodox Faith*) is brug. Johannes van Shanghai of Sophrony
 alleen als zij dezelfde vader naspreken — niet als enige bron, en niet
 om hun band met de Lage Landen in deze tekst te noemen. Locators en
-volgorde: [bronnennota](https://github.com/orthodox-ronl/kalender/blob/main/docs/onderzoek/feest-betekenis-bronnen.md).
+volgorde: [bronnennota](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/onderzoek/feest-betekenis-bronnen.md).
 
 Voorbeeld: Theofanie. Grootfeesten, Pascha, Heilige Week-dagen, de
 kernfeesten, de Triodion-zondagen, Thomas tot de Blinde,

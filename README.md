@@ -5,8 +5,8 @@ Overzicht van **heiligen van de Lage Landen**, met orthodoxe **vaste feesten**
 MVP: vaste feesten + heiligen van de Lage Landen + Orthodoxe paascyclus
 (ICS: huidig jaar −2 … +5).
 
-- Productie: https://orthodox-ronl.github.io/kalender/
-- Preview (niet-`main`): https://orthodox-ronl.github.io/kalender/preview/
+- Productie: https://orthodox-ronl.github.io/heiligen-lage-landen/
+- Preview (niet-`main`): https://orthodox-ronl.github.io/heiligen-lage-landen/preview/
 
 ## Wat zit erin
 

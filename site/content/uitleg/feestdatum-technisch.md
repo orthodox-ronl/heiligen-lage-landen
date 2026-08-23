@@ -10,7 +10,7 @@ git_date: 2026-08-20
 
 Technische bijlage bij de [uitleg Feestdatum]({{% ref "/uitleg/feestdatum" %}}).
 
-Normatief datamodel: [docs/datamodel.md](https://github.com/orthodox-ronl/kalender/blob/main/docs/datamodel.md).
+Normatief datamodel: [docs/datamodel.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/datamodel.md).
 How-to: [heiligen en feesten wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}}).
 
 ## Vaste dag

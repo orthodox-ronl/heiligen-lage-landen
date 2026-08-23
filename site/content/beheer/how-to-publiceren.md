@@ -41,7 +41,7 @@ opnieuw worden gezet.
 ## Publiceren
 
 Push naar `main` → productie
-(https://orthodox-ronl.github.io/kalender/).
+(https://orthodox-ronl.github.io/heiligen-lage-landen/).
 
 Push naar een andere branch → preview onder `/preview/`.
 
