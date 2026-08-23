@@ -54,7 +54,8 @@ muiswiel (dat scrollt de pagina).
 feestdatum (Dag | Heiligen | Plaatsen), maandovergangen met
 scheidingslijn; dagkolom gecentreerd. Sorteren op **plaats**: één rij
 per plaats (Plaats | Heiligen | Feestdatum). Klein icoon indien
-aanwezig. Alle heiligen in de catalogus (ook grensgevallen).
+aanwezig. Feestdatum met haakjes voor de oude burgerlijke datum indien
+die verschilt. Alle heiligen in de catalogus (ook grensgevallen).
 
 **Niet:** de vita in de rij; `selectie_toelichting`; GitHub-paden;
 meerdere rijen voor dezelfde datum of plaats bij die sorteermodi.

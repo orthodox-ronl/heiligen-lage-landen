@@ -21,7 +21,8 @@ contract.
 
 **Wel:** icoon alleen met lokale licentie (`rechten: ok`) plus bron en
 licentie in het bijschrift. Daarna, voor zover bekend: titel(s); ook-namen;
-feestdag (link naar datumpagina); leefde; plaatsen (streek cursief, link
+feestdag (link naar datumpagina; tussen haakjes alleen de burgerlijke
+datum op de oude kalender, met popover); leefde; plaatsen (streek cursief, link
 naar het overzicht); rustplaats (waar het lichaam traditioneel rust, geen
 verspreide relieken).
 
@@ -34,7 +35,8 @@ verspreide relieken).
 (**Feestdag:** met link). Dat is bewust: de box is naslag, de body is
 leesvolgorde.
 
-**Wel:** dezelfde canonieke dag als in de infobox; bij geen vaste dag:
+**Wel:** dezelfde canonieke dag als in de infobox, inclusief haakjes met
+alleen de oude burgerlijke datum; bij geen vaste dag:
 dezelfde vijfjaren-tabel als op een feest (lopend jaar plus vier). Extra
 gedenkdagen (orthodox bekend)
 als **Andere gedenkdagen**, niet als tweede canonieke Feestdag.

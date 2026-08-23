@@ -328,3 +328,17 @@ def test_startpagina_identiteit_via_popover() -> None:
     _meta, body = _meta_body(BEHEER / "pagina-opbouw" / "startpagina.md")
     assert "**Gesloten.**" in body
     assert "HTML-commentaar blijft commentaar" in body
+
+
+def test_nieuw_oud_uitleg_beschrijft_haakjes() -> None:
+    _meta, body = _meta_body(UITLEG / "nieuw-oud.md")
+    hoofd, _voet = body.split("## Voor wie de site bijhoudt", 1)
+    assert "Op een feest- of vastenpagina" in hoofd
+    assert "tussen haakjes" in hoofd
+    assert "Willibrord" in hoofd
+    assert "Pinksteren" in hoofd
+    assert "westers" in hoofd.lower()
+    _fmeta, fbody = _meta_body(UITLEG / "feestdatum.md")
+    fhoofd = fbody.split("## Voor wie de site bijhoudt", 1)[0]
+    assert "geen tweede feestdatum" in fhoofd
+    assert "/uitleg/nieuw-oud" in fhoofd

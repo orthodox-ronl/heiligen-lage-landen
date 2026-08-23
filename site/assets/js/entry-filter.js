@@ -81,6 +81,26 @@
     return `${dayNumber(mmdd)} ${MONTHS_SHORT[m] || ""}`.trim();
   }
 
+  function vierdatumOldHtml(mmdd) {
+    const label = shortFeestdatum(mmdd);
+    if (!label) return "";
+    return (
+      `<span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" ` +
+      `title="Datum op de oude kalender">(${escapeHtml(label)})</span>`
+    );
+  }
+
+  function feestdatumHtml(e) {
+    const fd = e.feestdatum || "";
+    if (!fd) return "";
+    const oud = e.vierdatum_oud || "";
+    const fdHtml = `<a href="${escapeHtml(datumHref(fd))}">${escapeHtml(
+      shortFeestdatum(fd)
+    )}</a>`;
+    if (!oud || oud === fd) return fdHtml;
+    return `${fdHtml} ${vierdatumOldHtml(oud)}`;
+  }
+
   function datumHref(mmdd) {
     if (!mmdd) return "";
     try {
@@ -170,10 +190,7 @@
     const sorted = rows.slice().sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
     return sorted
       .map((e) => {
-        const fd = e.feestdatum || "";
-        const fdHtml = fd
-          ? `<a href="${escapeHtml(datumHref(fd))}">${escapeHtml(shortFeestdatum(fd))}</a>`
-          : "";
+        const fdHtml = feestdatumHtml(e);
         return (
           `<div class="heiligen-row is-sort-naam" role="row">` +
           `<div role="cell">${naamCell(e)}</div>` +
@@ -280,10 +297,11 @@
           new Set(unique.map((e) => e.feestdatum).filter(Boolean))
         ).sort();
         const datumHtml = datums
-          .map(
-            (fd) =>
-              `<a href="${escapeHtml(datumHref(fd))}">${escapeHtml(shortFeestdatum(fd))}</a>`
-          )
+          .map((fd) => {
+            const entry = unique.find((e) => e.feestdatum === fd);
+            return entry ? feestdatumHtml(entry) : "";
+          })
+          .filter(Boolean)
           .join(", ");
         const label =
           bucket.soort === "streek"

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -40,6 +41,9 @@ def test_site_intro_popover_tekst() -> None:
     assert "betekenis-goedkeuring" in js
     assert "maybeShowSiteIntro" in js
     assert "ontleend aan" in js
+    assert 'kind === "vierdatum-oud"' in js
+    assert "oude-kalenderparochies" in js
+    assert "Oude kalender" in js
 
 
 def test_homepage_verwijst_naar_uitleg_heiligen() -> None:
@@ -102,3 +106,55 @@ def test_uitleg_heiligen_noemt_parochiepatronen() -> None:
     assert "bronlaag" not in hoofd
     assert "kaart" in hoofd
     assert "data/" not in hoofd
+
+
+_LAYOUT_ACTION = re.compile(r"\{\{/\*.*?\*/\}\}|\{\{-?\s*(.*?)\s*-?\}\}", re.S)
+
+
+def test_layouts_with_heeft_geen_else_if() -> None:
+    """Go-templates: `with` ondersteunt geen `else if` (Hugo: unexpected <if>)."""
+    errors: list[str] = []
+    for path in (SITE / "layouts").rglob("*.html"):
+        text = path.read_text(encoding="utf-8")
+        stack: list[str] = []
+        for match in _LAYOUT_ACTION.finditer(text):
+            if match.group(0).startswith("{{/*"):
+                continue
+            inner = (match.group(1) or "").strip()
+            if not inner:
+                continue
+            first = inner.split()[0]
+            if first in {"if", "with", "range", "block", "define"}:
+                stack.append(first)
+            elif first == "end":
+                if stack:
+                    stack.pop()
+            elif first == "else":
+                rest = inner[4:].lstrip()
+                if rest.startswith("if") and stack and stack[-1] != "if":
+                    rel = path.relative_to(SITE)
+                    errors.append(f"{rel}: else if na {stack[-1]}")
+    assert errors == []
+
+
+def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
+    default_list = (SITE / "layouts" / "_default" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    heiligen_list = (SITE / "layouts" / "heiligen" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    assert "{{ if .Params.feestdatum }}" in default_list
+    assert "{{ else if and .Params.van .Params.tot }}" in default_list
+    assert ".Params.vierdatum_oud" in default_list
+    assert ".Params.van_oud" in default_list
+    assert ".Params.tot_oud" in default_list
+    assert "vierdatum-oud.html" in default_list
+    assert "$.Params.vierdatum_oud" not in default_list
+    assert "vierdatum_oud" in heiligen_list
+    assert "heiligen-data" in heiligen_list
+    filter_js = (SITE / "assets" / "js" / "entry-filter.js").read_text(
+        encoding="utf-8"
+    )
+    assert "vierdatum_oud" in filter_js
+    assert "vierdatum-oud" in filter_js

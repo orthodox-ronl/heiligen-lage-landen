@@ -5,7 +5,7 @@ uitleg_stijl: nieuw-oud-technisch
 build:
   list: never
   render: always
-git_date: 2026-08-18
+git_date: 2026-08-22
 ---
 
 Technische bijlage bij de [uitleg Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
@@ -28,6 +28,26 @@ datum.
 Code: `scripts/kalender.py` (`julian_feast_to_civil_date`,
 `gregorian_to_julian_calendar`) en, gespiegeld in de browser,
 `site/assets/js/calendar.js`.
+
+## Weergave op feest- en vastenpagina’s
+
+Entry-pagina’s (en de overzichten) tonen **burgerlijke vierdata**: de datum
+waarop nieuwe-kalenderparochies vieren of vasten, en tussen haakjes **alleen**
+de burgerlijke datum van oude-kalenderparochies als die verschilt
+(`vierdatum_oud`, `van_oud` / `tot_oud`; `oud_vierdatum_html` in
+`generate.py`). De haakjes hebben popover `data-info-tip="vierdatum-oud"`.
+Geen bijschrift onder de jaartabel.
+
+Dat is **niet** de Juliaanse dagnaam van dezelfde burgerlijke dag. Pinksteren
+2026 is 31 mei voor iedereen; daar komen geen haakjes.
+
+- Vaste dag (heiligen en feesten): feestdatum plus haakjes.
+- Vaste periode: elke randdatum plus haakjes (`1 aug (14 aug) – 14 aug (27 aug)`).
+- Paascyclus-dag of -periode (beide einden t.o.v. Pascha): één burgerlijke
+  datum of van–tot, zonder haakjes.
+- Hybride periode (Apostelvasten) en weekdag-relatief: haakjes bij de
+  datum die van een vaste feestdatum afhangt.
+- Geen tweede Nieuw/Oud-knop op de entry-pagina.
 
 ## Offset
 

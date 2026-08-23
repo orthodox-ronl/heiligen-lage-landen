@@ -1335,6 +1335,21 @@
       }
       return;
     }
+    if (kind === "vierdatum-oud") {
+      title.textContent = "Oude kalender";
+      body.innerHTML =
+        `<p>De datum <em>voor</em> de haakjes is de burgerlijke dag ` +
+        `(Nederlandse agenda) waarop <strong>nieuwe-kalenderparochies</strong> ` +
+        `vieren of vasten.</p>` +
+        `<p>Tussen haakjes staat alleen de burgerlijke dag waarop ` +
+        `<strong>oude-kalenderparochies</strong> hetzelfde houden. ` +
+        `Dat is geen tweede feestdatum: het feest heet in beide kalenders ` +
+        `hetzelfde (Kerst blijft 25&nbsp;december).</p>` +
+        `<p>Geen haakjes: nieuw en oud vallen op dezelfde burgerlijke dag ` +
+        `(Pascha en wat daarvan afhangt).</p>`;
+      fillNieuwOudMeer(meer);
+      return;
+    }
     if (kind === "nieuw-oud") {
       // Knop «?» naast Nieuw/Oud: situatief, geankerd op vandaag.
       const style = getStyle();

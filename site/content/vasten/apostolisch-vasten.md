@@ -10,6 +10,7 @@ lage_landen: false
 source_path: "data/vasten/apostolisch-vasten.yaml"
 van_offset_dagen: 57
 tot: 06-28
+tot_oud: 07-11
 alternatief:
   - "Apostolisch vasten"
   - "Apostelenvasten"
@@ -19,17 +20,17 @@ vastenniveau: lichter
 onderdrukt_wekelijks_vasten: true
 ---
 
-**Komende jaren (wereldlijk / Gregoriaans):**
+**Komende jaren (burgerlijk):**
 
 <div class="table-wrap">
 <table class="komende-jaren">
 <thead><tr><th>Jaar</th><th>Van</th><th>Tot</th></tr></thead>
 <tbody>
-<tr><td>2026</td><td><a href="/datum/?datum=2026-06-08&amp;stijl=gregoriaans">8 juni</a></td><td><a href="/datum/?datum=2026-06-28&amp;stijl=gregoriaans">28 juni</a></td></tr>
-<tr><td>2027</td><td><a href="/datum/?datum=2027-06-28&amp;stijl=gregoriaans">28 juni</a></td><td><a href="/datum/?datum=2027-06-28&amp;stijl=gregoriaans">28 juni</a></td></tr>
-<tr><td>2028</td><td><a href="/datum/?datum=2028-06-12&amp;stijl=gregoriaans">12 juni</a></td><td><a href="/datum/?datum=2028-06-28&amp;stijl=gregoriaans">28 juni</a></td></tr>
-<tr><td>2029</td><td><a href="/datum/?datum=2029-06-04&amp;stijl=gregoriaans">4 juni</a></td><td><a href="/datum/?datum=2029-06-28&amp;stijl=gregoriaans">28 juni</a></td></tr>
-<tr><td>2030</td><td><a href="/datum/?datum=2030-06-24&amp;stijl=gregoriaans">24 juni</a></td><td><a href="/datum/?datum=2030-06-28&amp;stijl=gregoriaans">28 juni</a></td></tr>
+<tr><td>2026</td><td><a href="/datum/?datum=2026-06-08&amp;stijl=gregoriaans">8 juni</a></td><td><a href="/datum/?datum=2026-06-28&amp;stijl=gregoriaans">28 juni</a> <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2027</td><td><a href="/datum/?datum=2027-06-28&amp;stijl=gregoriaans">28 juni</a></td><td><a href="/datum/?datum=2027-06-28&amp;stijl=gregoriaans">28 juni</a> <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2028</td><td><a href="/datum/?datum=2028-06-12&amp;stijl=gregoriaans">12 juni</a></td><td><a href="/datum/?datum=2028-06-28&amp;stijl=gregoriaans">28 juni</a> <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2029</td><td><a href="/datum/?datum=2029-06-04&amp;stijl=gregoriaans">4 juni</a></td><td><a href="/datum/?datum=2029-06-28&amp;stijl=gregoriaans">28 juni</a> <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
+<tr><td>2030</td><td><a href="/datum/?datum=2030-06-24&amp;stijl=gregoriaans">24 juni</a></td><td><a href="/datum/?datum=2030-06-28&amp;stijl=gregoriaans">28 juni</a> <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 juli)</span></td></tr>
 </tbody>
 </table>
 </div>

@@ -10,6 +10,8 @@ lage_landen: false
 source_path: "data/vasten/geboorte-vasten.yaml"
 van: 11-15
 tot: 12-24
+van_oud: 11-28
+tot_oud: 01-06
 alternatief:
   - "Filipsvasten"
   - "Kerstvasten"

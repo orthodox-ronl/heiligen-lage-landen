@@ -1,0 +1,9 @@
+{{/*
+  Alleen de oude burgerlijke datum tussen haakjes.
+  Popover: data-info-tip="vierdatum-oud".
+  Gebruik: {{ partial "vierdatum-oud.html" $p.vierdatum_oud }}
+*/}}
+{{- $mmdd := . -}}
+{{- if and $mmdd (findRE `^\d{2}-\d{2}$` $mmdd) -}}
+<span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">({{ partial "feestdatum-kort.html" $mmdd }})</span>
+{{- end -}}
