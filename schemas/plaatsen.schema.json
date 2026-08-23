@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://orthodox-ronl.github.io/kalender/schemas/plaatsen.schema.json",
+  "$id": "https://orthodox-ronl.github.io/heiligen-lage-landen/schemas/plaatsen.schema.json",
   "title": "Plaatsenregister (data/plaatsen.yaml)",
   "description": "Lijst onder sleutel plaatsen. soort plaats = marker bij gebruik; streek = zoeken/marker alleen als de heilige de streek-id noemt. Weergavenaam herkenbaar Nederlands; Latijn/historisch in alternatief. Extra velden per plaats toegestaan.",
   "type": "object",

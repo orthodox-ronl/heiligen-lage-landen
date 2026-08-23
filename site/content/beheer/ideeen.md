@@ -39,13 +39,13 @@ Midden-Pinksterfeest, de concilie- en voorvaderzondagen en de
 Allerzielen-zaterdagen hebben nu `betekenis`. Voorfeest, nafeest,
 synaxis, weken, Boterweek en overige kalenderranden: nog niet.
 Bronnen:
-[`docs/onderzoek/feest-betekenis-bronnen.md`](https://github.com/orthodox-ronl/kalender/blob/main/docs/onderzoek/feest-betekenis-bronnen.md).
+[`docs/onderzoek/feest-betekenis-bronnen.md`](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/onderzoek/feest-betekenis-bronnen.md).
 
 ## Parochiepatronen
 
 Patroon van een kerk is nu geen toelatingsgrond (zie
 [uitleg heiligen]({{% ref "/uitleg/heiligen" %}}) en de C-lijst in
-[docs/inventaris.md](https://github.com/orthodox-ronl/kalender/blob/main/docs/inventaris.md)).
+[docs/inventaris.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/inventaris.md)).
 
 Later denkbaar, **onderaan** de heiligen van een datum (na de
 Lage-Landen-heiligen), duidelijk gemerkt, met link naar de parochiesite.

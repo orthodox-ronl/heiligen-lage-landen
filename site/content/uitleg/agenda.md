@@ -60,6 +60,10 @@ houdt de oude, losse afspraken vaak vast (andere id’s). Verwijder dat
 abonnement en voeg dezelfde link opnieuw toe. Daarna is het één balk per
 dag. Wie een bestand heeft gedownload, moet opnieuw importeren.
 
+Abonnementen op de oude site-URL (`orthodox-ronl.github.io/kalender/ics/…`)
+werken niet meer. Verwijder dat abonnement in uw agenda-app en maak via
+de pagina [Agenda]({{% ref "/agenda" %}}) een nieuw abonnement.
+
 Latere tekstwijzigingen in dezelfde feed (titel, beschrijving) komen na
 Google’s verversing vanzelf binnen — vaak uren, soms tot een dag.
 

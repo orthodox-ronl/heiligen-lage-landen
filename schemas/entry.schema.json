@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://orthodox-ronl.github.io/kalender/schemas/entry.schema.json",
+  "$id": "https://orthodox-ronl.github.io/heiligen-lage-landen/schemas/entry.schema.json",
   "title": "Heiligenkalender entry",
   "type": "object",
   "additionalProperties": true,

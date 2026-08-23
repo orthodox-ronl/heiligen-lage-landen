@@ -222,7 +222,7 @@ def test_calname_en_ttl_en_url() -> None:
     ics = _build(ALLES)
     assert "X-WR-CALNAME:Orthodox · Lage Landen (nieuw)" in _unfold(ics)
     assert "X-PUBLISHED-TTL:P1D" in ics
-    assert "URL:https://orthodox-ronl.github.io/kalender/datum/" in _unfold(ics)
+    assert "URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/" in _unfold(ics)
 
 
 def test_day_title_leeg_zonder_subset() -> None:

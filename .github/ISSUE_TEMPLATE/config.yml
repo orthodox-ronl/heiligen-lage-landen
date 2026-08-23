@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: Uitleg op de site
-    url: https://orthodox-ronl.github.io/kalender/uitleg/
+    url: https://orthodox-ronl.github.io/heiligen-lage-landen/uitleg/
     about: Wat er wel en niet in de kalender staat, vasten, lezingen, nieuw/oud
   - name: Reactie geven (toelichting)
-    url: https://orthodox-ronl.github.io/kalender/uitleg/reactie/
+    url: https://orthodox-ronl.github.io/heiligen-lage-landen/uitleg/reactie/
     about: Per e-mail, zonder GitHub-account; of via de issue-formulieren hieronder

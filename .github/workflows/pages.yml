@@ -1,8 +1,8 @@
 # Deploy kalender to GitHub Pages.
 # - push main  → productie (gh-pages root)
 # - andere branch → preview (gh-pages:/preview/)
-# URL prod:    https://orthodox-ronl.github.io/kalender/
-# URL preview: https://orthodox-ronl.github.io/kalender/preview/
+# URL prod:    https://orthodox-ronl.github.io/heiligen-lage-landen/
+# URL preview: https://orthodox-ronl.github.io/heiligen-lage-landen/preview/
 # Pages setting: Deploy from a branch → gh-pages → /.
 
 name: Deploy site to GitHub Pages
@@ -38,16 +38,16 @@ jobs:
           branch="${GITHUB_REF#refs/heads/}"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
           if [[ "${GITHUB_REF}" == "refs/heads/main" ]]; then
-            echo "base_url=https://orthodox-ronl.github.io/kalender/" >> "$GITHUB_OUTPUT"
+            echo "base_url=https://orthodox-ronl.github.io/heiligen-lage-landen/" >> "$GITHUB_OUTPUT"
             echo "destination_dir=" >> "$GITHUB_OUTPUT"
-            echo "url_prefix=/kalender/" >> "$GITHUB_OUTPUT"
-            echo "pages_url=https://orthodox-ronl.github.io/kalender/" >> "$GITHUB_OUTPUT"
+            echo "url_prefix=/heiligen-lage-landen/" >> "$GITHUB_OUTPUT"
+            echo "pages_url=https://orthodox-ronl.github.io/heiligen-lage-landen/" >> "$GITHUB_OUTPUT"
             echo "label=production" >> "$GITHUB_OUTPUT"
           else
-            echo "base_url=https://orthodox-ronl.github.io/kalender/preview/" >> "$GITHUB_OUTPUT"
+            echo "base_url=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/" >> "$GITHUB_OUTPUT"
             echo "destination_dir=preview" >> "$GITHUB_OUTPUT"
-            echo "url_prefix=/kalender/preview/" >> "$GITHUB_OUTPUT"
-            echo "pages_url=https://orthodox-ronl.github.io/kalender/preview/" >> "$GITHUB_OUTPUT"
+            echo "url_prefix=/heiligen-lage-landen/preview/" >> "$GITHUB_OUTPUT"
+            echo "pages_url=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/" >> "$GITHUB_OUTPUT"
             echo "label=preview" >> "$GITHUB_OUTPUT"
           fi
 
