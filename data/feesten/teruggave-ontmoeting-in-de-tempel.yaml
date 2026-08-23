@@ -1,0 +1,30 @@
+id: teruggave-ontmoeting-in-de-tempel
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van de Ontmoeting in de Tempel
+  alternatief:
+  - Apodosis van de Ontmoeting
+observances:
+  - feest
+datum:
+  waarde: "02-09"
+  stijl: juliaans
+icoon:
+  bestand: iconen/ontmoeting-in-de-tempel.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Ontmoeting in de tempel.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Ontmoeting in de tempel"
+    url: "https://orthodoxwiki.org/Presentation"
+    geraadpleegd: "2026-08-17"

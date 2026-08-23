@@ -1,0 +1,30 @@
+id: teruggave-tempelgang-moeder-gods
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van de Tempelgang van de Moeder Gods
+  alternatief:
+  - Apodosis van de Tempelgang
+observances:
+  - feest
+datum:
+  waarde: "11-25"
+  stijl: juliaans
+icoon:
+  bestand: iconen/tempelgang-moeder-gods.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Tempelgang van de Moeder Gods.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Tempelgang van de Moeder Gods"
+    url: "https://orthodoxwiki.org/Entrance_of_the_Theotokos"
+    geraadpleegd: "2026-08-17"

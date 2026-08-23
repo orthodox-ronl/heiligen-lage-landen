@@ -6,7 +6,9 @@ git_date: 2026-08-21
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/agenda/`. Bron: handmatig [`site/content/agenda/_index.md`]({{% ref "/agenda" %}})
-+ layout (stappen, voorbeeldweek, knoppen).
++ layout (stappen, voorbeeldweek, knoppen). Ingang: popover op de
+titel van de [jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}});
+niet in de hoofdnavigatie.
 
 ## Inleiding
 
@@ -18,7 +20,8 @@ beheer-generate-uitleg.
 
 ## Stap 1: wat
 
-**Wel:** heiligen, feesten, vasten (één, twee of drie).
+**Wel:** heiligen, feesten, vasten, vastenvrij (één of meer). Vasten
+is vasten; vastenvrij is de uitzondering (Lichte Week, Kerst, …).
 
 **Niet:** universeel menologion als optie.
 
@@ -37,8 +40,8 @@ momentopname.
 
 ## Voorbeeldweek
 
-**Wel:** hoe een dag in de app-titel oogt; vasten als kort label als
-aangevinkt.
+**Wel:** hoe een dag in de app-titel oogt; vasten of vastenvrij als
+kort label als aangevinkt.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
 titellogica.

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from datetime import date, timedelta
@@ -68,6 +69,26 @@ MONTH_NAMES_NL = [
     "november",
     "december",
 ]
+MONTH_NAMES_SHORT = [
+    "",
+    "jan",
+    "feb",
+    "mrt",
+    "apr",
+    "mei",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "okt",
+    "nov",
+    "dec",
+]
+_DATE_IN_PROSE = re.compile(
+    r"\b(\d{1,2}) ("
+    + "|".join(MONTH_NAMES_NL[1:])
+    + r")\b(?! \d{3,})(?! \(\d)"
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -83,6 +104,57 @@ def parse_args() -> argparse.Namespace:
 def mmdd_label(mmdd: str) -> str:
     month, day = (int(x) for x in mmdd.split("-"))
     return f"{day} {MONTH_NAMES_NL[month]}"
+
+
+def mmdd_label_short(mmdd: str) -> str:
+    month, day = (int(x) for x in mmdd.split("-"))
+    return f"{day} {MONTH_NAMES_SHORT[month]}"
+
+
+def burgerlijk_label_short(d: date, *, jaar: int | None = None) -> str:
+    label = f"{d.day} {MONTH_NAMES_SHORT[d.month]}"
+    if jaar is not None and d.year != jaar:
+        label += f" {d.year}"
+    return label
+
+
+def to_short_month_label(label: str) -> str:
+    for i, name in enumerate(MONTH_NAMES_NL):
+        if name and name in label:
+            return label.replace(name, MONTH_NAMES_SHORT[i], 1)
+    return label
+
+
+def wrap_zelfde_vierdatum(inner_html: str) -> str:
+    """Zelfde popover als ``zelfde_vierdatum_html``, zonder de inhoud te escapen."""
+    return (
+        f'<span class="vierdatum-gelijk" tabindex="0" '
+        f'data-info-tip="vierdatum-gelijk" '
+        f'title="Nieuw en oud op dezelfde burgerlijke dag">'
+        f"{inner_html}</span>"
+    )
+
+
+def zelfde_vierdatum_html(inner: str) -> str:
+    """Burgerlijke datum waarop nieuw en oud samenvallen; popover legt uit."""
+    return wrap_zelfde_vierdatum(html_escape(inner))
+
+
+def annotate_prose_dates(text: str) -> str:
+    """Voeg oude-kalenderhaakjes toe bij liturgische datums in feest-/vastentekst."""
+
+    def repl(match: re.Match[str]) -> str:
+        day = int(match.group(1))
+        month = MONTH_NAMES_NL.index(match.group(2))
+        try:
+            date(2001, month, day)
+            mmdd = f"{month:02d}-{day:02d}"
+            oud = julian_feast_to_civil_date(date.today().year, mmdd)
+        except ValueError:
+            return match.group(0)
+        return f"{match.group(0)} {oud_vierdatum_html(burgerlijk_label_short(oud))}"
+
+    return _DATE_IN_PROSE.sub(repl, text)
 
 
 def occurrence_years(today: date | None = None) -> range:
@@ -110,14 +182,14 @@ def oud_vierdatum_html(inner: str) -> str:
         f'<span class="vierdatum-oud" tabindex="0" '
         f'data-info-tip="vierdatum-oud" '
         f'title="Datum op de oude kalender">'
-        f"({html_escape(inner)})</span>"
+        f"({html_escape(to_short_month_label(inner))})</span>"
     )
 
 
 def cel_nieuw_met_oud(nieuw: str, oud: str | None) -> str:
     """Burgerlijke datum, plus haakjes met alleen de oude datum als die verschilt."""
     if not oud or oud == nieuw:
-        return html_escape(nieuw)
+        return zelfde_vierdatum_html(nieuw)
     return f"{html_escape(nieuw)} {oud_vierdatum_html(oud)}"
 
 
@@ -193,7 +265,7 @@ def cel_nieuw_met_oud_link(
     """Klikbare burgerlijke datum, plus haakjes met oude datum als die verschilt."""
     nieuw_html = datum_pagina_cell(nieuw_label, civil, stijl=stijl)
     if not oud_label or oud_label == nieuw_label:
-        return nieuw_html
+        return wrap_zelfde_vierdatum(nieuw_html)
     return f"{nieuw_html} {oud_vierdatum_html(oud_label)}"
 
 
@@ -406,6 +478,30 @@ def period_bounds_for_year(
     return None
 
 
+def overzicht_sortering(entry: dict[str, Any]) -> str:
+    """Sorteersleutel voor /feesten/ en /vasten/: kerkjaar, daarna paascyclus."""
+    dn = entry.get("datum_norm") or {}
+    vorm = dn.get("vorm") or "dag"
+    eid = str(entry.get("id") or "")
+    if entry.get("cyclus") == "wekelijks":
+        return f"3-{eid}"
+    if entry.get("cyclus") == "paascyclus":
+        off = dn.get("paascyclus_offset")
+        if off is None:
+            off = dn.get("van_offset_dagen")
+        if off is None:
+            off = 999
+        return f"2-{int(off) + 200:04d}-{eid}"
+    mmdd = dn.get("feestdatum") or dn.get("van") or dn.get("anker")
+    if mmdd and len(str(mmdd)) >= 5:
+        m, d = int(str(mmdd)[:2]), int(str(mmdd)[3:5])
+        kerk_m = (m - 9) % 12
+        return f"1-{kerk_m:02d}-{d:02d}-{eid}"
+    if vorm == "weekdagen":
+        return f"3-{eid}"
+    return f"9-{eid}"
+
+
 def write_entry_page(entry: dict[str, Any]) -> None:
     kind = SOORT_DIR[entry["soort"]]
     title = entry["namen"]["primair"]
@@ -423,6 +519,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         f"bronlaag: {bronlaag_van(entry)}",
         f"lage_landen: {'true' if entry.get('lage_landen') else 'false'}",
         f"source_path: {yaml_quote(entry['source_path'])}",
+        f"overzicht_sortering: {yaml_quote(overzicht_sortering(entry))}",
     ]
     if feestdatum and vorm == "dag":
         fm.append(f"feestdatum: {feestdatum}")
@@ -620,10 +717,9 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         )
     elif vorm == "dag" and feestdatum:
         oud = julian_feast_to_civil_date(date.today().year, feestdatum)
-        oud_l = burgerlijk_label(oud)
         body.append(
             f"**Feestdag:** [{mmdd_label(feestdatum)}](/datum/?dag={feestdatum}) "
-            f"{oud_vierdatum_html(oud_l)}"
+            f"{oud_vierdatum_html(burgerlijk_label_short(oud))}"
         )
         body.append("")
         if dn.get("gregoriaans") or dn.get("juliaans"):
@@ -658,15 +754,21 @@ def write_entry_page(entry: dict[str, Any]) -> None:
     if betekenis:
         body.append("## Betekenis voor de Lage Landen")
         body.append("")
-        body.append(betekenis)
+        body.append(annotate_prose_dates(betekenis) if entry.get("soort") in {"feest", "vasten"} else betekenis)
         body.append("")
     if entry.get("samenvatting"):
-        body.append(entry["samenvatting"].strip())
+        samenvatting = entry["samenvatting"].strip()
+        if entry.get("soort") in {"feest", "vasten"}:
+            samenvatting = annotate_prose_dates(samenvatting)
+        body.append(samenvatting)
         body.append("")
     if entry.get("verhaal"):
         body.append("## Verhaal")
         body.append("")
-        body.append(entry["verhaal"].strip())
+        verhaal = entry["verhaal"].strip()
+        if entry.get("soort") in {"feest", "vasten"}:
+            verhaal = annotate_prose_dates(verhaal)
+        body.append(verhaal)
         body.append("")
     if entry.get("soort") == "feest":
         betekenis_feest = (entry.get("betekenis") or "").strip()

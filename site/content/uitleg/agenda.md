@@ -8,17 +8,25 @@ git_date: 2026-08-19
 De pagina [Agenda]({{% ref "/agenda" %}}) is bedoeld om de kerkelijke
 kalender **op uw telefoon of computer** te zetten: in Google Calendar,
 Apple Agenda, Outlook of een andere agenda-app. U hoeft deze website dan
-niet elke week te openen.
+niet elke week te openen. U vindt die pagina via de titel **Jaarkalender**
+op de [jaarkalender]({{% ref "/kalender" %}}) (popup met link).
 
 ## Eerst kiezen, dan de knop
 
 Op die pagina doet u drie keuzes:
 
-1. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten — één,
-   twee of alle drie.
+1. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
+   vastenvrij — één of meer.
 2. **Nieuwe of oude kalender**, zoals uw parochie viert. Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 3. **Abonneren** of **downloaden**.
+
+**Vasten** in die keuze betekent vasten (streng, wijn en olie, vis,
+lichter). **Vastenvrij** is de uitzondering: dagen die de Kerk
+uitdrukkelijk vrij van vasten houdt, zoals de Lichte Week of Kerst.
+Vinkt u alleen Vasten aan, dan komen die vrije dagen niet in de
+agenda; vinkt u Vastenvrij aan, dan wel, met een kort label
+*vastenvrij* in de titel.
 
 Onder de keuzes staat een **voorbeeldweek**: de titel die u in de
 maandweergave van uw app zult zien. De knop daaronder verandert mee.
@@ -34,7 +42,8 @@ alleen Vasten aan, abonneer, en herhaal voor Feesten of Heiligen.
 
 Elke dag is **één** afspraak. De titel is het liturgische nieuws van die
 dag, met het vasten als kort label als u vasten hebt aangevinkt (*streng*,
-*wijn en olie*, *vis*, *vastenvrij*). Tik op de dag voor vastenregel,
+*wijn en olie*, *vis*) of *vastenvrij* als u vastenvrij hebt aangevinkt.
+Tik op de dag voor vastenregel,
 andere namen, Apostel en Evangelie (zonder website-links) en heiligen.
 Onderaan staat *Meer:* met de datumpagina.
 

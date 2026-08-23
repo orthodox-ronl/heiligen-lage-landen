@@ -1,0 +1,30 @@
+id: teruggave-theofanie
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van Theofanie
+  alternatief:
+  - Apodosis van Theofanie
+observances:
+  - feest
+datum:
+  waarde: "01-14"
+  stijl: juliaans
+icoon:
+  bestand: iconen/theofanie.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Theofanie.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Theofanie"
+    url: "https://orthodoxwiki.org/Theophany"
+    geraadpleegd: "2026-08-17"

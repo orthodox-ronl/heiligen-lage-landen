@@ -52,7 +52,7 @@
         <th scope="row">Feestdag</th>
         <td>
           <a href="{{ printf "/datum/?dag=%s" $p.feestdatum | relURL }}">{{ partial "feestdatum-kort.html" $p.feestdatum }}</a>
-          {{- with $p.vierdatum_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          {{- with $p.vierdatum_oud }} {{ partial "vierdatum-oud.html" . }}{{ else }} {{ partial "vierdatum-gelijk.html" "" }}{{ end }}
         </td>
       </tr>
       {{- else if and $p.van $p.tot }}

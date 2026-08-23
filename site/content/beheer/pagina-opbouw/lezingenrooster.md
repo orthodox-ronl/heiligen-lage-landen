@@ -7,7 +7,7 @@ git_date: 2026-08-22
 **Contract, geen echte inhoud.** Voor wie: bezoeker en clerus. Canonieke
 URL: `/lezingenrooster/`. Bron: handmatig
 [`site/content/lezingenrooster/_index.md`]({{% ref "/lezingenrooster" %}})
-+ JS.
++ JS. Ingang: hoofdnavigatie **Overzichten**.
 
 ## Sticky (sitebreed)
 

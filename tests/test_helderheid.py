@@ -20,7 +20,8 @@ ISSUES = ROOT / ".github" / "ISSUE_TEMPLATE"
 def test_nav_heeft_heiligen_en_uitleg() -> None:
     html = (SITE / "layouts" / "_default" / "baseof.html").read_text(encoding="utf-8")
     assert 'href="{{ "" | relURL }}">Heiligen</a>' in html
-    assert 'href="{{ "datum/" | relURL }}">Vandaag</a>' in html
+    assert ">Vandaag</a>" not in html
+    assert ">Agenda</a>" not in html
     assert "Overzichten" in html
     assert 'href="{{ "feesten/" | relURL }}">Feesten</a>' in html
     assert 'href="{{ "vasten/" | relURL }}">Vasten</a>' in html
@@ -38,6 +39,13 @@ def test_nav_heeft_heiligen_en_uitleg() -> None:
     assert 0 <= heiligen_pos < dropdown_pos
     panel = html[html.find("<details") : html.find("</details>")]
     assert ">Heiligen</a>" not in panel
+    assert ">Feesten</a>" in panel
+    assert ">Vasten</a>" in panel
+    assert ">Synaxarion</a>" in panel
+    assert ">Lezingenrooster</a>" in panel
+    before = html[:dropdown_pos]
+    assert ">Synaxarion</a>" not in before
+    assert ">Lezingenrooster</a>" not in before
 
 
 def test_site_intro_popover_tekst() -> None:
@@ -66,7 +74,7 @@ def test_homepage_is_heiligenoverzicht() -> None:
         encoding="utf-8"
     )
     assert 'href="{{ "" | relURL }}">Heiligen</a>' in nav
-    assert 'href="{{ "datum/" | relURL }}">Vandaag</a>' in nav
+    assert 'href="{{ "datum/" | relURL }}">Vandaag</a>' not in nav
     js = (SITE / "assets" / "js" / "calendar.js").read_text(encoding="utf-8")
     assert 'pageUrl("datum/"' in js
     assert 'if (isToday) return pageUrl("", params);' not in js
@@ -169,6 +177,8 @@ def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
     )
     assert 'partial "heiligen-overzicht.html"' in listing
     assert "{{ if .Params.feestdatum }}" in default_list
+    assert "Params.overzicht_sortering" in default_list
+    assert "vierdatum-gelijk.html" in default_list
     assert "{{ else if and .Params.van .Params.tot }}" in default_list
     assert ".Params.vierdatum_oud" in default_list
     assert ".Params.van_oud" in default_list

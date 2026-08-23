@@ -13,6 +13,12 @@ git_date: 2026-08-22
 **Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
 pagina-header (zie hieronder), ook tijdens scrollen.
 
+## Titel
+
+**Wel:** de sitenaam **Jaarkalender** als info-term: popover legt uit
+dat u de kalender op telefoon of tablet kunt zetten, met link naar
+[Agenda]({{% ref "/agenda" %}}). Agenda staat niet in de hoofdnavigatie.
+
 ## Sticky header
 
 **Wel:** legenda (kleuren) en Nieuw/Oud. Blijft zichtbaar tijdens scrollen.
@@ -39,13 +45,15 @@ beeld. Daarna vloeiend scrollen door maanden en jaren.
 ## Legenda
 
 **Wel:** kleuren die zeggen *wat voor soort dag* het is (feest,
-heilige, beide, vasten, combinaties, vandaag). Zelfde betekenis als
+heilige, vasten, vastenvrij). Combinaties zijn strakke vlakken van
+die basiskleuren; de legenda somt de combinaties niet op. Zelfde
+betekenis als
 [Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}).
 
 **Niet:** hoe streng het vasten is (dat hoort op de dag zelf);
-afwijkende swatches tussen deze pagina en de uitleg.
+afwijkende swatches tussen deze pagina en de uitleg; «vandaag» als
+extra legenda-swatch (dat is een omlijning op de cel).
 
 **Gesloten.** Op smal scherm blijft de compacte legenda verborgen. De
-set kleuren op de kalender en op
-[Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}) is dezelfde
-(inclusief heilige+vasten en «vandaag»).
+basiskleuren op de kalender en op
+[Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}) zijn dezelfde.

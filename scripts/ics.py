@@ -5,6 +5,7 @@ from __future__ import annotations
 import uuid
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
+from itertools import combinations
 from typing import Any, Iterable, Iterator
 from urllib.parse import quote
 
@@ -26,44 +27,62 @@ from vasten import (
 
 SITE_PUBLIC_URL = "https://orthodox-ronl.github.io/kalender"
 
-SUBSET_KEYS = {
-    frozenset({"heilige", "feest", "vasten"}): "alles",
-    frozenset({"heilige"}): "heiligen",
-    frozenset({"feest"}): "feesten",
-    frozenset({"vasten"}): "vasten",
-    frozenset({"heilige", "feest"}): "heiligen-feesten",
-    frozenset({"heilige", "vasten"}): "heiligen-vasten",
-    frozenset({"feest", "vasten"}): "feesten-vasten",
+KIND_ORDER = ("heilige", "feest", "vasten", "vastenvrij")
+KIND_FILE = {
+    "heilige": "heiligen",
+    "feest": "feesten",
+    "vasten": "vasten",
+    "vastenvrij": "vastenvrij",
 }
-
-CAL_NAMES = {
-    "alles": "Orthodox · Lage Landen",
-    "heiligen": "Heiligen Lage Landen",
-    "feesten": "Feesten",
-    "vasten": "Vasten",
-    "heiligen-feesten": "Heiligen en feesten",
-    "heiligen-vasten": "Heiligen en vasten",
-    "feesten-vasten": "Feesten en vasten",
-}
-
-RAND_PREFIXES = ("voorfeest-", "nafeest-", "synaxis-", "teruggave-")
-ICS_COMBOS = (
-    frozenset({"heilige", "feest", "vasten"}),
-    frozenset({"heilige"}),
-    frozenset({"feest"}),
-    frozenset({"vasten"}),
-    frozenset({"heilige", "feest"}),
-    frozenset({"heilige", "vasten"}),
-    frozenset({"feest", "vasten"}),
-)
 
 
 def subset_key(kinds: frozenset[str]) -> str | None:
-    return SUBSET_KEYS.get(kinds)
+    if not kinds or kinds - set(KIND_ORDER):
+        return None
+    if kinds == frozenset(KIND_ORDER):
+        return "alles"
+    return "-".join(KIND_FILE[k] for k in KIND_ORDER if k in kinds)
+
+
+def calendar_title_from_kinds(kinds: frozenset[str]) -> str:
+    if kinds == frozenset(KIND_ORDER):
+        return "Orthodox · Lage Landen"
+    bits: list[str] = []
+    if "heilige" in kinds:
+        bits.append("Heiligen")
+    if "feest" in kinds:
+        bits.append("feesten")
+    if "vasten" in kinds:
+        bits.append("vasten")
+    if "vastenvrij" in kinds:
+        bits.append("vastenvrij")
+    if bits == ["Heiligen"]:
+        return "Heiligen Lage Landen"
+    if len(bits) == 1:
+        return bits[0][:1].upper() + bits[0][1:]
+    if len(bits) == 2:
+        return f"{bits[0]} en {bits[1]}"
+    return f"{', '.join(bits[:-1])} en {bits[-1]}"
 
 
 def calendar_name(key: str, stijl: str) -> str:
-    return f"{CAL_NAMES[key]} ({stijl})"
+    if key == "alles":
+        title = "Orthodox · Lage Landen"
+    elif key == "heiligen":
+        title = "Heiligen Lage Landen"
+    else:
+        title = key.replace("-", " en ")
+        title = title[:1].upper() + title[1:]
+    return f"{title} ({stijl})"
+
+
+ICS_COMBOS = tuple(
+    frozenset(combo)
+    for n in range(1, len(KIND_ORDER) + 1)
+    for combo in combinations(KIND_ORDER, n)
+)
+
+RAND_PREFIXES = ("voorfeest-", "nafeest-", "synaxis-", "teruggave-")
 
 
 def datum_pagina_url(civil: date, *, stijl: str | None = None) -> str:
@@ -345,6 +364,16 @@ def _ref_line(label: str, refs: list[Any] | None) -> str | None:
     return f"{label}: " + "; ".join(bits)
 
 
+def _show_fast_info(
+    kinds: frozenset[str], indicatie: VastenIndicatie | None
+) -> bool:
+    if indicatie is None:
+        return False
+    if indicatie.niveau == "vrij":
+        return "vastenvrij" in kinds
+    return "vasten" in kinds
+
+
 def day_title(
     day_entries: list[dict[str, Any]],
     *,
@@ -366,7 +395,9 @@ def day_title(
             civil.isoweekday(),
             _mix_mmdd(civil, stijl),
         )
-    show_vasten = "vasten" in kinds and indicatie is not None
+    show_vasten = _show_fast_info(
+        kinds, indicatie if isinstance(indicatie, VastenIndicatie) else None
+    )
     kop = kop_feesten(visible)
     headline = kop_titel(kop)
     if not headline and "feest" in kinds and lezingen and lezingen.get("daglabel"):
@@ -410,7 +441,7 @@ def day_description(
     lezingen: dict[str, Any] | None = None,
 ) -> str:
     parts: list[str] = []
-    if "vasten" in kinds and indicatie is not None:
+    if _show_fast_info(kinds, indicatie):
         parts.append(indicatie.tekst)
     visible = [
         e
@@ -560,7 +591,7 @@ def write_ics(
         key = subset_key(kinds)
         assert key
         for stijl in ("nieuw", "oud"):
-            name = calendar_name(key, stijl)
+            name = f"{calendar_title_from_kinds(kinds)} ({stijl})"
             filename = f"{key}-{stijl}.ics"
             write_text(
                 STATIC_ICS / filename,

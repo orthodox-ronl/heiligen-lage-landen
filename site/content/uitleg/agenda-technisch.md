@@ -20,20 +20,20 @@ generate **gewist en opnieuw gezet**. Niet met de hand redigeren.
 Bestandsnamen blijven gelijk; de inhoud is **dag-centrisch** (één `VEVENT`
 per burgerlijke dag).
 
-| Sleutel            | Inhoud                      |
-| ------------------ | --------------------------- |
-| `alles`            | heiligen + feesten + vasten |
-| `heiligen`         | alleen heiligen             |
-| `feesten`          | vaste feesten + paascyclus  |
-| `vasten`           | vastenperiodes + wekelijks  |
-| `heiligen-feesten` | zonder vasten               |
-| `heiligen-vasten`  | zonder feesten              |
-| `feesten-vasten`   | zonder heiligen             |
+| Sleutel | Inhoud |
+| --- | --- |
+| `alles` | heiligen + feesten + vasten + vastenvrij |
+| `heiligen` / `feesten` / `vasten` / `vastenvrij` | één soort |
+| combinaties met koppelteken | de aangevinkte soorten, in die volgorde (`heiligen-feesten`, `feesten-vasten-vastenvrij`, …) |
 
 `stijl` is `nieuw` of `oud`. De agendapagina bouwt **één** knop uit de
 keuzes van de bezoeker (categorieën + stijl + downloaden/abonneren). Er is
 geen lijst van alle feeds op de pagina. UI:
 `site/layouts/_default/agenda.html` en `calendar.js`.
+
+Vasten in de feed zijn dagen met een vastenniveau anders dan `vrij`.
+Vastenvrij is alleen `niveau: vrij` (expliciete vastenvrije periodes of
+feesten). Een gewone dinsdag zonder vasten zit in geen van beide.
 
 - **Abonneren:** de knop kopieert de HTTPS-URL van het gekozen `.ics`-bestand
   naar het klembord; Apple krijgt extra een `webcal:`-link. How-to’s op de

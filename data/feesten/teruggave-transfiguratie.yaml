@@ -1,0 +1,30 @@
+id: teruggave-transfiguratie
+soort: feest
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: false
+namen:
+  primair: Teruggave van de Transfiguratie
+  alternatief:
+  - Apodosis van de Transfiguratie
+observances:
+  - feest
+datum:
+  waarde: "08-13"
+  stijl: juliaans
+icoon:
+  bestand: iconen/transfiguratie.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons"
+samenvatting: |
+  Laatste dag van het nafeest van Transfiguratie.
+verhaal: |
+  Met deze teruggave eindigt het nafeest. Dezelfde dag staat ook in het nafeest.
+referenties:
+  - label: "OrthodoxWiki — Teruggave"
+    url: "https://orthodoxwiki.org/Apodosis"
+    geraadpleegd: "2026-08-17"
+  - label: "OrthodoxWiki — Transfiguratie"
+    url: "https://orthodoxwiki.org/Transfiguration"
+    geraadpleegd: "2026-08-17"

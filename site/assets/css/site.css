@@ -937,8 +937,16 @@ h2 {
   text-underline-offset: 0.2em;
 }
 
+.vierdatum-gelijk {
+  cursor: help;
+  text-decoration: underline dotted color-mix(in srgb, var(--muted) 70%, transparent);
+  text-underline-offset: 0.2em;
+}
+
 .vierdatum-oud:hover,
-.vierdatum-oud:focus-visible {
+.vierdatum-oud:focus-visible,
+.vierdatum-gelijk:hover,
+.vierdatum-gelijk:focus-visible {
   text-decoration-color: var(--gold-soft);
   outline: none;
 }
@@ -1412,6 +1420,11 @@ button.button {
   margin: 0 0 0.65rem;
 }
 
+.kalender-page-title .info-term {
+  font: inherit;
+  color: inherit;
+}
+
 .kalender-sticky-head {
   position: sticky;
   top: var(--site-header-offset);
@@ -1541,8 +1554,8 @@ button.button {
 .day-beide {
   background: linear-gradient(
     135deg,
-    rgba(201, 162, 39, 0.4),
-    rgba(110, 160, 200, 0.4)
+    rgba(201, 162, 39, 0.4) 0 50%,
+    rgba(110, 160, 200, 0.4) 50% 100%
   );
 }
 
@@ -1572,6 +1585,35 @@ button.button {
     rgba(201, 162, 39, 0.4) 0 33%,
     rgba(110, 160, 200, 0.4) 33% 66%,
     rgba(160, 90, 90, 0.4) 66% 100%
+  );
+}
+
+.day-vastenvrij {
+  background: rgba(70, 140, 85, 0.4);
+}
+
+.day-feest-vastenvrij {
+  background: linear-gradient(
+    135deg,
+    rgba(201, 162, 39, 0.45) 0 50%,
+    rgba(70, 140, 85, 0.45) 50% 100%
+  );
+}
+
+.day-heilige-vastenvrij {
+  background: linear-gradient(
+    135deg,
+    rgba(110, 160, 200, 0.45) 0 50%,
+    rgba(70, 140, 85, 0.45) 50% 100%
+  );
+}
+
+.day-feest-heilige-vastenvrij {
+  background: linear-gradient(
+    135deg,
+    rgba(201, 162, 39, 0.4) 0 33%,
+    rgba(110, 160, 200, 0.4) 33% 66%,
+    rgba(70, 140, 85, 0.4) 66% 100%
   );
 }
 
@@ -1718,13 +1760,17 @@ button.button {
 .swatch.day-beide {
   background: linear-gradient(
     135deg,
-    rgba(201, 162, 39, 0.55),
-    rgba(110, 160, 200, 0.55)
+    rgba(201, 162, 39, 0.55) 0 50%,
+    rgba(110, 160, 200, 0.55) 50% 100%
   );
 }
 
 .swatch.day-vasten {
   background: rgba(160, 90, 90, 0.55);
+}
+
+.swatch.day-vastenvrij {
+  background: rgba(70, 140, 85, 0.55);
 }
 
 .swatch.day-feest-vasten {
@@ -1779,6 +1825,31 @@ button.button {
   font: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.heiligen-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+  margin: 0.75rem 0;
+}
+
+.heiligen-toolbar .filter-bar {
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.heiligen-sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media (min-width: 40rem) {
+  .heiligen-toolbar {
+    flex-wrap: nowrap;
+  }
 }
 
 /* Actiebalk + secundair Weergave-paneel (Synaxarion, Lezingenrooster) */
@@ -1940,6 +2011,22 @@ button.button {
 
 .synaxarion-table .synaxarion-date-cell {
   vertical-align: top;
+}
+
+.synaxarion-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.synaxarion-stack-item {
+  min-height: 1.7em;
+  display: flex;
+  align-items: center;
+}
+
+.date-list-soort .synaxarion-stack-item {
+  color: var(--muted, inherit);
 }
 
 .synaxarion-table .list-icoon {
