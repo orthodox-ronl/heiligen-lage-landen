@@ -7,7 +7,7 @@ git_date: 2026-08-23
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/heiligen/` (zelfde weergave op `/`). Bron: gegenereerde `_index.md`
 uit YAML + partial `heiligen-overzicht.html`. Ingang: sitenaam of
-hoofdnavigatie **Heiligen**. **Vandaag** in de nav opent de
+hoofdnavigatie **Heiligen**. De dagkaart van vandaag staat op de
 [datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}).
 
 ## Sticky (sitebreed)

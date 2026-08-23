@@ -73,3 +73,13 @@ def test_vierdatum_gelijk_tip() -> None:
     assert "function to_short_month_label" in gen or "def to_short_month_label" in gen
     js = JS.read_text(encoding="utf-8")
     assert "vierdatum-gelijk" in js
+
+
+def test_jaarkalender_titel_heeft_agenda_popup() -> None:
+    kal = (ROOT / "site" / "layouts" / "_default" / "kalender.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'data-info-tip="jaarkalender"' in kal
+    js = JS.read_text(encoding="utf-8")
+    assert 'kind === "jaarkalender"' in js
+    assert 'assetUrl("agenda/")' in js

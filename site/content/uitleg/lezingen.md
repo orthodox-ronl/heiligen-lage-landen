@@ -4,7 +4,7 @@ description: "Apostel en Evangelie: welke lezing wanneer, volgens Moskou (ROCOR 
 git_date: 2026-08-21
 ---
 
-Op *Vandaag*, de datumpagina en het [lezingenrooster]({{% ref "/lezingenrooster" %}})
+Op de [datumpagina]({{% ref "/uitleg/datumpagina" %}}) en het [lezingenrooster]({{% ref "/lezingenrooster" %}})
 toont deze site de **Apostel** en het **Evangelie** van de dag. Deze pagina legt
 uit **waar die keuze vandaan komt** en welke regels we volgen — bedoeld voor
 overleg met de clerus. U hoeft niets van programmacode of bestandsformaten te

@@ -1,6 +1,8 @@
 {{ define "main" }}
 <section class="kalender-page" data-kalender>
-  <h1 class="kalender-page-title">{{ .Title }}</h1>
+  <h1 class="kalender-page-title">
+    <span class="info-term" tabindex="0" data-info-tip="jaarkalender" title="Kalender op telefoon of tablet">{{ .Title }}</span>
+  </h1>
   <div class="kalender-sticky-head">
     <ul class="legend compact" aria-label="Legenda">
       <li><span class="swatch day-feest"></span> feest</li>

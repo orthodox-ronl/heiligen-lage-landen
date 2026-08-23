@@ -309,7 +309,7 @@
     wijn_olie: "Wijn en plantaardige olie zijn toegestaan; vis niet.",
     vis: "Vis, wijn en olie zijn toegestaan; vlees en zuivel niet.",
     lichter: "Alleen vlees is uitgesloten (zoals in de Boterweek, waar zuivel wel mag).",
-    vrij: "Geen vasten, bijvoorbeeld in de Lichte Week, met Kerst of Theofanie.",
+    vrij: "Geen vasten, je mag alles eten (zoals in de Lichte Week, met Kerst of Theofanie).",
   };
 
   function entryNaam(entry) {
@@ -1261,6 +1261,18 @@
         meer.innerHTML =
           `<a class="text-link" href="${assetUrl("heiligen/")}">Het overzicht</a>` +
           ` · <a class="text-link" href="${assetUrl("uitleg/")}">Meer uitleg</a>`;
+      }
+      return;
+    }
+    if (kind === "jaarkalender") {
+      title.textContent = "Kalender op telefoon of tablet";
+      body.innerHTML =
+        `<p>U kunt deze jaarkalender ook in de agenda-app van uw telefoon ` +
+        `of tablet zetten. Die blijft dan vanzelf bijgewerkt.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML =
+          `<a class="text-link" href="${assetUrl("agenda/")}">Naar Agenda</a>`;
       }
       return;
     }

@@ -34,19 +34,17 @@
       <div class="header-tools">
         <nav class="nav" aria-label="Hoofdnavigatie">
           <a href="{{ "" | relURL }}">Heiligen</a>
-          <a href="{{ "datum/" | relURL }}">Vandaag</a>
           {{/* absURL: relURL "kalender/" botst met Pages-base /kalender/ + canonifyURLs */}}
           <a href="{{ "kalender/" | absURL }}">Kalender</a>
-          <a href="{{ "lezingenrooster/" | relURL }}">Lezingenrooster</a>
-          <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>
           <details class="nav-dropdown">
             <summary>Overzichten</summary>
             <div class="nav-dropdown-panel">
               <a href="{{ "feesten/" | relURL }}">Feesten</a>
               <a href="{{ "vasten/" | relURL }}">Vasten</a>
+              <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>
+              <a href="{{ "lezingenrooster/" | relURL }}">Lezingenrooster</a>
             </div>
           </details>
-          <a href="{{ "agenda/" | relURL }}">Agenda</a>
           <a href="{{ "uitleg/" | relURL }}">Uitleg</a>
         </nav>
         <span class="theme-toggle" role="group" aria-label="Kleurthema">

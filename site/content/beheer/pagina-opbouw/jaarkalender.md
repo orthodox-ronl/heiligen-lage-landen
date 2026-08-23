@@ -13,6 +13,12 @@ git_date: 2026-08-22
 **Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
 pagina-header (zie hieronder), ook tijdens scrollen.
 
+## Titel
+
+**Wel:** de sitenaam **Jaarkalender** als info-term: popover legt uit
+dat u de kalender op telefoon of tablet kunt zetten, met link naar
+[Agenda]({{% ref "/agenda" %}}). Agenda staat niet in de hoofdnavigatie.
+
 ## Sticky header
 
 **Wel:** legenda (kleuren) en Nieuw/Oud. Blijft zichtbaar tijdens scrollen.

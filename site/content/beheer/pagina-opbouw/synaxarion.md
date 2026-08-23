@@ -7,6 +7,7 @@ git_date: 2026-08-22
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/synaxarion/`. Bron: handmatig
 [`site/content/synaxarion/_index.md`]({{% ref "/synaxarion" %}}) + JS.
+Ingang: hoofdnavigatie **Overzichten**.
 
 Dit is de ingang op **feestdatum** (wat altijd bij 15 augustus hoort),
 niet op één burgerlijk jaar. Zie

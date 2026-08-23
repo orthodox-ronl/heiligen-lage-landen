@@ -7,10 +7,10 @@ git_date: 2026-08-21
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/datum/?datum=2026-07-01` (burgerlijk `jjjj-mm-dd`). Optioneel
 `&stijl=juliaans`. Bron: handmatig
-[`site/content/datum/_index.md`]({{% ref "/datum" %}}) + JS. **Vandaag**
-in de hoofdnavigatie opent deze pagina (huidige burgerlijke dag). De
+[`site/content/datum/_index.md`]({{% ref "/datum" %}}) + JS. De
 [startpagina]({{% ref "/beheer/pagina-opbouw/startpagina" %}}) is het
-heiligenoverzicht, niet de dagkaart.
+heiligenoverzicht, niet de dagkaart. De datumpagina staat niet in de
+hoofdnavigatie; u komt er via de jaarkalender of via een feestdatum.
 
 Oude adressen `?jaar=` + `?dag=` blijven leesbaar en worden omgezet naar
 `?datum=`. Een feestdag-link zonder jaar (`?dag=MM-DD`) betekent: dat

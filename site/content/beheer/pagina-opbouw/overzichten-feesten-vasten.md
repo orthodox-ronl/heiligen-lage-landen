@@ -7,7 +7,8 @@ git_date: 2026-08-21
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL’s:
 `/feesten/`, `/vasten/` (heiligenoverzicht: `/heiligen/`). Bron:
 gegenereerde indexen. In de hoofdnavigatie onder **Overzichten**
-(uitklap: Feesten, Vasten; heiligenoverzicht heeft een eigen nav-item).
+(uitklap: Feesten, Vasten, Synaxarion, Lezingenrooster;
+heiligenoverzicht heeft een eigen nav-item).
 
 ## Titel en inleiding
 

@@ -1420,6 +1420,11 @@ button.button {
   margin: 0 0 0.65rem;
 }
 
+.kalender-page-title .info-term {
+  font: inherit;
+  color: inherit;
+}
+
 .kalender-sticky-head {
   position: sticky;
   top: var(--site-header-offset);
