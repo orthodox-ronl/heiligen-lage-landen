@@ -19,7 +19,8 @@ feest in het lopende burgerlijke jaar.
 
 **Wel:** weekdag, burgerlijke datum, jaar; «(vandaag)» als het vandaag
 is (met popover en korte uitleg over oude/nieuwe kalender en verwijzing naar uitgebreide uitleg); pijlen naar vorige/volgende dag; toon van de week (Toon 1–8) met
-korte uitleg in popover.
+korte uitleg in popover. De titelrij blijft zichtbaar tijdens scrollen
+(onder de sitenavbar).
 
 **Niet:** feestdatum in plaats van de burgerlijke datum; interne
 offset-getallen; een tweede paginatitel onder de rij.

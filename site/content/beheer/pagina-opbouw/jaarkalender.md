@@ -1,23 +1,40 @@
 ---
 title: "Jaarkalender"
 description: "Contract: burgerlijk jaar, kleuren per soort dag"
-git_date: 2026-08-21
+git_date: 2026-08-22
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/kalender/`. Bron: handmatig [`site/content/kalender/_index.md`]({{% ref "/kalender" %}})
 + JS.
 
-## Titelrij
+## Sticky (sitebreed)
 
-**Wel:** jaartal; bladeren naar vorig/volgend jaar; Nieuw/Oud (vaste
-feesten schuiven op de burgerlijke kalender; Pascha niet).
+**Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
+pagina-header (zie hieronder), ook tijdens scrollen.
 
-**Niet:** een tweede jaarkalender (Juliaans-raster) naast deze;
-technische MM-DD in de titel.
+## Sticky header
 
-**Zichtbaarheid:** De complete titelrij blijft zichtbaar als de gebruiker 
-de maanden scrollt. Ook op een smal scherm.
+**Wel:** legenda (kleuren) en Nieuw/Oud. Blijft zichtbaar tijdens scrollen.
+Op smal scherm blijft alleen Nieuw/Oud zichtbaar (legenda verborgen).
+
+**Niet:** jaartal-navigatie (‹ ›) in de sticky header; een tweede
+Juliaans-raster naast deze.
+
+## Maandraster
+
+**Wel:** doorlopende reeks maanden over het ICS-venster (huidig jaar
+−2 … +5); 1 / 2 / 3 / 4 kolommen naar schermbreedte; dagen klikbaar
+naar de datumpagina van die burgerlijke dag; huidige maand herkenbaar;
+**vandaag** in de cel gemarkeerd. Tussen december van jaar *j* en
+januari van *j*+1 een duidelijke jaarovergangslijn met gecentreerd
+jaartal.
+
+**Niet:** namen van alle universele heiligen in de cel; vastenregel in
+de cel (alleen kleur); beheer-notities.
+
+**Zichtbaarheid:** bij bezoek staat de maand van vandaag centraal in
+beeld. Daarna vloeiend scrollen door maanden en jaren.
 
 ## Legenda
 
@@ -32,16 +49,3 @@ afwijkende swatches tussen deze pagina en de uitleg.
 set kleuren op de kalender en op
 [Kleuren in de jaarkalender]({{% ref "/uitleg/kleuren" %}}) is dezelfde
 (inclusief heilige+vasten en «vandaag»).
-
-## Maandraster
-
-**Wel:** twaalf maanden; dagen klikbaar naar de datumpagina van die
-burgerlijke dag; huidige maand herkenbaar. Bladerjaren volgen de
-gegenereerde occurrences in `entries.json` (ICS-venster: huidig jaar
-−2 … +5).
-
-**Niet:** namen van alle universele heiligen in de cel; vastenregel in
-de cel (alleen kleur); beheer-notities.
-
-**Zichtbaarheid:** initieel is de huidige maand zichtbaar (alsook de titelrij).
-De gebruiker kan dan naar onder/boven scrollen.

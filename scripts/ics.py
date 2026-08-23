@@ -66,9 +66,15 @@ def calendar_name(key: str, stijl: str) -> str:
     return f"{CAL_NAMES[key]} ({stijl})"
 
 
-def datum_pagina_url(civil: date) -> str:
+def datum_pagina_url(civil: date, *, stijl: str | None = None) -> str:
+    """URL naar de datumpagina; bij oud-feeds stijl=juliaans meegeven."""
     dag = mmdd_from_date(civil)
-    return f"{SITE_PUBLIC_URL}/datum/?datum={civil.year}-{quote(dag)}"
+    url = f"{SITE_PUBLIC_URL}/datum/?datum={civil.year}-{quote(dag)}"
+    if stijl == "oud":
+        url += "&stijl=juliaans"
+    elif stijl == "nieuw":
+        url += "&stijl=gregoriaans"
+    return url
 
 
 def _ics_escape(text: str) -> str:
@@ -442,7 +448,7 @@ def day_description(
         heiligen = sorted(heiligen, key=lambda e: _naam(e).casefold())
         label = "Heilige" if len(heiligen) == 1 else "Heiligen"
         parts.append(label + ": " + ", ".join(_naam(e) for e in heiligen))
-    parts.append(f"Meer: {datum_pagina_url(civil)}")
+    parts.append(f"Meer: {datum_pagina_url(civil, stijl=stijl)}")
     return "\n".join(parts)
 
 
@@ -516,7 +522,7 @@ def build_ics(
             kop=kop,
             lezingen=lez,
         )
-        url = datum_pagina_url(civil)
+        url = datum_pagina_url(civil, stijl=stijl)
         uid_key = f"{feed_key}:{stijl}:{civil.isoformat()}"
         uid = str(uuid.uuid5(uuid.NAMESPACE_URL, uid_key))
         dt_start = civil.strftime("%Y%m%d")

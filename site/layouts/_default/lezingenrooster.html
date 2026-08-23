@@ -1,35 +1,45 @@
 {{ define "main" }}
 <section class="lezingenrooster-page" data-lezingenrooster>
-  <h1 id="rooster-heading">{{ .Title }}</h1>
+  <h1 class="rooster-page-title" id="rooster-heading">{{ .Title }}</h1>
 
-  <div class="page-toolbar">
-    <div class="page-action-bar" id="rooster-action-bar" aria-label="Maand"></div>
-    <button
-      type="button"
-      class="weergave-trigger"
-      id="rooster-weergave-trigger"
-      aria-expanded="false"
-      aria-controls="rooster-weergave-panel"
-    >
-      Weergave<span class="weergave-trigger-summary" id="rooster-weergave-summary"></span>
-    </button>
-  </div>
-
-  <div class="weergave-overlay" id="rooster-weergave-overlay" hidden></div>
-  <div
-    class="weergave-panel"
-    id="rooster-weergave-panel"
-    role="dialog"
-    aria-labelledby="rooster-weergave-title"
-    hidden
-  >
-    <div class="weergave-panel-head">
-      <h2 id="rooster-weergave-title">Weergave</h2>
-      <button type="button" class="weergave-panel-close" data-weergave-close>Klaar</button>
+  <div class="rooster-sticky-head">
+    <div class="rooster-toolbar">
+      <div class="page-action-bar" id="rooster-action-bar" aria-label="Maand"></div>
+      <div class="rooster-toolbar-style" id="rooster-style-slot"></div>
+      <button
+        type="button"
+        class="weergave-trigger"
+        id="rooster-weergave-trigger"
+        aria-expanded="false"
+        aria-controls="rooster-weergave-panel"
+      >
+        Weergave<span class="weergave-trigger-summary" id="rooster-weergave-summary"></span>
+      </button>
     </div>
-    <div id="rooster-weergave-body"></div>
+
+    <div class="weergave-overlay" id="rooster-weergave-overlay" hidden></div>
+    <div
+      class="weergave-panel"
+      id="rooster-weergave-panel"
+      role="dialog"
+      aria-labelledby="rooster-weergave-title"
+      hidden
+    >
+      <div class="weergave-panel-head">
+        <h2 id="rooster-weergave-title">Weergave</h2>
+        <button type="button" class="weergave-panel-close" data-weergave-close>Klaar</button>
+      </div>
+      <div id="rooster-weergave-body"></div>
+    </div>
+
+    <div class="rooster-col-head" role="row">
+      <span role="columnheader">Dag</span>
+      <span role="columnheader">Liturgische dag</span>
+      <span role="columnheader">Apostel</span>
+      <span role="columnheader">Evangelie</span>
+    </div>
   </div>
 
-  <div id="rooster-tables" class="rooster-tables"></div>
+  <div id="rooster-tables" class="rooster-tables" role="table" aria-label="Lezingenrooster"></div>
 </section>
 {{ end }}

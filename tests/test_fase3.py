@@ -32,8 +32,11 @@ def test_lijsticonen_in_synaxarion_en_heiligenoverzicht() -> None:
     assert "synaxarion-table" in js
     assert "function synaxarionTableHtml" in js
     html = HEILIGEN_LIST.read_text(encoding="utf-8")
-    assert "list-icoon" in html
+    assert "list-icoon" in (
+        ROOT / "site" / "assets" / "js" / "entry-filter.js"
+    ).read_text(encoding="utf-8")
     assert ".Params.icoon" in html
+    assert "heiligen-data" in html
 
 
 def test_rooster_en_synaxarion_hebben_weergave_paneel() -> None:

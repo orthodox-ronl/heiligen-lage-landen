@@ -121,6 +121,19 @@ def cel_nieuw_met_oud(nieuw: str, oud: str | None) -> str:
     return f"{html_escape(nieuw)} {oud_vierdatum_html(oud)}"
 
 
+def extra_toelichting_na_link(toel: str, feestdatum: str) -> str:
+    """Toelichting na de datumlink, zonder herhaalde dagnaam."""
+    toel = toel.strip()
+    if not toel:
+        return ""
+    label = mmdd_label(feestdatum)
+    if toel.casefold() == label.casefold():
+        return ""
+    if toel.casefold().startswith(label.casefold()):
+        return toel[len(label) :].strip()
+    return toel
+
+
 KOMENDE_JAREN_KOP = "**Komende jaren (burgerlijk):**"
 
 
@@ -130,7 +143,10 @@ def komende_jaren_tabel_html(
     *,
     raw_rows: bool = False,
 ) -> list[str]:
-    """HTML-tabel voor de body; kolommen blijven onderling uitgelijnd."""
+    """HTML-tabel voor de body; kolommen blijven onderling uitgelijnd.
+
+    Zet raw_rows=True als cellen al veilige HTML (bijv. datumlinks) bevatten.
+    """
     head = "".join(f"<th>{html_escape(h)}</th>" for h in headers)
     body_rows = []
     for row in rows:
@@ -150,6 +166,35 @@ def komende_jaren_tabel_html(
         "</div>",
         "",
     ]
+
+
+def datum_pagina_cell(
+    label: str,
+    civil: date,
+    *,
+    stijl: str | None = None,
+) -> str:
+    """HTML-cel: link naar datumpagina met optionele Nieuw/Oud-stijl."""
+    q = f"/datum/?datum={civil.isoformat()}"
+    if stijl == "juliaans":
+        q += "&stijl=juliaans"
+    elif stijl == "gregoriaans":
+        q += "&stijl=gregoriaans"
+    return f'<a href="{html_escape(q)}">{html_escape(label)}</a>'
+
+
+def cel_nieuw_met_oud_link(
+    nieuw_label: str,
+    civil: date,
+    oud_label: str | None = None,
+    *,
+    stijl: str | None = "gregoriaans",
+) -> str:
+    """Klikbare burgerlijke datum, plus haakjes met oude datum als die verschilt."""
+    nieuw_html = datum_pagina_cell(nieuw_label, civil, stijl=stijl)
+    if not oud_label or oud_label == nieuw_label:
+        return nieuw_html
+    return f"{nieuw_html} {oud_vierdatum_html(oud_label)}"
 
 
 def _append_occ(bucket: dict[str, list[str]], d: date) -> None:
@@ -486,7 +531,9 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             else:
                 end = pascha_offset_date(y, dn["tot_offset_dagen"])
                 end_oud = None
-            van_l = burgerlijk_label(start, jaar=y)
+            van_l = datum_pagina_cell(
+                burgerlijk_label(start, jaar=y), start, stijl="gregoriaans"
+            )
             if start > end:
                 if hybride and start <= end_oud:
                     tot_l = cel_nieuw_met_oud(
@@ -496,13 +543,13 @@ def write_entry_page(entry: dict[str, Any]) -> None:
                 else:
                     tot_l = html_escape("geen dagen")
             else:
-                tot_l = cel_nieuw_met_oud(
+                tot_l = cel_nieuw_met_oud_link(
                     burgerlijk_label(end, jaar=y),
+                    end,
                     burgerlijk_label(end_oud, jaar=y) if end_oud else None,
+                    stijl="gregoriaans",
                 )
-            rows.append(
-                [html_escape(str(y)), html_escape(van_l), tot_l]
-            )
+            rows.append([html_escape(str(y)), van_l, tot_l])
         body.extend(
             komende_jaren_tabel_html(
                 ["Jaar", "Van", "Tot"],
@@ -517,8 +564,17 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         rows = []
         for y in komende_jaren():
             d = pascha_offset_date(y, offset)
-            rows.append([str(y), burgerlijk_label(d, jaar=y)])
-        body.extend(komende_jaren_tabel_html(["Jaar", "Datum"], rows))
+            rows.append(
+                [
+                    html_escape(str(y)),
+                    datum_pagina_cell(
+                        burgerlijk_label(d, jaar=y), d, stijl="gregoriaans"
+                    ),
+                ]
+            )
+        body.extend(
+            komende_jaren_tabel_html(["Jaar", "Datum"], rows, raw_rows=True)
+        )
     elif vorm == "weekdag_relatief":
         body.append(
             "Geen vaste feestdatum; hangt af van de weekdag van het anker."
@@ -547,9 +603,11 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             rows.append(
                 [
                     html_escape(str(y)),
-                    cel_nieuw_met_oud(
+                    cel_nieuw_met_oud_link(
                         burgerlijk_label(d_nieuw, jaar=y),
+                        d_nieuw,
                         burgerlijk_label(d_oud, jaar=y),
+                        stijl="gregoriaans",
                     ),
                 ]
             )
@@ -586,9 +644,11 @@ def write_entry_page(entry: dict[str, Any]) -> None:
             link = f"[{mmdd_label(fd)}](/datum/?dag={fd})"
             oud_ex = julian_feast_to_civil_date(date.today().year, fd)
             haak = oud_vierdatum_html(burgerlijk_label(oud_ex))
-            extra_lines.append(
-                f"- {link} {haak} — {toel}" if toel else f"- {link} {haak}"
-            )
+            suffix = extra_toelichting_na_link(toel, fd)
+            line = f"- {link} {haak}"
+            if suffix:
+                line += f" — {suffix}"
+            extra_lines.append(line)
         if extra_lines:
             body.append("**Andere gedenkdagen:**")
             body.append("")

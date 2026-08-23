@@ -105,6 +105,7 @@ def test_albericus_in_grote_vasten_is_een_dagregel() -> None:
     assert "debijbel.nl" not in ev["description"]
     assert ev["url"].startswith(SITE_PUBLIC_URL)
     assert "datum=2026-03-04" in ev["url"]
+    assert "stijl=gregoriaans" in ev["url"]
     assert "jaar=" not in ev["url"]
 
 
@@ -161,6 +162,8 @@ def test_oud_kerst_op_zeven_januari_zonder_juliaans_in_titel() -> None:
     assert "Kerst" in ev["summary"]
     assert "Juliaans" not in ev["summary"]
     assert "Juliaans" in ev["description"]
+    assert "stijl=juliaans" in ev["url"]
+    assert f"datum={civil.isoformat()}" in ev["url"]
 
 
 def _assert_een_event_per_dag(ics: str) -> None:

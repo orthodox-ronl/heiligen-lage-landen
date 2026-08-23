@@ -1,61 +1,72 @@
 {{ define "main" }}
-<section class="overzicht-page" data-synaxarion>
-  <h1 id="synaxarion-heading">{{ .Title }}</h1>
+<section class="overzicht-page synaxarion-page" data-synaxarion>
+  <h1 class="synaxarion-page-title" id="synaxarion-heading">{{ .Title }}</h1>
   {{ .Content }}
 
   <div id="synaxarion-day" hidden>
-    <div class="page-toolbar">
-      <div class="page-action-bar" id="synaxarion-day-nav" aria-label="Dag"></div>
+    <div class="synaxarion-sticky-head">
+      <div class="rooster-toolbar">
+        <div class="page-action-bar" id="synaxarion-day-nav" aria-label="Dag"></div>
+      </div>
     </div>
     <div id="synaxarion-day-entries" class="table-wrap">Laden…</div>
   </div>
 
   <div id="synaxarion-browse">
-    <div class="page-toolbar">
-      <div class="page-action-bar" id="synaxarion-action-bar" aria-label="Bladeren">
-        <nav class="letter-nav" id="letter-nav" hidden aria-label="Letters"></nav>
-        <nav class="month-nav" id="month-nav" aria-label="Maanden"></nav>
+    <div class="synaxarion-sticky-head">
+      <div class="rooster-toolbar">
+        <div class="page-action-bar" id="synaxarion-action-bar" aria-label="Bladeren">
+          <nav class="letter-nav" id="letter-nav" hidden aria-label="Letters"></nav>
+          <div id="synaxarion-month-steps" hidden></div>
+        </div>
+        <div class="rooster-toolbar-style" id="synaxarion-style-slot"></div>
+        <button
+          type="button"
+          class="weergave-trigger"
+          id="synaxarion-weergave-trigger"
+          aria-expanded="false"
+          aria-controls="synaxarion-weergave-panel"
+        >
+          Weergave<span class="weergave-trigger-summary" id="synaxarion-weergave-summary"></span>
+        </button>
       </div>
-      <button
-        type="button"
-        class="weergave-trigger"
-        id="synaxarion-weergave-trigger"
-        aria-expanded="false"
-        aria-controls="synaxarion-weergave-panel"
-      >
-        Weergave<span class="weergave-trigger-summary" id="synaxarion-weergave-summary"></span>
-      </button>
-    </div>
 
-    <div class="weergave-overlay" id="synaxarion-weergave-overlay" hidden></div>
-    <div
-      class="weergave-panel"
-      id="synaxarion-weergave-panel"
-      role="dialog"
-      aria-labelledby="synaxarion-weergave-title"
-      hidden
-    >
-      <div class="weergave-panel-head">
-        <h2 id="synaxarion-weergave-title">Weergave</h2>
-        <button type="button" class="weergave-panel-close" data-weergave-close>Klaar</button>
+      <div class="weergave-overlay" id="synaxarion-weergave-overlay" hidden></div>
+      <div
+        class="weergave-panel"
+        id="synaxarion-weergave-panel"
+        role="dialog"
+        aria-labelledby="synaxarion-weergave-title"
+        hidden
+      >
+        <div class="weergave-panel-head">
+          <h2 id="synaxarion-weergave-title">Weergave</h2>
+          <button type="button" class="weergave-panel-close" data-weergave-close>Klaar</button>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Toon">
+          <label class="chip"><input type="checkbox" name="show" value="heilige" checked> Heiligen</label>
+          <label class="chip"><input type="checkbox" name="show" value="feest" checked> Feesten</label>
+          <label class="chip"><input type="checkbox" name="show" value="vasten" checked> Vasten</label>
+        </div>
+        <p class="filter-bar">
+          <label class="search-label" for="synaxarion-search">Zoeken (ook alternatieve namen)</label>
+          <input type="search" id="synaxarion-search" class="search-input" placeholder="bijv. Ludger, Ontslapen…" autocomplete="off">
+        </p>
+        <div class="browse-mode" role="group" aria-label="Bladeren op">
+          <button type="button" class="style-btn" data-browse="maand" aria-pressed="true">Maanden</button>
+          <button type="button" class="style-btn" data-browse="letter" aria-pressed="false">Alfabet</button>
+        </div>
       </div>
-      <div class="filter-bar" role="group" aria-label="Toon">
-        <label class="chip"><input type="checkbox" name="show" value="heilige" checked> Heiligen</label>
-        <label class="chip"><input type="checkbox" name="show" value="feest" checked> Feesten</label>
-        <label class="chip"><input type="checkbox" name="show" value="vasten" checked> Vasten</label>
-      </div>
-      <p class="filter-bar">
-        <label class="search-label" for="synaxarion-search">Zoeken (ook alternatieve namen)</label>
-        <input type="search" id="synaxarion-search" class="search-input" placeholder="bijv. Ludger, Ontslapen…" autocomplete="off">
-      </p>
-      <div class="browse-mode" role="group" aria-label="Bladeren op">
-        <button type="button" class="style-btn" data-browse="maand" aria-pressed="true">Maanden</button>
-        <button type="button" class="style-btn" data-browse="letter" aria-pressed="false">Alfabet</button>
+
+      <div class="date-list-col-head synaxarion-col-head" id="synaxarion-col-head" role="row">
+        <span role="columnheader">Dag</span>
+        <span role="columnheader">Naam</span>
+        <span role="columnheader">Soort</span>
       </div>
     </div>
 
     <p class="hint" id="synaxarion-hint"></p>
-    <div id="synaxarion-list" class="table-wrap"></div>
+    <div id="synaxarion-list" class="synaxarion-date-list" role="table" aria-label="Synaxarion"></div>
   </div>
 </section>
 {{ end }}

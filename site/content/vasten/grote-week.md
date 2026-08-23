@@ -24,11 +24,11 @@ onderdrukt_wekelijks_vasten: true
 <table class="komende-jaren">
 <thead><tr><th>Jaar</th><th>Van</th><th>Tot</th></tr></thead>
 <tbody>
-<tr><td>2026</td><td>6 april</td><td>11 april</td></tr>
-<tr><td>2027</td><td>26 april</td><td>1 mei</td></tr>
-<tr><td>2028</td><td>10 april</td><td>15 april</td></tr>
-<tr><td>2029</td><td>2 april</td><td>7 april</td></tr>
-<tr><td>2030</td><td>22 april</td><td>27 april</td></tr>
+<tr><td>2026</td><td><a href="/datum/?datum=2026-04-06&amp;stijl=gregoriaans">6 april</a></td><td><a href="/datum/?datum=2026-04-11&amp;stijl=gregoriaans">11 april</a></td></tr>
+<tr><td>2027</td><td><a href="/datum/?datum=2027-04-26&amp;stijl=gregoriaans">26 april</a></td><td><a href="/datum/?datum=2027-05-01&amp;stijl=gregoriaans">1 mei</a></td></tr>
+<tr><td>2028</td><td><a href="/datum/?datum=2028-04-10&amp;stijl=gregoriaans">10 april</a></td><td><a href="/datum/?datum=2028-04-15&amp;stijl=gregoriaans">15 april</a></td></tr>
+<tr><td>2029</td><td><a href="/datum/?datum=2029-04-02&amp;stijl=gregoriaans">2 april</a></td><td><a href="/datum/?datum=2029-04-07&amp;stijl=gregoriaans">7 april</a></td></tr>
+<tr><td>2030</td><td><a href="/datum/?datum=2030-04-22&amp;stijl=gregoriaans">22 april</a></td><td><a href="/datum/?datum=2030-04-27&amp;stijl=gregoriaans">27 april</a></td></tr>
 </tbody>
 </table>
 </div>

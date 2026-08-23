@@ -34,4 +34,5 @@ zichtbaar). Identiteit hoort bij de sitenaam-popover, niet in de body.
 ## Dagkaart
 
 Zie [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
-(titelrij, vasten, Nieuw/Oud, dagtype, lezingen, heiligen).
+(titelrij sticky onder de sitenavbar, vasten, Nieuw/Oud, dagtype,
+lezingen, heiligen).

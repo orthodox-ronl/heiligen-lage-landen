@@ -151,7 +151,10 @@ def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
     assert ".Params.tot_oud" in default_list
     assert "vierdatum-oud.html" in default_list
     assert "$.Params.vierdatum_oud" not in default_list
-    assert "{{ if .Params.feestdatum }}" in heiligen_list
-    assert ".Params.vierdatum_oud" in heiligen_list
-    assert "vierdatum-oud.html" in heiligen_list
-    assert "$.Params.vierdatum_oud" not in heiligen_list
+    assert "vierdatum_oud" in heiligen_list
+    assert "heiligen-data" in heiligen_list
+    filter_js = (SITE / "assets" / "js" / "entry-filter.js").read_text(
+        encoding="utf-8"
+    )
+    assert "vierdatum_oud" in filter_js
+    assert "vierdatum-oud" in filter_js

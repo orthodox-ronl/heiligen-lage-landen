@@ -1,11 +1,8 @@
 {{ define "main" }}
-<section class="kalender-page">
+<section class="kalender-page" data-kalender>
+  <h1 class="kalender-page-title">{{ .Title }}</h1>
   <div class="kalender-sticky-head">
-    <h1 class="page-title-row" id="kalender-heading">
-      <span class="title-nav" id="kalender-title-nav" data-title="{{ .Title }}">{{ .Title }}</span>
-    </h1>
-    {{ .Content }}
-    <ul class="legend compact">
+    <ul class="legend compact" aria-label="Legenda">
       <li><span class="swatch day-feest"></span> feest</li>
       <li><span class="swatch day-heilige"></span> heilige</li>
       <li><span class="swatch day-beide"></span> beide</li>
@@ -14,7 +11,9 @@
       <li><span class="swatch day-heilige-vasten"></span> heilige+vasten</li>
       <li><span class="swatch day-today"></span> vandaag</li>
     </ul>
+    <div class="kalender-sticky-style" id="kalender-style-slot"></div>
   </div>
-  <div id="year-grid" class="year-grid" data-kalender></div>
+  {{ .Content }}
+  <div id="year-grid" class="year-grid"></div>
 </section>
 {{ end }}
