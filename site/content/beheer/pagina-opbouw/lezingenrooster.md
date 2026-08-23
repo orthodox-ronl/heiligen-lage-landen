@@ -39,8 +39,11 @@ lectionarium-verschuiving (otstupka) op dit scherm (dat hoort op
 Evangelie als verwijzing (zelfde links als op de datumpagina); dagen
 zonder liturgie van dit type als korte status; maandovergangen met een
 scheidingslijn en gecentreerd label `{maand jjjj}`; in de dagkolom
-alleen het dagnummer (bijv. `5`); de rij van **vandaag** herkenbaar
-gemarkeerd. Bij bezoek is die rij in beeld; daarna op/neer scrollen.
+alleen het dagnummer (bijv. `5`), horizontaal en verticaal
+gecentreerd; **één rij per burgerlijke dag**; de dag van **vandaag**
+herkenbaar aan een gouden rand om de dagcel (zoals in de jaarkalender).
+Bij bezoek is die rij in beeld; daarna op/neer scrollen.
 
 **Niet:** volledige Bijbeltekst; heiligenvita’s in de roosterrij;
-selectiestatus; volledige datums zoals `5 augustus` in de dagkolom.
+selectiestatus; volledige datums zoals `5 augustus` in de dagkolom;
+zware achtergrondmarkering van de hele rij.

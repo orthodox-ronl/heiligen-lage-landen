@@ -2007,9 +2007,7 @@
             (isToday ? ` aria-current="date"` : "") +
             `>` +
             `<div class="rooster-cell rooster-cell-dag" role="cell">` +
-            `<a href="${dagUrl}">${dayNumber(civilMmdd)}</a>` +
-            (isToday ? `<span class="date-list-today-mark"> vandaag</span>` : "") +
-            `</div>` +
+            `<a href="${dagUrl}">${dayNumber(civilMmdd)}</a></div>` +
             `<div class="rooster-cell" role="cell">${(lez && lez.daglabel) || ""}</div>` +
             `<div class="rooster-cell" role="cell">${apostel}</div>` +
             `<div class="rooster-cell" role="cell">${evangelie}</div>` +
@@ -2464,42 +2462,41 @@
     return "01-01";
   }
 
-  function synaxarionEntryRowHtml(entry, mmdd, opts) {
+  function synaxarionDayRowHtml(mmdd, entries, opts) {
     const isToday = Boolean(opts && opts.isToday);
-    const thumb = entryThumbHtml(entry);
-    const href = assetUrl(String(entry.url || "").replace(/^\//, ""));
-    const dagHref = pageUrl("synaxarion/", { dag: mmdd });
     const monthKey = (opts && opts.monthKey) || mmdd.slice(0, 2);
+    const dagHref = pageUrl("synaxarion/", { dag: mmdd });
+    const names = (entries || [])
+      .map((entry) => {
+        const thumb = entryThumbHtml(entry);
+        const href = assetUrl(String(entry.url || "").replace(/^\//, ""));
+        return (
+          `<span class="date-list-naam-item">${thumb}` +
+          `<a href="${href}">${escapeHtml(entry.naam)}</a></span>`
+        );
+      })
+      .join("");
+    const kinds = Array.from(
+      new Set((entries || []).map((e) => kindLabel(e)))
+    ).join(", ");
+    const naamHtml = names
+      ? names
+      : `<span class="muted">Geen vaste feestdag in deze selectie</span>`;
     return (
       `<div class="date-list-row${isToday ? " is-today" : ""}" role="row" ` +
       `data-month-key="${monthKey}" data-mmdd="${mmdd}"` +
       (isToday ? ` aria-current="date"` : "") +
       `>` +
       `<div class="date-list-dag" role="cell">` +
-      `<a href="${dagHref}">${dayNumber(mmdd)}</a>` +
-      (isToday ? `<span class="date-list-today-mark"> vandaag</span>` : "") +
-      `</div>` +
-      `<div class="date-list-naam" role="cell">${thumb}` +
-      `<a href="${href}">${escapeHtml(entry.naam)}</a></div>` +
-      `<div class="date-list-soort" role="cell">${escapeHtml(kindLabel(entry))}</div>` +
+      `<a href="${dagHref}">${dayNumber(mmdd)}</a></div>` +
+      `<div class="date-list-naam" role="cell">${naamHtml}</div>` +
+      `<div class="date-list-soort" role="cell">${escapeHtml(kinds)}</div>` +
       `</div>`
     );
   }
 
   function synaxarionEmptyTodayRowHtml(mmdd) {
-    const dagHref = pageUrl("synaxarion/", { dag: mmdd });
-    const monthKey = mmdd.slice(0, 2);
-    return (
-      `<div class="date-list-row is-today" role="row" ` +
-      `data-month-key="${monthKey}" data-mmdd="${mmdd}" aria-current="date">` +
-      `<div class="date-list-dag" role="cell">` +
-      `<a href="${dagHref}">${dayNumber(mmdd)}</a>` +
-      `<span class="date-list-today-mark"> vandaag</span></div>` +
-      `<div class="date-list-naam" role="cell">` +
-      `<span class="muted">Geen vaste feestdag in deze selectie</span></div>` +
-      `<div class="date-list-soort" role="cell"></div>` +
-      `</div>`
-    );
+    return synaxarionDayRowHtml(mmdd, [], { isToday: true });
   }
 
   let synaxarionScrollObserver = null;
@@ -2671,6 +2668,34 @@
     document.title = `${label(mmdd)} · ${site}`;
   }
 
+  function synaxarionGroupByMmdd(entries) {
+    const byDay = new Map();
+    for (const entry of entries || []) {
+      const mmdd = entryMmddForList(entry);
+      if (!byDay.has(mmdd)) byDay.set(mmdd, []);
+      byDay.get(mmdd).push(entry);
+    }
+    for (const list of byDay.values()) {
+      list.sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+    }
+    return Array.from(byDay.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+  }
+
+  function synaxarionGroupedRowsHtml(entries, todayMmdd) {
+    const groups = synaxarionGroupByMmdd(entries);
+    if (!groups.length) {
+      return "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
+    }
+    return groups
+      .map(([mmdd, dayEntries]) =>
+        synaxarionDayRowHtml(mmdd, dayEntries, {
+          isToday: mmdd === todayMmdd,
+          monthKey: mmdd.slice(0, 2),
+        })
+      )
+      .join("");
+  }
+
   function renderSynaxarionBrowse(entries) {
     const dayRoot = document.getElementById("synaxarion-day");
     const browse = document.getElementById("synaxarion-browse");
@@ -2741,17 +2766,7 @@
         hint.hidden = false;
         hint.textContent = `Zoekresultaten: ${subset.length} item(s).`;
       }
-      list.innerHTML = subset.length
-        ? subset
-            .map((entry) => {
-              const mmdd = entryMmddForList(entry);
-              return synaxarionEntryRowHtml(entry, mmdd, {
-                isToday: mmdd === todayMmdd,
-                monthKey: mmdd.slice(0, 2),
-              });
-            })
-            .join("")
-        : "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
+      list.innerHTML = synaxarionGroupedRowsHtml(subset, todayMmdd);
       return;
     }
 
@@ -2767,17 +2782,7 @@
         hint.hidden = false;
         hint.textContent = `Letter ${activeLetter}: ${subset.length} item(s).`;
       }
-      list.innerHTML = subset.length
-        ? subset
-            .map((entry) => {
-              const mmdd = entryMmddForList(entry);
-              return synaxarionEntryRowHtml(entry, mmdd, {
-                isToday: mmdd === todayMmdd,
-                monthKey: mmdd.slice(0, 2),
-              });
-            })
-            .join("")
-        : "<p>Geen vaste feesten, heiligen of vasten voor deze selectie.</p>";
+      list.innerHTML = synaxarionGroupedRowsHtml(subset, todayMmdd);
       return;
     }
 
@@ -2811,14 +2816,12 @@
           }
           continue;
         }
-        dayEntries.forEach((entry) => {
-          html += synaxarionEntryRowHtml(entry, mmdd, {
-            isToday,
-            monthKey: mm,
-          });
-          rowCount += 1;
-          if (isToday) sawToday = true;
+        html += synaxarionDayRowHtml(mmdd, dayEntries, {
+          isToday,
+          monthKey: mm,
         });
+        rowCount += 1;
+        if (isToday) sawToday = true;
       }
     }
     if (!sawToday) {

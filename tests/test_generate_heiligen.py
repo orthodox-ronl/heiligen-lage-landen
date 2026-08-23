@@ -471,13 +471,17 @@ def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
     assert "heiligen-kaart" in layout
     assert "locatie_zoek" in layout
     assert "vendor/leaflet/leaflet.js" in layout
+    assert "heiligen-data" in layout
+    assert "data-heiligen-sort" in layout
     js = (ROOT / "site" / "assets" / "js" / "entry-filter.js").read_text(
         encoding="utf-8"
     )
-    assert "data-zoek" in js
+    assert "zoekHay" in js
     assert "toLocaleLowerCase" in js
     assert 'params.get("plaats")' in js
     assert "heiligen-filter" in js
+    assert 'sortMode === "datum"' in js
+    assert 'sortMode === "plaats"' in js
     kaart = (ROOT / "site" / "assets" / "js" / "heiligen-kaart.js").read_text(
         encoding="utf-8"
     )

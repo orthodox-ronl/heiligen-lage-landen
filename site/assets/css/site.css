@@ -590,11 +590,7 @@ h2 {
 }
 
 .date-list-today-mark {
-  display: inline;
-  font-weight: 500;
-  font-size: 0.78rem;
-  color: var(--gold);
-  margin-left: 0.15rem;
+  display: none;
 }
 
 .rooster-toolbar {
@@ -623,7 +619,7 @@ h2 {
   display: grid;
   grid-template-columns: 2.75rem minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr);
   gap: 0.35rem 0.65rem;
-  align-items: start;
+  align-items: center;
 }
 
 .rooster-col-head {
@@ -655,6 +651,12 @@ h2 {
 .rooster-cell-dag {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 1.75rem;
+  border-radius: 0.2rem;
 }
 
 .rooster-cell-dag a {
@@ -663,6 +665,14 @@ h2 {
 
 .rooster-cell-dag a:hover {
   text-decoration: underline;
+}
+
+.rooster-row.is-today .rooster-cell-dag,
+.date-list-row.is-today .date-list-dag {
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+  box-shadow: inset 0 0 0 1px var(--bg-elev);
+  font-weight: 700;
 }
 
 .rooster-month-break {
@@ -692,18 +702,6 @@ h2 {
 
 .list-month-break-label {
   flex: 0 0 auto;
-}
-
-.rooster-row.is-today,
-.date-list-row.is-today {
-  background: color-mix(in srgb, var(--gold) 12%, transparent);
-  box-shadow: inset 3px 0 0 var(--gold);
-}
-
-.rooster-row.is-today .rooster-cell-dag a,
-.date-list-row.is-today .date-list-dag a,
-.date-list-row.is-today .date-list-dag {
-  color: var(--gold);
 }
 
 .day-surface-sticky-title {
@@ -744,11 +742,92 @@ h2 {
   margin: 0;
 }
 
+.heiligen-sticky-head .heiligen-sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0.45rem 0 0;
+}
+
+.heiligen-sticky-head .heiligen-sort-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+
+.heiligen-col-head,
+.heiligen-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr) minmax(5.5rem, 0.7fr);
+  gap: 0.35rem 0.65rem;
+  align-items: center;
+}
+
+.heiligen-col-head.is-sort-datum,
+.heiligen-row.is-sort-datum {
+  grid-template-columns: 2.75rem minmax(0, 1.5fr) minmax(0, 1fr);
+}
+
+.heiligen-col-head.is-sort-plaats,
+.heiligen-row.is-sort-plaats {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(5.5rem, 0.8fr);
+}
+
+.heiligen-col-head {
+  padding: 0.45rem 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  margin-top: 0.35rem;
+}
+
+.heiligen-table {
+  margin-top: 0.75rem;
+}
+
+.heiligen-row {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  font-size: 0.92rem;
+}
+
+.heiligen-cell-dag {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 1.75rem;
+  border-radius: 0.2rem;
+}
+
+.heiligen-cell-dag a {
+  text-decoration: none;
+}
+
+.heiligen-cell-dag a:hover {
+  text-decoration: underline;
+}
+
+.heiligen-namen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.55rem;
+}
+
+.heiligen-namen .list-icoon {
+  flex: none;
+}
+
 .date-list-col-head,
 .date-list-row {
   display: grid;
   gap: 0.35rem 0.65rem;
-  align-items: start;
+  align-items: center;
 }
 
 .date-list-col-head {
@@ -759,7 +838,7 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
-.synaxarion-date-list .date-list-col-head,
+.synaxarion-col-head,
 .synaxarion-date-list .date-list-row {
   grid-template-columns: 2.75rem minmax(0, 1.6fr) minmax(0, 0.9fr);
 }
@@ -780,6 +859,12 @@ h2 {
 .date-list-dag {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 1.75rem;
+  border-radius: 0.2rem;
 }
 
 .date-list-dag a {
@@ -792,9 +877,16 @@ h2 {
 
 .date-list-naam {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem 0.55rem;
   min-width: 0;
+}
+
+.date-list-naam-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .rooster-month {

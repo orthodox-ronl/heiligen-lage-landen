@@ -48,13 +48,16 @@ jaar → datumpagina).
 ## Lijst (maandmodus)
 
 **Wel:** doorlopende vaste jaarcyclus (januari–december); eerste kolom
-`Dag` met dagnummer; overige kolommen naam (met icoon) en soort;
-maandovergangen met scheidingslijn en gecentreerd maandlabel; de
-feestdatum van **vandaag** herkenbaar gemarkeerd. Bij bezoek is die
-rij in beeld.
+`Dag` met dagnummer (horizontaal en verticaal gecentreerd); **één rij
+per feestdatum** met alle namen en soorten van die dag in de overige
+kolommen; maandovergangen met scheidingslijn en gecentreerd
+maandlabel; de feestdatum van **vandaag** herkenbaar aan een gouden
+rand om de dagcel (zoals in de jaarkalender). Bij bezoek is die rij in
+beeld.
 
 **Niet:** `selectie:` of «kandidaat-schrappen»; beheerpaden; de volle
-vita in de lijst; een regel «{maand}: {n} items».
+vita in de lijst; een regel «{maand}: {n} items»; meerdere rijen voor
+dezelfde feestdatum; zware achtergrondmarkering van de hele rij.
 
 ## Dagweergave (`?dag=MM-DD`)
 
