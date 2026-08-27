@@ -1,22 +1,31 @@
-# AGENTS.md — kalender
+# AGENTS.md — heiligen-lage-landen
 
 Orthodoxe heiligen- en feestkalender (statische Hugo-site) voor
 [orthodox-ronl](https://github.com/orthodox-ronl).
 
 Org-context: [bron/AGENTS.md](https://github.com/orthodox-ronl/bron/blob/main/AGENTS.md).
 Terminologie: [bron/docs/specs/terminologie.md](https://github.com/orthodox-ronl/bron/blob/main/docs/specs/terminologie.md).
+Scripts: [bron/docs/specs/repo-scripts.md](https://github.com/orthodox-ronl/bron/blob/main/docs/specs/repo-scripts.md).
 
 ## Commando's
 
+In de repo-root (`.\scripts` op PATH). Toolchain: Python 3.14, Hugo Extended 0.160.1.
+
 ```cmd
-cd /d C:\Git\orthodox-ronl\kalender
-python -m pip install -r requirements.txt
-python -m pytest -q
-python scripts\validate.py
-scripts\build.cmd
+cd /d C:\Git\orthodox-groningen\heiligen-lage-landen
+test
+check
+serve
+build
 ```
 
-Preview lokaal: `scripts\serve.cmd`.
+| Commando | Doel |
+| -------- | ---- |
+| `test` | pytest |
+| `validate` | YAML/schema-validatie |
+| `check` | CI-spiegel (pytest + validate + generate + hugo minify) |
+| `serve` | lokale Hugo-preview |
+| `build` | statische site in `generated\site` |
 
 ## Architectuur
 

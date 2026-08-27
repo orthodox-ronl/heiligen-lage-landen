@@ -10,16 +10,13 @@ Overzicht van paden: [Voor beheerders]({{% ref "/beheer" %}}).
 
 ## Lokaal
 
-Vanuit de root van de repo:
+Vanuit de root van de repo (`.\scripts` op PATH; Python 3.14, Hugo Extended 0.160.1).
+Commando's: [Commando's]({{% ref "/beheer/scripts" %}}).
 
-1. `python -m pip install -r requirements.txt` (eenmalig of na wijziging van dependencies)
-2. `python scripts/validate.py` — YAML tegen het schema en inhoudelijke regels (referenties, iconen)
-3. `python -m pytest -q` — onder meer vastenvoorbeelden en handmatige `_index.md`
-4. `python scripts/generate.py` — schrijft entry-pagina’s, `entries.json`, `plaatsen.json`, ICS, en de twee vasten-uitlegpagina’s
-5. Optioneel met schoonmaak: `python scripts/generate.py --clean` (wist eerst gegenereerde mappen; zelfde eindresultaat als CI)
-6. Site bekijken: `scripts/serve.cmd` (Windows) of Hugo serve na generate
+1. `check` — pytest, validate, generate `--clean`, Hugo minify (zelfde blocking stappen als CI)
+2. Lokaal bekijken: `serve` (of na een groene check alleen de server als de generated content al bestaat: opnieuw `serve`)
 
-Als validate of pytest rood is, niet pushen naar `main`. Een verkeerd
+Als `validate` of `test` rood is, niet pushen naar `main`. Een verkeerd
 verwacht vastenniveau is meestal: YAML-voorbeeld aangepast, code nog niet.
 
 ## Wat generate.py doet
@@ -48,7 +45,7 @@ Push naar een andere branch → preview onder `/preview/`.
 CI (`.github/workflows/pages.yml`) doet: pytest → validate →
 `generate.py --clean` → Hugo → deploy naar `gh-pages`. U hoeft lokaal geen
 `generated/` te committen. `validate.yml` (pull requests) draait dezelfde
-pytest- en generate-stappen.
+pytest- en generate-stappen. Lokaal: `check`.
 
 ## Veelgemaakte fout
 

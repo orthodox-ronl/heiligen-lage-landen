@@ -13,7 +13,7 @@ Technische bijlage bij de [uitleg Heiligen]({{% ref "/uitleg/heiligen" %}}).
 Normatief datamodel: [docs/datamodel.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/docs/datamodel.md).
 Schema: `schemas/entry.schema.json`. How-to:
 [heiligen en feesten wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}}).
-Validatie: `python scripts/validate.py`.
+Validatie: `validate` (`python scripts/validate.py`).
 
 Bron: `data/heiligen/<id>.yaml`. Gegenereerde markdown onder
 `site/content/heiligen/` niet redigeren.

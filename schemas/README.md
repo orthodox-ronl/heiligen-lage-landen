@@ -8,7 +8,8 @@ markdown onder `site/content/` is een afdruk — daar niet redigeren.
 - **Opslaan:** je mag op entries (en waar het schema dat toelaat) extra
   velden zetten voor notities, onderzoek, experimenten. Die breken de
   site niet: `generate.py` en de UI lezen alleen bekende velden.
-- **Valideren:** bekende velden blijven genormeerd (`python scripts/validate.py`
+- **Valideren:** bekende velden blijven genormeerd (`validate` of
+  `python scripts/validate.py`
   + JSON Schema). Onbekende **top-level** velden op een entry zijn
   toegestaan (`additionalProperties: true` in `entry.schema.json`).
 - **Tonen:** pagina-indelingen kunnen later wijzigen zonder dat je data
@@ -52,7 +53,7 @@ Gebruik dit als beslisboom. Details en voorbeelden staan in de how-to’s.
 ## JSON Schema valideren
 
 ```text
-python scripts/validate.py
+validate
 ```
 
 Valideert entries tegen `entry.schema.json`. Plaatsen: zie tests

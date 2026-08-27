@@ -13,7 +13,7 @@ MVP: vaste feesten + heiligen van de Lage Landen + Orthodoxe paascyclus
 | Onderdeel | Inhoud |
 | --------- | ------ |
 | Data      | YAML onder `data/` (feesten, heiligen, bronnen) |
-| Build     | `scripts/validate.py`, `scripts/generate.py` → Hugo-content + ICS |
+| Build     | `validate` / `generate.py` → Hugo-content + ICS |
 | Site      | Hugo in `site/` |
 | Agenda    | ICS-feeds `/ics/*-{nieuw,oud}.ics` (oud = burgerlijk +13) |
 
@@ -23,24 +23,26 @@ dagnaam (gelijk in nieuw/oud). Zie [docs/datamodel.md](docs/datamodel.md),
 de pagina **Uitleg** (voor wie de kalender gebruikt) en **Voor beheerders**
 (`/beheer/`: wat u mag wijzigen, wat generate overschrijft, how-to’s).
 
-## Lokaal bouwen
+## Commando's
+
+Org-conventie: [repo-scripts](https://github.com/orthodox-ronl/bron/blob/main/docs/specs/repo-scripts.md).
+Toolchain: Python **3.14**, Hugo Extended **0.160.1**. In de repo-root (`.\scripts` op PATH):
+
+| Commando | Doel |
+| -------- | ---- |
+| `test` | pytest |
+| `validate` | YAML tegen schema en inhoudelijke regels |
+| `check` | CI-spiegel: pytest + validate + generate + Hugo minify |
+| `serve` | lokale preview (validate + generate + Hugo server) |
+| `build` | statische site in `generated\site` |
 
 ```cmd
-cd /d C:\Git\orthodox-ronl\kalender
-python -m pip install -r requirements.txt
-python scripts\validate.py
-python scripts\generate.py --clean
-python scripts\write_build_stamp.py
-hugo --source site --destination generated\site --minify
-hugo --source site --destination generated\site --minify --baseURL / --buildDrafts=false
+cd /d C:\Git\orthodox-groningen\heiligen-lage-landen
+check
+serve
 ```
 
-Of met serve (na generate):
-
-```cmd
-cd /d C:\Git\orthodox-ronl\kalender
-scripts\serve.cmd
-```
+Zelfde lijst op de site: **Voor beheerders** → [Commando's](https://orthodox-ronl.github.io/heiligen-lage-landen/beheer/scripts/).
 
 ## GitHub Pages
 
