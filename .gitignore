@@ -22,6 +22,7 @@ site/static/ics/*.ics
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.ensure-stamp
 .mypy_cache/
 .ruff_cache/
 

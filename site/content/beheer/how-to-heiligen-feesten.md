@@ -333,10 +333,10 @@ publieke pagina, niet bij `voldoet`.
 ## Controleren
 
 ```text
-python scripts/validate.py
-python scripts/generate.py
-python -m pytest -q
+check
 ```
+
+Of stapsgewijs: `validate`, daarna generate via `serve` / `build`, of `test`.
 
 Daarna de entry op de site: Synaxarion (vaste dag), datumpagina (dit jaar),
 eventueel ICS. Klopt de naam niet, dan eerst `namen:` in het entry-YAML.

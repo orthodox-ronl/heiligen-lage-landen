@@ -1,0 +1,1092 @@
+From c4eb30994f1b8e97009b114112bf4b281eb5bdf9 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Thu, 27 Aug 2026 12:09:15 +0000
+Subject: [PATCH] feat(scripts): canonieke commando's, _ensure en Python 3.14
+
+Gedeelde namen (test/check/build/serve), PATH-toets, geen bootstrap-stap.
+CI en requires-python op 3.14; Hugo Extended 0.160.1 waar van toepassing.
+Org-spec: bron/docs/specs/repo-scripts.md
+---
+ .github/workflows/docs-pages.yml           |   2 +-
+ .github/workflows/validate-catalogus.yml   |   2 +-
+ .github/workflows/validate-zangstukken.yml |   2 +-
+ .gitignore                                 |   1 +
+ AGENTS.md                                  |  36 ++--
+ README.md                                  |  22 ++-
+ docs/getting-started/index.md              |  10 +-
+ docs/glossary.md                           |   2 +-
+ docs/index.md                              |   6 +-
+ docs/manuals/docs-bijdragen.md             |  18 +-
+ docs/manuals/github-pages-setup.md         |   6 +-
+ docs/manuals/index.md                      |   2 +-
+ docs/specs/documentatie-eigendom.md        |   4 +-
+ docs/specs/index.md                        |   1 +
+ docs/specs/repo-scripts.md                 | 120 ++++++++++++
+ docs/specs/schrijfconventies.md            |   4 +-
+ mkdocs.yml                                 |   1 +
+ pyproject.toml                             |   2 +-
+ scripts/_ensure.cmd                        |  32 ++++
+ scripts/_ensure.py                         | 203 +++++++++++++++++++++
+ scripts/build.cmd                          |  19 ++
+ scripts/catalogus.cmd                      |   3 +-
+ scripts/docs-build-tev2.cmd                |  15 +-
+ scripts/docs-build.cmd                     |  12 +-
+ scripts/docs-serve-tev2.cmd                |  43 +----
+ scripts/docs-serve.cmd                     |  33 +---
+ scripts/docs-tev2-run.cmd                  |   2 +
+ scripts/serve-tev2.cmd                     |  38 ++++
+ scripts/serve.cmd                          |  30 +++
+ scripts/test.cmd                           |   5 +-
+ scripts/validate.cmd                       |   9 +
+ 31 files changed, 528 insertions(+), 157 deletions(-)
+ create mode 100644 docs/specs/repo-scripts.md
+ create mode 100644 scripts/_ensure.cmd
+ create mode 100644 scripts/_ensure.py
+ create mode 100644 scripts/build.cmd
+ create mode 100644 scripts/serve-tev2.cmd
+ create mode 100644 scripts/serve.cmd
+ create mode 100644 scripts/validate.cmd
+
+diff --git a/.github/workflows/docs-pages.yml b/.github/workflows/docs-pages.yml
+index e2c0687..6a2504b 100644
+--- a/.github/workflows/docs-pages.yml
++++ b/.github/workflows/docs-pages.yml
+@@ -69,7 +69,7 @@ jobs:
+       - name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+-          python-version: "3.12"
++          python-version: "3.14"
+           cache: pip
+           cache-dependency-path: requirements-docs.txt
+ 
+diff --git a/.github/workflows/validate-catalogus.yml b/.github/workflows/validate-catalogus.yml
+index 0a784f9..f1d8c2a 100644
+--- a/.github/workflows/validate-catalogus.yml
++++ b/.github/workflows/validate-catalogus.yml
+@@ -20,7 +20,7 @@ jobs:
+       - name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+-          python-version: "3.12"
++          python-version: "3.14"
+           cache: pip
+           cache-dependency-path: pyproject.toml
+ 
+diff --git a/.github/workflows/validate-zangstukken.yml b/.github/workflows/validate-zangstukken.yml
+index 600de3d..fb7eb09 100644
+--- a/.github/workflows/validate-zangstukken.yml
++++ b/.github/workflows/validate-zangstukken.yml
+@@ -27,7 +27,7 @@ jobs:
+       - name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+-          python-version: "3.12"
++          python-version: "3.14"
+           cache: pip
+           cache-dependency-path: vendor/vsa-tooling/pyproject.toml
+ 
+diff --git a/.gitignore b/.gitignore
+index 872fbbb..f40d551 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -33,5 +33,6 @@ site-*/
+ .venv/
+ __pycache__/
+ .pytest_cache/
++.ensure-stamp
+ *.egg-info/
+ node_modules/
+diff --git a/AGENTS.md b/AGENTS.md
+index ee6415d..6965771 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -39,23 +39,23 @@ Docs-prose (persona’s, paginatypen, jargon→TermRef, foutpaden, term-sjabloon
+ 
+ | Vereiste      | Versie / tool                             |
+ | ------------- | ----------------------------------------- |
+-| Python        | ≥ 3.12                                    |
++| Python        | 3.14                                      |
+ | Docs lokaal   | MkDocs Material (`requirements-docs.txt`) |
+ | Catalogus     | `pip install -e ".[dev]"` in bron-root    |
+ | VSA-validatie | `vsa` CLI uit repo VSA-tooling            |
+ 
++Scripts: [docs/specs/repo-scripts.md](docs/specs/repo-scripts.md).
++
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\docs-serve.cmd
++cd /d C:\Git\orthodox-groningen\bron
++serve
+ ```
+ 
+-VSA-validatie (VSA-tooling naast `bron`):
++VSA-validatie (`vsa` op PATH, VSA-tooling-venv):
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-tooling
+-scripts\bootstrap.cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-vsa validate zangstukken
++cd /d C:\Git\orthodox-groningen\bron
++validate
+ ```
+ 
+ **Commando's voor de gebruiker:** één kopieerbaar cmd-blok, Windows-paden (`\`).
+@@ -72,8 +72,8 @@ Sjablonen: [sjabloon schrijven](docs/manuals/catalogus/sjabloon-schrijven.md),
+ spec [catalogus-samenstelling-zangstuk.md](docs/specs/catalogus-samenstelling-zangstuk.md).
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\test.cmd
++cd /d C:\Git\orthodox-groningen\bron
++test
+ python -m catalogus.cli index validate --bron-root .
+ ```
+ 
+@@ -81,15 +81,15 @@ python -m catalogus.cli index validate --bron-root .
+ 
+ | Script                    | Doel                                              |
+ | ------------------------- | ------------------------------------------------- |
+-| `scripts\docs-serve.cmd`  | Snelle preview zonder TEv2                        |
+-| `scripts\docs-serve-tev2.cmd` | Preview met TermRefs (CI-parity)              |
+-| `scripts\docs-build.cmd`  | `mkdocs build --strict` zonder TEv2               |
+-| `scripts\docs-build-tev2.cmd` | TEv2 + TermRef-check + MkDocs (CI)            |
++| `serve`                   | Snelle preview zonder TEv2                        |
++| `serve-tev2`              | Preview met TermRefs (CI-parity)                  |
++| `build --no-tev2`         | `mkdocs build --strict` zonder TEv2               |
++| `build`                   | TEv2 + TermRef-check + MkDocs (CI)                |
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
++cd /d C:\Git\orthodox-groningen\bron
+ npm install
+-scripts\docs-build-tev2.cmd
++build
+ ```
+ 
+ Handleiding: [docs/manuals/docs-bijdragen.md](docs/manuals/docs-bijdragen.md).
+@@ -97,8 +97,8 @@ Handleiding: [docs/manuals/docs-bijdragen.md](docs/manuals/docs-bijdragen.md).
+ ### Zangstukken valideren
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-vsa validate zangstukken
++cd /d C:\Git\orthodox-groningen\bron
++validate
+ ```
+ 
+ Zelfde stap als CI (`.github/workflows/validate-zangstukken.yml`).
+diff --git a/README.md b/README.md
+index c9c131b..45b7905 100644
+--- a/README.md
++++ b/README.md
+@@ -15,19 +15,23 @@ door verschillende parochies wordt gebruikt. Parochies bouwen hun eigen site
+ Specificaties, handleidingen, referentie en ontwikkelplannen — gebouwd met MkDocs
+ Material. Preview van branches: **https://orthodox-ronl.github.io/bron/preview/**
+ 
+-Lokaal:
++## Commando's
+ 
+-```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\docs-serve.cmd
+-```
++Org-conventie: [repo-scripts](docs/specs/repo-scripts.md). Python **3.14**.
+ 
+-TEV2 + MkDocs lokaal bouwen:
++| Commando | Doel |
++| -------- | ---- |
++| `test` | catalogus-pytest |
++| `validate` | catalogus index validate + `vsa validate zangstukken` |
++| `catalogus` | catalogus CLI |
++| `serve` | MkDocs preview zonder TEv2 |
++| `serve-tev2` | MkDocs preview met TEv2 |
++| `build` | TEv2 + MkDocs `--strict` (CI-pariteit) |
++| `build --no-tev2` | MkDocs zonder TEv2 |
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-npm install -g @tno-terminology-design/trrt @tno-terminology-design/hrgt @tno-terminology-design/mrgt @tno-terminology-design/mrg-import
+-scripts\docs-build-tev2.cmd
++cd /d C:\Git\orthodox-groningen\bron
++serve
+ ```
+ 
+ ## Wat staat hier wel, en wat niet
+diff --git a/docs/getting-started/index.md b/docs/getting-started/index.md
+index 3215c74..706e7aa 100644
+--- a/docs/getting-started/index.md
++++ b/docs/getting-started/index.md
+@@ -25,18 +25,18 @@ procedures staan onder [Handleidingen](../manuals/index.md).
+ ## 1. Repository openen
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
++cd /d C:\Git\orthodox-groningen\bron
+ ```
+ 
+ ## 2. Documentatie lokaal bekijken
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\docs-serve.cmd
++cd /d C:\Git\orthodox-groningen\bron
++serve
+ ```
+ 
+ De site opent typisch op `http://127.0.0.1:8000/`. Voor glossary en TermRef-hover
+-(zoals in CI): `scripts\docs-serve-tev2.cmd` (eerst `npm install`). Zie
++(zoals in CI): `serve-tev2` (eerst `npm install` of laat `_ensure` dat doen). Zie
+ [Documentatie bijdragen](../manuals/docs-bijdragen.md).
+ 
+ ## 3. Zangstukken valideren
+@@ -48,7 +48,7 @@ Validatie van [VSA-notatie](@) in deze repo gebeurt met de CLI uit
+ ```cmd
+ cd /d C:\Git\orthodox-ronl\VSA-tooling
+ scripts\bootstrap.cmd
+-cd /d C:\Git\orthodox-ronl\bron
++cd /d C:\Git\orthodox-groningen\bron
+ vsa validate zangstukken
+ ```
+ 
+diff --git a/docs/glossary.md b/docs/glossary.md
+index b6d0364..922f374 100644
+--- a/docs/glossary.md
++++ b/docs/glossary.md
+@@ -9,7 +9,7 @@ audience: "P6 — Spec-/PR-reviewer; P5 — Docs-/tool-contributor"
+ Deze pagina toont de **mensleesbare begrippenlijst** (HRG) van org-brede termen.
+ De tabel wordt gevuld door de TEv2-pipeline (`hrgt`) vanuit de curated texts in
+ `docs/terms/`. Zonder die build kan de tabel leeg of onvolledig lijken; lokaal:
+-`scripts\docs-build-tev2.cmd`.
++`build`.
+ 
+ **Samenhang en criteria** (vier niveaus, R1–R5): zie
+ [Zangstukmodel](specs/terminologie.md). Per term: hover (TermRef) of de
+diff --git a/docs/index.md b/docs/index.md
+index cc4deb3..2bb6b9a 100644
+--- a/docs/index.md
++++ b/docs/index.md
+@@ -58,11 +58,11 @@ die inhoud rechtstreeks uit de repository.
+ ## Lokaal bekijken
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\docs-serve.cmd
++cd /d C:\Git\orthodox-groningen\bron
++serve
+ ```
+ 
+-Met TermRefs (na `npm install`): `scripts\docs-serve-tev2.cmd`.
++Met TermRefs: `serve-tev2`.
+ 
+ ## Externe tools
+ 
+diff --git a/docs/manuals/docs-bijdragen.md b/docs/manuals/docs-bijdragen.md
+index 190d1b6..7bd0820 100644
+--- a/docs/manuals/docs-bijdragen.md
++++ b/docs/manuals/docs-bijdragen.md
+@@ -11,22 +11,22 @@ Handleiding voor wie **docs** in de [bron-repository](@) (of parallel in
+ 
+ | Script                         | Wanneer                                                                       |
+ | ------------------------------ | ----------------------------------------------------------------------------- |
+-| `scripts\docs-serve.cmd`       | Snelle lokale preview **zonder** glossary/TermRef-hover                       |
+-| `scripts\docs-serve-tev2.cmd`  | Preview **met** TEv2 (zoals CI) — herhaal na term-/TermRef-wijzigingen        |
+-| `scripts\docs-build.cmd`       | Alleen `mkdocs build --strict` (geen TEv2)                                    |
+-| `scripts\docs-build-tev2.cmd`  | Volledige keten: TEv2 + TermRef-check + `mkdocs build --strict` (= CI-parity) |
++| `serve`                        | Snelle lokale preview **zonder** glossary/TermRef-hover                       |
++| `serve-tev2`                   | Preview **met** TEv2 (zoals CI) — herhaal na term-/TermRef-wijzigingen        |
++| `build --no-tev2`              | Alleen `mkdocs build --strict` (geen TEv2)                                    |
++| `build`                        | Volledige keten: TEv2 + TermRef-check + `mkdocs build --strict` (= CI-parity) |
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
++cd /d C:\Git\orthodox-groningen\bron
+ npm install
+-scripts\docs-serve-tev2.cmd
++serve-tev2
+ ```
+ 
+ TEv2-tools: pins in root-`package.json` (`@tno-terminology-design/*` **1.2.0**).
+ Voorkeur: `npm install` (lokaal `node_modules`), niet alleen globale installs.
+ 
+-`docs-serve.cmd` / plain `docs-build.cmd` tonen **geen** opgeloste TermRefs;
+-gebruik `*-tev2` als je hover of glossary wilt controleren.
++`serve` / `build --no-tev2` tonen **geen** opgeloste TermRefs;
++gebruik `serve-tev2` / `build` als je hover of glossary wilt controleren.
+ 
+ ## TermRefs
+ 
+@@ -64,7 +64,7 @@ Zie [TEv2 in tool-docs](https://orthodox-ronl.github.io/VSA-tooling/guides/tev2-
+ 
+ ## Checklist vóór PR
+ 
+-- [ ] `scripts\docs-build-tev2.cmd` groen (of CI `docs-pages` / docs-build)
++- [ ] `build` groen (of CI `docs-pages` / docs-build)
+ - [ ] **Type + publiek** benoemd (of evident uit hub/pad): zie
+       [schrijfconventies](../specs/schrijfconventies.md) — paginatypen / persona’s
+ - [ ] **Lezerstest** voor dat type: kan de beoogde lezer in één scan antwoorden op
+diff --git a/docs/manuals/github-pages-setup.md b/docs/manuals/github-pages-setup.md
+index ad3843c..8ad4ddb 100644
+--- a/docs/manuals/github-pages-setup.md
++++ b/docs/manuals/github-pages-setup.md
+@@ -57,8 +57,8 @@ via `mkdocs.yml` / theme meegebouwd.
+ ## Lokaal
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\bron
+-scripts\docs-serve.cmd
++cd /d C:\Git\orthodox-groningen\bron
++serve
+ ```
+ 
+-(`scripts\docs-serve.cmd` zet `NO_MKDOCS_2_WARNING=1` — onderdrukt de Material-banner over MkDocs 2.0; wij blijven op MkDocs 1.x via `requirements-docs.txt`.)
++(`serve` zet `NO_MKDOCS_2_WARNING=1` — onderdrukt de Material-banner over MkDocs 2.0; wij blijven op MkDocs 1.x via `requirements-docs.txt`.)
+diff --git a/docs/manuals/index.md b/docs/manuals/index.md
+index bd96665..3f7b2ef 100644
+--- a/docs/manuals/index.md
++++ b/docs/manuals/index.md
+@@ -11,7 +11,7 @@ snelle naslag onder [Referentie](../reference/index.md).
+ | Handleiding                                                   | Wanneer je dit nodig hebt                                                                |
+ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+ | [GitHub Pages instellen](github-pages-setup.md)               | Je wilt productie- of preview-docs op GitHub Pages laten landen.                         |
+-| [Documentatie bijdragen](docs-bijdragen.md)                   | TermRefs, tabellen, `docs-serve-tev2` / build — wat CI verwacht.                         |
++| [Documentatie bijdragen](docs-bijdragen.md)                   | TermRefs, tabellen, `serve-tev2` / `build` — wat CI verwacht.                            |
+ | [Zangstuk toevoegen](zangstuk-toevoegen.md)                   | Je voegt een nieuw [zangstuk](@) (map + `zangstuk.yaml` + bronnen) toe.                  |
+ | [Bronvariant toevoegen](bronvariant-toevoegen.md)             | Je voegt een [variant](@) of [bronbestand](@) toe onder een bestaand zangstuk.           |
+ | [Copyright en access](copyright-access.md)                    | Inhoud mag niet in git, maar metadata en `access:` wel.                                  |
+diff --git a/docs/specs/documentatie-eigendom.md b/docs/specs/documentatie-eigendom.md
+index 3319a07..99f54c6 100644
+--- a/docs/specs/documentatie-eigendom.md
++++ b/docs/specs/documentatie-eigendom.md
+@@ -14,7 +14,7 @@ Voorkomt dubbele, uit elkaar lopende specificaties tussen repository's.
+ 
+ | Type documentatie                                              | Canonieke repo           | Voorbeelden                                                                                                                                                                                                |
+ | -------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+-| Organisatie-breed, tool-onafhankelijk                          | **`bron`**               | [terminologie.md](terminologie.md), [inhoudslevenscyclus.md](inhoudslevenscyclus.md), [zangstuk-formaat.md](zangstuk-formaat.md), [parochie-lokaal zangstukken](../manuals/parochie-lokaal-zangstukken.md) |
++| Organisatie-breed, tool-onafhankelijk                          | **`bron`**               | [terminologie.md](terminologie.md), [repo-scripts.md](repo-scripts.md), [inhoudslevenscyclus.md](inhoudslevenscyclus.md), [zangstuk-formaat.md](zangstuk-formaat.md), [parochie-lokaal zangstukken](../manuals/parochie-lokaal-zangstukken.md) |
+ | Org-contracten conversie/export (wat/wanneer)                  | **`bron`**               | [conversiemechanismen](../reference/conversiemechanismen.md), [exportcontracten](../reference/exportcontracten.md), [exporttype](@)-/[conversiemechanisme](@)-pagina's                                     |
+ | Tool-specifiek (VSA), incl. CLI man-pages en Hugo-build        | **[VSA-tooling](@)**     | VSA-syntax, parser, SVG-rendering, Hugo-build, [`vsa` CLI-referentie](https://orthodox-ronl.github.io/VSA-tooling/reference/cli/)                                                                     |
+ | Product-/gebruikseisen presentatie (dragers, uitgaveprofielen) | **VSA-tooling**          | [gebruikseisen-dragers](https://github.com/orthodox-ronl/VSA-tooling/blob/main/docs/plans/gebruikseisen-dragers.md); stub in bron toegestaan                                                          |
+@@ -43,5 +43,5 @@ Elke repository onder `github.com/orthodox-ronl` hoort het bestand `.cursor/rule
+ ## Gerelateerd
+ 
+ - [Specificaties — index](index.md)
+-- [Terminologie](terminologie.md)
++- [Repo-scripts](repo-scripts.md)
+ - [VSA-tooling](https://github.com/orthodox-ronl/VSA-tooling) — tool-specifieke documentatie
+diff --git a/docs/specs/index.md b/docs/specs/index.md
+index 2cfeb4a..458314d 100644
+--- a/docs/specs/index.md
++++ b/docs/specs/index.md
+@@ -11,6 +11,7 @@ van ze te kopiëren.
+ | Document                                                                                         | Wat je er leest                                                                                                      |
+ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+ | [Documentatie-eigendom](documentatie-eigendom.md)                                                | Waar org-specs mogen staan, hoe stubs werken, en waarom je geen tweede volledige kopie in een tool-repo zet.         |
++| [Repo-scripts](repo-scripts.md)                                                                  | `scripts/`-commando's, PATH, `_ensure`, canonieke namen, toolchain (Python/Hugo/Node).                               |
+ | [Zangstukmodel](terminologie.md)                                                                 | Vier niveaus, criteria en **samenhang**; gebruiksregels R1–R5. Definities ook in `docs/terms/`.                      |
+ | [Zangstuk-identificatie](zangstuk-identificatie.md)                                              | Beknopte index naar ids/[aliassen](@); aanvulling op het Zangstukmodel.                                              |
+ | [Begrippenlijst](../glossary.md)                                                                 | HRG-tabel (hoverdefinities) uit curated texts.                                                                       |
+diff --git a/docs/specs/repo-scripts.md b/docs/specs/repo-scripts.md
+new file mode 100644
+index 0000000..0f3beb9
+--- /dev/null
++++ b/docs/specs/repo-scripts.md
+@@ -0,0 +1,120 @@
++---
++doc_type: integratie
++audience: "P5 — Docs-/tool-contributor; P6 — Spec-/PR-reviewer"
++---
++# Repo-scripts (orthodox-ronl)
++
++**Status:** normatief (augustus 2026).
++
++Gedeelde conventie voor uitvoerbare scripts in alle repository's van
++[orthodox-ronl](https://github.com/orthodox-ronl). Tool-specifieke CLI's
++(bijv. `vsa`) blijven in de tool-repo; deze spec gaat over **repo-root
++commando's** onder `scripts/`.
++
++---
++
++## Pad en PATH
++
++- Uitvoerbare gebruikerscommando's staan in `scripts/` t.o.v. de repo-root.
++- Op Windows (`cmd.exe`) hoort `.\scripts` op PATH. In de **repo-root** is
++  `test` dan `scripts\test.cmd`.
++- Elk `.cmd` doet `cd` naar de repo-root via `%~dp0`.
++- Alleen `.cmd` is de PATH-interface. Python-helpers in `scripts/` zijn geen
++  commando's (niet tikken als `kalender` / `validate.py`).
++- Zet geen executables `test`, `serve`, `build` of `check` in een globale
++  venv-`Scripts`-map (bijv. `VSA-tooling\.venv\Scripts`): die staat vóór
++  `.\scripts` op PATH en zou de repo-commando's overschaduwen.
++
++Referentie-PATH (één ontwikkelmachine; `where` mag een andere map vinden):
++
++| Tool | Verwacht pad |
++| ---- | ------------ |
++| Python 3.14 | `C:\Python314\` en `C:\Python314\Scripts\` |
++| Hugo Extended | `C:\Git\tools\hugo` |
++| `vsa` CLI | `C:\Git\orthodox-groningen\VSA-tooling\.venv\Scripts` |
++| Repo-commando's | `.\scripts` |
++| Node (TEv2) | `C:\Program Files\nodejs\` |
++
++Lokale clones: `C:\Git\orthodox-groningen\<repo>` (GitHub-org: `orthodox-ronl`).
++
++---
++
++## Canonieke namen
++
++Gebruikerscommando = bestandsnaam zonder `.cmd`. Alleen aanbieden als de
++repo die functie heeft.
++
++| Naam | Functie |
++| ---- | ------- |
++| `test` | Geautomatiseerde tests (pytest). Extra flags: `test -q`, `test -v`. |
++| `check` | CI-spiegel / preflight: groen ≈ veilig om te pushen. |
++| `build` | Statische productie-achtige build (Hugo of MkDocs). MkDocs: CI-pariteit (TEv2 waar CI TEv2 gebruikt). `build --no-tev2` = snelle MkDocs-build zonder TEv2. |
++| `serve` | Lokale preview van de primaire site (Hugo of MkDocs). MkDocs: snel, zonder TEv2. |
++| `serve-tev2` | MkDocs-preview met TEv2 (CI-pariteit), waar van toepassing. |
++| `validate` | Alleen brondata/content valideren, zonder sitebuild. |
++| `clean` | Generated/cache weg, waar de repo dat al had. |
++
++Repo-specifiek mag blijven: `catalogus`, `import`, `sync-bron-zondagen`, `h`,
++`run-example`.
++
++**Niet** als gebruikersstap: `bootstrap`. Interne helper: `_ensure.cmd` /
++`_ensure.py`. Oude namen (`docs-serve`, `serve-hugo`, `build-hugo`, `ci`)
++mogen één cyclus als dunne alias blijven (`use: serve`).
++
++---
++
++## Toolchain (zelfde tool = zelfde versie)
++
++Lokaal en CI gebruiken dezelfde pins. Geen matrix 3.12+3.14.
++
++| Tool | Versie |
++| ---- | ------ |
++| Python | **3.14** (`python-version: "3.14"`; `requires-python = ">=3.14"`) |
++| Hugo | **Extended 0.160.1** |
++| Node | **22** (alleen TEv2-repo's) |
++
++MkDocs Material: `>=9.5,<10` in `requirements-docs.txt` — gelijk houden tussen
++`bron` en VSA-tooling.
++
++Poort (augustus 2026): PyPI-metadata weigert 3.14 niet; pip-install + pytest
++op 3.14 slaagde voor catalogus, vsa-tool (incl. Pillow) en heiligen-lage-landen.
++
++---
++
++## `_ensure`
++
++Elk gebruikers-`.cmd` start met `call scripts\_ensure.cmd` plus de flags die
++**dit** commando nodig heeft. Geen `activate`, geen nieuwe `.venv`.
++
++1. `%PATH%` bevat `.\scripts`; anders: voeg `.\scripts` toe aan de
++   gebruikers-PATH en werk in de repo-root.
++2. `where python` + versie 3.14.x (geen WindowsApps-stub). Anders: Python 3.14
++   installeren, `C:\Python314\` + `Scripts` op PATH.
++3. Optioneel `hugo` (v0.160.1 + extended), `vsa`, `node` 22.x — `where` plus
++   versie. Bij falen: referentiestappen, geen stille tweede venv.
++4. Packages in **die** Python: import/stamp; zo niet `python -m pip install`.
++   Catalogus: editable `..\bron` of `vendor\bron`. `vsa-tool`: editable
++   `..\VSA-tooling` of `vendor\VSA-tooling` als `import vsa` ontbreekt.
++5. Console-`echo`: eenvoudige ASCII (`->`, `-`).
++
++CI (Linux) roept Python/Hugo rechtstreeks aan met dezelfde versies; `.cmd` is
++voor lokaal Windows. Semantiek van `check`/`build` is gelijk.
++
++---
++
++## Documentatie
++
++- Elke **README** somt de commando's van *die* repo (naam, doel, flags) en
++  linkt naar deze spec — geen tweede org-glossary.
++- Als de gepubliceerde site een **beheer-afdeling** heeft: dezelfde lijst daar
++  (eigen pagina of in de how-to), gelinkt vanaf het beheer-overzicht.
++- MkDocs-sites zonder `/beheer/`: dezelfde lijst in de contributor-handleiding.
++- Scriptwijziging = README **en** beheer-/docs-pagina in dezelfde wijziging.
++- `AGENTS.md`: dezelfde namen; `cd` naar `C:\Git\orthodox-groningen\<repo>`.
++
++---
++
++## Gerelateerd
++
++- [Documentatie-eigendom](documentatie-eigendom.md)
++- [Repo-structuur](repo-structuur.md)
+diff --git a/docs/specs/schrijfconventies.md b/docs/specs/schrijfconventies.md
+index 42a740b..ca813d7 100644
+--- a/docs/specs/schrijfconventies.md
++++ b/docs/specs/schrijfconventies.md
+@@ -273,6 +273,6 @@ Korte alinea’s; genummerde stappen in workflows; admonitions (`!!! note`,
+ 
+ - Nederlandse prose; code en paden in monospace
+ - Mermaid-diagrammen voor ketens en pipeline-fases
+-- Lokaal: `docs-serve.cmd` (snel) of `docs-serve-tev2.cmd` (TermRefs zoals CI)
+-- `scripts\docs-build-tev2.cmd` / CI moet slagen vóór merge (`check-tev2-termrefs.py`)
++- Lokaal: `serve` (snel) of `serve-tev2` (TermRefs zoals CI)
++- `build` / CI moet slagen vóór merge (`check-tev2-termrefs.py`)
+ - Contributor-checklist: [Documentatie bijdragen](../manuals/docs-bijdragen.md)
+diff --git a/mkdocs.yml b/mkdocs.yml
+index 2c0fc30..ae1d4da 100644
+--- a/mkdocs.yml
++++ b/mkdocs.yml
+@@ -77,6 +77,7 @@ nav:
+   - Specificaties:
+     - Overzicht: specs/index.md
+     - specs/documentatie-eigendom.md
++    - specs/repo-scripts.md
+     - Zangstukmodel: specs/terminologie.md
+     - specs/zangstuk-identificatie.md
+     - specs/schrijfconventies.md
+diff --git a/pyproject.toml b/pyproject.toml
+index 7ceef12..c7316d3 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
+ name = "catalogus"
+ version = "0.1.0"
+ description = "Zangstuk-catalogus: alias-index en resolver voor orthodox-ronl"
+-requires-python = ">=3.12"
++requires-python = ">=3.14"
+ license = { text = "MIT" }
+ dependencies = [
+     "PyYAML>=6.0",
+diff --git a/scripts/_ensure.cmd b/scripts/_ensure.cmd
+new file mode 100644
+index 0000000..eaa42ee
+--- /dev/null
++++ b/scripts/_ensure.cmd
+@@ -0,0 +1,32 @@
++@echo off
++REM Shared PATH/version/package check. Call from repo-root scripts after cd.
++REM Flags are forwarded to scripts\_ensure.py (see that file).
++setlocal EnableExtensions
++cd /d "%~dp0.."
++
++echo %PATH% | find /I ".\scripts" >nul
++if errorlevel 1 (
++  echo ERROR: PATH does not contain .\scripts
++  echo Add .\scripts to your user PATH ^(Windows environment variables^).
++  echo Work in the repo root so short names ^(test, serve, build, check^) resolve.
++  echo Without that segment you can still run scripts\test.cmd
++  exit /b 1
++)
++
++where python >nul 2>&1
++if errorlevel 1 (
++  echo ERROR: python not found on PATH
++  echo Install Python 3.14 and add C:\Python314\ and C:\Python314\Scripts\ to PATH.
++  exit /b 1
++)
++
++python -c "import sys; raise SystemExit(0 if sys.version_info[:2]==(3,14) else 1)" >nul 2>&1
++if errorlevel 1 (
++  echo ERROR: python is not version 3.14
++  python --version
++  echo Expected: Python 3.14.x ^(e.g. C:\Python314\python.exe^), not 3.12 and not the Microsoft Store stub.
++  exit /b 1
++)
++
++python scripts\_ensure.py %*
++exit /b %ERRORLEVEL%
+diff --git a/scripts/_ensure.py b/scripts/_ensure.py
+new file mode 100644
+index 0000000..6997198
+--- /dev/null
++++ b/scripts/_ensure.py
+@@ -0,0 +1,203 @@
++"""Install/check repo deps after scripts/_ensure.cmd has verified Python 3.14."""
++
++from __future__ import annotations
++
++import argparse
++import hashlib
++import os
++import shutil
++import subprocess
++import sys
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++STAMP = ROOT / ".ensure-stamp"
++HUGO_VERSION = "0.160.1"
++NODE_MAJOR = 22
++
++
++def fail(message: str, *hints: str) -> None:
++    print("ERROR: " + message)
++    for hint in hints:
++        print(hint)
++    raise SystemExit(1)
++
++
++def run(args: list[str], **kwargs) -> subprocess.CompletedProcess[str]:
++    return subprocess.run(args, check=False, text=True, **kwargs)
++
++
++def check_hugo() -> None:
++    hugo = shutil.which("hugo")
++    if not hugo:
++        fail(
++            "hugo not found on PATH",
++            "Install Hugo Extended 0.160.1 and add it to PATH.",
++            "Reference folder: C:\\Git\\tools\\hugo",
++        )
++    proc = run([hugo, "version"], capture_output=True)
++    text = (proc.stdout or "") + (proc.stderr or "")
++    if HUGO_VERSION not in text:
++        fail(
++            f"hugo version is not {HUGO_VERSION}",
++            text.strip() or "(no hugo version output)",
++            f"Replace the binary with Hugo Extended {HUGO_VERSION}.",
++            "Reference folder: C:\\Git\\tools\\hugo",
++        )
++    if "extended" not in text.lower():
++        fail(
++            "hugo is not the Extended build",
++            text.strip(),
++            f"Install Hugo Extended {HUGO_VERSION}.",
++        )
++
++
++def check_vsa() -> None:
++    vsa = shutil.which("vsa")
++    if not vsa:
++        fail(
++            "vsa not found on PATH",
++            "Add the VSA-tooling venv Scripts folder to PATH after installing vsa-tool there.",
++            "Reference: C:\\Git\\orthodox-groningen\\VSA-tooling\\.venv\\Scripts",
++        )
++
++
++def check_node() -> None:
++    node = shutil.which("node")
++    if not node:
++        fail(
++            "node not found on PATH",
++            "Install Node.js 22 and add C:\\Program Files\\nodejs\\ to PATH.",
++        )
++    proc = run([node, "--version"], capture_output=True)
++    text = (proc.stdout or proc.stderr or "").strip()
++    if not text.startswith("v") or not text[1:].split(".", 1)[0].isdigit():
++        fail("could not parse node --version", text)
++    major = int(text[1:].split(".", 1)[0])
++    if major != NODE_MAJOR:
++        fail(
++            f"node is not version {NODE_MAJOR}.x",
++            text,
++            "Install Node.js 22 (CI uses node-version: \"22\").",
++        )
++
++
++def pip_install(args: list[str]) -> None:
++    cmd = [sys.executable, "-m", "pip", "install", *args]
++    proc = run(cmd)
++    if proc.returncode != 0:
++        fail("pip install failed: " + " ".join(args))
++
++
++def module_ok(name: str) -> bool:
++    proc = run(
++        [sys.executable, "-c", f"import {name}"],
++        capture_output=True,
++    )
++    return proc.returncode == 0
++
++
++def stamp_payload(files: list[Path], extras: list[str]) -> str:
++    h = hashlib.sha256()
++    for path in files:
++        h.update(path.read_bytes())
++    for extra in extras:
++        h.update(extra.encode("utf-8"))
++    h.update(f"py{sys.version_info[:2]}".encode())
++    return h.hexdigest()
++
++
++def sibling_or_vendor(*relatives: str) -> Path | None:
++    for rel in relatives:
++        candidate = (ROOT / rel).resolve()
++        if (candidate / "pyproject.toml").is_file():
++            return candidate
++    return None
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(add_help=False)
++    parser.add_argument("--hugo", action="store_true")
++    parser.add_argument("--vsa", action="store_true")
++    parser.add_argument("--node", action="store_true")
++    parser.add_argument("--pip-r", action="append", default=[])
++    parser.add_argument("--pip-e", action="append", default=[])
++    parser.add_argument("--import", dest="imports", action="append", default=[])
++    parser.add_argument("--catalogus", action="store_true")
++    parser.add_argument("--vsa-tool", action="store_true")
++    parser.add_argument("--npm-install", action="store_true")
++    args, _unknown = parser.parse_known_args()
++
++    if args.hugo:
++        check_hugo()
++    if args.vsa:
++        check_vsa()
++    if args.node:
++        check_node()
++    if args.npm_install:
++        if shutil.which("npm") is None:
++            fail(
++                "npm not found on PATH",
++                "Install Node.js 22 so npm is available.",
++            )
++        if not (ROOT / "node_modules").is_dir():
++            proc = run(["npm", "install"], cwd=ROOT)
++            if proc.returncode != 0:
++                fail("npm install failed")
++
++    req_files = [ROOT / rel for rel in args.pip_r]
++    for path in req_files:
++        if not path.is_file():
++            fail(f"requirements file not found: {path}")
++
++    extras = list(args.pip_e)
++    if args.catalogus:
++        extras.append("catalogus:sibling")
++    if args.vsa_tool:
++        extras.append("vsa-tool:sibling")
++
++    payload = stamp_payload(req_files, extras + args.imports)
++    if STAMP.is_file() and STAMP.read_text(encoding="utf-8").strip() == payload:
++        missing = [name for name in args.imports if not module_ok(name)]
++        if not missing:
++            return 0
++
++    for rel in args.pip_r:
++        pip_install(["-r", str(ROOT / rel)])
++
++    for spec in args.pip_e:
++        pip_install(["-e", spec])
++
++    if args.catalogus and not module_ok("catalogus"):
++        bron = sibling_or_vendor(os.path.join("..", "bron"), os.path.join("vendor", "bron"))
++        if bron is None:
++            fail(
++                "catalogus is not installed and bron was not found",
++                "Expected ..\\bron or vendor\\bron with pyproject.toml",
++                "Clone https://github.com/orthodox-ronl/bron next to this repo.",
++            )
++        pip_install(["-e", str(bron)])
++
++    if args.vsa_tool and not module_ok("vsa"):
++        tooling = sibling_or_vendor(
++            os.path.join("..", "VSA-tooling"),
++            os.path.join("vendor", "VSA-tooling"),
++        )
++        if tooling is None:
++            pip_install(["vsa-tool[rendering] @ git+https://github.com/orthodox-ronl/VSA-tooling.git@main"])
++        else:
++            pip_install(["-e", f"{tooling}[rendering]"])
++
++    missing = [name for name in args.imports if not module_ok(name)]
++    if missing:
++        fail(
++            "python imports still missing: " + ", ".join(missing),
++            "pip install did not provide them in this Python 3.14 interpreter.",
++        )
++
++    STAMP.write_text(payload + "\n", encoding="utf-8")
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/scripts/build.cmd b/scripts/build.cmd
+new file mode 100644
+index 0000000..c475ab4
+--- /dev/null
++++ b/scripts/build.cmd
+@@ -0,0 +1,19 @@
++@echo off
++REM MkDocs build. Default = CI-parity (TEv2). Fast: build --no-tev2
++setlocal
++cd /d "%~dp0.."
++set NO_MKDOCS_2_WARNING=1
++
++if /I "%~1"=="--no-tev2" (
++  shift
++  call scripts\_ensure.cmd --pip-r requirements-docs.txt --import mkdocs
++  if errorlevel 1 exit /b 1
++  python -m mkdocs build --strict --site-dir site %*
++  exit /b %errorlevel%
++)
++
++call scripts\docs-tev2-run.cmd
++if errorlevel 1 exit /b 1
++
++python -m mkdocs build --strict -f generated\mkdocs.yml --site-dir ..\site %*
++exit /b %errorlevel%
+diff --git a/scripts/catalogus.cmd b/scripts/catalogus.cmd
+index 13846ab..da17f76 100644
+--- a/scripts/catalogus.cmd
++++ b/scripts/catalogus.cmd
+@@ -1,6 +1,7 @@
+ @echo off
+-REM Wrapper voor catalogus CLI — zelfde gedrag als `catalogus` op PATH.
+ setlocal
+ cd /d "%~dp0.."
++call scripts\_ensure.cmd --pip-e ".[dev]" --import catalogus
++if errorlevel 1 exit /b 1
+ python -m catalogus.cli %*
+ exit /b %errorlevel%
+diff --git a/scripts/docs-build-tev2.cmd b/scripts/docs-build-tev2.cmd
+index 03ff8b3..956c011 100644
+--- a/scripts/docs-build-tev2.cmd
++++ b/scripts/docs-build-tev2.cmd
+@@ -1,14 +1,3 @@
+ @echo off
+-REM Build docs with TEv2 preprocessing, then MkDocs --strict (zelfde keten als CI).
+-setlocal
+-cd /d "%~dp0.."
+-set NO_MKDOCS_2_WARNING=1
+-
+-call scripts\docs-tev2-run.cmd
+-if errorlevel 1 exit /b 1
+-
+-python -m pip install -r requirements-docs.txt
+-if errorlevel 1 exit /b 1
+-
+-python -m mkdocs build --strict -f generated\mkdocs.yml --site-dir ..\site %*
+-exit /b %errorlevel%
++echo use: build
++call "%~dp0build.cmd" %*
+diff --git a/scripts/docs-build.cmd b/scripts/docs-build.cmd
+index 145d94b..9fe35f3 100644
+--- a/scripts/docs-build.cmd
++++ b/scripts/docs-build.cmd
+@@ -1,11 +1,3 @@
+ @echo off
+-REM MkDocs build — python -m + geen Material MkDocs-2.0-banner (zie requirements-docs.txt: mkdocs<2).
+-setlocal
+-cd /d "%~dp0.."
+-set NO_MKDOCS_2_WARNING=1
+-
+-python -m pip install -r requirements-docs.txt
+-if errorlevel 1 exit /b 1
+-
+-python -m mkdocs build --strict --site-dir site %*
+-exit /b %errorlevel%
++echo use: build --no-tev2
++call "%~dp0build.cmd" --no-tev2 %*
+diff --git a/scripts/docs-serve-tev2.cmd b/scripts/docs-serve-tev2.cmd
+index 7491dee..b2e1545 100644
+--- a/scripts/docs-serve-tev2.cmd
++++ b/scripts/docs-serve-tev2.cmd
+@@ -1,42 +1,3 @@
+ @echo off
+-REM TEv2 preprocess + MkDocs serve op generated/ (TermRefs/hover zoals in CI).
+-REM Voor snelle edits zonder TEv2: scripts\docs-serve.cmd
+-setlocal
+-cd /d "%~dp0.."
+-set NO_MKDOCS_2_WARNING=1
+-
+-call scripts\docs-tev2-run.cmd
+-if errorlevel 1 exit /b 1
+-
+-python -m pip install -r requirements-docs.txt
+-if errorlevel 1 exit /b 1
+-
+-pushd generated
+-copy /y mkdocs.yml mkdocs.yml.serve-bak >nul
+-if errorlevel 1 (
+-  popd
+-  exit /b 1
+-)
+-
+-for /f "usebackq delims=" %%I in (`python -c "from datetime import datetime; from zoneinfo import ZoneInfo; print(datetime.now(ZoneInfo('Europe/Amsterdam')).strftime('%%Y-%%m-%%d %%H:%%M %%Z'))"`) do set "BUILD_TIME=%%I"
+-python ..\scripts\set-mkdocs-site-url.py "https://orthodox-ronl.github.io/bron/" false "%BUILD_TIME%" "local"
+-if errorlevel 1 (
+-  copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
+-  del mkdocs.yml.serve-bak 2>nul
+-  popd
+-  exit /b 1
+-)
+-
+-echo.
+-echo MkDocs serve ^(TEv2^) — open http://127.0.0.1:8000/  ^(Ctrl+C om te stoppen^)
+-echo Gegenereerd-stempel: %BUILD_TIME%
+-echo Staging: generated\docs  — herhaal dit script na TermRef/glossary-wijzigingen.
+-echo.
+-python -m mkdocs serve %*
+-set "SERVE_EXIT=%ERRORLEVEL%"
+-
+-copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
+-del mkdocs.yml.serve-bak 2>nul
+-popd
+-
+-exit /b %SERVE_EXIT%
++echo use: serve-tev2
++call "%~dp0serve-tev2.cmd" %*
+diff --git a/scripts/docs-serve.cmd b/scripts/docs-serve.cmd
+index aba7117..f26a11e 100644
+--- a/scripts/docs-serve.cmd
++++ b/scripts/docs-serve.cmd
+@@ -1,32 +1,3 @@
+ @echo off
+-REM MkDocs serve — python -m + geen Material MkDocs-2.0-banner (zie requirements-docs.txt: mkdocs<2).
+-setlocal
+-cd /d "%~dp0.."
+-set NO_MKDOCS_2_WARNING=1
+-
+-python -m pip install -r requirements-docs.txt
+-if errorlevel 1 exit /b 1
+-
+-copy /y mkdocs.yml mkdocs.yml.serve-bak >nul
+-if errorlevel 1 exit /b 1
+-
+-REM Zelfde tijdstempel-patroon als docs-pages.yml (lokaal: Europe/Amsterdam).
+-for /f "usebackq delims=" %%I in (`python -c "from datetime import datetime; from zoneinfo import ZoneInfo; print(datetime.now(ZoneInfo('Europe/Amsterdam')).strftime('%%Y-%%m-%%d %%H:%%M %%Z'))"`) do set "BUILD_TIME=%%I"
+-python scripts\set-mkdocs-site-url.py "https://orthodox-ronl.github.io/bron/" false "%BUILD_TIME%" "local"
+-if errorlevel 1 (
+-  copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
+-  del mkdocs.yml.serve-bak 2>nul
+-  exit /b 1
+-)
+-
+-echo.
+-echo MkDocs serve — open http://127.0.0.1:8000/  (Ctrl+C om te stoppen)
+-echo Gegenereerd-stempel: %BUILD_TIME%
+-echo.
+-python -m mkdocs serve %*
+-set "SERVE_EXIT=%ERRORLEVEL%"
+-
+-copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
+-del mkdocs.yml.serve-bak 2>nul
+-
+-exit /b %SERVE_EXIT%
++echo use: serve
++call "%~dp0serve.cmd" %*
+diff --git a/scripts/docs-tev2-run.cmd b/scripts/docs-tev2-run.cmd
+index 12fb128..9b61037 100644
+--- a/scripts/docs-tev2-run.cmd
++++ b/scripts/docs-tev2-run.cmd
+@@ -5,6 +5,8 @@ REM   npm install   (preferred; uses package.json pins)
+ REM   of: npm install -g @tno-terminology-design/trrt @tno-terminology-design/hrgt @tno-terminology-design/mrgt @tno-terminology-design/mrg-import
+ setlocal
+ cd /d "%~dp0.."
++call scripts\_ensure.cmd --node --npm-install --pip-r requirements-docs.txt --import mkdocs
++if errorlevel 1 exit /b 1
+ set NO_MKDOCS_2_WARNING=1
+ 
+ if exist "%APPDATA%\npm" set "PATH=%APPDATA%\npm;%PATH%"
+diff --git a/scripts/serve-tev2.cmd b/scripts/serve-tev2.cmd
+new file mode 100644
+index 0000000..cd34993
+--- /dev/null
++++ b/scripts/serve-tev2.cmd
+@@ -0,0 +1,38 @@
++@echo off
++REM TEv2 preprocess + MkDocs serve op generated/ (TermRefs zoals CI).
++setlocal
++cd /d "%~dp0.."
++set NO_MKDOCS_2_WARNING=1
++
++call scripts\docs-tev2-run.cmd
++if errorlevel 1 exit /b 1
++
++pushd generated
++copy /y mkdocs.yml mkdocs.yml.serve-bak >nul
++if errorlevel 1 (
++  popd
++  exit /b 1
++)
++
++for /f "usebackq delims=" %%I in (`python -c "from datetime import datetime; from zoneinfo import ZoneInfo; print(datetime.now(ZoneInfo('Europe/Amsterdam')).strftime('%%Y-%%m-%%d %%H:%%M %%Z'))"`) do set "BUILD_TIME=%%I"
++python ..\scripts\set-mkdocs-site-url.py "https://orthodox-ronl.github.io/bron/" false "%BUILD_TIME%" "local"
++if errorlevel 1 (
++  copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
++  del mkdocs.yml.serve-bak 2>nul
++  popd
++  exit /b 1
++)
++
++echo.
++echo MkDocs serve (TEv2) - open http://127.0.0.1:8000/  (Ctrl+C om te stoppen)
++echo Gegenereerd-stempel: %BUILD_TIME%
++echo Staging: generated\docs  - herhaal dit script na TermRef/glossary-wijzigingen.
++echo.
++python -m mkdocs serve %*
++set "SERVE_EXIT=%ERRORLEVEL%"
++
++copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
++del mkdocs.yml.serve-bak 2>nul
++popd
++
++exit /b %SERVE_EXIT%
+diff --git a/scripts/serve.cmd b/scripts/serve.cmd
+new file mode 100644
+index 0000000..7394693
+--- /dev/null
++++ b/scripts/serve.cmd
+@@ -0,0 +1,30 @@
++@echo off
++REM MkDocs serve — snelle preview zonder TEv2.
++setlocal
++cd /d "%~dp0.."
++call scripts\_ensure.cmd --pip-r requirements-docs.txt --import mkdocs
++if errorlevel 1 exit /b 1
++set NO_MKDOCS_2_WARNING=1
++
++copy /y mkdocs.yml mkdocs.yml.serve-bak >nul
++if errorlevel 1 exit /b 1
++
++for /f "usebackq delims=" %%I in (`python -c "from datetime import datetime; from zoneinfo import ZoneInfo; print(datetime.now(ZoneInfo('Europe/Amsterdam')).strftime('%%Y-%%m-%%d %%H:%%M %%Z'))"`) do set "BUILD_TIME=%%I"
++python scripts\set-mkdocs-site-url.py "https://orthodox-ronl.github.io/bron/" false "%BUILD_TIME%" "local"
++if errorlevel 1 (
++  copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
++  del mkdocs.yml.serve-bak 2>nul
++  exit /b 1
++)
++
++echo.
++echo MkDocs serve - open http://127.0.0.1:8000/  (Ctrl+C om te stoppen)
++echo Gegenereerd-stempel: %BUILD_TIME%
++echo.
++python -m mkdocs serve %*
++set "SERVE_EXIT=%ERRORLEVEL%"
++
++copy /y mkdocs.yml.serve-bak mkdocs.yml >nul
++del mkdocs.yml.serve-bak 2>nul
++
++exit /b %SERVE_EXIT%
+diff --git a/scripts/test.cmd b/scripts/test.cmd
+index 8c6ff23..a0f44c5 100644
+--- a/scripts/test.cmd
++++ b/scripts/test.cmd
+@@ -1,10 +1,7 @@
+ @echo off
+-REM Catalogus-tests — altijd dezelfde Python als `python` in PATH.
+ setlocal
+ cd /d "%~dp0.."
+-
+-python -m pip install -e ".[dev]"
++call scripts\_ensure.cmd --pip-e ".[dev]" --import catalogus --import pytest
+ if errorlevel 1 exit /b 1
+-
+ python -m pytest %*
+ exit /b %errorlevel%
+diff --git a/scripts/validate.cmd b/scripts/validate.cmd
+new file mode 100644
+index 0000000..43d27b5
+--- /dev/null
++++ b/scripts/validate.cmd
+@@ -0,0 +1,9 @@
++@echo off
++setlocal
++cd /d "%~dp0.."
++call scripts\_ensure.cmd --pip-e ".[dev]" --vsa --import catalogus
++if errorlevel 1 exit /b 1
++python -m catalogus.cli index validate --bron-root .
++if errorlevel 1 exit /b 1
++vsa validate zangstukken
++exit /b %errorlevel%
+-- 
+2.43.0
+
