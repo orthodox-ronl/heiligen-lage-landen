@@ -1,0 +1,1146 @@
+From 08fdba812ef07f3acceda4e8822a4f0649f37ae3 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Thu, 27 Aug 2026 12:09:15 +0000
+Subject: [PATCH] feat(scripts): canonieke commando's, _ensure en Python 3.14
+
+Gedeelde namen (test/check/build/serve), PATH-toets, geen bootstrap-stap.
+CI en requires-python op 3.14; Hugo Extended 0.160.1 waar van toepassing.
+Org-spec: bron/docs/specs/repo-scripts.md
+---
+ .github/workflows/pages.yml    |   2 +-
+ .github/workflows/validate.yml |   2 +-
+ .gitignore                     |   1 +
+ AGENTS.md                      |  14 +--
+ CONTRIBUTING.md                |  16 +--
+ README.md                      |  33 +++---
+ scripts/README.md              | 171 +++------------------------
+ scripts/_ensure.cmd            |  32 ++++++
+ scripts/_ensure.py             | 203 +++++++++++++++++++++++++++++++++
+ scripts/_pipeline.cmd          |  12 +-
+ scripts/bootstrap.cmd          |  59 +---------
+ scripts/build-hugo.cmd         |  16 +--
+ scripts/build.cmd              |  10 ++
+ scripts/h.cmd                  |  63 ++++------
+ scripts/serve-hugo.cmd         |  69 +----------
+ scripts/serve.cmd              |  63 ++++++++++
+ scripts/sync-bron-zondagen.cmd |  13 +--
+ 17 files changed, 391 insertions(+), 388 deletions(-)
+ create mode 100644 scripts/_ensure.cmd
+ create mode 100644 scripts/_ensure.py
+ create mode 100644 scripts/build.cmd
+ create mode 100644 scripts/serve.cmd
+
+diff --git a/.github/workflows/pages.yml b/.github/workflows/pages.yml
+index d27e2aa..206c5c9 100644
+--- a/.github/workflows/pages.yml
++++ b/.github/workflows/pages.yml
+@@ -77,7 +77,7 @@ jobs:
+       - name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+-          python-version: "3.12"
++          python-version: "3.14"
+ 
+       - name: Install catalogus + vsa-tool
+         run: |
+diff --git a/.github/workflows/validate.yml b/.github/workflows/validate.yml
+index fe2bc65..c1cb436 100644
+--- a/.github/workflows/validate.yml
++++ b/.github/workflows/validate.yml
+@@ -38,7 +38,7 @@ jobs:
+       - name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+-          python-version: "3.12"
++          python-version: "3.14"
+ 
+       - name: Install catalogus + vsa-tool
+         run: |
+diff --git a/.gitignore b/.gitignore
+index 52035be..5ae4661 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -43,3 +43,4 @@ dist/
+ build/
+ *.egg-info/
+ pip-log.txt
++.ensure-stamp
+diff --git a/AGENTS.md b/AGENTS.md
+index 33100d9..f82c28f 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -65,26 +65,26 @@ is geen modelkeuze-issue; markeringen signaleren fouten in de gezongen tekst.
+ Eerste keer / na tool-update:
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\bootstrap.cmd
++cd /d C:\Git\orthodox-groningen\VSA-demo
++check --strict
+ ```
+ 
+ **Vóór commit** (zelfde als [CONTRIBUTING.md](CONTRIBUTING.md) en CI):
+ 
+ ```cmd
+-scripts\check.cmd --strict
++check --strict
+ ```
+ 
+ Preview na groene check:
+ 
+ ```cmd
+-scripts\serve-hugo.cmd --no-build
++serve --no-build
+ ```
+ 
+ Scripts vinden / man-pages: `scripts\h.cmd` (detail: `scripts\h.cmd check`).  
+ Uitleg: [scripts/README.md](scripts/README.md).
+ 
+-`bootstrap.cmd` installeert catalogus (bron) + `vsa-tool[rendering]` (VSA-tooling).
++`_ensure` installeert catalogus (bron) + vsa-tool[rendering] in Python 3.14.
+ 
+ ### Scripts onderhouden
+ 
+@@ -92,7 +92,7 @@ Wijzig, voeg toe of verwijder je iets onder `scripts/`:
+ 
+ 1. Werk [scripts/README.md](scripts/README.md) bij (tabellen, testladder, begrippen).
+ 2. Werk `scripts\h.cmd` bij (catalogus + man-page).
+-3. Gedeelde keten: `_pipeline.cmd` (wrappers: check, build-hugo, serve-hugo).
++3. Gedeelde keten: `_pipeline.cmd` (wrappers: check, build, serve).
+ 4. Console-tekst in `.cmd` (`echo`): **alleen eenvoudige ASCII** (`->`, `-`, geen
+    Unicode-pijlen/em-dashes) — Windows-cmd verknoeit UTF-8 anders.
+ 
+@@ -126,4 +126,4 @@ Zelfde patroon als `bron` (`docs-pages.yml`). Deploy via reusable workflow in VS
+ Conventional Commits. Alleen committen als de gebruiker dat vraagt.
+ 
+ Menselijke bijdragers: [CONTRIBUTING.md](CONTRIBUTING.md) — groen vóór commit =
+-`scripts\check.cmd --strict`.
++`check --strict`.
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 0474ff2..8f40e03 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -27,8 +27,8 @@ Uitleg, begrippen en testladder: [scripts/README.md](scripts/README.md).
+ Vereist sibling-checkouts (of `vendor/`) van **bron** en **VSA-tooling**:
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\bootstrap.cmd
++cd /d C:\Git\orthodox-groningen\VSA-demo
++check
+ ```
+ 
+ ## Vóór commit
+@@ -37,14 +37,14 @@ scripts\bootstrap.cmd
+ [README.md](README.md) en wat `validate.yml` / `pages.yml` draaien.
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\check.cmd --strict
++cd /d C:\Git\orthodox-groningen\VSA-demo
++check --strict
+ ```
+ 
+ Optioneel (externe links; in CI non-blocking, lokaal wél hard fail):
+ 
+ ```cmd
+-scripts\check.cmd --strict --external
++check --strict --external
+ ```
+ 
+ Daarna mag je committen. Push naar `main` triggert Pages-deploy.
+@@ -54,7 +54,7 @@ Daarna mag je committen. Push naar `main` triggert Pages-deploy.
+ Na een geslaagde `check.cmd --strict`:
+ 
+ ```cmd
+-scripts\serve-hugo.cmd --no-build
++serve --no-build
+ ```
+ 
+ Open http://localhost:1313/
+@@ -62,13 +62,13 @@ Open http://localhost:1313/
+ Volledige preview inclusief opnieuw genereren:
+ 
+ ```cmd
+-scripts\serve-hugo.cmd
++serve
+ ```
+ 
+ Alleen artifact in `generated\site` (zonder server):
+ 
+ ```cmd
+-scripts\build-hugo.cmd
++build
+ ```
+ 
+ ## Commits
+diff --git a/README.md b/README.md
+index 45d9e86..dd9cce1 100644
+--- a/README.md
++++ b/README.md
+@@ -21,14 +21,14 @@ Bijdragen: [CONTRIBUTING.md](CONTRIBUTING.md).
+ **Groen vóór commit = CI-blocking checks** (`validate.yml` / `pages.yml`).
+ 
+ ```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\check.cmd --strict
++cd /d C:\Git\orthodox-groningen\VSA-demo
++check --strict
+ ```
+ 
+ Optioneel — externe `http(s)`-links (in CI non-blocking; lokaal hard fail):
+ 
+ ```cmd
+-scripts\check.cmd --strict --external
++check --strict --external
+ ```
+ 
+ | Optie         | Effect                                      |
+@@ -42,23 +42,18 @@ scripts\check.cmd --strict --external
+ Vereist sibling-checkouts (of `vendor/`) van **bron** en **VSA-tooling**:
+ 
+ ```text
+-C:\Git\orthodox-ronl\
++C:\Git\orthodox-groningen\
+   bron\
+   VSA-tooling\
+   VSA-demo\
+ ```
+ 
+-Eerste keer / na tool-update:
++Eerste keer / na tool-update: `check` of `serve` (installeert packages zelf).
+ 
+-```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\bootstrap.cmd
+-```
+-
+-Na een geslaagde `check.cmd --strict` — preview zonder opnieuw te genereren:
++Na een geslaagde `check --strict` — preview zonder opnieuw te genereren:
+ 
+ ```cmd
+-scripts\serve-hugo.cmd --no-build
++serve --no-build
+ ```
+ 
+ Open http://localhost:1313/
+@@ -66,13 +61,13 @@ Open http://localhost:1313/
+ Volledige preview (sync + validate + generate + server):
+ 
+ ```cmd
+-scripts\serve-hugo.cmd
++serve
+ ```
+ 
+ Volledige sitebuild + interne linkcheck (artifact in `generated\site`):
+ 
+ ```cmd
+-scripts\build-hugo.cmd
++build
+ ```
+ 
+ ## Structuur
+@@ -82,14 +77,14 @@ scripts\build-hugo.cmd
+ | `content-source/` | Broncontent (bewerken), inclusief `lokaal/` — zie [CONTENT-STRUCTURE.md](CONTENT-STRUCTURE.md) |
+ | `layouts/`        | Hugo-templates en shortcodes                     |
+ | `static/`         | CSS, favicons; gegenereerde SVG in `static/vsa/` |
+-| `scripts/`        | Bootstrap, sync, build, check, serve             |
++| `scripts/`        | `check`, `serve`, `build`, `_ensure` |
+ | `_deferred/`      | Uitgesteld: TEv2                                 |
+ 
+ ## Afhankelijkheden
+ 
+-- Python ≥ 3.12
+-- Hugo ≥ 0.156 (vereist voor `hugo.Data` in layouts; lokaal getest met 0.160)
+-- `catalogus` uit [bron](https://github.com/orthodox-ronl/bron) (via bootstrap)
++- Python 3.14
++- Hugo Extended 0.160.1
++- `catalogus` uit [bron](https://github.com/orthodox-ronl/bron) (via `_ensure`)
+ - `vsa-tool[rendering]` uit [VSA-tooling](https://github.com/orthodox-ronl/VSA-tooling)
+ 
+ ## CI-checks
+@@ -99,7 +94,7 @@ scripts\build-hugo.cmd
+ | `validate.yml`  | pull request     | sync, validate (+warnings), generate, hugo, interne links/assets | externe links        |
+ | `pages.yml`     | push / handmatig | hetzelfde + deploy naar `gh-pages`                               | externe links        |
+ 
+-Lokaal equivalent: `scripts\check.cmd --strict` (zie [CONTRIBUTING.md](CONTRIBUTING.md)).
++Lokaal equivalent: `check --strict` (zie [CONTRIBUTING.md](CONTRIBUTING.md)).
+ 
+ ## GitHub Pages
+ 
+diff --git a/scripts/README.md b/scripts/README.md
+index 0aa340e..ee44d7f 100644
+--- a/scripts/README.md
++++ b/scripts/README.md
+@@ -1,165 +1,20 @@
+ # Scripts (VSA-demo)
+ 
+-Deze map helpt je lokaal hetzelfde te controleren als GitHub Actions, zonder
+-dat je workflow-YAML hoeft te lezen. Na een tijdje niet aan de demo gewerkt te
+-hebben: begin hier of met `scripts\h.cmd`.
++Org-conventie: https://github.com/orthodox-ronl/bron/blob/main/docs/specs/repo-scripts.md
+ 
+-**Scripts vinden:** `scripts\h.cmd`  
+-Man-page per script: `scripts\h.cmd bootstrap`, `scripts\h.cmd check`, ...  
+-Deze README: begrippen, wanneer-wat, CI-spiegel.
++`.\scripts` op PATH; Python 3.14; Hugo Extended 0.160.1; `vsa` op PATH.
++Geen bootstrap-stap: `_ensure` checkt PATH en pip't catalogus/`vsa-tool`.
+ 
+-## Onderhoudsafspraak (scripts)
++| Commando | Doel | Opties |
++| -------- | ---- | ------ |
++| `h` | catalogus / man-page | `[naam]` |
++| `check` | preflight / CI-spiegel | `--strict --external --skip-hugo` |
++| `serve` | Hugo-preview | `--no-build` |
++| `build` | site in `generated\site` + interne links | — |
++| `sync-bron-zondagen` | zondag-VSA uit bron | `[bron-root]` |
+ 
+-Elke wijziging aan scripts hoort **in dezelfde wijziging** de docs bij te werken:
++Groen voor commit: `check --strict`. Daarna `serve --no-build`.
+ 
+-1. **Toevoegen** van een `.cmd` (of betekenisvolle helper) → vermelden in deze README
+-   (tabellen + eventueel begrip/situatie) **en** in `h.cmd` (catalogus + man-page).
+-2. **Verwijderen** → uit README en `h.cmd` halen.
+-3. **Wijzigen** van gedrag/opties → README en man-page in `h.cmd` aanpassen.
++Oude namen `serve-hugo` / `build-hugo` / `bootstrap` zijn aliases (`use: ...`).
+ 
+-**ASCII in console-tekst:** alles wat `h.cmd` (en andere `.cmd`-scripts) met
+-`echo` op het scherm zetten, blijft **eenvoudige ASCII**. Geen Unicode-pijlen
+-(`→`), em-dashes (`—`), of andere tekens die in een Windows-cmd als rommel
+-verschijnen (`ΓåÆ`, enz.). Gebruik `->`, `-`, `...`.
+-
+-Deze README mag normale Markdown/UTF-8 voor proza; in **commando-voorbeelden**
+-en pipeline-diagrammen liever dezelfde ASCII (`->`), zodat copy-paste naar cmd
+-schoon blijft.
+-
+-
+-## Begrippen
+-
+-Korte woordenlijst voor termen die in scripts en docs terugkomen. (Dit is géén
+-vervanging van de org-glossary in bron — alleen script-/build-jargon.)
+-
+-| Term              | Betekenis |
+-| ----------------- | --------- |
+-| **Preflight**     | Lokale check *vóór* je commit/push. Doel: dezelfde fouten vinden die CI anders op GitHub zou melden, zodat je niet heen-en-weer hoeft te fixen. In deze repo: vooral `scripts\check.cmd`. |
+-| **CI**            | *Continuous Integration* — geautomatiseerde checks op GitHub (hier: `.github/workflows/`). Bij een PR: `validate.yml`. Bij push: `pages.yml` (zelfde checks + deploy). |
+-| **CI-spiegel**    | Een lokaal commando dat de *blocking* CI-stappen nabootst. Als de spiegel groen is, mag je er redelijk op vertrouwen dat de workflow niet op dezelfde checks faalt. Spiegel hier: `scripts\check.cmd --strict`. |
+-| **Blocking**      | Check die de workflow rood maakt als hij faalt (sync, validate met warnings, generate, Hugo, interne links). |
+-| **Non-blocking**  | Check die wél draait maar de workflow niet faalt (`continue-on-error`). Hier: externe http(s)-links — die kunnen flaky zijn (netwerk, sites down). |
+-| **Strict**        | Optie `--strict` op `check.cmd`: faal ook op VSA-*warnings* (niet alleen errors). CI doet dit standaard (`--fail-on-warnings`). Zonder `--strict` zijn warnings lokaal toegestaan. |
+-| **Generate**      | `vsa build-markdown` + `vsa musicxml` + navigatie-placeholders: van `content-source/` naar `generated/content` en `static/vsa/`. Die mappen commit je niet. |
+-| **Sync (zondag)** | Kopieert tropaar/kondak-zondag uit de sibling-repo **bron** naar `content-source/praktijk/zondagen/`. Nodig zodat de demo actuele bronbestanden toont. |
+-
+-## Wat wil je doen?
+-
+-| Situatie | Commando |
+-| -------- | -------- |
+-| Eerste keer / na Python- of tool-update | `scripts\bootstrap.cmd` |
+-| “Welke scripts zijn er ook alweer?” | `scripts\h.cmd` |
+-| “Hoe werkt bootstrap precies?” | `scripts\h.cmd bootstrap` |
+-| Snel: VSA + generate, zonder Hugo | `scripts\check.cmd --skip-hugo` |
+-| Klaar om te committen (CI-spiegel) | `scripts\check.cmd --strict` |
+-| Zelfde + externe links meenemen | `scripts\check.cmd --strict --external` |
+-| Site lokaal bekijken (opnieuw bouwen) | `scripts\serve-hugo.cmd` |
+-| Site bekijken ná een geslaagde check | `scripts\serve-hugo.cmd --no-build` |
+-| Alleen zondagbestanden uit bron verversen | `scripts\sync-bron-zondagen.cmd` |
+-
+-**Vuistregel:** groen vóór commit = `scripts\check.cmd --strict`.
+-
+-## Testladder
+-
+-Vaste volgorde: van snel/ruim naar streng (= CI). Eén gedeelde keten in
+-`_pipeline.cmd`; `check`, `build-hugo` en `serve-hugo` zijn dunne wrappers.
+-
+-| Niveau | Commando | Wat het doet |
+-| ------ | -------- | ------------ |
+-| 0 setup | `scripts\bootstrap.cmd` | `.venv`, catalogus, vsa-tool |
+-| 1 snel | `scripts\check.cmd --skip-hugo` | sync + validate + generate |
+-| 2 preview | `scripts\serve-hugo.cmd --no-build` | hugo server (na niveau 3 of 4) |
+-| 3 preview+build | `scripts\serve-hugo.cmd` | sync + validate + generate + server |
+-| 4 CI-spiegel | `scripts\check.cmd --strict` | + hugo + interne links (blocking CI) |
+-| 5 + extern | `scripts\check.cmd --strict --external` | + externe links (non-blocking in CI) |
+-| 6 artifact | `scripts\build-hugo.cmd` | zelfde als niveau 4, output in `generated\site` |
+-
+-Wanneer committen: minimaal **niveau 4** groen. Niveau 5 optioneel als je
+-externe links wilt meenemen.
+-
+-## Pipeline (wat gebeurt er?)
+-
+-```text
+-content-source/
+-    |
+-    +- sync-bron-zondagen     (zondag-VSA uit bron)
+-    +- validate               (vsa validate; met --strict ook warnings)
+-    +- build-markdown + mxl   (SVG/MXL -> static/vsa, md -> generated/content)
+-    +- update-nav-placeholders
+-    +- inject_git_dates + write_build_stamp (git_date per pagina; bouwtijd home)
+-    +- hugo                   (-> generated/site)
+-    +- link/asset-check       (interne links; optioneel externe)
+-```
+-
+-Kern: [`_pipeline.cmd`](_pipeline.cmd) (niet direct aanroepen).
+-
+-| Wrapper | Roept pipeline aan met |
+-| ------- | ---------------------- |
+-| `check.cmd` | `--strict` / `--skip-hugo` / `--external` via opties |
+-| `build-hugo.cmd` | altijd strict + hugo + interne links |
+-| `serve-hugo.cmd` | skip hugo (alleen generate), daarna `hugo server` |
+-
+-`serve-hugo.cmd` valideert zonder `--strict` (snellere preview). Voor
+-CI-gelijkheid: eerst `check.cmd --strict`, daarna `serve-hugo.cmd --no-build`.
+-
+-## CI ↔ lokaal (spiegel)
+-
+-| CI (`validate.yml` / `pages.yml`)                                        | Lokaal                                  |
+-| ------------------------------------------------------------------------ | --------------------------------------- |
+-| sync + validate (`--fail-on-warnings`) + generate + hugo + interne links | `scripts\check.cmd --strict`            |
+-| externe http(s)-links (non-blocking in CI)                               | `scripts\check.cmd --strict --external` |
+-| sneller zonder Hugo/linkcheck                                            | `scripts\check.cmd --skip-hugo`         |
+-
+-Verschillen om te onthouden:
+-
+-- Lokaal zonder `--strict` mag je warnings zien zonder rode exitcode; CI niet.
+-- Externe links zijn in CI non-blocking; lokaal faalt `--external` wél hard als
+-  een link stuk is (handig om bewust te draaien, niet als enige preflight).
+-- CI checkt `bron` en `VSA-tooling` uit onder `vendor/`; lokaal gebruikt
+-  bootstrap bij voorkeur de sibling-mappen `..\bron` en `..\VSA-tooling`.
+-
+-## Actieve scripts (`.cmd`)
+-
+-| Script                   | Doel                                                         | Opties                                      |
+-| ------------------------ | ------------------------------------------------------------ | ------------------------------------------- |
+-| `h.cmd`                  | Catalogus of man-page per script                             | `[naam]` exact = detail; `-h`               |
+-| `bootstrap.cmd`          | `.venv` + catalogus (bron) + `vsa-tool[rendering]`           | —                                           |
+-| `check.cmd`              | Preflight / CI-spiegel (zie pipeline hierboven)              | `--strict` `--external` `--skip-hugo`       |
+-| `build-hugo.cmd`         | Volledige sitebuild (validate met warnings-fail) + linkcheck | —                                           |
+-| `serve-hugo.cmd`         | Lokale Hugo-preview                                          | `--no-build`                                |
+-| `sync-bron-zondagen.cmd` | Kopieer zondag-VSA uit bron naar `content-source`            | optioneel: pad naar bron-root               |
+-
+-## Helper-scripts (Python)
+-
+-Aangeroepen door de `.cmd`-wrappers. Handig als je één stap wilt debuggen;
+-voor dagelijks werk volstaan de `.cmd`-bestanden.
+-
+-| Script                           | Doel                                        |
+-| -------------------------------- | ------------------------------------------- |
+-| `validate_content.py`            | `vsa validate` + optioneel fail-on-warnings |
+-| `sync_bron_zondagen.py`          | Zondag-sync uit bron                        |
+-| `update-nav-placeholders.py`     | Navigatie in `generated/content`            |
+-| `inject_git_dates.py`            | `git_date` in generated frontmatter         |
+-| `write_build_stamp.py`           | `data/build.yaml` (bouwtijd Amsterdam)      |
+-| `check_hugo_links_and_assets.py` | Interne links/assets in `generated/site`    |
+-| `check_external_links.py`        | Externe http(s)-links                       |
+-| `_pipeline.cmd`                  | Interne sync/validate/generate/hugo/links    |
+-
+-## Typische volgorde
+-
+-Eerste setup, daarna preflight, daarna preview zonder opnieuw te genereren:
+-
+-```cmd
+-cd /d C:\Git\orthodox-ronl\VSA-demo
+-scripts\bootstrap.cmd
+-scripts\check.cmd --strict
+-scripts\serve-hugo.cmd --no-build
+-```
+-
+-Open daarna http://localhost:1313/
+-
+-## Zie ook
+-
+-- Repo-README: [../README.md](../README.md) (structuur, Pages-URL’s)
+-- Workflows: [../.github/workflows/](../.github/workflows/)
+-- Org-terminologie (zangstuk, variant, …): [bron/docs/specs/terminologie.md](https://github.com/orthodox-ronl/bron/blob/main/docs/specs/terminologie.md)
++Echo in `.cmd`: eenvoudige ASCII.
+diff --git a/scripts/_ensure.cmd b/scripts/_ensure.cmd
+new file mode 100644
+index 0000000..eaa42ee
+--- /dev/null
++++ b/scripts/_ensure.cmd
+@@ -0,0 +1,32 @@
++@echo off
++REM Shared PATH/version/package check. Call from repo-root scripts after cd.
++REM Flags are forwarded to scripts\_ensure.py (see that file).
++setlocal EnableExtensions
++cd /d "%~dp0.."
++
++echo %PATH% | find /I ".\scripts" >nul
++if errorlevel 1 (
++  echo ERROR: PATH does not contain .\scripts
++  echo Add .\scripts to your user PATH ^(Windows environment variables^).
++  echo Work in the repo root so short names ^(test, serve, build, check^) resolve.
++  echo Without that segment you can still run scripts\test.cmd
++  exit /b 1
++)
++
++where python >nul 2>&1
++if errorlevel 1 (
++  echo ERROR: python not found on PATH
++  echo Install Python 3.14 and add C:\Python314\ and C:\Python314\Scripts\ to PATH.
++  exit /b 1
++)
++
++python -c "import sys; raise SystemExit(0 if sys.version_info[:2]==(3,14) else 1)" >nul 2>&1
++if errorlevel 1 (
++  echo ERROR: python is not version 3.14
++  python --version
++  echo Expected: Python 3.14.x ^(e.g. C:\Python314\python.exe^), not 3.12 and not the Microsoft Store stub.
++  exit /b 1
++)
++
++python scripts\_ensure.py %*
++exit /b %ERRORLEVEL%
+diff --git a/scripts/_ensure.py b/scripts/_ensure.py
+new file mode 100644
+index 0000000..6997198
+--- /dev/null
++++ b/scripts/_ensure.py
+@@ -0,0 +1,203 @@
++"""Install/check repo deps after scripts/_ensure.cmd has verified Python 3.14."""
++
++from __future__ import annotations
++
++import argparse
++import hashlib
++import os
++import shutil
++import subprocess
++import sys
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[1]
++STAMP = ROOT / ".ensure-stamp"
++HUGO_VERSION = "0.160.1"
++NODE_MAJOR = 22
++
++
++def fail(message: str, *hints: str) -> None:
++    print("ERROR: " + message)
++    for hint in hints:
++        print(hint)
++    raise SystemExit(1)
++
++
++def run(args: list[str], **kwargs) -> subprocess.CompletedProcess[str]:
++    return subprocess.run(args, check=False, text=True, **kwargs)
++
++
++def check_hugo() -> None:
++    hugo = shutil.which("hugo")
++    if not hugo:
++        fail(
++            "hugo not found on PATH",
++            "Install Hugo Extended 0.160.1 and add it to PATH.",
++            "Reference folder: C:\\Git\\tools\\hugo",
++        )
++    proc = run([hugo, "version"], capture_output=True)
++    text = (proc.stdout or "") + (proc.stderr or "")
++    if HUGO_VERSION not in text:
++        fail(
++            f"hugo version is not {HUGO_VERSION}",
++            text.strip() or "(no hugo version output)",
++            f"Replace the binary with Hugo Extended {HUGO_VERSION}.",
++            "Reference folder: C:\\Git\\tools\\hugo",
++        )
++    if "extended" not in text.lower():
++        fail(
++            "hugo is not the Extended build",
++            text.strip(),
++            f"Install Hugo Extended {HUGO_VERSION}.",
++        )
++
++
++def check_vsa() -> None:
++    vsa = shutil.which("vsa")
++    if not vsa:
++        fail(
++            "vsa not found on PATH",
++            "Add the VSA-tooling venv Scripts folder to PATH after installing vsa-tool there.",
++            "Reference: C:\\Git\\orthodox-groningen\\VSA-tooling\\.venv\\Scripts",
++        )
++
++
++def check_node() -> None:
++    node = shutil.which("node")
++    if not node:
++        fail(
++            "node not found on PATH",
++            "Install Node.js 22 and add C:\\Program Files\\nodejs\\ to PATH.",
++        )
++    proc = run([node, "--version"], capture_output=True)
++    text = (proc.stdout or proc.stderr or "").strip()
++    if not text.startswith("v") or not text[1:].split(".", 1)[0].isdigit():
++        fail("could not parse node --version", text)
++    major = int(text[1:].split(".", 1)[0])
++    if major != NODE_MAJOR:
++        fail(
++            f"node is not version {NODE_MAJOR}.x",
++            text,
++            "Install Node.js 22 (CI uses node-version: \"22\").",
++        )
++
++
++def pip_install(args: list[str]) -> None:
++    cmd = [sys.executable, "-m", "pip", "install", *args]
++    proc = run(cmd)
++    if proc.returncode != 0:
++        fail("pip install failed: " + " ".join(args))
++
++
++def module_ok(name: str) -> bool:
++    proc = run(
++        [sys.executable, "-c", f"import {name}"],
++        capture_output=True,
++    )
++    return proc.returncode == 0
++
++
++def stamp_payload(files: list[Path], extras: list[str]) -> str:
++    h = hashlib.sha256()
++    for path in files:
++        h.update(path.read_bytes())
++    for extra in extras:
++        h.update(extra.encode("utf-8"))
++    h.update(f"py{sys.version_info[:2]}".encode())
++    return h.hexdigest()
++
++
++def sibling_or_vendor(*relatives: str) -> Path | None:
++    for rel in relatives:
++        candidate = (ROOT / rel).resolve()
++        if (candidate / "pyproject.toml").is_file():
++            return candidate
++    return None
++
++
++def main() -> int:
++    parser = argparse.ArgumentParser(add_help=False)
++    parser.add_argument("--hugo", action="store_true")
++    parser.add_argument("--vsa", action="store_true")
++    parser.add_argument("--node", action="store_true")
++    parser.add_argument("--pip-r", action="append", default=[])
++    parser.add_argument("--pip-e", action="append", default=[])
++    parser.add_argument("--import", dest="imports", action="append", default=[])
++    parser.add_argument("--catalogus", action="store_true")
++    parser.add_argument("--vsa-tool", action="store_true")
++    parser.add_argument("--npm-install", action="store_true")
++    args, _unknown = parser.parse_known_args()
++
++    if args.hugo:
++        check_hugo()
++    if args.vsa:
++        check_vsa()
++    if args.node:
++        check_node()
++    if args.npm_install:
++        if shutil.which("npm") is None:
++            fail(
++                "npm not found on PATH",
++                "Install Node.js 22 so npm is available.",
++            )
++        if not (ROOT / "node_modules").is_dir():
++            proc = run(["npm", "install"], cwd=ROOT)
++            if proc.returncode != 0:
++                fail("npm install failed")
++
++    req_files = [ROOT / rel for rel in args.pip_r]
++    for path in req_files:
++        if not path.is_file():
++            fail(f"requirements file not found: {path}")
++
++    extras = list(args.pip_e)
++    if args.catalogus:
++        extras.append("catalogus:sibling")
++    if args.vsa_tool:
++        extras.append("vsa-tool:sibling")
++
++    payload = stamp_payload(req_files, extras + args.imports)
++    if STAMP.is_file() and STAMP.read_text(encoding="utf-8").strip() == payload:
++        missing = [name for name in args.imports if not module_ok(name)]
++        if not missing:
++            return 0
++
++    for rel in args.pip_r:
++        pip_install(["-r", str(ROOT / rel)])
++
++    for spec in args.pip_e:
++        pip_install(["-e", spec])
++
++    if args.catalogus and not module_ok("catalogus"):
++        bron = sibling_or_vendor(os.path.join("..", "bron"), os.path.join("vendor", "bron"))
++        if bron is None:
++            fail(
++                "catalogus is not installed and bron was not found",
++                "Expected ..\\bron or vendor\\bron with pyproject.toml",
++                "Clone https://github.com/orthodox-ronl/bron next to this repo.",
++            )
++        pip_install(["-e", str(bron)])
++
++    if args.vsa_tool and not module_ok("vsa"):
++        tooling = sibling_or_vendor(
++            os.path.join("..", "VSA-tooling"),
++            os.path.join("vendor", "VSA-tooling"),
++        )
++        if tooling is None:
++            pip_install(["vsa-tool[rendering] @ git+https://github.com/orthodox-ronl/VSA-tooling.git@main"])
++        else:
++            pip_install(["-e", f"{tooling}[rendering]"])
++
++    missing = [name for name in args.imports if not module_ok(name)]
++    if missing:
++        fail(
++            "python imports still missing: " + ", ".join(missing),
++            "pip install did not provide them in this Python 3.14 interpreter.",
++        )
++
++    STAMP.write_text(payload + "\n", encoding="utf-8")
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/scripts/_pipeline.cmd b/scripts/_pipeline.cmd
+index bc7eb0e..bb379b4 100644
+--- a/scripts/_pipeline.cmd
++++ b/scripts/_pipeline.cmd
+@@ -2,17 +2,11 @@
+ setlocal EnableExtensions
+ cd /d %~dp0\..
+ 
+-REM Gedeelde build-/check-keten. Niet direct aanroepen.
+-REM Gebruik check.cmd, build-hugo.cmd of serve-hugo.cmd.
+-REM
+-REM Omgevingsvariabelen (optioneel, voor aanroeper):
+-REM   PIPELINE_STRICT=1      validate_content.py --fail-on-warnings
+-REM   PIPELINE_SKIP_HUGO=1   stop na generate (geen hugo/linkcheck)
+-REM   PIPELINE_EXTERNAL=1    ook externe http(s)-links checken
+-REM   PIPELINE_TITLE=...     banner (default: VSA-demo pipeline)
++call scripts\_ensure.cmd --hugo --vsa --catalogus --vsa-tool --import vsa --import yaml
++if errorlevel 1 exit /b 1
+ 
+ set "PY=python"
+-if exist .venv\Scripts\python.exe set "PY=.venv\Scripts\python.exe"
++
+ 
+ if not defined PIPELINE_TITLE set "PIPELINE_TITLE=VSA-demo pipeline"
+ 
+diff --git a/scripts/bootstrap.cmd b/scripts/bootstrap.cmd
+index f3656a9..7ec7ab5 100644
+--- a/scripts/bootstrap.cmd
++++ b/scripts/bootstrap.cmd
+@@ -1,57 +1,4 @@
+ @echo off
+-setlocal
+-cd /d %~dp0\..
+-
+-set "PY=python"
+-if exist .venv\Scripts\python.exe set "PY=.venv\Scripts\python.exe"
+-
+-echo.
+-echo === VSA-demo bootstrap ===
+-echo.
+-
+-if not exist .venv (
+-  echo Creating .venv ...
+-  python -m venv .venv
+-  if errorlevel 1 exit /b 1
+-  set "PY=.venv\Scripts\python.exe"
+-)
+-
+-echo Upgrading pip ...
+-"%PY%" -m pip install --upgrade pip
+-if errorlevel 1 exit /b 1
+-
+-REM catalogus uit bron (sibling of vendor)
+-if exist vendor\bron\pyproject.toml (
+-  echo Installing catalogus from vendor\bron ...
+-  "%PY%" -m pip install -e vendor\bron
+-  if errorlevel 1 exit /b 1
+-) else if exist ..\bron\pyproject.toml (
+-  echo Installing catalogus from ..\bron ...
+-  "%PY%" -m pip install -e ..\bron
+-  if errorlevel 1 exit /b 1
+-) else (
+-  echo WARNING: bron niet gevonden ^(vendor\bron of ..\bron^).
+-  echo          Catalogus-includes ^(id:/zoek=/bron:^) werken dan niet.
+-)
+-
+-REM vsa-tool: editable sibling/vendor zodat discover_bron_root sibling bron vindt
+-if exist vendor\VSA-tooling\pyproject.toml (
+-  echo Installing vsa-tool[rendering] from vendor\VSA-tooling ...
+-  "%PY%" -m pip install -e "vendor\VSA-tooling[rendering]"
+-  if errorlevel 1 exit /b 1
+-) else if exist ..\VSA-tooling\pyproject.toml (
+-  echo Installing vsa-tool[rendering] from ..\VSA-tooling ...
+-  "%PY%" -m pip install -e "..\VSA-tooling[rendering]"
+-  if errorlevel 1 exit /b 1
+-) else (
+-  echo Installing vsa-tool[rendering] from GitHub main ...
+-  "%PY%" -m pip install "vsa-tool[rendering] @ git+https://github.com/orthodox-ronl/VSA-tooling.git@main"
+-  if errorlevel 1 exit /b 1
+-  echo NOTE: zonder lokale VSA-tooling-checkout vindt id:-resolutie mogelijk geen bron.
+-)
+-
+-echo.
+-echo Bootstrap complete.
+-echo Run: scripts\check.cmd --strict
+-echo      scripts\serve-hugo.cmd --no-build
+-endlocal
++echo use: _ensure (no separate bootstrap step)
++call "%~dp0_ensure.cmd" --hugo --vsa --catalogus --vsa-tool --import vsa
++exit /b %ERRORLEVEL%
+diff --git a/scripts/build-hugo.cmd b/scripts/build-hugo.cmd
+index 8547e11..059e9e8 100644
+--- a/scripts/build-hugo.cmd
++++ b/scripts/build-hugo.cmd
+@@ -1,15 +1,3 @@
+ @echo off
+-setlocal EnableExtensions
+-cd /d %~dp0\..
+-
+-REM Volledige sitebuild: zelfde keten als check.cmd --strict
+-
+-set "PIPELINE_STRICT=1"
+-set "PIPELINE_TITLE=VSA-demo build"
+-
+-call scripts\_pipeline.cmd
+-if errorlevel 1 exit /b 1
+-
+-echo Build complete: generated\site
+-endlocal
+-exit /b 0
++echo use: build
++call "%~dp0build.cmd" %*
+diff --git a/scripts/build.cmd b/scripts/build.cmd
+new file mode 100644
+index 0000000..68c2c62
+--- /dev/null
++++ b/scripts/build.cmd
+@@ -0,0 +1,10 @@
++@echo off
++setlocal EnableExtensions
++cd /d %~dp0\..
++set "PIPELINE_STRICT=1"
++set "PIPELINE_TITLE=VSA-demo build"
++call scripts\_pipeline.cmd
++if errorlevel 1 exit /b 1
++echo Build complete: generated\site
++endlocal
++exit /b 0
+diff --git a/scripts/h.cmd b/scripts/h.cmd
+index 69c2204..3dced8c 100644
+--- a/scripts/h.cmd
++++ b/scripts/h.cmd
+@@ -21,10 +21,10 @@ if not "%FILTER%"=="" (
+ 
+ if "%FILTER%"=="" goto catalog
+ 
+-if /I "%FILTER%"=="bootstrap" goto man_bootstrap
++if /I "%FILTER%"=="bootstrap" goto man_ensure
+ if /I "%FILTER%"=="check" goto man_check
+-if /I "%FILTER%"=="build-hugo" goto man_build_hugo
+-if /I "%FILTER%"=="serve-hugo" goto man_serve_hugo
++if /I "%FILTER%"=="build" goto man_build
++if /I "%FILTER%"=="serve" goto man_serve
+ if /I "%FILTER%"=="sync-bron-zondagen" goto man_sync
+ if /I "%FILTER%"=="h" goto man_help
+ if /I "%FILTER%"=="help" goto man_help
+@@ -34,14 +34,13 @@ goto filter_list
+ :catalog
+ echo.
+ echo === VSA-demo scripts ===
+-echo Detail ^(man-page^): scripts\h.cmd ^<naam^>   bijv. scripts\h.cmd bootstrap
++echo Detail ^(man-page^): h ^<naam^>   bijv. h check
+ echo Begrippen + wanneer-wat: scripts\README.md
+-echo Groen voor commit ^(CI-spiegel^): scripts\check.cmd --strict
++echo Groen voor commit ^(CI-spiegel^): check --strict
+ echo.
+-call :emit_short bootstrap "venv + catalogus (bron) + vsa-tool[rendering]" "-"
+ call :emit_short check "preflight / CI-spiegel" "--strict --external --skip-hugo"
+-call :emit_short build-hugo "volledige sitebuild + interne linkcheck" "-"
+-call :emit_short serve-hugo "lokale Hugo-preview" "--no-build"
++call :emit_short build "volledige sitebuild + interne linkcheck" "-"
++call :emit_short serve "lokale Hugo-preview" "--no-build"
+ call :emit_short sync-bron-zondagen "sync zondag-VSA uit bron" "[bron-root]"
+ call :emit_short h "catalogus of man-page per script" "[naam]"
+ echo.
+@@ -57,10 +56,9 @@ echo.
+ echo === VSA-demo scripts ^(filter: %FILTER%^) ===
+ echo Voor detail: scripts\h.cmd ^<exacte-naam^>   bijv. scripts\h.cmd bootstrap
+ echo.
+-call :try_short bootstrap "venv + catalogus (bron) + vsa-tool[rendering]" "-"
+ call :try_short check "preflight / CI-spiegel" "--strict --external --skip-hugo"
+-call :try_short build-hugo "volledige sitebuild + interne linkcheck" "-"
+-call :try_short serve-hugo "lokale Hugo-preview" "--no-build"
++call :try_short build "volledige sitebuild + interne linkcheck" "-"
++call :try_short serve "lokale Hugo-preview" "--no-build"
+ call :try_short sync-bron-zondagen "sync zondag-VSA uit bron" "[bron-root]"
+ call :try_short h "catalogus of man-page per script" "[naam]"
+ if "!ANY!"=="0" goto unknown
+@@ -71,7 +69,7 @@ goto end_ok
+ 
+ :unknown
+ echo Geen script gevonden voor "%FILTER%".
+-echo Bekende namen: bootstrap, check, build-hugo, serve-hugo, sync-bron-zondagen, h
++echo Bekende namen: check, build, serve, sync-bron-zondagen, h
+ echo.
+ goto end_fail
+ 
+@@ -105,29 +103,14 @@ echo Begrippen ^(preflight, CI-spiegel, ...^): scripts\README.md
+ echo.
+ goto end_ok
+ 
+-:man_bootstrap
++:man_ensure
+ echo.
+ echo NAME
+-echo   scripts\bootstrap.cmd
+-echo.
+-echo SYNOPSIS
+-echo   scripts\bootstrap.cmd
++echo   _ensure (called by check/serve/build)
+ echo.
+ echo DESCRIPTION
+-echo   Eenmalige ^(of periodieke^) setup van de lokale Python-omgeving:
+-echo   - maakt .venv aan als die ontbreekt
+-echo   - installeert catalogus uit sibling ..\bron of vendor\bron
+-echo   - installeert vsa-tool[rendering] uit ..\VSA-tooling, vendor\, of GitHub
+-echo.
+-echo   Zonder bootstrap werken validate/generate en catalogus-includes niet
+-echo   ^(of niet met je lokale bron/tooling^).
+-echo.
+-echo WHEN
+-echo   Eerste checkout; na Python-upgrade; als vsa/catalogus-commando's ontbreken.
+-echo.
+-echo SEE ALSO
+-echo   scripts\h.cmd check
+-echo   scripts\README.md
++echo   Checks PATH (.\scripts, python 3.14, hugo, vsa) and pip-installs
++echo   catalogus + vsa-tool into that Python. No separate bootstrap step.
+ echo.
+ goto end_ok
+ 
+@@ -158,18 +141,18 @@ echo   Altijd voor committen/pushen: scripts\check.cmd --strict
+ echo   Tussendoor itereren op VSA: scripts\check.cmd --skip-hugo
+ echo.
+ echo SEE ALSO
+-echo   scripts\h.cmd serve-hugo
++echo   scripts\h.cmd serve
+ echo   scripts\README.md  ^(testladder + CI-spiegel^)
+ echo.
+ goto end_ok
+ 
+-:man_build_hugo
++:man_build
+ echo.
+ echo NAME
+-echo   scripts\build-hugo.cmd
++echo   scripts\build.cmd
+ echo.
+ echo SYNOPSIS
+-echo   scripts\build-hugo.cmd
++echo   scripts\build.cmd
+ echo.
+ echo DESCRIPTION
+ echo   Volledige sitebuild naar generated\site. Zelfde keten als check.cmd --strict
+@@ -183,17 +166,17 @@ echo   Voor preflight voor commit: check.cmd --strict is genoeg.
+ echo.
+ echo SEE ALSO
+ echo   scripts\h.cmd check
+-echo   scripts\h.cmd serve-hugo
++echo   scripts\h.cmd serve
+ echo.
+ goto end_ok
+ 
+-:man_serve_hugo
++:man_serve
+ echo.
+ echo NAME
+-echo   scripts\serve-hugo.cmd
++echo   scripts\serve.cmd
+ echo.
+ echo SYNOPSIS
+-echo   scripts\serve-hugo.cmd [--no-build]
++echo   scripts\serve.cmd [--no-build]
+ echo.
+ echo DESCRIPTION
+ echo   Start de Hugo-development server ^(http://localhost:1313/^).
+@@ -231,7 +214,7 @@ echo   Met argument: expliciet pad naar een bron-checkout.
+ echo.
+ echo WHEN
+ echo   Handmatig als je bron net hebt bijgewerkt en alleen sync wilt.
+-echo   check.cmd / build-hugo / serve-hugo roepen sync zelf al aan.
++echo   check.cmd / build / serve roepen sync zelf al aan.
+ echo.
+ echo SEE ALSO
+ echo   scripts\h.cmd check
+diff --git a/scripts/serve-hugo.cmd b/scripts/serve-hugo.cmd
+index ae2a5c8..788177c 100644
+--- a/scripts/serve-hugo.cmd
++++ b/scripts/serve-hugo.cmd
+@@ -1,68 +1,3 @@
+ @echo off
+-setlocal EnableExtensions
+-cd /d %~dp0\..
+-
+-REM Lokale Hugo-preview. Generate via gedeelde pipeline; server apart.
+-
+-set "NO_BUILD="
+-
+-:parse_args
+-if "%~1"=="" goto args_done
+-if /I "%~1"=="--no-build" set "NO_BUILD=1" & shift & goto parse_args
+-if /I "%~1"=="-h" goto usage
+-if /I "%~1"=="--help" goto usage
+-echo Onbekende optie: %~1
+-goto usage
+-
+-:args_done
+-
+-echo.
+-echo === VSA-demo local preview ===
+-echo.
+-
+-where hugo >nul 2>&1
+-if errorlevel 1 (
+-  echo ERROR: hugo not found on PATH.
+-  exit /b 1
+-)
+-
+-if defined NO_BUILD (
+-  if not exist generated\content (
+-    echo ERROR: generated\content ontbreekt. Draai eerst scripts\check.cmd
+-    echo        of scripts\serve-hugo.cmd zonder --no-build.
+-    exit /b 1
+-  )
+-  echo [1/1] Generate overgeslagen ^(--no-build^); start Hugo server
+-  echo.
+-  goto start_server
+-)
+-
+-set "PIPELINE_SKIP_HUGO=1"
+-set "PIPELINE_TITLE=VSA-demo preview (generate)"
+-
+-call scripts\_pipeline.cmd
+-if errorlevel 1 exit /b 1
+-
+-echo [2/2] Start Hugo server
+-:start_server
+-hugo server ^
+-  --source . ^
+-  --contentDir generated\content ^
+-  --baseURL / ^
+-  --disableFastRender ^
+-  --forceSyncStatic ^
+-  --noHTTPCache
+-endlocal
+-exit /b %ERRORLEVEL%
+-
+-:usage
+-echo.
+-echo Gebruik: scripts\serve-hugo.cmd [--no-build]
+-echo.
+-echo   --no-build   geen sync/validate/generate; alleen hugo server
+-echo                ^(vereist bestaande generated\content^)
+-echo.
+-echo Detail: scripts\h.cmd serve-hugo
+-echo.
+-endlocal
+-exit /b 2
++echo use: serve
++call "%~dp0serve.cmd" %*
+diff --git a/scripts/serve.cmd b/scripts/serve.cmd
+new file mode 100644
+index 0000000..a8a9cee
+--- /dev/null
++++ b/scripts/serve.cmd
+@@ -0,0 +1,63 @@
++@echo off
++setlocal EnableExtensions
++cd /d %~dp0\..
++
++set "NO_BUILD="
++
++:parse_args
++if "%~1"=="" goto args_done
++if /I "%~1"=="--no-build" set "NO_BUILD=1" & shift & goto parse_args
++if /I "%~1"=="-h" goto usage
++if /I "%~1"=="--help" goto usage
++echo Onbekende optie: %~1
++goto usage
++
++:args_done
++
++echo.
++echo === VSA-demo local preview ===
++echo.
++
++call scripts\_ensure.cmd --hugo --vsa --catalogus --vsa-tool --import vsa
++if errorlevel 1 exit /b 1
++
++if defined NO_BUILD (
++  if not exist generated\content (
++    echo ERROR: generated\content ontbreekt. Draai eerst check
++    echo        of serve zonder --no-build.
++    exit /b 1
++  )
++  echo [1/1] Generate overgeslagen (--no-build); start Hugo server
++  echo.
++  goto start_server
++)
++
++set "PIPELINE_SKIP_HUGO=1"
++set "PIPELINE_TITLE=VSA-demo preview (generate)"
++
++call scripts\_pipeline.cmd
++if errorlevel 1 exit /b 1
++
++echo [2/2] Start Hugo server
++:start_server
++hugo server ^
++  --source . ^
++  --contentDir generated\content ^
++  --baseURL / ^
++  --disableFastRender ^
++  --forceSyncStatic ^
++  --noHTTPCache
++endlocal
++exit /b %ERRORLEVEL%
++
++:usage
++echo.
++echo Gebruik: serve [--no-build]
++echo.
++echo   --no-build   geen sync/validate/generate; alleen hugo server
++echo                (vereist bestaande generated\content)
++echo.
++echo Detail: h serve
++echo.
++endlocal
++exit /b 2
+diff --git a/scripts/sync-bron-zondagen.cmd b/scripts/sync-bron-zondagen.cmd
+index 2dc5a8a..f89dc97 100644
+--- a/scripts/sync-bron-zondagen.cmd
++++ b/scripts/sync-bron-zondagen.cmd
+@@ -1,14 +1,11 @@
+ @echo off
+ setlocal
+ cd /d %~dp0\..
+-
+-set "PY=python"
+-if exist .venv\Scripts\python.exe set "PY=.venv\Scripts\python.exe"
+-
++call scripts\_ensure.cmd --import yaml
++if errorlevel 1 exit /b 1
+ if not "%~1"=="" (
+-  "%PY%" scripts\sync_bron_zondagen.py --bron-root %~1
++  python scripts\sync_bron_zondagen.py --bron-root %~1
+   exit /b %ERRORLEVEL%
+ )
+-
+-"%PY%" scripts\sync_bron_zondagen.py
+-endlocal
++python scripts\sync_bron_zondagen.py
++exit /b %ERRORLEVEL%
+-- 
+2.43.0
+
