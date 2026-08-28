@@ -5150,18 +5150,18 @@
     }
   },
   {
-    "id": "zondag-mirredraagsters",
+    "id": "zondag-myrondraagsters",
     "soort": "feest",
     "cyclus": "paascyclus",
     "vorm": "dag",
-    "naam": "Zondag van de mirredraagsters",
+    "naam": "Zondag van de myrondraagsters",
     "alternatief": [
-      "Mirredraagsterszondag",
+      "Myrondraagsterszondag",
       "Zondag van de myrrhedraagsters"
     ],
     "titels": [],
     "samenvatting": "De vrouwen bij het graf; Jozef van Arimatea en Nicodemus.",
-    "url": "/feesten/zondag-mirredraagsters/",
+    "url": "/feesten/zondag-myrondraagsters/",
     "lage_landen": false,
     "bronlaag": "nagekeken",
     "observances": [
