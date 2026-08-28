@@ -233,7 +233,7 @@ Verhaal tot de perikoop; `betekenis` twee alinea’s. `goedkeuring` leeg.
 
 - Primair: Chrysostomos, homilie 87 op Johannes (Joh. 20).
 
-### Mirredraagsters (`zondag-mirredraagsters`)
+### Myrondraagsters (`zondag-myrondraagsters`)
 
 - Primair: Chrysostomos, homilie 86 op Johannes (Maria bij het graf). Homilie 89 op Matteüs is de wacht bij het graf, niet de vrouwen.
 

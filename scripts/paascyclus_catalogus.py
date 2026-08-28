@@ -326,13 +326,13 @@ PAASCYCLUS: list[dict[str, Any]] = [
         ),
     },
     {
-        "id": "zondag-mirredraagsters",
+        "id": "zondag-myrondraagsters",
         "offset_dagen": 14,
-        "namen": {"primair": "Zondag van de mirredraagsters"},
+        "namen": {"primair": "Zondag van de myrondraagsters"},
         "observances": ["feest"],
         "samenvatting": "De vrouwen bij het graf; Jozef van Arimatea en Nicodemus.",
         "verhaal": (
-            "De mirredraagsters gaan vroeg naar het graf en worden de eerste "
+            "De myrondraagsters gaan vroeg naar het graf en worden de eerste "
             "getuigen van de Opstanding. Met hen eert de Kerk ook wie Christus "
             "begroef: trouwe liefde na het kruis."
         ),

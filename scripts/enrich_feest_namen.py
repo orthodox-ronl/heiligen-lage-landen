@@ -159,8 +159,8 @@ EXTRA: dict[str, list[str]] = {
         "Zondag van Maria van Egypte",
         "Vijfde zondag van de Vasten",
     ],
-    "zondag-mirredraagsters": [
-        "Mirredraagsterszondag",
+    "zondag-myrondraagsters": [
+        "Myrondraagsterszondag",
         "Zondag van de myrrhedraagsters",
     ],
     "zondag-orthodoxie": [

@@ -885,7 +885,7 @@ def test_grootfeesten_en_pascha_hebben_betekenis() -> None:
         "zondag-johannes-klimacus",
         "zondag-maria-van-egypte",
         "thomaszondag",
-        "zondag-mirredraagsters",
+        "zondag-myrondraagsters",
         "zondag-verlamde",
         "zondag-samaritaanse",
         "zondag-blinde",

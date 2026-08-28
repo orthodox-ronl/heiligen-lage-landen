@@ -47,7 +47,7 @@ OVERRIDE_NAMEN: dict[str, str] = {
     "pascha": "Pascha",
     "lichte-maandag": "Lichte maandag",
     "thomaszondag": "Thomaszondag",
-    "zondag-mirredraagsters": "Zondag van de mirredraagsters",
+    "zondag-myrondraagsters": "Zondag van de myrondraagsters",
     "zondag-verlamde": "Zondag van de verlamde",
     "midden-pinksterfeest": "Midden-Pinksterfeest",
     "zondag-samaritaanse": "Zondag van de Samaritaanse",
@@ -518,7 +518,7 @@ def liturgische_daglabel(
     named = {
         0: "Pascha",
         7: "Thomaszondag",
-        14: "Zondag van de mirredraagsters",
+        14: "Zondag van de myrondraagsters",
         21: "Zondag van de verlamde",
         24: "Midden-Pinksterfeest",
         28: "Zondag van de Samaritaanse",

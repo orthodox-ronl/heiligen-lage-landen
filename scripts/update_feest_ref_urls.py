@@ -264,9 +264,9 @@ BESTE_REFS: dict[str, list[tuple[str, str]]] = {
         ("OrthodoxWiki — Pentecostarion", "https://orthodoxwiki.org/Pentecostarion"),
         ("OrthodoxWiki — Lichte Week", "https://orthodoxwiki.org/Bright_Week"),
     ],
-    "zondag-mirredraagsters": [
+    "zondag-myrondraagsters": [
         (
-            "OrthodoxWiki — Zondag van de mirredraagsters",
+            "OrthodoxWiki — Zondag van de myrondraagsters",
             "https://orthodoxwiki.org/Sunday_of_Myrrh-bearing_Women",
         ),
         ("OrthodoxWiki — Pentecostarion", "https://orthodoxwiki.org/Pentecostarion"),

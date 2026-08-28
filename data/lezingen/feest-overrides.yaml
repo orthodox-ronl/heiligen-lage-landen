@@ -34,13 +34,13 @@ overrides:
       url: "https://azbyka.ru/days/p-ukazatel-evangelskih-i-apostolskih-chtenij-na-kazhdyj-den-goda"
       geraadpleegd: "2026-08-16"
 
-  - id: zondag-mirredraagsters
+  - id: zondag-myrondraagsters
     match: { paascyclus_offset: 14 }
     apostel: [{ ref: "Hand. 6:1-7" }]
     evangelie: [{ ref: "Mark. 15:43-16:8" }]
     regels: [R2]
     bron:
-      label: "Azbyka — ukazatel’ (Mirredraagsters)"
+      label: "Azbyka — ukazatel’ (Myrondraagsters)"
       url: "https://azbyka.ru/days/p-ukazatel-evangelskih-i-apostolskih-chtenij-na-kazhdyj-den-goda"
       geraadpleegd: "2026-08-16"
 
