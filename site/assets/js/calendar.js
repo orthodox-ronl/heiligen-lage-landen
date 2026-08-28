@@ -2987,9 +2987,29 @@
   }
 
   /* ---- Agenda ICS ---- */
-  function icsStyleToJs(stijl) {
-    return stijl === "oud" ? "juliaans" : "gregoriaans";
-  }
+  const GROOTFEEST_IDS = new Set([
+    "geboorte-moeder-gods",
+    "kruisverheffing",
+    "tempelgang-moeder-gods",
+    "kerst",
+    "theofanie",
+    "ontmoeting-in-de-tempel",
+    "aankondiging",
+    "palmzondag",
+    "pascha",
+    "hemelvaart",
+    "pinksteren",
+    "transfiguratie",
+    "ontslapen-moeder-gods",
+    "lazarus-zaterdag",
+    "grote-maandag",
+    "grote-dinsdag",
+    "grote-woensdag",
+    "grote-donderdag",
+    "grote-vrijdag",
+    "grote-zaterdag",
+    "geestesmaandag",
+  ]);
 
   function isRandFeest(entry) {
     const id = (entry && entry.id) || "";
@@ -3025,8 +3045,20 @@
     })[0];
   }
 
-  function icsKopFeesten(dayEntries) {
-    const feesten = (dayEntries || []).filter(isDayTypeFeast);
+  function isGrootfeest(entry) {
+    return isDayTypeFeest(entry) && GROOTFEEST_IDS.has((entry && entry.id) || "");
+  }
+
+  function icsKopGrootfeesten(dayEntries) {
+    const feesten = (dayEntries || []).filter(isGrootfeest);
+    if (!feesten.length) return [];
+    return [pickOneFeast(feesten)];
+  }
+
+  function icsKopOverigeFeesten(dayEntries) {
+    const feesten = (dayEntries || []).filter(
+      (e) => isDayTypeFeast(e) && !isGrootfeest(e)
+    );
     const named = feesten.filter((e) => !isRandFeest(e));
     const rand = feesten.filter(isRandFeest);
     if (named.length) return [pickOneFeast(named)];
@@ -3036,6 +3068,11 @@
       return [pickOneFeast(pool)];
     }
     return [];
+  }
+
+  function icsKopFeesten(dayEntries) {
+    const groot = icsKopGrootfeesten(dayEntries);
+    return groot.length ? groot : icsKopOverigeFeesten(dayEntries);
   }
 
   function icsKopHeiligen(dayEntries) {
@@ -3055,26 +3092,97 @@
     return "";
   }
 
+  function daysBetween(a, b) {
+    const utcA = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    const utcB = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.round((utcA - utcB) / 86400000);
+  }
+
+  function weekIndexNaPinksteren(offP) {
+    if (offP < 1) return null;
+    return {
+      week: Math.floor((offP - 1) / 7) + 1,
+      weekday: ((offP - 1) % 7) + 1,
+    };
+  }
+
+  function paschaAnkerVoorCivil(civil) {
+    let pascha = orthodoxPascha(civil.getFullYear());
+    const publican = addDays(pascha, -70);
+    if (civil < publican) return orthodoxPascha(civil.getFullYear() - 1);
+    if (daysBetween(civil, pascha) > 320) {
+      return orthodoxPascha(civil.getFullYear() + 1);
+    }
+    return pascha;
+  }
+
+  /** Spiegel van scripts/lezingen.py week_kop_label. */
+  function weekKopLabel(year, mmdd) {
+    const civil = dateFromMmdd(year, mmdd);
+    const pascha = paschaAnkerVoorCivil(civil);
+    const offset = daysBetween(civil, pascha);
+    if (offset >= 1 && offset <= 6) return "Lichte Week";
+    if (offset > 0 && offset < 49) {
+      const week = Math.floor(offset / 7) + 1;
+      return `${week}e week van Pascha`;
+    }
+    const pentecost = addDays(pascha, 49);
+    if (civil > pentecost) {
+      const offP = daysBetween(civil, pentecost);
+      const idx = weekIndexNaPinksteren(offP);
+      if (idx) return `${idx.week}e week na Pinksteren`;
+    }
+    if (offset >= -48 && offset <= -9) {
+      const week = Math.floor((offset - -48) / 7) + 1;
+      return `${week}e week van de Grote Vasten`;
+    }
+    if (offset >= -6 && offset <= -2) return "Grote Week";
+    if (offset >= -69 && offset <= -64) return "Week na de tollenaar";
+    if (offset >= -62 && offset <= -57) return "Week van de verloren zoon";
+    if (offset >= -55 && offset <= -50) return "Boterweek";
+    return "";
+  }
+
   /** Spiegel van scripts/ics.py day_title (Python is normatief). */
   function icsDayTitle(dayEntries, shows, weekday, mmdd, year, style) {
     const kinds = new Set(shows || []);
     const visible = (dayEntries || []).filter(
       (e) => kinds.has(e.soort) && (e.soort === "heilige" || e.soort === "feest")
     );
-    const vasten = mixVastenniveau(dayEntries, weekday, mmdd);
+    let mixMmdd = mmdd;
+    if (style === "juliaans" && year && mmdd) {
+      mixMmdd = mmddFromDate(civilToLiturgical(year, mmdd));
+    }
+    const vasten = mixVastenniveau(dayEntries, weekday, mixMmdd);
     const isVrij = Boolean(vasten && vasten.niveau === "vrij");
     const showVasten =
       Boolean(vasten) &&
       (isVrij ? kinds.has("vastenvrij") : kinds.has("vasten"));
-    let kop = icsKopFeesten(visible);
-    let headline = kop.map(entryNaam).join(", ");
-    if (!headline && kinds.has("feest") && year && style && mmdd) {
+    const groot = kinds.has("feest") ? icsKopGrootfeesten(visible) : [];
+    const saints = kinds.has("heilige") ? icsKopHeiligen(visible) : [];
+    const rest = kinds.has("feest") ? icsKopOverigeFeesten(visible) : [];
+    let daglabel = "";
+    if (kinds.has("feest") && year && style && mmdd) {
       const lez = lezingenForDay(year, mmdd, style);
-      if (lez && lez.daglabel) headline = lez.daglabel;
+      if (lez && lez.daglabel) daglabel = lez.daglabel;
     }
-    if (!headline) {
-      kop = icsKopHeiligen(visible);
-      headline = kop.map(entryNaam).join(", ");
+    let headline = "";
+    if (groot.length) {
+      headline = groot.map(entryNaam).join(", ");
+    } else if (weekday === 1 && kinds.has("feest")) {
+      const week = year && mmdd ? weekKopLabel(year, mmdd) : "";
+      const extra = saints.length ? saints : rest;
+      const extraT = extra.map(entryNaam).join(", ");
+      if (week && extraT) headline = `${week} · ${extraT}`;
+      else if (week) headline = week;
+      else if (extraT) headline = extraT;
+      else headline = daglabel;
+    } else if (saints.length) {
+      headline = saints.map(entryNaam).join(", ");
+    } else if (rest.length) {
+      headline = rest.map(entryNaam).join(", ");
+    } else {
+      headline = daglabel;
     }
     if (!headline && !showVasten) return null;
     if (!showVasten) return headline || null;
@@ -3099,7 +3207,7 @@
         "<li class=\"muted\">Kies minstens één soort dag.</li>";
       return;
     }
-    const style = icsStyleToJs(stijl);
+    const yearStyle = icsJaarStyle(stijl);
     const start = startOfIsoWeek(new Date());
     const days = ["ma", "di", "wo", "do", "vr", "za", "zo"];
     const items = [];
@@ -3107,14 +3215,21 @@
       const d = addDays(start, i);
       const year = d.getFullYear();
       const mmdd = mmddFromDate(d);
-      const matched = entriesOnMmdd(calendarEntries, mmdd, style, year);
+      const matched = entriesForAgendaDay(mmdd, year, stijl);
       const weekday = isoWeekdayFromMmdd(mmdd, year);
-      const title = icsDayTitle(matched, shows, weekday, mmdd, year, style);
+      const title = icsDayTitle(
+        matched,
+        shows,
+        weekday,
+        mmdd,
+        year,
+        yearStyle
+      );
       const dag = `${days[i]} ${d.getDate()} ${MONTHS[d.getMonth() + 1]}`;
       const tekst = title
         ? escapeHtml(title)
         : "<span class=\"muted\">niets op deze dag</span>";
-      const href = daySurfaceHref(year, mmdd, style, { bindStyle: true });
+      const href = daySurfaceHref(year, mmdd, yearStyle, { bindStyle: true });
       items.push(
         `<li><a class="agenda-voorbeeld-link" href="${href}">` +
           `<span class="agenda-voorbeeld-dag">${escapeHtml(dag)}</span>` +
@@ -3122,6 +3237,28 @@
       );
     }
     list.innerHTML = items.join("");
+  }
+
+  function icsJaarStyle(stijl) {
+    return stijl === "nieuw" ? "gregoriaans" : "juliaans";
+  }
+
+  function entriesForAgendaDay(mmdd, year, icsStijl) {
+    const all = calendarEntries || [];
+    if (icsStijl === "oud-heiligen-nieuw") {
+      const saints = all.filter(
+        (e) =>
+          e.soort === "heilige" &&
+          entryMatchesMmdd(e, mmdd, year, "gregoriaans", all)
+      );
+      const rest = all.filter(
+        (e) =>
+          e.soort !== "heilige" &&
+          entryMatchesMmdd(e, mmdd, year, "juliaans", all)
+      );
+      return rest.concat(saints);
+    }
+    return entriesOnMmdd(all, mmdd, icsJaarStyle(icsStijl), year);
   }
 
   function webcalUrl(httpsUrl) {
@@ -3142,11 +3279,19 @@
       vasten: "vasten",
       vastenvrij: "vastenvrij",
     };
+    let key;
     if (order.every((k) => set.has(k)) && set.size === 4) {
-      return `alles-${stijl}.ics`;
+      key = "alles";
+    } else {
+      key = order.filter((k) => set.has(k)).map((k) => file[k]).join("-");
     }
-    const key = order.filter((k) => set.has(k)).map((k) => file[k]).join("-");
-    return key ? `${key}-${stijl}.ics` : null;
+    if (!key) return null;
+    if (stijl === "oud-heiligen-nieuw") {
+      if (!set.has("heilige")) return `${key}-oud.ics`;
+      if (set.size === 1) return "heiligen-nieuw.ics";
+      return `${key}-oud-heiligen-nieuw.ics`;
+    }
+    return `${key}-${stijl}.ics`;
   }
 
   function icsModus() {
@@ -3174,6 +3319,14 @@
       vastenvrij: "vastenvrij",
     };
     const wat = nlOpsomming(shows.map((s) => labels[s] || s));
+    if (stijl === "oud-heiligen-nieuw") {
+      const mixed =
+        "de oude kalender voor feesten en vasten, heiligen op de nieuwe datum";
+      if (modus === "downloaden") {
+        return `De knop downloadt ${wat} volgens ${mixed} als bestand.`;
+      }
+      return `De knop kopieert de link voor ${wat} volgens ${mixed}. Plak die in uw agenda-app; de stappen staan hieronder.`;
+    }
     const kal =
       stijl === "oud" ? "de oude kalender" : "de nieuwe kalender";
     if (modus === "downloaden") {
@@ -3225,9 +3378,11 @@
     const howtoAbo = document.getElementById("ics-howto-abonneren");
     const howtoDl = document.getElementById("ics-howto-downloaden");
     const webcal = document.getElementById("ics-webcal");
+    const mixedHint = document.getElementById("ics-stijl-hint-mixed");
     const klaar = Boolean(file);
 
     renderAgendaVoorbeeld(shows, stijl);
+    if (mixedHint) mixedHint.hidden = stijl !== "oud-heiligen-nieuw";
 
     if (samenvatting) {
       samenvatting.textContent = agendaSamenvatting(

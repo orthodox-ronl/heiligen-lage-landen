@@ -100,7 +100,7 @@ def _build(kinds: frozenset[str], stijl: str = "nieuw", years: list[int] | None 
 def test_albericus_in_grote_vasten_is_een_dagregel() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20260304"]
-    assert ev["summary"] == "2e woensdag van de Grote Vasten · streng"
+    assert ev["summary"] == "Albericus van Utrecht · streng"
     assert "Grote Vasten" in ev["description"]
     assert "Heilige: Albericus van Utrecht" in ev["description"]
     assert ev["description"].split("\n")[-1].startswith("Meer:")
@@ -119,7 +119,7 @@ def test_aankondiging_in_grote_vasten_heeft_vis() -> None:
 def test_willibrord_zonder_vastensuffix() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20261107"]
-    assert ev["summary"] == "23e zaterdag na Pinksteren"
+    assert ev["summary"] == "Willibrord"
     assert "Willibrord" in ev["description"]
     assert "Apostel:" in ev["description"]
     assert "Evangelie:" in ev["description"]
@@ -234,3 +234,45 @@ def test_day_title_leeg_zonder_subset() -> None:
         )
         is None
     )
+
+
+def test_maandag_toont_weeknaam() -> None:
+    events = parse_events(_build(ALLES))
+    ev = events["20260608"]
+    assert ev["summary"].startswith("2e week na Pinksteren")
+    assert "Medardus" in ev["summary"]
+
+
+def test_geestesmaandag_niet_weeknaam() -> None:
+    events = parse_events(_build(ALLES))
+    ev = events["20260601"]
+    assert ev["summary"].startswith("Maandag van de Heilige Geest")
+
+
+def test_oud_vijftien_juli_is_otger_niet_vladimir() -> None:
+    events = parse_events(_build(ALLES, stijl="oud"))
+    ev = events["20260728"]
+    assert "Otger" in ev["summary"]
+    assert "Vladimir" not in ev["summary"]
+
+
+def test_otger_plechelm_op_vijftien_juli() -> None:
+    events = parse_events(_build(ALLES))
+    ev = events["20260715"]
+    assert "Otger" in ev["summary"]
+    assert "Plechelm" in ev["summary"]
+
+
+def test_oud_heiligen_nieuw_willibrord_op_zeven_november() -> None:
+    from ics import STIJL_OUD_HEILIGEN_NIEUW
+
+    events = parse_events(_build(ALLES, stijl=STIJL_OUD_HEILIGEN_NIEUW))
+    assert "Willibrord" in events["20261107"]["summary"]
+    assert "20261120" not in events or "Willibrord" not in events.get(
+        "20261120", {}
+    ).get("summary", "")
+    kerst = julian_feast_to_civil_date(2025, "12-25")
+    assert kerst == date(2026, 1, 7)
+    assert "Kerst" in events[kerst.strftime("%Y%m%d")]["summary"]
+    ics = _build(ALLES, stijl=STIJL_OUD_HEILIGEN_NIEUW)
+    assert "heiligen nieuw" in _unfold(ics)

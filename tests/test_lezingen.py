@@ -222,7 +222,7 @@ def test_spec_body_for_uitleg_strips_examples() -> None:
 def test_liturgische_daglabel_na_pinksteren_en_triodion() -> None:
     from datetime import timedelta
 
-    from lezingen import liturgische_daglabel
+    from lezingen import liturgische_daglabel, week_kop_label
 
     pascha = orthodox_pascha(2026)
     pentecost = pascha + timedelta(days=49)
@@ -234,6 +234,16 @@ def test_liturgische_daglabel_na_pinksteren_en_triodion() -> None:
     assert liturgische_daglabel(
         verloren.year, mmdd_from_date(verloren), "nieuw"
     ) == "Zondag van de verloren zoon"
+    ma2 = pentecost + timedelta(days=8)
+    assert week_kop_label(ma2) == "2e week na Pinksteren"
+
+
+def test_menaion_override_niet_als_daglabel() -> None:
+    from lezingen import resolve_lezingen
+
+    r = resolve_lezingen(2026, "07-15", "nieuw")
+    assert r.override_id == "vladimir-gelijkaan-apostelen"
+    assert "Vladimir" not in (r.daglabel or "")
 
 
 def test_weekreeks_galaten_zaterdag_26_is_schone_ref() -> None:

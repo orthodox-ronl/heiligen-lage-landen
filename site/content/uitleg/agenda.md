@@ -17,7 +17,9 @@ Op die pagina doet u drie keuzes:
 
 1. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
    vastenvrij — één of meer.
-2. **Nieuwe of oude kalender**, zoals uw parochie viert. Zie
+2. **Nieuwe of oude kalender**, zoals uw parochie viert — of **oud, heiligen
+   nieuw**: vaste feesten op de oude kalender, heiligen van de Lage Landen
+   op de burgerlijke feestdatum. Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 3. **Abonneren** of **downloaden**.
 
@@ -40,10 +42,14 @@ alleen Vasten aan, abonneer, en herhaal voor Feesten of Heiligen.
 
 ## Wat u in de agenda ziet
 
-Elke dag is **één** afspraak. De titel is het liturgische nieuws van die
-dag, met het vasten als kort label als u vasten hebt aangevinkt (*streng*,
-*wijn en olie*, *vis*) of *vastenvrij* als u vastenvrij hebt aangevinkt.
-Tik op de dag voor vastenregel,
+Elke dag is **één** afspraak. De titel (kopregel in week- of maandweergave)
+kiest in deze volgorde: een **grootfeest** (de twaalf, Pascha, Grote Week);
+anders een **heilige van de Lage Landen**; anders de rest (ander feest of
+de liturgische weeknaam). Op **maandag** staat de liturgische week vooraan
+(`2e week na Pinksteren`), ook als die dag een heilige heeft — behalve bij
+een grootfeest. Vasten is een kort label als u vasten hebt aangevinkt
+(*streng*, *wijn en olie*, *vis*) of *vastenvrij* als u vastenvrij hebt
+aangevinkt. Tik op de dag voor vastenregel,
 andere namen, Apostel en Evangelie (zonder website-links) en heiligen.
 Onderaan staat *Meer:* met de datumpagina.
 
@@ -52,6 +58,10 @@ Onderaan staat *Meer:* met de datumpagina.
 - Bij **oud** vallen ze op de burgerlijke dag waarop de oude kalender viert
   (Kerst op 7 januari). De oude feestdatum staat in de tekst van de
   afspraak, niet in de titel.
+- Bij **oud, heiligen nieuw** vallen vaste feesten zoals bij oud; heiligen
+  van de Lage Landen vallen op de burgerlijke feestdatum (Willibrord op
+  7 november, niet op 20 november). Lezingen en vasten volgen de oude
+  kalender.
 - Woensdag- en vrijdagvasten volgen de gewone week: het is de woensdag of
   vrijdag van de burgerlijke week, in beide standen.
 

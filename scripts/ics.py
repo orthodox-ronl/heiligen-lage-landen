@@ -65,6 +65,9 @@ def calendar_title_from_kinds(kinds: frozenset[str]) -> str:
     return f"{', '.join(bits[:-1])} en {bits[-1]}"
 
 
+STIJL_OUD_HEILIGEN_NIEUW = "oud-heiligen-nieuw"
+
+
 def calendar_name(key: str, stijl: str) -> str:
     if key == "alles":
         title = "Orthodox · Lage Landen"
@@ -73,7 +76,22 @@ def calendar_name(key: str, stijl: str) -> str:
     else:
         title = key.replace("-", " en ")
         title = title[:1].upper() + title[1:]
+    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
+        return f"{title} (oud, heiligen nieuw)"
     return f"{title} ({stijl})"
+
+
+def jaar_stijl(stijl: str) -> str:
+    """Kalenderstijl van feesten, vasten en lezingen."""
+    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
+        return "oud"
+    return stijl
+
+
+def heiligen_stijl_van(stijl: str) -> str:
+    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
+        return "nieuw"
+    return stijl
 
 
 ICS_COMBOS = tuple(
@@ -89,9 +107,10 @@ def datum_pagina_url(civil: date, *, stijl: str | None = None) -> str:
     """URL naar de datumpagina; bij oud-feeds stijl=juliaans meegeven."""
     dag = mmdd_from_date(civil)
     url = f"{SITE_PUBLIC_URL}/datum/?datum={civil.year}-{quote(dag)}"
-    if stijl == "oud":
+    year = jaar_stijl(stijl) if stijl else None
+    if year == "oud":
         url += "&stijl=juliaans"
-    elif stijl == "nieuw":
+    elif year == "nieuw":
         url += "&stijl=gregoriaans"
     return url
 
@@ -227,8 +246,12 @@ def occurrences_by_date(
     entries: list[dict[str, Any]],
     stijl: str,
     years: Iterable[int],
+    *,
+    heiligen_stijl: str | None = None,
 ) -> dict[date, list[dict[str, Any]]]:
     years = list(years)
+    year_stijl = jaar_stijl(stijl)
+    saint_stijl = heiligen_stijl or heiligen_stijl_van(stijl)
     by_date: dict[date, list[dict[str, Any]]] = defaultdict(list)
     suppressed: set[date] = set()
     weekly: list[dict[str, Any]] = []
@@ -237,7 +260,8 @@ def occurrences_by_date(
             weekly.append(entry)
             continue
         seen: set[date] = set()
-        for civil in iter_occurrences(entry, stijl, years):
+        entry_stijl = saint_stijl if entry.get("soort") == "heilige" else year_stijl
+        for civil in iter_occurrences(entry, entry_stijl, years):
             if civil in seen:
                 continue
             seen.add(civil)
@@ -246,7 +270,7 @@ def occurrences_by_date(
                 suppressed.add(civil)
     for entry in weekly:
         seen: set[date] = set()
-        for civil in iter_occurrences(entry, stijl, years):
+        for civil in iter_occurrences(entry, year_stijl, years):
             if civil in seen or civil in suppressed:
                 continue
             seen.add(civil)
@@ -262,6 +286,38 @@ def is_day_type_feest(entry: dict[str, Any]) -> bool:
     return True
 
 
+# Twaalf grootfeesten, Pascha, Grote Week, Lazarus-zaterdag, Geestesmaandag.
+GROOTFEEST_IDS = frozenset(
+    {
+        "geboorte-moeder-gods",
+        "kruisverheffing",
+        "tempelgang-moeder-gods",
+        "kerst",
+        "theofanie",
+        "ontmoeting-in-de-tempel",
+        "aankondiging",
+        "palmzondag",
+        "pascha",
+        "hemelvaart",
+        "pinksteren",
+        "transfiguratie",
+        "ontslapen-moeder-gods",
+        "lazarus-zaterdag",
+        "grote-maandag",
+        "grote-dinsdag",
+        "grote-woensdag",
+        "grote-donderdag",
+        "grote-vrijdag",
+        "grote-zaterdag",
+        "geestesmaandag",
+    }
+)
+
+
+def is_grootfeest(entry: dict[str, Any]) -> bool:
+    return is_day_type_feest(entry) and str(entry.get("id") or "") in GROOTFEEST_IDS
+
+
 def _feast_weight(entry: dict[str, Any]) -> tuple[int, str]:
     eid = str(entry.get("id") or "")
     if eid == "pascha":
@@ -275,9 +331,18 @@ def _pick_one_feast(feesten: list[dict[str, Any]]) -> dict[str, Any]:
     return min(feesten, key=_feast_weight)
 
 
-def kop_feesten(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Dagtype-feesten voor de SUMMARY (geen periodes, geen vasten)."""
-    feesten = [e for e in day_entries if is_day_type_feest(e)]
+def kop_grootfeesten(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    feesten = [e for e in day_entries if is_grootfeest(e)]
+    if not feesten:
+        return []
+    return [_pick_one_feast(feesten)]
+
+
+def kop_overige_feesten(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Dagtype-feesten die geen grootfeest zijn (synaxis, Triodion, …)."""
+    feesten = [
+        e for e in day_entries if is_day_type_feest(e) and not is_grootfeest(e)
+    ]
     named = [e for e in feesten if not is_rand_feest(e)]
     rand = [e for e in feesten if is_rand_feest(e)]
     if named:
@@ -289,14 +354,23 @@ def kop_feesten(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return []
 
 
+def kop_feesten(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Dagtype-feesten voor de SUMMARY (geen periodes, geen vasten)."""
+    return kop_grootfeesten(day_entries) or kop_overige_feesten(day_entries)
+
+
 def kop_heiligen(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     heiligen = [e for e in day_entries if e.get("soort") == "heilige"]
     return sorted(heiligen, key=lambda e: _naam(e).casefold())
 
 
 def kop_entries(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Terug compat: feest wint, anders heiligen (zonder daglabel)."""
-    return kop_feesten(day_entries) or kop_heiligen(day_entries)
+    """Kop-entries: grootfeest, anders heiligen, anders overige feesten."""
+    return (
+        kop_grootfeesten(day_entries)
+        or kop_heiligen(day_entries)
+        or kop_overige_feesten(day_entries)
+    )
 
 
 def kop_titel(items: list[dict[str, Any]]) -> str:
@@ -383,28 +457,57 @@ def day_title(
     indicatie: VastenIndicatie | None | object = ...,
     lezingen: dict[str, Any] | None = None,
 ) -> str | None:
-    """SUMMARY voor één dag, of None als de feed die dag overslaat."""
+    """SUMMARY voor één dag, of None als de feed die dag overslaat.
+
+    Prioriteit: grootfeest, heilige van de Lage Landen, overige feesten/daglabel.
+    Op maandag (geen grootfeest) staat de liturgische week vooraan.
+    """
+    from lezingen import week_kop_label
+
     visible = [
         e
         for e in day_entries
         if e.get("soort") in kinds and e.get("soort") in {"heilige", "feest"}
     ]
+    year_s = jaar_stijl(stijl)
     if indicatie is ...:
         indicatie = mix_vastenniveau(
             day_entries,
             civil.isoweekday(),
-            _mix_mmdd(civil, stijl),
+            _mix_mmdd(civil, year_s),
         )
     show_vasten = _show_fast_info(
         kinds, indicatie if isinstance(indicatie, VastenIndicatie) else None
     )
-    kop = kop_feesten(visible)
-    headline = kop_titel(kop)
-    if not headline and "feest" in kinds and lezingen and lezingen.get("daglabel"):
-        headline = str(lezingen["daglabel"])
-    if not headline:
-        kop = kop_heiligen(visible)
-        headline = kop_titel(kop)
+    groot = kop_grootfeesten(visible) if "feest" in kinds else []
+    saints = kop_heiligen(visible) if "heilige" in kinds else []
+    rest = kop_overige_feesten(visible) if "feest" in kinds else []
+    daglabel = ""
+    if "feest" in kinds and lezingen and lezingen.get("daglabel"):
+        daglabel = str(lezingen["daglabel"])
+
+    headline = ""
+    if groot:
+        headline = kop_titel(groot)
+    elif civil.isoweekday() == 1 and "feest" in kinds:
+        week = week_kop_label(civil)
+        extra = saints or rest
+        extra_t = kop_titel(extra)
+        if week and extra_t:
+            headline = f"{week} · {extra_t}"
+        elif week:
+            headline = week
+        elif extra_t:
+            headline = extra_t
+        else:
+            headline = daglabel
+    elif saints:
+        headline = kop_titel(saints)
+    elif rest:
+        headline = kop_titel(rest)
+    else:
+        headline = daglabel
+
     if not headline and not show_vasten:
         return None
     if not show_vasten:
@@ -504,6 +607,7 @@ def build_ics(
 
         lezingen_payload = build_lezingen_dagen_payload(year_list)
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    year_s = jaar_stijl(stijl)
     grouped = occurrences_by_date(context, stijl, year_list)
     lines = [
         "BEGIN:VCALENDAR",
@@ -517,23 +621,17 @@ def build_ics(
     ]
     for civil in sorted(grouped):
         day_entries = grouped[civil]
-        mix_mmdd = _mix_mmdd(civil, stijl)
+        mix_mmdd = _mix_mmdd(civil, year_s)
         indicatie = mix_vastenniveau(
             day_entries, civil.isoweekday(), mix_mmdd
         )
-        lez = _lezingen_for_civil(lezingen_payload, civil, stijl)
+        lez = _lezingen_for_civil(lezingen_payload, civil, year_s)
         visible = [
             e
             for e in day_entries
             if e.get("soort") in kinds and e.get("soort") in {"heilige", "feest"}
         ]
-        feest_kop = kop_feesten(visible)
-        if feest_kop:
-            kop = feest_kop
-        elif "feest" in kinds and lez and lez.get("daglabel"):
-            kop = []
-        else:
-            kop = kop_heiligen(visible)
+        kop = kop_entries(visible)
         summary = day_title(
             day_entries,
             kinds=kinds,
@@ -548,7 +646,7 @@ def build_ics(
             day_entries,
             kinds=kinds,
             civil=civil,
-            stijl=stijl,
+            stijl=year_s,
             indicatie=indicatie,
             kop=kop,
             lezingen=lez,
@@ -590,8 +688,11 @@ def write_ics(
     for kinds in ICS_COMBOS:
         key = subset_key(kinds)
         assert key
-        for stijl in ("nieuw", "oud"):
-            name = f"{calendar_title_from_kinds(kinds)} ({stijl})"
+        stijlen = ["nieuw", "oud"]
+        if "heilige" in kinds and kinds - {"heilige"}:
+            stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
+        for stijl in stijlen:
+            name = calendar_name(key, stijl)
             filename = f"{key}-{stijl}.ics"
             write_text(
                 STATIC_ICS / filename,

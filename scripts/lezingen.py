@@ -114,6 +114,21 @@ OVERRIDE_NAMEN: dict[str, str] = {
     "silvester": "Silvester van Rome",
 }
 
+# Menaion-polyeleos zonder feest-YAML: wel lezing, geen dagtype/kopregel.
+MENAION_KOP_IDS = frozenset(
+    {
+        "elia-profeet",
+        "nicolaas-wonderdoener",
+        "george-grootmartelaar",
+        "demetrius-grootmartelaar",
+        "synaxis-aartsengel-michael",
+        "drie-hiërarchen",
+        "serafim-van-sarov",
+        "vladimir-gelijkaan-apostelen",
+        "silvester",
+    }
+)
+
 
 RANG_PATH = DATA_DIR / "rang.yaml"
 _RANG_CFG: dict[str, Any] | None = None
@@ -493,6 +508,37 @@ def _ordinal_nl(n: int) -> str:
     return f"{n}e"
 
 
+def week_kop_label(civil: date) -> str | None:
+    """Korte weeknaam voor agenda-kop (maandag), of None."""
+    pascha = _pascha_anker_voor_civil(civil)
+    offset = (civil - pascha).days
+    if 1 <= offset <= 6:
+        return "Lichte Week"
+    if 0 < offset < 49:
+        week = offset // 7 + 1
+        return f"{_ordinal_nl(week)} week van Pascha"
+    pentecost = pascha + timedelta(days=49)
+    if civil > pentecost:
+        off_p = (civil - pentecost).days
+        idx = _week_index_na_pinksteren(off_p)
+        if idx:
+            week, _wd = idx
+            return f"{_ordinal_nl(week)} week na Pinksteren"
+    if -48 <= offset <= -9:
+        rel = offset - (-48)
+        week = rel // 7 + 1
+        return f"{_ordinal_nl(week)} week van de Grote Vasten"
+    if -6 <= offset <= -2:
+        return "Grote Week"
+    if -69 <= offset <= -64:
+        return "Week na de tollenaar"
+    if -62 <= offset <= -57:
+        return "Week van de verloren zoon"
+    if -55 <= offset <= -50:
+        return "Boterweek"
+    return None
+
+
 def liturgische_daglabel(
     jaar: int,
     mmdd: str,
@@ -501,7 +547,11 @@ def liturgische_daglabel(
     override_id: str | None = None,
 ) -> str:
     """Nederlandse aanduiding van de liturgische dag."""
-    if override_id and override_id in OVERRIDE_NAMEN:
+    if (
+        override_id
+        and override_id in OVERRIDE_NAMEN
+        and override_id not in MENAION_KOP_IDS
+    ):
         return OVERRIDE_NAMEN[override_id]
 
     civil = _civil_date(jaar, mmdd, stijl)
@@ -511,7 +561,7 @@ def liturgische_daglabel(
     weekday = _iso_weekday(civil)
     wd_name = WEEKDAG_NL[weekday]
 
-    if override_id:
+    if override_id and override_id not in MENAION_KOP_IDS:
         return OVERRIDE_NAMEN.get(override_id, override_id)
 
     # Named Sundays by offset (fallback when no override)
