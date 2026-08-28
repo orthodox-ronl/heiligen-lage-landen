@@ -1688,9 +1688,10 @@
     );
   }
 
-  function weekreeksZin(daglabel) {
+  function weekreeksZin(daglabel, overrideNaam) {
     const label = String(daglabel || "").trim();
-    if (label) {
+    const naam = String(overrideNaam || "").trim();
+    if (label && label !== naam) {
       return `de doorlopende lezing van de weekreeks (${escapeHtml(label)})`;
     }
     return "de doorlopende lezing van de weekreeks";
@@ -1741,7 +1742,8 @@
     const laag = (trigger && trigger.dataset.lezingLaag) || "";
     const modus = (trigger && trigger.dataset.lezingModus) || "";
     const week = weekreeksZin(
-      trigger && trigger.dataset.lezingDaglabel
+      trigger && trigger.dataset.lezingDaglabel,
+      naam
     );
     const noot = menaionNootHtml(laag);
     let keuze;
