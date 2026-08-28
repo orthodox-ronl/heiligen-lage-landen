@@ -62,7 +62,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "31e dinsdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -726,7 +726,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "35e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -2337,7 +2337,7 @@
           "R2"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "6e dinsdag van de Grote Vasten",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -2841,8 +2841,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -4074,7 +4074,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "4e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -4196,7 +4196,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "4e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -6541,7 +6541,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "18e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -6857,7 +6857,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "20e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -7535,7 +7535,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "24e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -8300,7 +8300,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "28e donderdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -9018,7 +9018,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "32e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -10534,7 +10534,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "Woensdag van de Lichte Week",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -10780,8 +10780,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -12345,7 +12345,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "6e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -12474,7 +12474,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "6e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -14831,7 +14831,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "20e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -15147,7 +15147,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "22e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -15825,7 +15825,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "26e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -16583,7 +16583,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "30e vrijdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -17294,7 +17294,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "34e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -18812,7 +18812,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "2e donderdag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -18890,8 +18890,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -20623,7 +20623,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "7e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -20745,7 +20745,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "8e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -23097,7 +23097,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "22e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -23420,7 +23420,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "23e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -24105,7 +24105,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "27e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -24847,7 +24847,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "31e zaterdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -25549,7 +25549,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "35e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -27111,7 +27111,7 @@
           "R2"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "6e vrijdag van de Grote Vasten",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -27576,8 +27576,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -28889,7 +28889,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "4e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -29011,7 +29011,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "5e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -31365,7 +31365,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "19e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -31681,7 +31681,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "21e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -32359,7 +32359,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "25e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -33107,7 +33107,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "28e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -33795,7 +33795,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "32e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -35478,8 +35478,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -37127,7 +37127,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "6e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -37249,7 +37249,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "7e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -39569,7 +39569,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "21e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -39872,7 +39872,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "23e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -40522,7 +40522,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "27e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -41270,7 +41270,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "31e dinsdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -41932,7 +41932,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Dinsdag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -43417,8 +43417,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -43440,7 +43440,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "3e maandag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -45258,7 +45258,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "7e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -45380,7 +45380,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "8e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -47723,7 +47723,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "22e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -48039,7 +48039,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "24e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -48717,7 +48717,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "28e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -49451,7 +49451,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "32e woensdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -50157,7 +50157,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "36e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -51699,7 +51699,7 @@
           "R2"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "Heilige grote dinsdag",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -52096,8 +52096,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -53493,7 +53493,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "5e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -53615,7 +53615,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "5e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -55960,7 +55960,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "19e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -56276,7 +56276,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "21e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -56954,7 +56954,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "25e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -57719,7 +57719,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "29e donderdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -58430,7 +58430,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "33e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -59946,7 +59946,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "2e woensdag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -60045,8 +60045,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -61757,7 +61757,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "7e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -61886,7 +61886,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "7e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -64243,7 +64243,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "21e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -64559,7 +64559,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "23e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -65237,7 +65237,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "27e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -65983,7 +65983,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "33e maandag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -66660,7 +66660,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "37e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -68473,8 +68473,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -70003,7 +70003,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "5e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -70125,7 +70125,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "6e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -72496,7 +72496,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "20e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -72812,7 +72812,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "22e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -73490,7 +73490,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "26e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -74240,7 +74240,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "30e woensdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -74930,7 +74930,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Woensdag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -76402,8 +76402,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -76446,7 +76446,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "3e dinsdag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -78257,7 +78257,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "8e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -78379,7 +78379,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "8e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -80738,7 +80738,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "22e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -81054,7 +81054,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "24e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -81732,7 +81732,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "28e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -82464,7 +82464,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "32e donderdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -83177,7 +83177,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Donderdag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -84465,8 +84465,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -86471,7 +86471,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "9e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -86600,7 +86600,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "9e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -88985,7 +88985,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "23e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -89301,7 +89301,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "25e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -89979,7 +89979,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "29e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -90695,7 +90695,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "33e vrijdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -91427,7 +91427,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "37e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -92952,7 +92952,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "Donderdag van de Lichte Week",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -93177,8 +93177,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -94763,7 +94763,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "6e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -94885,7 +94885,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "7e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -97265,7 +97265,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "21e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -97588,7 +97588,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "22e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -98273,7 +98273,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "26e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -99020,7 +99020,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "30e zaterdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -99710,7 +99710,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Zaterdag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -101111,8 +101111,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -101239,7 +101239,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "3e zaterdag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -103050,7 +103050,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "8e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -103172,7 +103172,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "9e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -105505,7 +105505,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "23e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -105808,7 +105808,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "25e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -106458,7 +106458,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "29e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -107176,7 +107176,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "33e maandag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -107838,7 +107838,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Maandag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -109049,8 +109049,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -111139,7 +111139,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "9e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -111261,7 +111261,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "10e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -113647,7 +113647,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "24e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -113963,7 +113963,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "26e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -114637,7 +114637,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "30e woensdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -115367,7 +115367,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "34e dinsdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -116051,7 +116051,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "38e dinsdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -117564,7 +117564,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "2e maandag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -117705,8 +117705,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -119382,7 +119382,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "6e zondag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -119504,7 +119504,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "7e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -121875,7 +121875,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "21e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -122191,7 +122191,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "23e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -122869,7 +122869,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "27e donderdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -123612,7 +123612,7 @@
           "R5"
         ],
         "override_id": "silvester",
-        "daglabel": "Silvester van Rome",
+        "daglabel": "31e woensdag na Pinksteren",
         "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -124302,7 +124302,7 @@
           "R5"
         ],
         "override_id": "drie-hiërarchen",
-        "daglabel": "Drie Hiërarchen",
+        "daglabel": "Woensdag",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -125628,8 +125628,8 @@
         "regels": [
           "R2"
         ],
-        "override_id": "zondag-mirredraagsters",
-        "daglabel": "Zondag van de mirredraagsters",
+        "override_id": "zondag-myrondraagsters",
+        "daglabel": "Zondag van de myrondraagsters",
         "toelichting": "R2",
         "status": "gevonden",
         "rang": "groot",
@@ -125819,7 +125819,7 @@
           "R5"
         ],
         "override_id": "george-grootmartelaar",
-        "daglabel": "George de Grootmartelaar",
+        "daglabel": "4e dinsdag van Pascha",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -127630,7 +127630,7 @@
           "R5"
         ],
         "override_id": "vladimir-gelijkaan-apostelen",
-        "daglabel": "Vladimir, gelijkaan de apostelen",
+        "daglabel": "9e maandag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -127752,7 +127752,7 @@
           "R5"
         ],
         "override_id": "elia-profeet",
-        "daglabel": "Profeet Elia",
+        "daglabel": "9e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -130111,7 +130111,7 @@
           "R5"
         ],
         "override_id": "demetrius-grootmartelaar",
-        "daglabel": "Demetrius de Grootmartelaar",
+        "daglabel": "23e zaterdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -130427,7 +130427,7 @@
           "R5"
         ],
         "override_id": "synaxis-aartsengel-michael",
-        "daglabel": "Synaxis van de aartsengel Michaël",
+        "daglabel": "25e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
@@ -131105,7 +131105,7 @@
           "R5"
         ],
         "override_id": "nicolaas-wonderdoener",
-        "daglabel": "Nicolaas de Wonderdoener",
+        "daglabel": "29e vrijdag na Pinksteren",
         "toelichting": "R5 vervangen",
         "status": "gevonden",
         "rang": "polyeleos",
