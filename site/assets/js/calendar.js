@@ -45,6 +45,29 @@
     "Zondag",
   ];
   const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  const GROOTFEEST_IDS = new Set([
+    "geboorte-moeder-gods",
+    "kruisverheffing",
+    "tempelgang-moeder-gods",
+    "kerst",
+    "theofanie",
+    "ontmoeting-in-de-tempel",
+    "aankondiging",
+    "palmzondag",
+    "pascha",
+    "hemelvaart",
+    "pinksteren",
+    "transfiguratie",
+    "ontslapen-moeder-gods",
+    "lazarus-zaterdag",
+    "grote-maandag",
+    "grote-dinsdag",
+    "grote-woensdag",
+    "grote-donderdag",
+    "grote-vrijdag",
+    "grote-zaterdag",
+    "geestesmaandag",
+  ]);
 
   function siteBase() {
     const fromBody = document.body && document.body.getAttribute("data-base");
@@ -1604,6 +1627,10 @@
     return true;
   }
 
+  function isGrootfeest(entry) {
+    return isDayTypeFeast(entry) && GROOTFEEST_IDS.has((entry && entry.id) || "");
+  }
+
   function entryHref(entry) {
     return assetUrl((entry.url || "").replace(/^\//, ""));
   }
@@ -2987,30 +3014,6 @@
   }
 
   /* ---- Agenda ICS ---- */
-  const GROOTFEEST_IDS = new Set([
-    "geboorte-moeder-gods",
-    "kruisverheffing",
-    "tempelgang-moeder-gods",
-    "kerst",
-    "theofanie",
-    "ontmoeting-in-de-tempel",
-    "aankondiging",
-    "palmzondag",
-    "pascha",
-    "hemelvaart",
-    "pinksteren",
-    "transfiguratie",
-    "ontslapen-moeder-gods",
-    "lazarus-zaterdag",
-    "grote-maandag",
-    "grote-dinsdag",
-    "grote-woensdag",
-    "grote-donderdag",
-    "grote-vrijdag",
-    "grote-zaterdag",
-    "geestesmaandag",
-  ]);
-
   function isRandFeest(entry) {
     const id = (entry && entry.id) || "";
     return (
@@ -3043,10 +3046,6 @@
       if (wa !== wb) return wa - wb;
       return na.localeCompare(nb, "nl");
     })[0];
-  }
-
-  function isGrootfeest(entry) {
-    return isDayTypeFeest(entry) && GROOTFEEST_IDS.has((entry && entry.id) || "");
   }
 
   function icsKopGrootfeesten(dayEntries) {
@@ -3202,6 +3201,7 @@
   function renderAgendaVoorbeeld(shows, stijl) {
     const list = document.getElementById("ics-voorbeeld-week");
     if (!list) return;
+    try {
     if (!shows.length) {
       list.innerHTML =
         "<li class=\"muted\">Kies minstens één soort dag.</li>";
@@ -3237,6 +3237,11 @@
       );
     }
     list.innerHTML = items.join("");
+    } catch (err) {
+      list.innerHTML =
+        `<li class="muted">Kon het voorbeeld niet tekenen. ` +
+        `${escapeHtml(String(err && err.message ? err.message : err))}</li>`;
+    }
   }
 
   function icsJaarStyle(stijl) {
