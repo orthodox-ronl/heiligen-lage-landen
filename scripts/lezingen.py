@@ -189,11 +189,20 @@ class LezingenResultaat:
     rijadovoe: dict[str, Any] | None = None  # onderdrukte of meegenomen basis
 
     def as_dict(self) -> dict[str, Any]:
+        oid = self.override_id
+        if oid and oid in MENAION_KOP_IDS:
+            override_laag = "menaion"
+        elif oid:
+            override_laag = "feest"
+        else:
+            override_laag = None
         out: dict[str, Any] = {
             "apostel": [a.as_dict() for a in self.apostel],
             "evangelie": [e.as_dict() for e in self.evangelie],
             "regels": list(self.regels),
-            "override_id": self.override_id,
+            "override_id": oid,
+            "override_naam": OVERRIDE_NAMEN.get(oid) if oid else None,
+            "override_laag": override_laag,
             "daglabel": self.daglabel,
             "toelichting": self.toelichting,
             "status": self.status,

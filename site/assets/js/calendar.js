@@ -1259,7 +1259,9 @@
         `<p>Alleen heiligen die in de Lage Landen hebben gewerkt, of na het ` +
         `schisma de Orthodoxie hier hebben opgebouwd. Niet iedere heilige ` +
         `van de Kerk staat in deze kalender. Patroon van een parochie is ` +
-        `daarvoor niet genoeg.</p>`;
+        `daarvoor niet genoeg.</p>` +
+        `<p>Feesten van het kerkelijk jaar en lezingen van de algemene ` +
+        `kalender staan daarboven, niet in deze lijst.</p>`;
       if (meer) {
         meer.hidden = false;
         meer.innerHTML = achtergrondLink(
@@ -1267,6 +1269,14 @@
           "Meer over wie erin staat"
         );
       }
+      return;
+    }
+    if (kind === "dagtype") {
+      fillDagtypePopover(trigger, title, body, meer);
+      return;
+    }
+    if (kind === "lezing") {
+      fillLezingPopover(trigger, title, body, meer);
       return;
     }
     if (kind === "site") {
@@ -1654,6 +1664,110 @@
     );
   }
 
+  function lezingKeuzeAttrs(lez) {
+    if (!lez) return "";
+    const naam = String(lez.override_naam || "").trim();
+    const laag = String(lez.override_laag || "").trim();
+    const modus = String(lez.modus || "").trim();
+    const daglabel = String(lez.daglabel || "").trim();
+    return (
+      ` data-lezing-naam="${escapeHtml(naam)}"` +
+      ` data-lezing-laag="${escapeHtml(laag)}"` +
+      ` data-lezing-modus="${escapeHtml(modus)}"` +
+      ` data-lezing-daglabel="${escapeHtml(daglabel)}"`
+    );
+  }
+
+  function lezingLabelHtml(soort, lez) {
+    const titel = soort === "evangelie" ? "Evangelie" : "Apostel";
+    return (
+      `<strong class="info-term" tabindex="0" data-info-tip="lezing" ` +
+      `data-lezing-soort="${soort}" title="Uitleg ${titel}"` +
+      lezingKeuzeAttrs(lez) +
+      `>${titel}</strong>`
+    );
+  }
+
+  function weekreeksZin(daglabel) {
+    const label = String(daglabel || "").trim();
+    if (label) {
+      return `de doorlopende lezing van de weekreeks (${escapeHtml(label)})`;
+    }
+    return "de doorlopende lezing van de weekreeks";
+  }
+
+  function menaionNootHtml(laag) {
+    if (laag !== "menaion") return "";
+    return (
+      ` Dat is geen heilige van de Lage Landen; die staan apart onderaan ` +
+      `deze pagina.`
+    );
+  }
+
+  function fillDagtypePopover(trigger, title, body, meer) {
+    title.textContent = "Liturgische dag";
+    const naam = String((trigger && trigger.dataset.lezingNaam) || "").trim();
+    const laag = (trigger && trigger.dataset.lezingLaag) || "";
+    let extra = "";
+    if (naam && laag === "menaion") {
+      extra =
+        `<p>Er is vandaag wél een lezing van ${escapeHtml(naam)} van de ` +
+        `algemene kerkkalender. Die naam staat hier niet: het is geen ` +
+        `feest uit onze feestenlijst en geen heilige van de Lage Landen. ` +
+        `Wijs op Apostel of Evangelie voor die keuze.</p>`;
+    }
+    body.innerHTML =
+      `<p>Dit is de naam van de dag in het kerkelijk jaar: de week na ` +
+      `Pascha of Pinksteren, of een zondag van het Triodion. Heiligen van ` +
+      `de Lage Landen staan apart onderaan.</p>` +
+      extra;
+    if (meer) {
+      meer.hidden = false;
+      meer.innerHTML = achtergrondLink("datumpagina", "Meer over de datumpagina");
+    }
+  }
+
+  function fillLezingPopover(trigger, title, body, meer) {
+    const soort =
+      trigger && trigger.dataset.lezingSoort === "evangelie"
+        ? "evangelie"
+        : "apostel";
+    title.textContent = soort === "evangelie" ? "Evangelie" : "Apostel";
+    const wat =
+      soort === "evangelie"
+        ? `<p>Het Evangelie is de lezing uit Matteüs, Markus, Lukas of Johannes bij de liturgie.</p>`
+        : `<p>De Apostel is de lezing uit Handelingen of de brieven bij de liturgie.</p>`;
+    const naam = String((trigger && trigger.dataset.lezingNaam) || "").trim();
+    const laag = (trigger && trigger.dataset.lezingLaag) || "";
+    const modus = (trigger && trigger.dataset.lezingModus) || "";
+    const week = weekreeksZin(
+      trigger && trigger.dataset.lezingDaglabel
+    );
+    const noot = menaionNootHtml(laag);
+    let keuze;
+    if (naam && modus === "vervangen") {
+      keuze =
+        `<p>Vandaag klinkt de lezing van ${escapeHtml(naam)} in plaats van ` +
+        `${week}.${noot}</p>`;
+    } else if (naam && modus === "toevoegen") {
+      keuze =
+        `<p>Vandaag klinken zowel ${week} als de lezing van ` +
+        `${escapeHtml(naam)}.${noot}</p>`;
+    } else if (naam && modus === "negeren") {
+      keuze = `<p>Vandaag blijft ${week} staan.</p>`;
+    } else {
+      keuze = `<p>Vandaag is dat ${week}.</p>`;
+    }
+    body.innerHTML = wat + keuze;
+    if (meer) {
+      meer.hidden = false;
+      meer.innerHTML = achtergrondLink(
+        "lezingen",
+        "Hoe we de lezing kiezen"
+      );
+    }
+  }
+
   function renderDagtypeHtml(matched, lez) {
     const feasts = (matched || [])
       .filter(isDayTypeFeast)
@@ -1673,7 +1787,11 @@
         )
         .join(" · ");
     } else if (lez && lez.daglabel) {
-      inner = escapeHtml(lez.daglabel);
+      inner =
+        `<span class="info-term" tabindex="0" data-info-tip="dagtype" ` +
+        `title="Wat deze naam betekent"` +
+        lezingKeuzeAttrs(lez) +
+        `>${escapeHtml(lez.daglabel)}</span>`;
     } else {
       return "";
     }
@@ -1704,9 +1822,11 @@
     return (
       `<div class="day-lezingen" id="day-lezingen">` +
       `<ul>` +
-      (apostel ? `<li><strong>Apostel:</strong> ${apostel}</li>` : "") +
+      (apostel
+        ? `<li>${lezingLabelHtml("apostel", lez)}: ${apostel}</li>`
+        : "") +
       (evangelie
-        ? `<li><strong>Evangelie:</strong> ${evangelie}</li>`
+        ? `<li>${lezingLabelHtml("evangelie", lez)}: ${evangelie}</li>`
         : "") +
       `</ul>` +
       bijbelVertalingSelectHtml() +
@@ -1746,7 +1866,9 @@
       saints.length === 1 ? "Heilige van de dag" : "Heiligen van de dag";
     return (
       `<div class="today-heiligen-blok">` +
-      `<h2 class="today-heiligen-title">${titel}</h2>` +
+      `<h2 class="today-heiligen-title">` +
+      `<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium" ` +
+      `title="Wie hierin staan">${titel}</span></h2>` +
       `<ul class="today-heiligen">${items}</ul>` +
       `</div>`
     );

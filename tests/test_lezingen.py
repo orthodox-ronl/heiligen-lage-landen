@@ -244,6 +244,19 @@ def test_menaion_override_niet_als_daglabel() -> None:
     r = resolve_lezingen(2026, "07-15", "nieuw")
     assert r.override_id == "vladimir-gelijkaan-apostelen"
     assert "Vladimir" not in (r.daglabel or "")
+    d = r.as_dict()
+    assert d["override_laag"] == "menaion"
+    assert d["override_naam"] == "Vladimir, gelijkaan de apostelen"
+
+
+def test_feest_override_laag_in_json() -> None:
+    from lezingen import resolve_lezingen
+
+    r = resolve_lezingen(2026, "01-01", "nieuw")
+    d = r.as_dict()
+    assert d["override_id"] == "besnijdenis-des-heren"
+    assert d["override_laag"] == "feest"
+    assert d["override_naam"] == "Besnijdenis des Heren"
 
 
 def test_weekreeks_galaten_zaterdag_26_is_schone_ref() -> None:

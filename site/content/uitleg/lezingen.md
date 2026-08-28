@@ -42,7 +42,9 @@ inclusief de uitleg over
 en de
 [Jordanville daily calendar](https://jordanville.org/daily-orthodox-calendar/).
 
-We tonen **verwijzingen** (boek en verzen), geen volledige Bijbeltekst. De
+We tonen **verwijzingen** (boek en verzen), geen volledige Bijbeltekst. Op de
+[datumpagina]({{% ref "/uitleg/datumpagina" %}}) legt een popover bij *Apostel*
+en *Evangelie* kort uit hoe de keuze van **die dag** tot stand kwam. De
 parochie viert vaste feesten op de **feestdatum** (nieuw of oud via de knop op
 de site); de regels hier gaan over *welke* lezing bij die liturgische dag hoort.
 

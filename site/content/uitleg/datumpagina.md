@@ -32,10 +32,18 @@ niet mee. De burgerlijke datum in de titel blijft staan. Zie
 Daaronder staat wat voor dag het is: bijvoorbeeld de 23e donderdag na
 Pinksteren, of de Zondag van de verloren zoon. Is het een feestdag, dan
 staat hier de naam van het feest — die wordt niet nog eens herhaald.
+Wijst u op die weeknaam, dan legt een popover uit dat dit het kerkelijk
+jaar is, niet de lijst heiligen van de Lage Landen.
+
 Vervolgens Apostel en Evangelie: de verwijzing is een link naar dat
-hoofdstuk in een Bijbelvertaling (nieuw venster). Zijn er heiligen van de Lage Landen op
+hoofdstuk in een Bijbelvertaling (nieuw venster). Wijst u op het woord
+*Apostel* of *Evangelie*, dan ziet u kort wat die lezing is en **waarom
+die van deze dag zo gekozen is** (doorlopende weekreeks, feestlezing, of
+een lezing van de algemene kerkkalender die de weekreeks vervangt of
+eraan toevoegt). Uitgebreider: [Lezingen van de dag]({{% ref "/uitleg/lezingen" %}}).
+Zijn er heiligen van de Lage Landen op
 die dag, dan volgt de kop *Heilige van de dag* (of *Heiligen* in het
-meervoud) en daaronder de lijst, met een klein icoon als we er een hebben.
+meervoud) — ook die kop heeft een popover — en daaronder de lijst, met een klein icoon als we er een hebben.
 Zijn er geen heiligen van de Lage Landen, dan komt die kop niet. In plaats
 daarvan staat een korte zin met een link waarom de dag leeg kan zijn.
 
