@@ -210,6 +210,15 @@
     "soort": "plaats"
   },
   {
+    "id": "hemelum",
+    "naam": "Hemelum",
+    "alternatief": [],
+    "lat": 52.878,
+    "lon": 5.447,
+    "soort": "plaats",
+    "streek": "frisia"
+  },
+  {
     "id": "kaiserswerth",
     "naam": "Kaiserswerth",
     "alternatief": [],
