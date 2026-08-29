@@ -449,6 +449,14 @@ def render_vasten_clerus(regels: dict[str, Any] | None = None) -> str:
             f"<p>{escape(n['betekenis'].strip())}</p>"
             "</li>"
         )
+    geen = data.get("geen_regel") or {}
+    if geen.get("betekenis"):
+        lines.append(
+            "<li>"
+            f"{_badge(None)}"
+            f"<p>{escape(str(geen['betekenis']).strip())}</p>"
+            "</li>"
+        )
     lines.append("</ul>")
     lines.append("")
     lines.append("## De regels")
@@ -550,6 +558,12 @@ def render_vasten_technisch(regels: dict[str, Any] | None = None) -> str:
     lines.append("|---|---|")
     for n in data["niveaus"]:
         lines.append(f"| `{n['id']}` | {n['label']} |")
+    lines.append("")
+    lines.append(
+        "Ontbreekt een regel (`mix_vastenniveau` geeft `None`, "
+        "`verwachte_niveau: null`), dan toont de datumpagina "
+        "**geen vasten** (`vasten-badge-geen`); ICS vermeldt vasten niet."
+    )
     lines.append("")
     return "\n".join(lines)
 

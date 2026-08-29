@@ -27,9 +27,12 @@ is vasten; vastenvrij is de uitzondering (Lichte Week, Kerst, …).
 
 ## Stap 2: Nieuw of oud
 
-**Wel:** dezelfde betekenis als elders; link naar uitleg Nieuw/Oud.
+**Wel:** Nieuw; Oud; en **Oud, heiligen nieuw** (vaste feesten en vasten
+op de oude kalender, heiligen van de Lage Landen op de burgerlijke
+feestdatum). Link naar uitleg Nieuw/Oud. Voorbeeldweek volgt die keuze.
 
-**Niet:** Pascha laten meeschuiven.
+**Niet:** Pascha laten meeschuiven; een vrij samenstel van extra assen
+als abonnement.
 
 ## Stap 3: abonneren of downloaden
 
@@ -40,8 +43,9 @@ momentopname.
 
 ## Voorbeeldweek
 
-**Wel:** hoe een dag in de app-titel oogt; vasten of vastenvrij als
-kort label als aangevinkt.
+**Wel:** hoe een dag in de app-titel oogt (grootfeest, heilige van hier,
+weeknaam op maandag); vasten of vastenvrij als kort label als aangevinkt
+én als er die dag een regel is. Geen vastenlabel als er geen regel is.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
 titellogica.

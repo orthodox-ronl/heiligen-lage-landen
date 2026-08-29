@@ -28,6 +28,8 @@ Elke regel heeft een stabiel id (`R-…`). Wijzig je `verwachte_niveau` in `data
 |---|---|---|
 | 2026-03-20 | `streng` | Vrijdag in de Grote Vasten; het wekelijkse vrijdagvasten wordt niet apart getoond. |
 | 2026-08-07 | `streng` | Vrijdag in het Ontslapen-vasten. |
+| 2026-07-14 | geen vasten | Dinsdag in juli; geen vastenperiode en geen woensdag of vrijdag. |
+| 2026-07-15 | `wijn_olie` | Woensdag in juli; wekelijks woensdagvasten. |
 
 ### R-streng-weekend-olie — Zaterdag en zondag in een strenge periode
 
@@ -96,3 +98,5 @@ Synthetische toets (geen burgerlijke datum):
 | `vis` | vis |
 | `lichter` | lichter |
 | `vrij` | vastenvrij |
+
+Ontbreekt een regel (`mix_vastenniveau` geeft `None`, `verwachte_niveau: null`), dan toont de datumpagina **geen vasten** (`vasten-badge-geen`); ICS vermeldt vasten niet.
