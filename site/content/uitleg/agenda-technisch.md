@@ -26,10 +26,11 @@ per burgerlijke dag).
 | `heiligen` / `feesten` / `vasten` / `vastenvrij` | één soort |
 | combinaties met koppelteken | de aangevinkte soorten, in die volgorde (`heiligen-feesten`, `feesten-vasten-vastenvrij`, …) |
 
-`stijl` is `nieuw` of `oud`. De agendapagina bouwt **één** knop uit de
-keuzes van de bezoeker (categorieën + stijl + downloaden/abonneren). Er is
-geen lijst van alle feeds op de pagina. UI:
-`site/layouts/_default/agenda.html` en `calendar.js`.
+`stijl` is `nieuw`, `oud`, of bij heiligen plus minstens één andere soort
+`oud-heiligen-nieuw` (feesten/vasten/lezingen oud; heiligen nieuw). De
+agendapagina bouwt **één** knop uit de keuzes van de bezoeker (categorieën
++ stijl + downloaden/abonneren). Er is geen lijst van alle feeds op de
+pagina. UI: `site/layouts/_default/agenda.html` en `calendar.js`.
 
 Vasten in de feed zijn dagen met een vastenniveau anders dan `vrij`.
 Vastenvrij is alleen `niveau: vrij` (expliciete vastenvrije periodes of
@@ -49,10 +50,11 @@ verdwijnen uit het abonnement).
 
 Eén hele-dag-afspraak per burgerlijke dag die in de subset iets toont.
 `SUMMARY` volgt `day_title` in `scripts/ics.py` (spiegel `icsDayTitle` in
-`calendar.js`): dagtype-feest, anders `daglabel` uit `lezingen-dagen.json`
-als feesten in de feed zitten, anders heiligen, anders alleen het
-vastenlabel. Vastenlabels komen uit `mix_vastenniveau` in
-`scripts/vasten.py`. `URL` wijst naar de datumpagina.
+`calendar.js`): grootfeest, anders heilige van de Lage Landen, anders
+overig feest of `daglabel`. Op maandag (geen grootfeest) komt
+`week_kop_label` vooraan. Vastenlabels komen uit `mix_vastenniveau` in
+`scripts/vasten.py` en staan alleen in `SUMMARY`/`DESCRIPTION` als er
+een regel is (`indicatie` is niet `None`). `URL` wijst naar de datumpagina.
 
 `DESCRIPTION` volgt de datumpagina-box zonder website-links in de regels:
 vastenregel, overige dagtype-feesten (`Ook:`), Apostel/Evangelie als
@@ -64,6 +66,8 @@ Geen wiki-tekst, geen vertaalkeuze, geen Bijbel-deeplinks in het event.
 - **oud:** vaste feesten op Juliaanse feestdatum → burgerlijke vierdatum;
   paascyclus ongewijzigd; Juliaanse dagnaam in de `DESCRIPTION`, niet in
   de titel.
+- **oud-heiligen-nieuw:** zelfde als oud voor feesten, vasten en lezingen;
+  heiligen op de Gregoriaanse feestdatum.
 - Wekelijks vasten: burgerlijke weekdag, in beide stijlen. Onderdrukking
   in vastenperiodes en vastenvrije weken: zelfde regel als op de
   datumpagina.

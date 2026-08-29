@@ -156,8 +156,8 @@ parochielijst in deze repo: `parochie: den-haag` (klooster Den Haag, niet
 Groningen); niet stilzwijgend wijzigen. Engine:
 `scripts/lezingen.py`. Machine-leesbare voorbeelden in de spec sturen pytest.
 Build schrijft `site/static/data/lezingen-dagen.json` (per stijl/jaar/mmdd, met
-`daglabel` / `modus` / optioneel `rijadovoe`); UI op vandaag/`/datum/` en
-overzichtspagina `/lezingenrooster/`.
+`daglabel` / `modus` / `override_naam` / `override_laag` / optioneel `rijadovoe`);
+UI op vandaag/`/datum/` en overzichtspagina `/lezingenrooster/`.
 
 ## Observances (kleuren)
 

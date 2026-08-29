@@ -19,8 +19,13 @@ op 15 augustus **in 2026** (of welk jaar u ook kiest)?
 ## Nieuw of oud
 
 In het vak met de inhoud van de dag staat eerst het vastenlabel
-(*vastenvrij*, *vis*, *streng*, …). Wijst u op het label, dan verschijnt een
-korte uitleg; meer detail staat op de pagina [Vasten]({{% ref "/uitleg/vasten" %}}).
+(*streng*, *vis*, *vastenvrij*, …). Is er **geen** vastenregel — geen
+woensdag of vrijdag, geen vastenperiode, en de Kerk zet het vasten ook
+niet uit — dan staat daar het grijze **geen vasten**, niet het groene
+*vastenvrij*. *Vastenvrij* is de uitzondering waarbij de Kerk het vasten
+uitdrukkelijk uitzet (Lichte Week, Kerst, Theofanie). Wijst u op het
+label, dan verschijnt een korte uitleg; meer detail staat op de pagina
+[Vasten]({{% ref "/uitleg/vasten" %}}).
 Valt de dag in een vastenperiode (bijvoorbeeld het Apostelvasten), dan staat
 die naam tussen haakjes, met een link naar de pagina over die periode.
 Daarachter kiest u **Nieuw** of **Oud**. Met **Oud** staan vaste feesten op
@@ -32,10 +37,18 @@ niet mee. De burgerlijke datum in de titel blijft staan. Zie
 Daaronder staat wat voor dag het is: bijvoorbeeld de 23e donderdag na
 Pinksteren, of de Zondag van de verloren zoon. Is het een feestdag, dan
 staat hier de naam van het feest — die wordt niet nog eens herhaald.
+Wijst u op die weeknaam, dan legt een popover uit dat dit het kerkelijk
+jaar is, niet de lijst heiligen van de Lage Landen.
+
 Vervolgens Apostel en Evangelie: de verwijzing is een link naar dat
-hoofdstuk in een Bijbelvertaling (nieuw venster). Zijn er heiligen van de Lage Landen op
+hoofdstuk in een Bijbelvertaling (nieuw venster). Wijst u op het woord
+*Apostel* of *Evangelie*, dan ziet u kort wat die lezing is en **waarom
+die van deze dag zo gekozen is** (doorlopende weekreeks, feestlezing, of
+een lezing van de algemene kerkkalender die de weekreeks vervangt of
+eraan toevoegt). Uitgebreider: [Lezingen van de dag]({{% ref "/uitleg/lezingen" %}}).
+Zijn er heiligen van de Lage Landen op
 die dag, dan volgt de kop *Heilige van de dag* (of *Heiligen* in het
-meervoud) en daaronder de lijst, met een klein icoon als we er een hebben.
+meervoud) — ook die kop heeft een popover — en daaronder de lijst, met een klein icoon als we er een hebben.
 Zijn er geen heiligen van de Lage Landen, dan komt die kop niet. In plaats
 daarvan staat een korte zin met een link waarom de dag leeg kan zijn.
 

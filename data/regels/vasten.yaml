@@ -3,12 +3,14 @@ beschrijving: Waar onze vastenregels vandaan komen, en wat de kalender op een da
 inleiding: |
   Orthodox vasten is een manier van eten en bidden die de Kerk het jaar door
   voorschrijft: geen vlees, vaak ook geen zuivel, vis, wijn of olie. Wat
-  precies mag, hangt van de dag af. Op *Vandaag* en op een
-  [datumpagina]({{% ref "/uitleg/datumpagina" %}}) staat **één** vastenregel
-  per dag, als kort label vóór de knop Nieuw/Oud. Wijst u op het label, dan
-  verschijnt een korte uitleg. Er worden geen twee vasten tegelijk getoond:
-  als een dag in de Grote Vasten valt, is dat het vasten van die dag, niet
-  nog eens het wekelijkse vrijdagvasten.
+  precies mag, hangt van de dag af.   Op *Vandaag* en op een
+  [datumpagina]({{% ref "/uitleg/datumpagina" %}}) staat **één** label vóór
+  de knop Nieuw/Oud. Dat is óf een echte vastenregel (*streng*, *vis*,
+  *vastenvrij*, …), óf het grijze **geen vasten** als er vandaag niets over
+  vasten is voorgeschreven (zoals een dinsdag in juli). Wijst u op het
+  label, dan verschijnt een korte uitleg. Er worden geen twee vasten tegelijk
+  getoond: als een dag in de Grote Vasten valt, is dat het vasten van die
+  dag, niet nog eens het wekelijkse vrijdagvasten.
 
   Deze pagina is bedoeld om samen met de clerus te lezen. Zij beschrijft waar
   de regels vandaan komen en hoe de kalender ze toepast. Het is geen biechtregel.
@@ -51,7 +53,17 @@ niveaus:
       weekschema van streng, wijn en olie, of vis.
   - id: vrij
     label: vastenvrij
-    betekenis: Geen vasten, bijvoorbeeld in de Lichte Week, met Kerst of Theofanie.
+    betekenis: >
+      De Kerk zet het vasten uit: u mag alles eten, ook op woensdag of
+      vrijdag (zoals in de Lichte Week, met Kerst of Theofanie). Dat is
+      iets anders dan *geen vasten*, waarbij er eenvoudig geen regel is.
+geen_regel:
+  label: geen vasten
+  betekenis: >
+    Er geldt geen vastenregel: het is geen woensdag of vrijdag, u zit niet
+    in een vastenperiode, en de Kerk zet het vasten ook niet uit. Op de
+    jaarkalender blijft die dag zonder rood of groen. In de agenda-app
+    staat er dan niets over vasten.
 regels:
   - id: periode-boven-wekelijks
     titel: Een vastenperiode vervangt woensdag- en vrijdagvasten
@@ -67,6 +79,12 @@ regels:
       - datum: "2026-08-07"
         verwachte_niveau: streng
         toelichting: Vrijdag in het Ontslapen-vasten.
+      - datum: "2026-07-14"
+        verwachte_niveau: null
+        toelichting: Dinsdag in juli; geen vastenperiode en geen woensdag of vrijdag.
+      - datum: "2026-07-15"
+        verwachte_niveau: wijn_olie
+        toelichting: Woensdag in juli; wekelijks woensdagvasten.
   - id: streng-weekend-olie
     titel: Zaterdag en zondag in een strenge periode
     tekst: |

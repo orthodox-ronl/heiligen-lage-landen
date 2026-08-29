@@ -93,6 +93,11 @@ kalender.
 Weet u niet welke kalender uw parochie volgt: vraag het aan de priester.
 Op deze site kunt u beide weergaven naast elkaar bekijken.
 
+Sommige parochies vieren de vaste feesten op de oude kalender, maar de
+heiligen van de Lage Landen op de burgerlijke feestdatum (Willibrord op
+7 november). Dat is een keuze op de [agendapagina]({{% ref "/agenda" %}}),
+niet de knop Nieuw/Oud op de rest van de site.
+
 ## Voor wie de site bijhoudt
 
 Hoe de verschuiving in de data en in de agenda-feeds is vastgelegd, staat op

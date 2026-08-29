@@ -28,10 +28,11 @@ offset-getallen; een tweede paginatitel onder de rij.
 
 ## Balk: vasten + Nieuw/Oud
 
-**Wel:** **één** vastenlabel voor die dag (`vastenvrij`, `vis`,
-`streng`, …), met popover die concrete uitleg geeft en verwijzing naar
-uitgebreide uitleg. Bij een periode: de naam van die periode tussen haakjes,
-als link. Knoppen Nieuw / Oud; korte hulp bij Nieuw/Oud in popover.
+**Wel:** **één** label voor die dag: een vastenregel (`vastenvrij`,
+`vis`, `streng`, …) of het grijze **geen vasten** als er geen regel is.
+Popover met korte uitleg en verwijzing naar uitgebreide uitleg. Bij een
+periode: de naam van die periode tussen haakjes, als link. Knoppen
+Nieuw / Oud; korte hulp bij Nieuw/Oud in popover.
 
 **Niet:** twee vasten tegelijk (periode én wekelijks wo/vr); uitleg van
 het hele typikon op deze pagina; Pascha meeschuiven met Oud.

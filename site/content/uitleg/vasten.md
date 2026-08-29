@@ -7,12 +7,14 @@ uitleg_stijl: vasten
 
 Orthodox vasten is een manier van eten en bidden die de Kerk het jaar door
 voorschrijft: geen vlees, vaak ook geen zuivel, vis, wijn of olie. Wat
-precies mag, hangt van de dag af. Op *Vandaag* en op een
-[datumpagina]({{% ref "/uitleg/datumpagina" %}}) staat **één** vastenregel
-per dag, als kort label vóór de knop Nieuw/Oud. Wijst u op het label, dan
-verschijnt een korte uitleg. Er worden geen twee vasten tegelijk getoond:
-als een dag in de Grote Vasten valt, is dat het vasten van die dag, niet
-nog eens het wekelijkse vrijdagvasten.
+precies mag, hangt van de dag af.   Op *Vandaag* en op een
+[datumpagina]({{% ref "/uitleg/datumpagina" %}}) staat **één** label vóór
+de knop Nieuw/Oud. Dat is óf een echte vastenregel (*streng*, *vis*,
+*vastenvrij*, …), óf het grijze **geen vasten** als er vandaag niets over
+vasten is voorgeschreven (zoals een dinsdag in juli). Wijst u op het
+label, dan verschijnt een korte uitleg. Er worden geen twee vasten tegelijk
+getoond: als een dag in de Grote Vasten valt, is dat het vasten van die
+dag, niet nog eens het wekelijkse vrijdagvasten.
 
 Deze pagina is bedoeld om samen met de clerus te lezen. Zij beschrijft waar
 de regels vandaan komen en hoe de kalender ze toepast. Het is geen biechtregel.
@@ -43,7 +45,8 @@ aparte keuze (de knop Nieuw/Oud op deze site).
 <li><span class="vasten-badge vasten-badge-wijn_olie">wijn en olie</span><p>Wijn en plantaardige olie zijn toegestaan; vis niet. Kaviaar op Lazarus-zaterdag rekenen we hiertoe, omdat we kaviaar niet apart tonen.</p></li>
 <li><span class="vasten-badge vasten-badge-vis">vis</span><p>Vis, wijn en olie zijn toegestaan; vlees en zuivel niet.</p></li>
 <li><span class="vasten-badge vasten-badge-lichter">lichter</span><p>Alleen vlees is uitgesloten (zoals in de Boterweek, waar zuivel wel mag). In het Apostelen- en Geboortevasten is dit geen dagniveau: daar geldt een weekschema van streng, wijn en olie, of vis.</p></li>
-<li><span class="vasten-badge vasten-badge-vrij">vastenvrij</span><p>Geen vasten, bijvoorbeeld in de Lichte Week, met Kerst of Theofanie.</p></li>
+<li><span class="vasten-badge vasten-badge-vrij">vastenvrij</span><p>De Kerk zet het vasten uit: u mag alles eten, ook op woensdag of vrijdag (zoals in de Lichte Week, met Kerst of Theofanie). Dat is iets anders dan *geen vasten*, waarbij er eenvoudig geen regel is.</p></li>
+<li><span class="vasten-badge vasten-badge-geen">geen vasten</span><p>Er geldt geen vastenregel: het is geen woensdag of vrijdag, u zit niet in een vastenperiode, en de Kerk zet het vasten ook niet uit. Op de jaarkalender blijft die dag zonder rood of groen. In de agenda-app staat er dan niets over vasten.</p></li>
 </ul>
 
 ## De regels
@@ -62,6 +65,8 @@ de datumpagina, niet in de jaarkalender en niet in de agenda.
 <tbody>
 <tr><td>vrijdag 20 maart 2026</td><td><span class="vasten-badge vasten-badge-streng">streng</span></td><td>Vrijdag in de Grote Vasten; het wekelijkse vrijdagvasten wordt niet apart getoond.</td></tr>
 <tr><td>vrijdag 7 augustus 2026</td><td><span class="vasten-badge vasten-badge-streng">streng</span></td><td>Vrijdag in het Ontslapen-vasten.</td></tr>
+<tr><td>dinsdag 14 juli 2026</td><td><span class="vasten-badge vasten-badge-geen">geen vasten</span></td><td>Dinsdag in juli; geen vastenperiode en geen woensdag of vrijdag.</td></tr>
+<tr><td>woensdag 15 juli 2026</td><td><span class="vasten-badge vasten-badge-wijn_olie">wijn en olie</span></td><td>Woensdag in juli; wekelijks woensdagvasten.</td></tr>
 </tbody>
 </table>
 
