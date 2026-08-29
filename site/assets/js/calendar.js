@@ -1893,30 +1893,6 @@
       `</div>`
     );
   }
-    const items = saints
-      .map((e) => {
-        const icoon = e.icoon
-          ? `<img class="today-heilige-icoon" src="${assetUrl(e.icoon.replace(/^\//, ""))}" alt="" width="32" height="32">`
-          : "";
-        return (
-          `<li>` +
-          icoon +
-          `<a href="${entryHref(e)}">${escapeHtml(entryNaam(e))}</a>` +
-          `</li>`
-        );
-      })
-      .join("");
-    const titel =
-      saints.length === 1 ? "Heilige van de dag" : "Heiligen van de dag";
-    return (
-      `<div class="today-heiligen-blok">` +
-      `<h2 class="today-heiligen-title">` +
-      `<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium" ` +
-      `title="Wie hierin staan">${titel}</span></h2>` +
-      `<ul class="today-heiligen">${items}</ul>` +
-      `</div>`
-    );
-  }
 
   function renderToday(entries, style) {
     const cardEntries = document.getElementById("today-entries");
