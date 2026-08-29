@@ -896,6 +896,7 @@ def test_grootfeesten_en_pascha_hebben_betekenis() -> None:
         "zondag-vaderen-voor-kerst",
         "zaterdag-allerzielen-vleesmijding",
         "allerzielen-zaterdag-pinksteren",
+        "zondag-heiligen-lage-landen",
     }
     feesten = [e for e in load_entries() if e.get("soort") == "feest"]
     met = {e["id"] for e in feesten if (e.get("betekenis") or "").strip()}

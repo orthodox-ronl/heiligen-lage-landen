@@ -2,7 +2,7 @@
 title: "Datumpagina’s"
 description: "Wat er op één burgerlijke dag in een bepaald jaar valt"
 uitleg_stijl: datumpagina
-git_date: 2026-08-18
+git_date: 2026-08-29
 ---
 
 De startpagina is het [overzicht van heiligen van de Lage Landen]({{% ref "/heiligen" %}}).
@@ -51,6 +51,10 @@ die dag, dan volgt de kop *Heilige van de dag* (of *Heiligen* in het
 meervoud) — ook die kop heeft een popover — en daaronder de lijst, met een klein icoon als we er een hebben.
 Zijn er geen heiligen van de Lage Landen, dan komt die kop niet. In plaats
 daarvan staat een korte zin met een link waarom de dag leeg kan zijn.
+Op de [Zondag van de heiligen van de Lage Landen]({{% ref "/feesten/zondag-heiligen-lage-landen" %}})
+(tweede zondag na Pinksteren) komt daarbij een korte noot met een link
+naar het hele overzicht: die zondag gedenkt het koor, niet ieders
+afzonderlijke gedenkdag.
 
 ## Eén vastenregel
 

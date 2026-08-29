@@ -63,6 +63,11 @@ Haakjes bevatten alleen de burgerlijke vierdatum van oude-kalenderparochies,
 als die verschilt (niet de Juliaanse dagnaam van dezelfde dag, en geen
 bijschrift onder de tabel). Paascyclus zonder vast einde: geen haakjes.
 
+`zondag-heiligen-lage-landen` is offset 63 (tweede zondag na Pinksteren):
+Slavische gedachtenis van de heiligen van de lokale Kerk; op deze site
+de heiligen van de Lage Landen. Geen dump van alle namen op de
+datumpagina; wel een feest-entry en een link naar `/heiligen/`.
+
 ## Namen
 
 Canonieke weergavenamen staan **in het entry-YAML** als `namen.primair`
@@ -245,7 +250,8 @@ grootfeesten, Pascha, Lazarus-zaterdag en de Grote Week-dagen, de
 genoemde kernfeesten, de Triodion-zondagen (Zacheüs tot Maria van
 Egypte, plus Schone Maandag), Thomas tot de Blinde, en
 Midden-Pinksterfeest, de concilie- en voorvaderzondagen, en de
-Allerzielen-zaterdagen (vóór Vleesvaarwel en vóór Pinksteren). Geen
+Allerzielen-zaterdagen (vóór Vleesvaarwel en vóór Pinksteren), en de
+Zondag van de heiligen van de Lage Landen. Geen
 `betekenis` op voorfeest, nafeest, synaxis, weken of Boterweek.
 
 Optioneel `goedkeuring`: lijst van personen of organisaties die de

@@ -134,6 +134,18 @@ overrides:
       url: "https://azbyka.ru/days/p-ukazatel-evangelskih-i-apostolskih-chtenij-na-kazhdyj-den-goda"
       geraadpleegd: "2026-08-16"
 
+  - id: zondag-heiligen-lage-landen
+    match: { paascyclus_offset: 63 }
+    rang: vigil
+    # auto → zondag: rijádovoe (2e zondag na Pinksteren) + lokale heiligen
+    apostel: [{ ref: "Heb. 11:33-12:2" }]
+    evangelie: [{ ref: "Matt. 4:25-5:12" }]
+    regels: [R2, R5]
+    bron:
+      label: "OCA — All Saints of Russia (lezing van de lokale Kerk, 2e zondag na Pinksteren)"
+      url: "https://www.oca.org/saints/lives/2024/06/16/49-sunday-of-all-saints-who-shone-forth-in-the-russian-land"
+      geraadpleegd: "2026-08-29"
+
   # --- Voorvasten / Grote Vasten / Grote Week ---
   - id: zondag-laatste-oordeel
     match: { paascyclus_offset: -56 }

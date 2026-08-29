@@ -91,6 +91,24 @@ def test_paascyclus_randen() -> None:
     assert by_id["teruggave-pinksteren"]["datum_norm"]["paascyclus_offset"] == 55
 
 
+def test_zondag_heiligen_lage_landen_tweede_na_pinksteren() -> None:
+    by_id = {e["id"]: e for e in load_entries()}
+    entry = by_id["zondag-heiligen-lage-landen"]
+    assert entry["soort"] == "feest"
+    assert entry["datum_norm"]["paascyclus_offset"] == 63
+    assert "Lage Landen" in entry["namen"]["primair"]
+    r = resolve_lezingen(2026, "06-14", "nieuw")
+    assert r.override_id == "zondag-heiligen-lage-landen"
+    assert r.modus == "toevoegen"
+    assert [a.ref for a in r.apostel] == ["Rom. 2:10-16", "Heb. 11:33-12:2"]
+    assert [e.ref for e in r.evangelie] == ["Matt. 4:18-23", "Matt. 4:25-5:12"]
+    from lezingen import liturgische_daglabel
+
+    assert liturgische_daglabel(2026, "06-14", "nieuw") == (
+        "Zondag van de heiligen van de Lage Landen"
+    )
+
+
 def test_palmzondag_zonder_nafeest() -> None:
     assert not (FEESTEN / "nafeest-palmzondag.yaml").exists()
     assert not (FEESTEN / "voorfeest-palmzondag.yaml").exists()

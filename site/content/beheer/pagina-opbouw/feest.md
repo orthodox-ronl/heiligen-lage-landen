@@ -56,7 +56,8 @@ kernfeesten Allerheiligen, Geestesmaandag, Pokrov, Petrus en Paulus,
 Johannes (geboorte en onthoofding), Besnijdenis, begin kerkelijk jaar,
 de Triodion-zondagen (Zacheüs tot Maria van Egypte, plus Schone
 Maandag), Thomas tot de Blinde, Midden-Pinksterfeest, de concilie- en
-voorvaderzondagen, en de Allerzielen-zaterdagen.
+voorvaderzondagen, de Allerzielen-zaterdagen, en de Zondag van de
+heiligen van de Lage Landen.
 Bronnen: kerkvaders
 en dienstboek eerst; Hopko als brug; Johannes van Shanghai of Sophrony
 alleen als naspraak, niet als enige bron. Zelfde bronlaag als de rest

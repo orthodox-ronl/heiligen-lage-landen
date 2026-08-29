@@ -94,7 +94,9 @@ Periodes (vasten of een week) gebruiken `van_offset_dagen` /
 zoals het Apostelvasten.
 
 Voorfeest, nafeest en synaxis rond de twaalf zijn gewone feest-YAML
-(één dag of `van`/`tot`).
+(één dag of `van`/`tot`). De tweede zondag na Pinksteren is
+`zondag-heiligen-lage-landen` (heiligen van de lokale Kerk; op deze
+site de Lage Landen).
 
 ### Weekdag t.o.v. een feestdatum
 
@@ -240,7 +242,8 @@ volgorde: [bronnennota](https://github.com/orthodox-ronl/heiligen-lage-landen/bl
 Voorbeeld: Theofanie. Grootfeesten, Pascha, Heilige Week-dagen, de
 kernfeesten, de Triodion-zondagen, Thomas tot de Blinde,
 Midden-Pinksterfeest, concilie- en voorvaderzondagen en Allerzielen
-in de bronnennota hebben het veld.
+in de bronnennota hebben het veld, plus de Zondag van de heiligen van
+de Lage Landen.
 Voorfeest, nafeest, synaxis, weken en Boterweek niet. Contract:
 [Feest]({{% ref "/beheer/pagina-opbouw/feest" %}}).
 

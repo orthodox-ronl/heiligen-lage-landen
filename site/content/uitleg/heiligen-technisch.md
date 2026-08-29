@@ -53,6 +53,13 @@ Beslissingslog (geen catalogusdump):
 Onbekende YAML-velden op een entry zijn toegestaan (experimenten/notities);
 zie [schemas/README.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/schemas/README.md).
 
+## Zondag van de heiligen van de Lage Landen
+
+Feest-YAML `data/feesten/zondag-heiligen-lage-landen.yaml`, paascyclus
+offset 63. Geen `lage_landen: true` (feesten zijn geen selectiecriterium).
+Datumpagina dumpt niet alle namen; `calendar.js` zet een link naar
+`/heiligen/`. Lezingen: `feest-overrides.yaml` (vigil, auto/toevoegen).
+
 ## Betekenis voor de Lage Landen
 
 ```yaml

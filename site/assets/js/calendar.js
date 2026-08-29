@@ -1849,7 +1849,16 @@
       .filter((e) => e.soort === "heilige")
       .filter((e) => entryNaam(e))
       .sort((a, b) => entryNaam(a).localeCompare(entryNaam(b), "nl"));
+    const lokaleKerk = (matched || []).some(
+      (e) => e.id === "zondag-heiligen-lage-landen"
+    );
+    const koorNoot = lokaleKerk
+      ? `<p class="muted today-heiligen-koor">Deze zondag gedenkt de lokale Kerk haar heiligen. Op deze site: het ` +
+        `<a class="text-link" href="${assetUrl("heiligen/")}">overzicht van heiligen van de Lage Landen</a>. ` +
+        `Hun eigen gedenkdagen blijven op hun feestdatum.</p>`
+      : "";
     if (!saints.length) {
+      if (lokaleKerk) return koorNoot;
       return (
         `<p class="muted today-geen-heilige">` +
         achtergrondLink(
@@ -1859,6 +1868,31 @@
         `</p>`
       );
     }
+    const items = saints
+      .map((e) => {
+        const icoon = e.icoon
+          ? `<img class="today-heilige-icoon" src="${assetUrl(e.icoon.replace(/^\//, ""))}" alt="" width="32" height="32">`
+          : "";
+        return (
+          `<li>` +
+          icoon +
+          `<a href="${entryHref(e)}">${escapeHtml(entryNaam(e))}</a>` +
+          `</li>`
+        );
+      })
+      .join("");
+    const titel =
+      saints.length === 1 ? "Heilige van de dag" : "Heiligen van de dag";
+    return (
+      `<div class="today-heiligen-blok">` +
+      `<h2 class="today-heiligen-title">` +
+      `<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium" ` +
+      `title="Wie hierin staan">${titel}</span></h2>` +
+      `<ul class="today-heiligen">${items}</ul>` +
+      koorNoot +
+      `</div>`
+    );
+  }
     const items = saints
       .map((e) => {
         const icoon = e.icoon

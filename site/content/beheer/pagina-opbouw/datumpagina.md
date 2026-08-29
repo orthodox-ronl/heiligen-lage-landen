@@ -62,7 +62,9 @@ buiten de gekozen lezingenlijst.
 **Wel:** kop *Heilige van de dag* of *Heiligen van de dag* plus namen
 (link naar de heiligenpagina), klein icoon als we er een hebben. Zijn
 er geen Lage-Landen-heiligen: géén kop, wél een korte zin met link
-waarom de dag leeg kan zijn.
+waarom de dag leeg kan zijn. Op de Zondag van de heiligen van de Lage
+Landen (2e zondag na Pinksteren): extra zin met link naar het
+heiligenoverzicht; geen dump van alle namen.
 
 **Niet:** universeel menologion; parochiepatronen (nog geen onderdeel);
 interne `selectie:`-waarden.
