@@ -125,6 +125,30 @@ def test_willibrord_zonder_vastensuffix() -> None:
     assert "Evangelie:" in ev["description"]
     assert "debijbel.nl" not in ev["description"]
     assert ev["description"].split("\n")[-1].startswith("Meer:")
+    assert "Vastenvrij" not in ev["description"]
+    assert "Vasten:" not in ev["description"]
+
+
+def test_juli_dinsdag_geen_vastenregel() -> None:
+    """Geen wo/vr, geen periode: niets over vasten in de agenda-afspraak."""
+    events = parse_events(_build(ALLES))
+    ev = events["20260714"]
+    assert "vastenvrij" not in ev["summary"]
+    assert "streng" not in ev["summary"]
+    assert "wijn en olie" not in ev["summary"]
+    assert "Vastenvrij" not in ev["description"]
+    assert "Vasten:" not in ev["description"]
+    only_fast = parse_events(_build(VASTEN))
+    assert "20260714" not in only_fast
+    only_free = parse_events(_build(VASTENVRIJ))
+    assert "20260714" not in only_free
+
+
+def test_juli_woensdag_wekelijks_vasten() -> None:
+    events = parse_events(_build(ALLES))
+    ev = events["20260715"]
+    assert ev["summary"].endswith("· wijn en olie")
+    assert "Vasten:" in ev["description"]
 
 
 def test_pascha_een_balk_met_vastenvrij() -> None:

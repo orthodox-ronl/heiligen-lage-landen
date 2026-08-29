@@ -2608,6 +2608,12 @@ html[data-theme="light"] .vasten-badge-vrij {
   color: #2d5a2d;
 }
 
+html[data-theme="light"] .vasten-badge-geen {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--muted);
+}
+
 .vasten-bron {
   margin: 0 0 1.15rem;
   padding: 0.85rem 1rem;

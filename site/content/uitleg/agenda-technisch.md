@@ -53,7 +53,8 @@ Eén hele-dag-afspraak per burgerlijke dag die in de subset iets toont.
 `calendar.js`): grootfeest, anders heilige van de Lage Landen, anders
 overig feest of `daglabel`. Op maandag (geen grootfeest) komt
 `week_kop_label` vooraan. Vastenlabels komen uit `mix_vastenniveau` in
-`scripts/vasten.py`. `URL` wijst naar de datumpagina.
+`scripts/vasten.py` en staan alleen in `SUMMARY`/`DESCRIPTION` als er
+een regel is (`indicatie` is niet `None`). `URL` wijst naar de datumpagina.
 
 `DESCRIPTION` volgt de datumpagina-box zonder website-links in de regels:
 vastenregel, overige dagtype-feesten (`Ook:`), Apostel/Evangelie als

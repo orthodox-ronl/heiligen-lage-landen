@@ -26,7 +26,9 @@ Op die pagina doet u drie keuzes:
 **Vasten** in die keuze betekent vasten (streng, wijn en olie, vis,
 lichter). **Vastenvrij** is de uitzondering: dagen die de Kerk
 uitdrukkelijk vrij van vasten houdt, zoals de Lichte Week of Kerst.
-Vinkt u alleen Vasten aan, dan komen die vrije dagen niet in de
+Een gewone dinsdag of donderdag zonder regel komt **niet** als vasten
+én **niet** als vastenvrij in de agenda; in de titel staat dan niets
+over eten. Vinkt u alleen Vasten aan, dan komen de vrije dagen niet in de
 agenda; vinkt u Vastenvrij aan, dan wel, met een kort label
 *vastenvrij* in de titel.
 
@@ -49,7 +51,8 @@ de liturgische weeknaam). Op **maandag** staat de liturgische week vooraan
 (`2e week na Pinksteren`), ook als die dag een heilige heeft — behalve bij
 een grootfeest. Vasten is een kort label als u vasten hebt aangevinkt
 (*streng*, *wijn en olie*, *vis*) of *vastenvrij* als u vastenvrij hebt
-aangevinkt. Tik op de dag voor vastenregel,
+aangevinkt. Is er geen vastenregel, dan staat er niets over vasten in de
+titel en niet in de tekst van de afspraak. Tik op de dag voor vastenregel,
 andere namen, Apostel en Evangelie (zonder website-links) en heiligen.
 Onderaan staat *Meer:* met de datumpagina.
 

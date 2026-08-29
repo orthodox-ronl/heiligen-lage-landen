@@ -19,8 +19,13 @@ op 15 augustus **in 2026** (of welk jaar u ook kiest)?
 ## Nieuw of oud
 
 In het vak met de inhoud van de dag staat eerst het vastenlabel
-(*vastenvrij*, *vis*, *streng*, …). Wijst u op het label, dan verschijnt een
-korte uitleg; meer detail staat op de pagina [Vasten]({{% ref "/uitleg/vasten" %}}).
+(*streng*, *vis*, *vastenvrij*, …). Is er **geen** vastenregel — geen
+woensdag of vrijdag, geen vastenperiode, en de Kerk zet het vasten ook
+niet uit — dan staat daar het grijze **geen vasten**, niet het groene
+*vastenvrij*. *Vastenvrij* is de uitzondering waarbij de Kerk het vasten
+uitdrukkelijk uitzet (Lichte Week, Kerst, Theofanie). Wijst u op het
+label, dan verschijnt een korte uitleg; meer detail staat op de pagina
+[Vasten]({{% ref "/uitleg/vasten" %}}).
 Valt de dag in een vastenperiode (bijvoorbeeld het Apostelvasten), dan staat
 die naam tussen haakjes, met een link naar de pagina over die periode.
 Daarachter kiest u **Nieuw** of **Oud**. Met **Oud** staan vaste feesten op

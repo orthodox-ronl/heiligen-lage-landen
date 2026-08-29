@@ -44,7 +44,8 @@ momentopname.
 ## Voorbeeldweek
 
 **Wel:** hoe een dag in de app-titel oogt (grootfeest, heilige van hier,
-weeknaam op maandag); vasten of vastenvrij als kort label als aangevinkt.
+weeknaam op maandag); vasten of vastenvrij als kort label als aangevinkt
+én als er die dag een regel is. Geen vastenlabel als er geen regel is.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
 titellogica.

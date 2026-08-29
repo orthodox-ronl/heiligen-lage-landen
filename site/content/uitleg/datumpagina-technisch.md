@@ -38,7 +38,8 @@ en `period_occurrences` (periodes). Wijzig die JSON **niet** met de hand;
 
 Op de burgerlijke datum van dat jaar, in deze volgorde:
 
-1. Vastenbadge (effectief niveau) vóór Nieuw/Oud; bij een named
+1. Vastenbadge vóór Nieuw/Oud: effectief niveau, of `geen` (`vasten-badge-geen`)
+   als `mixVastenniveau` `null` teruggeeft. Bij een named
    periode de periodenaam tussen haakjes, met link naar de entry-pagina
    (`/vasten/…/` of `/feesten/…/` voor vastenvrije weken). Hover/klik op
    de badge opent een korte uitleg (`data-info-tip="vasten-niveau"`).

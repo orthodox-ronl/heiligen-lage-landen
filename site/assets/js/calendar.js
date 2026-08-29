@@ -326,13 +326,15 @@
     vis: "vis",
     lichter: "lichter",
     vrij: "vastenvrij",
+    geen: "geen vasten",
   };
   const VASTEN_UITLEG = {
     streng: "Geen vlees, zuivel, vis, wijn of olie.",
     wijn_olie: "Wijn en plantaardige olie zijn toegestaan; vis niet.",
     vis: "Vis, wijn en olie zijn toegestaan; vlees en zuivel niet.",
     lichter: "Alleen vlees is uitgesloten (zoals in de Boterweek, waar zuivel wel mag).",
-    vrij: "Geen vasten, je mag alles eten (zoals in de Lichte Week, met Kerst of Theofanie).",
+    vrij: "De Kerk zet het vasten uit: u mag alles eten, ook op woensdag of vrijdag (zoals in de Lichte Week, met Kerst of Theofanie).",
+    geen: "Er geldt vandaag geen vastenregel: het is geen woensdag of vrijdag, en u zit niet in een vastenperiode. Dat is iets anders dan vastenvrij, waarbij de Kerk het vasten juist uitzet.",
   };
 
   function entryNaam(entry) {
@@ -1161,13 +1163,19 @@
     return entry && entry.soort === "heilige";
   }
 
+  function vastenNiveauId(vasten) {
+    if (!vasten || !vasten.niveau) return "geen";
+    return vasten.niveau;
+  }
+
   function vastenBadgeHtml(niveau, interactive) {
-    const text = VASTEN_LABELS[niveau] || niveau;
+    const key = niveau || "geen";
+    const text = VASTEN_LABELS[key] || key;
     const tip = interactive
-      ? ` tabindex="0" data-info-tip="vasten-niveau" data-info-niveau="${escapeHtml(niveau)}" title="Uitleg ${escapeHtml(text)}"`
+      ? ` tabindex="0" data-info-tip="vasten-niveau" data-info-niveau="${escapeHtml(key)}" title="Uitleg ${escapeHtml(text)}"`
       : "";
     return (
-      `<span class="vasten-badge vasten-badge-${escapeHtml(niveau)}"${tip}>` +
+      `<span class="vasten-badge vasten-badge-${escapeHtml(key)}"${tip}>` +
       `${escapeHtml(text)}</span>`
     );
   }
@@ -1198,7 +1206,7 @@
       .sort((a, b) => a.localeCompare(b, "nl"));
     const weekday = isoWeekdayFromMmdd(mmdd, year);
     const vasten = mixVastenniveau(matched, weekday, mmdd);
-    const vastenNiveau = vasten ? vasten.niveau : "vrij";
+    const vastenNiveau = vastenNiveauId(vasten);
 
     titleEl.innerHTML =
       `<span class="day-popover-date">${escapeHtml(shortLabel(mmdd))}</span>` +
@@ -1359,7 +1367,7 @@
       return;
     }
     if (kind === "vasten-niveau") {
-      const niveau = (trigger && trigger.dataset.infoNiveau) || "vrij";
+      const niveau = (trigger && trigger.dataset.infoNiveau) || "geen";
       const labelText = VASTEN_LABELS[niveau] || niveau;
       const uitleg = VASTEN_UITLEG[niveau] || "";
       title.textContent = labelText;
@@ -1646,7 +1654,7 @@
   }
 
   function renderVastenClusterHtml(vasten) {
-    const niveau = (vasten && vasten.niveau) || "vrij";
+    const niveau = vastenNiveauId(vasten);
     const periode = vasten && vasten.periode;
     const periodeNaam = periode ? entryNaam(periode) : "";
     let periodeHtml = "";
@@ -1885,15 +1893,14 @@
     if (!mmddExistsInYear(view.mmdd, view.year)) {
       bodyHtml =
         `<div class="today-card-bar">` +
-        renderVastenClusterHtml({ niveau: "vrij" }) +
+        renderVastenClusterHtml(null) +
         styleToggleHtml("Kalenderstijl Nieuw/Oud") +
         `</div>` +
         `<p>${label(view.mmdd)} valt niet in ${view.year}.</p>`;
     } else {
       const matched = entriesOnMmdd(entries, view.mmdd, style, view.year);
       const weekday = isoWeekdayFromMmdd(view.mmdd, view.year);
-      const vasten =
-        mixVastenniveau(matched, weekday, view.mmdd) || { niveau: "vrij" };
+      const vasten = mixVastenniveau(matched, weekday, view.mmdd);
       const lez = lezingenForDay(view.year, view.mmdd, style);
       bodyHtml =
         `<div class="today-card-bar">` +
