@@ -1311,7 +1311,7 @@
       "heilige"
     ],
     "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/odulphus-hemelum.jpg",
+    "icoon": "iconen/odulphus.jpg",
     "betekenis_lage_landen": "Odulphus verbindt het Utrechtse kapittel met de Friese missie in de\nnegende eeuw, in het spoor van Willibrord, Bonifatius en Ludger. Hij\npredikte te Stavoren en keerde naar Utrecht terug. Later droeg de\nabdij bij Stavoren zijn naam. Daarmee hoort hij tot de tweede golf van\nkerstening in het noorden van de Lage Landen, ná de martelaren van de\nachtste eeuw.",
     "locaties": [
       "utrecht",
@@ -5924,6 +5924,50 @@
         "van": "06-09",
         "tot": "06-28"
       }
+    }
+  },
+  {
+    "id": "zondag-heiligen-lage-landen",
+    "soort": "feest",
+    "cyclus": "paascyclus",
+    "vorm": "dag",
+    "naam": "Zondag van de heiligen van de Lage Landen",
+    "alternatief": [
+      "Zondag van de heiligen van de lokale Kerk",
+      "Tweede zondag na Pinksteren",
+      "Zondag na Allerheiligen"
+    ],
+    "titels": [],
+    "samenvatting": "Tweede zondag na Pinksteren: de heiligen van de lokale Kerk; op deze\nsite de heiligen van de Lage Landen.",
+    "url": "/feesten/zondag-heiligen-lage-landen/",
+    "lage_landen": false,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "feest"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "offset_dagen": 63,
+    "feestdatum": null,
+    "occurrences": {
+      "2024": "07-07",
+      "2025": "06-22",
+      "2026": "06-14",
+      "2027": "07-04",
+      "2028": "06-18",
+      "2029": "06-10",
+      "2030": "06-30",
+      "2031": "06-15"
+    },
+    "occurrences_juliaans": {
+      "2024": "06-24",
+      "2025": "06-09",
+      "2026": "06-01",
+      "2027": "06-21",
+      "2028": "06-05",
+      "2029": "05-28",
+      "2030": "06-17",
+      "2031": "06-02"
     }
   },
   {
