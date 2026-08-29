@@ -17,6 +17,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from iconen import extra_iconen, icoon_bestand, primair_icoon  # noqa: E402
 from load_entries import load_entries  # noqa: E402
 from plaatsen import (  # noqa: E402
     load_plaatsen,
@@ -281,6 +282,41 @@ def _append_occ(bucket: dict[str, list[str]], d: date) -> None:
 def yaml_quote(value: str) -> str:
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{escaped}"'
+
+
+def append_icoon_front_matter(
+    fm: list[str], entry: dict[str, Any], plaatsen: dict[str, Any]
+) -> None:
+    """Hugo: icoon = primair; iconen = overige zichtbare items."""
+    prim = primair_icoon(entry)
+    if not prim:
+        return
+    rel = icoon_bestand(prim)
+    fm.append(f"icoon: {yaml_quote('/' + rel)}")
+    bron = str(prim.get("bron") or "").strip()
+    if bron:
+        fm.append(f"icoon_bron: {yaml_quote(bron)}")
+    licentie = str(prim.get("licentie") or "").strip()
+    if licentie:
+        fm.append(f"icoon_licentie: {yaml_quote(licentie)}")
+    toelichting = str(prim.get("toelichting") or "").strip()
+    if toelichting:
+        fm.append(f"icoon_toelichting: {yaml_quote(toelichting)}")
+    extras = extra_iconen(entry)
+    if not extras:
+        return
+    fm.append("iconen:")
+    for item in extras:
+        fm.append(f"  - bestand: {yaml_quote('/' + icoon_bestand(item))}")
+        for key in ("bron", "licentie", "soort", "toelichting"):
+            val = str(item.get(key) or "").strip()
+            if val:
+                fm.append(f"    {key}: {yaml_quote(val)}")
+        plaats_id = str(item.get("plaats") or "").strip()
+        if plaats_id:
+            rec = plaatsen.get(plaats_id) or {}
+            naam = str(rec.get("naam") or plaats_id)
+            fm.append(f"    plaats: {yaml_quote(naam)}")
 
 
 def betekenis_bron_labels(entry: dict[str, Any]) -> list[str]:
@@ -595,13 +631,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         fm.append(f"vastenniveau: {entry['vastenniveau']}")
     if entry.get("onderdrukt_wekelijks_vasten"):
         fm.append("onderdrukt_wekelijks_vasten: true")
-    icoon = entry.get("icoon") or {}
-    if icoon.get("bestand") and icoon.get("rechten") == "ok":
-        fm.append(f"icoon: {yaml_quote('/' + icoon['bestand'].lstrip('/'))}")
-        if str(icoon.get("bron") or "").strip():
-            fm.append(f"icoon_bron: {yaml_quote(str(icoon['bron']).strip())}")
-        if str(icoon.get("licentie") or "").strip():
-            fm.append(f"icoon_licentie: {yaml_quote(str(icoon['licentie']).strip())}")
+    append_icoon_front_matter(fm, entry, plaatsen)
     aliases = entry.get("id_aliassen") or []
     if aliases:
         fm.append("aliases:")
@@ -1286,9 +1316,7 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
             "onderdrukt_wekelijks_vasten": bool(
                 entry.get("onderdrukt_wekelijks_vasten")
             ),
-            "icoon": (entry.get("icoon") or {}).get("bestand")
-            if (entry.get("icoon") or {}).get("rechten") == "ok"
-            else None,
+            "icoon": icoon_bestand(primair_icoon(entry)) or None,
         }
         if entry.get("soort") == "heilige":
             item["betekenis_lage_landen"] = (

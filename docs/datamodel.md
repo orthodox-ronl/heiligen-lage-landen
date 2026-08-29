@@ -373,6 +373,8 @@ Geen relieken- of bedevaartenlijst.
 
 ## Icoon
 
+Eén icoon (bestaande entries):
+
 ```yaml
 icoon:
   bestand: iconen/willibrord.jpg   # relatief t.o.v. site/static/
@@ -381,7 +383,29 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
+Meerdere afbeeldingen: lijst `iconen` in plaats van `icoon`. Precies één
+item `primair: true` (infobox en overzichten). Extra’s blijven lokaal
+bewaard; bestandsnamen niet overschrijven.
+
+```yaml
+iconen:
+  - bestand: iconen/odulphus-hemelum.jpg
+    primair: true
+    soort: foto                    # foto | reproductie
+    plaats: hemelum                # optioneel plaats-id
+    rechten: ok
+    licentie: "Toestemming van het klooster"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    toelichting: "Icoon in het klooster te Hemelum."
+  - bestand: iconen/odulphus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Odulphus.jpg"
+```
+
 `rechten: ok` is verplicht om te tonen. `bestand` is een lokaal pad, geen
 `http(s)`-URL. `bron` en `licentie` zijn verplicht als `bestand` gezet is.
-`generate.py` zet het pad plus bijschrift op de entry-pagina. Ontbreekt
-een legaal bestand: veld weglaten.
+`generate.py` zet het primaire pad plus bijschrift op de entry-pagina;
+overige zichtbare items komen als extra infobox-figuren. Ontbreekt een
+legaal bestand: veld weglaten. `icoon` en `iconen` niet combineren.

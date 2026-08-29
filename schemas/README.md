@@ -48,6 +48,7 @@ Gebruik dit als beslisboom. Details en voorbeelden staan in de how-to’s.
 | `over_bronnen` | Je bronkeuze of vita-discussie toelicht (onder «Over de bronnen») | Herhaling van de hele vita |
 | `referenties` | Elke inhoudelijke claim die je toevoegt | Lege “bronnen” zonder locator |
 | `bronlaag` | `nagekeken` na lexikon/vita; anders `encyclopedie` | “Voelt betrouwbaar” zonder bron |
+| `icoon` / `iconen` | Lokaal bestand met `rechten: ok`, bron en licentie | Hotlink-URL; extra’s zonder `primair` bij meer dan één |
 | Extra top-level veld | Notitie/experiment dat de site nog niet toont | Iets dat wél op de site moet (dan eerst schema + generate) |
 
 ## JSON Schema valideren

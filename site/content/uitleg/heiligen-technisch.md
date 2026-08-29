@@ -5,7 +5,7 @@ uitleg_stijl: heiligen-technisch
 build:
   list: never
   render: always
-git_date: 2026-08-20
+git_date: 2026-08-29
 ---
 
 Technische bijlage bij de [uitleg Heiligen]({{% ref "/uitleg/heiligen" %}}).
@@ -131,6 +131,8 @@ plaatsnamen plus zoektekst op de heiligenpagina.
 
 ## Icoon
 
+Eén icoon:
+
 ```yaml
 icoon:
   bestand: iconen/willibrord.jpg   # onder site/static/
@@ -139,9 +141,13 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
+Meerdere: `iconen` (niet combineren met `icoon`). Precies één
+`primair: true` als er meer dan één item is. `soort: foto` of
+`reproductie`. Optioneel `plaats` (plaats-id) en `toelichting`.
+
 Alleen een **lokaal** bestand. `validate.py` weigert een URL in `bestand`
 (geen hotlink vanuit de browser). Zonder duidelijke licentie: het veld
 weglaten. Twintigste-eeuwse foto’s en recente iconen zijn meestal nog
-beschermd.
+beschermd; een eigen opname van een parochie-icoon vraagt toestemming.
 
 How-to: [heiligen en feesten wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}}).

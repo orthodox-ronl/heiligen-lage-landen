@@ -412,6 +412,44 @@ def test_entry_page_icoon_alleen_bij_rechten_ok(
     assert "icoon" not in meta2
 
 
+def test_entry_page_iconen_lijst_primair_en_extra(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _heilige(
+            iconen=[
+                {
+                    "bestand": "iconen/odulphus-hemelum.jpg",
+                    "rechten": "ok",
+                    "primair": True,
+                    "bron": "Klooster Hemelum",
+                    "licentie": "Toestemming van het klooster",
+                    "toelichting": "Icoon in het klooster.",
+                    "soort": "foto",
+                },
+                {
+                    "bestand": "iconen/odulphus.jpg",
+                    "rechten": "ok",
+                    "bron": "Wikimedia Commons",
+                    "licentie": "Publiek domein",
+                    "soort": "reproductie",
+                },
+            ]
+        )
+    )
+    meta, _body = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )
+    assert meta["icoon"] == "/iconen/odulphus-hemelum.jpg"
+    assert meta["icoon_bron"] == "Klooster Hemelum"
+    assert meta["icoon_toelichting"] == "Icoon in het klooster."
+    assert meta["iconen"][0]["bestand"] == "/iconen/odulphus.jpg"
+    assert meta["iconen"][0]["soort"] == "reproductie"
+    assert "icoon" in meta
+
+
 def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
