@@ -26,11 +26,20 @@ locaties:
   - stavoren
   - oirschot
   - frisia
-icoon:
-  bestand: iconen/odulphus.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:Odulphus.jpg"
+iconen:
+  - bestand: iconen/odulphus-hemelum.jpg
+    primair: true
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: "Toestemming van het Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    toelichting: "Icoon van de heilige Odulphus van Stavoren in het klooster te Hemelum."
+  - bestand: iconen/odulphus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Odulphus.jpg"
 samenvatting: |
   Priester en kanunnik van Utrecht; door bisschop Frederik naar Stavoren
   gezonden. Feestdag 12 juni.

@@ -141,6 +141,12 @@ plaatsen:
     lat: 48.676
     lon: 10.151
     soort: plaats
+  - id: hemelum
+    naam: Hemelum
+    lat: 52.878
+    lon: 5.447
+    soort: plaats
+    streek: frisia
   - id: kaiserswerth
     naam: Kaiserswerth
     lat: 51.299

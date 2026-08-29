@@ -13,13 +13,13 @@
   {{- with $p.icoon }}
   <figure class="infobox-figure">
     <img src="{{ . | relURL }}" alt="Afbeelding van {{ $.Title }}" width="220" height="220" loading="lazy">
-    {{- if or $p.icoon_bron $p.icoon_licentie }}
-    <figcaption>
-      {{- with $p.icoon_bron }}{{ . }}{{ end -}}
-      {{- if and $p.icoon_bron $p.icoon_licentie }} · {{ end -}}
-      {{- with $p.icoon_licentie }}{{ . }}{{ end -}}
-    </figcaption>
-    {{- end }}
+    {{- partial "icoon-figcaption.html" (dict "bron" $p.icoon_bron "licentie" $p.icoon_licentie "toelichting" $p.icoon_toelichting) -}}
+  </figure>
+  {{- end }}
+  {{- range $p.iconen }}
+  <figure class="infobox-figure infobox-figure-extra">
+    <img src="{{ .bestand | relURL }}" alt="Afbeelding van {{ $.Title }}" width="160" height="160" loading="lazy">
+    {{- partial "icoon-figcaption.html" (dict "bron" .bron "licentie" .licentie "toelichting" .toelichting) -}}
   </figure>
   {{- end }}
   <table class="infobox-table">

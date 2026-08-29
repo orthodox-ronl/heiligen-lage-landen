@@ -1,7 +1,7 @@
 ---
 title: "Voor beheerders"
 description: "Wat staat waar, wat u mag wijzigen, en waar generate.py overheen schrijft"
-git_date: 2026-08-21
+git_date: 2026-08-29
 ---
 
 Deze pagina is voor wie de kalender **in de git-repo bijhoudt**: YAML
@@ -58,7 +58,7 @@ committen. Zie [site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %
 <tr><td><code>site/content/beheer/pagina-opbouw/</code></td><td>Paginacontracten. Generate.py schrijft hier niet overheen.</td></tr>
 <tr><td><code>site/content/beheer/ideeen.md</code></td><td>Ideeënlijst; geen automatische bouw.</td></tr>
 <tr><td><code>site/content/_index.md</code>, <code>kalender/</code>, <code>synaxarion/</code>, <code>datum/</code>, <code>agenda/</code>, <code>uitleg/_index.md</code></td><td>Handmatige sectiepagina’s: de <em>body</em> blijft bij genereren staan. Ontbrekende <code>layout</code> wordt wel gecorrigeerd.</td></tr>
-<tr><td><code>site/static/iconen/</code></td><td>Afbeeldingen bij heiligen/feesten. Alleen met <code>icoon.rechten: ok</code> in YAML; geen hotlinks.</td></tr>
+<tr><td><code>site/static/iconen/</code></td><td>Afbeeldingen bij heiligen/feesten. Alleen met <code>rechten: ok</code> in YAML (<code>icoon</code> of <code>iconen</code>); geen hotlinks. Oude bestanden niet overschrijven.</td></tr>
 <tr><td><code>site/layouts/</code>, <code>site/assets/</code></td><td>Uiterlijk en gedrag in de browser. Vastenmenging in JS moet gelijk blijven aan <code>scripts/vasten.py</code>.</td></tr>
 </tbody>
 </table>

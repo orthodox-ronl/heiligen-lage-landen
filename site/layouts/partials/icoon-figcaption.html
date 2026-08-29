@@ -1,0 +1,14 @@
+{{- $bron := .bron -}}
+{{- $licentie := .licentie -}}
+{{- $toelichting := .toelichting -}}
+{{- if or $bron $licentie $toelichting }}
+<figcaption>
+  {{- with $toelichting -}}
+  <span class="icoon-toelichting">{{ . }}</span>
+  {{- if or $bron $licentie }}<br>{{ end -}}
+  {{- end -}}
+  {{- with $bron }}{{ . }}{{ end -}}
+  {{- if and $bron $licentie }} · {{ end -}}
+  {{- with $licentie }}{{ . }}{{ end -}}
+</figcaption>
+{{- end -}}

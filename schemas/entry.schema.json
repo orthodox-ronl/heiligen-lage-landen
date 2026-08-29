@@ -6,6 +6,41 @@
   "additionalProperties": true,
   "description": "Entry (heilige/feest/vasten). Onbekende top-level velden zijn toegestaan voor notities en experimenten; generate.py en de site negeren die. Bekende velden blijven genormeerd.",
   "required": ["id", "soort", "datum", "namen"],
+  "$defs": {
+    "icoonItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Lokaal bestand onder site/static/. Geen hotlink-URL als afbeelding.",
+      "properties": {
+        "bestand": {
+          "type": "string",
+          "pattern": "^(?![Hh][Tt][Tt][Pp][Ss]?:).+",
+          "description": "Pad relatief t.o.v. site/static/, bv. iconen/willibrord.jpg"
+        },
+        "bron": { "type": "string" },
+        "licentie": { "type": "string" },
+        "rechten": { "type": "string", "enum": ["ok", "onbekend", "nee"] },
+        "primair": {
+          "type": "boolean",
+          "description": "Hoogstens één true per entry; infobox en lijsten tonen dit item."
+        },
+        "soort": {
+          "type": "string",
+          "enum": ["reproductie", "foto"],
+          "description": "reproductie = scan/Commons; foto = opname op locatie."
+        },
+        "plaats": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_-]*$",
+          "description": "Optioneel plaats-id (waar de foto is gemaakt)."
+        },
+        "toelichting": {
+          "type": "string",
+          "description": "Korte bijschriftregel voor de lezer (niet in titels)."
+        }
+      }
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -287,19 +322,14 @@
       }
     },
     "icoon": {
-      "type": "object",
-      "additionalProperties": false,
-      "description": "Alleen een lokaal bestand onder site/static/. Geen hotlink-URL als afbeelding.",
-      "properties": {
-        "bestand": {
-          "type": "string",
-          "pattern": "^(?![Hh][Tt][Tt][Pp][Ss]?:).+",
-          "description": "Pad relatief t.o.v. site/static/, bv. iconen/willibrord.jpg"
-        },
-        "bron": { "type": "string" },
-        "licentie": { "type": "string" },
-        "rechten": { "type": "string", "enum": ["ok", "onbekend", "nee"] }
-      }
+      "$ref": "#/$defs/icoonItem",
+      "description": "Eén icoon (compatibel). Bij meerdere items: gebruik iconen en laat icoon weg."
+    },
+    "iconen": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/icoonItem" },
+      "description": "Meerdere afbeeldingen. Precies één primair: true als er meer dan één item is. Niet combineren met icoon."
     },
     "bronlaag": {
       "type": "string",

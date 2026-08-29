@@ -1205,6 +1205,19 @@ main.main > :is(article, section) > h1 {
   text-align: left;
 }
 
+.infobox-figure-extra {
+  padding-top: 0;
+}
+
+.infobox-figure-extra img {
+  max-width: 9.5rem;
+}
+
+.icoon-toelichting {
+  display: block;
+  color: var(--text);
+}
+
 .infobox-table {
   width: 100%;
   border-collapse: collapse;

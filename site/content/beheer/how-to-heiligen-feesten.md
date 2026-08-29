@@ -2,7 +2,7 @@
 title: "Heilige of feest toevoegen of wijzigen"
 description: "YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"
 weight: 20
-git_date: 2026-08-21
+git_date: 2026-08-29
 ---
 
 Heiligen en feesten bestaan als **bron** in YAML. De pagina’s die u op de
@@ -285,10 +285,35 @@ icoon:
   bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
 ```
 
-Ontbreekt een legaal bestand: laat `icoon` weg. Dat geldt ook voor
-obscure lokale heiligen zonder duidelijk PD/CC-portret (geen verkeerde
-persoon, geen hedendaags synaxarion-CDN). «Icoon in parochie» hoort niet
-in `titels`. Bron beoordelen (stap beeldmateriaal):
+**Meerdere plaatjes** (eigen foto naast een bestaande reproductie):
+overschrijf het oude bestand niet. Nieuwe naam
+`iconen/<id>-<korte-id>.jpg`. YAML-veld `iconen` in plaats van `icoon`,
+met precies één `primair: true`. `soort: foto` of `reproductie`.
+Optioneel `plaats` (id uit `plaatsen.yaml`) en `toelichting`. Eigen
+foto’s: toestemming van parochie/klooster (en zo nodig de iconograaf);
+zet dat in `bron` / `licentie`.
+
+```yaml
+iconen:
+  - bestand: iconen/odulphus-hemelum.jpg
+    primair: true
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: "Toestemming van het klooster"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    toelichting: "Icoon in het klooster te Hemelum."
+  - bestand: iconen/odulphus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Odulphus.jpg"
+```
+
+Ontbreekt een legaal bestand: laat `icoon` / `iconen` weg. Dat geldt ook
+voor obscure lokale heiligen zonder duidelijk PD/CC-portret (geen
+verkeerde persoon, geen hedendaags synaxarion-CDN). «Icoon in parochie»
+hoort niet in `titels`. Bron beoordelen (stap beeldmateriaal):
 [Bron beoordelen]({{% ref "/beheer/how-to-bron-beoordelen" %}}).
 
 **Feesten — prioriteit (selectiever dan heiligen)**
