@@ -2,7 +2,7 @@
 title: "Bron beoordelen"
 description: "Checklist: inhoud voor de lezer, aliassen, plaatsen, iconen"
 weight: 25
-git_date: 2026-08-30
+git_date: 2026-08-29
 ---
 
 Gebruik deze checklist bij **elke** bron (webpagina, lexikon, vita, boek)
@@ -48,11 +48,9 @@ en [namen]({{% ref "/beheer/how-to-namen" %}}).
 - Op Wikimedia Commons: open de **File:**-pagina, lees de licentie
   (publiek domein, CC0, of CC-BY/-SA met naamsvermelding).
 - → Bestand lokaal naar `site/static/iconen/<id>.jpg` (of `.png`); in YAML
-  `icoon` met `rechten: ok`, `bron`, `licentie` (mapping of lijst). Geen hotlinks.
-  Script: `icoon` — begint met
-  licentie (alleen PD/CC0/CC-BY/CC-BY-SA in de repo). How-to:
-  [heiligen en feesten]({{% ref "/beheer/how-to-heiligen-feesten" %}})
-  (sectie Icoon).
+  `icoon` of `iconen` met `rechten: ok`, `bron`, `licentie`. Extra
+  opnamen: nieuwe bestandsnaam, niet het bestaande bestand overschrijven.
+  Geen hotlinks.
 
 ### 6. Bronkwaliteit
 

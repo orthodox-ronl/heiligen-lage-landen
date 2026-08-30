@@ -104,9 +104,9 @@ Bovenaan staat hoe **stevig** die tekst is:
   zorgvuldig bijgehouden naslagwerken, geen kerkelijke uitgave. Later
   toetsen we aan een lexikon of vita.
 
-Soms staat er een afbeelding bij. Alleen als we die met een duidelijke
-licentie lokaal mogen tonen; een plaatje elders op internet is daarvoor
-niet genoeg.
+Soms staat er een afbeelding bij, soms meer dan één. Alleen als we die
+met een duidelijke licentie lokaal mogen tonen; een plaatje elders op
+internet is daarvoor niet genoeg. In overzichten ziet u het hoofdicoon.
 
 ## Voor wie de site bijhoudt
 

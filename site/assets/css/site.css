@@ -478,6 +478,60 @@ main.main > :is(article, section) > h1 {
   line-height: 1.35;
 }
 
+.today-dag-hoofd {
+  display: grid;
+  grid-template-columns: minmax(0, 28rem) auto;
+  grid-template-areas:
+    "type icon"
+    "lez icon";
+  gap: 0.7rem 1.25rem;
+  align-items: start;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.today-dag-hoofd .today-dagtype {
+  grid-area: type;
+  margin: 0;
+}
+
+.today-dag-hoofd .day-lezingen {
+  grid-area: lez;
+}
+
+.today-dag-icoon {
+  grid-area: icon;
+  margin: 0;
+}
+
+.today-dag-icoon a {
+  display: block;
+}
+
+.today-dag-icoon-img {
+  display: block;
+  width: 11.25rem;
+  max-width: min(11.25rem, 42vw);
+  height: auto;
+  max-height: 15rem;
+  object-fit: contain;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 40rem) {
+  .today-dag-hoofd {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "type"
+      "icon"
+      "lez";
+  }
+
+  .today-dag-icoon-img {
+    max-width: min(11.25rem, 70vw);
+  }
+}
+
 .today-heiligen-blok {
   margin: 1rem 0 0;
 }
@@ -1201,6 +1255,19 @@ main.main > :is(article, section) > h1 {
   line-height: 1.3;
   margin: 0.35rem 0 0.15rem;
   text-align: left;
+}
+
+.infobox-figure-extra {
+  padding-top: 0;
+}
+
+.infobox-figure-extra img {
+  max-width: 9.5rem;
+}
+
+.icoon-toelichting {
+  display: block;
+  color: var(--text);
 }
 
 .infobox-table {

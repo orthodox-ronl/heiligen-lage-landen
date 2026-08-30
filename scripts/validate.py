@@ -14,13 +14,50 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import icoon_items, load_entries, load_raw_entries, load_yaml  # noqa: E402
+from iconen import icoon_bestand  # noqa: E402
+from load_entries import load_entries, load_raw_entries, load_yaml  # noqa: E402
 from plaatsen import load_plaatsen  # noqa: E402
 
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 SELECTIE_WAARDEN = frozenset({"voldoet", "nader-onderzoek", "kandidaat-schrappen"})
 AANVULLENDE_BRON_IDS = frozenset({"wiki-heiligen", "hnet"})
 ISO_DATUM = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def _validate_icoon_item(
+    errors: list[str],
+    path: str,
+    label: str,
+    item: dict[str, Any],
+    plaats_ids: frozenset[str],
+    verplicht_bestand: bool = False,
+) -> None:
+    bestand = icoon_bestand(item)
+    if not bestand:
+        if verplicht_bestand:
+            errors.append(f"{path}: {label}.bestand ontbreekt")
+        return
+    if bestand.lower().startswith(("http://", "https://", "//")):
+        errors.append(
+            f"{path}: {label}.bestand mag geen URL zijn; "
+            "zet een lokaal bestand onder site/static/"
+        )
+    if item.get("rechten") != "ok":
+        errors.append(
+            f"{path}: {label}.bestand gezet maar {label}.rechten is niet 'ok'"
+        )
+    if not str(item.get("bron") or "").strip():
+        errors.append(f"{path}: {label}.bron verplicht als bestand is gezet")
+    if not str(item.get("licentie") or "").strip():
+        errors.append(
+            f"{path}: {label}.licentie verplicht als bestand is gezet"
+        )
+    icon_path = ROOT / "site" / "static" / bestand
+    if not icon_path.is_file():
+        errors.append(f"{path}: icoonbestand ontbreekt: {bestand}")
+    plaats = str(item.get("plaats") or "").strip()
+    if plaats and plaats not in plaats_ids:
+        errors.append(f"{path}: {label}.plaats onbekend {plaats!r}")
 
 
 def parse_args() -> argparse.Namespace:
@@ -82,36 +119,29 @@ def collect_content_errors(
                 errors.append(
                     f"{path}: referenties[{i}]: ontbreekt url, isbn of locator"
                 )
-        ruw_icoon = entry.get("icoon")
-        if ruw_icoon is not None and not isinstance(ruw_icoon, (dict, list)):
-            errors.append(f"{path}: icoon moet een mapping of een lijst zijn")
-        items = icoon_items(entry)
-        for i, icoon in enumerate(items):
-            prefix = "icoon" if len(items) == 1 else f"icoon[{i}]"
-            if not icoon.get("bestand"):
-                continue
-            bestand = str(icoon["bestand"]).strip().replace("\\", "/")
-            if bestand.lower().startswith(("http://", "https://", "//")):
-                errors.append(
-                    f"{path}: {prefix}.bestand mag geen URL zijn; "
-                    "zet een lokaal bestand onder site/static/"
+        icoon_enkel = entry.get("icoon") or {}
+        iconen_lijst = entry.get("iconen") or []
+        if iconen_lijst and icoon_bestand(icoon_enkel if isinstance(icoon_enkel, dict) else {}):
+            errors.append(f"{path}: gebruik iconen of icoon, niet beide")
+        if iconen_lijst:
+            primair_n = 0
+            for i, item in enumerate(iconen_lijst):
+                if not isinstance(item, dict):
+                    errors.append(f"{path}: iconen[{i}] moet een mapping zijn")
+                    continue
+                _validate_icoon_item(
+                    errors, path, f"iconen[{i}]", item, plaats_ids, verplicht_bestand=True
                 )
-            if icoon.get("rechten") != "ok":
+                if item.get("primair") is True:
+                    primair_n += 1
+            if primair_n > 1:
+                errors.append(f"{path}: hoogstens één iconen[].primair")
+            if len(iconen_lijst) > 1 and primair_n != 1:
                 errors.append(
-                    f"{path}: {prefix}.bestand gezet maar {prefix}.rechten "
-                    "is niet 'ok'"
+                    f"{path}: bij meerdere iconen is precies één primair: true verplicht"
                 )
-            if not str(icoon.get("bron") or "").strip():
-                errors.append(
-                    f"{path}: {prefix}.bron verplicht als bestand is gezet"
-                )
-            if not str(icoon.get("licentie") or "").strip():
-                errors.append(
-                    f"{path}: {prefix}.licentie verplicht als bestand is gezet"
-                )
-            icon_path = ROOT / "site" / "static" / bestand
-            if not icon_path.is_file():
-                errors.append(f"{path}: icoonbestand ontbreekt: {bestand}")
+        elif isinstance(icoon_enkel, dict) and icoon_bestand(icoon_enkel):
+            _validate_icoon_item(errors, path, "icoon", icoon_enkel, plaats_ids)
 
         goed = entry.get("goedkeuring") or []
         if goed and entry.get("soort") != "feest":

@@ -1,7 +1,7 @@
 ---
 title: "Heilige (detail)"
 description: "Contract: vita-pagina van één heilige van de Lage Landen"
-git_date: 2026-08-21
+git_date: 2026-08-29
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -19,8 +19,12 @@ contract.
 
 ## Infobox
 
-**Wel:** iconen alleen met lokale licentie (`rechten: ok`) plus bron en
-licentie in het bijschrift (meer dan één mag). Daarna, voor zover bekend: titel(s); ook-namen;
+**Wel:** icoon alleen met lokale licentie (`rechten: ok`) plus bron en
+licentie in het bijschrift. Bij meerdere afbeeldingen is er één primair
+icoon in de infobox (lijsten tonen alleen dat); extra’s met `rechten: ok`
+staan kleiner daaronder, elk met eigen bijschrift. Optionele toelichting
+(waar de foto is gemaakt) mag in het bijschrift, niet in de titel.
+Daarna, voor zover bekend: titel(s); ook-namen;
 feestdag (link naar datumpagina; tussen haakjes alleen de burgerlijke
 datum op de oude kalender, met popover); leefde; plaatsen (streek cursief, link
 naar het overzicht); rustplaats (waar het lichaam traditioneel rust, geen

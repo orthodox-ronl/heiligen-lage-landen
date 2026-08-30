@@ -5,7 +5,7 @@ uitleg_stijl: datumpagina-technisch
 build:
   list: never
   render: always
-git_date: 2026-08-18
+git_date: 2026-08-30
 ---
 
 Technische bijlage bij de [uitleg Datumpagina’s]({{% ref "/uitleg/datumpagina" %}}).
@@ -46,6 +46,11 @@ Op de burgerlijke datum van dat jaar, in deze volgorde:
 2. Dagtype: naam van het feest (`soort: feest`, geen periode), anders
    `daglabel` uit `lezingen-dagen.json` (bijv. «23e donderdag na Pinksteren»),
    met popover `data-info-tip="dagtype"`.
+   Heeft het eerste dagtype-feest (paascyclus vóór jaarcyclus) een
+   `icoon` in `entries.json` (dat is altijd het primaire, `rechten: ok`):
+   `renderDagIcoonHtml` zet `figure.today-dag-icoon` ernaast
+   (`div.today-dag-hoofd`). Extra items uit YAML `iconen` komen niet
+   op deze pagina. Geen icoon bij alleen een weeknaam (`daglabel`).
 3. Apostel en Evangelie (zonder kop «Lezingen»); de labels hebben
    `data-info-tip="lezing"` (keuze van de dag: weekreeks / feest /
    menaion). Verwijzingen linken
@@ -54,8 +59,10 @@ Op de burgerlijke datum van dat jaar, in deze volgorde:
    HSV, NBV, NBV21, BGT, NBG51, NFB, UTT).
 4. Alleen als er heiligen zijn: kop «Heilige(n) van de dag»
    (`data-info-tip="heiligen-criterium"`), daaronder de
-   lijst, met `icoon` uit `entries.json` als dat veld gezet is. Zonder
-   heilige: geen kop, wel `today-geen-heilige` met link naar uitleg/heiligen.
+   lijst, met `icoon` uit `entries.json` als dat veld gezet is
+   (`img.today-heilige-icoon`). Extra iconen van dezelfde heilige niet
+   in de lijst. Zonder heilige: geen kop, wel `today-geen-heilige` met
+   link naar uitleg/heiligen (geen icoon bij die link).
 
 De datum tussen de pijlen (`dayTitleHtml`) heeft de popup over de
 burgerlijke dag; *(vandaag)* hoort daarbij. De toon staat ná de pijl naar

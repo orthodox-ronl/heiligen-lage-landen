@@ -17,7 +17,8 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import icoon_items, load_entries  # noqa: E402
+from iconen import extra_iconen, icoon_bestand, primair_icoon  # noqa: E402
+from load_entries import load_entries  # noqa: E402
 from plaatsen import (  # noqa: E402
     load_plaatsen,
     locatie_namen,
@@ -281,6 +282,41 @@ def _append_occ(bucket: dict[str, list[str]], d: date) -> None:
 def yaml_quote(value: str) -> str:
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{escaped}"'
+
+
+def append_icoon_front_matter(
+    fm: list[str], entry: dict[str, Any], plaatsen: dict[str, Any]
+) -> None:
+    """Hugo: icoon = primair; iconen = overige zichtbare items."""
+    prim = primair_icoon(entry)
+    if not prim:
+        return
+    rel = icoon_bestand(prim)
+    fm.append(f"icoon: {yaml_quote('/' + rel)}")
+    bron = str(prim.get("bron") or "").strip()
+    if bron:
+        fm.append(f"icoon_bron: {yaml_quote(bron)}")
+    licentie = str(prim.get("licentie") or "").strip()
+    if licentie:
+        fm.append(f"icoon_licentie: {yaml_quote(licentie)}")
+    toelichting = str(prim.get("toelichting") or "").strip()
+    if toelichting:
+        fm.append(f"icoon_toelichting: {yaml_quote(toelichting)}")
+    extras = extra_iconen(entry)
+    if not extras:
+        return
+    fm.append("iconen:")
+    for item in extras:
+        fm.append(f"  - bestand: {yaml_quote('/' + icoon_bestand(item))}")
+        for key in ("bron", "licentie", "soort", "toelichting"):
+            val = str(item.get(key) or "").strip()
+            if val:
+                fm.append(f"    {key}: {yaml_quote(val)}")
+        plaats_id = str(item.get("plaats") or "").strip()
+        if plaats_id:
+            rec = plaatsen.get(plaats_id) or {}
+            naam = str(rec.get("naam") or plaats_id)
+            fm.append(f"    plaats: {yaml_quote(naam)}")
 
 
 def betekenis_bron_labels(entry: dict[str, Any]) -> list[str]:
@@ -595,27 +631,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         fm.append(f"vastenniveau: {entry['vastenniveau']}")
     if entry.get("onderdrukt_wekelijks_vasten"):
         fm.append("onderdrukt_wekelijks_vasten: true")
-    zichtbaar = [
-        item
-        for item in icoon_items(entry)
-        if str(item.get("bestand") or "").strip() and item.get("rechten") == "ok"
-    ]
-    if zichtbaar:
-        first = zichtbaar[0]
-        rel = str(first["bestand"]).replace("\\", "/").lstrip("/")
-        fm.append(f"icoon: {yaml_quote('/' + rel)}")
-        if str(first.get("bron") or "").strip():
-            fm.append(f"icoon_bron: {yaml_quote(str(first['bron']).strip())}")
-        if str(first.get("licentie") or "").strip():
-            fm.append(f"icoon_licentie: {yaml_quote(str(first['licentie']).strip())}")
-        fm.append("iconen:")
-        for item in zichtbaar:
-            rel = str(item["bestand"]).replace("\\", "/").lstrip("/")
-            fm.append(f"  - pad: {yaml_quote('/' + rel)}")
-            if str(item.get("bron") or "").strip():
-                fm.append(f"    bron: {yaml_quote(str(item['bron']).strip())}")
-            if str(item.get("licentie") or "").strip():
-                fm.append(f"    licentie: {yaml_quote(str(item['licentie']).strip())}")
+    append_icoon_front_matter(fm, entry, plaatsen)
     aliases = entry.get("id_aliassen") or []
     if aliases:
         fm.append("aliases:")
@@ -810,6 +826,41 @@ VOORBEELD_HEILIGEN = (
     "johannes-van-shanghai",
 )
 
+ZONDAG_HEILIGEN_LL = "zondag-heiligen-lage-landen"
+ZONDAG_HEILIGEN_LL_OFFSET = 63  # tweede zondag na Pinksteren
+
+
+def eerstvolgende_paascyclus_dag(offset: int, today: date | None = None) -> date:
+    """Eerstvolgende burgerlijke dag van een paascyclus-offset (vandaag telt mee)."""
+    today = today or date.today()
+    dit = pascha_offset_date(today.year, offset)
+    if dit >= today:
+        return dit
+    return pascha_offset_date(today.year + 1, offset)
+
+
+def _zondag_ll_overzicht_zin(
+    entries: list[dict[str, Any]],
+    today: date | None = None,
+) -> str:
+    """Zin met link naar de datumpagina van de Zondag van de heiligen van de Lage Landen."""
+    feest = next((e for e in entries if e.get("id") == ZONDAG_HEILIGEN_LL), None)
+    offset = ZONDAG_HEILIGEN_LL_OFFSET
+    naam = "Zondag van de heiligen van de Lage Landen"
+    if feest:
+        dn = feest.get("datum_norm") or {}
+        if "paascyclus_offset" in dn:
+            offset = int(dn["paascyclus_offset"])
+        naam = (feest.get("namen") or {}).get("primair") or naam
+    dag = eerstvolgende_paascyclus_dag(offset, today)
+    href = f"/datum/?datum={dag.isoformat()}"
+    wanneer = f"{dag.day} {MONTH_NAMES_NL[dag.month]} {dag.year}"
+    return (
+        f'De lokale Kerk gedenkt hen op de '
+        f'<a href="{html_escape(href)}">{html_escape(naam)}</a>'
+        f" ({html_escape(wanneer)})."
+    )
+
 
 def _nl_en_lijst(items: list[str]) -> str:
     if not items:
@@ -821,9 +872,14 @@ def _nl_en_lijst(items: list[str]) -> str:
     return ", ".join(items[:-1]) + f" en {items[-1]}"
 
 
-def write_generated_indexes(entries: list[dict[str, Any]] | None = None) -> None:
+def write_generated_indexes(
+    entries: list[dict[str, Any]] | None = None,
+    *,
+    today: date | None = None,
+) -> None:
     """Sectie-indexes die bij --clean opnieuw worden aangemaakt."""
-    heiligen = [e for e in (entries or []) if e.get("soort") == "heilige"]
+    entries = list(entries or [])
+    heiligen = [e for e in entries if e.get("soort") == "heilige"]
     aantal = len(heiligen)
     by_id = {e["id"]: e for e in heiligen}
     voorbeelden: list[str] = []
@@ -857,6 +913,9 @@ def write_generated_indexes(entries: list[dict[str, Any]] | None = None) -> None
         "Kerk staat hier. [Wie erin hoort](/uitleg/heiligen/).",
         "",
     ]
+    zondag_zin = _zondag_ll_overzicht_zin(entries, today)
+    if zondag_zin:
+        delen.extend([zondag_zin, ""])
     if voorbeelden:
         delen.extend(
             [f"Bekende namen: {_nl_en_lijst(voorbeelden)}.", ""]
@@ -1300,15 +1359,7 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
             "onderdrukt_wekelijks_vasten": bool(
                 entry.get("onderdrukt_wekelijks_vasten")
             ),
-            "icoon": next(
-                (
-                    str(item["bestand"]).replace("\\", "/")
-                    for item in icoon_items(entry)
-                    if str(item.get("bestand") or "").strip()
-                    and item.get("rechten") == "ok"
-                ),
-                None,
-            ),
+            "icoon": icoon_bestand(primair_icoon(entry)) or None,
         }
         if entry.get("soort") == "heilige":
             item["betekenis_lage_landen"] = (

@@ -412,25 +412,29 @@ def test_entry_page_icoon_alleen_bij_rechten_ok(
     assert "icoon" not in meta2
 
 
-def test_entry_page_meerdere_iconen(
+def test_entry_page_iconen_lijst_primair_en_extra(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     content = tmp_path / "content"
     monkeypatch.setattr("generate.CONTENT", content)
     write_entry_page(
         _heilige(
-            icoon=[
+            iconen=[
                 {
-                    "bestand": "iconen/a.jpg",
+                    "bestand": "iconen/odulphus-hemelum.jpg",
                     "rechten": "ok",
-                    "bron": "Eerste",
-                    "licentie": "CC0",
+                    "primair": True,
+                    "bron": "Klooster Hemelum",
+                    "licentie": "Toestemming van het klooster",
+                    "toelichting": "Icoon in het klooster.",
+                    "soort": "foto",
                 },
                 {
-                    "bestand": "iconen/b.jpg",
+                    "bestand": "iconen/odulphus.jpg",
                     "rechten": "ok",
-                    "bron": "Tweede",
-                    "licentie": "CC BY-SA 4.0",
+                    "bron": "Wikimedia Commons",
+                    "licentie": "Publiek domein",
+                    "soort": "reproductie",
                 },
             ]
         )
@@ -438,11 +442,12 @@ def test_entry_page_meerdere_iconen(
     meta, _body = _split_hugo_markdown(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )
-    assert meta["icoon"] == "/iconen/a.jpg"
-    assert meta["icoon_bron"] == "Eerste"
-    assert len(meta["iconen"]) == 2
-    assert meta["iconen"][1]["pad"] == "/iconen/b.jpg"
-    assert meta["iconen"][1]["bron"] == "Tweede"
+    assert meta["icoon"] == "/iconen/odulphus-hemelum.jpg"
+    assert meta["icoon_bron"] == "Klooster Hemelum"
+    assert meta["icoon_toelichting"] == "Icoon in het klooster."
+    assert meta["iconen"][0]["bestand"] == "/iconen/odulphus.jpg"
+    assert meta["iconen"][0]["soort"] == "reproductie"
+    assert "icoon" in meta
 
 
 def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
@@ -929,7 +934,6 @@ def test_grootfeesten_en_pascha_hebben_betekenis() -> None:
         "zondag-vaderen-voor-kerst",
         "zaterdag-allerzielen-vleesmijding",
         "allerzielen-zaterdag-pinksteren",
-        "zondag-heiligen-lage-landen",
     }
     feesten = [e for e in load_entries() if e.get("soort") == "feest"]
     met = {e["id"] for e in feesten if (e.get("betekenis") or "").strip()}

@@ -5,7 +5,7 @@ uitleg_stijl: heiligen-technisch
 build:
   list: never
   render: always
-git_date: 2026-08-20
+git_date: 2026-08-29
 ---
 
 Technische bijlage bij de [uitleg Heiligen]({{% ref "/uitleg/heiligen" %}}).
@@ -52,13 +52,6 @@ Beslissingslog (geen catalogusdump):
 
 Onbekende YAML-velden op een entry zijn toegestaan (experimenten/notities);
 zie [schemas/README.md](https://github.com/orthodox-ronl/heiligen-lage-landen/blob/main/schemas/README.md).
-
-## Zondag van de heiligen van de Lage Landen
-
-Feest-YAML `data/feesten/zondag-heiligen-lage-landen.yaml`, paascyclus
-offset 63. Geen `lage_landen: true` (feesten zijn geen selectiecriterium).
-Datumpagina dumpt niet alle namen; `calendar.js` zet een link naar
-`/heiligen/`. Lezingen: `feest-overrides.yaml` (vigil, auto/toevoegen).
 
 ## Betekenis voor de Lage Landen
 
@@ -138,6 +131,8 @@ plaatsnamen plus zoektekst op de heiligenpagina.
 
 ## Icoon
 
+Eén icoon:
+
 ```yaml
 icoon:
   bestand: iconen/willibrord.jpg   # onder site/static/
@@ -146,10 +141,13 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
-Of een **lijst** van zulke mappings voor meer dan één icoon. Alleen
-**lokale** bestanden. `validate.py` weigert een URL in `bestand`
+Meerdere: `iconen` (niet combineren met `icoon`). Precies één
+`primair: true` als er meer dan één item is. `soort: foto` of
+`reproductie`. Optioneel `plaats` (plaats-id) en `toelichting`.
+
+Alleen een **lokaal** bestand. `validate.py` weigert een URL in `bestand`
 (geen hotlink vanuit de browser). Zonder duidelijke licentie: het veld
 weglaten. Twintigste-eeuwse foto’s en recente iconen zijn meestal nog
-beschermd. Toevoegen: `icoon` (eerst licentie/rechten).
+beschermd; een eigen opname van een parochie-icoon vraagt toestemming.
 
 How-to: [heiligen en feesten wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}}).

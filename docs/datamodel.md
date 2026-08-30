@@ -63,11 +63,6 @@ Haakjes bevatten alleen de burgerlijke vierdatum van oude-kalenderparochies,
 als die verschilt (niet de Juliaanse dagnaam van dezelfde dag, en geen
 bijschrift onder de tabel). Paascyclus zonder vast einde: geen haakjes.
 
-`zondag-heiligen-lage-landen` is offset 63 (tweede zondag na Pinksteren):
-Slavische gedachtenis van de heiligen van de lokale Kerk; op deze site
-de heiligen van de Lage Landen. Geen dump van alle namen op de
-datumpagina; wel een feest-entry en een link naar `/heiligen/`.
-
 ## Namen
 
 Canonieke weergavenamen staan **in het entry-YAML** als `namen.primair`
@@ -250,8 +245,7 @@ grootfeesten, Pascha, Lazarus-zaterdag en de Grote Week-dagen, de
 genoemde kernfeesten, de Triodion-zondagen (Zacheüs tot Maria van
 Egypte, plus Schone Maandag), Thomas tot de Blinde, en
 Midden-Pinksterfeest, de concilie- en voorvaderzondagen, en de
-Allerzielen-zaterdagen (vóór Vleesvaarwel en vóór Pinksteren), en de
-Zondag van de heiligen van de Lage Landen. Geen
+Allerzielen-zaterdagen (vóór Vleesvaarwel en vóór Pinksteren). Geen
 `betekenis` op voorfeest, nafeest, synaxis, weken of Boterweek.
 
 Optioneel `goedkeuring`: lijst van personen of organisaties die de
@@ -379,6 +373,8 @@ Geen relieken- of bedevaartenlijst.
 
 ## Icoon
 
+Eén icoon (bestaande entries):
+
 ```yaml
 icoon:
   bestand: iconen/willibrord.jpg   # relatief t.o.v. site/static/
@@ -387,11 +383,29 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
-Meerdere iconen: `icoon` als lijst van zulke mappings. Het eerste item is
-het overzichtsicoon (lijsten, datumpagina). `rechten: ok` is verplicht om
-te tonen. `bestand` is een lokaal pad, geen `http(s)`-URL. `bron` en
-`licentie` zijn verplicht als `bestand` gezet is. `generate.py` zet alle
-toonbare iconen op de entry-pagina. Ontbreekt een legaal bestand: veld
-weglaten. Toevoegen: `icoon` (eerst licentie/rechten; alleen PD, CC0,
-CC BY of CC BY-SA). Extra plaatje: zelfde commando; dezelfde doelnaam
-overschrijft na bevestiging.
+Meerdere afbeeldingen: lijst `iconen` in plaats van `icoon`. Precies één
+item `primair: true` (infobox en overzichten). Extra’s blijven lokaal
+bewaard; bestandsnamen niet overschrijven.
+
+```yaml
+iconen:
+  - bestand: iconen/odulphus-hemelum.jpg
+    primair: true
+    soort: foto                    # foto | reproductie
+    plaats: hemelum                # optioneel plaats-id
+    rechten: ok
+    licentie: "Toestemming van het klooster"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    toelichting: "Icoon in het klooster te Hemelum."
+  - bestand: iconen/odulphus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Odulphus.jpg"
+```
+
+`rechten: ok` is verplicht om te tonen. `bestand` is een lokaal pad, geen
+`http(s)`-URL. `bron` en `licentie` zijn verplicht als `bestand` gezet is.
+`generate.py` zet het primaire pad plus bijschrift op de entry-pagina;
+overige zichtbare items komen als extra infobox-figuren. Ontbreekt een
+legaal bestand: veld weglaten. `icoon` en `iconen` niet combineren.

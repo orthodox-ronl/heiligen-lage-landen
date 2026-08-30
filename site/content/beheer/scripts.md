@@ -28,9 +28,7 @@ Scripts installeren ontbrekende Python-packages zelf. Ontbreekt Python, Hugo of 
 
 Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) voor wat generate overschrijft.
 
-`icoon` begint met licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA
-stopt het, tenzij u die gegevens wijzigt. Het pad mag als eerste
-Het pad mag als eerste argument: `icoon foto.png`. `icoon --help` moet
-`[PLAATJE]` tonen; zo niet: `git pull` in deze repo en `where icoon`
-(niet een andere clone). How-to:
+`icoon` begint met licentie/rechten (PD, CC of toestemming van een
+parochie/klooster). Het pad mag als eerste argument: `icoon foto.png`.
+`icoon --help` moet `[PLAATJE]` tonen. How-to:
 [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

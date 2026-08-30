@@ -2,7 +2,7 @@
 title: "Heilige of feest toevoegen of wijzigen"
 description: "YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"
 weight: 20
-git_date: 2026-08-30
+git_date: 2026-08-29
 ---
 
 Heiligen en feesten bestaan als **bron** in YAML. De pagina’s die u op de
@@ -94,9 +94,7 @@ Periodes (vasten of een week) gebruiken `van_offset_dagen` /
 zoals het Apostelvasten.
 
 Voorfeest, nafeest en synaxis rond de twaalf zijn gewone feest-YAML
-(één dag of `van`/`tot`). De tweede zondag na Pinksteren is
-`zondag-heiligen-lage-landen` (heiligen van de lokale Kerk; op deze
-site de Lage Landen).
+(één dag of `van`/`tot`).
 
 ### Weekdag t.o.v. een feestdatum
 
@@ -242,8 +240,7 @@ volgorde: [bronnennota](https://github.com/orthodox-ronl/heiligen-lage-landen/bl
 Voorbeeld: Theofanie. Grootfeesten, Pascha, Heilige Week-dagen, de
 kernfeesten, de Triodion-zondagen, Thomas tot de Blinde,
 Midden-Pinksterfeest, concilie- en voorvaderzondagen en Allerzielen
-in de bronnennota hebben het veld, plus de Zondag van de heiligen van
-de Lage Landen.
+in de bronnennota hebben het veld.
 Voorfeest, nafeest, synaxis, weken en Boterweek niet. Contract:
 [Feest]({{% ref "/beheer/pagina-opbouw/feest" %}}).
 
@@ -265,38 +262,12 @@ díe betekenistekst. Niet hetzelfde als `bronlaag: nagekeken`.
 
 ## Icoon
 
-Bestand onder `site/static/` (doorgaans `site/static/iconen/<id>.jpg` voor
-het eerste icoon; extra iconen krijgen de stam van het bronbestand).
+Bestand onder `site/static/` (doorgaans `site/static/iconen/<id>.jpg`).
 Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).
 
-### Script
-
-Vanuit de repo-root (`.\scripts` op PATH), net als `serve` of `build`:
-
-```cmd
-icoon
-icoon heiligen-lage-landen-muuricoon-hemelum.png
-icoon --id willibrord --plaatje C:\pad\foto.jpg
-```
-
-Het pad mag als eerste argument (zonder `--plaatje`). Het script vraagt
-**eerst** licentie/rechten. Alleen publiek domein, CC0, CC BY of CC BY-SA
-mogen in de repo. Is de licentie dat niet, dan vraagt het of u wilt
-wijzigen; `n` stopt, `j` vraagt opnieuw, tot het mag of u stopt. Daarna
-id (als die ontbreekt), bron, en — alleen als de **doelnaam** al op deze
-entry staat — of dat icoon mag worden overschreven. Een extra plaatje
-met een andere doelnaam wordt toegevoegd. Grote plaatjes worden verkleind
-(langste zijde 1600 px, JPEG); EXIF-rotatie wordt toegepast. Ontbrekende
-velden op de commandline worden in dezelfde volgorde gevraagd (`j`/`n`
-waar dat kan).
-
-`--niet-interactief` faalt als iets ontbreekt of de licentie niet
-herbruikbaar is. `--overschrijven` vervangt een icoon met dezelfde
-doelnaam zonder te vragen.
-
-### Commons-checklist (handmatig)
+**Commons-checklist**
 
 1. Zoek op [Wikimedia Commons](https://commons.wikimedia.org/) (naam +
    heilige / icon).
@@ -308,16 +279,41 @@ doelnaam zonder te vragen.
 
 ```yaml
 icoon:
-  - bestand: iconen/willibrord.jpg
-    rechten: ok
-    licentie: "Publiek domein"
-    bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
+  bestand: iconen/willibrord.jpg
+  rechten: ok
+  licentie: "Publiek domein"
+  bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
 ```
 
-Ontbreekt een legaal bestand: laat `icoon` weg. Dat geldt ook voor
-obscure lokale heiligen zonder duidelijk PD/CC-portret (geen verkeerde
-persoon, geen hedendaags synaxarion-CDN). «Icoon in parochie» hoort niet
-in `titels`. Bron beoordelen (stap beeldmateriaal):
+**Meerdere plaatjes** (eigen foto naast een bestaande reproductie):
+overschrijf het oude bestand niet. Nieuwe naam
+`iconen/<id>-<korte-id>.jpg`. YAML-veld `iconen` in plaats van `icoon`,
+met precies één `primair: true`. `soort: foto` of `reproductie`.
+Optioneel `plaats` (id uit `plaatsen.yaml`) en `toelichting`. Eigen
+foto’s: toestemming van parochie/klooster (en zo nodig de iconograaf);
+zet dat in `bron` / `licentie`.
+
+```yaml
+iconen:
+  - bestand: iconen/odulphus-hemelum.jpg
+    primair: true
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: "Toestemming van het klooster"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    toelichting: "Icoon in het klooster te Hemelum."
+  - bestand: iconen/odulphus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Odulphus.jpg"
+```
+
+Ontbreekt een legaal bestand: laat `icoon` / `iconen` weg. Dat geldt ook
+voor obscure lokale heiligen zonder duidelijk PD/CC-portret (geen
+verkeerde persoon, geen hedendaags synaxarion-CDN). «Icoon in parochie»
+hoort niet in `titels`. Bron beoordelen (stap beeldmateriaal):
 [Bron beoordelen]({{% ref "/beheer/how-to-bron-beoordelen" %}}).
 
 **Feesten — prioriteit (selectiever dan heiligen)**

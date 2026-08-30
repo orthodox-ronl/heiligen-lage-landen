@@ -4,32 +4,11 @@
   {{ if or (eq .Params.soort "heilige") (eq .Params.soort "feest") (eq .Params.soort "vasten") }}
     {{ partial "infobox.html" . }}
   {{ else }}
-    {{ with .Params.iconen }}
-      {{ range . }}
-      <figure class="icon-figure">
-        <img src="{{ .pad | relURL }}" alt="Afbeelding van {{ $.Title }}" width="240" height="240" loading="lazy">
-        {{ if or .bron .licentie }}
-        <figcaption>
-          {{- with .bron }}{{ . }}{{ end -}}
-          {{- if and .bron .licentie }} · {{ end -}}
-          {{- with .licentie }}{{ . }}{{ end -}}
-        </figcaption>
-        {{ end }}
-      </figure>
-      {{ end }}
-    {{ else }}
     {{ with .Params.icoon }}
       <figure class="icon-figure">
         <img src="{{ . | relURL }}" alt="Afbeelding van {{ $.Title }}" width="240" height="240" loading="lazy">
-        {{ if or $.Params.icoon_bron $.Params.icoon_licentie }}
-        <figcaption>
-          {{- with $.Params.icoon_bron }}{{ . }}{{ end -}}
-          {{- if and $.Params.icoon_bron $.Params.icoon_licentie }} · {{ end -}}
-          {{- with $.Params.icoon_licentie }}{{ . }}{{ end -}}
-        </figcaption>
-        {{ end }}
+        {{ partial "icoon-figcaption.html" (dict "bron" $.Params.icoon_bron "licentie" $.Params.icoon_licentie "toelichting" $.Params.icoon_toelichting) }}
       </figure>
-    {{ end }}
     {{ end }}
   {{ end }}
   <div class="entry-body">

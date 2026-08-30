@@ -1778,7 +1778,7 @@
     }
   }
 
-  function renderDagtypeHtml(matched, lez) {
+  function dayTypeFeasts(matched) {
     const feasts = (matched || [])
       .filter(isDayTypeFeast)
       .filter((e) => entryNaam(e));
@@ -1788,6 +1788,21 @@
       if (ac !== bc) return ac - bc;
       return entryNaam(a).localeCompare(entryNaam(b), "nl");
     });
+    return feasts;
+  }
+
+  function entryIcoonPad(entry) {
+    return String((entry && entry.icoon) || "")
+      .replace(/^\//, "")
+      .trim();
+  }
+
+  function dagFeestIcoon(matched) {
+    return dayTypeFeasts(matched).find((e) => entryIcoonPad(e)) || null;
+  }
+
+  function renderDagtypeHtml(matched, lez) {
+    const feasts = dayTypeFeasts(matched);
     let inner;
     if (feasts.length) {
       inner = feasts
@@ -1806,6 +1821,19 @@
       return "";
     }
     return `<p class="today-dagtype">${inner}</p>`;
+  }
+
+  function renderDagIcoonHtml(matched) {
+    const feast = dagFeestIcoon(matched);
+    if (!feast) return "";
+    const src = assetUrl(entryIcoonPad(feast));
+    return (
+      `<figure class="today-dag-icoon">` +
+      `<a href="${entryHref(feast)}" tabindex="-1" aria-hidden="true">` +
+      `<img class="today-dag-icoon-img" src="${src}" alt="" ` +
+      `width="180" height="180" decoding="async">` +
+      `</a></figure>`
+    );
   }
 
   function renderLezingenHtml(lez) {
@@ -1870,8 +1898,10 @@
     }
     const items = saints
       .map((e) => {
-        const icoon = e.icoon
-          ? `<img class="today-heilige-icoon" src="${assetUrl(e.icoon.replace(/^\//, ""))}" alt="" width="32" height="32">`
+        const pad = entryIcoonPad(e);
+        const naam = escapeHtml(entryNaam(e));
+        const icoon = pad
+          ? `<img class="today-heilige-icoon" src="${assetUrl(pad)}" alt="${naam}" width="32" height="32" loading="lazy">`
           : "";
         return (
           `<li>` +
@@ -1912,13 +1942,18 @@
       const weekday = isoWeekdayFromMmdd(view.mmdd, view.year);
       const vasten = mixVastenniveau(matched, weekday, view.mmdd);
       const lez = lezingenForDay(view.year, view.mmdd, style);
+      const dagtype = renderDagtypeHtml(matched, lez);
+      const dagIcoon = renderDagIcoonHtml(matched);
+      const lezingen = renderLezingenHtml(lez);
+      const hoofd = dagIcoon
+        ? `<div class="today-dag-hoofd">${dagtype}${dagIcoon}${lezingen}</div>`
+        : dagtype + lezingen;
       bodyHtml =
         `<div class="today-card-bar">` +
         renderVastenClusterHtml(vasten) +
         styleToggleHtml("Kalenderstijl Nieuw/Oud") +
         `</div>` +
-        renderDagtypeHtml(matched, lez) +
-        renderLezingenHtml(lez) +
+        hoofd +
         renderHeiligenHtml(matched);
     }
     cardEntries.innerHTML = bodyHtml;
