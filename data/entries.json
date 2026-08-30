@@ -463,6 +463,43 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "relindis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Relindis",
+    "alternatief": [
+      "Reinhild",
+      "Renula",
+      "Relinde",
+      "Relindis van Aldeneik",
+      "Relindis van Maaseik"
+    ],
+    "titels": [
+      "Abdis van Aldeneik"
+    ],
+    "samenvatting": "Tweede abdis van Aldeneik bij Maaseik; zuster van Herlindis.\nFeestdag 6 februari.",
+    "url": "/heiligen/relindis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Relindis leidde Aldeneik na haar zuster Herlindis. Het klooster lag in\nhet huidige Belgisch Limburg. De overlevering laat Bonifatius haar tot\nabdis wijden. Dat is bestuur van een klooster in de Lage Landen vóór\nhet schisma.",
+    "locaties": [
+      "maaseik"
+    ],
+    "rustplaats": {
+      "plaats": "maaseik",
+      "toelichting": "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+    },
+    "feestdatum": "02-06",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "teruggave-ontmoeting-in-de-tempel",
     "soort": "feest",
     "cyclus": "jaar",
@@ -482,36 +519,6 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
     "feestdatum": "02-09",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
-    "id": "walburga",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Walburga",
-    "alternatief": [
-      "Walburgis",
-      "Walpurga"
-    ],
-    "titels": [
-      "Abdis van Heidenheim"
-    ],
-    "samenvatting": "Angelsaksische abdis van Heidenheim; zuster van Willibald en Winnibald.\nFeestdag 25 februari.",
-    "url": "/heiligen/walburga/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/walburga.jpg",
-    "betekenis_lage_landen": "Walburga werkte in Germanië (Heidenheim/Eichstätt), niet in de Lage\nLanden. Wel is er middeleeuwse en latere cultus (onder meer Antwerpen,\nOudenaarde, Veurne, Zutphen, Groningen, Netterden).",
-    "locaties": [
-      "heidenheim"
-    ],
-    "feestdatum": "02-25",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -584,36 +591,6 @@
       "susteren"
     ],
     "feestdatum": "03-04",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
-    "id": "fridolin",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Fridolin",
-    "alternatief": [
-      "Fridolin van Säckingen",
-      "Fridolin von Säckingen"
-    ],
-    "titels": [
-      "Abt, verlichter van de Boven-Rijn"
-    ],
-    "samenvatting": "Ierse of Frankische missionaris; stichtte het klooster op de Rijn-eiland\nSäckingen. Feestdag 6 maart.",
-    "url": "/heiligen/fridolin/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/fridolin.jpg",
-    "betekenis_lage_landen": "Fridolin hoort in oudere catalogi van «heiligen van de Lage Landen», maar\nzijn werk lag aan de Boven-Rijn (Säckingen, Glarus, Elzas). Er is geen\naantoonbare missie of cultuskern in het huidige NL/BE/LUX.",
-    "locaties": [
-      "saeckingen"
-    ],
-    "feestdatum": "03-06",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2330,38 +2307,6 @@
     "feestdatum_gregoriaans": null
   },
   {
-    "id": "adela-van-vlaanderen",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Adela van Vlaanderen",
-    "alternatief": [
-      "Adela van Ieper",
-      "Adela van Mesen",
-      "Adela van Messines",
-      "Adelheid van Frankrijk"
-    ],
-    "titels": [
-      "Weduwe & kloosterlinge"
-    ],
-    "samenvatting": "Franse koningsdochter, gravin van Vlaanderen en stichteres van de abdij\nvan Mesen; daar later kloosterlinge. Feestdag 8 september.",
-    "url": "/heiligen/adela-van-vlaanderen/",
-    "lage_landen": true,
-    "bronlaag": "encyclopedie",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": null,
-    "betekenis_lage_landen": "Adela stichtte en bewoonde de abdij van Mesen (West-Vlaanderen) en werkte\nmee aan kapittels en abdijen in het graafschap. De band met de Lage Landen\nis geografisch en dynastisch duidelijk; haar dood (1079) en cultus\nvallen na 1054.",
-    "locaties": [
-      "mesen"
-    ],
-    "feestdatum": "09-08",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
     "id": "geboorte-moeder-gods",
     "soort": "feest",
     "cyclus": "jaar",
@@ -2766,6 +2711,44 @@
       "lier"
     ],
     "feestdatum": "10-11",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "herlindis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Herlindis",
+    "alternatief": [
+      "Harlindis",
+      "Herlinde",
+      "Herlind",
+      "Harlinde",
+      "Herlindis van Aldeneik",
+      "Herlindis van Maaseik"
+    ],
+    "titels": [
+      "Abdis van Aldeneik"
+    ],
+    "samenvatting": "Eerste abdis van Aldeneik bij Maaseik. Feestdag 12 oktober.",
+    "url": "/heiligen/herlindis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Herlindis leidde het vrouwenklooster Aldeneik in het huidige Belgisch\nLimburg: prediking en kloosterleven aan de Maas, in de kring van\nWillibrord (die haar tot abdis wijdde) en later Bonifatius. Dat is werk\nin de Lage Landen vóór het schisma, geen latere cultus alleen.",
+    "locaties": [
+      "maaseik"
+    ],
+    "rustplaats": {
+      "plaats": "maaseik",
+      "toelichting": "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+    },
+    "feestdatum": "10-12",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -3418,36 +3401,6 @@
       "toelichting": "Abdij van Andenne"
     },
     "feestdatum": "12-17",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
-    "id": "winnibald",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Winnibald",
-    "alternatief": [
-      "Wunibald",
-      "Winebald"
-    ],
-    "titels": [
-      "Abt van Heidenheim"
-    ],
-    "samenvatting": "Angelsaksische abt van Heidenheim; broer van Willibald en Walburga.\nFeestdag 18 december.",
-    "url": "/heiligen/winnibald/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/winnibald.jpg",
-    "betekenis_lage_landen": "Winnibald (Wunibald) werkte onder Bonifatius in Thüringen, Beieren en\nMainz en stichtte Heidenheim in het bisdom Eichstätt. Er is geen\naantoonbaar missiewerk in de Lage Landen; de band loopt vooral via de\nBonifatius-familie (Engeland/Germanië).",
-    "locaties": [
-      "heidenheim"
-    ],
-    "feestdatum": "12-18",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
