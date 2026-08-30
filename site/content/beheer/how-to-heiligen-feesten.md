@@ -267,6 +267,39 @@ Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).
 
+### Script
+
+Vanuit de repo-root (`.\scripts` op PATH):
+
+```cmd
+icoon heiligen-lage-landen-muuricoon-hemelum.png
+```
+
+U hoeft het id niet te kennen: naam, alias of (deel van) de bestandsnaam
+is genoeg. Voorbeeld: `heiligen lage landen` vindt
+`zondag-heiligen-lage-landen` (Zondag van de heiligen van de Lage Landen).
+Eén treffer: het script vraagt **Klopt dit? (J/n)**. Meerdere treffers:
+een genummerde lijst. Geen treffer of verkeerde keuze: opnieuw typen tot
+het lukt. Leeg, `stop` of `q` breekt af.
+
+Het script controleert **eerst** of het bronplaatje bestaat. Ontbreekt
+het pad, dan stopt het meteen (geen licentievraag). Een `.yaml` is geen
+plaatje: extra icoon hoort **niet** in een tweede feestbestand.
+
+**Niet:** `data/feesten/zondag-heiligen-lage-landen-hemelum.yaml`.
+**Wel:** zelfde entry `data/feesten/zondag-heiligen-lage-landen.yaml`,
+veld `iconen:`, bestand `site/static/iconen/zondag-heiligen-lage-landen-hemelum.jpg`
+(naast het bestaande `zondag-heiligen-lage-landen.jpg`). Zelfde patroon
+als Odulphus (`odulphus.yaml` + `iconen/odulphus-hemelum.jpg`).
+
+Plaatsnamen zoals `hemelum`, `groningen`, `zwolle`, `leeuwarden` in de
+bestandsnaam of als antwoord zijn plaats-ids: het plaatje stamt uit die
+(Russisch-)orthodoxe parochie of dat klooster, met toestemming. Kies bij
+licentie **Toestemming van parochie of klooster**; het script vult `plaats`,
+`soort: foto`, `bron` en `licentie` in en laat u die bevestigen.
+
+`--niet-interactief` eist unieke naam of `--id`, en bij toestemming `--plaats`.
+
 **Commons-checklist**
 
 1. Zoek op [Wikimedia Commons](https://commons.wikimedia.org/) (naam +

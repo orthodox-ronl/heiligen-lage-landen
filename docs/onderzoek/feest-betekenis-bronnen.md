@@ -145,6 +145,15 @@ Geen `betekenis` (generator toont dat veld alleen bij `soort: feest`).
 - Primair: Chrysostomos, homilie 28 op Hebreeën (heiligen van Heb. 11).
 - Apostolisch vasten: vanaf de maandag ná deze zondag, niet op Geestesmaandag.
 
+### Zondag van de heiligen van de Lage Landen (`zondag-heiligen-lage-landen`)
+
+- Primair: dezelfde homilie 28 (wolk van getuigen), nu als lokale Kerk.
+- Analogie: OCA *Sunday of All Saints who shone forth in the Russian land*
+  (2e zondag na Pinksteren; Heb. 11:33–12:2 en Matt. 4:25–5:12 naast de
+  zondagslezing). Deze site vult die plaats in met de Lage Landen, niet
+  met de Russische namenlijst.
+- OrthodoxWiki *Sunday of All Saints*: Slavische kerken de zondag erna.
+
 ### Geestesmaandag (`geestesmaandag`)
 
 - Primair: Basilius, *Over de Heilige Geest*.

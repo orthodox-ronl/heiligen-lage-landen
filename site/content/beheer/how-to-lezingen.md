@@ -90,6 +90,11 @@ feest-YAML onder `data/feesten/`. **1 september** (`mmdd`) en de
 **zondag ná 10 oktober** (`weekdag_relatief` plus feest-YAML, zoals de
 zondagen rond Kerst) horen er ook in.
 
+De tweede zondag na Pinksteren (`zondag-heiligen-lage-landen`, offset 63)
+staat in de gedeelde lijst als analogie van de Slavische lokale-heiligenzondag
+(Moskou: heiligen van het Russische land; dezelfde extra-perikopen). Dat is
+geen parochieboekje.
+
 Een parochieboekje (bijv. de Den Haag-index) is een **checklist** tegen
 Moskou, geen bron om de gedeelde lijst te kopiëren. Wijkt het boekje in
 verzen of in de heiligenkeuze af, dan blijft Moskou; een lokale

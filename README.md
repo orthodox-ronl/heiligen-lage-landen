@@ -35,6 +35,7 @@ Toolchain: Python **3.14**, Hugo Extended **0.160.1**. In de repo-root (`.\scrip
 | `check` | CI-spiegel: pytest + validate + generate + Hugo minify |
 | `serve` | lokale preview (validate + generate + Hugo server) |
 | `build` | statische site in `generated\site` |
+| `icoon` | lokaal plaatje als icoon bij bestaande heilige of feest |
 
 ```cmd
 cd /d C:\Git\orthodox-groningen\heiligen-lage-landen

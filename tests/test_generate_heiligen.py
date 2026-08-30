@@ -904,6 +904,7 @@ def test_grootfeesten_en_pascha_hebben_betekenis() -> None:
         "grote-vrijdag",
         "grote-zaterdag",
         "allerheiligen-zondag",
+        "zondag-heiligen-lage-landen",
         "geestesmaandag",
         "pokrov",
         "petrus-en-paulus",

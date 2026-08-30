@@ -1877,7 +1877,16 @@
       .filter((e) => e.soort === "heilige")
       .filter((e) => entryNaam(e))
       .sort((a, b) => entryNaam(a).localeCompare(entryNaam(b), "nl"));
+    const lokaleKerk = (matched || []).some(
+      (e) => e.id === "zondag-heiligen-lage-landen"
+    );
+    const koorNoot = lokaleKerk
+      ? `<p class="muted today-heiligen-koor">Deze zondag gedenkt de lokale Kerk haar heiligen. Op deze site: het ` +
+        `<a class="text-link" href="${assetUrl("heiligen/")}">overzicht van heiligen van de Lage Landen</a>. ` +
+        `Hun eigen gedenkdagen blijven op hun feestdatum.</p>`
+      : "";
     if (!saints.length) {
+      if (lokaleKerk) return koorNoot;
       return (
         `<p class="muted today-geen-heilige">` +
         achtergrondLink(
@@ -1910,6 +1919,7 @@
       `<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium" ` +
       `title="Wie hierin staan">${titel}</span></h2>` +
       `<ul class="today-heiligen">${items}</ul>` +
+      koorNoot +
       `</div>`
     );
   }

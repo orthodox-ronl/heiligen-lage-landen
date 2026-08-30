@@ -1,0 +1,68 @@
+id: zondag-heiligen-lage-landen
+soort: feest
+bronlaag: nagekeken
+cyclus: paascyclus
+lage_landen: false
+namen:
+  primair: Zondag van de heiligen van de Lage Landen
+  alternatief:
+  - Zondag van de heiligen van de lokale Kerk
+  - Zondag van de heiligen van Friesland
+  - Tweede zondag na Pinksteren
+  - Zondag na Allerheiligen
+observances:
+  - feest
+datum:
+  stijl: gregoriaans
+  paascyclus:
+    anker: pascha
+    offset_dagen: 63
+iconen:
+  - bestand: iconen/zondag-heiligen-lage-landen.jpg
+    primair: true
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: "Toestemming van het Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+    bron: "Russisch Orthodox klooster van de H. Nicolaas te Hemelum"
+  - bestand: iconen/zondag-heiligen-friesland.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: "CC BY-SA 4.0"
+    bron: "Foto van het icoon Koor van Fryske Hilligen (Odulphus, Frederik, Bonifatius, Ludger, Willibrord)"
+    toelichting: "Koor van Fryske Hilligen"
+samenvatting: |
+  Tweede zondag na Pinksteren: de heiligen van de lokale Kerk; op deze
+  site de heiligen van de Lage Landen.
+verhaal: |
+  De eerste zondag na Pinksteren is Allerheiligen: de hele wolk van
+  getuigen. In de Slavische traditie volgt daarop, de zondag erna, de
+  gedachtenis van de heiligen van de *lokale* Kerk — in Rusland de
+  heiligen van het Russische land, elders de heiligen van die Kerk.
+
+  Deze kalender vult die plaats in met de heiligen van de Lage Landen:
+  niet als synodaal menaion van een autocefale kerk, maar als dezelfde
+  beweging van universeel naar hier. Hun eigen gedenkdagen blijven op
+  hun feestdatum. Deze zondag zet ze als koor bijeen. Wie in de lijst
+  hoort, staat in het
+  [overzicht van heiligen van de Lage Landen](/heiligen/).
+betekenis: |
+  Pinksteren maakt heiligen, niet alleen in de verte. De lokale Kerk is
+  geen bijlage bij de universele: dezelfde Geest woont in deze grond,
+  deze talen, deze namen.
+
+  Gedenk wie hier predikte, stierf of de Orthodoxie opbouwde. Lees hun
+  namen; vraag hun gebed; ga hun weg op de plaats waar u staat.
+referenties:
+  - label: "Chrysostomos — Homilie 28 op Hebreeën (wolk van getuigen)"
+    url: "https://www.newadvent.org/fathers/240228.htm"
+    geraadpleegd: "2026-08-29"
+    inhoud: "Hebreeën 11–12: de wolk van getuigen; heiligheid als navolging."
+  - label: "OCA — Zondag van alle heiligen die in het Russische land hebben geschenen"
+    url: "https://www.oca.org/saints/lives/2024/06/16/49-sunday-of-all-saints-who-shone-forth-in-the-russian-land"
+    geraadpleegd: "2026-08-29"
+    inhoud: "Slavische invulling van de tweede zondag na Pinksteren: heiligen van de lokale Kerk; lezingen Heb. 11:33–12:2 en Matt. 4:25–5:12 naast de zondagslezing."
+  - label: "OrthodoxWiki — Sunday of All Saints"
+    url: "https://orthodoxwiki.org/Sunday_of_All_Saints"
+    geraadpleegd: "2026-08-29"
+    inhoud: "Eerste zondag na Pinksteren is Allerheiligen; daarna, in Slavische kerken, de lokale heiligen."

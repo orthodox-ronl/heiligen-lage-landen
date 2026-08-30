@@ -1,7 +1,7 @@
 ---
 title: "Lezingen van de dag"
 description: "Apostel en Evangelie: welke lezing wanneer, volgens Moskou (ROCOR bij twijfel)"
-git_date: 2026-08-21
+git_date: 2026-08-29
 ---
 
 Op de [datumpagina]({{% ref "/uitleg/datumpagina" %}}) en het [lezingenrooster]({{% ref "/lezingenrooster" %}})
@@ -188,3 +188,11 @@ nemen. De technische bijlage beschrijft hoe die lijst
 eruitziet; voor overleg met de clerus volstaat: datum (of relatie tot
 Pascha/Theofanie), gewenste lezingen, en of ze de doorlopende lezing
 vervangen of erbíj komen.
+
+De **tweede zondag na Pinksteren** is in Moskou de zondag van de heiligen
+van de lokale Kerk (daar: van het Russische land). Op deze kalender is dat
+de [Zondag van de heiligen van de Lage Landen]({{% ref "/feesten/zondag-heiligen-lage-landen" %}}).
+De doorlopende lezing van die zondag blijft staan; daarbij komen de
+lezingen van die lokale gedachtenis (zelfde perikopen als bij de
+Russische invulling). Een parochie die die zondag de Russische heiligen
+viert, volgt haar eigen boek.

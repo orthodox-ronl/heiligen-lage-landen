@@ -83,9 +83,12 @@ def check_node() -> None:
 
 
 def pip_install(args: list[str]) -> None:
-    cmd = [sys.executable, "-m", "pip", "install", *args]
-    proc = run(cmd)
+    cmd = [sys.executable, "-m", "pip", "install", "-q", *args]
+    proc = run(cmd, capture_output=True)
     if proc.returncode != 0:
+        text = ((proc.stdout or "") + (proc.stderr or "")).strip()
+        if text:
+            print(text)
         fail("pip install failed: " + " ".join(args))
 
 
@@ -157,10 +160,13 @@ def main() -> int:
         extras.append("vsa-tool:sibling")
 
     payload = stamp_payload(req_files, extras + args.imports)
+    missing = [name for name in args.imports if not module_ok(name)]
     if STAMP.is_file() and STAMP.read_text(encoding="utf-8").strip() == payload:
-        missing = [name for name in args.imports if not module_ok(name)]
         if not missing:
             return 0
+    if not missing and args.imports:
+        STAMP.write_text(payload + "\n", encoding="utf-8")
+        return 0
 
     for rel in args.pip_r:
         pip_install(["-r", str(ROOT / rel)])

@@ -293,6 +293,30 @@ bron:
 ```
 
 ```lezingen-voorbeeld
+id: zondag-heiligen-lage-landen-2026
+status: implemented
+jaar: 2026
+mmdd: "06-14"
+stijl: nieuw
+verwacht:
+  apostel:
+    - ref: "Rom. 2:10-16"
+    - ref: "Heb. 11:33-12:2"
+  evangelie:
+    - ref: "Matt. 4:18-23"
+    - ref: "Matt. 4:25-5:12"
+  regels:
+    - R3
+    - R2
+    - R5
+bron:
+  label: "Messia 2e zondag na Pinksteren + lokale heiligen (OCA All Saints of Russia, analogie)"
+  url: "https://www.oca.org/saints/lives/2024/06/16/49-sunday-of-all-saints-who-shone-forth-in-the-russian-land"
+  geraadpleegd: "2026-08-29"
+notitie: "R5 auto/toevoegen op zondag: rijádovoe (Rom. 2:10-16 / Matt. 4:18-23) plus Heb. 11:33-12:2 / Matt. 4:25-5:12."
+```
+
+```lezingen-voorbeeld
 id: kerst-nieuw
 status: implemented
 jaar: 2026

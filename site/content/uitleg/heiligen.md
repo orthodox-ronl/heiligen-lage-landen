@@ -61,6 +61,25 @@ Ook de **universele menologion** (iedere heilige van de Kerk, elke dag)
 hoort hier niet. Een dag zonder heilige van de Lage Landen is dus geen
 fout: er kunnen wel een feest, vasten of lezingen zijn.
 
+## Zondag van de heiligen van de Lage Landen
+
+De eerste zondag na Pinksteren is [Allerheiligen]({{% ref "/feesten/allerheiligen-zondag" %}}):
+alle heiligen, bekend en onbekend. In de Slavische traditie is de
+**tweede** zondag na Pinksteren de gedachtenis van de heiligen van de
+**lokale Kerk** (in Rusland: de heiligen van het Russische land).
+
+Op deze site is dat de
+[Zondag van de heiligen van de Lage Landen]({{% ref "/feesten/zondag-heiligen-lage-landen" %}}).
+Dat is dezelfde beweging — van de hele Kerk naar hier — niet een synodaal
+menaion van een autocefale kerk van de Lage Landen. De Moskouse kalender
+leest die zondag de Russische heiligen; wij zetten op die plaats het
+onderwerp van deze kalender.
+
+De namen blijven op hun **eigen feestdatum**. Deze zondag somt niet iedereen
+op de datumpagina op; ze wijst naar het [overzicht]({{% ref "/heiligen" %}}).
+Wie toevallig die zondag als gedenkdag heeft, staat wél als heilige van
+de dag.
+
 ## Eén persoon, meer namen
 
 Sommige heiligen zijn onder meerdere namen bekend (Lebuinus en Lubuinus,

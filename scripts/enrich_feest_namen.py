@@ -20,6 +20,11 @@ EXTRA: dict[str, list[str]] = {
         "Aankondiging aan de Theotokos",
     ],
     "allerheiligen-zondag": ["Zondag van Alle Heiligen", "Allerheiligen"],
+    "zondag-heiligen-lage-landen": [
+        "Zondag van de heiligen van de lokale Kerk",
+        "Tweede zondag na Pinksteren",
+        "Zondag na Allerheiligen",
+    ],
     "allerzielen-zaterdag-pinksteren": [
         "Allerzielen-zaterdag",
         "Zaterdag van de zielen (vóór Pinksteren)",

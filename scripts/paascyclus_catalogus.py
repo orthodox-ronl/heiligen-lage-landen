@@ -482,6 +482,28 @@ PAASCYCLUS: list[dict[str, Any]] = [
             "van Petrus en Paulus."
         ),
     },
+    {
+        "id": "zondag-heiligen-lage-landen",
+        "offset_dagen": 63,
+        "namen": {
+            "primair": "Zondag van de heiligen van de Lage Landen",
+            "alternatief": [
+                "Zondag van de heiligen van de lokale Kerk",
+                "Tweede zondag na Pinksteren",
+            ],
+        },
+        "observances": ["feest"],
+        "samenvatting": (
+            "Tweede zondag na Pinksteren: heiligen van de lokale Kerk; "
+            "op deze site de heiligen van de Lage Landen."
+        ),
+        "verhaal": (
+            "In de Slavische traditie gedenkt de tweede zondag na Pinksteren "
+            "de heiligen van de lokale Kerk. Deze kalender vult die plaats in "
+            "met de heiligen van de Lage Landen; hun eigen gedenkdagen blijven "
+            "op hun feestdatum."
+        ),
+    },
 ]
 
 REF_DATE = "2026-08-16"
