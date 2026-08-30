@@ -1,4 +1,4 @@
-<!doctype html><html lang=nl data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script>(function(){try{var e=localStorage.getItem("site-theme");(e==="light"||e==="dark")&&(document.documentElement.dataset.theme=e)}catch{}})()</script><title>Heilige of feest toevoegen of wijzigen · Heiligen van de Lage Landen</title><meta name=description content="YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"><link rel=icon type=image/png sizes=32x32 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-16x16.png><link rel="shortcut icon" href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon.ico><link rel=stylesheet href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/css/site.min.3c7bbe54f0e92f934bcb80747e65144787342e1fdd9deacc1a7274ab17bc3f49.css></head><body data-base=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/ data-home=false><a class=skip-link href=#main>Naar inhoud</a><header class=site-header><div class="wrap header-inner"><div class=brand-block><button type=button class=brand-mark data-info-tip=site title="Over deze site" aria-label="Over deze site">
+<!doctype html><html lang=nl data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script>(function(){try{var e=localStorage.getItem("site-theme");(e==="light"||e==="dark")&&(document.documentElement.dataset.theme=e)}catch{}})()</script><title>Heilige of feest toevoegen of wijzigen · Heiligen van de Lage Landen</title><meta name=description content="YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"><link rel=icon type=image/png sizes=32x32 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-16x16.png><link rel="shortcut icon" href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon.ico><link rel=stylesheet href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/css/site.min.b1fe0f2aa9736e94af12c5cf5f394b43577c2992e7a4074be8b114347685449e.css></head><body data-base=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/ data-home=false><a class=skip-link href=#main>Naar inhoud</a><header class=site-header><div class="wrap header-inner"><div class=brand-block><button type=button class=brand-mark data-info-tip=site title="Over deze site" aria-label="Over deze site">
 <img src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png width=32 height=32 alt>
 </button>
 <a class=brand href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/>Heiligen van de Lage Landen</a></div><div class=header-tools><nav class=nav aria-label=Hoofdnavigatie><a href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/>Heiligen</a>
@@ -146,25 +146,31 @@ Voorfeest, nafeest, synaxis, weken en Boterweek niet. Contract:
 zegt in een popover dat de tekst is ontleend aan de
 «Orthodoxe geloof»-bron (anders de andere referenties) en dat we nog
 toets zoeken. Zet iemand pas in dit veld na een expliciete toets van
-díe betekenistekst. Niet hetzelfde als <code>bronlaag: nagekeken</code>.</p><h2 id=icoon>Icoon</h2><p>Bestand onder <code>site/static/</code> (doorgaans <code>site/static/iconen/&lt;id>.jpg</code>).
+díe betekenistekst. Niet hetzelfde als <code>bronlaag: nagekeken</code>.</p><h2 id=icoon>Icoon</h2><p>Bestand onder <code>site/static/</code> (doorgaans <code>site/static/iconen/&lt;id>.jpg</code> voor
+het eerste icoon; extra iconen krijgen de stam van het bronbestand).
 Alleen tonen als <code>rechten: ok</code>, met <code>bron</code> en <code>licentie</code>. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).</p><h3 id=script>Script</h3><p>Vanuit de repo-root (<code>.\scripts</code> op PATH), net als <code>serve</code> of <code>build</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-cmd data-lang=cmd><span style=display:flex><span>icoon
+</span></span><span style=display:flex><span>icoon heiligen-lage-landen-muuricoon-hemelum.png
 </span></span><span style=display:flex><span>icoon --id willibrord --plaatje C:\pad\foto.jpg
-</span></span></code></pre></div><p>Het script vraagt <strong>eerst</strong> licentie/rechten. Alleen publiek domein, CC0,
-CC BY of CC BY-SA mogen in de repo. Is de licentie dat niet, dan vraagt
-het of u wilt wijzigen; <code>n</code> stopt, <code>j</code> vraagt opnieuw, tot het mag of u
-stopt. Daarna id, pad, bron, en of een bestaand icoon mag worden
-overschreven. Grote plaatjes worden verkleind (langste zijde 1600 px,
-JPEG); EXIF-rotatie wordt toegepast. Ontbrekende velden op de
-commandline worden in dezelfde volgorde gevraagd (<code>j</code>/<code>n</code> waar dat kan).</p><p><code>--niet-interactief</code> faalt als iets ontbreekt of de licentie niet
-herbruikbaar is. <code>--overschrijven</code> vervangt een bestaand icoon.</p><h3 id=commons-checklist-handmatig>Commons-checklist (handmatig)</h3><ol><li>Zoek op <a href=https://commons.wikimedia.org/>Wikimedia Commons</a> (naam +
+</span></span></code></pre></div><p>Het pad mag als eerste argument (zonder <code>--plaatje</code>). Het script vraagt
+<strong>eerst</strong> licentie/rechten. Alleen publiek domein, CC0, CC BY of CC BY-SA
+mogen in de repo. Is de licentie dat niet, dan vraagt het of u wilt
+wijzigen; <code>n</code> stopt, <code>j</code> vraagt opnieuw, tot het mag of u stopt. Daarna
+id (als die ontbreekt), bron, en — alleen als de <strong>doelnaam</strong> al op deze
+entry staat — of dat icoon mag worden overschreven. Een extra plaatje
+met een andere doelnaam wordt toegevoegd. Grote plaatjes worden verkleind
+(langste zijde 1600 px, JPEG); EXIF-rotatie wordt toegepast. Ontbrekende
+velden op de commandline worden in dezelfde volgorde gevraagd (<code>j</code>/<code>n</code>
+waar dat kan).</p><p><code>--niet-interactief</code> faalt als iets ontbreekt of de licentie niet
+herbruikbaar is. <code>--overschrijven</code> vervangt een icoon met dezelfde
+doelnaam zonder te vragen.</p><h3 id=commons-checklist-handmatig>Commons-checklist (handmatig)</h3><ol><li>Zoek op <a href=https://commons.wikimedia.org/>Wikimedia Commons</a> (naam +
 heilige / icon).</li><li>Open de <strong>File:</strong>-pagina; lees licentie en attribuutvereisten.</li><li>Toegestaan voor ons: publiek domein, CC0, of CC-BY / CC-BY-SA met
 naamsvermelding in <code>bron</code> / <code>licentie</code>.</li><li>Download het bestand; bewaar onder <code>site/static/iconen/&lt;id>.…</code>.</li><li>Zet in YAML <code>rechten: ok</code> en verwijs naar de File-pagina als <code>bron</code>.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>icoon</span>:
-</span></span><span style=display:flex><span>  <span style=color:#f92672>bestand</span>: <span style=color:#ae81ff>iconen/willibrord.jpg</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>rechten</span>: <span style=color:#ae81ff>ok</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>licentie</span>: <span style=color:#e6db74>&#34;Publiek domein&#34;</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>bron</span>: <span style=color:#e6db74>&#34;Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg&#34;</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>bestand</span>: <span style=color:#ae81ff>iconen/willibrord.jpg</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>rechten</span>: <span style=color:#ae81ff>ok</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>licentie</span>: <span style=color:#e6db74>&#34;Publiek domein&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>bron</span>: <span style=color:#e6db74>&#34;Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg&#34;</span>
 </span></span></code></pre></div><p>Ontbreekt een legaal bestand: laat <code>icoon</code> weg. Dat geldt ook voor
 obscure lokale heiligen zonder duidelijk PD/CC-portret (geen verkeerde
 persoon, geen hedendaags synaxarion-CDN). «Icoon in parochie» hoort niet
