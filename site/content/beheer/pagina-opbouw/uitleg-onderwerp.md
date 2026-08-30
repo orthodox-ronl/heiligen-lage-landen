@@ -10,7 +10,7 @@ en vasten mogen dichter bij de clerus liggen). Canonieke URL:
 (gegenereerd uit `data/regels/vasten.yaml`).
 
 Voorbeelden: datumpagina, toon, lezingen, vasten, heiligen, Nieuw/Oud,
-feestdatum, synaxarion, kleuren, agenda, reactie.
+feestdatum, synaxarion, feesten, kleuren, agenda, reactie.
 
 ## Titel en kern
 

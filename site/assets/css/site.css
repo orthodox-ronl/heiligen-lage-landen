@@ -829,7 +829,8 @@ main.main > :is(article, section) > h1 {
   margin: 0;
 }
 
-.heiligen-sticky-head .heiligen-sort {
+.heiligen-sticky-head .heiligen-sort,
+.list-sticky-head .heiligen-sort {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -837,10 +838,16 @@ main.main > :is(article, section) > h1 {
   margin: 0.45rem 0 0;
 }
 
-.heiligen-sticky-head .heiligen-sort-label {
+.heiligen-sticky-head .heiligen-sort-label,
+.list-sticky-head .heiligen-sort-label {
   font-size: 0.85rem;
   color: var(--muted);
   margin-right: 0.15rem;
+}
+
+.list-sticky-head .feesten-rang-hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.88rem;
 }
 
 .heiligen-col-head,
@@ -1117,6 +1124,22 @@ main.main > :is(article, section) > h1 {
   gap: 0.35rem 0.75rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.entry-list li.entry-list-groep {
+  display: block;
+  padding: 1.05rem 0 0.35rem;
+  margin-top: 0.35rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+.entry-list li.entry-list-groep:first-child {
+  margin-top: 0;
+  padding-top: 0.2rem;
 }
 
 .entry-list-hoofd {

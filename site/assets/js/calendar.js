@@ -1402,6 +1402,62 @@
       fillNieuwOudMeer(meer);
       return;
     }
+    if (kind === "feesten-rangschikking") {
+      title.textContent = "Rangschikking";
+      body.innerHTML =
+        `<p>Een synaxarion heeft meer dan één ingang: de loop van het jaar, ` +
+        `en registers op naam of gewicht. Kies hier dezelfde stof in een ` +
+        `andere volgorde.</p>` +
+        `<p><strong>Kerkelijk jaar</strong> begint op 1 september. ` +
+        `<strong>Januari–december</strong> volgt de burgerlijke maanden, ` +
+        `nog steeds op de feestdatum. <strong>Naar rang</strong> zet de ` +
+        `grote feesten vooraan. <strong>Op naam</strong> is het ` +
+        `namenregister.</p>` +
+        `<p>Nieuw/Oud verandert deze volgorde niet, alleen de datum tussen ` +
+        `haakjes.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML = achtergrondLink(
+          "feesten",
+          "Meer over het overzicht van feesten"
+        );
+      }
+      return;
+    }
+    if (kind === "kerkelijk-jaar") {
+      title.textContent = "Kerkelijk jaar";
+      body.innerHTML =
+        `<p>Het kerkelijk jaar begint op 1 september (de indictie) en ` +
+        `eindigt op 31 augustus. Daarna volgt in deze lijst wat van Pascha ` +
+        `afhangt. Transfiguratie en het Ontslapen staan dus aan het einde ` +
+        `van die loop.</p>` +
+        `<p>Het Synaxarion bladert de maanden van januari tot december; ` +
+        `dat is een andere ingang tot dezelfde vaste cyclus.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML = achtergrondLink(
+          "feesten",
+          "Meer over het overzicht van feesten"
+        );
+      }
+      return;
+    }
+    if (kind === "synaxarion-bladeren") {
+      title.textContent = "Bladeren";
+      body.innerHTML =
+        `<p><strong>Maanden</strong> loopt van januari tot december. ` +
+        `<strong>Alfabet</strong> is het namenregister.</p>` +
+        `<p>Het overzicht van feesten kan ook bij september beginnen, ` +
+        `of op rang — dezelfde stof, andere lijst.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML =
+          achtergrondLink("synaxarion", "Meer over het Synaxarion") +
+          ` · ` +
+          achtergrondLink("feesten", "Overzicht van feesten");
+      }
+      return;
+    }
     if (kind === "nieuw-oud") {
       // Knop «?» naast Nieuw/Oud: situatief, geankerd op vandaag.
       const style = getStyle();
