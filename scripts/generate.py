@@ -826,6 +826,41 @@ VOORBEELD_HEILIGEN = (
     "johannes-van-shanghai",
 )
 
+ZONDAG_HEILIGEN_LL = "zondag-heiligen-lage-landen"
+ZONDAG_HEILIGEN_LL_OFFSET = 63  # tweede zondag na Pinksteren
+
+
+def eerstvolgende_paascyclus_dag(offset: int, today: date | None = None) -> date:
+    """Eerstvolgende burgerlijke dag van een paascyclus-offset (vandaag telt mee)."""
+    today = today or date.today()
+    dit = pascha_offset_date(today.year, offset)
+    if dit >= today:
+        return dit
+    return pascha_offset_date(today.year + 1, offset)
+
+
+def _zondag_ll_overzicht_zin(
+    entries: list[dict[str, Any]],
+    today: date | None = None,
+) -> str:
+    """Zin met link naar de datumpagina van de Zondag van de heiligen van de Lage Landen."""
+    feest = next((e for e in entries if e.get("id") == ZONDAG_HEILIGEN_LL), None)
+    offset = ZONDAG_HEILIGEN_LL_OFFSET
+    naam = "Zondag van de heiligen van de Lage Landen"
+    if feest:
+        dn = feest.get("datum_norm") or {}
+        if "paascyclus_offset" in dn:
+            offset = int(dn["paascyclus_offset"])
+        naam = (feest.get("namen") or {}).get("primair") or naam
+    dag = eerstvolgende_paascyclus_dag(offset, today)
+    href = f"/datum/?datum={dag.isoformat()}"
+    wanneer = f"{dag.day} {MONTH_NAMES_NL[dag.month]} {dag.year}"
+    return (
+        f'De lokale Kerk gedenkt hen op de '
+        f'<a href="{html_escape(href)}">{html_escape(naam)}</a>'
+        f" ({html_escape(wanneer)})."
+    )
+
 
 def _nl_en_lijst(items: list[str]) -> str:
     if not items:
@@ -837,9 +872,14 @@ def _nl_en_lijst(items: list[str]) -> str:
     return ", ".join(items[:-1]) + f" en {items[-1]}"
 
 
-def write_generated_indexes(entries: list[dict[str, Any]] | None = None) -> None:
+def write_generated_indexes(
+    entries: list[dict[str, Any]] | None = None,
+    *,
+    today: date | None = None,
+) -> None:
     """Sectie-indexes die bij --clean opnieuw worden aangemaakt."""
-    heiligen = [e for e in (entries or []) if e.get("soort") == "heilige"]
+    entries = list(entries or [])
+    heiligen = [e for e in entries if e.get("soort") == "heilige"]
     aantal = len(heiligen)
     by_id = {e["id"]: e for e in heiligen}
     voorbeelden: list[str] = []
@@ -873,6 +913,9 @@ def write_generated_indexes(entries: list[dict[str, Any]] | None = None) -> None
         "Kerk staat hier. [Wie erin hoort](/uitleg/heiligen/).",
         "",
     ]
+    zondag_zin = _zondag_ll_overzicht_zin(entries, today)
+    if zondag_zin:
+        delen.extend([zondag_zin, ""])
     if voorbeelden:
         delen.extend(
             [f"Bekende namen: {_nl_en_lijst(voorbeelden)}.", ""]

@@ -1,7 +1,7 @@
 ---
 title: "Heiligenoverzicht"
 description: "Contract: zoeken op naam of plaats, kaart, tabel"
-git_date: 2026-08-23
+git_date: 2026-08-30
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -22,7 +22,10 @@ heiligen erin staan; dat dit heiligen **van de Lage Landen** zijn (die
 woordgroep krijgt een popover: kort het criterium, plus link naar
 [uitleg heiligen]({{% ref "/uitleg/heiligen" %}})); wie hier predikte,
 stichtte of leed, of na het schisma de Orthodoxie hier hielp opbouwen;
-niet iedere heilige van de Kerk; enkele bekende namen als link; zoeken
+niet iedere heilige van de Kerk; link naar de **datumpagina** van de
+eerstvolgende zondag waarop de lokale Kerk de heiligen van de Lage
+Landen gedenkt (tweede zondag na Pinksteren); enkele bekende namen als
+link; zoeken
 vindt ook andere namen en plaatsen; streken cursief.
 
 **Niet:** de selectielijst (`voldoet` / nader onderzoek / kandidaat);

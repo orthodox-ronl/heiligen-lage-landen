@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+from datetime import date
 from pathlib import Path
 
 import pytest
@@ -188,5 +189,51 @@ def test_write_generated_heiligen_index(
     assert "/heiligen/willibrord/" in text
     assert "Servatius" in text
     assert "Kerstfeest" not in text
+    assert "Zondag van de heiligen van de Lage Landen" in text
+    assert "/datum/?datum=" in text
     assert (content / "feesten" / "_index.md").is_file()
     assert (content / "vasten" / "_index.md").is_file()
+
+
+def test_eerstvolgende_paascyclus_dag_telt_vandaag_mee() -> None:
+    from datetime import timedelta
+
+    from generate import eerstvolgende_paascyclus_dag
+    from kalender import pascha_offset_date
+
+    dag_2026 = pascha_offset_date(2026, 63)
+    assert eerstvolgende_paascyclus_dag(63, dag_2026) == dag_2026
+    assert eerstvolgende_paascyclus_dag(63, dag_2026 - timedelta(days=1)) == dag_2026
+    assert eerstvolgende_paascyclus_dag(
+        63, dag_2026 + timedelta(days=1)
+    ) == pascha_offset_date(2027, 63)
+
+
+def test_heiligen_index_linkt_naar_datumpagina_zondag_ll(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_generated_indexes(
+        [
+            {
+                "id": "willibrord",
+                "soort": "heilige",
+                "namen": {"primair": "Willibrord"},
+            },
+            {
+                "id": "zondag-heiligen-lage-landen",
+                "soort": "feest",
+                "namen": {"primair": "Zondag van de heiligen van de Lage Landen"},
+                "datum_norm": {"paascyclus_offset": 63, "vorm": "dag"},
+            },
+        ],
+        today=date(2026, 5, 1),
+    )
+    text = (content / "heiligen" / "_index.md").read_text(encoding="utf-8")
+    from kalender import pascha_offset_date
+
+    dag = pascha_offset_date(2026, 63)
+    assert f"/datum/?datum={dag.isoformat()}" in text
+    assert "Zondag van de heiligen van de Lage Landen" in text
+    assert f"{dag.year}" in text
