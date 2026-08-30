@@ -202,12 +202,29 @@
     "streek": "vlaanderen"
   },
   {
+    "id": "groningen",
+    "naam": "Groningen",
+    "alternatief": [],
+    "lat": 53.219,
+    "lon": 6.568,
+    "soort": "plaats"
+  },
+  {
     "id": "heidenheim",
     "naam": "Heidenheim",
     "alternatief": [],
     "lat": 48.676,
     "lon": 10.151,
     "soort": "plaats"
+  },
+  {
+    "id": "hemelum",
+    "naam": "Hemelum",
+    "alternatief": [],
+    "lat": 52.878,
+    "lon": 5.447,
+    "soort": "plaats",
+    "streek": "frisia"
   },
   {
     "id": "kaiserswerth",
@@ -226,6 +243,17 @@
     "lat": 50.176,
     "lon": 3.235,
     "soort": "plaats"
+  },
+  {
+    "id": "leeuwarden",
+    "naam": "Leeuwarden",
+    "alternatief": [
+      "Ljouwert"
+    ],
+    "lat": 53.201,
+    "lon": 5.8,
+    "soort": "plaats",
+    "streek": "frisia"
   },
   {
     "id": "lier",
@@ -460,5 +488,13 @@
     "lon": 2.493,
     "soort": "plaats",
     "streek": "vlaanderen"
+  },
+  {
+    "id": "zwolle",
+    "naam": "Zwolle",
+    "alternatief": [],
+    "lat": 52.517,
+    "lon": 6.083,
+    "soort": "plaats"
   }
 ]
