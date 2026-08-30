@@ -390,5 +390,5 @@ icoon:
 `rechten: ok` is verplicht om te tonen. `bestand` is een lokaal pad, geen
 `http(s)`-URL. `bron` en `licentie` zijn verplicht als `bestand` gezet is.
 `generate.py` zet het pad plus bijschrift op de entry-pagina. Ontbreekt
-een legaal bestand: veld weglaten. Toevoegen: `python scripts/icoon_toevoegen.py`
+een legaal bestand: veld weglaten. Toevoegen: `icoon`
 (eerst licentie/rechten; alleen PD, CC0, CC BY of CC BY-SA).

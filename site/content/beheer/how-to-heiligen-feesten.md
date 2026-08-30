@@ -272,11 +272,11 @@ browser laden (auteursrecht, kapotte links, hotlink-blokkades).
 
 ### Script
 
-Vanuit de repo-root (`.\scripts` op PATH: `icoon`):
+Vanuit de repo-root (`.\scripts` op PATH), net als `serve` of `build`:
 
-```text
+```cmd
 icoon
-python scripts/icoon_toevoegen.py --id willibrord --plaatje C:\pad\foto.jpg
+icoon --id willibrord --plaatje C:\pad\foto.jpg
 ```
 
 Het script vraagt **eerst** licentie/rechten. Alleen publiek domein, CC0,

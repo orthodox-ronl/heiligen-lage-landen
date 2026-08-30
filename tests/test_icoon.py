@@ -10,7 +10,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from icoon_toevoegen import (  # noqa: E402
+from icoon import (  # noqa: E402
     Fout,
     Gestopt,
     Terminal,

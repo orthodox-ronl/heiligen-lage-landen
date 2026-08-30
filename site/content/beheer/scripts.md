@@ -1,6 +1,6 @@
 ---
 title: "Commando's"
-description: "Lokale scripts: test, validate, check, serve, build"
+description: "Lokale scripts: test, validate, check, serve, build, icoon"
 weight: 5
 git_date: 2026-08-30
 ---
@@ -22,15 +22,12 @@ cd /d C:\Git\orthodox-groningen\heiligen-lage-landen
 | `check` | CI-spiegel: pytest + validate + generate `--clean` + Hugo minify. Groen ≈ veilig om te pushen |
 | `serve` | lokale preview (validate + generate + Hugo op http://127.0.0.1:1313/) |
 | `build` | zelfde generate-keten als publiceren, output in `generated\site` |
+| `icoon` | lokaal plaatje als icoon bij bestaande heilige of feest (eerst licentie/rechten) |
 
 Scripts installeren ontbrekende Python-packages zelf. Ontbreekt Python, Hugo of `.\scripts` op PATH, dan stopt het commando met een hersteltekst.
 
 Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) voor wat generate overschrijft.
 
-## Icoon bij een bestaande entry
-
-`icoon` (of `python scripts/icoon_toevoegen.py`) zet een lokaal plaatje
-op een bestaande heilige of een bestaand feest. Het begint met
-licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA stopt het, tenzij u
-die gegevens wijzigt. How-to:
+`icoon` begint met licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA
+stopt het, tenzij u die gegevens wijzigt. How-to:
 [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

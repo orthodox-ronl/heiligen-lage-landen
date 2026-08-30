@@ -17,6 +17,7 @@ test
 check
 serve
 build
+icoon
 ```
 
 | Commando | Doel |
@@ -26,6 +27,7 @@ build
 | `check` | CI-spiegel (pytest + validate + generate + hugo minify) |
 | `serve` | lokale Hugo-preview |
 | `build` | statische site in `generated\site` |
+| `icoon` | lokaal plaatje als icoon bij bestaande heilige of feest |
 
 ## Architectuur
 

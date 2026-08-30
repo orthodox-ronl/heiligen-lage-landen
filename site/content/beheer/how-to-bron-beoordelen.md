@@ -49,7 +49,7 @@ en [namen]({{% ref "/beheer/how-to-namen" %}}).
   (publiek domein, CC0, of CC-BY/-SA met naamsvermelding).
 - → Bestand lokaal naar `site/static/iconen/<id>.jpg` (of `.png`); in YAML
   `icoon` met `rechten: ok`, `bron`, `licentie`. Geen hotlinks.
-  Script: `icoon` / `python scripts/icoon_toevoegen.py` — begint met
+  Script: `icoon` — begint met
   licentie (alleen PD/CC0/CC-BY/CC-BY-SA in de repo). How-to:
   [heiligen en feesten]({{% ref "/beheer/how-to-heiligen-feesten" %}})
   (sectie Icoon).

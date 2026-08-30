@@ -101,7 +101,7 @@ Toekomstige uitbreidingen (één lijst, nog niet bouwen):
 
 ## How-to’s
 
-- [Commando's]({{% ref "/beheer/scripts" %}}) — `test`, `validate`, `check`, `serve`, `build`
+- [Commando's]({{% ref "/beheer/scripts" %}}) — `test`, `validate`, `check`, `serve`, `build`, `icoon`
 - [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) — valideren, genereren, tests, wat CI doet
 - [Heilige of feest toevoegen of wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}})
 - [Bron beoordelen]({{% ref "/beheer/how-to-bron-beoordelen" %}}) — checklist aliassen, plaatsen, `inhoud`, iconen

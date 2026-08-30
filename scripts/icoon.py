@@ -333,6 +333,7 @@ def verzamel_rest(
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(
+        prog="icoon",
         description=(
             "Voeg een lokaal plaatje toe als icoon bij een bestaande heilige "
             "of een bestaand feest. Begint met licentie/rechten."

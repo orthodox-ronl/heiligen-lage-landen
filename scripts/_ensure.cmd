@@ -8,7 +8,7 @@ echo %PATH% | find /I ".\scripts" >nul
 if errorlevel 1 (
   echo ERROR: PATH does not contain .\scripts
   echo Add .\scripts to your user PATH ^(Windows environment variables^).
-  echo Work in the repo root so short names ^(test, serve, build, check^) resolve.
+  echo Work in the repo root so short names ^(test, validate, check, serve, build, icoon^) resolve.
   echo Without that segment you can still run scripts\test.cmd
   exit /b 1
 )
