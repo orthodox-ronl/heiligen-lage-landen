@@ -62,7 +62,15 @@ def test_nagekeken_kern_iconen_lokaal_of_weggelaten() -> None:
         assert (STATIC / bestand).is_file(), bestand
 
 
-def test_gedeeld_bestand_monulphus_gondulphus() -> None:
+def test_zondag_heiligen_lage_landen_heeft_lokaal_icoon() -> None:
+    by_id = {e["id"]: e for e in load_entries()}
+    icoon = by_id["zondag-heiligen-lage-landen"]["icoon"]
+    assert icoon.get("rechten") == "ok"
+    assert icoon.get("bron")
+    assert icoon.get("licentie")
+    bestand = str(icoon["bestand"]).replace("\\", "/")
+    assert bestand == "iconen/zondag-heiligen-lage-landen.jpg"
+    assert (STATIC / bestand).is_file()
     by_id = {e["id"]: e for e in load_entries()}
     a = by_id["monulphus"]["icoon"]["bestand"]
     b = by_id["gondulphus"]["icoon"]["bestand"]

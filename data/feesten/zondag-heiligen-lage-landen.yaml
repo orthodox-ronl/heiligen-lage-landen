@@ -16,6 +16,11 @@ datum:
   paascyclus:
     anker: pascha
     offset_dagen: 63
+icoon:
+  bestand: iconen/zondag-heiligen-lage-landen.jpg
+  rechten: ok
+  licentie: "CC BY-SA 4.0"
+  bron: "Foto van het icoon Koor van Fryske Hilligen (Odulphus, Frederik, Bonifatius, Ludger, Willibrord)"
 samenvatting: |
   Tweede zondag na Pinksteren: de heiligen van de lokale Kerk; op deze
   site de heiligen van de Lage Landen.
