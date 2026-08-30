@@ -30,5 +30,6 @@ Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/
 
 `icoon` begint met licentie/rechten (PD, CC of toestemming van een
 parochie/klooster). Het pad mag als eerste argument: `icoon foto.png`.
-`icoon --help` moet `[PLAATJE]` tonen. How-to:
+Daarna naam of id; geen treffer mag u opnieuw proberen tot het klopt of
+u stopt (leeg/`stop`/`q`). `icoon --help` moet `[PLAATJE]` tonen. How-to:
 [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

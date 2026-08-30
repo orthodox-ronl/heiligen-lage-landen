@@ -234,17 +234,28 @@ def score_tekst(query: str, *velden: str) -> int:
     if not q:
         return 0
     q_id = q.replace(" ", "-")
+    q_tokens = [t for t in q.replace("-", " ").split() if t]
     best = 0
     for veld in velden:
         n = _norm(str(veld or ""))
         if not n:
             continue
         n_id = n.replace(" ", "-")
+        n_tokens = [t for t in n.replace("-", " ").split() if t]
         if q == n or q_id == n_id:
             best = max(best, 100)
-        elif q_id in n_id or n_id in q_id or q in n or n in q:
-            best = max(best, 70)
+            continue
+        if q_id in n_id or n_id in q_id or q in n or n in q:
+            best = max(best, 80)
+        if q_tokens and all(t in n_tokens or t in n_id for t in q_tokens):
+            best = max(best, 85)
+        elif q_tokens and sum(1 for t in q_tokens if t in n_id) >= 2:
+            best = max(best, 60)
     return best
+
+
+def wil_stoppen(tekst: str) -> bool:
+    return _norm(tekst) in {"stop", "einde", "quit", "q"}
 
 
 def zoek_entries(root: Path, query: str) -> list[tuple[int, str, str, str]]:
@@ -313,48 +324,79 @@ def bevestig_entry(
     niet_interactief: bool,
 ) -> str:
     q = (query or "").strip()
-    if not q:
-        raise Fout("Id of naam ontbreekt.")
-    direct = None
-    try:
-        direct = vind_entry(root, q.replace(" ", "-").casefold())
-    except Fout:
+    while True:
+        if not q:
+            if niet_interactief:
+                raise Fout("Id of naam ontbreekt.")
+            q = term.vraag(
+                "Heilige of feest (naam of id; leeg of stop = afbreken): "
+            )
+            if not q or wil_stoppen(q):
+                raise Gestopt("Gestopt: geen entry gekozen.")
+            continue
+        eid_guess = q.replace(" ", "-").casefold()
         direct = None
-    if direct is not None:
-        eid = direct.stem
-        data = load_yaml(direct) or {}
-        naam = str((data.get("namen") or {}).get("primair") or eid)
-        soort = str(data.get("soort") or "")
-        if niet_interactief:
-            return eid
-        term.zeg(f"Gevonden: {naam} ({eid}, {soort}).")
-        if term.ja_nee("Klopt dit?", default=True):
-            return eid
-        raise Gestopt("Gestopt: andere entry nodig.")
-    treffers = zoek_entries(root, q)
-    if not treffers:
-        raise Fout(f"Geen heilige of feest gevonden voor {q!r}.")
-    if niet_interactief:
-        if len(treffers) == 1 or (
-            treffers[0][0] >= 95
-            and (len(treffers) == 1 or treffers[0][0] > treffers[1][0])
-        ):
-            return treffers[0][1]
-        ids = ", ".join(t[1] for t in treffers[:5])
-        raise Fout(f"Meerdere treffers voor {q!r}: {ids}. Geef --id.")
-    term.zeg("Treffers:")
-    for i, (_sc, eid, naam, soort) in enumerate(treffers[:8], start=1):
-        term.zeg(f"  {i}) {naam} ({eid}, {soort})")
-    raw = term.vraag("Keuze [nummer] of andere naam: ")
-    if raw.isdigit():
-        idx = int(raw)
-        if 1 <= idx <= min(8, len(treffers)):
-            gekozen = treffers[idx - 1]
-            term.zeg(f"Gekozen: {gekozen[2]} ({gekozen[1]}).")
+        if re.fullmatch(r"[a-z0-9][a-z0-9_-]*", eid_guess):
+            try:
+                direct = vind_entry(root, eid_guess)
+            except Fout:
+                direct = None
+        if direct is not None:
+            eid = direct.stem
+            data = load_yaml(direct) or {}
+            naam = str((data.get("namen") or {}).get("primair") or eid)
+            soort = str(data.get("soort") or "")
+            if niet_interactief:
+                return eid
+            term.zeg(f"Gevonden: {naam} ({eid}, {soort}).")
             if term.ja_nee("Klopt dit?", default=True):
-                return gekozen[1]
-            raise Gestopt("Gestopt: andere entry nodig.")
-    return bevestig_entry(term, root, raw, niet_interactief=False)
+                return eid
+            q = term.vraag(
+                "Andere naam of id (leeg of stop = afbreken): "
+            )
+            if not q or wil_stoppen(q):
+                raise Gestopt("Gestopt: geen entry gekozen.")
+            continue
+        treffers = zoek_entries(root, q)
+        if not treffers:
+            if niet_interactief:
+                raise Fout(f"Geen heilige of feest gevonden voor {q!r}.")
+            term.zeg(
+                f"Geen treffer voor {q!r}. Probeer een andere naam, "
+                "of leeg/stop om af te breken."
+            )
+            q = term.vraag("Heilige of feest (naam of id): ")
+            if not q or wil_stoppen(q):
+                raise Gestopt("Gestopt: geen entry gekozen.")
+            continue
+        if niet_interactief:
+            if len(treffers) == 1 or (
+                treffers[0][0] >= 85
+                and (len(treffers) == 1 or treffers[0][0] > treffers[1][0])
+            ):
+                return treffers[0][1]
+            ids = ", ".join(t[1] for t in treffers[:5])
+            raise Fout(f"Meerdere treffers voor {q!r}: {ids}. Geef --id.")
+        term.zeg("Treffers:")
+        for i, (_sc, eid, naam, soort) in enumerate(treffers[:8], start=1):
+            term.zeg(f"  {i}) {naam} ({eid}, {soort})")
+        raw = term.vraag(
+            "Keuze [nummer], andere naam, of stop: "
+        )
+        if not raw or wil_stoppen(raw):
+            raise Gestopt("Gestopt: geen entry gekozen.")
+        if raw.isdigit():
+            idx = int(raw)
+            if 1 <= idx <= min(8, len(treffers)):
+                gekozen = treffers[idx - 1]
+                term.zeg(f"Gekozen: {gekozen[2]} ({gekozen[1]}).")
+                if term.ja_nee("Klopt dit?", default=True):
+                    return gekozen[1]
+                q = ""
+                continue
+            term.zeg("Dat nummer staat niet in de lijst.")
+            continue
+        q = raw
 
 
 def kies_plaats(
@@ -365,31 +407,50 @@ def kies_plaats(
     verplicht: bool,
     niet_interactief: bool,
 ) -> dict[str, Any] | None:
-    q = (query or "").strip()
-    if not q:
-        if verplicht:
-            raise Fout("Geef --plaats (bijv. hemelum, groningen, zwolle, leeuwarden).")
-        return None
-    treffers = zoek_plaatsen(plaatsen, q)
-    if not treffers:
-        raise Fout(f"Onbekende plaats {q!r}. Ids staan in data/plaatsen.yaml.")
-    rec = treffers[0][1]
-    if niet_interactief:
-        if treffers[0][0] < 70:
-            raise Fout(f"Plaats {q!r} is niet eenduidig.")
-        return rec
-    naam = str(rec.get("naam") or rec.get("id"))
-    pid = str(rec.get("id") or "")
-    term.zeg(f"Plaats: {naam} ({pid}).")
-    if not term.ja_nee(
-        "Klopt dit? (parochie of klooster waarvan het plaatje stamt)",
-        default=True,
-    ):
-        andere = term.vraag("Andere plaats: ")
-        return kies_plaats(
-            term, plaatsen, andere, verplicht=verplicht, niet_interactief=False
-        )
-    return rec
+    while True:
+        q = (query or "").strip()
+        if not q:
+            if verplicht and niet_interactief:
+                raise Fout(
+                    "Geef --plaats (bijv. hemelum, groningen, zwolle, leeuwarden)."
+                )
+            if not verplicht:
+                return None
+            query = term.vraag(
+                "Plaats van de parochie (leeg of stop = afbreken): "
+            )
+            if not query or wil_stoppen(query):
+                raise Gestopt("Gestopt: geen plaats gekozen.")
+            continue
+        treffers = zoek_plaatsen(plaatsen, q)
+        if not treffers:
+            if niet_interactief:
+                raise Fout(
+                    f"Onbekende plaats {q!r}. Ids staan in data/plaatsen.yaml."
+                )
+            term.zeg(
+                f"Geen plaats voor {q!r}. Probeer opnieuw, of leeg/stop."
+            )
+            query = term.vraag("Plaats: ")
+            if not query or wil_stoppen(query):
+                raise Gestopt("Gestopt: geen plaats gekozen.")
+            continue
+        rec = treffers[0][1]
+        if niet_interactief:
+            if treffers[0][0] < 70:
+                raise Fout(f"Plaats {q!r} is niet eenduidig.")
+            return rec
+        naam = str(rec.get("naam") or rec.get("id"))
+        pid = str(rec.get("id") or "")
+        term.zeg(f"Plaats: {naam} ({pid}).")
+        if term.ja_nee(
+            "Klopt dit? (parochie of klooster waarvan het plaatje stamt)",
+            default=True,
+        ):
+            return rec
+        query = term.vraag("Andere plaats (leeg of stop = afbreken): ")
+        if not query or wil_stoppen(query):
+            raise Gestopt("Gestopt: geen plaats gekozen.")
 
 
 def yaml_quote_icoon(waarde: str) -> str:
@@ -660,7 +721,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description=(
             "Voeg een lokaal plaatje toe als icoon bij een bestaande heilige "
             "of een bestaand feest. Naam mag in plaats van id; het script "
-            "zoekt en vraagt bevestiging. Begint met licentie/rechten."
+            "zoekt en vraagt bevestiging tot het klopt of u stopt "
+            "(leeg, stop, q). Begint met licentie/rechten."
         ),
     )
     p.add_argument(
@@ -670,7 +732,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         metavar="PLAATJE",
         help="Pad naar het bronplaatje",
     )
-    p.add_argument("--id", help="Entry-id of naam (script zoekt en laat bevestigen)")
+    p.add_argument(
+        "--id",
+        help="Entry-id of naam (zoekt; geen treffer = opnieuw tot stop)",
+    )
     p.add_argument(
         "--plaatje",
         dest="plaatje_opt",

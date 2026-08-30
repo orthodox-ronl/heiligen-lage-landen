@@ -15,6 +15,7 @@ from icoon import (  # noqa: E402
     Gestopt,
     Terminal,
     bevestig_entry,
+    kies_plaats,
     bron_stem,
     canonical_licentie,
     doel_bestand,
@@ -243,6 +244,24 @@ def test_doel_bestand_eerste_en_extra() -> None:
     ) == "iconen/odulphus-hemelum.jpg"
 
 
+class _Antwoorden(Terminal):
+    """Interactieve terminal met voorgeschreven antwoorden."""
+
+    def __init__(self, antwoorden: list[str]) -> None:
+        super().__init__(niet_interactief=False)
+        self._antwoorden = list(antwoorden)
+        self.regels: list[str] = []
+
+    def zeg(self, tekst: str = "") -> None:
+        self.regels.append(tekst)
+
+    def vraag(self, prompt: str) -> str:
+        self.regels.append(prompt)
+        if not self._antwoorden:
+            raise AssertionError(f"geen antwoord voor {prompt!r}")
+        return self._antwoorden.pop(0)
+
+
 def test_zoek_naam_en_plaats() -> None:
     treffers = zoek_entries(ROOT, "odulf")
     assert "odulphus" in [t[1] for t in treffers]
@@ -257,6 +276,58 @@ def test_zoek_naam_en_plaats() -> None:
         "odulphus",
         niet_interactief=True,
     ) == "odulphus"
+
+
+def test_zoek_heiligen_lage_landen() -> None:
+    treffers = zoek_entries(ROOT, "heiligen lage landen")
+    ids = [t[1] for t in treffers]
+    assert "zondag-heiligen-lage-landen" in ids
+    assert ids[0] == "zondag-heiligen-lage-landen"
+    assert bevestig_entry(
+        Terminal(niet_interactief=True),
+        ROOT,
+        "heiligen lage landen",
+        niet_interactief=True,
+    ) == "zondag-heiligen-lage-landen"
+
+
+def test_bevestig_entry_opnieuw_tot_treffer() -> None:
+    term = _Antwoorden(["heiligen lage landen", "1", ""])
+    eid = bevestig_entry(
+        term,
+        ROOT,
+        "bestaat-niet-xyz",
+        niet_interactief=False,
+    )
+    assert eid == "zondag-heiligen-lage-landen"
+    assert any("Geen treffer" in r for r in term.regels)
+    assert any("Ongeldig id" in r for r in term.regels) is False
+
+
+def test_bevestig_entry_stop_na_lege_invoer() -> None:
+    term = _Antwoorden([""])
+    try:
+        bevestig_entry(term, ROOT, "bestaat-niet-xyz", niet_interactief=False)
+        raise AssertionError("had moeten stoppen")
+    except Gestopt as exc:
+        assert "Gestopt" in str(exc)
+
+
+def test_kies_plaats_opnieuw_tot_treffer() -> None:
+    from icoon import laad_plaatsen
+
+    plaatsen = laad_plaatsen(ROOT)
+    term = _Antwoorden(["hemelum", ""])
+    rec = kies_plaats(
+        term,
+        plaatsen,
+        "nergensville",
+        verplicht=True,
+        niet_interactief=False,
+    )
+    assert rec is not None
+    assert rec["id"] == "hemelum"
+    assert any("Geen plaats" in r for r in term.regels)
 
 
 def test_help_toont_positioneel_plaatje(capsys) -> None:
