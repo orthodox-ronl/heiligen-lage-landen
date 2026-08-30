@@ -411,6 +411,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--plaatje",
         dest="plaatje_opt",
         type=Path,
+        metavar="PAD",
         help="Pad naar het bronplaatje (alternatief voor het losse pad)",
     )
     p.add_argument(
