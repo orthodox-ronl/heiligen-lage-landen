@@ -75,6 +75,28 @@ def test_vierdatum_gelijk_tip() -> None:
     assert "vierdatum-gelijk" in js
 
 
+def test_datumpagina_feesticoon_naast_dagtype() -> None:
+    js = JS.read_text(encoding="utf-8")
+    assert "function renderDagIcoonHtml" in js
+    assert "function dagFeestIcoon" in js
+    assert "today-dag-hoofd" in js
+    assert "today-dag-icoon" in js
+    render_today = js.split("function renderToday", 1)[1].split(
+        "function isNarrowViewport", 1
+    )[0]
+    assert "renderDagIcoonHtml" in render_today
+    assert "today-dag-hoofd" in render_today
+    heiligen = js.split("function renderHeiligenHtml", 1)[1].split(
+        "function renderToday", 1
+    )[0]
+    assert "today-heilige-icoon" in heiligen
+    assert "today-dag-icoon" not in heiligen
+    css = CSS.read_text(encoding="utf-8")
+    assert ".today-dag-hoofd" in css
+    assert ".today-dag-icoon-img" in css
+    assert 'grid-template-areas:' in css.split(".today-dag-hoofd {", 1)[1][:400]
+
+
 def test_jaarkalender_titel_heeft_agenda_popup() -> None:
     kal = (ROOT / "site" / "layouts" / "_default" / "kalender.html").read_text(
         encoding="utf-8"

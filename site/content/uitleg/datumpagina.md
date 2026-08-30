@@ -2,7 +2,7 @@
 title: "Datumpagina’s"
 description: "Wat er op één burgerlijke dag in een bepaald jaar valt"
 uitleg_stijl: datumpagina
-git_date: 2026-08-18
+git_date: 2026-08-30
 ---
 
 De startpagina is het [overzicht van heiligen van de Lage Landen]({{% ref "/heiligen" %}}).
@@ -37,6 +37,9 @@ niet mee. De burgerlijke datum in de titel blijft staan. Zie
 Daaronder staat wat voor dag het is: bijvoorbeeld de 23e donderdag na
 Pinksteren, of de Zondag van de verloren zoon. Is het een feestdag, dan
 staat hier de naam van het feest — die wordt niet nog eens herhaald.
+Heeft dat feest een icoon op deze site, dan staat het icoon ernaast
+(eronder op een smal scherm). Alleen het primaire icoon; andere
+afbeeldingen van hetzelfde feest staan op de feestpagina.
 Wijst u op die weeknaam, dan legt een popover uit dat dit het kerkelijk
 jaar is, niet de lijst heiligen van de Lage Landen.
 
@@ -48,7 +51,9 @@ een lezing van de algemene kerkkalender die de weekreeks vervangt of
 eraan toevoegt). Uitgebreider: [Lezingen van de dag]({{% ref "/uitleg/lezingen" %}}).
 Zijn er heiligen van de Lage Landen op
 die dag, dan volgt de kop *Heilige van de dag* (of *Heiligen* in het
-meervoud) — ook die kop heeft een popover — en daaronder de lijst, met een klein icoon als we er een hebben.
+meervoud) — ook die kop heeft een popover — en daaronder de lijst, met
+een klein primair icoon als we er een hebben. Extra iconen van dezelfde
+heilige staan op de heiligenpagina, niet in deze lijst.
 Zijn er geen heiligen van de Lage Landen, dan komt die kop niet. In plaats
 daarvan staat een korte zin met een link waarom de dag leeg kan zijn.
 
