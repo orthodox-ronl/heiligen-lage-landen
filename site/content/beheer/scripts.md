@@ -28,8 +28,8 @@ Scripts installeren ontbrekende Python-packages zelf. Ontbreekt Python, Hugo of 
 
 Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) voor wat generate overschrijft.
 
-`icoon` begint met licentie/rechten (PD, CC of toestemming van een
-parochie/klooster). Het pad mag als eerste argument: `icoon foto.png`.
-Daarna naam of id; geen treffer mag u opnieuw proberen tot het klopt of
-u stopt (leeg/`stop`/`q`). `icoon --help` moet `[PLAATJE]` tonen. How-to:
-[heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).
+`icoon` controleert eerst of het bronplaatje bestaat, daarna
+licentie/rechten (PD, CC of toestemming van een parochie/klooster).
+Het pad mag als eerste argument: `icoon foto.png`. Extra icoon: zelfde
+YAML (`iconen:`), niet een tweede feestbestand. Eén treffer: J/n.
+How-to: [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

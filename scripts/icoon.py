@@ -1,6 +1,8 @@
 """Voeg een lokaal plaatje toe als icoon bij een bestaande heilige of feest.
 
-Eerst licentie/rechten: PD, CC, of toestemming van een parochie/klooster.
+Eerst: bestaat het bronbestand? Daarna licentie/rechten (PD, CC, of
+toestemming van een parochie/klooster). Extra icoon = zelfde YAML, niet
+een nieuw bestand naast de entry.
 """
 
 from __future__ import annotations
@@ -21,6 +23,24 @@ MAX_ZIJDE = 1600
 JPEG_KWALITEIT = 85
 STATIC_ICONEN = ROOT / "site" / "static" / "iconen"
 PAROCHIE = "parochie-toestemming"
+STEM_RUIS = frozenset(
+    {
+        "muuricoon",
+        "icoon",
+        "iconen",
+        "icon",
+        "foto",
+        "photo",
+        "plaatje",
+        "image",
+        "img",
+        "jpeg",
+        "jpg",
+        "png",
+        "webp",
+    }
+)
+GEEN_PLAATJE = {".yaml", ".yml", ".md", ".json", ".txt", ".py", ".cmd"}
 
 # Canonieke weergave → herkenningsaliassen (lower).
 LICENTIE_KEUZES: list[tuple[str, str, tuple[str, ...]]] = [
@@ -295,16 +315,29 @@ def zoek_plaatsen(
     return treffers
 
 
+def query_zonder_plaats_en_ruis(query: str, plaats_ids: set[str]) -> str:
+    """Strip plaats-id en woorden als muuricoon uit een zoekzin of stam."""
+    tokens = [t for t in _norm(query).replace("-", " ").split() if t]
+    if not tokens:
+        return ""
+    keep = [t for t in tokens if t not in plaats_ids and t not in STEM_RUIS]
+    return " ".join(keep) if keep else " ".join(tokens)
+
+
 def hints_uit_pad(pad: Path, plaatsen: dict[str, dict[str, Any]]) -> tuple[str, str | None]:
     """Zoekzin voor de entry, plus een plaats-id als die in de bestandsnaam zit."""
     stem = bron_stem(pad)
     tokens = [t for t in stem.split("-") if t]
     plaats_id = None
+    rest: list[str] = []
     for token in tokens:
-        if token in plaatsen:
+        if plaats_id is None and token in plaatsen:
             plaats_id = token
-            break
-    query = stem.replace("-", " ") if stem else ""
+            continue
+        if token in STEM_RUIS:
+            continue
+        rest.append(token)
+    query = " ".join(rest) if rest else stem.replace("-", " ")
     return query, plaats_id
 
 
@@ -316,6 +349,24 @@ def parochie_bronregel(plaats: dict[str, Any]) -> str:
     return f"Orthodoxe parochie te {naam}"
 
 
+def _entry_weergave(path: Path) -> tuple[str, str, str]:
+    eid = path.stem
+    data = load_yaml(path) or {}
+    naam = str((data.get("namen") or {}).get("primair") or eid)
+    soort = str(data.get("soort") or "")
+    return eid, naam, soort
+
+
+def _probeer_direct(root: Path, query: str) -> Path | None:
+    eid_guess = query.replace(" ", "-").casefold()
+    if not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", eid_guess):
+        return None
+    try:
+        return vind_entry(root, eid_guess)
+    except Fout:
+        return None
+
+
 def bevestig_entry(
     term: Terminal,
     root: Path,
@@ -324,6 +375,7 @@ def bevestig_entry(
     niet_interactief: bool,
 ) -> str:
     q = (query or "").strip()
+    plaats_ids = set(laad_plaatsen(root))
     while True:
         if not q:
             if niet_interactief:
@@ -334,18 +386,10 @@ def bevestig_entry(
             if not q or wil_stoppen(q):
                 raise Gestopt("Gestopt: geen entry gekozen.")
             continue
-        eid_guess = q.replace(" ", "-").casefold()
-        direct = None
-        if re.fullmatch(r"[a-z0-9][a-z0-9_-]*", eid_guess):
-            try:
-                direct = vind_entry(root, eid_guess)
-            except Fout:
-                direct = None
+        schoon = query_zonder_plaats_en_ruis(q, plaats_ids)
+        direct = _probeer_direct(root, q) or _probeer_direct(root, schoon)
         if direct is not None:
-            eid = direct.stem
-            data = load_yaml(direct) or {}
-            naam = str((data.get("namen") or {}).get("primair") or eid)
-            soort = str(data.get("soort") or "")
+            eid, naam, soort = _entry_weergave(direct)
             if niet_interactief:
                 return eid
             term.zeg(f"Gevonden: {naam} ({eid}, {soort}).")
@@ -358,6 +402,8 @@ def bevestig_entry(
                 raise Gestopt("Gestopt: geen entry gekozen.")
             continue
         treffers = zoek_entries(root, q)
+        if not treffers and schoon and schoon != _norm(q):
+            treffers = zoek_entries(root, schoon)
         if not treffers:
             if niet_interactief:
                 raise Fout(f"Geen heilige of feest gevonden voor {q!r}.")
@@ -377,6 +423,17 @@ def bevestig_entry(
                 return treffers[0][1]
             ids = ", ".join(t[1] for t in treffers[:5])
             raise Fout(f"Meerdere treffers voor {q!r}: {ids}. Geef --id.")
+        if len(treffers) == 1:
+            _sc, eid, naam, soort = treffers[0]
+            term.zeg(f"Gevonden: {naam} ({eid}, {soort}).")
+            if term.ja_nee("Klopt dit?", default=True):
+                return eid
+            q = term.vraag(
+                "Andere naam of id (leeg of stop = afbreken): "
+            )
+            if not q or wil_stoppen(q):
+                raise Gestopt("Gestopt: geen entry gekozen.")
+            continue
         term.zeg("Treffers:")
         for i, (_sc, eid, naam, soort) in enumerate(treffers[:8], start=1):
             term.zeg(f"  {i}) {naam} ({eid}, {soort})")
@@ -591,6 +648,49 @@ def prepareer_plaatje(
         return im.size
 
 
+def controleer_bronplaatje(pad: Path) -> Path:
+    """Bestaand beeldbestand; YAML is geen icoon-bron."""
+    p = pad.expanduser()
+    if not p.is_absolute():
+        p = Path.cwd() / p
+    p = p.resolve(strict=False)
+    suffix = p.suffix.lower()
+    if suffix in GEEN_PLAATJE:
+        raise Fout(
+            f"{p} is geen plaatje ({suffix}).\n"
+            "Een extra icoon hoort in dezelfde heilige- of feestyaml "
+            "(veld iconen:), niet als nieuw yaml-bestand. "
+            "Hemelum-foto van de Zondag van de heiligen van de Lage Landen: "
+            "bron is jpg/png; doel is site/static/iconen/"
+            "zondag-heiligen-lage-landen-hemelum.jpg in "
+            "data/feesten/zondag-heiligen-lage-landen.yaml."
+        )
+    if p.is_dir():
+        raise Fout(f"{p} is een map, geen plaatje.")
+    if not p.is_file():
+        raise Fout(
+            f"Plaatje niet gevonden: {p}\n"
+            "Geef een bestaand jpg/png-bestand (volledig pad of relatief "
+            "ten opzichte van de repo-root)."
+        )
+    return p
+
+
+def eis_bronplaatje(term: Terminal, cli: Path | None) -> Path:
+    if cli is not None:
+        return controleer_bronplaatje(cli)
+    if term.niet_interactief:
+        raise Fout("Geef het plaatje als pad (icoon foto.jpg) of --plaatje.")
+    while True:
+        raw = term.vraag("Pad naar het plaatje (leeg of stop = afbreken): ")
+        if not raw or wil_stoppen(raw):
+            raise Gestopt("Gestopt: geen plaatje.")
+        try:
+            return controleer_bronplaatje(Path(raw))
+        except Fout as exc:
+            term.zeg(f"Fout: {exc}")
+
+
 def cli_plaatje(args: argparse.Namespace) -> Path | None:
     pos = args.plaatje_pos
     opt = args.plaatje_opt
@@ -606,7 +706,7 @@ def verzamel_rest(
     term: Terminal,
     *,
     cli_id: str | None,
-    cli_plaatje: Path | None,
+    plaatje: Path,
     cli_bron: str | None,
     cli_plaats: str | None,
     cli_toelichting: str | None,
@@ -615,16 +715,6 @@ def verzamel_rest(
     root: Path,
 ) -> tuple[str, Path, str, str, int | None, dict[str, str]]:
     plaatsen = laad_plaatsen(root)
-
-    plaatje = cli_plaatje
-    if plaatje is None:
-        if term.niet_interactief:
-            raise Fout("Geef het plaatje als pad (icoon foto.jpg) of --plaatje.")
-        raw = term.vraag("Pad naar het plaatje: ")
-        plaatje = Path(raw).expanduser()
-    if not plaatje.is_file():
-        raise Fout(f"Plaatje niet gevonden: {plaatje}")
-
     hint_query, hint_plaats = hints_uit_pad(plaatje, plaatsen)
 
     plaats_rec = None
@@ -721,8 +811,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description=(
             "Voeg een lokaal plaatje toe als icoon bij een bestaande heilige "
             "of een bestaand feest. Naam mag in plaats van id; het script "
-            "zoekt en vraagt bevestiging tot het klopt of u stopt "
-            "(leeg, stop, q). Begint met licentie/rechten."
+            "zoekt en vraagt bij één treffer J/n, anders een lijst, tot het "
+            "klopt of u stopt (leeg, stop, q). Begint met: bestaat het plaatje?"
         ),
     )
     p.add_argument(
@@ -791,13 +881,13 @@ def run(args: argparse.Namespace, term: Terminal | None = None) -> int:
     term = term or Terminal(niet_interactief=args.niet_interactief)
     term.niet_interactief = args.niet_interactief
     try:
-        plaatje_cli = cli_plaatje(args)
+        plaatje = eis_bronplaatje(term, cli_plaatje(args))
         licentie = verzamel_licentie(term, args.licentie)
         parochie = toestemming_licentie(licentie)
         entry_id, plaatje, bron, relatief, vervang_index, extra = verzamel_rest(
             term,
             cli_id=args.id,
-            cli_plaatje=plaatje_cli,
+            plaatje=plaatje,
             cli_bron=args.bron,
             cli_plaats=args.plaats,
             cli_toelichting=args.toelichting,

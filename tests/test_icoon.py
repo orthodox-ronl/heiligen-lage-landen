@@ -15,15 +15,19 @@ from icoon import (  # noqa: E402
     Gestopt,
     Terminal,
     bevestig_entry,
-    kies_plaats,
     bron_stem,
     canonical_licentie,
+    controleer_bronplaatje,
     doel_bestand,
+    hints_uit_pad,
     icoon_yaml_blok,
     kies_licentie,
+    kies_plaats,
+    laad_plaatsen,
     licentie_is_herbruikbaar,
     parse_args,
     prepareer_plaatje,
+    query_zonder_plaats_en_ruis,
     run,
     upsert_icoon_in_yaml,
     verzamel_licentie,
@@ -292,7 +296,7 @@ def test_zoek_heiligen_lage_landen() -> None:
 
 
 def test_bevestig_entry_opnieuw_tot_treffer() -> None:
-    term = _Antwoorden(["heiligen lage landen", "1", ""])
+    term = _Antwoorden(["heiligen lage landen", ""])
     eid = bevestig_entry(
         term,
         ROOT,
@@ -302,6 +306,45 @@ def test_bevestig_entry_opnieuw_tot_treffer() -> None:
     assert eid == "zondag-heiligen-lage-landen"
     assert any("Geen treffer" in r for r in term.regels)
     assert any("Ongeldig id" in r for r in term.regels) is False
+    assert any("Klopt dit?" in r for r in term.regels)
+    assert not any(r.strip().startswith("Treffers:") for r in term.regels)
+
+
+def test_bevestig_een_treffer_is_ja_nee() -> None:
+    term = _Antwoorden([""])
+    eid = bevestig_entry(
+        term, ROOT, "heiligen lage landen", niet_interactief=False
+    )
+    assert eid == "zondag-heiligen-lage-landen"
+    assert any("Gevonden:" in r for r in term.regels)
+    assert not any(r.strip().startswith("Treffers:") for r in term.regels)
+
+
+def test_bevestig_stript_plaats_uit_id() -> None:
+    assert (
+        bevestig_entry(
+            Terminal(niet_interactief=True),
+            ROOT,
+            "zondag-heiligen-lage-landen-hemelum",
+            niet_interactief=True,
+        )
+        == "zondag-heiligen-lage-landen"
+    )
+
+
+def test_hints_bestandsnaam_stript_hemelum_en_muuricoon() -> None:
+    plaatsen = laad_plaatsen(ROOT)
+    query, plaats = hints_uit_pad(
+        Path("heiligen-lage-landen-muuricoon-hemelum.png"), plaatsen
+    )
+    assert plaats == "hemelum"
+    assert "muuricoon" not in query
+    assert "hemelum" not in query
+    assert "heiligen" in query
+    assert "lage" in query
+    assert query_zonder_plaats_en_ruis(
+        "zondag-heiligen-lage-landen-hemelum", set(plaatsen)
+    ) == "zondag heiligen lage landen"
 
 
 def test_bevestig_entry_stop_na_lege_invoer() -> None:
@@ -449,13 +492,14 @@ def test_run_zelfde_doelnaam_eist_overschrijven(tmp_path: Path) -> None:
     assert "bron: nieuw" in yaml_text
 
 
-def test_run_cli_slechte_licentie_niet_interactief() -> None:
+def test_run_cli_slechte_licentie_niet_interactief(tmp_path: Path) -> None:
+    src = _plaatje(tmp_path / "x.png")
     args = parse_args(
         [
             "--id",
             "voorbeeld",
             "--plaatje",
-            "x.png",
+            str(src),
             "--licentie",
             "copyright",
             "--bron",
@@ -464,3 +508,35 @@ def test_run_cli_slechte_licentie_niet_interactief() -> None:
         ]
     )
     assert run(args, Terminal(niet_interactief=True)) == 1
+
+
+def test_run_ontbrekend_plaatje_voor_licentie(tmp_path: Path) -> None:
+    ontbreekt = tmp_path / "bestaat-niet.png"
+    args = parse_args(
+        [
+            str(ontbreekt),
+            "--licentie",
+            "CC0",
+            "--id",
+            "voorbeeld",
+            "--bron",
+            "x",
+            "--niet-interactief",
+        ]
+    )
+    term = Terminal(niet_interactief=True)
+    assert run(args, term) == 1
+    tekst = "\n".join(term.uitvoer)
+    assert "niet gevonden" in tekst.casefold()
+    assert "Welke licentie" not in tekst
+
+
+def test_yaml_is_geen_bronplaatje(tmp_path: Path) -> None:
+    yaml_pad = tmp_path / "zondag-heiligen-lage-landen-hemelum.yaml"
+    yaml_pad.write_text("id: fout\n", encoding="utf-8")
+    try:
+        controleer_bronplaatje(yaml_pad)
+        raise AssertionError("yaml had moeten falen")
+    except Fout as exc:
+        assert "geen plaatje" in str(exc).casefold()
+        assert "zondag-heiligen-lage-landen.yaml" in str(exc)
