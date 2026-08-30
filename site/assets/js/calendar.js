@@ -1265,11 +1265,26 @@
       title.textContent = "Heiligen van de Lage Landen";
       body.innerHTML =
         `<p>Alleen heiligen die in de Lage Landen hebben gewerkt, of na het ` +
-        `schisma de Orthodoxie hier hebben opgebouwd. Niet iedere heilige ` +
-        `van de Kerk staat in deze kalender. Patroon van een parochie is ` +
-        `daarvoor niet genoeg.</p>` +
-        `<p>Feesten van het kerkelijk jaar en lezingen van de algemene ` +
-        `kalender staan daarboven, niet in deze lijst.</p>`;
+        `schisma de Orthodoxie hier hebben opgebouwd. Bijgevolg staat niet iedere ` +
+        `heilige van de universele Kerk in dit overzicht.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML = achtergrondLink(
+          "heiligen",
+          "Meer over wie hier wel of niet in staat"
+        );
+      }
+      return;
+    }
+    if (kind === "heiligen-toon") {
+      title.textContent = "Welke namen";
+      body.innerHTML =
+        `<p><strong>Opgenomen</strong> zijn de heiligen die in deze kalender ` +
+        `horen. U ziet hen ook op de datumpagina, in het Synaxarion en in ` +
+        `de agenda.</p>` +
+        `<p><strong>Alles</strong> voegt twee groepen toe: namen die we nog ` +
+        `toetsen (nader onderzoek), en kandidaten die waarschijnlijk niet ` +
+        `blijven. Kandidaten staan alleen in dit overzicht.</p>`;
       if (meer) {
         meer.hidden = false;
         meer.innerHTML = achtergrondLink(
@@ -1277,6 +1292,27 @@
           "Meer over wie erin staat"
         );
       }
+      return;
+    }
+    if (kind === "heiligen-weergave") {
+      title.textContent = "Weergave";
+      body.innerHTML =
+        `<p><strong>Lijst</strong> toont de namen in een tabel. De kaart van ` +
+        `plaatsen zit dan achter de balk onder het zoeken.</p>` +
+        `<p><strong>Kaart</strong> zet die plaatsen groot in beeld ` +
+        `(Nederland en België). Een klik op een marker zoekt op die plaats; ` +
+        `de lijst blijft eronder staan.</p>`;
+      if (meer) meer.hidden = true;
+      return;
+    }
+    if (kind === "heiligen-sorteren") {
+      title.textContent = "Sorteren";
+      body.innerHTML =
+        `<p><strong>Naam</strong> zet de heiligen alfabetisch. ` +
+        `<strong>Datum</strong> volgt de feestdagen langs het jaar, met een ` +
+        `streep bij elke maand. <strong>Plaats</strong> groepeert op stad, ` +
+        `dorp of streek.</p>`;
+      if (meer) meer.hidden = true;
       return;
     }
     if (kind === "dagtype") {

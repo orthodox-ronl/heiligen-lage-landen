@@ -1,0 +1,61 @@
+id: relindis
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Tweede abdis van Aldeneik bij Maaseik; opvolgster van Herlindis."
+namen:
+  primair: Relindis
+  alternatief:
+  - Reinhild
+  - Renula
+  - Relinde
+  - Relindis van Aldeneik
+  - Relindis van Maaseik
+datum:
+  waarde: "02-06"
+  stijl: gregoriaans
+titels:
+  - Abdis van Aldeneik
+periode: "8e eeuw"
+locaties:
+  - maaseik
+rustplaats:
+  plaats: maaseik
+  toelichting: "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+samenvatting: |
+  Tweede abdis van Aldeneik bij Maaseik; zuster van Herlindis.
+  Feestdag 6 februari.
+betekenis_lage_landen: |
+  Relindis leidde Aldeneik na haar zuster Herlindis. Het klooster lag in
+  het huidige Belgisch Limburg. De overlevering laat Bonifatius haar tot
+  abdis wijden. Dat is bestuur van een klooster in de Lage Landen vóór
+  het schisma.
+verhaal: |
+  Relindis (in het Heiligenlexikon Reinhild, ook Renula) was dochter van
+  Adelard en Grinuara en zuster van Herlindis. Beide groeiden op in
+  Valenciennes; hun ouders stichtten Aldeneik. Na de dood van Herlindis
+  werd Relindis tweede abdis, naar de overlevering gewijd door Bonifatius.
+  Sterfjaren lopen uiteen (onder meer circa 750 of 6 februari 780). Deze
+  kalender volgt 6 februari als canonieke dag (Heiligenlexikon). De vita
+  van de zusters is negende-eeuws.
+referenties:
+  - bron_id: hlex
+    label: "Heiligenlexikon — Reinhild von Aldeneik"
+    url: "https://www.heiligenlexikon.de/BiographienR/Reinhild_von_Aldeneyck.htm"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Lexikonvita: opvolgster van Herlind in Aldeneik, wijding toegeschreven
+      aan Bonifatius, feestdag 6 februari, relieken in Maaseik.
+  - label: "Wikipedia (NL) — Relindis"
+    url: "https://nl.wikipedia.org/wiki/Relindis"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Nederlandstalig overzicht: Aldeneik, opvolging van Harlindis, feestdagen
+      6 en 13 februari.
+  - label: "heiligen.net — Herlindis (en Relindis) van Aldeneyk"
+    url: "https://www.heiligen.net/heiligen/02/13/02-13-0750-herlindis.php"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Gezamenlijke Nederlandse vita van de twee abdissen van Aldeneik.

@@ -15,6 +15,7 @@ HEILIGEN = ROOT / "data" / "heiligen"
 KANDIDAAT = {
     "adela-van-vlaanderen",
     "fridolin",
+    "lioba",
     "walburga",
     "winnibald",
 }

@@ -1,0 +1,65 @@
+id: lioba
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: kandidaat-schrappen
+selectie_toelichting: "Abdis van Tauberbischofsheim; werk in Germanië. Het Lioba-klooster in Egmond (1935) is later patroonschap."
+selectie_toelichting_publiek: |
+  Lioba werkte in Tauberbischofsheim en het Maingebied, in de kring van
+  Bonifatius, niet in de Lage Landen. Het benedictijnse Lioba-klooster in
+  Egmond-Binnen (1935) is naar haar genoemd; patroonschap van een klooster
+  is volgens de criteria van deze kalender niet genoeg. Zij blijft hier
+  als kandidaat staan tot een uitdrukkelijk besluit.
+namen:
+  primair: Lioba
+  alternatief:
+  - Leoba
+  - Leobgytha
+  - Truthgeba
+  - Lioba van Tauberbischofsheim
+datum:
+  waarde: "09-28"
+  stijl: gregoriaans
+titels:
+  - Abdis van Tauberbischofsheim
+periode: "~710–782"
+locaties:
+  - tauberbischofsheim
+rustplaats:
+  plaats: fulda
+  toelichting: "Petersberg bij Fulda (samen met de relieken van Bonifatius)"
+samenvatting: |
+  Angelsaksische abdis van Tauberbischofsheim; verwante van Bonifatius.
+  Feestdag 28 september.
+betekenis_lage_landen: |
+  Lioba (Leobgytha) leidde het vrouwenklooster dat Bonifatius in
+  Tauberbischofsheim stichtte en vormde nonnen voor de Duitse missie.
+  Er is geen aantoonbaar verblijf of werk in Nederland of België.
+verhaal: |
+  Lioba werd omstreeks 710 in Wessex geboren (doopnaam Truthgeba; Lioba
+  is de kosenaam). Zij werd opgevoed in Thanet/Minster en in Wimborne
+  (onder abdis Tetta; daar ook Walburga). Bonifatius, een verwant,
+  riep haar omstreeks 735 naar Germanië; zij werd abdis van
+  Tauberbischofsheim. Zij stierf in 782 op het hofgoed Schornsheim bij
+  Mainz en werd bij Fulda begraven. Feestdag 28 september
+  (Heiligenlexikon).
+referenties:
+  - bron_id: hlex
+    label: "Heiligenlexikon — Lioba von Tauberbischofsheim"
+    url: "https://www.heiligenlexikon.de/BiographienL/Lioba_von_Tauberbischofsheim.htm"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Lexikonvita: Wimborne, roeping door Bonifatius, Tauberbischofsheim,
+      dood te Schornsheim (782), graf bij Fulda.
+  - label: "Wikipedia (DE) — Lioba"
+    url: "https://de.wikipedia.org/wiki/Lioba"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Overzicht van leven, missie in het Maingebied en verering.
+  - label: "Egmond Online — Het Liobaklooster in Egmond Binnen"
+    url: "https://egmondonline.nl/liobaklooster/"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Stichting 1935 door Hildegard Michaelis; vernoeming naar Lioba,
+      nicht van Bonifatius; relieken van Lioba en Bonifatius in Fulda.

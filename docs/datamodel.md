@@ -285,7 +285,9 @@ id_aliassen: [lubuinus]      # oude ids na een merge
 - **`selectie`** — toetsing aan de criteria. Ontbreekt bij een heilige:
   behandel als `nader-onderzoek`. Waarden: `voldoet`, `nader-onderzoek`,
   `kandidaat-schrappen`. Bij de laatste twee: uitklap onderaan de pagina
-  (`<details>`). Bij `voldoet`: niets.
+  (`<details>`). Bij `voldoet`: niets. `kandidaat-schrappen` staat in het
+  heiligenoverzicht (groep **Kandidaat**), niet in kalender, ICS of
+  datumpagina.
 - **`id_aliassen`** — oude `[a-z0-9_-]+` ids; niet gelijk aan het eigen id
   en niet gelijk aan een ander levend entry-id. `generate.py` zet Hugo
   `aliases` (`/heiligen/<oud-id>/`).

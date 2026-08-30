@@ -9,6 +9,7 @@ from itertools import combinations
 from typing import Any, Iterable, Iterator
 from urllib.parse import quote
 
+from load_entries import heilige_in_kalender
 from kalender import (
     format_mmdd,
     gregorian_to_julian_calendar,
@@ -256,6 +257,8 @@ def occurrences_by_date(
     suppressed: set[date] = set()
     weekly: list[dict[str, Any]] = []
     for entry in entries:
+        if not heilige_in_kalender(entry):
+            continue
         if is_weekly_entry(entry):
             weekly.append(entry)
             continue

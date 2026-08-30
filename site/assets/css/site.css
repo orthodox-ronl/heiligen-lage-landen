@@ -640,10 +640,24 @@ main.main > :is(article, section) > h1 {
 
 .rooster-page-title,
 .synaxarion-page-title,
-.list-sticky-head h1,
+.list-sticky-head h1 {
+  font-size: 1.35rem;
+  margin: 0 0 0.4rem;
+}
+
 .heiligen-sticky-head h1 {
   font-size: 1.35rem;
   margin: 0 0 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.4rem;
+}
+
+.heiligen-aantal {
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .rooster-sticky-head,
@@ -829,6 +843,11 @@ main.main > :is(article, section) > h1 {
   margin: 0;
 }
 
+.heiligen-sticky-head .heiligen-toolbar {
+  margin: 0.4rem 0 0;
+  gap: 0.4rem 1rem;
+}
+
 .heiligen-sticky-head .heiligen-sort,
 .list-sticky-head .heiligen-sort {
   display: flex;
@@ -836,6 +855,10 @@ main.main > :is(article, section) > h1 {
   align-items: center;
   gap: 0.35rem 0.5rem;
   margin: 0.45rem 0 0;
+}
+
+.heiligen-sticky-head .heiligen-toolbar .heiligen-sort {
+  margin: 0;
 }
 
 .heiligen-sticky-head .heiligen-sort-label,
@@ -869,12 +892,25 @@ main.main > :is(article, section) > h1 {
 }
 
 .heiligen-col-head {
-  padding: 0.45rem 0;
+  position: sticky;
+  top: var(--heiligen-col-top, var(--site-header-offset));
+  z-index: 14;
+  padding: 0.45rem 0 0.35rem;
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--muted);
   border-top: 1px solid var(--line);
-  margin-top: 0.35rem;
+  margin-top: 0.15rem;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.heiligen-col-head[hidden] {
+  display: none;
+}
+
+.heiligen-namen .heiligen-selectie {
+  margin-left: 0.45rem;
 }
 
 .heiligen-table {
@@ -1162,12 +1198,62 @@ main.main > :is(article, section) > h1 {
   display: none;
 }
 
-.heiligen-kaart {
-  height: 22rem;
-  margin: 0 0 1.25rem;
-  border: 1px solid var(--line);
+.heiligen-over-lijst {
+  margin: 0.35rem 0 0.85rem;
+}
+
+.heiligen-over-lijst summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.heiligen-kaart-balk {
+  display: block;
+  width: 100%;
+  margin: 0.45rem 0 0;
+  padding: 0.35rem 0.55rem;
+  text-align: left;
+  font: inherit;
+  font-size: 0.88rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px dashed var(--line);
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.heiligen-kaart-balk:hover {
+  color: inherit;
+  border-style: solid;
+}
+
+.heiligen-kaart-wrap {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
   border-radius: 0.45rem;
+}
+
+.heiligen-kaart-wrap.is-open {
+  height: 22rem;
+  margin: 0 0 0.85rem;
+  border: 1px solid var(--line);
+}
+
+.heiligen-kaart-wrap.is-open.is-kaart-view {
+  height: min(70vh, 32rem);
+}
+
+.heiligen-kaart {
+  height: 100%;
+  margin: 0;
   z-index: 0;
+}
+
+[data-heiligen-index][data-weergave="kaart"] .heiligen-table,
+[data-heiligen-index][data-weergave="kaart"] #heiligen-zoek-leeg {
+  margin-top: 0.5rem;
 }
 
 .kaart-popup-titel {

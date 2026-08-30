@@ -38,11 +38,13 @@ selectie_toelichting_publiek: |
 - `datum.waarde` is de canonieke gedenkdag (sterfdag bij twijfel).
   Orthodox bekende extra dagen: `datum.extra` → **Andere gedenkdagen**
   op de pagina, niet in de infobox.
-- `selectie` zelf komt **niet** in de Hugo-front matter (geen filterveld
-  voor bezoekers).
-- Overzicht voor beheerders: `/beheer/selectie/` (gegenereerd; live telling).
-- `kandidaat-schrappen` verwijdert niets; dat is een markering tot een
-  expliciet besluit.
+- `selectie` komt in de Hugo-front matter van heiligenpagina’s, zodat het
+  [overzicht]({{% ref "/heiligen" %}}) **Opgenomen** (alleen `voldoet`)
+  en **Alles** (groepen in de kalender / nader onderzoek / kandidaat)
+  kan tonen. Het staat **niet** in de infobox.
+- `kandidaat-schrappen` komt **niet** in `entries.json`, ICS, datumpagina
+  of Synaxarion. Wel eigen pagina en het overzicht. Verwijdert niets tot
+  een expliciet besluit.
 - **Indirecte invloed** (deur open, niet actief verzamelen): typisch
   `nader-onderzoek`, met uitleg op de pagina. Zie gebruikersuitleg.
 

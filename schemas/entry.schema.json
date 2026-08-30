@@ -262,7 +262,7 @@
     "selectie": {
       "type": "string",
       "enum": ["voldoet", "nader-onderzoek", "kandidaat-schrappen"],
-      "description": "Toetsing aan de selectiecriteria (heiligen). Ontbreekt: behandel als nader-onderzoek. Bij nader-onderzoek of kandidaat-schrappen verschijnt een paragraaf op de publieke heiligenpagina."
+      "description": "Toetsing aan de selectiecriteria (heiligen). Ontbreekt: behandel als nader-onderzoek. Bij nader-onderzoek of kandidaat-schrappen verschijnt een uitklap op de heiligenpagina. kandidaat-schrappen staat in het overzicht, niet in kalender/ICS."
     },
     "selectie_toelichting": {
       "type": "string",

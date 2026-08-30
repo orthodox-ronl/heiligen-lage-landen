@@ -184,11 +184,14 @@ def test_write_generated_heiligen_index(
     )
     text = (content / "heiligen" / "_index.md").read_text(encoding="utf-8")
     assert 'title: "Heiligen van de Lage Landen"' in text
-    assert "**2**" in text
     assert "Willibrord" in text
     assert "/heiligen/willibrord/" in text
     assert "Servatius" in text
     assert "Kerstfeest" not in text
+    assert "Over deze lijst" in text
+    assert "<details" in text
+    assert "Deze lijst verzamelt" in text
+    assert "Enkele bekende namen" in text
     assert "Zondag van de heiligen van de Lage Landen" in text
     assert "/datum/?datum=" in text
     assert (content / "feesten" / "_index.md").is_file()

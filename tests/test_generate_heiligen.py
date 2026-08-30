@@ -75,7 +75,7 @@ def test_entry_page_heeft_betekenis_en_aliases(
     text = (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     meta, body = _split_hugo_markdown(text)
     assert meta["aliases"] == ["/heiligen/oud-id/"]
-    assert "selectie" not in meta
+    assert meta["selectie"] == "voldoet"
     assert "niet op de publieke pagina" not in body
     assert "## Betekenis voor de Lage Landen" in body
     assert "Predikte onder de Friezen." in body
@@ -107,7 +107,7 @@ def test_entry_page_selectie_paragraaf_bij_nader_onderzoek(
     )
     text = (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     meta, body = _split_hugo_markdown(text)
-    assert "selectie" not in meta
+    assert meta["selectie"] == "nader-onderzoek"
     assert "<details" in body
     assert "<summary>Plaats in deze kalender</summary>" in body
     assert "## Over de plaats in deze kalender" not in body
@@ -129,7 +129,8 @@ def test_entry_page_selectie_fallback_toelichting(
         )
     )
     text = (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
-    body = _split_hugo_markdown(text)[1]
+    meta, body = _split_hugo_markdown(text)
+    assert meta["selectie"] == "kandidaat-schrappen"
     assert "<details" in body
     assert "<summary>Plaats in deze kalender</summary>" in body
     assert "## Over de plaats in deze kalender" not in body
@@ -476,10 +477,29 @@ def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
     assert "betekenis" not in by_id["kerst"]
     assert "betekenis" not in by_id["kerst"]
     assert "selectie" not in by_id["voorbeeld"]
+    assert "voorbeeld" in by_id
     assert by_id["voorbeeld"]["bronlaag"] == "encyclopedie"
     assert by_id["voorbeeld"]["locaties"] == ["utrecht"]
     assert by_id["voorbeeld"]["rustplaats"]["plaats"] == "echternach"
     assert "locaties" not in by_id["kerst"]
+
+
+def test_entries_json_slaat_kandidaat_schrappen_over(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    static = tmp_path / "static" / "data"
+    monkeypatch.setattr("generate.STATIC_DATA", static)
+    schrijf = _heilige(id="schrijf", selectie="kandidaat-schrappen")
+    schrijf["namen"] = {"primair": "Schrijf", "alternatief": []}
+    schrijf["source_path"] = "data/heiligen/schrijf.yaml"
+    blijf = _heilige(id="blijf", selectie="voldoet")
+    blijf["namen"] = {"primair": "Blijf", "alternatief": []}
+    blijf["source_path"] = "data/heiligen/blijf.yaml"
+    write_entries_json([schrijf, blijf])
+    payload = json.loads((static / "entries.json").read_text(encoding="utf-8"))
+    by_id = {item["id"]: item for item in payload}
+    assert "schrijf" not in by_id
+    assert "blijf" in by_id
 
 
 def test_beheer_selectie_groepeert_en_toont_toelichting() -> None:
@@ -555,6 +575,8 @@ def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
     assert "vendor/leaflet/leaflet.js" in layout
     assert "heiligen-data" in layout
     assert "data-heiligen-sort" in layout
+    assert "data-heiligen-selectie" in layout
+    assert "data-heiligen-weergave" in layout
     js = (ROOT / "site" / "assets" / "js" / "entry-filter.js").read_text(
         encoding="utf-8"
     )
@@ -565,6 +587,18 @@ def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
     assert "heiligen-filter" in js
     assert 'sortMode === "datum"' in js
     assert 'sortMode === "plaats"' in js
+    assert 'selectieMode === "kalender"' in js
+    assert 'weergaveMode === "kaart"' in js
+    assert "prevMonth !== mm" in js
+    assert "heiligen-toon" in (
+        ROOT / "site" / "layouts" / "partials" / "heiligen-overzicht.html"
+    ).read_text(encoding="utf-8")
+    cal = (ROOT / "site" / "assets" / "js" / "calendar.js").read_text(
+        encoding="utf-8"
+    )
+    assert 'kind === "heiligen-toon"' in cal
+    assert 'kind === "heiligen-weergave"' in cal
+    assert 'kind === "heiligen-sorteren"' in cal
     kaart = (ROOT / "site" / "assets" / "js" / "heiligen-kaart.js").read_text(
         encoding="utf-8"
     )

@@ -59,7 +59,9 @@ maandovergangen met scheidingslijn en gecentreerd maandlabel; de
 feestdatum van **vandaag** herkenbaar aan een gouden rand om de dagcel
 (zoals in de jaarkalender). Bij bezoek is die rij in beeld.
 
-**Niet:** `selectie:` of «kandidaat-schrappen»; beheerpaden; de volle
+**Niet:** `selectie:`-tokens in de lezerstekst; heiligen die kandidaat
+zijn om te schrappen (die horen alleen in het heiligenoverzicht);
+beheerpaden; de volle
 vita in de lijst; een regel «{maand}: {n} items»; meerdere rijen voor
 dezelfde feestdatum; zware achtergrondmarkering van de hele rij.
 

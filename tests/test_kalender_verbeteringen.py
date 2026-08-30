@@ -42,6 +42,9 @@ def test_heiligen_sorteerknoppen() -> None:
     assert "data-heiligen-sort" in html
     assert 'data-heiligen-sort="naam"' in html
     assert 'data-heiligen-sort="datum"' in html
+    assert 'data-heiligen-selectie="kalender"' in html
+    assert ">Opgenomen<" in html
+    assert 'data-heiligen-weergave="kaart"' in html
     filt = (ROOT / "site" / "assets" / "js" / "entry-filter.js").read_text(
         encoding="utf-8"
     )

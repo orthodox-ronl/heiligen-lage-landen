@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from iconen import extra_iconen, icoon_bestand, primair_icoon  # noqa: E402
-from load_entries import load_entries  # noqa: E402
+from load_entries import heilige_in_kalender, load_entries  # noqa: E402
 from plaatsen import (  # noqa: E402
     load_plaatsen,
     locatie_namen,
@@ -599,9 +599,17 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         f"cyclus: {entry.get('cyclus') or 'jaar'}",
         f"bronlaag: {bronlaag_van(entry)}",
         f"lage_landen: {'true' if entry.get('lage_landen') else 'false'}",
-        f"source_path: {yaml_quote(entry['source_path'])}",
-        f"overzicht_sortering: {yaml_quote(overzicht_sortering(entry))}",
     ]
+    if entry.get("soort") == "heilige":
+        fm.append(
+            f"selectie: {entry.get('selectie') or 'nader-onderzoek'}"
+        )
+    fm.extend(
+        [
+            f"source_path: {yaml_quote(entry['source_path'])}",
+            f"overzicht_sortering: {yaml_quote(overzicht_sortering(entry))}",
+        ]
+    )
     if entry.get("soort") == "feest":
         fm.append(f"overzicht_rang: {overzicht_rang(entry)}")
     if feestdatum and vorm == "dag":
@@ -903,7 +911,7 @@ def _zondag_ll_overzicht_zin(
     href = f"/datum/?datum={dag.isoformat()}"
     wanneer = f"{dag.day} {MONTH_NAMES_NL[dag.month]} {dag.year}"
     return (
-        f'De lokale Kerk gedenkt hen op de '
+        f"De lokale Kerk gedenkt deze heiligen op de "
         f'<a href="{html_escape(href)}">{html_escape(naam)}</a>'
         f" ({html_escape(wanneer)})."
     )
@@ -927,8 +935,9 @@ def write_generated_indexes(
     """Sectie-indexes die bij --clean opnieuw worden aangemaakt."""
     entries = list(entries or [])
     heiligen = [e for e in entries if e.get("soort") == "heilige"]
-    aantal = len(heiligen)
-    by_id = {e["id"]: e for e in heiligen}
+    n_nader = sum(1 for e in heiligen if e.get("selectie") == "nader-onderzoek")
+    n_kand = sum(1 for e in heiligen if e.get("selectie") == "kandidaat-schrappen")
+    by_id = {e["id"]: e for e in heiligen if heilige_in_kalender(e)}
     voorbeelden: list[str] = []
     for hid in VOORBEELD_HEILIGEN:
         entry = by_id.get(hid)
@@ -936,42 +945,70 @@ def write_generated_indexes(
             continue
         naam = entry["namen"]["primair"]
         voorbeelden.append(f"[{naam}]({entry_permalink(entry)})")
-    if aantal:
-        kop = (
-            f"Overzicht van **{aantal}** "
-            '<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">'
-            "heiligen van de Lage Landen</span>."
-        )
-    else:
-        kop = (
-            "Overzicht van "
-            '<span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">'
-            "heiligen van de Lage Landen</span>."
-        )
     delen = [
         "---",
         'title: "Heiligen van de Lage Landen"',
         "---",
         "",
-        kop,
+        '<details class="heiligen-over-lijst">',
+        "<summary>Over deze lijst</summary>",
         "",
-        "Wie hier predikte, stichtte of leed, of na het schisma de Orthodoxie "
-        "in Nederland of België hielp opbouwen. Niet iedere heilige van de "
-        "Kerk staat hier. [Wie erin hoort](/uitleg/heiligen/).",
+        "Deze lijst verzamelt heiligen die bij de Lage Landen horen. "
+        "Wie vóór het schisma hier predikte, een kerk of klooster stichtte, "
+        "of hier leed, hoort erin. Wie na het schisma de Orthodoxie in "
+        "Nederland of België heeft helpen opbouwen, hoort er eveneens in. "
+        "Niet iedere "
+        "heilige van de Kerk staat hier: de patroon van een parochie is "
+        "daarvoor niet genoeg. "
+        "[Wie erin hoort](/uitleg/heiligen/).",
         "",
     ]
+    if n_nader:
+        if n_nader == 1:
+            delen.append(
+                "Er staat **1** naam in **nader onderzoek**. Die blijft in de "
+                "kalender tot er een besluit is."
+            )
+        else:
+            delen.append(
+                f"Er staan **{n_nader}** namen in **nader onderzoek**. Die "
+                "blijven in de kalender tot er een besluit is."
+            )
+        delen.append("")
+    if n_kand:
+        if n_kand == 1:
+            delen.append(
+                "Er staat **1** **kandidaat**. Die hoort waarschijnlijk niet "
+                "in de kalender. U ziet die naam alleen als u alle namen "
+                "toont. Die naam staat niet op de datumpagina, in het "
+                "Synaxarion of in de agenda."
+            )
+        else:
+            delen.append(
+                f"Er staan **{n_kand}** **kandidaten**. Die horen "
+                "waarschijnlijk niet in de kalender. U ziet ze alleen als u "
+                "alle namen toont. Ze staan niet op de datumpagina, in het "
+                "Synaxarion of in de agenda."
+            )
+        delen.append("")
     zondag_zin = _zondag_ll_overzicht_zin(entries, today)
     if zondag_zin:
         delen.extend([zondag_zin, ""])
     if voorbeelden:
         delen.extend(
-            [f"Bekende namen: {_nl_en_lijst(voorbeelden)}.", ""]
+            [
+                f"Enkele bekende namen in deze lijst zijn {_nl_en_lijst(voorbeelden)}.",
+                "",
+            ]
         )
     delen.extend(
         [
-            "Zoeken vindt ook andere namen van dezelfde heilige, en plaatsen",
-            "(bijvoorbeeld Utrecht, Vlaanderen of Friesland). De kaart toont die",
-            "plaatsen; streken staan cursief in de lijst.",
+            "U kunt zoeken op naam — ook op een andere naam van dezelfde "
+            "heilige — of op plaats, bijvoorbeeld Utrecht, Vlaanderen of "
+            "Friesland. De kaart toont die plaatsen. Streken staan cursief, "
+            "zodat u ze van steden en dorpen kunt onderscheiden.",
+            "",
+            "</details>",
             "",
         ]
     )
@@ -1397,6 +1434,8 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
     years = list(occurrence_years())
     payload = []
     for entry in entries:
+        if not heilige_in_kalender(entry):
+            continue
         dn = entry["datum_norm"]
         vorm = dn.get("vorm") or "dag"
         item: dict[str, Any] = {

@@ -1,25 +1,51 @@
-<section class="section-list" data-heiligen-index>
+{{- $nVoldoet := 0 -}}
+{{- range .Pages -}}
+  {{- if eq (.Params.selectie | default "nader-onderzoek") "voldoet" -}}
+    {{- $nVoldoet = add $nVoldoet 1 -}}
+  {{- end -}}
+{{- end -}}
+<section class="section-list" data-heiligen-index data-weergave="lijst" data-selectie="kalender">
   <div class="heiligen-sticky-head">
-    <h1>{{ .Title }}</h1>
+    <h1>
+      <span class="info-term" tabindex="0" data-info-tip="heiligen-criterium">{{ .Title }}</span>
+      <span class="heiligen-aantal">(<span id="heiligen-aantal">{{ $nVoldoet }}</span>)</span>
+    </h1>
     <p class="filter-bar">
       <label class="search-label" for="heiligen-zoek">Zoeken (naam of plaats)</label>
       <input type="search" id="heiligen-zoek" class="search-input" placeholder="bijv. Utrecht, Vlaanderen, Goedele…" autocomplete="off">
     </p>
-    <div class="heiligen-sort" role="group" aria-label="Sorteren">
-      <span class="heiligen-sort-label">Sorteren:</span>
-      <button type="button" class="style-btn" data-heiligen-sort="naam" aria-pressed="true">Naam</button>
-      <button type="button" class="style-btn" data-heiligen-sort="datum" aria-pressed="false">Datum</button>
-      <button type="button" class="style-btn" data-heiligen-sort="plaats" aria-pressed="false">Plaats</button>
+    <div class="heiligen-toolbar">
+      <div class="heiligen-sort" role="group" aria-label="Welke heiligen">
+        <span class="heiligen-sort-label info-term" tabindex="0" data-info-tip="heiligen-toon" title="Welke namen u ziet">Toon:</span>
+        <button type="button" class="style-btn" data-heiligen-selectie="kalender" aria-pressed="true">Opgenomen</button>
+        <button type="button" class="style-btn" data-heiligen-selectie="alles" aria-pressed="false">Alles</button>
+      </div>
+      <div class="heiligen-sort" role="group" aria-label="Weergave">
+        <span class="heiligen-sort-label info-term" tabindex="0" data-info-tip="heiligen-weergave" title="Lijst of kaart">Weergave:</span>
+        <button type="button" class="style-btn" data-heiligen-weergave="lijst" aria-pressed="true">Lijst</button>
+        <button type="button" class="style-btn" data-heiligen-weergave="kaart" aria-pressed="false">Kaart</button>
+      </div>
+      <div class="heiligen-sort" id="heiligen-sort-groep" role="group" aria-label="Sorteren">
+        <span class="heiligen-sort-label info-term" tabindex="0" data-info-tip="heiligen-sorteren" title="Volgorde van de tabel">Sorteren:</span>
+        <button type="button" class="style-btn" data-heiligen-sort="naam" aria-pressed="true">Naam</button>
+        <button type="button" class="style-btn" data-heiligen-sort="datum" aria-pressed="false">Datum</button>
+        <button type="button" class="style-btn" data-heiligen-sort="plaats" aria-pressed="false">Plaats</button>
+      </div>
     </div>
-    <div class="heiligen-col-head is-sort-naam" id="heiligen-col-head" role="row">
-      <span role="columnheader">Naam</span>
-      <span role="columnheader">Plaatsen</span>
-      <span role="columnheader">Feestdatum</span>
-    </div>
+    <button type="button" class="heiligen-kaart-balk" id="heiligen-kaart-balk" aria-expanded="false" aria-controls="heiligen-kaart-wrap">
+      Kaart van plaatsen
+    </button>
+  </div>
+  <div id="heiligen-kaart-wrap" class="heiligen-kaart-wrap" hidden>
+    <div id="heiligen-kaart" class="heiligen-kaart" role="region" aria-label="Kaart van plaatsen"></div>
   </div>
   {{ .Content }}
-  <div id="heiligen-kaart" class="heiligen-kaart" role="region" aria-label="Kaart van plaatsen"></div>
   <p class="hint" id="heiligen-zoek-leeg" hidden>Geen heilige met die naam of plaats in dit overzicht.</p>
+  <div class="heiligen-col-head is-sort-naam" id="heiligen-col-head" role="row">
+    <span role="columnheader">Naam</span>
+    <span role="columnheader">Plaatsen</span>
+    <span role="columnheader">Feestdatum</span>
+  </div>
   <div id="heiligen-table" class="heiligen-table" data-heiligen-lijst role="table" aria-label="Heiligen"></div>
   {{- $items := slice -}}
   {{- range sort .Pages "Title" -}}
@@ -39,6 +65,7 @@
       "plaats_ids" (.Params.locatie_ids | default slice)
       "plaatsen" $plaatsen
       "locatie_zoek" (.Params.locatie_zoek | default "")
+      "selectie" (.Params.selectie | default "nader-onderzoek")
     -}}
     {{- $items = $items | append $item -}}
   {{- end -}}

@@ -12,7 +12,7 @@ Bron: layout `index.html` toont dezelfde inhoud als
 inleiding komt uit de gegenereerde heiligenindex.
 
 De startpagina *is* het heiligenoverzicht (titel, aantal, criterium,
-kaart, zoeken, tabel). De dagkaart van vandaag staat **niet** hier;
+zoeken, filter Opgenomen/Alles, weergave lijst/kaart, tabel). De dagkaart van vandaag staat **niet** hier;
 die hoort op [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}})
 (`/datum/`).
 

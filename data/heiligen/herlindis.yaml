@@ -1,0 +1,64 @@
+id: herlindis
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Eerste abdis van Aldeneik bij Maaseik; gewijd door Willibrord."
+namen:
+  primair: Herlindis
+  alternatief:
+  - Harlindis
+  - Herlinde
+  - Herlind
+  - Harlinde
+  - Herlindis van Aldeneik
+  - Herlindis van Maaseik
+datum:
+  waarde: "10-12"
+  stijl: gregoriaans
+titels:
+  - Abdis van Aldeneik
+periode: "~695–~750"
+locaties:
+  - maaseik
+rustplaats:
+  plaats: maaseik
+  toelichting: "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+samenvatting: |
+  Eerste abdis van Aldeneik bij Maaseik. Feestdag 12 oktober.
+betekenis_lage_landen: |
+  Herlindis leidde het vrouwenklooster Aldeneik in het huidige Belgisch
+  Limburg: prediking en kloosterleven aan de Maas, in de kring van
+  Willibrord (die haar tot abdis wijdde) en later Bonifatius. Dat is werk
+  in de Lage Landen vóór het schisma, geen latere cultus alleen.
+verhaal: |
+  Herlindis (ook Harlindis) werd omstreeks 695 geboren als dochter van de
+  Frankische edelman Adelard en Grinuara. Zij groeide op in het
+  benedictinessenklooster van Valenciennes. Rond 728–730 stichtten haar
+  ouders Aldeneik bij Maaseik; Willibrord wijdde haar tot eerste abdis.
+  Bronnen laten haar sterven tussen omstreeks 745 en 755 (vaak circa 750
+  of 753). Haar zuster Relindis volgde haar op, naar de overlevering
+  gewijd door Bonifatius. De vita is negende-eeuws (tussen 855 en 881);
+  sterfjaren verschillen in de naslagwerken. Canoniek gedenkt deze
+  kalender 12 oktober (sterfdag in het Heiligenlexikon).
+referenties:
+  - bron_id: hlex
+    label: "Heiligenlexikon — Herlind von Aldeneyk"
+    url: "https://www.heiligenlexikon.de/BiographienH/Herlind_Harlind.html"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Lexikonvita: eerste abdis van Aldeneik (728), zuster Reinhild/Relindis,
+      feestdag 12 oktober (Luik 13 februari).
+  - label: "Wikipedia (NL) — Harlindis"
+    url: "https://nl.wikipedia.org/wiki/Harlindis"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Nederlandstalig overzicht: Valenciennes, stichting Aldeneik, wijding
+      door Willibrord, opvolging door Relindis.
+  - label: "heiligen.net — Herlindis van Aldeneyk"
+    url: "https://www.heiligen.net/heiligen/10/12/10-12-0750-herlindis.php"
+    geraadpleegd: "2026-08-30"
+    inhoud: >
+      Nederlandse vita: ouders, groei van het klooster, bezoek van Willibrord
+      en Bonifatius, graf in Maaseik.

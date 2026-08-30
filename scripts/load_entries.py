@@ -16,6 +16,14 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 ENTRY_SUBDIRS = ("feesten", "heiligen", "vasten")
 
 
+def heilige_in_kalender(entry: dict[str, Any]) -> bool:
+    """Kandidaat-schrappen: wel pagina/overzicht, niet datum/ICS/agenda."""
+    if entry.get("soort") != "heilige":
+        return True
+    sel = entry.get("selectie") or "nader-onderzoek"
+    return sel != "kandidaat-schrappen"
+
+
 def load_yaml(path: Path) -> Any:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 

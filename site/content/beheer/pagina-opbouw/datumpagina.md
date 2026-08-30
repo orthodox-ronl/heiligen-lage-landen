@@ -70,4 +70,6 @@ er geen Lage-Landen-heiligen: géén kop, wél een korte zin met link
 waarom de dag leeg kan zijn — zonder icoon bij die cataloguslink.
 
 **Niet:** universeel menologion; parochiepatronen (nog geen onderdeel);
-interne `selectie:`-waarden; alle extra reproducties naast de naam.
+heiligen met `selectie: kandidaat-schrappen` (die staan alleen in het
+overzicht); interne `selectie:`-waarden in de lijst; alle extra
+reproducties naast de naam.

@@ -135,3 +135,15 @@ Niet verwijderen tot een uitdrukkelijk besluit.
 | `fridolin` | Boven-Rijn (Säckingen) |
 | `walburga` | Abdis van Heidenheim |
 | `winnibald` | Heidenheim / Engeland |
+| `lioba` | Tauberbischofsheim; Lioba-klooster Egmond is later patroonschap |
+
+## 30 augustus 2026
+
+Icoon Hemelum (zondag heiligen Lage Landen): halo-namen Herlindis, Relindis
+en Lioba.
+
+| Id | Naam | Selectie | Toets |
+| --- | --- | --- | --- |
+| `herlindis` | Herlindis van Aldeneik | voldoet | Eerste abdis Aldeneik/Maaseik; wijding Willibrord |
+| `relindis` | Relindis van Aldeneik | voldoet | Tweede abdis Aldeneik; opvolgster van Herlindis |
+| `lioba` | Lioba | kandidaat-schrappen | Werk in Germanië; Egmond 1935 is patroonschap |

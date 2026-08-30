@@ -5,17 +5,17 @@ uitleg_stijl: heiligen
 git_date: 2026-08-29
 ---
 
-Deze kalender verzamelt **heiligen die bij de Lage Landen horen**, naast de
-vaste feesten en de paascyclus. Niet iedere heilige van de universele Kerk
-staat hier. Deze pagina zegt wie we opnemen, wat u op een heiligenpagina
-kunt verwachten, en waarom een dag soms **geen heilige** toont.
+Deze site verzamelt **heiligen die bij de Lage Landen horen**, naast de
+vaste feesten en de paascyclus. Bijgevolg staat niet iedere heilige van de 
+universele Kerk in dit overzicht. Verderop staat wie er wel in staat, wat u op
+een heiligenpagina kunt verwachten, en waarom een dag soms **geen heilige** toont.
 
 Het [overzicht van heiligen]({{% ref "/heiligen" %}}) is de ingang op
 **persoon** (zoeken, belang, verhaal, datum). U kunt daar ook zoeken op
 plaats of streek — Utrecht, Vlaanderen, Friesland — en de plaatsen op een kaart
 zien. Streken staan cursief in de lijst, zodat u ze van steden en dorpen
-kunt onderscheiden. Heiligen met een icoon op deze site tonen dat icoon klein in de
-lijst. Het [Synaxarion]({{% ref "/uitleg/synaxarion" %}}) is de ingang op **datum**.
+kunt onderscheiden. In het [Synaxarion]({{% ref "/uitleg/synaxarion" %}}) 
+zit een overzicht van heiligen op **datum**.
 
 ## Wie staat erin?
 
@@ -23,7 +23,8 @@ Iemand hoort in deze lijst als minstens één van beide geldt:
 
 - **Vóór het schisma:** de heilige is in de Lage Landen geweest en heeft
   daar iets gedaan — prediking, stichting, martelaarschap, bestuur van een
-  kerk of klooster. Alleen op doorreis zijn is niet genoeg.
+  kerk of klooster. Het is niet genoeg als de heilige alleen op doorreis is
+  geweest, of dat er een parochie naar is genoemd.
 - **Na het schisma:** de heilige wordt in de Orthodoxe Kerk vereerd én
   heeft bijgedragen aan de Orthodoxie in Nederland of België. Voorbeelden
   zijn de heilige Johannes van Shanghai, die bijdroeg aan het opzetten van
@@ -36,6 +37,11 @@ er twijfel, dan staat onderaan die pagina een **uitklap** *Plaats in
 deze kalender*: kort waarom, en een verwijzing naar deze uitleg.
 Verwijderen gebeurt alleen na een uitdrukkelijk besluit. Wie wél
 voldoet, krijgt dat blok niet.
+
+Het [overzicht]({{% ref "/heiligen" %}}) toont standaard **Opgenomen**
+(heiligen die in deze kalender horen). **Alles** voegt groepen toe:
+**in de kalender**, **nader onderzoek**, of **kandidaat** (alleen in
+dat overzicht, niet op de datumpagina of in de agenda).
 
 **Indirecte invloed** (bijvoorbeeld iemand die missionarissen opleidde
 maar zelf niet hier predikte) kan als grensgeval blijven staan. We zoeken
@@ -55,7 +61,7 @@ namen in parochies ook zijn.
 
 Later kan een aparte, duidelijk gemerkte groep **parochiepatronen**
 onderaan de daglijst komen, met een link naar de betreffende parochie.
-Dat is nog geen onderdeel van deze kalender.
+Dat is vooralsnog geen onderdeel van deze kalender.
 
 Ook de **universele menologion** (iedere heilige van de Kerk, elke dag)
 hoort hier niet. Een dag zonder heilige van de Lage Landen is dus geen

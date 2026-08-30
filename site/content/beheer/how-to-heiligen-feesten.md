@@ -196,7 +196,9 @@ selectie_toelichting_publiek: "…"  # optioneel; lezersversie
 ```
 
 - Ontbreekt `selectie`: behandel als `nader-onderzoek`. Zet het veld als u
-  een heilige toetst. `kandidaat-schrappen` verwijdert niets.
+  een heilige toetst. `kandidaat-schrappen` verwijdert niets; die heiligen
+  staan in het overzicht als **kandidaat**, niet op de datumpagina of in
+  ICS/agenda.
 - Bij `nader-onderzoek` / `kandidaat-schrappen` verschijnt onderaan een
   uitklap (`<details>`) **Plaats in deze kalender**: korte status, waarom,
   link naar de uitleg-criteria. Bij `voldoet`: niets. Tekst:
@@ -396,5 +398,5 @@ check
 
 Of stapsgewijs: `validate`, daarna generate via `serve` / `build`, of `test`.
 
-Daarna de entry op de site: Synaxarion (vaste dag), datumpagina (dit jaar),
-eventueel ICS. Klopt de naam niet, dan eerst `namen:` in het entry-YAML.
+Daarna de entry op de site: overzicht (groep), Synaxarion en datumpagina
+(alleen als `selectie` niet `kandidaat-schrappen` is), eventueel ICS.

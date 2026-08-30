@@ -8,9 +8,9 @@ generator: scripts/generate.py
 Gegenereerd uit `selectie` op heiligen-YAML. Niet bedoeld voor bezoekers.
 Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 
-**71** heiligen.
+**74** heiligen.
 
-## Voldoet (59)
+## Voldoet (61)
 
 - [Acharius van Doornik](/heiligen/acharius-van-doornik/) (`data/heiligen/acharius-van-doornik.yaml`) — Bisschop van Doornik-Noyon; steunde de missie in het Belgische Merovingische gebied.
 - [Adelbert](/heiligen/adelbert/) (`data/heiligen/adelbert.yaml`) — Egmond; metgezel van Willibrord.
@@ -40,6 +40,7 @@ Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 - [Gondulphus](/heiligen/gondulphus/) (`data/heiligen/gondulphus.yaml`) — Bisschop van Maastricht; cultus samen met Monulphus.
 - [Gregorius van Utrecht](/heiligen/gregorius-van-utrecht/) (`data/heiligen/gregorius-van-utrecht.yaml`) — Abt en beheerder van Utrecht; leerling van Bonifatius.
 - [Gudula van Brussel](/heiligen/gudula-van-brussel/) (`data/heiligen/gudula-van-brussel.yaml`) — Patrones van Brussel; Moorsel–Brussel-cultus.
+- [Herlindis](/heiligen/herlindis/) (`data/heiligen/herlindis.yaml`) — Eerste abdis van Aldeneik bij Maaseik; gewijd door Willibrord.
 - [Hubertus van Maastricht](/heiligen/hubertus-van-maastricht/) (`data/heiligen/hubertus-van-maastricht.yaml`) — Laatste bisschop van Maastricht; eerste van Luik.
 - [Hunger van Utrecht](/heiligen/hunger-van-utrecht/) (`data/heiligen/hunger-van-utrecht.yaml`) — Bisschop van Utrecht in de Vikingtijd.
 - [Iduberga](/heiligen/iduberga/) (`data/heiligen/iduberga.yaml`) — Stichteres van Nijvel; moeder van Gertrudis en Begga.
@@ -57,6 +58,7 @@ Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 - [Otger](/heiligen/otger/) (`data/heiligen/otger.yaml`) — Metgezel van Wiro en Plechelm; stichting Odiliënberg.
 - [Plechelm von Odilienberg](/heiligen/plechelm-von-odilienberg/) (`data/heiligen/plechelm-von-odilienberg.yaml`) — Odiliënberg met Wiro en Otger; cultus Oldenzaal.
 - [Radboud](/heiligen/radboud/) (`data/heiligen/radboud.yaml`) — Bisschop van Utrecht.
+- [Relindis](/heiligen/relindis/) (`data/heiligen/relindis.yaml`) — Tweede abdis van Aldeneik bij Maaseik; opvolgster van Herlindis.
 - [Remaclus](/heiligen/remaclus/) (`data/heiligen/remaclus.yaml`) — Maastricht / Stavelot.
 - [Rumold](/heiligen/rumold/) (`data/heiligen/rumold.yaml`) — Patroon van Mechelen; prediking en martelaarschap in Vlaanderen.
 - [Servatius](/heiligen/servatius/) (`data/heiligen/servatius.yaml`) — Eerste bevestigde bisschop van Tongeren; graf in Maastricht.
@@ -83,9 +85,10 @@ Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 - [Quirillus van Tongern](/heiligen/quirillus-van-tongern/) (`data/heiligen/quirillus-van-tongern.yaml`) — Vroege bisschop van Tongeren; of hij historisch is, is onzeker.
 - [Winnocus](/heiligen/winnocus/) (`data/heiligen/winnocus.yaml`) — Abt van Wormhout; historisch Vlaanderen, nu Frankrijk.
 
-## Kandidaat om te schrappen (4)
+## Kandidaat om te schrappen (5)
 
 - [Adela van Vlaanderen](/heiligen/adela-van-vlaanderen/) (`data/heiligen/adela-van-vlaanderen.yaml`) — Gestorven 1079; westerse cultus na het schisma, geen orthodoxe bijdrage aan NL/BE.
 - [Fridolin](/heiligen/fridolin/) (`data/heiligen/fridolin.yaml`) — Verlichter van de Boven-Rijn (Säckingen); geen aantoonbaar werk in de Lage Landen.
+- [Lioba](/heiligen/lioba/) (`data/heiligen/lioba.yaml`) — Abdis van Tauberbischofsheim; werk in Germanië. Het Lioba-klooster in Egmond (1935) is later patroonschap.
 - [Walburga](/heiligen/walburga/) (`data/heiligen/walburga.yaml`) — Abdis van Heidenheim; cultus elders is geen werk in de Lage Landen.
 - [Winnibald](/heiligen/winnibald/) (`data/heiligen/winnibald.yaml`) — Heidenheim / Engeland; geen aantoonbaar werk in de Lage Landen.
