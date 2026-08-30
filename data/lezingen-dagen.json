@@ -4269,25 +4269,49 @@
       "07-07": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "07-08": {
         "apostel": [
@@ -12891,25 +12915,49 @@
       "06-22": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-23": {
         "apostel": [
@@ -21715,25 +21763,49 @@
       "06-14": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-15": {
         "apostel": [
@@ -31205,25 +31277,49 @@
       "07-04": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "07-05": {
         "apostel": [
@@ -39773,25 +39869,49 @@
       "06-18": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-19": {
         "apostel": [
@@ -48443,25 +48563,49 @@
       "06-10": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-11": {
         "apostel": [
@@ -57909,25 +58053,49 @@
       "06-30": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "07-01": {
         "apostel": [
@@ -66524,25 +66692,49 @@
       "06-15": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-16": {
         "apostel": [
@@ -75725,12 +75917,12 @@
         "rijadovoe": {
           "apostel": [
             {
-              "ref": "Heb. 1:10-2:3"
+              "ref": "Rom. 2:10-16"
             }
           ],
           "evangelie": [
             {
-              "ref": "Mark. 2:1-12"
+              "ref": "Matt. 4:18-23"
             }
           ],
           "status": "gevonden",
@@ -84348,25 +84540,49 @@
       "06-09": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-10": {
         "apostel": [
@@ -93108,25 +93324,49 @@
       "06-01": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-02": {
         "apostel": [
@@ -102590,25 +102830,49 @@
       "06-21": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-22": {
         "apostel": [
@@ -111241,25 +111505,49 @@
       "06-05": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-06": {
         "apostel": [
@@ -119876,25 +120164,49 @@
       "05-28": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "05-29": {
         "apostel": [
@@ -129302,25 +129614,49 @@
       "06-17": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-18": {
         "apostel": [
@@ -137942,25 +138278,49 @@
       "06-02": {
         "apostel": [
           {
-            "ref": "Heb. 1:10-2:3"
+            "ref": "Rom. 2:10-16"
+          },
+          {
+            "ref": "Heb. 11:33-12:2"
           }
         ],
         "evangelie": [
           {
-            "ref": "Mark. 2:1-12"
+            "ref": "Matt. 4:18-23"
+          },
+          {
+            "ref": "Matt. 4:25-5:12"
           }
         ],
         "regels": [
-          "R3"
+          "R3",
+          "R2",
+          "R5"
         ],
-        "override_id": null,
-        "override_naam": null,
-        "override_laag": null,
-        "daglabel": "2e zondag na Pinksteren",
-        "toelichting": "R3",
+        "override_id": "zondag-heiligen-lage-landen",
+        "override_naam": "Zondag van de heiligen van de Lage Landen",
+        "override_laag": "feest",
+        "daglabel": "Zondag van de heiligen van de Lage Landen",
+        "toelichting": "R5 toevoegen: rijádovoe + feest",
         "status": "gevonden",
-        "rang": null,
-        "modus": null
+        "rang": "vigil",
+        "modus": "toevoegen",
+        "rijadovoe": {
+          "apostel": [
+            {
+              "ref": "Rom. 2:10-16"
+            }
+          ],
+          "evangelie": [
+            {
+              "ref": "Matt. 4:18-23"
+            }
+          ],
+          "status": "gevonden",
+          "regels": [
+            "R3"
+          ]
+        }
       },
       "06-03": {
         "apostel": [
