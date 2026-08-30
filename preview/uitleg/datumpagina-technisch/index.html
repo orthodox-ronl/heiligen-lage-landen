@@ -1,4 +1,4 @@
-<!doctype html><html lang=nl data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script>(function(){try{var e=localStorage.getItem("site-theme");(e==="light"||e==="dark")&&(document.documentElement.dataset.theme=e)}catch{}})()</script><title>Datumpagina’s (technisch) · Heiligen van de Lage Landen</title><meta name=description content="URL-parameters, entries.json en wat de dagweergave toont"><link rel=icon type=image/png sizes=32x32 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-16x16.png><link rel="shortcut icon" href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon.ico><link rel=stylesheet href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/css/site.min.082846a38df94715d1666b62bc5757ebcbc05d25163926f4647422da650ce162.css></head><body data-base=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/ data-home=false><a class=skip-link href=#main>Naar inhoud</a><header class=site-header><div class="wrap header-inner"><div class=brand-block><button type=button class=brand-mark data-info-tip=site title="Over deze site" aria-label="Over deze site">
+<!doctype html><html lang=nl data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script>(function(){try{var e=localStorage.getItem("site-theme");(e==="light"||e==="dark")&&(document.documentElement.dataset.theme=e)}catch{}})()</script><title>Datumpagina’s (technisch) · Heiligen van de Lage Landen</title><meta name=description content="URL-parameters, entries.json en wat de dagweergave toont"><link rel=icon type=image/png sizes=32x32 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-16x16.png><link rel="shortcut icon" href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon.ico><link rel=stylesheet href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/css/site.min.b1fe0f2aa9736e94af12c5cf5f394b43577c2992e7a4074be8b114347685449e.css></head><body data-base=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/ data-home=false><a class=skip-link href=#main>Naar inhoud</a><header class=site-header><div class="wrap header-inner"><div class=brand-block><button type=button class=brand-mark data-info-tip=site title="Over deze site" aria-label="Over deze site">
 <img src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/images/favicon-32x32.png width=32 height=32 alt>
 </button>
 <a class=brand href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/>Heiligen van de Lage Landen</a></div><div class=header-tools><nav class=nav aria-label=Hoofdnavigatie><a href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/>Heiligen</a>
@@ -21,22 +21,15 @@ periode de periodenaam tussen haakjes, met link naar de entry-pagina
 (<code>/vasten/…/</code> of <code>/feesten/…/</code> voor vastenvrije weken). Hover/klik op
 de badge opent een korte uitleg (<code>data-info-tip="vasten-niveau"</code>).</li><li>Dagtype: naam van het feest (<code>soort: feest</code>, geen periode), anders
 <code>daglabel</code> uit <code>lezingen-dagen.json</code> (bijv. «23e donderdag na Pinksteren»),
-met popover <code>data-info-tip="dagtype"</code>.
-Heeft het eerste dagtype-feest (paascyclus vóór jaarcyclus) een
-<code>icoon</code> in <code>entries.json</code> (dat is altijd het primaire, <code>rechten: ok</code>):
-<code>renderDagIcoonHtml</code> zet <code>figure.today-dag-icoon</code> ernaast
-(<code>div.today-dag-hoofd</code>). Extra items uit YAML <code>iconen</code> komen niet
-op deze pagina. Geen icoon bij alleen een weeknaam (<code>daglabel</code>).</li><li>Apostel en Evangelie (zonder kop «Lezingen»); de labels hebben
+met popover <code>data-info-tip="dagtype"</code>.</li><li>Apostel en Evangelie (zonder kop «Lezingen»); de labels hebben
 <code>data-info-tip="lezing"</code> (keuze van de dag: weekreeks / feest /
 menaion). Verwijzingen linken
 naar het hoofdstuk op debijbel.nl (<code>a.bijbel-link</code>, vertaling in
 <code>localStorage</code> <code>bijbel-vertaling</code>, default HSV; ids als op debijbel.nl:
 HSV, NBV, NBV21, BGT, NBG51, NFB, UTT).</li><li>Alleen als er heiligen zijn: kop «Heilige(n) van de dag»
 (<code>data-info-tip="heiligen-criterium"</code>), daaronder de
-lijst, met <code>icoon</code> uit <code>entries.json</code> als dat veld gezet is
-(<code>img.today-heilige-icoon</code>). Extra iconen van dezelfde heilige niet
-in de lijst. Zonder heilige: geen kop, wel <code>today-geen-heilige</code> met
-link naar uitleg/heiligen (geen icoon bij die link).</li></ol><p>De datum tussen de pijlen (<code>dayTitleHtml</code>) heeft de popup over de
+lijst, met <code>icoon</code> uit <code>entries.json</code> als dat veld gezet is. Zonder
+heilige: geen kop, wel <code>today-geen-heilige</code> met link naar uitleg/heiligen.</li></ol><p>De datum tussen de pijlen (<code>dayTitleHtml</code>) heeft de popup over de
 burgerlijke dag; <em>(vandaag)</em> hoort daarbij. De toon staat ná de pijl naar
 de volgende dag (<code>dayToonHtml</code>, <code>data-info-tip="toon"</code>). Formule:
 <code>octoechosToon</code> in <code>calendar.js</code>, zelfde als <code>octoechos_toon</code> in
@@ -56,4 +49,4 @@ week is.</p><p>Effectief vastenniveau: <code>scripts/vasten.py</code> / dezelfde
 ·
 <a href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/uitleg/reactie/>Reactie</a>
 ·
-<a href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/beheer/>Voor beheerders</a></p><div class=site-meta><p class=page-git-date>Bijgewerkt: 2026-08-30</p></div></div></footer><div id=info-popover class=info-popover hidden role=tooltip aria-labelledby=info-popover-title><h2 id=info-popover-title>Info</h2><div id=info-popover-body></div><p class=info-popover-meer id=info-popover-meer hidden></p></div><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/js/theme.min.c1fe5ae25747007cb4583b109c4a5a753a403b55e279fca61593f5517714515c.js defer></script><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/js/calendar.min.c3f860261a127d73c74cf7d858fa5faae93dd6724fe6c276663093660aeb2a7a.js defer></script></body></html>
+<a href=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/beheer/>Voor beheerders</a></p><div class=site-meta><p class=page-git-date>Bijgewerkt: 2026-08-29</p></div></div></footer><div id=info-popover class=info-popover hidden role=tooltip aria-labelledby=info-popover-title><h2 id=info-popover-title>Info</h2><div id=info-popover-body></div><p class=info-popover-meer id=info-popover-meer hidden></p></div><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/js/theme.min.c1fe5ae25747007cb4583b109c4a5a753a403b55e279fca61593f5517714515c.js defer></script><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/preview/js/calendar.min.68f906ec11a83535391b8ed2dd19265f49fa1c870666cb172e9561c41cd4d31e.js defer></script></body></html>
