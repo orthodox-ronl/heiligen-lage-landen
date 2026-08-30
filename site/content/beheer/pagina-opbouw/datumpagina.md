@@ -1,7 +1,7 @@
 ---
 title: "Datumpagina"
 description: "Contract: één burgerlijke dag in één jaar"
-git_date: 2026-08-21
+git_date: 2026-08-30
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -41,10 +41,14 @@ het hele typikon op deze pagina; Pascha meeschuiven met Oud.
 
 **Wel:** wat voor liturgische dag het is (week na Pinksteren, zondag
 van het Triodion, of de naam van het feest). De feestdagnaam hier niet
-nog eens herhalen als die al het dagtype *is*.
+nog eens herhalen als die al het dagtype *is*. Heeft het feest van de
+dag een primair icoon (`rechten: ok`): dat icoon **naast** het dagtype
+(onder het dagtype op smal scherm), als link naar de feestpagina. Extra
+afbeeldingen van hetzelfde feest niet hier.
 
 **Niet:** selectiestatus van heiligen; YAML-ids; een tweede samenvatting
-van het feestverhaal.
+van het feestverhaal; een icoonmuur; het icoon van een heilige van de
+Lage Landen als held van de dag.
 
 ## Apostel en Evangelie
 
@@ -60,9 +64,10 @@ buiten de gekozen lezingenlijst.
 ## Heiligen van de Lage Landen
 
 **Wel:** kop *Heilige van de dag* of *Heiligen van de dag* plus namen
-(link naar de heiligenpagina), klein icoon als we er een hebben. Zijn
+(link naar de heiligenpagina), klein **primair** icoon als we er een
+hebben. Extra iconen van dezelfde heilige niet in deze lijst. Zijn
 er geen Lage-Landen-heiligen: géén kop, wél een korte zin met link
-waarom de dag leeg kan zijn.
+waarom de dag leeg kan zijn — zonder icoon bij die cataloguslink.
 
 **Niet:** universeel menologion; parochiepatronen (nog geen onderdeel);
-interne `selectie:`-waarden.
+interne `selectie:`-waarden; alle extra reproducties naast de naam.
