@@ -6,8 +6,8 @@ lage_landen: false
 namen:
   primair: Zondag van de heiligen van de Lage Landen
   alternatief:
-  - Heiligen van de Lage Landen
   - Zondag van de heiligen van de lokale Kerk
+  - Zondag van de heiligen van Friesland
   - Tweede zondag na Pinksteren
   - Zondag na Allerheiligen
 observances:
@@ -17,11 +17,21 @@ datum:
   paascyclus:
     anker: pascha
     offset_dagen: 63
-icoon:
-  bestand: iconen/zondag-heiligen-lage-landen.jpg
-  rechten: ok
-  licentie: "CC BY-SA 4.0"
-  bron: "Foto van het icoon Koor van Fryske Hilligen (Odulphus, Frederik, Bonifatius, Ludger, Willibrord)"
+iconen:
+  - bestand: iconen/zondag-heiligen-lage-landen.jpg
+    primair: true
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: Toestemming van Russisch Orthodox klooster van de H. Nicolaas te Hemelum
+    bron: Russisch Orthodox klooster van de H. Nicolaas te Hemelum
+  - bestand: iconen/zondag-heiligen-friesland.jpg
+    soort: foto
+    plaats: hemelum
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    licentie: Toestemming van Russisch Orthodox klooster van de H. Nicolaas te Hemelum
+    bron: Russisch Orthodox klooster van de H. Nicolaas te Hemelum
 samenvatting: |
   Tweede zondag na Pinksteren: de heiligen van de lokale Kerk; op deze
   site de heiligen van de Lage Landen.
