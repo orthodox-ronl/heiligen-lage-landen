@@ -49,8 +49,8 @@ en [namen]({{% ref "/beheer/how-to-namen" %}}).
   (publiek domein, CC0, of CC-BY/-SA met naamsvermelding).
 - → Bestand lokaal naar `site/static/iconen/<id>.jpg` (of `.png`); in YAML
   `icoon` of `iconen` met `rechten: ok`, `bron`, `licentie`. Extra
-  opnamen: nieuwe bestandsnaam, niet het bestaande bestand overschrijven.
-  Geen hotlinks.
+  opnamen: commando `icoon` (naam zoeken, parochieplaats). Nieuwe
+  bestandsnaam, niet het bestaande bestand overschrijven. Geen hotlinks.
 
 ### 6. Bronkwaliteit
 

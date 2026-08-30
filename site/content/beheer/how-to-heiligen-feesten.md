@@ -267,6 +267,24 @@ Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).
 
+### Script
+
+Vanuit de repo-root (`.\scripts` op PATH):
+
+```cmd
+icoon heiligen-lage-landen-muuricoon-hemelum.png
+```
+
+U hoeft het id niet te kennen: naam, alias of (deel van) de bestandsnaam
+is genoeg. Het script toont treffers (`Odulphus (odulphus, heilige)`) en
+vraagt of dat klopt. Plaatsnamen zoals `hemelum`, `groningen`, `zwolle`,
+`leeuwarden` zijn plaats-ids: het plaatje stamt uit die (Russisch-)orthodoxe
+parochie of dat klooster, met toestemming om het te gebruiken. Kies bij
+licentie **Toestemming van parochie of klooster**; het script vult `plaats`,
+`soort: foto`, `bron` en `licentie` in en laat u die bevestigen.
+
+`--niet-interactief` eist unieke naam of `--id`, en bij toestemming `--plaats`.
+
 **Commons-checklist**
 
 1. Zoek op [Wikimedia Commons](https://commons.wikimedia.org/) (naam +

@@ -409,3 +409,5 @@ iconen:
 `generate.py` zet het primaire pad plus bijschrift op de entry-pagina;
 overige zichtbare items komen als extra infobox-figuren. Ontbreekt een
 legaal bestand: veld weglaten. `icoon` en `iconen` niet combineren.
+Toevoegen: commando `icoon` (naam of id; parochieplaats + toestemming
+mag).

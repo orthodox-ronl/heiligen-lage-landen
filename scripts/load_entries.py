@@ -16,23 +16,6 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 ENTRY_SUBDIRS = ("feesten", "heiligen", "vasten")
 
 
-def icoon_items(entry: dict[str, Any] | None) -> list[dict[str, Any]]:
-    """`icoon` is één mapping of een lijst van mappings."""
-    ruw = (entry or {}).get("icoon")
-    if ruw is None:
-        return []
-    if isinstance(ruw, dict):
-        return [ruw]
-    if isinstance(ruw, list):
-        return [item for item in ruw if isinstance(item, dict)]
-    return []
-
-
-def eerste_icoon(entry: dict[str, Any] | None) -> dict[str, Any]:
-    items = icoon_items(entry)
-    return items[0] if items else {}
-
-
 def load_yaml(path: Path) -> Any:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 

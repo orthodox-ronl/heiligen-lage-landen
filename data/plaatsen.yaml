@@ -136,6 +136,11 @@ plaatsen:
     lon: 3.717
     soort: plaats
     streek: vlaanderen
+  - id: groningen
+    naam: Groningen
+    lat: 53.219
+    lon: 6.568
+    soort: plaats
   - id: heidenheim
     naam: Heidenheim
     lat: 48.676
@@ -158,6 +163,13 @@ plaatsen:
     lat: 50.176
     lon: 3.235
     soort: plaats
+  - id: leeuwarden
+    naam: Leeuwarden
+    alternatief: [Ljouwert]
+    lat: 53.201
+    lon: 5.800
+    soort: plaats
+    streek: frisia
   - id: lier
     naam: Lier
     lat: 51.131
@@ -305,3 +317,8 @@ plaatsen:
     lon: 2.493
     soort: plaats
     streek: vlaanderen
+  - id: zwolle
+    naam: Zwolle
+    lat: 52.517
+    lon: 6.083
+    soort: plaats
