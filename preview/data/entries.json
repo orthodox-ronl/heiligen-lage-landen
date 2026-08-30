@@ -5946,7 +5946,7 @@
       "feest"
     ],
     "onderdrukt_wekelijks_vasten": false,
-    "icoon": null,
+    "icoon": "iconen/zondag-heiligen-lage-landen.jpg",
     "offset_dagen": 63,
     "feestdatum": null,
     "occurrences": {
