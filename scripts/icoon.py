@@ -441,7 +441,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=ROOT,
         help=argparse.SUPPRESS,
     )
-    return p.parse_args(argv)
+    args, extra = p.parse_known_args(argv)
+    over = [a for a in extra if str(a).startswith("-")]
+    paden = [Path(a) for a in extra if not str(a).startswith("-")]
+    if over or len(paden) > 1:
+        p.error("unrecognized arguments: " + " ".join(extra))
+    if paden:
+        if args.plaatje_pos is not None:
+            p.error("unrecognized arguments: " + " ".join(extra))
+        args.plaatje_pos = paden[0]
+    return args
 
 
 def run(args: argparse.Namespace, term: Terminal | None = None) -> int:

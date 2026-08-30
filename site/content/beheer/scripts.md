@@ -30,5 +30,7 @@ Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/
 
 `icoon` begint met licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA
 stopt het, tenzij u die gegevens wijzigt. Het pad mag als eerste
-argument: `icoon foto.png`. How-to:
+Het pad mag als eerste argument: `icoon foto.png`. `icoon --help` moet
+`[PLAATJE]` tonen; zo niet: `git pull` in deze repo en `where icoon`
+(niet een andere clone). How-to:
 [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

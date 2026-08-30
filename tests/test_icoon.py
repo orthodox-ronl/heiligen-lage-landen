@@ -219,10 +219,25 @@ def test_doel_bestand_eerste_en_extra() -> None:
     ) == "iconen/muuricoon-hemelum.jpg"
 
 
+def test_help_toont_positioneel_plaatje(capsys) -> None:
+    try:
+        parse_args(["-h"])
+        raise AssertionError("help had moeten stoppen")
+    except SystemExit as exc:
+        assert exc.code == 0
+    tekst = capsys.readouterr().out
+    assert "[PLAATJE]" in tekst
+    assert "unrecognized arguments" not in tekst
+
+
 def test_parse_positioneel_plaatje() -> None:
     args = parse_args(["heiligen-lage-landen-muuricoon-hemelum.png", "--id", "x"])
     assert args.plaatje_pos == Path("heiligen-lage-landen-muuricoon-hemelum.png")
     assert args.id == "x"
+    alleen = parse_args(["heiligen-lage-landen-muuricoon-hemelum.png"])
+    assert alleen.plaatje_pos == Path(
+        "heiligen-lage-landen-muuricoon-hemelum.png"
+    )
 
 
 def test_run_tweede_icoon_positioneel(tmp_path: Path) -> None:
