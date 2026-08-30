@@ -38,7 +38,9 @@ zelfde kolomkoppen; filters in Weergave.
 ## Weergave (paneel)
 
 **Wel:** filter heiligen / feesten / vasten; zoeken (ook andere namen);
-bladeren op maand of alfabet. Label van het zoekveld in dezelfde
+bladeren op maand of alfabet. Popover op het woord Bladeren (maanden
+zijn januari–december; alfabet is het namenregister; link naar
+uitleg Synaxarion en overzicht van feesten). Label van het zoekveld in dezelfde
 lettergrootte en op dezelfde basislijn als de voorbeeldtekst in het
 veld.
 

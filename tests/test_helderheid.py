@@ -180,6 +180,11 @@ def test_lijsten_tonen_vierdatum_oud_van_de_entry() -> None:
     assert 'partial "heiligen-overzicht.html"' in listing
     assert "{{ if .Params.feestdatum }}" in default_list
     assert "Params.overzicht_sortering" in default_list
+    feesten_list = (SITE / "layouts" / "feesten" / "list.html").read_text(
+        encoding="utf-8"
+    )
+    assert "Params.overzicht_sortering" in feesten_list
+    assert "vierdatum-gelijk.html" in feesten_list
     assert "vierdatum-gelijk.html" in default_list
     assert "{{ else if and .Params.van .Params.tot }}" in default_list
     assert ".Params.vierdatum_oud" in default_list

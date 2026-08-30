@@ -17,13 +17,24 @@ vastenperiodes en wekelijkse vastendagen).
 
 **Niet:** de volledige clerus-uitleg; selectie van heiligen.
 
+## Sticky (alleen /feesten/)
+
+**Wel:** titel; rangschikking (Kerkelijk jaar / Januari–december / Naar
+rang / Op naam); korte hintregel die de gekozen volgorde noemt. Popover
+op het woord Rangschikking, en in de inleiding op kerkelijk jaar; beide
+met link naar `/uitleg/feesten/`. Default: kerkelijk jaar. De keuze in
+het adres (`rangschikking`) en in de browser onthouden.
+
+**Niet:** dezelfde knoppen op `/vasten/`; Nieuw/Oud als sorteeras.
+
 ## Lijst
 
 **Wel:** naam (link naar de detailpagina); feestdatum als die er is,
 met haakjes voor de oude burgerlijke datum; bij een vaste vastenperiode
-van–tot met dezelfde haakjes. Sortering: eerst de jaarcyclus in
-**kerkelijk jaar** (1 september → 31 augustus), daarna de paascyclus op
-offset t.o.v. Pascha, tenslotte wekelijkse dagen.
+van–tot met dezelfde haakjes. Groepskoppen bij de gekozen rangschikking
+(maand, ranggroep of letter). Zonder JavaScript: jaarcyclus in
+**kerkelijk jaar** (1 september tot 31 augustus), daarna de paascyclus
+op offset t.o.v. Pascha, tenslotte wekelijkse dagen.
 
 **Niet:** icoon verplicht; vita in de rij; paascyclus-dagen zonder
 feestdatum weglaten uit het feestenoverzicht (ze horen in de lijst,

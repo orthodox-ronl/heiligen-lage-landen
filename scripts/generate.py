@@ -514,6 +514,35 @@ def period_bounds_for_year(
     return None
 
 
+# Twaalf grote feesten plus Pascha (boven de twaalf). Voor /feesten/ «naar rang».
+GROTE_FEESTEN = frozenset(
+    {
+        "pascha",
+        "palmzondag",
+        "hemelvaart",
+        "pinksteren",
+        "geboorte-moeder-gods",
+        "kruisverheffing",
+        "tempelgang-moeder-gods",
+        "kerst",
+        "theofanie",
+        "ontmoeting-in-de-tempel",
+        "aankondiging",
+        "transfiguratie",
+        "ontslapen-moeder-gods",
+    }
+)
+HERR_EN_MOEDER_FEESTEN = frozenset({"besnijdenis-des-heren", "pokrov"})
+APOSTEL_FEESTEN = frozenset(
+    {
+        "petrus-en-paulus",
+        "geboorte-johannes-doper",
+        "onthoofding-johannes-doper",
+    }
+)
+OMLIJSTING_PREFIXEN = ("voorfeest-", "nafeest-", "teruggave-", "synaxis-")
+
+
 def overzicht_sortering(entry: dict[str, Any]) -> str:
     """Sorteersleutel voor /feesten/ en /vasten/: kerkjaar, daarna paascyclus."""
     dn = entry.get("datum_norm") or {}
@@ -538,6 +567,22 @@ def overzicht_sortering(entry: dict[str, Any]) -> str:
     return f"9-{eid}"
 
 
+def overzicht_rang(entry: dict[str, Any]) -> str:
+    """Groep voor rangschikking «naar rang» op /feesten/."""
+    eid = str(entry.get("id") or "")
+    if eid in GROTE_FEESTEN:
+        return "grote"
+    if eid.startswith(OMLIJSTING_PREFIXEN):
+        return "omlijsting"
+    if eid in HERR_EN_MOEDER_FEESTEN:
+        return "heer-moeder"
+    if eid in APOSTEL_FEESTEN:
+        return "apostelen"
+    if entry.get("cyclus") == "paascyclus":
+        return "paascyclus"
+    return "overig"
+
+
 def write_entry_page(entry: dict[str, Any]) -> None:
     kind = SOORT_DIR[entry["soort"]]
     title = entry["namen"]["primair"]
@@ -557,6 +602,8 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         f"source_path: {yaml_quote(entry['source_path'])}",
         f"overzicht_sortering: {yaml_quote(overzicht_sortering(entry))}",
     ]
+    if entry.get("soort") == "feest":
+        fm.append(f"overzicht_rang: {overzicht_rang(entry)}")
     if feestdatum and vorm == "dag":
         fm.append(f"feestdatum: {feestdatum}")
         oud = julian_feast_to_civil_date(date.today().year, feestdatum)
@@ -936,6 +983,10 @@ title: "Vaste feesten"
 ---
 
 Grote vaste feesten van de jaarcyclus en de paascyclus.
+Standaard in het
+<span class="info-term" tabindex="0" data-info-tip="kerkelijk-jaar" title="Van september tot augustus">kerkelijk jaar</span>,
+zoals de loop van een synaxarion. Andere volgordes kiest u bij
+<span class="info-term" tabindex="0" data-info-tip="feesten-rangschikking" title="Andere volgordes, zoals de registers van een synaxarion">Rangschikking</span>.
 """,
     )
     write_text(
@@ -1154,6 +1205,11 @@ ACHTERGROND_TOPICS: list[dict[str, str]] = [
         "id": "synaxarion",
         "title": "Synaxarion",
         "description": "De vaste jaarcyclus: heiligen en feesten die altijd op een kalenderdag horen",
+    },
+    {
+        "id": "feesten",
+        "title": "Overzicht van feesten",
+        "description": "Hoe de lijst van vaste feesten is gerangschikt, en hoe u een andere volgorde kiest",
     },
     {
         "id": "heiligen",

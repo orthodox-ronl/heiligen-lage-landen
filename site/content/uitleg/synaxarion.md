@@ -25,8 +25,10 @@ van Kerst of Theofanie afhangen. Die horen bij een *bepaald jaar*. Daarvoor
 opent u een [datumpagina]({{% ref "/uitleg/datumpagina" %}}).
 
 U kunt zoeken op naam, ook op andere namen die dezelfde heilige of hetzelfde
-feest heeft. Bladeren kan per maand of op alfabet. Heiligen of feesten met een
-icoon op deze site tonen dat icoon klein in de lijst.
+feest heeft. Bladeren kan per maand (januari tot december) of op alfabet.
+Heiligen of feesten met een icoon op deze site tonen dat icoon klein in de lijst.
+Het [overzicht van feesten]({{% ref "/uitleg/feesten" %}}) is dezelfde stof
+als lijst: daar kunt u bij september beginnen, of op rang of naam.
 
 De feestdatum in het Synaxarion is de liturgische dagnaam. Of uw parochie die
 dag op de nieuwe of de oude kalender viert, kiest u elders op de site. Zie

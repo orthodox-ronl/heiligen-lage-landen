@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="section-list" data-feesten-overzicht>
+  <div class="list-sticky-head">
+    <h1>{{ .Title }}</h1>
+    <div class="heiligen-sort" role="group" aria-label="Rangschikking">
+      <span class="heiligen-sort-label info-term" tabindex="0" data-info-tip="feesten-rangschikking" title="Andere volgordes, zoals de registers van een synaxarion">Rangschikking:</span>
+      <button type="button" class="style-btn" data-feesten-rangschikking="kerkelijk" aria-pressed="true">Kerkelijk jaar</button>
+      <button type="button" class="style-btn" data-feesten-rangschikking="burgerlijk" aria-pressed="false">Januari–december</button>
+      <button type="button" class="style-btn" data-feesten-rangschikking="rang" aria-pressed="false">Naar rang</button>
+      <button type="button" class="style-btn" data-feesten-rangschikking="naam" aria-pressed="false">Op naam</button>
+    </div>
+    <p class="hint feesten-rang-hint" id="feesten-rang-hint">Van 1 september tot 31 augustus, zoals het synaxarion.</p>
+  </div>
+  {{ .Content }}
+  <ul class="entry-list" id="feesten-lijst">
+    {{ range sort .Pages "Params.overzicht_sortering" }}
+      {{- $mmdd := .Params.feestdatum | default .Params.van | default .Params.anker | default "" -}}
+      <li
+        data-feest
+        data-naam="{{ .Title }}"
+        data-cyclus="{{ .Params.cyclus | default "jaar" }}"
+        data-mmdd="{{ $mmdd }}"
+        data-sortering="{{ .Params.overzicht_sortering }}"
+        data-rang="{{ .Params.overzicht_rang | default "overig" }}"
+      >
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ if .Params.feestdatum }}
+          <span class="meta">
+            {{ if .Params.vierdatum_oud }}
+              {{ partial "feestdatum-kort.html" .Params.feestdatum }}
+              {{ partial "vierdatum-oud.html" .Params.vierdatum_oud }}
+            {{ else }}
+              {{ partial "vierdatum-gelijk.html" (partial "feestdatum-kort.html" .Params.feestdatum) }}
+            {{ end }}
+          </span>
+        {{ else if and .Params.van .Params.tot }}
+          <span class="meta">
+            {{ partial "feestdatum-kort.html" .Params.van }}{{- with .Params.van_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+            – {{ partial "feestdatum-kort.html" .Params.tot }}{{- with .Params.tot_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          </span>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ $js := resources.Get "js/feesten-overzicht.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
