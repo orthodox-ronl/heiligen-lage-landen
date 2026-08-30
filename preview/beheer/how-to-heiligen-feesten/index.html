@@ -148,11 +148,15 @@ Alleen tonen als <code>rechten: ok</code>, met <code>bron</code> en <code>licent
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).</p><h3 id=script>Script</h3><p>Vanuit de repo-root (<code>.\scripts</code> op PATH):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-cmd data-lang=cmd><span style=display:flex><span>icoon heiligen-lage-landen-muuricoon-hemelum.png
 </span></span></code></pre></div><p>U hoeft het id niet te kennen: naam, alias of (deel van) de bestandsnaam
-is genoeg. Het script toont treffers (<code>Odulphus (odulphus, heilige)</code>) en
-vraagt of dat klopt. Plaatsnamen zoals <code>hemelum</code>, <code>groningen</code>, <code>zwolle</code>,
-<code>leeuwarden</code> zijn plaats-ids: het plaatje stamt uit die (Russisch-)orthodoxe
-parochie of dat klooster, met toestemming om het te gebruiken. Kies bij
-licentie <strong>Toestemming van parochie of klooster</strong>; het script vult <code>plaats</code>,
+is genoeg. Voorbeeld: <code>heiligen lage landen</code> vindt
+<code>zondag-heiligen-lage-landen</code> (Zondag van de heiligen van de Lage Landen).
+Het script toont treffers (<code>Odulphus (odulphus, heilige)</code>) en vraagt of
+dat klopt. Geen treffer of verkeerde keuze: u mag opnieuw typen tot het
+lukt. Leeg, <code>stop</code> of <code>q</code> breekt af — het script stopt niet meer met
+«Ongeldig id» bij een zoekzin met spaties.</p><p>Plaatsnamen zoals <code>hemelum</code>, <code>groningen</code>, <code>zwolle</code>, <code>leeuwarden</code> zijn
+plaats-ids: het plaatje stamt uit die (Russisch-)orthodoxe parochie of
+dat klooster, met toestemming om het te gebruiken. Kies bij licentie
+<strong>Toestemming van parochie of klooster</strong>; het script vult <code>plaats</code>,
 <code>soort: foto</code>, <code>bron</code> en <code>licentie</code> in en laat u die bevestigen.</p><p><code>--niet-interactief</code> eist unieke naam of <code>--id</code>, en bij toestemming <code>--plaats</code>.</p><p><strong>Commons-checklist</strong></p><ol><li>Zoek op <a href=https://commons.wikimedia.org/>Wikimedia Commons</a> (naam +
 heilige / icon).</li><li>Open de <strong>File:</strong>-pagina; lees licentie en attribuutvereisten.</li><li>Toegestaan voor ons: publiek domein, CC0, of CC-BY / CC-BY-SA met
 naamsvermelding in <code>bron</code> / <code>licentie</code>.</li><li>Download het bestand; bewaar onder <code>site/static/iconen/&lt;id>.…</code>.</li><li>Zet in YAML <code>rechten: ok</code> en verwijs naar de File-pagina als <code>bron</code>.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>icoon</span>:
