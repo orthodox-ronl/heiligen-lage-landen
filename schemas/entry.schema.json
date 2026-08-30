@@ -6,6 +6,23 @@
   "additionalProperties": true,
   "description": "Entry (heilige/feest/vasten). Onbekende top-level velden zijn toegestaan voor notities en experimenten; generate.py en de site negeren die. Bekende velden blijven genormeerd.",
   "required": ["id", "soort", "datum", "namen"],
+  "$defs": {
+    "icoonItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Eén lokaal bestand onder site/static/. Geen hotlink-URL als afbeelding.",
+      "properties": {
+        "bestand": {
+          "type": "string",
+          "pattern": "^(?![Hh][Tt][Tt][Pp][Ss]?:).+",
+          "description": "Pad relatief t.o.v. site/static/, bv. iconen/willibrord.jpg"
+        },
+        "bron": { "type": "string" },
+        "licentie": { "type": "string" },
+        "rechten": { "type": "string", "enum": ["ok", "onbekend", "nee"] }
+      }
+    }
+  },
   "properties": {
     "id": {
       "type": "string",
@@ -287,19 +304,15 @@
       }
     },
     "icoon": {
-      "type": "object",
-      "additionalProperties": false,
-      "description": "Alleen een lokaal bestand onder site/static/. Geen hotlink-URL als afbeelding.",
-      "properties": {
-        "bestand": {
-          "type": "string",
-          "pattern": "^(?![Hh][Tt][Tt][Pp][Ss]?:).+",
-          "description": "Pad relatief t.o.v. site/static/, bv. iconen/willibrord.jpg"
-        },
-        "bron": { "type": "string" },
-        "licentie": { "type": "string" },
-        "rechten": { "type": "string", "enum": ["ok", "onbekend", "nee"] }
-      }
+      "description": "Eén icoon (mapping) of meerdere (lijst). Alleen lokale bestanden onder site/static/.",
+      "oneOf": [
+        { "$ref": "#/$defs/icoonItem" },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/icoonItem" }
+        }
+      ]
     },
     "bronlaag": {
       "type": "string",

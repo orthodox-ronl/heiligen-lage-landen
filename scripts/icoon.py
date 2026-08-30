@@ -14,7 +14,7 @@ from typing import Callable
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import load_yaml  # noqa: E402
+from load_entries import icoon_items, load_yaml  # noqa: E402
 
 MAX_ZIJDE = 1600
 JPEG_KWALITEIT = 85
@@ -196,29 +196,44 @@ def vind_entry(root: Path, entry_id: str) -> Path:
     return gevonden[0]
 
 
-def entry_heeft_icoon(path: Path) -> bool:
+def entry_icoon_items(path: Path) -> list[dict]:
     data = load_yaml(path)
     if not isinstance(data, dict):
-        return False
-    icoon = data.get("icoon") or {}
-    return bool(str(icoon.get("bestand") or "").strip())
+        return []
+    return icoon_items(data)
 
 
-def icoon_yaml_blok(icoon: dict[str, str]) -> str:
-    def q(waarde: str) -> str:
-        if any(c in waarde for c in ":#{}[]&*?|>!%@`'\"\n"):
-            escaped = waarde.replace("\\", "\\\\").replace('"', '\\"')
-            return f'"{escaped}"'
-        return waarde
+def yaml_quote_icoon(waarde: str) -> str:
+    if any(c in waarde for c in ":#{}[]&*?|>!%@`'\"\n"):
+        escaped = waarde.replace("\\", "\\\\").replace('"', '\\"')
+        return f'"{escaped}"'
+    return waarde
 
-    lines = [
-        "icoon:",
-        f"  bestand: {icoon['bestand']}",
-        f"  rechten: {icoon['rechten']}",
-        f"  licentie: {q(icoon['licentie'])}",
-        f"  bron: {q(icoon['bron'])}",
-        "",
-    ]
+
+def icoon_yaml_blok(items: list[dict[str, str]]) -> str:
+    if not items:
+        return ""
+    if len(items) == 1:
+        icoon = items[0]
+        q = yaml_quote_icoon
+        return "\n".join(
+            [
+                "icoon:",
+                f"  bestand: {icoon['bestand']}",
+                f"  rechten: {icoon['rechten']}",
+                f"  licentie: {q(icoon['licentie'])}",
+                f"  bron: {q(icoon['bron'])}",
+                "",
+            ]
+        )
+    q = yaml_quote_icoon
+    lines = ["icoon:"]
+    for icoon in items:
+        lines.append(f"  - bestand: {icoon['bestand']}")
+        lines.append(f"    rechten: {icoon['rechten']}")
+        lines.append(f"    licentie: {q(icoon['licentie'])}")
+        lines.append(f"    bron: {q(icoon['bron'])}")
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -235,6 +250,31 @@ def upsert_icoon_in_yaml(tekst: str, blok: str) -> str:
     if match:
         return tekst[: match.end()] + blok + tekst[match.end() :]
     return tekst.rstrip() + "\n" + blok
+
+
+def bron_stem(bron: Path) -> str:
+    ruw = bron.stem.strip().casefold()
+    ruw = ruw.replace("—", "-").replace("–", "-")
+    ruw = re.sub(r"[^a-z0-9]+", "-", ruw).strip("-")
+    if ruw and re.fullmatch(r"[a-z0-9][a-z0-9_-]*", ruw):
+        return ruw
+    return ""
+
+
+def doel_bestand(entry_id: str, bron: Path, bestaande: list[str]) -> str:
+    """Eerste icoon: ``iconen/<id>.jpg``. Extra: stam van het bronbestand."""
+    stem = bron_stem(bron)
+    if not bestaande:
+        return f"iconen/{entry_id}.jpg"
+    if stem:
+        return f"iconen/{stem}.jpg"
+    gebruikt = {b.replace("\\", "/") for b in bestaande}
+    n = 2
+    naam = f"iconen/{entry_id}-{n}.jpg"
+    while naam in gebruikt:
+        n += 1
+        naam = f"iconen/{entry_id}-{n}.jpg"
+    return naam
 
 
 def prepareer_plaatje(
@@ -276,6 +316,17 @@ def prepareer_plaatje(
         return im.size
 
 
+def cli_plaatje(args: argparse.Namespace) -> Path | None:
+    pos = args.plaatje_pos
+    opt = args.plaatje_opt
+    if pos is not None and opt is not None:
+        raise Fout("Geef het plaatje als pad of als --plaatje, niet beide.")
+    gekozen = opt if opt is not None else pos
+    if gekozen is None:
+        return None
+    return gekozen.expanduser()
+
+
 def verzamel_rest(
     term: Terminal,
     *,
@@ -284,7 +335,7 @@ def verzamel_rest(
     cli_bron: str | None,
     overschrijven: bool | None,
     root: Path,
-) -> tuple[str, Path, str, bool]:
+) -> tuple[str, Path, str, str, int | None]:
     entry_id = (cli_id or "").strip()
     if not entry_id:
         if term.niet_interactief:
@@ -297,7 +348,7 @@ def verzamel_rest(
     plaatje = cli_plaatje
     if plaatje is None:
         if term.niet_interactief:
-            raise Fout("Geef --plaatje.")
+            raise Fout("Geef het plaatje als pad (icoon foto.jpg) of --plaatje.")
         raw = term.vraag("Pad naar het plaatje: ")
         plaatje = Path(raw).expanduser()
     if not plaatje.is_file():
@@ -313,22 +364,29 @@ def verzamel_rest(
     if not bron:
         raise Fout("Bron ontbreekt.")
 
-    heeft = entry_heeft_icoon(yaml_path)
-    mag_overschrijven = bool(overschrijven)
-    if heeft and overschrijven is None:
-        if term.niet_interactief:
-            raise Fout(
-                f"{yaml_path.name} heeft al een icoon. Gebruik --overschrijven."
-            )
-        mag_overschrijven = term.ja_nee(
-            f"{entry_id} heeft al een icoon. Overschrijven?",
-            default=False,
-        )
-        if not mag_overschrijven:
+    items = entry_icoon_items(yaml_path)
+    bestaande = [
+        str(item.get("bestand") or "").replace("\\", "/").strip()
+        for item in items
+        if str(item.get("bestand") or "").strip()
+    ]
+    relatief = doel_bestand(entry_id, plaatje, bestaande)
+    vervang_index: int | None = None
+    if relatief in bestaande:
+        vervang_index = bestaande.index(relatief)
+        if overschrijven is False:
             raise Gestopt("Gestopt: bestaand icoon behouden.")
-    if heeft and overschrijven is False:
-        raise Gestopt("Gestopt: bestaand icoon behouden.")
-    return entry_id, plaatje, bron, mag_overschrijven or not heeft
+        if overschrijven is not True:
+            if term.niet_interactief:
+                raise Fout(
+                    f"{relatief} staat al op deze entry. Gebruik --overschrijven."
+                )
+            if not term.ja_nee(
+                f"{relatief} staat al op {entry_id}. Overschrijven?",
+                default=False,
+            ):
+                raise Gestopt("Gestopt: bestaand icoon behouden.")
+    return entry_id, plaatje, bron, relatief, vervang_index
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -336,11 +394,25 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         prog="icoon",
         description=(
             "Voeg een lokaal plaatje toe als icoon bij een bestaande heilige "
-            "of een bestaand feest. Begint met licentie/rechten."
-        )
+            "of een bestaand feest. Begint met licentie/rechten. "
+            "Een extra plaatje wordt toegevoegd; dezelfde doelnaam vraagt "
+            "om overschrijven."
+        ),
+    )
+    p.add_argument(
+        "plaatje_pos",
+        nargs="?",
+        type=Path,
+        metavar="PLAATJE",
+        help="Pad naar het bronplaatje",
     )
     p.add_argument("--id", help="Entry-id (bestandsnaam zonder .yaml)")
-    p.add_argument("--plaatje", type=Path, help="Pad naar het bronplaatje")
+    p.add_argument(
+        "--plaatje",
+        dest="plaatje_opt",
+        type=Path,
+        help="Pad naar het bronplaatje (alternatief voor het losse pad)",
+    )
     p.add_argument(
         "--licentie",
         help="Publiek domein, CC0, CC BY 4.0 of CC BY-SA 4.0",
@@ -349,7 +421,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument(
         "--overschrijven",
         action="store_true",
-        help="Bestaand icoon vervangen zonder te vragen",
+        help="Icoon met dezelfde doelnaam vervangen zonder te vragen",
     )
     p.add_argument(
         "--niet-interactief",
@@ -374,14 +446,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def run(args: argparse.Namespace, term: Terminal | None = None) -> int:
     term = term or Terminal(niet_interactief=args.niet_interactief)
     term.niet_interactief = args.niet_interactief
-    if args.plaatje is not None:
-        args.plaatje = args.plaatje.expanduser()
     try:
+        plaatje_cli = cli_plaatje(args)
         licentie = verzamel_licentie(term, args.licentie)
-        entry_id, plaatje, bron, _ok = verzamel_rest(
+        entry_id, plaatje, bron, relatief, vervang_index = verzamel_rest(
             term,
             cli_id=args.id,
-            cli_plaatje=args.plaatje,
+            cli_plaatje=plaatje_cli,
             cli_bron=args.bron,
             overschrijven=True if args.overschrijven else None,
             root=args.root,
@@ -390,24 +461,35 @@ def run(args: argparse.Namespace, term: Terminal | None = None) -> int:
         dest = STATIC_ICONEN
         if args.root != ROOT:
             dest = args.root / "site" / "static" / "iconen"
-        dest_file = dest / f"{entry_id}.jpg"
+        dest_file = dest / Path(relatief).name
         breed, hoog = prepareer_plaatje(
             plaatje,
             dest_file,
             max_zijde=args.max_zijde,
         )
-        relatief = f"iconen/{entry_id}.jpg"
-        blok = icoon_yaml_blok(
+        nieuw = {
+            "bestand": relatief,
+            "rechten": "ok",
+            "licentie": licentie,
+            "bron": bron,
+        }
+        items = [
             {
-                "bestand": relatief,
-                "rechten": "ok",
-                "licentie": licentie,
-                "bron": bron,
+                "bestand": str(item.get("bestand") or "").replace("\\", "/"),
+                "rechten": str(item.get("rechten") or "ok"),
+                "licentie": str(item.get("licentie") or ""),
+                "bron": str(item.get("bron") or ""),
             }
-        )
+            for item in entry_icoon_items(yaml_path)
+            if str(item.get("bestand") or "").strip()
+        ]
+        if vervang_index is not None:
+            items[vervang_index] = nieuw
+        else:
+            items.append(nieuw)
         tekst = yaml_path.read_text(encoding="utf-8")
         yaml_path.write_text(
-            upsert_icoon_in_yaml(tekst, blok),
+            upsert_icoon_in_yaml(tekst, icoon_yaml_blok(items)),
             encoding="utf-8",
             newline="\n",
         )

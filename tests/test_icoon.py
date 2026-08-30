@@ -14,7 +14,9 @@ from icoon import (  # noqa: E402
     Fout,
     Gestopt,
     Terminal,
+    bron_stem,
     canonical_licentie,
+    doel_bestand,
     icoon_yaml_blok,
     kies_licentie,
     licentie_is_herbruikbaar,
@@ -126,12 +128,14 @@ def test_prepareer_schaalt_niet_op(tmp_path: Path) -> None:
 def test_upsert_icoon_na_datum() -> None:
     tekst = "id: x\ndatum:\n  waarde: \"01-01\"\nsamenvatting: |\n  a\n"
     blok = icoon_yaml_blok(
-        {
-            "bestand": "iconen/x.jpg",
-            "rechten": "ok",
-            "licentie": "CC0",
-            "bron": "test",
-        }
+        [
+            {
+                "bestand": "iconen/x.jpg",
+                "rechten": "ok",
+                "licentie": "CC0",
+                "bron": "test",
+            }
+        ]
     )
     out = upsert_icoon_in_yaml(tekst, blok)
     assert "icoon:\n  bestand: iconen/x.jpg\n" in out
@@ -149,12 +153,14 @@ def test_upsert_vervangt_bestaand_icoon() -> None:
         "  a\n"
     )
     blok = icoon_yaml_blok(
-        {
-            "bestand": "iconen/nieuw.jpg",
-            "rechten": "ok",
-            "licentie": "CC0",
-            "bron": "n",
-        }
+        [
+            {
+                "bestand": "iconen/nieuw.jpg",
+                "rechten": "ok",
+                "licentie": "CC0",
+                "bron": "n",
+            }
+        ]
     )
     out = upsert_icoon_in_yaml(tekst, blok)
     assert "iconen/nieuw.jpg" in out
@@ -201,25 +207,91 @@ def test_run_niet_interactief(tmp_path: Path) -> None:
     assert (root / "site" / "static" / "iconen" / "voorbeeld.jpg").is_file()
 
 
-def test_run_bestaand_icoon_niet_interactief_zonder_vlag(tmp_path: Path) -> None:
+def test_doel_bestand_eerste_en_extra() -> None:
+    assert bron_stem(Path("heiligen-lage-landen-muuricoon-hemelum.png")) == (
+        "heiligen-lage-landen-muuricoon-hemelum"
+    )
+    assert doel_bestand("voorbeeld", Path("foto.png"), []) == "iconen/voorbeeld.jpg"
+    assert doel_bestand(
+        "voorbeeld",
+        Path("muuricoon-hemelum.png"),
+        ["iconen/voorbeeld.jpg"],
+    ) == "iconen/muuricoon-hemelum.jpg"
+
+
+def test_parse_positioneel_plaatje() -> None:
+    args = parse_args(["heiligen-lage-landen-muuricoon-hemelum.png", "--id", "x"])
+    assert args.plaatje_pos == Path("heiligen-lage-landen-muuricoon-hemelum.png")
+    assert args.id == "x"
+
+
+def test_run_tweede_icoon_positioneel(tmp_path: Path) -> None:
     root = _mini_repo(tmp_path, met_icoon=True)
-    src = _plaatje(tmp_path / "in.png")
+    src = _plaatje(tmp_path / "muuricoon-hemelum.png")
     args = parse_args(
         [
+            str(src),
             "--id",
             "voorbeeld",
-            "--plaatje",
-            str(src),
             "--licentie",
             "CC0",
             "--bron",
-            "x",
+            "muur",
+            "--niet-interactief",
+            "--root",
+            str(root),
+        ]
+    )
+    assert run(args, Terminal(niet_interactief=True)) == 0
+    yaml_text = (root / "data" / "heiligen" / "voorbeeld.yaml").read_text(
+        encoding="utf-8"
+    )
+    assert "iconen/voorbeeld.jpg" in yaml_text
+    assert "iconen/muuricoon-hemelum.jpg" in yaml_text
+    assert "  - bestand:" in yaml_text
+    assert (root / "site" / "static" / "iconen" / "muuricoon-hemelum.jpg").is_file()
+
+
+def test_run_zelfde_doelnaam_eist_overschrijven(tmp_path: Path) -> None:
+    root = _mini_repo(tmp_path, met_icoon=True)
+    src = _plaatje(tmp_path / "voorbeeld.png")
+    args = parse_args(
+        [
+            str(src),
+            "--id",
+            "voorbeeld",
+            "--licentie",
+            "CC0",
+            "--bron",
+            "nieuw",
             "--niet-interactief",
             "--root",
             str(root),
         ]
     )
     assert run(args, Terminal(niet_interactief=True)) == 1
+    args_ok = parse_args(
+        [
+            str(src),
+            "--id",
+            "voorbeeld",
+            "--licentie",
+            "CC0",
+            "--bron",
+            "nieuw",
+            "--overschrijven",
+            "--niet-interactief",
+            "--root",
+            str(root),
+        ]
+    )
+    assert run(args_ok, Terminal(niet_interactief=True)) == 0
+    yaml_text = (root / "data" / "heiligen" / "voorbeeld.yaml").read_text(
+        encoding="utf-8"
+    )
+    assert yaml_text.count("icoon:") == 1
+    assert "  - bestand:" not in yaml_text
+    assert "bron: nieuw" in yaml_text
 
 
 def test_run_cli_slechte_licentie_niet_interactief() -> None:

@@ -1181,10 +1181,8 @@ main.main > :is(article, section) > h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.infobox-figure {
-  margin: 0;
-  padding: 0.55rem 0.55rem 0.25rem;
-  text-align: center;
+.infobox-figure + .infobox-figure {
+  padding-top: 0;
 }
 
 .infobox-figure img {

@@ -17,7 +17,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import load_entries  # noqa: E402
+from load_entries import icoon_items, load_entries  # noqa: E402
 from plaatsen import (  # noqa: E402
     load_plaatsen,
     locatie_namen,
@@ -595,13 +595,27 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         fm.append(f"vastenniveau: {entry['vastenniveau']}")
     if entry.get("onderdrukt_wekelijks_vasten"):
         fm.append("onderdrukt_wekelijks_vasten: true")
-    icoon = entry.get("icoon") or {}
-    if icoon.get("bestand") and icoon.get("rechten") == "ok":
-        fm.append(f"icoon: {yaml_quote('/' + icoon['bestand'].lstrip('/'))}")
-        if str(icoon.get("bron") or "").strip():
-            fm.append(f"icoon_bron: {yaml_quote(str(icoon['bron']).strip())}")
-        if str(icoon.get("licentie") or "").strip():
-            fm.append(f"icoon_licentie: {yaml_quote(str(icoon['licentie']).strip())}")
+    zichtbaar = [
+        item
+        for item in icoon_items(entry)
+        if str(item.get("bestand") or "").strip() and item.get("rechten") == "ok"
+    ]
+    if zichtbaar:
+        first = zichtbaar[0]
+        rel = str(first["bestand"]).replace("\\", "/").lstrip("/")
+        fm.append(f"icoon: {yaml_quote('/' + rel)}")
+        if str(first.get("bron") or "").strip():
+            fm.append(f"icoon_bron: {yaml_quote(str(first['bron']).strip())}")
+        if str(first.get("licentie") or "").strip():
+            fm.append(f"icoon_licentie: {yaml_quote(str(first['licentie']).strip())}")
+        fm.append("iconen:")
+        for item in zichtbaar:
+            rel = str(item["bestand"]).replace("\\", "/").lstrip("/")
+            fm.append(f"  - pad: {yaml_quote('/' + rel)}")
+            if str(item.get("bron") or "").strip():
+                fm.append(f"    bron: {yaml_quote(str(item['bron']).strip())}")
+            if str(item.get("licentie") or "").strip():
+                fm.append(f"    licentie: {yaml_quote(str(item['licentie']).strip())}")
     aliases = entry.get("id_aliassen") or []
     if aliases:
         fm.append("aliases:")
@@ -1286,9 +1300,15 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
             "onderdrukt_wekelijks_vasten": bool(
                 entry.get("onderdrukt_wekelijks_vasten")
             ),
-            "icoon": (entry.get("icoon") or {}).get("bestand")
-            if (entry.get("icoon") or {}).get("rechten") == "ok"
-            else None,
+            "icoon": next(
+                (
+                    str(item["bestand"]).replace("\\", "/")
+                    for item in icoon_items(entry)
+                    if str(item.get("bestand") or "").strip()
+                    and item.get("rechten") == "ok"
+                ),
+                None,
+            ),
         }
         if entry.get("soort") == "heilige":
             item["betekenis_lage_landen"] = (

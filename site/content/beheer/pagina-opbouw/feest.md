@@ -15,7 +15,7 @@ git_date: 2026-08-21
 
 ## Infobox
 
-**Wel:** icoon alleen met lokale licentie. Soort: Feest. Datum: feestdag
+**Wel:** icoon(en) alleen met lokale licentie. Soort: Feest. Datum: feestdag
 (burgerlijk, met tussen haakjes alleen de oude-kalenderdatum en popover),
 periode, paascyclus-offset of «zondag vóór/na …» — wat bij dit feest
 hoort. Vastenlabel van díe entry als dat in YAML staat.

@@ -412,6 +412,39 @@ def test_entry_page_icoon_alleen_bij_rechten_ok(
     assert "icoon" not in meta2
 
 
+def test_entry_page_meerdere_iconen(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _heilige(
+            icoon=[
+                {
+                    "bestand": "iconen/a.jpg",
+                    "rechten": "ok",
+                    "bron": "Eerste",
+                    "licentie": "CC0",
+                },
+                {
+                    "bestand": "iconen/b.jpg",
+                    "rechten": "ok",
+                    "bron": "Tweede",
+                    "licentie": "CC BY-SA 4.0",
+                },
+            ]
+        )
+    )
+    meta, _body = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )
+    assert meta["icoon"] == "/iconen/a.jpg"
+    assert meta["icoon_bron"] == "Eerste"
+    assert len(meta["iconen"]) == 2
+    assert meta["iconen"][1]["pad"] == "/iconen/b.jpg"
+    assert meta["iconen"][1]["bron"] == "Tweede"
+
+
 def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:

@@ -29,5 +29,6 @@ Scripts installeren ontbrekende Python-packages zelf. Ontbreekt Python, Hugo of 
 Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) voor wat generate overschrijft.
 
 `icoon` begint met licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA
-stopt het, tenzij u die gegevens wijzigt. How-to:
+stopt het, tenzij u die gegevens wijzigt. Het pad mag als eerste
+argument: `icoon foto.png`. How-to:
 [heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

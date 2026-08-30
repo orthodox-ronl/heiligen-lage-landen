@@ -146,7 +146,8 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
-Alleen een **lokaal** bestand. `validate.py` weigert een URL in `bestand`
+Of een **lijst** van zulke mappings voor meer dan één icoon. Alleen
+**lokale** bestanden. `validate.py` weigert een URL in `bestand`
 (geen hotlink vanuit de browser). Zonder duidelijke licentie: het veld
 weglaten. Twintigste-eeuwse foto’s en recente iconen zijn meestal nog
 beschermd. Toevoegen: `icoon` (eerst licentie/rechten).

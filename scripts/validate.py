@@ -14,7 +14,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import load_entries, load_raw_entries, load_yaml  # noqa: E402
+from load_entries import icoon_items, load_entries, load_raw_entries, load_yaml  # noqa: E402
 from plaatsen import load_plaatsen  # noqa: E402
 
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
@@ -82,23 +82,32 @@ def collect_content_errors(
                 errors.append(
                     f"{path}: referenties[{i}]: ontbreekt url, isbn of locator"
                 )
-        icoon = entry.get("icoon") or {}
-        if icoon.get("bestand"):
+        ruw_icoon = entry.get("icoon")
+        if ruw_icoon is not None and not isinstance(ruw_icoon, (dict, list)):
+            errors.append(f"{path}: icoon moet een mapping of een lijst zijn")
+        items = icoon_items(entry)
+        for i, icoon in enumerate(items):
+            prefix = "icoon" if len(items) == 1 else f"icoon[{i}]"
+            if not icoon.get("bestand"):
+                continue
             bestand = str(icoon["bestand"]).strip().replace("\\", "/")
             if bestand.lower().startswith(("http://", "https://", "//")):
                 errors.append(
-                    f"{path}: icoon.bestand mag geen URL zijn; "
+                    f"{path}: {prefix}.bestand mag geen URL zijn; "
                     "zet een lokaal bestand onder site/static/"
                 )
             if icoon.get("rechten") != "ok":
                 errors.append(
-                    f"{path}: icoon.bestand gezet maar icoon.rechten is niet 'ok'"
+                    f"{path}: {prefix}.bestand gezet maar {prefix}.rechten "
+                    "is niet 'ok'"
                 )
             if not str(icoon.get("bron") or "").strip():
-                errors.append(f"{path}: icoon.bron verplicht als bestand is gezet")
+                errors.append(
+                    f"{path}: {prefix}.bron verplicht als bestand is gezet"
+                )
             if not str(icoon.get("licentie") or "").strip():
                 errors.append(
-                    f"{path}: icoon.licentie verplicht als bestand is gezet"
+                    f"{path}: {prefix}.licentie verplicht als bestand is gezet"
                 )
             icon_path = ROOT / "site" / "static" / bestand
             if not icon_path.is_file():

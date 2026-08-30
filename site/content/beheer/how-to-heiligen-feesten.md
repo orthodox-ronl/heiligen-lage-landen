@@ -265,7 +265,8 @@ díe betekenistekst. Niet hetzelfde als `bronlaag: nagekeken`.
 
 ## Icoon
 
-Bestand onder `site/static/` (doorgaans `site/static/iconen/<id>.jpg`).
+Bestand onder `site/static/` (doorgaans `site/static/iconen/<id>.jpg` voor
+het eerste icoon; extra iconen krijgen de stam van het bronbestand).
 Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).
@@ -276,19 +277,24 @@ Vanuit de repo-root (`.\scripts` op PATH), net als `serve` of `build`:
 
 ```cmd
 icoon
+icoon heiligen-lage-landen-muuricoon-hemelum.png
 icoon --id willibrord --plaatje C:\pad\foto.jpg
 ```
 
-Het script vraagt **eerst** licentie/rechten. Alleen publiek domein, CC0,
-CC BY of CC BY-SA mogen in de repo. Is de licentie dat niet, dan vraagt
-het of u wilt wijzigen; `n` stopt, `j` vraagt opnieuw, tot het mag of u
-stopt. Daarna id, pad, bron, en of een bestaand icoon mag worden
-overschreven. Grote plaatjes worden verkleind (langste zijde 1600 px,
-JPEG); EXIF-rotatie wordt toegepast. Ontbrekende velden op de
-commandline worden in dezelfde volgorde gevraagd (`j`/`n` waar dat kan).
+Het pad mag als eerste argument (zonder `--plaatje`). Het script vraagt
+**eerst** licentie/rechten. Alleen publiek domein, CC0, CC BY of CC BY-SA
+mogen in de repo. Is de licentie dat niet, dan vraagt het of u wilt
+wijzigen; `n` stopt, `j` vraagt opnieuw, tot het mag of u stopt. Daarna
+id (als die ontbreekt), bron, en — alleen als de **doelnaam** al op deze
+entry staat — of dat icoon mag worden overschreven. Een extra plaatje
+met een andere doelnaam wordt toegevoegd. Grote plaatjes worden verkleind
+(langste zijde 1600 px, JPEG); EXIF-rotatie wordt toegepast. Ontbrekende
+velden op de commandline worden in dezelfde volgorde gevraagd (`j`/`n`
+waar dat kan).
 
 `--niet-interactief` faalt als iets ontbreekt of de licentie niet
-herbruikbaar is. `--overschrijven` vervangt een bestaand icoon.
+herbruikbaar is. `--overschrijven` vervangt een icoon met dezelfde
+doelnaam zonder te vragen.
 
 ### Commons-checklist (handmatig)
 
@@ -302,10 +308,10 @@ herbruikbaar is. `--overschrijven` vervangt een bestaand icoon.
 
 ```yaml
 icoon:
-  bestand: iconen/willibrord.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
+  - bestand: iconen/willibrord.jpg
+    rechten: ok
+    licentie: "Publiek domein"
+    bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
 ```
 
 Ontbreekt een legaal bestand: laat `icoon` weg. Dat geldt ook voor

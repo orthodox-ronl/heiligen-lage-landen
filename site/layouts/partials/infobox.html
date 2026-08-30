@@ -6,18 +6,22 @@
 {{- $p := .Params -}}
 {{- $weeknamen := dict "1" "maandag" "2" "dinsdag" "3" "woensdag" "4" "donderdag" "5" "vrijdag" "6" "zaterdag" "7" "zondag" -}}
 {{- $heeftDatum := or $p.feestdatum (and $p.van $p.tot) $p.weekdagen $p.paascyclus_offset (isset $p "van_offset_dagen") $p.anker -}}
-{{- $heeftBox := or $p.icoon $p.titels $p.alternatief $heeftDatum $p.periode $p.locatie_items $p.rustplaats_plaats $p.vastenniveau $p.onderdrukt_wekelijks_vasten -}}
+{{- $heeftBox := or $p.icoon $p.iconen $p.titels $p.alternatief $heeftDatum $p.periode $p.locatie_items $p.rustplaats_plaats $p.vastenniveau $p.onderdrukt_wekelijks_vasten -}}
 {{- if $heeftBox -}}
 <aside class="infobox" aria-label="Kerngegevens">
   <div class="infobox-header">{{ .Title }}</div>
-  {{- with $p.icoon }}
+  {{- $lijst := $p.iconen -}}
+  {{- if and (not $lijst) $p.icoon -}}
+    {{- $lijst = slice (dict "pad" $p.icoon "bron" $p.icoon_bron "licentie" $p.icoon_licentie) -}}
+  {{- end -}}
+  {{- range $lijst }}
   <figure class="infobox-figure">
-    <img src="{{ . | relURL }}" alt="Afbeelding van {{ $.Title }}" width="220" height="220" loading="lazy">
-    {{- if or $p.icoon_bron $p.icoon_licentie }}
+    <img src="{{ .pad | relURL }}" alt="Afbeelding van {{ $.Title }}" width="220" height="220" loading="lazy">
+    {{- if or .bron .licentie }}
     <figcaption>
-      {{- with $p.icoon_bron }}{{ . }}{{ end -}}
-      {{- if and $p.icoon_bron $p.icoon_licentie }} · {{ end -}}
-      {{- with $p.icoon_licentie }}{{ . }}{{ end -}}
+      {{- with .bron }}{{ . }}{{ end -}}
+      {{- if and .bron .licentie }} · {{ end -}}
+      {{- with .licentie }}{{ . }}{{ end -}}
     </figcaption>
     {{- end }}
   </figure>

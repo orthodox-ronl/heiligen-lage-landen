@@ -387,8 +387,11 @@ icoon:
   bron: "Wikimedia Commons — File:…"
 ```
 
-`rechten: ok` is verplicht om te tonen. `bestand` is een lokaal pad, geen
-`http(s)`-URL. `bron` en `licentie` zijn verplicht als `bestand` gezet is.
-`generate.py` zet het pad plus bijschrift op de entry-pagina. Ontbreekt
-een legaal bestand: veld weglaten. Toevoegen: `icoon`
-(eerst licentie/rechten; alleen PD, CC0, CC BY of CC BY-SA).
+Meerdere iconen: `icoon` als lijst van zulke mappings. Het eerste item is
+het overzichtsicoon (lijsten, datumpagina). `rechten: ok` is verplicht om
+te tonen. `bestand` is een lokaal pad, geen `http(s)`-URL. `bron` en
+`licentie` zijn verplicht als `bestand` gezet is. `generate.py` zet alle
+toonbare iconen op de entry-pagina. Ontbreekt een legaal bestand: veld
+weglaten. Toevoegen: `icoon` (eerst licentie/rechten; alleen PD, CC0,
+CC BY of CC BY-SA). Extra plaatje: zelfde commando; dezelfde doelnaam
+overschrijft na bevestiging.

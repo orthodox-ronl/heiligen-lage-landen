@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from load_entries import load_entries  # noqa: E402
+from load_entries import icoon_items, load_entries  # noqa: E402
 from validate import collect_content_errors  # noqa: E402
 
 from test_kerninhoud import NAGEKEKEN_KERN  # noqa: E402
@@ -41,15 +41,17 @@ ZONDER_LEGAAL_BESTAND: set[str] = set()
 
 def test_schema_verbiedt_url_als_bestand() -> None:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    bestand = schema["properties"]["icoon"]["properties"]["bestand"]
-    assert "url" not in schema["properties"]["icoon"]["properties"]
+    item = schema["$defs"]["icoonItem"]
+    bestand = item["properties"]["bestand"]
+    assert "url" not in item["properties"]
     assert "[Hh][Tt][Tt][Pp]" in bestand.get("pattern", "")
+    assert len(schema["properties"]["icoon"]["oneOf"]) == 2
 
 
 def test_nagekeken_kern_iconen_lokaal_of_weggelaten() -> None:
     by_id = {e["id"]: e for e in load_entries() if e["soort"] == "heilige"}
     for sid in NAGEKEKEN_KERN:
-        icoon = by_id[sid].get("icoon") or {}
+        icoon = (icoon_items(by_id[sid]) or [{}])[0]
         if sid in ZONDER_LEGAAL_BESTAND:
             assert not icoon.get("bestand"), sid
             continue
@@ -64,7 +66,7 @@ def test_nagekeken_kern_iconen_lokaal_of_weggelaten() -> None:
 
 def test_zondag_heiligen_lage_landen_heeft_lokaal_icoon() -> None:
     by_id = {e["id"]: e for e in load_entries()}
-    icoon = by_id["zondag-heiligen-lage-landen"]["icoon"]
+    icoon = icoon_items(by_id["zondag-heiligen-lage-landen"])[0]
     assert icoon.get("rechten") == "ok"
     assert icoon.get("bron")
     assert icoon.get("licentie")
@@ -75,8 +77,8 @@ def test_zondag_heiligen_lage_landen_heeft_lokaal_icoon() -> None:
 
 def test_gedeeld_bestand_monulphus_gondulphus() -> None:
     by_id = {e["id"]: e for e in load_entries()}
-    a = by_id["monulphus"]["icoon"]["bestand"]
-    b = by_id["gondulphus"]["icoon"]["bestand"]
+    a = icoon_items(by_id["monulphus"])[0]["bestand"]
+    b = icoon_items(by_id["gondulphus"])[0]["bestand"]
     assert a == b == "iconen/monulphus-gondulphus.jpg"
 
 
@@ -109,3 +111,21 @@ def test_validate_weigert_hotlink() -> None:
     broken["source_path"] = sample["source_path"]
     errors = collect_content_errors([broken])
     assert any("geen URL" in e for e in errors)
+
+
+def test_validate_lijst_icoon_indexeert() -> None:
+    entries = load_entries()
+    sample = next(e for e in entries if e["id"] == "willibrord")
+    broken = dict(sample)
+    broken["icoon"] = [
+        dict(sample["icoon"]),
+        {
+            "bestand": "iconen/willibrord.jpg",
+            "rechten": "ok",
+            "bron": "",
+            "licentie": "",
+        },
+    ]
+    broken["source_path"] = sample["source_path"]
+    errors = collect_content_errors([broken])
+    assert any("icoon[1].bron" in e for e in errors)

@@ -19,8 +19,8 @@ contract.
 
 ## Infobox
 
-**Wel:** icoon alleen met lokale licentie (`rechten: ok`) plus bron en
-licentie in het bijschrift. Daarna, voor zover bekend: titel(s); ook-namen;
+**Wel:** iconen alleen met lokale licentie (`rechten: ok`) plus bron en
+licentie in het bijschrift (meer dan één mag). Daarna, voor zover bekend: titel(s); ook-namen;
 feestdag (link naar datumpagina; tussen haakjes alleen de burgerlijke
 datum op de oude kalender, met popover); leefde; plaatsen (streek cursief, link
 naar het overzicht); rustplaats (waar het lichaam traditioneel rust, geen
