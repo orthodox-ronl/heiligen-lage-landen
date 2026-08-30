@@ -149,6 +149,7 @@ icoon:
 Alleen een **lokaal** bestand. `validate.py` weigert een URL in `bestand`
 (geen hotlink vanuit de browser). Zonder duidelijke licentie: het veld
 weglaten. Twintigste-eeuwse foto’s en recente iconen zijn meestal nog
-beschermd.
+beschermd. Toevoegen: `python scripts/icoon_toevoegen.py` (eerst
+licentie/rechten).
 
 How-to: [heiligen en feesten wijzigen]({{% ref "/beheer/how-to-heiligen-feesten" %}}).

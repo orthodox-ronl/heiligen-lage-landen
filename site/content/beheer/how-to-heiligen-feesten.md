@@ -2,7 +2,7 @@
 title: "Heilige of feest toevoegen of wijzigen"
 description: "YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"
 weight: 20
-git_date: 2026-08-21
+git_date: 2026-08-30
 ---
 
 Heiligen en feesten bestaan als **bron** in YAML. De pagina’s die u op de
@@ -270,7 +270,27 @@ Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
 browser laden (auteursrecht, kapotte links, hotlink-blokkades).
 
-**Commons-checklist**
+### Script
+
+Vanuit de repo-root (`.\scripts` op PATH: `icoon`):
+
+```text
+icoon
+python scripts/icoon_toevoegen.py --id willibrord --plaatje C:\pad\foto.jpg
+```
+
+Het script vraagt **eerst** licentie/rechten. Alleen publiek domein, CC0,
+CC BY of CC BY-SA mogen in de repo. Is de licentie dat niet, dan vraagt
+het of u wilt wijzigen; `n` stopt, `j` vraagt opnieuw, tot het mag of u
+stopt. Daarna id, pad, bron, en of een bestaand icoon mag worden
+overschreven. Grote plaatjes worden verkleind (langste zijde 1600 px,
+JPEG); EXIF-rotatie wordt toegepast. Ontbrekende velden op de
+commandline worden in dezelfde volgorde gevraagd (`j`/`n` waar dat kan).
+
+`--niet-interactief` faalt als iets ontbreekt of de licentie niet
+herbruikbaar is. `--overschrijven` vervangt een bestaand icoon.
+
+### Commons-checklist (handmatig)
 
 1. Zoek op [Wikimedia Commons](https://commons.wikimedia.org/) (naam +
    heilige / icon).

@@ -2,7 +2,7 @@
 title: "Commando's"
 description: "Lokale scripts: test, validate, check, serve, build"
 weight: 5
-git_date: 2026-08-27
+git_date: 2026-08-30
 ---
 
 Voor wie de kalender in git bijhoudt. Org-conventie:
@@ -26,3 +26,11 @@ cd /d C:\Git\orthodox-groningen\heiligen-lage-landen
 Scripts installeren ontbrekende Python-packages zelf. Ontbreekt Python, Hugo of `.\scripts` op PATH, dan stopt het commando met een hersteltekst.
 
 Voor push naar `main`: `check` groen. Zie [Site bouwen en publiceren]({{% ref "/beheer/how-to-publiceren" %}}) voor wat generate overschrijft.
+
+## Icoon bij een bestaande entry
+
+`icoon` (of `python scripts/icoon_toevoegen.py`) zet een lokaal plaatje
+op een bestaande heilige of een bestaand feest. Het begint met
+licentie/rechten; zonder PD, CC0, CC BY of CC BY-SA stopt het, tenzij u
+die gegevens wijzigt. How-to:
+[heilige of feest]({{% ref "/beheer/how-to-heiligen-feesten" %}}) (Icoon).

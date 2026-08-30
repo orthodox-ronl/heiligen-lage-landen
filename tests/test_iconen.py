@@ -71,6 +71,9 @@ def test_zondag_heiligen_lage_landen_heeft_lokaal_icoon() -> None:
     bestand = str(icoon["bestand"]).replace("\\", "/")
     assert bestand == "iconen/zondag-heiligen-lage-landen.jpg"
     assert (STATIC / bestand).is_file()
+
+
+def test_gedeeld_bestand_monulphus_gondulphus() -> None:
     by_id = {e["id"]: e for e in load_entries()}
     a = by_id["monulphus"]["icoon"]["bestand"]
     b = by_id["gondulphus"]["icoon"]["bestand"]
