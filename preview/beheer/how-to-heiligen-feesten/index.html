@@ -149,8 +149,8 @@ toets zoeken. Zet iemand pas in dit veld na een expliciete toets van
 díe betekenistekst. Niet hetzelfde als <code>bronlaag: nagekeken</code>.</p><h2 id=icoon>Icoon</h2><p>Bestand onder <code>site/static/</code> (doorgaans <code>site/static/iconen/&lt;id>.jpg</code>).
 Alleen tonen als <code>rechten: ok</code>, met <code>bron</code> en <code>licentie</code>. Geen URL als
 afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
-browser laden (auteursrecht, kapotte links, hotlink-blokkades).</p><h3 id=script>Script</h3><p>Vanuit de repo-root (<code>.\scripts</code> op PATH: <code>icoon</code>):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>icoon
-</span></span><span style=display:flex><span>python scripts/icoon_toevoegen.py --id willibrord --plaatje C:\pad\foto.jpg
+browser laden (auteursrecht, kapotte links, hotlink-blokkades).</p><h3 id=script>Script</h3><p>Vanuit de repo-root (<code>.\scripts</code> op PATH), net als <code>serve</code> of <code>build</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-cmd data-lang=cmd><span style=display:flex><span>icoon
+</span></span><span style=display:flex><span>icoon --id willibrord --plaatje C:\pad\foto.jpg
 </span></span></code></pre></div><p>Het script vraagt <strong>eerst</strong> licentie/rechten. Alleen publiek domein, CC0,
 CC BY of CC BY-SA mogen in de repo. Is de licentie dat niet, dan vraagt
 het of u wilt wijzigen; <code>n</code> stopt, <code>j</code> vraagt opnieuw, tot het mag of u
