@@ -1279,6 +1279,33 @@ main.main > :is(article, section) > h1 {
   color: #1a4a7a;
 }
 
+.kaart-streek-label {
+  background: rgba(255, 253, 248, 0.94);
+  border: 1px solid rgba(92, 72, 16, 0.4);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: #5c4810;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.08rem 0.38rem;
+  white-space: nowrap;
+}
+
+.kaart-streek-label::before {
+  display: none;
+}
+
+.leaflet-marker-icon.is-streek-kind {
+  filter: drop-shadow(0 0 4px #c9a227);
+}
+
+.leaflet-overlay-pane .kaart-streek-vlak {
+  fill: #c9a227;
+  fill-opacity: 0.4;
+  stroke: #5c4810;
+}
+
 .entry-list-namen {
   display: flex;
   flex-direction: column;

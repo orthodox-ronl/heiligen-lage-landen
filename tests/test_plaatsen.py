@@ -62,6 +62,19 @@ def test_willibrord_zoek_vindt_frisia() -> None:
     assert "Frisia" in zoek or "Friesland" in zoek
 
 
+def test_streek_kinderen_voor_kaartvlak() -> None:
+    plaatsen = load_plaatsen()
+    frisia = {
+        rec["id"] for rec in plaatsen.values() if rec.get("streek") == "frisia"
+    }
+    assert {"dokkum", "hemelum", "leeuwarden", "stavoren"} <= frisia
+    vlaanderen = [
+        rec for rec in plaatsen.values() if rec.get("streek") == "vlaanderen"
+    ]
+    assert len(vlaanderen) >= 3
+    assert all(plaatsen[rec["streek"]]["soort"] == "streek" for rec in vlaanderen)
+
+
 def test_leaflet_lokaal_vendored() -> None:
     assert (LEAFLET / "leaflet.js").is_file()
     assert (LEAFLET / "leaflet.css").is_file()

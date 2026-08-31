@@ -40,7 +40,7 @@
           "streek": {
             "type": "string",
             "pattern": "^[a-z0-9][a-z0-9_-]*$",
-            "description": "Optioneel: id van de streek waaronder deze plaats valt."
+            "description": "Optioneel: id van de streek waaronder deze plaats valt (zoeken en kaartvlak)."
           }
         }
       }
