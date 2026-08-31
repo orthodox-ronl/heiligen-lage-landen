@@ -42,9 +42,10 @@ selectie_toelichting_publiek: |
   [overzicht]({{% ref "/heiligen" %}}) **Opgenomen** (alleen `voldoet`)
   en **Alles** (groepen in de kalender / nader onderzoek / kandidaat)
   kan tonen. Het staat **niet** in de infobox.
-- `kandidaat-schrappen` komt **niet** in `entries.json`, ICS, datumpagina
-  of Synaxarion. Wel eigen pagina en het overzicht. Verwijdert niets tot
-  een expliciet besluit.
+- `kandidaat-schrappen` komt **niet** op de jaarkalender, datumpagina
+  of Synaxarion. Wel eigen pagina, het overzicht, `entries.json`
+  (`selectie`), en optioneel in een ICS-feed als u op Agenda
+  **Kandidaat** aanvinkt. Verwijdert niets tot een expliciet besluit.
 - **Indirecte invloed** (deur open, niet actief verzamelen): typisch
   `nader-onderzoek`, met uitleg op de pagina. Zie gebruikersuitleg.
 

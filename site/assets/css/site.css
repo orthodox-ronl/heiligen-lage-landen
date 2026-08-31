@@ -1987,6 +1987,33 @@ button.button {
   accent-color: var(--gold);
 }
 
+.agenda-keuzes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0.75rem 0;
+}
+
+.agenda-keuze .chip {
+  width: fit-content;
+}
+
+.agenda-subkeuzes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0 1.1rem;
+}
+
+.agenda-subkeuzes[hidden] {
+  display: none !important;
+}
+
+.chip-sub {
+  font-size: 0.82rem;
+  padding: 0.22rem 0.6rem;
+}
+
 .letter-btn {
   appearance: none;
   border: 1px solid var(--line);

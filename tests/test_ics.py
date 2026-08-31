@@ -13,10 +13,14 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from ics import (  # noqa: E402
     ICS_COMBOS,
     SITE_PUBLIC_URL,
+    AgendaSpec,
     build_ics,
+    build_sunset_ics,
     calendar_name,
     day_title,
+    spec_from_kinds,
     subset_key,
+    v2_relpaths,
 )
 from kalender import julian_feast_to_civil_date  # noqa: E402
 from lezingen import build_lezingen_dagen_payload  # noqa: E402
@@ -77,21 +81,22 @@ def parse_events(ics: str) -> dict[str, dict[str, str]]:
     return events
 
 
-def _build(kinds: frozenset[str], stijl: str = "nieuw", years: list[int] | None = None):
+def _build(kinds: frozenset[str], stijl: str = "nieuw", years: list[int] | None = None, spec: AgendaSpec | None = None):
     entries = _entries()
+    spec = spec or spec_from_kinds(kinds)
     key = {
         ALLES: "alles",
         VASTEN: "vasten",
         HEILIGEN: "heiligen",
         VASTENVRIJ: "vastenvrij",
-    }[kinds]
+    }.get(kinds, "alles")
     return build_ics(
         entries,
         cal_name=calendar_name(key, stijl),
         stijl=stijl,
         context_entries=entries,
         feed_key=key,
-        kinds=kinds,
+        spec=spec,
         years=years or YEARS,
         lezingen_payload=_payload(),
     )
@@ -235,7 +240,7 @@ def test_alle_feeds_een_event_per_dag() -> None:
                 stijl=stijl,
                 context_entries=entries,
                 feed_key=key,
-                kinds=kinds,
+                spec=spec_from_kinds(kinds),
                 years=YEARS,
                 lezingen_payload=payload,
             )
@@ -264,6 +269,18 @@ def test_maandag_toont_weeknaam() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20260608"]
     assert ev["summary"].startswith("2e week na Pinksteren")
+    assert "Medardus" not in ev["summary"]
+
+
+def test_nader_onderzoek_opt_in() -> None:
+    spec = AgendaSpec(
+        heiligen=frozenset({"voldoet", "nader-onderzoek"}),
+        feesten=frozenset({"grote", "overige", "omlijsting"}),
+        vasten=frozenset({"week", "periodes", "feest"}),
+        vastenvrij=True,
+    )
+    events = parse_events(_build(ALLES, spec=spec))
+    ev = events["20260608"]
     assert "Medardus" in ev["summary"]
 
 
@@ -300,3 +317,29 @@ def test_oud_heiligen_nieuw_willibrord_op_zeven_november() -> None:
     assert "Kerst" in events[kerst.strftime("%Y%m%d")]["summary"]
     ics = _build(ALLES, stijl=STIJL_OUD_HEILIGEN_NIEUW)
     assert "heiligen nieuw" in _unfold(ics)
+
+
+def test_v2_relpaths_default_en_nader() -> None:
+    default = AgendaSpec()
+    assert v2_relpaths(default, "nieuw") == ["v2/alles-nieuw.ics"]
+    met_nader = AgendaSpec(
+        heiligen=frozenset({"voldoet", "nader-onderzoek"})
+    )
+    assert v2_relpaths(met_nader, "nieuw") == [
+        "v2/alles-nieuw.ics",
+        "v2/heiligen-nader-nieuw.ics",
+    ]
+
+
+def test_sunset_ics_herinnert_aan_agenda() -> None:
+    ics = build_sunset_ics(
+        old_filename="alles-nieuw.ics", today=date(2026, 8, 31)
+    )
+    text = _unfold(ics)
+    assert "X-WR-CALNAME:Vervallen" in text
+    assert "werkt niet meer" in text
+    assert f"{SITE_PUBLIC_URL}/agenda/" in text
+    assert "20260831" in ics
+    assert "20260907" in ics
+    assert "20260930" in ics
+    assert "20260901" in ics

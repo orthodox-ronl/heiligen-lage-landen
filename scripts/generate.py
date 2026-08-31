@@ -1575,8 +1575,6 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
     years = list(occurrence_years())
     payload = []
     for entry in entries:
-        if not heilige_in_kalender(entry):
-            continue
         dn = entry["datum_norm"]
         vorm = dn.get("vorm") or "dag"
         item: dict[str, Any] = {
@@ -1598,6 +1596,7 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
             "icoon": icoon_bestand(primair_icoon(entry)) or None,
         }
         if entry.get("soort") == "heilige":
+            item["selectie"] = entry.get("selectie") or "nader-onderzoek"
             item["betekenis_lage_landen"] = (
                 (entry.get("betekenis_lage_landen") or "").strip()
             )
@@ -1768,6 +1767,12 @@ def _synaxarion_kind_label(item: dict[str, Any]) -> str:
 
 def write_synaxarion_json(payload: list[dict[str, Any]]) -> None:
     """Vaste jaarcyclus voor Hugo: HTML-lijst zonder burgerlijk jaartal."""
+    payload = [
+        item
+        for item in payload
+        if item.get("soort") != "heilige"
+        or (item.get("selectie") or "nader-onderzoek") != "kandidaat-schrappen"
+    ]
     fixed = [item for item in payload if _is_fixed_cycle_item(item)]
     maanden: list[dict[str, Any]] = []
     for month in range(1, 13):
@@ -1846,7 +1851,7 @@ def clean_generated() -> None:
                 path.unlink()
             elif path.is_dir():
                 shutil.rmtree(path)
-    for ics in (SITE / "static" / "ics").glob("*.ics"):
+    for ics in (SITE / "static" / "ics").rglob("*.ics"):
         ics.unlink()
 
 

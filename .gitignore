@@ -12,8 +12,9 @@ site/static/data/entries.json
 site/static/data/synaxarion.json
 site/static/data/plaatsen.json
 site/static/data/lezingen-dagen.json
-site/static/ics/*.ics
+site/static/ics/**/*.ics
 !site/static/ics/.gitkeep
+!site/static/ics/v2/.gitkeep
 
 # Hugo
 .hugo_build.lock

@@ -102,7 +102,7 @@ datum:
 ```
 
 Pagina’s onder `/vasten/{id}/`; zichtbaar in synaxarion/agenda/kalender met
-aan/uit-filters. ICS: `vasten-*.ics` en combinaties met heiligen/feesten.
+aan/uit-filters. ICS: `site/static/ics/v2/` (zie `/uitleg/agenda-technisch/`).
 
 Het **Synaxarion** (`/synaxarion/`, optioneel `?dag=MM-DD`) toont alleen de vaste
 jaarcyclus. De bladerlijst staat in de HTML (`synaxarion.json`); JS is voor
@@ -289,8 +289,9 @@ id_aliassen: [lubuinus]      # oude ids na een merge
   behandel als `nader-onderzoek`. Waarden: `voldoet`, `nader-onderzoek`,
   `kandidaat-schrappen`. Bij de laatste twee: uitklap onderaan de pagina
   (`<details>`). Bij `voldoet`: niets. `kandidaat-schrappen` staat in het
-  heiligenoverzicht (groep **Kandidaat**), niet in kalender, ICS of
-  datumpagina.
+  heiligenoverzicht (groep **Kandidaat**), niet op jaarkalender,
+  datumpagina of Synaxarion. In ICS alleen als de bezoeker op Agenda
+  **Kandidaat** aanvinkt (default uit).
 - **`id_aliassen`** — oude `[a-z0-9_-]+` ids; niet gelijk aan het eigen id
   en niet gelijk aan een ander levend entry-id. `generate.py` zet Hugo
   `aliases` (`/heiligen/<oud-id>/`).

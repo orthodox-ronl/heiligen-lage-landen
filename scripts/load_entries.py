@@ -17,7 +17,7 @@ ENTRY_SUBDIRS = ("feesten", "heiligen", "vasten")
 
 
 def heilige_in_kalender(entry: dict[str, Any]) -> bool:
-    """Kandidaat-schrappen: wel pagina/overzicht, niet datum/ICS/agenda."""
+    """Kandidaat-schrappen: wel pagina/overzicht/entries.json, niet jaarkalender/datum/Synaxarion."""
     if entry.get("soort") != "heilige":
         return True
     sel = entry.get("selectie") or "nader-onderzoek"

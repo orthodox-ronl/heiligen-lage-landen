@@ -4,12 +4,12 @@ from __future__ import annotations
 
 import uuid
 from collections import defaultdict
+from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from itertools import combinations
 from typing import Any, Iterable, Iterator
 from urllib.parse import quote
 
-from load_entries import heilige_in_kalender
 from kalender import (
     format_mmdd,
     gregorian_to_julian_calendar,
@@ -68,6 +68,29 @@ def calendar_title_from_kinds(kinds: frozenset[str]) -> str:
 
 STIJL_OUD_HEILIGEN_NIEUW = "oud-heiligen-nieuw"
 
+ICS_COMBOS = tuple(
+    frozenset(combo)
+    for n in range(1, len(KIND_ORDER) + 1)
+    for combo in combinations(KIND_ORDER, n)
+)
+
+ICS_V2_DIR = "v2"
+
+HEILIGE_SELECTIE_TOKENS = (
+    ("voldoet", "opgenomen"),
+    ("nader-onderzoek", "nader"),
+    ("kandidaat-schrappen", "kandidaat"),
+)
+FEEST_GROEPEN = ("grote", "overige", "omlijsting")
+VASTEN_GROEPEN = ("week", "periodes", "feest")
+DEFAULT_HEILIGEN = frozenset({"voldoet"})
+DEFAULT_FEESTEN = frozenset(FEEST_GROEPEN)
+DEFAULT_VASTEN = frozenset(VASTEN_GROEPEN)
+
+RAND_PREFIXES = ("voorfeest-", "nafeest-", "synaxis-", "teruggave-")
+AGENDA_PAGINA_URL = f"{SITE_PUBLIC_URL}/agenda/"
+SUNSET_CAL_NAME = "Vervallen — nieuwe link op de site"
+
 
 def calendar_name(key: str, stijl: str) -> str:
     if key == "alles":
@@ -75,7 +98,7 @@ def calendar_name(key: str, stijl: str) -> str:
     elif key == "heiligen":
         title = "Heiligen Lage Landen"
     else:
-        title = key.replace("-", " en ")
+        title = key.replace("-", " ")
         title = title[:1].upper() + title[1:]
     if stijl == STIJL_OUD_HEILIGEN_NIEUW:
         return f"{title} (oud, heiligen nieuw)"
@@ -95,13 +118,176 @@ def heiligen_stijl_van(stijl: str) -> str:
     return stijl
 
 
-ICS_COMBOS = tuple(
-    frozenset(combo)
-    for n in range(1, len(KIND_ORDER) + 1)
-    for combo in combinations(KIND_ORDER, n)
-)
+@dataclass(frozen=True)
+class AgendaSpec:
+    """Nested agenda-filters: heiligen-selectie, feestgroepen, vastensoorten."""
 
-RAND_PREFIXES = ("voorfeest-", "nafeest-", "synaxis-", "teruggave-")
+    heiligen: frozenset[str] = DEFAULT_HEILIGEN
+    feesten: frozenset[str] = DEFAULT_FEESTEN
+    vasten: frozenset[str] = DEFAULT_VASTEN
+    vastenvrij: bool = True
+
+    def kinds(self) -> frozenset[str]:
+        kinds: set[str] = set()
+        if self.heiligen:
+            kinds.add("heilige")
+        if self.feesten:
+            kinds.add("feest")
+        if self.vasten:
+            kinds.add("vasten")
+        if self.vastenvrij:
+            kinds.add("vastenvrij")
+        return frozenset(kinds)
+
+
+def spec_from_kinds(kinds: frozenset[str]) -> AgendaSpec:
+    """Oud model: vier hoofdssoorten, met de nieuwe defaults daarbinnen."""
+    return AgendaSpec(
+        heiligen=DEFAULT_HEILIGEN if "heilige" in kinds else frozenset(),
+        feesten=DEFAULT_FEESTEN if "feest" in kinds else frozenset(),
+        vasten=DEFAULT_VASTEN if "vasten" in kinds else frozenset(),
+        vastenvrij="vastenvrij" in kinds,
+    )
+
+
+def _nonempty_subsets(values: tuple[str, ...]) -> tuple[frozenset[str], ...]:
+    return tuple(
+        frozenset(combo)
+        for n in range(1, len(values) + 1)
+        for combo in combinations(values, n)
+    )
+
+
+def heiligen_file_key(sels: frozenset[str]) -> str | None:
+    bits = [tok for yaml_sel, tok in HEILIGE_SELECTIE_TOKENS if yaml_sel in sels]
+    if not bits:
+        return None
+    if bits == ["opgenomen"]:
+        return "heiligen"
+    return "heiligen-" + "-".join(bits)
+
+
+def feesten_file_key(groups: frozenset[str]) -> str | None:
+    bits = [g for g in FEEST_GROEPEN if g in groups]
+    if not bits:
+        return None
+    if set(bits) == set(FEEST_GROEPEN):
+        return "feesten"
+    return "feesten-" + "-".join(bits)
+
+
+def vasten_file_key(groups: frozenset[str]) -> str | None:
+    bits = [g for g in VASTEN_GROEPEN if g in groups]
+    if not bits:
+        return None
+    if set(bits) == set(VASTEN_GROEPEN):
+        return "vasten"
+    return "vasten-" + "-".join(bits)
+
+
+def nested_is_default(spec: AgendaSpec) -> bool:
+    kinds = spec.kinds()
+    if bool(spec.heiligen) != ("heilige" in kinds):
+        return False
+    if spec.heiligen and spec.heiligen != DEFAULT_HEILIGEN:
+        return False
+    if bool(spec.feesten) != ("feest" in kinds):
+        return False
+    if spec.feesten and spec.feesten != DEFAULT_FEESTEN:
+        return False
+    if bool(spec.vasten) != ("vasten" in kinds):
+        return False
+    if spec.vasten and spec.vasten != DEFAULT_VASTEN:
+        return False
+    if spec.vastenvrij != ("vastenvrij" in kinds):
+        return False
+    return True
+
+
+def stijl_bestandsdeel(spec: AgendaSpec, stijl: str) -> str:
+    kinds = spec.kinds()
+    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
+        if "heilige" not in kinds:
+            return "oud"
+        if kinds == frozenset({"heilige"}):
+            return "nieuw"
+        return STIJL_OUD_HEILIGEN_NIEUW
+    return stijl
+
+
+def v2_relpaths(spec: AgendaSpec, stijl: str) -> list[str]:
+    """Eén of meer v2-feeds die samen de keuze dekken. Leeg = niets aangevinkt."""
+    kinds = spec.kinds()
+    if not kinds:
+        return []
+    part = stijl_bestandsdeel(spec, stijl)
+    year_part = jaar_stijl(part) if part != STIJL_OUD_HEILIGEN_NIEUW else "oud"
+    saint_part = heiligen_stijl_van(part)
+
+    if nested_is_default(spec):
+        key = subset_key(kinds)
+        assert key
+        return [f"{ICS_V2_DIR}/{key}-{part}.ics"]
+
+    extras = spec.heiligen - DEFAULT_HEILIGEN
+    if (
+        nested_is_default(
+            AgendaSpec(
+                heiligen=DEFAULT_HEILIGEN if spec.heiligen else frozenset(),
+                feesten=spec.feesten,
+                vasten=spec.vasten,
+                vastenvrij=spec.vastenvrij,
+            )
+        )
+        and extras
+        and DEFAULT_HEILIGEN <= spec.heiligen
+    ):
+        base = spec_from_kinds(kinds)
+        base_part = stijl_bestandsdeel(base, stijl)
+        key = subset_key(kinds)
+        assert key
+        files = [f"{ICS_V2_DIR}/{key}-{base_part}.ics"]
+        for yaml_sel, tok in HEILIGE_SELECTIE_TOKENS:
+            if yaml_sel in extras:
+                files.append(f"{ICS_V2_DIR}/heiligen-{tok}-{saint_part}.ics")
+        return files
+
+    files: list[str] = []
+    hk = heiligen_file_key(spec.heiligen)
+    if hk:
+        files.append(f"{ICS_V2_DIR}/{hk}-{saint_part}.ics")
+    fk = feesten_file_key(spec.feesten)
+    if fk:
+        files.append(f"{ICS_V2_DIR}/{fk}-{year_part}.ics")
+    vk = vasten_file_key(spec.vasten)
+    if vk:
+        files.append(f"{ICS_V2_DIR}/{vk}-{year_part}.ics")
+    if spec.vastenvrij:
+        files.append(f"{ICS_V2_DIR}/vastenvrij-{year_part}.ics")
+    return files
+
+
+def sunset_dates(today: date | None = None) -> list[date]:
+    today = today or date.today()
+    out = {today, today + timedelta(days=7), today + timedelta(days=30)}
+    kerk = date(today.year, 9, 1)
+    if kerk <= today:
+        kerk = date(today.year + 1, 9, 1)
+    out.add(kerk)
+    return sorted(out)
+
+
+def old_ics_filenames() -> list[str]:
+    names: list[str] = []
+    for kinds in ICS_COMBOS:
+        key = subset_key(kinds)
+        assert key
+        stijlen = ["nieuw", "oud"]
+        if "heilige" in kinds and kinds - {"heilige"}:
+            stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
+        for stijl in stijlen:
+            names.append(f"{key}-{stijl}.ics")
+    return names
 
 
 def datum_pagina_url(civil: date, *, stijl: str | None = None) -> str:
@@ -176,14 +362,6 @@ def _occurrence_years(today: date | None = None) -> list[int]:
     return list(occurrence_years(today))
 
 
-def suppresses_weekly(entry: dict[str, Any]) -> bool:
-    if is_weekly_entry(entry):
-        return False
-    if entry.get("soort") == "vasten":
-        return True
-    return bool(entry.get("onderdrukt_wekelijks_vasten"))
-
-
 def iter_occurrences(
     entry: dict[str, Any],
     stijl: str,
@@ -254,11 +432,8 @@ def occurrences_by_date(
     year_stijl = jaar_stijl(stijl)
     saint_stijl = heiligen_stijl or heiligen_stijl_van(stijl)
     by_date: dict[date, list[dict[str, Any]]] = defaultdict(list)
-    suppressed: set[date] = set()
     weekly: list[dict[str, Any]] = []
     for entry in entries:
-        if not heilige_in_kalender(entry):
-            continue
         if is_weekly_entry(entry):
             weekly.append(entry)
             continue
@@ -269,12 +444,10 @@ def occurrences_by_date(
                 continue
             seen.add(civil)
             by_date[civil].append(entry)
-            if suppresses_weekly(entry):
-                suppressed.add(civil)
     for entry in weekly:
         seen: set[date] = set()
         for civil in iter_occurrences(entry, year_stijl, years):
-            if civil in seen or civil in suppressed:
+            if civil in seen:
                 continue
             seen.add(civil)
             by_date[civil].append(entry)
@@ -319,6 +492,64 @@ GROOTFEEST_IDS = frozenset(
 
 def is_grootfeest(entry: dict[str, Any]) -> bool:
     return is_day_type_feest(entry) and str(entry.get("id") or "") in GROOTFEEST_IDS
+
+
+def feast_agenda_groep(entry: dict[str, Any]) -> str | None:
+    """grote | omlijsting | overige — voor agenda-subfilters."""
+    if entry.get("soort") != "feest":
+        return None
+    if str(entry.get("id") or "") in GROOTFEEST_IDS:
+        return "grote"
+    if is_rand_feest(entry):
+        return "omlijsting"
+    return "overige"
+
+
+def display_entries(
+    day_entries: list[dict[str, Any]], spec: AgendaSpec
+) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for entry in day_entries:
+        soort = entry.get("soort")
+        if soort == "heilige":
+            sel = entry.get("selectie") or "nader-onderzoek"
+            if sel in spec.heiligen:
+                out.append(entry)
+        elif soort == "feest":
+            groep = feast_agenda_groep(entry)
+            if groep in spec.feesten:
+                out.append(entry)
+        else:
+            out.append(entry)
+    return out
+
+
+def mix_entries(
+    day_entries: list[dict[str, Any]], spec: AgendaSpec
+) -> list[dict[str, Any]]:
+    """Welke entries meetellen voor het effectieve vastenniveau."""
+    out: list[dict[str, Any]] = []
+    for entry in day_entries:
+        if is_weekly_entry(entry) and entry.get("soort") == "vasten":
+            if "week" in spec.vasten:
+                out.append(entry)
+            continue
+        if entry.get("soort") == "vasten" and is_period_entry(entry):
+            if "periodes" in spec.vasten:
+                out.append(entry)
+            continue
+        obs = entry.get("observances") or []
+        if (
+            entry.get("soort") == "feest"
+            and entry.get("vastenniveau")
+            and not is_period_entry(entry)
+            and "vasten" in obs
+        ):
+            if "feest" in spec.vasten:
+                out.append(entry)
+            continue
+        out.append(entry)
+    return out
 
 
 def _feast_weight(entry: dict[str, Any]) -> tuple[int, str]:
@@ -379,9 +610,20 @@ def kop_entries(day_entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def kop_titel(items: list[dict[str, Any]]) -> str:
     if not items:
         return ""
-    if len(items) == 1:
-        return _naam(items[0])
-    return ", ".join(_naam(e) for e in items)
+    names = [_naam_ics(e) for e in items]
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names)
+
+
+def _naam_ics(entry: dict[str, Any]) -> str:
+    name = _naam(entry)
+    if (
+        entry.get("soort") == "heilige"
+        and (entry.get("selectie") or "") == "kandidaat-schrappen"
+    ):
+        return f"{name} (kandidaat)"
+    return name
 
 
 def _mix_mmdd(civil: date, stijl: str) -> str:
@@ -442,19 +684,20 @@ def _ref_line(label: str, refs: list[Any] | None) -> str | None:
 
 
 def _show_fast_info(
-    kinds: frozenset[str], indicatie: VastenIndicatie | None
+    spec: AgendaSpec, indicatie: VastenIndicatie | None
 ) -> bool:
     if indicatie is None:
         return False
     if indicatie.niveau == "vrij":
-        return "vastenvrij" in kinds
-    return "vasten" in kinds
+        return spec.vastenvrij
+    return bool(spec.vasten)
 
 
 def day_title(
     day_entries: list[dict[str, Any]],
     *,
-    kinds: frozenset[str],
+    kinds: frozenset[str] | None = None,
+    spec: AgendaSpec | None = None,
     civil: date,
     stijl: str = "nieuw",
     indicatie: VastenIndicatie | None | object = ...,
@@ -467,20 +710,25 @@ def day_title(
     """
     from lezingen import week_kop_label
 
+    if spec is None:
+        spec = spec_from_kinds(kinds or frozenset())
+    kinds = spec.kinds()
+    shown = display_entries(day_entries, spec)
+    mix_src = mix_entries(day_entries, spec)
     visible = [
         e
-        for e in day_entries
-        if e.get("soort") in kinds and e.get("soort") in {"heilige", "feest"}
+        for e in shown
+        if e.get("soort") in {"heilige", "feest"}
     ]
     year_s = jaar_stijl(stijl)
     if indicatie is ...:
         indicatie = mix_vastenniveau(
-            day_entries,
+            mix_src,
             civil.isoweekday(),
             _mix_mmdd(civil, year_s),
         )
     show_vasten = _show_fast_info(
-        kinds, indicatie if isinstance(indicatie, VastenIndicatie) else None
+        spec, indicatie if isinstance(indicatie, VastenIndicatie) else None
     )
     groot = kop_grootfeesten(visible) if "feest" in kinds else []
     saints = kop_heiligen(visible) if "heilige" in kinds else []
@@ -539,20 +787,25 @@ def _juliaans_regel(entry: dict[str, Any], stijl: str) -> str | None:
 def day_description(
     day_entries: list[dict[str, Any]],
     *,
-    kinds: frozenset[str],
+    kinds: frozenset[str] | None = None,
+    spec: AgendaSpec | None = None,
     civil: date,
     stijl: str,
     indicatie: VastenIndicatie | None,
     kop: list[dict[str, Any]],
     lezingen: dict[str, Any] | None = None,
 ) -> str:
+    if spec is None:
+        spec = spec_from_kinds(kinds or frozenset())
+    kinds = spec.kinds()
+    shown = display_entries(day_entries, spec)
     parts: list[str] = []
-    if _show_fast_info(kinds, indicatie):
+    if _show_fast_info(spec, indicatie):
         parts.append(indicatie.tekst)
     visible = [
         e
-        for e in day_entries
-        if e.get("soort") in kinds and e.get("soort") in {"heilige", "feest"}
+        for e in shown
+        if e.get("soort") in {"heilige", "feest"}
     ]
     kop_ids = {e.get("id") for e in kop}
     rest = [
@@ -562,7 +815,7 @@ def day_description(
     ]
     if rest:
         rest_sorted = sorted(rest, key=lambda e: _naam(e).casefold())
-        parts.append("Ook: " + ", ".join(_naam(e) for e in rest_sorted))
+        parts.append("Ook: " + ", ".join(_naam_ics(e) for e in rest_sorted))
     if kop:
         jul = _juliaans_regel(kop[0], stijl)
         if jul:
@@ -578,13 +831,13 @@ def day_description(
         parts.append("Geen liturgie met Apostel/Evangelie van de dag.")
     heiligen = [
         e
-        for e in day_entries
+        for e in shown
         if e.get("soort") == "heilige" and "heilige" in kinds
     ]
     if heiligen:
         heiligen = sorted(heiligen, key=lambda e: _naam(e).casefold())
         label = "Heilige" if len(heiligen) == 1 else "Heiligen"
-        parts.append(label + ": " + ", ".join(_naam(e) for e in heiligen))
+        parts.append(label + ": " + ", ".join(_naam_ics(e) for e in heiligen))
     parts.append(f"Meer: {datum_pagina_url(civil, stijl=stijl)}")
     return "\n".join(parts)
 
@@ -597,12 +850,16 @@ def build_ics(
     context_entries: list[dict[str, Any]] | None = None,
     feed_key: str = "alles",
     kinds: frozenset[str] | None = None,
+    spec: AgendaSpec | None = None,
     years: Iterable[int] | None = None,
     lezingen_payload: dict[str, Any] | None = None,
 ) -> str:
     """Bouw ICS: één hele-dag-afspraak per burgerlijke dag in de subset."""
-    if kinds is None:
-        kinds = frozenset(e["soort"] for e in entries)
+    if spec is None:
+        if kinds is None:
+            kinds = frozenset(e["soort"] for e in entries)
+        spec = spec_from_kinds(kinds)
+    kinds = spec.kinds()
     context = context_entries if context_entries is not None else entries
     year_list = list(years) if years is not None else _occurrence_years()
     if lezingen_payload is None:
@@ -626,18 +883,18 @@ def build_ics(
         day_entries = grouped[civil]
         mix_mmdd = _mix_mmdd(civil, year_s)
         indicatie = mix_vastenniveau(
-            day_entries, civil.isoweekday(), mix_mmdd
+            mix_entries(day_entries, spec), civil.isoweekday(), mix_mmdd
         )
         lez = _lezingen_for_civil(lezingen_payload, civil, year_s)
         visible = [
             e
-            for e in day_entries
-            if e.get("soort") in kinds and e.get("soort") in {"heilige", "feest"}
+            for e in display_entries(day_entries, spec)
+            if e.get("soort") in {"heilige", "feest"}
         ]
         kop = kop_entries(visible)
         summary = day_title(
             day_entries,
-            kinds=kinds,
+            spec=spec,
             civil=civil,
             stijl=stijl,
             indicatie=indicatie,
@@ -647,7 +904,7 @@ def build_ics(
             continue
         description = day_description(
             day_entries,
-            kinds=kinds,
+            spec=spec,
             civil=civil,
             stijl=year_s,
             indicatie=indicatie,
@@ -655,7 +912,7 @@ def build_ics(
             lezingen=lez,
         )
         url = datum_pagina_url(civil, stijl=stijl)
-        uid_key = f"{feed_key}:{stijl}:{civil.isoformat()}"
+        uid_key = f"v2:{feed_key}:{stijl}:{civil.isoformat()}"
         uid = str(uuid.uuid5(uuid.NAMESPACE_URL, uid_key))
         dt_start = civil.strftime("%Y%m%d")
         dt_end = (civil + timedelta(days=1)).strftime("%Y%m%d")
@@ -676,6 +933,111 @@ def build_ics(
     return "\r\n".join(_fold(line) for line in lines) + "\r\n"
 
 
+def build_sunset_ics(*, old_filename: str, today: date | None = None) -> str:
+    """Herinneringen op een oude feed-URL: abonneren opnieuw via /agenda/."""
+    today = today or date.today()
+    now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    summary = "Deze agenda-link werkt niet meer"
+    description = (
+        "Deze kalender wordt niet meer bijgewerkt. "
+        "Verwijder dit abonnement en kies een nieuwe link op "
+        f"{AGENDA_PAGINA_URL}"
+    )
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//orthodox-ronl//kalender//NL",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        f"X-WR-CALNAME:{_ics_escape(SUNSET_CAL_NAME)}",
+        "X-WR-TIMEZONE:UTC",
+        "X-PUBLISHED-TTL:P1D",
+    ]
+    for civil in sunset_dates(today):
+        uid_key = f"sunset:{old_filename}:{civil.isoformat()}"
+        uid = str(uuid.uuid5(uuid.NAMESPACE_URL, uid_key))
+        dt_start = civil.strftime("%Y%m%d")
+        dt_end = (civil + timedelta(days=1)).strftime("%Y%m%d")
+        lines.extend(
+            [
+                "BEGIN:VEVENT",
+                f"DTSTART;VALUE=DATE:{dt_start}",
+                f"DTEND;VALUE=DATE:{dt_end}",
+                f"DTSTAMP:{now}",
+                f"UID:{uid}",
+                f"SUMMARY:{_ics_escape(summary)}",
+                f"DESCRIPTION:{_ics_escape(description)}",
+                f"URL:{AGENDA_PAGINA_URL}",
+                "TRANSP:TRANSPARENT",
+                "END:VEVENT",
+            ]
+        )
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(_fold(line) for line in lines) + "\r\n"
+
+
+def _v2_feed_jobs() -> list[tuple[str, str, AgendaSpec]]:
+    """(relpath zonder map, stijl, spec) voor alle v2-bestanden."""
+    jobs: list[tuple[str, str, AgendaSpec]] = []
+    seen: set[str] = set()
+
+    def add(key: str, stijl: str, spec: AgendaSpec) -> None:
+        filename = f"{key}-{stijl}.ics"
+        if filename in seen:
+            return
+        seen.add(filename)
+        jobs.append((filename, stijl, spec))
+
+    for kinds in ICS_COMBOS:
+        key = subset_key(kinds)
+        assert key
+        spec = spec_from_kinds(kinds)
+        stijlen = ["nieuw", "oud"]
+        if "heilige" in kinds and kinds - {"heilige"}:
+            stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
+        for stijl in stijlen:
+            add(key, stijl, spec)
+
+    yaml_sels = tuple(yaml_sel for yaml_sel, _tok in HEILIGE_SELECTIE_TOKENS)
+    for sels in _nonempty_subsets(yaml_sels):
+        key = heiligen_file_key(sels)
+        assert key
+        spec = AgendaSpec(
+            heiligen=sels,
+            feesten=frozenset(),
+            vasten=frozenset(),
+            vastenvrij=False,
+        )
+        for stijl in ("nieuw", "oud"):
+            add(key, stijl, spec)
+
+    for groups in _nonempty_subsets(FEEST_GROEPEN):
+        key = feesten_file_key(groups)
+        assert key
+        spec = AgendaSpec(
+            heiligen=frozenset(),
+            feesten=groups,
+            vasten=frozenset(),
+            vastenvrij=False,
+        )
+        for stijl in ("nieuw", "oud"):
+            add(key, stijl, spec)
+
+    for groups in _nonempty_subsets(VASTEN_GROEPEN):
+        key = vasten_file_key(groups)
+        assert key
+        spec = AgendaSpec(
+            heiligen=frozenset(),
+            feesten=frozenset(),
+            vasten=groups,
+            vastenvrij=False,
+        )
+        for stijl in ("nieuw", "oud"):
+            add(key, stijl, spec)
+
+    return jobs
+
+
 def write_ics(
     entries: list[dict[str, Any]],
     lezingen_payload: dict[str, Any] | None = None,
@@ -683,29 +1045,27 @@ def write_ics(
     from generate import STATIC_ICS, write_text
 
     STATIC_ICS.mkdir(parents=True, exist_ok=True)
+    v2_dir = STATIC_ICS / ICS_V2_DIR
+    v2_dir.mkdir(parents=True, exist_ok=True)
     if lezingen_payload is None:
         from lezingen import build_lezingen_dagen_payload
         from generate import occurrence_years
 
         lezingen_payload = build_lezingen_dagen_payload(list(occurrence_years()))
-    for kinds in ICS_COMBOS:
-        key = subset_key(kinds)
-        assert key
-        stijlen = ["nieuw", "oud"]
-        if "heilige" in kinds and kinds - {"heilige"}:
-            stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
-        for stijl in stijlen:
-            name = calendar_name(key, stijl)
-            filename = f"{key}-{stijl}.ics"
-            write_text(
-                STATIC_ICS / filename,
-                build_ics(
-                    entries,
-                    cal_name=name,
-                    stijl=stijl,
-                    context_entries=entries,
-                    feed_key=key,
-                    kinds=kinds,
-                    lezingen_payload=lezingen_payload,
-                ),
-            )
+    today = date.today()
+    for name in old_ics_filenames():
+        write_text(STATIC_ICS / name, build_sunset_ics(old_filename=name, today=today))
+    for filename, stijl, spec in _v2_feed_jobs():
+        key = filename[: -len(f"-{stijl}.ics")]
+        write_text(
+            v2_dir / filename,
+            build_ics(
+                entries,
+                cal_name=calendar_name(key, stijl),
+                stijl=stijl,
+                context_entries=entries,
+                feed_key=key,
+                spec=spec,
+                lezingen_payload=lezingen_payload,
+            ),
+        )

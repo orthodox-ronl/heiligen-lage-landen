@@ -552,7 +552,8 @@ def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
     assert "betekenis_lage_landen" not in by_id["kerst"]
     assert "betekenis" not in by_id["kerst"]
     assert "betekenis" not in by_id["kerst"]
-    assert "selectie" not in by_id["voorbeeld"]
+    assert "selectie" in by_id["voorbeeld"]
+    assert by_id["voorbeeld"]["selectie"] == "nader-onderzoek"
     assert "voorbeeld" in by_id
     assert by_id["voorbeeld"]["bronlaag"] == "encyclopedie"
     assert by_id["voorbeeld"]["locaties"] == ["utrecht"]
@@ -560,7 +561,7 @@ def test_entries_json_heeft_betekenis_alleen_bij_heiligen(
     assert "locaties" not in by_id["kerst"]
 
 
-def test_entries_json_slaat_kandidaat_schrappen_over(
+def test_entries_json_heeft_kandidaat_met_selectie(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     static = tmp_path / "static" / "data"
@@ -574,8 +575,8 @@ def test_entries_json_slaat_kandidaat_schrappen_over(
     write_entries_json([schrijf, blijf])
     payload = json.loads((static / "entries.json").read_text(encoding="utf-8"))
     by_id = {item["id"]: item for item in payload}
-    assert "schrijf" not in by_id
-    assert "blijf" in by_id
+    assert by_id["schrijf"]["selectie"] == "kandidaat-schrappen"
+    assert by_id["blijf"]["selectie"] == "voldoet"
 
 
 def test_synaxarion_json_alleen_vaste_cyclus(

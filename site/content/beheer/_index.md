@@ -81,7 +81,7 @@ gooit het weg.
 <tr><td><code>site/static/data/entries.json</code></td><td>Index voor de kalender in de browser.</td></tr>
 <tr><td><code>site/static/data/synaxarion.json</code></td><td>Vaste jaarcyclus voor de HTML-lijst op het Synaxarion.</td></tr>
 <tr><td><code>site/static/data/plaatsen.json</code></td><td>Kaartgegevens; uit <code>data/plaatsen.yaml</code>.</td></tr>
-<tr><td><code>site/static/ics/*.ics</code></td><td>Agenda-feeds; bij generate eerst gewist.</td></tr>
+<tr><td><code>site/static/ics/</code></td><td>Agenda-feeds onder <code>v2/</code>; oude paden zijn tombstones. Bij generate eerst gewist.</td></tr>
 <tr><td>gegenereerde dagbestanden onder <code>site/content/datum/</code> (alles behalve <code>_index.md</code>)</td><td>Wordt bij <code>--clean</code> verwijderd.</td></tr>
 </tbody>
 </table>

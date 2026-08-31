@@ -7,16 +7,42 @@
     <li>
       <h2>Wat wilt u in uw agenda?</h2>
       <p>
-        U mag één of meer soorten aanvinken. <strong>Vasten</strong> is
-        vasten; <strong>vastenvrij</strong> is de uitzondering daarop
+        U mag één of meer soorten aanvinken. Onder Heiligen, Feesten en
+        Vasten staan extra keuzes. <strong>Vasten</strong> is vasten;
+        <strong>vastenvrij</strong> is de uitzondering daarop
         (bijvoorbeeld de Lichte Week). Heiligen zijn die van de
         <strong>Lage Landen</strong>, niet alle heiligen van de Kerk.
+        <strong>Kandidaat</strong> zijn namen die nog ter beoordeling
+        staan; die komen niet op de jaarkalender.
       </p>
-      <div class="filter-bar" role="group" aria-label="Soort dagen">
-        <label class="chip"><input type="checkbox" name="ics-show" value="heilige" checked> Heiligen</label>
-        <label class="chip"><input type="checkbox" name="ics-show" value="feest" checked> Feesten</label>
-        <label class="chip"><input type="checkbox" name="ics-show" value="vasten" checked> Vasten</label>
-        <label class="chip"><input type="checkbox" name="ics-show" value="vastenvrij" checked> Vastenvrij</label>
+      <div class="agenda-keuzes" role="group" aria-label="Soort dagen">
+        <div class="agenda-keuze">
+          <label class="chip"><input type="checkbox" name="ics-show" value="heilige" checked> Heiligen</label>
+          <div class="agenda-subkeuzes" data-ics-parent="heilige">
+            <label class="chip chip-sub"><input type="checkbox" name="ics-heilige" value="opgenomen" checked> Opgenomen</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-heilige" value="nader"> Nader onderzoek</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-heilige" value="kandidaat"> Kandidaat</label>
+          </div>
+        </div>
+        <div class="agenda-keuze">
+          <label class="chip"><input type="checkbox" name="ics-show" value="feest" checked> Feesten</label>
+          <div class="agenda-subkeuzes" data-ics-parent="feest">
+            <label class="chip chip-sub"><input type="checkbox" name="ics-feest" value="grote" checked> Grote feesten</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-feest" value="overige" checked> Overige feesten</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-feest" value="omlijsting" checked> Voorfeest, nafeest, synaxis</label>
+          </div>
+        </div>
+        <div class="agenda-keuze">
+          <label class="chip"><input type="checkbox" name="ics-show" value="vasten" checked> Vasten</label>
+          <div class="agenda-subkeuzes" data-ics-parent="vasten">
+            <label class="chip chip-sub"><input type="checkbox" name="ics-vasten" value="week" checked> Woensdag en vrijdag</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-vasten" value="periodes" checked> Vastenperiodes</label>
+            <label class="chip chip-sub"><input type="checkbox" name="ics-vasten" value="feest" checked> Feestdagen met vasten</label>
+          </div>
+        </div>
+        <div class="agenda-keuze">
+          <label class="chip"><input type="checkbox" name="ics-show" value="vastenvrij" checked> Vastenvrij</label>
+        </div>
       </div>
     </li>
     <li>
@@ -54,6 +80,7 @@
     <p class="hint" id="ics-tip-apart">
       Eén agenda krijgt één kleur in uw app. Wilt u vasten een eigen kleur geven,
       vink dan alleen Vasten aan, abonneer, en herhaal voor Feesten of Heiligen.
+      Sommige extra keuzes geven meer dan één agenda-link (elk een kleur).
     </p>
   </div>
 

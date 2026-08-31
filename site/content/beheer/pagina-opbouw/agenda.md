@@ -20,8 +20,11 @@ beheer-generate-uitleg.
 
 ## Stap 1: wat
 
-**Wel:** heiligen, feesten, vasten, vastenvrij (één of meer). Vasten
-is vasten; vastenvrij is de uitzondering (Lichte Week, Kerst, …).
+**Wel:** heiligen, feesten, vasten, vastenvrij (één of meer), met nested
+vinkjes: opgenomen (default aan), nader onderzoek en kandidaat (default
+uit); feestgroepen grote / overige / omlijsting (default aan); vasten
+wo/vr, periodes, feestdagen met vasten (default aan). Kandidaat niet op
+jaarkalender of datumpagina.
 
 **Niet:** universeel menologion als optie.
 
@@ -31,8 +34,7 @@ is vasten; vastenvrij is de uitzondering (Lichte Week, Kerst, …).
 op de oude kalender, heiligen van de Lage Landen op de burgerlijke
 feestdatum). Link naar uitleg Nieuw/Oud. Voorbeeldweek volgt die keuze.
 
-**Niet:** Pascha laten meeschuiven; een vrij samenstel van extra assen
-als abonnement.
+**Niet:** Pascha laten meeschuiven.
 
 ## Stap 3: abonneren of downloaden
 

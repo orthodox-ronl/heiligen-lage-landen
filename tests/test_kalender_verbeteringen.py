@@ -65,9 +65,16 @@ def test_agenda_heeft_vastenvrij_keuze() -> None:
         encoding="utf-8"
     )
     assert 'value="vastenvrij"' in html
+    assert 'name="ics-heilige"' in html
+    assert 'value="opgenomen"' in html
+    assert 'value="nader"' in html
+    assert 'value="kandidaat"' in html
+    assert 'name="ics-feest"' in html
+    assert 'name="ics-vasten"' in html
     js = JS.read_text(encoding="utf-8")
     assert "vastenvrij" in js
-    assert 'kinds.has("vastenvrij")' in js
+    assert "function icsFeedRelpaths" in js
+    assert "v2/" in js
 
 
 def test_vierdatum_gelijk_tip() -> None:

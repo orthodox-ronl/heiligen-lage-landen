@@ -15,7 +15,7 @@ MVP: vaste feesten + heiligen van de Lage Landen + Orthodoxe paascyclus
 | Data      | YAML onder `data/` (feesten, heiligen, bronnen) |
 | Build     | `validate` / `generate.py` → Hugo-content + ICS |
 | Site      | Hugo in `site/` |
-| Agenda    | ICS-feeds `/ics/*-{nieuw,oud}.ics` (oud = burgerlijk +13) |
+| Agenda    | ICS-feeds `/ics/v2/*-{nieuw,oud}.ics` (oud = burgerlijk +13); oude `/ics/*.ics` zijn vervallen-herinneringen |
 
 Datums: default **Gregoriaans** invoer; optioneel `datum.stijl`. Feestdatum =
 dagnaam (gelijk in nieuw/oud). Zie [docs/datamodel.md](docs/datamodel.md),

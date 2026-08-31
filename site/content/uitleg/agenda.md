@@ -16,7 +16,9 @@ op de [jaarkalender]({{% ref "/kalender" %}}) (popup met link).
 Op die pagina doet u drie keuzes:
 
 1. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
-   vastenvrij — één of meer.
+   vastenvrij — één of meer. Onder Heiligen, Feesten en Vasten staan
+   extra vinkjes (opgenomen / nader onderzoek / kandidaat; groepen
+   feesten; woensdag-en-vrijdag, periodes, feestdagen met vasten).
 2. **Nieuwe of oude kalender**, zoals uw parochie viert — of **oud, heiligen
    nieuw**: vaste feesten op de oude kalender, heiligen van de Lage Landen
    op de burgerlijke feestdatum. Zie
@@ -68,14 +70,12 @@ Onderaan staat *Meer:* met de datumpagina.
 - Woensdag- en vrijdagvasten volgen de gewone week: het is de woensdag of
   vrijdag van de burgerlijke week, in beide standen.
 
-Wie al geabonneerd was **vóór** de overstap op dagregels: Google Calendar
-houdt de oude, losse afspraken vaak vast (andere id’s). Verwijder dat
-abonnement en voeg dezelfde link opnieuw toe. Daarna is het één balk per
-dag. Wie een bestand heeft gedownload, moet opnieuw importeren.
-
-Abonnementen op de oude site-URL (`orthodox-ronl.github.io/kalender/ics/…`)
-werken niet meer. Verwijder dat abonnement in uw agenda-app en maak via
-de pagina [Agenda]({{% ref "/agenda" %}}) een nieuw abonnement.
+Wie al geabonneerd was **vóór** de overstap op de map `/ics/v2/`: de oude
+link blijft bestaan, maar toont alleen een herinnering dat u een nieuwe
+link moet kiezen op de pagina [Agenda]({{% ref "/agenda" %}}). Verwijder
+het oude abonnement en voeg de nieuwe link toe. Google Calendar houdt
+oude, losse afspraken soms vast (andere id’s); verwijderen en opnieuw
+toevoegen helpt.
 
 Latere tekstwijzigingen in dezelfde feed (titel, beschrijving) komen na
 Google’s verversing vanzelf binnen — vaak uren, soms tot een dag.
