@@ -629,7 +629,7 @@ def test_heiligen_list_layout_zoekt_alternatieve_namen() -> None:
     assert "circleMarker" in kaart
     assert "kaart-streek-vlak" in kaart
     assert "kaart-streek-label" in kaart
-    assert "convexHull" in kaart
+    assert "L.rectangle" in kaart
 
 
 def test_betekenis_lage_landen_zonder_selectietokens() -> None:

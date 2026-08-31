@@ -108,55 +108,6 @@
     return out;
   }
 
-  function cross(o, a, b) {
-    return (a.lng - o.lng) * (b.lat - o.lat) - (a.lat - o.lat) * (b.lng - o.lng);
-  }
-
-  function convexHull(latlngs) {
-    const pts = uniqueLatLngs(latlngs)
-      .slice()
-      .sort((a, b) => {
-        if (a.lng === b.lng) return a.lat - b.lat;
-        return a.lng - b.lng;
-      });
-    if (pts.length <= 2) return pts;
-    const lower = [];
-    pts.forEach((p) => {
-      while (
-        lower.length >= 2 &&
-        cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0
-      ) {
-        lower.pop();
-      }
-      lower.push(p);
-    });
-    const upper = [];
-    for (let i = pts.length - 1; i >= 0; i -= 1) {
-      const p = pts[i];
-      while (
-        upper.length >= 2 &&
-        cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0
-      ) {
-        upper.pop();
-      }
-      upper.push(p);
-    }
-    lower.pop();
-    upper.pop();
-    return lower.concat(upper);
-  }
-
-  function padLatLngs(latlngs, factor) {
-    const bounds = L.latLngBounds(latlngs);
-    const c = bounds.getCenter();
-    return latlngs.map((p) =>
-      L.latLng(
-        c.lat + (p.lat - c.lat) * factor,
-        c.lng + (p.lng - c.lng) * factor
-      )
-    );
-  }
-
   function streekKinderen(streekId) {
     return (kinderenByStreek[streekId] || []).filter(
       (p) => (saintsByPlaats[p.id] || []).length
@@ -199,21 +150,13 @@
     const pts = uniqueLatLngs(
       kids.map((p) => [p.lat, p.lon]).concat([[streek.lat, streek.lon]])
     );
-    const hull = convexHull(pts);
-    let layer;
-    if (hull.length >= 3) {
-      layer = L.polygon(padLatLngs(hull, 1.28), vlakStyle());
-    } else {
-      const center = pts.length
-        ? L.latLngBounds(pts).getCenter()
-        : streekLatLng(streek);
-      let radius = 28000;
-      pts.forEach((p) => {
-        radius = Math.max(radius, center.distanceTo(p) * 1.35);
-      });
-      layer = L.circle(center, Object.assign({ radius: radius }, vlakStyle()));
+    if (pts.length < 2) {
+      const center = pts[0] || streekLatLng(streek);
+      return L.circle(center, Object.assign({ radius: 32000 }, vlakStyle()));
     }
-    return layer;
+    // Ingepakte bounding box: een convex hull van weinig plaatsen (Friesland)
+    // is een smalle strook en oogt als stippellijnen tussen spelden.
+    return L.rectangle(L.latLngBounds(pts).pad(0.32), vlakStyle());
   }
 
   function selectedStreekRecord() {

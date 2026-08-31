@@ -1291,6 +1291,12 @@ main.main > :is(article, section) > h1 {
   filter: drop-shadow(0 0 4px #c9a227);
 }
 
+.leaflet-overlay-pane .kaart-streek-vlak {
+  fill: #c9a227;
+  fill-opacity: 0.4;
+  stroke: #5c4810;
+}
+
 .entry-list-namen {
   display: flex;
   flex-direction: column;
