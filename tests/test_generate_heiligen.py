@@ -264,6 +264,27 @@ def test_entry_page_selectie_na_verhaal(
     assert body.index("## Verder lezen en kijken") < body.index("<details")
 
 
+def test_entry_page_heilige_toont_geen_samenvatting(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _heilige(
+            selectie="voldoet",
+            betekenis_lage_landen="Predikte onder de Friezen.",
+            samenvatting="Angelsaksische missionaris. Feestdag 7 november.",
+            verhaal="Korte vita.",
+        )
+    )
+    body = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )[1]
+    assert "Predikte onder de Friezen." in body
+    assert "Korte vita." in body
+    assert "Angelsaksische missionaris" not in body
+
+
 def test_entry_page_feestdag_link_en_geen_synaxarion_voet(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:

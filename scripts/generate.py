@@ -841,7 +841,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         body.append("")
         body.append(annotate_prose_dates(betekenis) if entry.get("soort") in {"feest", "vasten"} else betekenis)
         body.append("")
-    if entry.get("samenvatting"):
+    if entry.get("soort") != "heilige" and entry.get("samenvatting"):
         samenvatting = entry["samenvatting"].strip()
         if entry.get("soort") in {"feest", "vasten"}:
             samenvatting = annotate_prose_dates(samenvatting)

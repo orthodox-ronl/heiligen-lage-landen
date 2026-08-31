@@ -34,7 +34,7 @@ Gebruik dit als beslisboom. Details en voorbeelden staan in de how-to’s.
 | Veld | Zet erin als… | Zet er níet in als… |
 | --- | --- | --- |
 | `namen.primair` / `alternatief` | Je de getoonde titel of zoekaliassen wijzigt | Je alleen het id wilt “mooier” maken (id blijft stabiel) |
-| `samenvatting` | Eén alinea “wie is dit” | Lange vita (dat is `verhaal`) |
+| `samenvatting` | Feest/vasten: één alinea “wie is dit” | Heilige (staat niet op de pagina); lange vita (`verhaal`) |
 | `betekenis_lage_landen` | Je specifiek de band met NL/BE/LUX uitlegt (kop: Betekenis voor de Lage Landen) | Algemene heiligenvita zonder LL-band |
 | `betekenis` | Feest: 1–3 alinea’s geheim + leiding (vaders/dienstboek primair; grootfeesten t/m Allerzielen-zaterdagen, zie bronnennota) | Heilige (`betekenis_lage_landen`); herhaling van `verhaal`; voorfeest/nafeest/synaxis/weken; tweede vastentabel |
 | `goedkeuring` | Feest: wie de betekenistekst goedkeurde (popover op de kop Betekenis) | Heilige/vasten; `bronlaag: nagekeken` als vervanging van een echte toets |

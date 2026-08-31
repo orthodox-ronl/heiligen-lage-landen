@@ -1,7 +1,7 @@
 ---
 title: "Heilige (detail)"
 description: "Contract: vita-pagina van één heilige van de Lage Landen"
-git_date: 2026-08-29
+git_date: 2026-08-31
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -70,13 +70,8 @@ bestuur, opbouw van de Orthodoxie hier). Feiten, in gewone taal.
 redeneertrant van de inventaris. Dat hoort op
 [Uitleg heiligen]({{% ref "/uitleg/heiligen" %}}) (beleid) en
 [Selectie heiligen]({{% ref "/beheer/selectie" %}}) (status per id).
-
-## Samenvatting
-
-**Wel:** korte aanduiding wie dit is (zonder kop, zoals nu), consistent
-met infobox-datum.
-
-**Niet:** het hele verhaal; selectie-oordeel.
+Geen tweede «wie is dit»-alinea na deze kop (`samenvatting` hoort bij
+feesten, niet op de heiligenpagina).
 
 ## Verhaal
 

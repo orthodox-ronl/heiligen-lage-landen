@@ -279,9 +279,10 @@ id_aliassen: [lubuinus]      # oude ids na een merge
 ```
 
 - **`betekenis_lage_landen`** — verplicht bij `bronlaag: nagekeken` voor
-  `soort: heilige`. Zelfde referentieverplichting als verhaal/samenvatting.
-  Op de heiligenpagina als **Betekenis voor de Lage Landen** (vóór samenvatting/
-  verhaal); ook in `site/static/data/entries.json` (alleen bij heiligen).
+  `soort: heilige`. Zelfde referentieverplichting als verhaal.
+  Op de heiligenpagina als **Betekenis voor de Lage Landen** (vóór
+  verhaal; `samenvatting` komt niet op de heiligenpagina); ook in
+  `site/static/data/entries.json` (alleen bij heiligen).
 - **`selectie`** — toetsing aan de criteria. Ontbreekt bij een heilige:
   behandel als `nader-onderzoek`. Waarden: `voldoet`, `nader-onderzoek`,
   `kandidaat-schrappen`. Bij de laatste twee: uitklap onderaan de pagina

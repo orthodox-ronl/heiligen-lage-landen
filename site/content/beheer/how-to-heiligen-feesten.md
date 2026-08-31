@@ -2,7 +2,7 @@
 title: "Heilige of feest toevoegen of wijzigen"
 description: "YAML onder data/, namen in het entry-bestand; nooit de gegenereerde markdown"
 weight: 20
-git_date: 2026-08-29
+git_date: 2026-08-31
 ---
 
 Heiligen en feesten bestaan als **bron** in YAML. De pagina’s die u op de
@@ -29,8 +29,9 @@ Schema entry: `schemas/entry.schema.json`. Publiceren:
 - Heilige: `data/heiligen/<id>.yaml` met `soort: heilige`
 - Feest: `data/feesten/<id>.yaml` met `soort: feest`
 
-Minimaal: `id`, `soort`, `datum`, `namen.primair`. Voor een verhaal, samenvatting,
-`betekenis` (feest) of `betekenis_lage_landen` is minstens één **referentie**
+Minimaal: `id`, `soort`, `datum`, `namen.primair`. Voor een verhaal,
+samenvatting (feest/vasten), `betekenis` (feest) of
+`betekenis_lage_landen` is minstens één **referentie**
 verplicht, met een locator: `url`, of `isbn`, of `locator`.
 
 ### Vaste dag
@@ -179,7 +180,7 @@ Pagina-opbouw (na de infobox): zie het
 [contract Heilige]({{% ref "/beheer/pagina-opbouw/heilige" %}})
 (en [Feest]({{% ref "/beheer/pagina-opbouw/feest" %}})).
 Huidige generatorvolgorde bij heiligen: feestdag-link → **Betekenis voor
-de Lage Landen** (`betekenis_lage_landen`) → samenvatting → verhaal →
+de Lage Landen** (`betekenis_lage_landen`) → verhaal →
 verder lezen → **Over de bronnen** → (alleen bij nader/kandidaat) uitklap
 **Plaats in deze kalender**. Bij feesten: feestdag (of de vijfjaren-tabel
 komende jaren) →
@@ -210,7 +211,7 @@ selectie_toelichting_publiek: "…"  # optioneel; lezersversie
   (geen vaste aantallen). Live overzicht:
   [Selectie heiligen]({{% ref "/beheer/selectie" %}}).
 - `betekenis_lage_landen` is een **apart** stuk, niet hetzelfde als
-  `verhaal` of `samenvatting`.
+  `verhaal`. Op heiligenpagina’s staat geen `samenvatting`.
 
 `bronlaag: encyclopedie` — tekst volgt Wikipedia/heiligen.net; zelfde
 pagina-opbouw als nagekeken.
