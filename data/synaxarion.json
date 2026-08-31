@@ -1,0 +1,2704 @@
+{
+  "maanden": [
+    {
+      "key": "01",
+      "naam": "januari",
+      "dagen": [
+        {
+          "mmdd": "01-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Besnijdenis des Heren",
+              "url": "/feesten/besnijdenis-des-heren/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Voorfeest van Theofanie",
+              "url": "/feesten/voorfeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Voorfeest van Theofanie",
+              "url": "/feesten/voorfeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Pharaïldis",
+              "url": "/heiligen/pharaildis/",
+              "icoon": "iconen/saint-pharaildis.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Voorfeest van Theofanie",
+              "url": "/feesten/voorfeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Voorfeest van Theofanie",
+              "url": "/feesten/voorfeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-06",
+          "dag": 6,
+          "items": [
+            {
+              "naam": "Theofanie (Doop des Heren)",
+              "url": "/feesten/theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Synaxis van Johannes de Doper",
+              "url": "/feesten/synaxis-johannes-doper/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Gudula van Brussel",
+              "url": "/heiligen/gudula-van-brussel/",
+              "icoon": "iconen/gudula-van-brussel.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-13",
+          "dag": 13,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-14",
+          "dag": 14,
+          "items": [
+            {
+              "naam": "Nafeest van Theofanie",
+              "url": "/feesten/nafeest-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van Theofanie",
+              "url": "/feesten/teruggave-theofanie/",
+              "icoon": "iconen/theofanie.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Poppo van Stavelot",
+              "url": "/heiligen/poppo-van-stavelot/",
+              "icoon": "iconen/poppo-von-stablo-3.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-26",
+          "dag": 26,
+          "items": [
+            {
+              "naam": "Adelgondis van Drongen",
+              "url": "/heiligen/adelgondis-van-drongen/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "01-30",
+          "dag": 30,
+          "items": [
+            {
+              "naam": "Adelgonda",
+              "url": "/heiligen/adelgonda/",
+              "icoon": "iconen/adelgonda.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "02",
+      "naam": "februari",
+      "dagen": [
+        {
+          "mmdd": "02-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Voorfeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/voorfeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Ontmoeting in de Tempel",
+              "url": "/feesten/ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Berlindis van Meerbeke",
+              "url": "/heiligen/berlindis-van-meerbeke/",
+              "icoon": "iconen/berlindis-van-meerbeke-berlindiskapel-meerbeke.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Hadelinus van Celles",
+              "url": "/heiligen/hadelinus-van-celles/",
+              "icoon": "iconen/vis-glise-saint-martin-ch-sse-de-saint-hadelin-01.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Agricolaus van Maastricht",
+              "url": "/heiligen/agricolaus-van-maastricht/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-06",
+          "dag": 6,
+          "items": [
+            {
+              "naam": "Amandus van Maastricht",
+              "url": "/heiligen/amandus-van-maastricht/",
+              "icoon": "iconen/amandus-van-maastricht.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Relindis",
+              "url": "/heiligen/relindis/",
+              "icoon": "iconen/kapel-harlindis-en-relindis.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Nafeest van de Ontmoeting in de Tempel",
+              "url": "/feesten/nafeest-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van de Ontmoeting in de Tempel",
+              "url": "/feesten/teruggave-ontmoeting-in-de-tempel/",
+              "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "02-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Eleutherius van Doornik",
+              "url": "/heiligen/eleutherius-van-doornik/",
+              "icoon": "iconen/st-eleutherius-of-tournai-baptizing-converts-detail-workshop-of-arnold-of-nijmegen-flemish-c-1500-1525-nelson-atkins-museum-of-art-dsc08491.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Eucherius van Orléans",
+              "url": "/heiligen/eucherius-van-orleans/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "03",
+      "naam": "maart",
+      "dagen": [
+        {
+          "mmdd": "03-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Swidbert",
+              "url": "/heiligen/swidbert/",
+              "icoon": "iconen/swidbert.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Cunegonde van Luxemburg",
+              "url": "/heiligen/cunegonde-van-luxemburg/",
+              "icoon": "iconen/kunigunde.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Albericus van Utrecht",
+              "url": "/heiligen/albericus-van-utrecht/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Gertrudis",
+              "url": "/heiligen/gertrudis/",
+              "icoon": "iconen/gertrudis.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-19",
+          "dag": 19,
+          "items": [
+            {
+              "naam": "Landoaldus",
+              "url": "/heiligen/landoaldus/",
+              "icoon": "iconen/wintershoven-sint-lambertusbron-13.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Wulfram",
+              "url": "/heiligen/wulfram/",
+              "icoon": "iconen/wulfram.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Voorfeest van de Aankondiging",
+              "url": "/feesten/voorfeest-aankondiging/",
+              "icoon": "iconen/aankondiging.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Aankondiging aan de Moeder Gods",
+              "url": "/feesten/aankondiging/",
+              "icoon": "iconen/aankondiging.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "03-26",
+          "dag": 26,
+          "items": [
+            {
+              "naam": "Ludger",
+              "url": "/heiligen/ludger/",
+              "icoon": "iconen/ludger.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Synaxis van de aartsengel Gabriël",
+              "url": "/feesten/synaxis-gabriel/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "04",
+      "naam": "april",
+      "dagen": [
+        {
+          "mmdd": "04-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Woutruide",
+              "url": "/heiligen/woutruide/",
+              "icoon": "iconen/woutruide.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Macarius van Gent",
+              "url": "/heiligen/macarius-van-gent/",
+              "icoon": "iconen/gaspar-de-crayer-saint-macarius-of-ghent.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Ursmar van Lobbes",
+              "url": "/heiligen/ursmar-van-lobbes/",
+              "icoon": "iconen/coll-giale-saint-ursmer-lobbes-int-rieur-14-cropped2.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Wolbodo",
+              "url": "/heiligen/wolbodo/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Egbert van Rathmelsigi",
+              "url": "/heiligen/egbert-van-rathmelsigi/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Erminus van Lobbes",
+              "url": "/heiligen/erminus-van-lobbes/",
+              "icoon": "iconen/56044-clt-0001-01-lobbes-crypte.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-27",
+          "dag": 27,
+          "items": [
+            {
+              "naam": "Floribert",
+              "url": "/heiligen/floribert/",
+              "icoon": "iconen/floribert.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "04-30",
+          "dag": 30,
+          "items": [
+            {
+              "naam": "Forannan van Waulsort",
+              "url": "/heiligen/forannan-van-waulsort/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Quirillus van Tongern",
+              "url": "/heiligen/quirillus-van-tongern/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "05",
+      "naam": "mei",
+      "dagen": [
+        {
+          "mmdd": "05-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Hilsondis",
+              "url": "/heiligen/hilsondis/",
+              "icoon": "iconen/abdijkerk-thorn-ramen-h-ansifridus-h-hilsonidis.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Ultan",
+              "url": "/heiligen/ultan/",
+              "icoon": "iconen/ultan.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Ansfried van Utrecht",
+              "url": "/heiligen/ansfried-van-utrecht/",
+              "icoon": "iconen/ansfried-van-utrecht.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Domitianus",
+              "url": "/heiligen/domitianus/",
+              "icoon": "iconen/domitianus.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Iduberga",
+              "url": "/heiligen/iduberga/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Wiro",
+              "url": "/heiligen/wiro/",
+              "icoon": "iconen/wiro.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-13",
+          "dag": 13,
+          "items": [
+            {
+              "naam": "Servatius",
+              "url": "/heiligen/servatius/",
+              "icoon": "iconen/servatius.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Dymphna",
+              "url": "/heiligen/dymphna/",
+              "icoon": "iconen/dymphna.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Gerebernus",
+              "url": "/heiligen/gerebernus/",
+              "icoon": "iconen/martyrdom-of-st-dymphna-and-st-gerebernus-by-jacques-de-l-ange-attr-or-gerard-seghers-attr.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-23",
+          "dag": 23,
+          "items": [
+            {
+              "naam": "Guibertus van Gembloers",
+              "url": "/heiligen/guibertus-van-gembloers/",
+              "icoon": "iconen/guibert-de-gembloux-cropped.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "05-30",
+          "dag": 30,
+          "items": [
+            {
+              "naam": "Hubertus van Maastricht",
+              "url": "/heiligen/hubertus-van-maastricht/",
+              "icoon": "iconen/hubertus-van-maastricht.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "06",
+      "naam": "juni",
+      "dagen": [
+        {
+          "mmdd": "06-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Bonifatius",
+              "url": "/heiligen/bonifatius/",
+              "icoon": "iconen/bonifatius.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Eoban",
+              "url": "/heiligen/eoban/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Gezellen van Bonifatius te Dokkum",
+              "url": "/heiligen/gezellen-bonifatius-dokkum/",
+              "icoon": "iconen/bonifatius1954.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Medardus",
+              "url": "/heiligen/medardus/",
+              "icoon": "iconen/medardus.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Cunera",
+              "url": "/heiligen/cunera/",
+              "icoon": "iconen/cunera.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Odulphus",
+              "url": "/heiligen/odulphus/",
+              "icoon": "iconen/odulphus-hemelum.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Landelinus van Lobbes",
+              "url": "/heiligen/landelinus-van-lobbes/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Alena van Dilbeek",
+              "url": "/heiligen/alena-van-dilbeek/",
+              "icoon": "iconen/alena-van-dilbeek.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Engelmund",
+              "url": "/heiligen/engelmund/",
+              "icoon": "iconen/engelmund.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-22",
+          "dag": 22,
+          "items": [
+            {
+              "naam": "Walfridus (Bedum)",
+              "url": "/heiligen/walfridus-bedum/",
+              "icoon": "iconen/walfridus-bedum.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Geboorte van Johannes de Doper",
+              "url": "/feesten/geboorte-johannes-doper/",
+              "icoon": "",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Rumold",
+              "url": "/heiligen/rumold/",
+              "icoon": "iconen/rumold.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Theodulfus van Lobbes",
+              "url": "/heiligen/theodulfus-van-lobbes/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Adelbert",
+              "url": "/heiligen/adelbert/",
+              "icoon": "iconen/adelbert.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "06-29",
+          "dag": 29,
+          "items": [
+            {
+              "naam": "H.H. Apostelen Petrus en Paulus",
+              "url": "/feesten/petrus-en-paulus/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "07",
+      "naam": "juli",
+      "dagen": [
+        {
+          "mmdd": "07-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Johannes van Shanghai",
+              "url": "/heiligen/johannes-van-shanghai/",
+              "icoon": "iconen/johannes-van-shanghai.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Landrada",
+              "url": "/heiligen/landrada/",
+              "icoon": "iconen/st-landrada.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Amalberga van Temse",
+              "url": "/heiligen/amalberga-van-temse/",
+              "icoon": "iconen/amalberga-van-temse.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Sophrony van Essex",
+              "url": "/heiligen/sophrony-van-essex/",
+              "icoon": "iconen/sophrony-van-essex.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-14",
+          "dag": 14,
+          "items": [
+            {
+              "naam": "Marcellinus van Utrecht",
+              "url": "/heiligen/marcellinus-van-utrecht/",
+              "icoon": "iconen/marcellinus-van-utrecht.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Vincentius Madelgarius",
+              "url": "/heiligen/vincentius-madelgarius/",
+              "icoon": "iconen/saint-vaincent.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Otger",
+              "url": "/heiligen/otger/",
+              "icoon": "iconen/otger.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Plechelm von Odilienberg",
+              "url": "/heiligen/plechelm-von-odilienberg/",
+              "icoon": "iconen/plechelm-von-odilienberg.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-16",
+          "dag": 16,
+          "items": [
+            {
+              "naam": "Gondulphus",
+              "url": "/heiligen/gondulphus/",
+              "icoon": "iconen/monulphus-gondulphus.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Monulphus",
+              "url": "/heiligen/monulphus/",
+              "icoon": "iconen/monulphus-gondulphus.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Reinildis",
+              "url": "/heiligen/reinildis/",
+              "icoon": "iconen/meester-van-elsloo-1520-1530-heilige-renildis-van-saintes-sint-lambertuskerk-neeroeteren-8-09-2019.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Fredegandus",
+              "url": "/heiligen/fredegandus/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Frederich",
+              "url": "/heiligen/frederich/",
+              "icoon": "iconen/frederich.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "07-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Bernulphus",
+              "url": "/heiligen/bernulphus/",
+              "icoon": "iconen/bernulphus.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "08",
+      "naam": "augustus",
+      "dagen": [
+        {
+          "mmdd": "08-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Voorfeest van de Transfiguratie",
+              "url": "/feesten/voorfeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-06",
+          "dag": 6,
+          "items": [
+            {
+              "naam": "Transfiguratie (op de berg Thabor)",
+              "url": "/feesten/transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Gaugericus",
+              "url": "/heiligen/gaugericus/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-13",
+          "dag": 13,
+          "items": [
+            {
+              "naam": "Zwentibold",
+              "url": "/heiligen/zwentibold/",
+              "icoon": "iconen/zwentiboldbrunnen-muenstereifel.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Transfiguratie",
+              "url": "/feesten/nafeest-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van de Transfiguratie",
+              "url": "/feesten/teruggave-transfiguratie/",
+              "icoon": "iconen/transfiguratie.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-14",
+          "dag": 14,
+          "items": [
+            {
+              "naam": "Werenfrid",
+              "url": "/heiligen/werenfrid/",
+              "icoon": "iconen/werenfrid.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Voorfeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/voorfeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Moeder Gods vasten",
+              "url": "/vasten/ontslapen-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Ontslapen van de Moeder Gods",
+              "url": "/feesten/ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-16",
+          "dag": 16,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Jeroen van Noordwijk",
+              "url": "/heiligen/jeroen-van-noordwijk/",
+              "icoon": "iconen/jeroen-van-noordwijk.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-19",
+          "dag": 19,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-22",
+          "dag": 22,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-23",
+          "dag": 23,
+          "items": [
+            {
+              "naam": "Nafeest van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/nafeest-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van het Ontslapen van de Moeder Gods",
+              "url": "/feesten/teruggave-ontslapen-moeder-gods/",
+              "icoon": "iconen/ontslapen-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Alubertus van Utrecht",
+              "url": "/heiligen/alubertus-van-utrecht/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Gregorius van Utrecht",
+              "url": "/heiligen/gregorius-van-utrecht/",
+              "icoon": "iconen/gregorius-van-utrecht.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "08-29",
+          "dag": 29,
+          "items": [
+            {
+              "naam": "Onthoofding van Johannes de Doper",
+              "url": "/feesten/onthoofding-johannes-doper/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "09",
+      "naam": "september",
+      "dagen": [
+        {
+          "mmdd": "09-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Begin van het kerkelijk jaar",
+              "url": "/feesten/begin-kerkelijk-jaar/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Remaclus",
+              "url": "/heiligen/remaclus/",
+              "icoon": "iconen/remaclus.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Bertinus",
+              "url": "/heiligen/bertinus/",
+              "icoon": "iconen/simon-marmion-scene-della-vita-di-san-bertino-1459-01.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Hilduard",
+              "url": "/heiligen/hilduard/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Voorfeest van de Geboorte van de Moeder Gods",
+              "url": "/feesten/voorfeest-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Geboorte van de Moeder Gods",
+              "url": "/feesten/geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Audomarus",
+              "url": "/heiligen/audomarus/",
+              "icoon": "iconen/omer-et-le-roi-dagobert.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Geboorte van de Moeder Gods",
+              "url": "/feesten/nafeest-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Theodaard van Maastricht",
+              "url": "/heiligen/theodaard-van-maastricht/",
+              "icoon": "iconen/theodaard-van-maastricht.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Geboorte van de Moeder Gods",
+              "url": "/feesten/nafeest-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Nafeest van de Geboorte van de Moeder Gods",
+              "url": "/feesten/nafeest-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Guido van Anderlecht",
+              "url": "/heiligen/guido-van-anderlecht/",
+              "icoon": "iconen/tableau-st-guidon-d-anderlecht.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Geboorte van de Moeder Gods",
+              "url": "/feesten/nafeest-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van de Geboorte van de Moeder Gods",
+              "url": "/feesten/teruggave-geboorte-moeder-gods/",
+              "icoon": "iconen/geboorte-moeder-gods.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-13",
+          "dag": 13,
+          "items": [
+            {
+              "naam": "Voorfeest van de Kruisverheffing",
+              "url": "/feesten/voorfeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-14",
+          "dag": 14,
+          "items": [
+            {
+              "naam": "Kruisverheffing",
+              "url": "/feesten/kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Maternus",
+              "url": "/heiligen/maternus/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-16",
+          "dag": 16,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Lambertus",
+              "url": "/heiligen/lambertus/",
+              "icoon": "iconen/lambertus.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-19",
+          "dag": 19,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Nafeest van de Kruisverheffing",
+              "url": "/feesten/nafeest-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van de Kruisverheffing",
+              "url": "/feesten/teruggave-kruisverheffing/",
+              "icoon": "iconen/kruisverheffing.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "09-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Gerulfus",
+              "url": "/heiligen/gerulfus/",
+              "icoon": "iconen/moord-op-gerolf-sint-gerolfkerk-drongen-16-07-2019.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "10",
+      "naam": "oktober",
+      "dagen": [
+        {
+          "mmdd": "10-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Pokrov (Bescherming van de Moeder Gods)",
+              "url": "/feesten/pokrov/",
+              "icoon": "iconen/pokrov.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Bavo",
+              "url": "/heiligen/bavo/",
+              "icoon": "iconen/bavo.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Beregisus",
+              "url": "/heiligen/beregisus/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Gerardus van Brogne",
+              "url": "/heiligen/gerardus-van-brogne/",
+              "icoon": "iconen/gerardo-de-brogne-cropped.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Ghislain",
+              "url": "/heiligen/ghislain/",
+              "icoon": "iconen/0-chasse-de-st-ghislain-procession-du-car-d-or.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Gommar",
+              "url": "/heiligen/gommar/",
+              "icoon": "iconen/gommar.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Herlindis",
+              "url": "/heiligen/herlindis/",
+              "icoon": "iconen/20180228-li-ge-cath-drale-saint-paul-22-harlindis-relindis.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Muno van Nassogne",
+              "url": "/heiligen/muno-van-nassogne/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-23",
+          "dag": 23,
+          "items": [
+            {
+              "naam": "Oda van Amay",
+              "url": "/heiligen/oda-van-amay/",
+              "icoon": "iconen/oda-van-amay.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-29",
+          "dag": 29,
+          "items": [
+            {
+              "naam": "Ermelindis",
+              "url": "/heiligen/ermelindis/",
+              "icoon": "iconen/ermelindis.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-31",
+          "dag": 31,
+          "items": [
+            {
+              "naam": "Foillan",
+              "url": "/heiligen/foillan/",
+              "icoon": "iconen/foillan.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "11",
+      "naam": "november",
+      "dagen": [
+        {
+          "mmdd": "11-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Florbertus van Gent",
+              "url": "/heiligen/florbertus-van-gent/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Odrada",
+              "url": "/heiligen/odrada/",
+              "icoon": "iconen/odrada.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-06",
+          "dag": 6,
+          "items": [
+            {
+              "naam": "Winnocus",
+              "url": "/heiligen/winnocus/",
+              "icoon": "iconen/winnocus.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Willibrord",
+              "url": "/heiligen/willibrord/",
+              "icoon": "iconen/willibrord.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Willehad",
+              "url": "/heiligen/willehad/",
+              "icoon": "iconen/bischof-willehad.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Bertuinus van Malonne",
+              "url": "/heiligen/bertuinus-van-malonne/",
+              "icoon": "iconen/maastricht-schatkamer-st-servaasbasiliek-reliekarm-st-bertuinus-van-malonne.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Lebuinus",
+              "url": "/heiligen/lebuinus/",
+              "icoon": "iconen/lebuinus.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Livinus van Gent",
+              "url": "/heiligen/livinus-van-gent/",
+              "icoon": "iconen/sint-lievenis-houtem-livinuskapel-belgi.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-16",
+          "dag": 16,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-19",
+          "dag": 19,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Voorfeest van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/voorfeest-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Tempelgang van de Moeder Gods",
+              "url": "/feesten/tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Amalberga van Susteren",
+              "url": "/heiligen/amalberga-van-susteren/",
+              "icoon": "iconen/amalberga-van-susteren.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-22",
+          "dag": 22,
+          "items": [
+            {
+              "naam": "Nafeest van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/nafeest-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-23",
+          "dag": 23,
+          "items": [
+            {
+              "naam": "Trudo",
+              "url": "/heiligen/trudo/",
+              "icoon": "iconen/trudo.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Wilfetrudis van Nijvel",
+              "url": "/heiligen/wilfetrudis/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Nafeest van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/nafeest-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Nafeest van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/nafeest-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Nafeest van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/nafeest-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van de Tempelgang van de Moeder Gods",
+              "url": "/feesten/teruggave-tempelgang-moeder-gods/",
+              "icoon": "iconen/tempelgang-moeder-gods.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-26",
+          "dag": 26,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-27",
+          "dag": 27,
+          "items": [
+            {
+              "naam": "Acharius van Doornik",
+              "url": "/heiligen/acharius-van-doornik/",
+              "icoon": "iconen/acharius-van-doornik.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-28",
+          "dag": 28,
+          "items": [
+            {
+              "naam": "Oda van de Peel",
+              "url": "/heiligen/oda-van-de-peel/",
+              "icoon": "iconen/oda-van-de-peel.png",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-29",
+          "dag": 29,
+          "items": [
+            {
+              "naam": "Radboud",
+              "url": "/heiligen/radboud/",
+              "icoon": "iconen/radboud.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-30",
+          "dag": 30,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "12",
+      "naam": "december",
+      "dagen": [
+        {
+          "mmdd": "12-01",
+          "dag": 1,
+          "items": [
+            {
+              "naam": "Eligius",
+              "url": "/heiligen/eligius/",
+              "icoon": "iconen/eligius.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-02",
+          "dag": 2,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-03",
+          "dag": 3,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-05",
+          "dag": 5,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-06",
+          "dag": 6,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-07",
+          "dag": 7,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-09",
+          "dag": 9,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-10",
+          "dag": 10,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-11",
+          "dag": 11,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-13",
+          "dag": 13,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-14",
+          "dag": 14,
+          "items": [
+            {
+              "naam": "Folciunus",
+              "url": "/heiligen/folciunus/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-15",
+          "dag": 15,
+          "items": [
+            {
+              "naam": "Aubertus van Kamerijk",
+              "url": "/heiligen/aubertus-van-kamerijk/",
+              "icoon": "iconen/aubertus-van-kamerijk.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-16",
+          "dag": 16,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-17",
+          "dag": 17,
+          "items": [
+            {
+              "naam": "Begga",
+              "url": "/heiligen/begga/",
+              "icoon": "iconen/begga.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-18",
+          "dag": 18,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-19",
+          "dag": 19,
+          "items": [
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-20",
+          "dag": 20,
+          "items": [
+            {
+              "naam": "Voorfeest van Kerst",
+              "url": "/feesten/voorfeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-21",
+          "dag": 21,
+          "items": [
+            {
+              "naam": "Voorfeest van Kerst",
+              "url": "/feesten/voorfeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-22",
+          "dag": 22,
+          "items": [
+            {
+              "naam": "Hunger van Utrecht",
+              "url": "/heiligen/hunger-van-utrecht/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Voorfeest van Kerst",
+              "url": "/feesten/voorfeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-23",
+          "dag": 23,
+          "items": [
+            {
+              "naam": "Voorfeest van Kerst",
+              "url": "/feesten/voorfeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-24",
+          "dag": 24,
+          "items": [
+            {
+              "naam": "Voorfeest van Kerst",
+              "url": "/feesten/voorfeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Geboortevasten",
+              "url": "/vasten/geboorte-vasten/",
+              "icoon": "",
+              "soort": "Vastenperiode"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-25",
+          "dag": 25,
+          "items": [
+            {
+              "naam": "Kerstfeest (Geboorte van Christus)",
+              "url": "/feesten/kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-26",
+          "dag": 26,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Synaxis van de Moeder Gods",
+              "url": "/feesten/synaxis-moeder-gods/",
+              "icoon": "",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-27",
+          "dag": 27,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-28",
+          "dag": 28,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-29",
+          "dag": 29,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-30",
+          "dag": 30,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        },
+        {
+          "mmdd": "12-31",
+          "dag": 31,
+          "items": [
+            {
+              "naam": "Nafeest van Kerst",
+              "url": "/feesten/nafeest-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            },
+            {
+              "naam": "Teruggave van Kerst",
+              "url": "/feesten/teruggave-kerst/",
+              "icoon": "iconen/kerst.jpg",
+              "soort": "Feest"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

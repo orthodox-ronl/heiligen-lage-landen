@@ -48,6 +48,37 @@
     "feestdatum": "01-02"
   },
   {
+    "id": "pharaildis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Pharaïldis",
+    "alternatief": [
+      "Veerle",
+      "Faraïldis van Gent",
+      "Pharaildis van Gent"
+    ],
+    "titels": [
+      "Maagd van Gent"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/pharaildis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/saint-pharaildis.jpg",
+    "betekenis_lage_landen": "Pharaïldis (Veerle) is een Gentse heilige van de achtste eeuw:\nmaagd, met een sterke lokale cultus in Vlaanderen. De traditie maakt\nhaar tot zuster van Gudula.",
+    "locaties": [
+      "gent"
+    ],
+    "feestdatum": "01-04",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "theofanie",
     "soort": "feest",
     "cyclus": "jaar",
@@ -257,6 +288,37 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "poppo-van-stavelot",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Poppo van Stavelot",
+    "alternatief": [
+      "Poppo van Deinze",
+      "Poppon de Stavelot"
+    ],
+    "titels": [
+      "Abt van Stavelot"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/poppo-van-stavelot/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/poppo-von-stablo-3.jpg",
+    "betekenis_lage_landen": "Poppo werd te Deinze geboren en was abt van Stavelot-Malmedy\n(België). Hij hervormde kloosters in Lotharingen. Hij stierf in 1048,\nvóór het schisma, te Marchiennes (nu Frankrijk); het werk in Stavelot\nis de opnamegrond.",
+    "locaties": [
+      "stavelot",
+      "gent"
+    ],
+    "feestdatum": "01-25",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "adelgondis-van-drongen",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -368,6 +430,67 @@
     "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
     "vastenniveau": "wijn_olie",
     "feestdatum": "02-02",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "berlindis-van-meerbeke",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Berlindis van Meerbeke",
+    "alternatief": [
+      "Berlindis",
+      "Berlende"
+    ],
+    "titels": [
+      "Religieuze"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/berlindis-van-meerbeke/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/berlindis-van-meerbeke-berlindiskapel-meerbeke.jpg",
+    "betekenis_lage_landen": "Berlindis wordt vereerd te Meerbeke (Vlaanderen). De Vlaamse\nkalender zet haar op 3 februari; GCatholic geeft sterfjaar 940. In\nbeide lezingen is het pre-schisma en in huidig België.",
+    "locaties": [
+      "meerbeke"
+    ],
+    "feestdatum": "02-03",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "hadelinus-van-celles",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Hadelinus van Celles",
+    "alternatief": [
+      "Hadelin",
+      "Hadelinus"
+    ],
+    "titels": [
+      "Abt van Celles"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/hadelinus-van-celles/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/vis-glise-saint-martin-ch-sse-de-saint-hadelin-01.jpg",
+    "betekenis_lage_landen": "Hadelinus stichtte of bestuurde het klooster Celles bij Dinant\n(België). Relieken en cultus te Wezet (Visé).",
+    "locaties": [
+      "celles",
+      "wezet"
+    ],
+    "feestdatum": "02-03",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -486,7 +609,7 @@
       "heilige"
     ],
     "onderdrukt_wekelijks_vasten": false,
-    "icoon": null,
+    "icoon": "iconen/kapel-harlindis-en-relindis.jpg",
     "betekenis_lage_landen": "Relindis leidde Aldeneik na haar zuster Herlindis. Het klooster lag in\nhet huidige Belgisch Limburg. De overlevering laat Bonifatius haar tot\nabdis wijden. Dat is bestuur van een klooster in de Lage Landen vóór\nhet schisma.",
     "locaties": [
       "maaseik"
@@ -519,6 +642,70 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ontmoeting-in-de-tempel.jpg",
     "feestdatum": "02-09",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "eleutherius-van-doornik",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Eleutherius van Doornik",
+    "alternatief": [
+      "Eleutherius",
+      "Éleuthère de Tournai"
+    ],
+    "titels": [
+      "Bisschop van Doornik"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/eleutherius-van-doornik/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/st-eleutherius-of-tournai-baptizing-converts-detail-workshop-of-arnold-of-nijmegen-flemish-c-1500-1525-nelson-atkins-museum-of-art-dsc08491.jpg",
+    "betekenis_lage_landen": "Eleutherius was bisschop van Doornik (huidig België) in de vroege\nzesde eeuw. Dat is kerkbestuur in de zuidelijke Lage Landen, ruim vóór\nhet schisma.",
+    "locaties": [
+      "doornik"
+    ],
+    "rustplaats": {
+      "plaats": "doornik",
+      "toelichting": ""
+    },
+    "feestdatum": "02-20",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "eucherius-van-orleans",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Eucherius van Orléans",
+    "alternatief": [
+      "Eucher d'Orléans",
+      "Eucherius"
+    ],
+    "titels": [
+      "Bisschop van Orléans"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/eucherius-van-orleans/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Eucherius was bisschop van Orléans. Of zijn laatste jaren in de\nLage Landen kerkelijk werk waren, is de open vraag.",
+    "locaties": [
+      "sint-truiden"
+    ],
+    "feestdatum": "02-20",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -557,6 +744,36 @@
       "toelichting": "Stiftskirche Kaiserswerth"
     },
     "feestdatum": "03-01",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "cunegonde-van-luxemburg",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Cunegonde van Luxemburg",
+    "alternatief": [
+      "Kunigunde",
+      "Cunegonde"
+    ],
+    "titels": [
+      "Keizerin"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/cunegonde-van-luxemburg/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/kunigunde.jpg",
+    "betekenis_lage_landen": "Cunegonde is in Luxemburg geboren en in Bamberg werkzaam geweest.\nOf geboorte in LU volstaat, is de open vraag.",
+    "locaties": [
+      "bamberg"
+    ],
+    "feestdatum": "03-03",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -626,6 +843,39 @@
       "toelichting": "Abdij van Nijvel"
     },
     "feestdatum": "03-17",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "landoaldus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Landoaldus",
+    "alternatief": [
+      "Landoald",
+      "Landoaldus van Wintershoven",
+      "Landoald van Gent"
+    ],
+    "titels": [
+      "Priester",
+      "Geloofsverkondiger"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/landoaldus/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/wintershoven-sint-lambertusbron-13.jpg",
+    "betekenis_lage_landen": "Landoaldus predikte in de Haspengouw, stichtte een kerk te\nWintershoven (Belgisch Limburg) en was volgens de traditie leermeester\nvan Lambertus. Floribert verhief zijn relieken. Dat is missie en\nkerkstichting in huidig België, zevende eeuw.",
+    "locaties": [
+      "wintershoven",
+      "gent"
+    ],
+    "feestdatum": "03-19",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -805,6 +1055,100 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "macarius-van-gent",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Macarius van Gent",
+    "alternatief": [
+      "Macharius",
+      "Macarius of Armenia"
+    ],
+    "titels": [
+      "Pelgrim"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/macarius-van-gent/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/gaspar-de-crayer-saint-macarius-of-ghent.jpg",
+    "betekenis_lage_landen": "Macarius stierf te Gent in 1012. De vraag is of sterven in een\nGentse abdij telt als «hier iets gedaan».",
+    "locaties": [
+      "gent"
+    ],
+    "feestdatum": "04-10",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "ursmar-van-lobbes",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Ursmar van Lobbes",
+    "alternatief": [
+      "Ursmarus",
+      "Ursmer de Lobbes",
+      "Ursmar"
+    ],
+    "titels": [
+      "Abtbisschop van Lobbes"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/ursmar-van-lobbes/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/coll-giale-saint-ursmer-lobbes-int-rieur-14-cropped2.jpg",
+    "betekenis_lage_landen": "Ursmar was abtbisschop van Lobbes (Henegouwen, België): hij bouwde\nde kloosterkerk, voerde de Benedictijnse regel in en predikte in de\nstreek. Lobbes werd een van de kersteningcentra van het zuiden.",
+    "locaties": [
+      "lobbes"
+    ],
+    "rustplaats": {
+      "plaats": "lobbes",
+      "toelichting": "Sint-Ursmarkerk"
+    },
+    "feestdatum": "04-18",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "wolbodo",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Wolbodo",
+    "alternatief": [
+      "Wolbodo van Luik"
+    ],
+    "titels": [
+      "Bisschop van Luik"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/wolbodo/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Wolbodo was bisschop van Luik (1018–1021). Dat is kerkbestuur in\nhuidig België, vlak vóór het schisma.",
+    "locaties": [
+      "luik"
+    ],
+    "feestdatum": "04-21",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "egbert-van-rathmelsigi",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -835,6 +1179,36 @@
       "rath-melsigi"
     ],
     "feestdatum": "04-24",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "erminus-van-lobbes",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Erminus van Lobbes",
+    "alternatief": [
+      "Ermin",
+      "Erminus"
+    ],
+    "titels": [
+      "Abtbisschop van Lobbes"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/erminus-van-lobbes/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/56044-clt-0001-01-lobbes-crypte.jpg",
+    "betekenis_lage_landen": "Erminus volgde Ursmar op als abtbisschop van Lobbes. Bestuur van\ndezelfde Belgische abdij, eerste helft achtste eeuw.",
+    "locaties": [
+      "lobbes"
+    ],
+    "feestdatum": "04-25",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -871,6 +1245,35 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "forannan-van-waulsort",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Forannan van Waulsort",
+    "alternatief": [
+      "Forannan"
+    ],
+    "titels": [
+      "Abt van Waulsort"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/forannan-van-waulsort/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Forannan, Ierse bisschop, werd abt van Waulsort aan de Maas\n(België) en stierf daar in 982.",
+    "locaties": [
+      "waulsort"
+    ],
+    "feestdatum": "04-30",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "quirillus-van-tongern",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -897,6 +1300,48 @@
       "tongeren"
     ],
     "feestdatum": "04-30",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "hilsondis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Hilsondis",
+    "alternatief": [
+      "Hilsundis",
+      "Hilsuindis",
+      "Herswindis",
+      "Hereswindis",
+      "Hereswint",
+      "Heresuint",
+      "Hildewaris",
+      "Hilsondis van Thorn"
+    ],
+    "titels": [
+      "Gravin van Strijen",
+      "Stichteres van Thorn",
+      "Eerste abdis van Thorn"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/hilsondis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/abdijkerk-thorn-ramen-h-ansifridus-h-hilsonidis.jpg",
+    "betekenis_lage_landen": "Hilsondis is in de Thornse overlevering de gravin die, met Ansfried,\nde abdij van Thorn stichtte (Nederlands Limburg, tiende eeuw). Dat is\nkloosterstichting in huidig Nederland, ruim vóór het schisma. De\nliturgische gedachtenis te Thorn is 1 mei.",
+    "locaties": [
+      "thorn"
+    ],
+    "rustplaats": {
+      "plaats": "thorn",
+      "toelichting": "Abdijkerk van Thorn (graftraditie van de stichteres)"
+    },
+    "feestdatum": "05-01",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -954,7 +1399,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ansfried-van-utrecht.jpg",
-    "betekenis_lage_landen": "Ansfried verbindt Lotharingse adel met het Utrechtse bisdom: graaf van\nHoei, stichter van Thorn (met Hereswind) en Hohorst bij Amersfoort, en\nbisschop te Utrecht tot zijn dood in 1010. Kernheilige van de\nmiddeleeuwse Utrechtse kerk in de Lage Landen.",
+    "betekenis_lage_landen": "Ansfried verbindt Lotharingse adel met het Utrechtse bisdom: graaf van\nHoei, stichter van Thorn (met Hilsondis) en Hohorst bij Amersfoort, en\nbisschop te Utrecht tot zijn dood in 1010. Kernheilige van de\nmiddeleeuwse Utrechtse kerk in de Lage Landen.",
     "locaties": [
       "utrecht"
     ],
@@ -1137,6 +1582,67 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "gerebernus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Gerebernus",
+    "alternatief": [
+      "Gerebern",
+      "Gerebran"
+    ],
+    "titels": [
+      "Priester",
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/gerebernus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/martyrdom-of-st-dymphna-and-st-gerebernus-by-jacques-de-l-ange-attr-or-gerard-seghers-attr.jpg",
+    "betekenis_lage_landen": "Gerebernus is de priester-metgezel van Dymphna. Volgens de vita\nvluchtte hij met haar naar de Kempen en werd hij bij Geel mee vermoord.\nHij hoort bij hetzelfde martelaarschap als Dymphna, op dezelfde dag.",
+    "locaties": [
+      "geel"
+    ],
+    "feestdatum": "05-15",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "guibertus-van-gembloers",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Guibertus van Gembloers",
+    "alternatief": [
+      "Guibert de Gembloux",
+      "Wibert van Gembloers"
+    ],
+    "titels": [
+      "Stichter van Gembloers"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/guibertus-van-gembloers/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/guibert-de-gembloux-cropped.jpg",
+    "betekenis_lage_landen": "Guibertus stichtte de abdij van Gembloers (Gembloux) in huidig\nBelgië. Dat is kloosterstichting vóór het schisma.",
+    "locaties": [
+      "gembloers"
+    ],
+    "feestdatum": "05-23",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "hubertus-van-maastricht",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -1193,10 +1699,75 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bonifatius.jpg",
-    "betekenis_lage_landen": "Bonifatius (Wynfrith) werkte met en na Willibrord in Friesland en Utrecht,\nhervormde de Frankische kerk en stierf op 5 juni 754 bij Dokkum, met\ntientallen metgezellen, tijdens een vormseltocht onder de Friezen. Dat\nmartelaarschap op Friese grond is het keerpunt van de noordelijke\nmissie: Utrecht bleef, de Friese heidenen kregen een bloedgetuige.\nOrthodoxWiki en het Heiligenlexikon bevestigen die lijn.",
+    "betekenis_lage_landen": "Bonifatius (Wynfrith) werkte met en na Willibrord in Friesland en Utrecht,\nhervormde de Frankische kerk en stierf op 5 juni 754 bij Dokkum, met\ntientallen metgezellen, tijdens een vormseltocht onder de Friezen. Dat\nmartelaarschap op Friese grond is het keerpunt van de noordelijke\nmissie: Utrecht bleef, de Friese heidenen kregen een bloedgetuige.\nOrthodoxWiki en het Heiligenlexikon bevestigen die lijn. De gezellen\nhebben een eigen groepspagina; Eoban heeft daarnaast een eigen pagina.",
     "locaties": [
       "dokkum",
       "utrecht",
+      "frisia"
+    ],
+    "feestdatum": "06-05",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "eoban",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Eoban",
+    "alternatief": [
+      "Eoban van Utrecht",
+      "Eoban von Utrecht"
+    ],
+    "titels": [
+      "Bisschop",
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/eoban/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Eoban predikte met Bonifatius onder de Friezen en stierf op 5 juni\n754 bij Dokkum. Dat martelaarschap op Friese grond is hetzelfde keerpunt\nals bij Bonifatius zelf. Hij hoort bij de Gezellen van Bonifatius te\nDokkum, maar heeft eigen merites: hulpbisschop van Utrecht en met name\ngenoemde martelaar.",
+    "locaties": [
+      "dokkum",
+      "utrecht",
+      "frisia"
+    ],
+    "feestdatum": "06-05",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "gezellen-bonifatius-dokkum",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Gezellen van Bonifatius te Dokkum",
+    "alternatief": [
+      "Martelaren van Dokkum",
+      "Gezellen van Bonifatius",
+      "Dokkumse martelaren"
+    ],
+    "titels": [
+      "Martelaren"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/gezellen-bonifatius-dokkum/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/bonifatius1954.jpg",
+    "betekenis_lage_landen": "Op 5 juni 754 werden bij Dokkum, tijdens een vormseltocht onder de\nFriezen, Bonifatius en zijn gevolg vermoord. Die gezellen zijn heilig\nals martelaren van die dag op Friese grond. Twee van hen hebben ook een\neigen pagina: Bonifatius (leider van de missie) en Eoban (hulpbisschop\nvan Utrecht). De overige namen (onder meer Adolar, Bosa, Elleher,\nGundekar, Hamund, Hathawulf, Scirebald, Waccar, Walter, Wintrung) zijn\nbekend als leden van deze groep.",
+    "locaties": [
+      "dokkum",
       "frisia"
     ],
     "feestdatum": "06-05",
@@ -1297,6 +1868,38 @@
       "frisia"
     ],
     "feestdatum": "06-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "landelinus-van-lobbes",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Landelinus van Lobbes",
+    "alternatief": [
+      "Landelin",
+      "Landelinus"
+    ],
+    "titels": [
+      "Abt",
+      "Stichter van Lobbes"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/landelinus-van-lobbes/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Landelinus stichtte het klooster Lobbes in Henegouwen (België).\nCrespin (nu Frankrijk) hoort bij dezelfde stichtingsgolf; Lobbes is de\nBelgische kern.",
+    "locaties": [
+      "lobbes",
+      "crespin"
+    ],
+    "feestdatum": "06-15",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -1453,6 +2056,36 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "theodulfus-van-lobbes",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Theodulfus van Lobbes",
+    "alternatief": [
+      "Theodulfus",
+      "Théodulphe de Lobbes"
+    ],
+    "titels": [
+      "Abt van Lobbes"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/theodulfus-van-lobbes/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Theodulfus was abt van Lobbes in de achtste eeuw. Zelfde\nBelgische kloosterlijn als Ursmar en Erminus.",
+    "locaties": [
+      "lobbes"
+    ],
+    "feestdatum": "06-24",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "adelbert",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -1540,6 +2173,35 @@
       "den-haag"
     ],
     "feestdatum": "07-02",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "landrada",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Landrada",
+    "alternatief": [
+      "Landrada van Munsterbilzen"
+    ],
+    "titels": [
+      "Abdis van Munsterbilzen"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/landrada/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/st-landrada.jpg",
+    "betekenis_lage_landen": "Landrada stichtte het klooster Munsterbilzen in Belgisch Limburg\nen was er eerste abdis. Amalberga van Temse zou er haar vorming hebben\ngekregen. Dat is kloosterstichting in huidig België, zevende eeuw.",
+    "locaties": [
+      "munsterbilzen"
+    ],
+    "feestdatum": "07-08",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -1638,6 +2300,43 @@
     "locaties": [
       "utrecht"
     ],
+    "feestdatum": "07-14",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "vincentius-madelgarius",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Vincentius Madelgarius",
+    "alternatief": [
+      "Madelgarius",
+      "Vincentius van Zinnik",
+      "Mauger"
+    ],
+    "titels": [
+      "Abt"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/vincentius-madelgarius/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/saint-vaincent.jpg",
+    "betekenis_lage_landen": "Vincentius (Madelgarius) stichtte de abdij van Zinnik/Soignies in\nhuidig België en was de echtgenoot van Woutruide van Bergen. Hautmont\nligt nu in Frankrijk; Zinnik is de Belgische stichting die hem in deze\nkalender plaatst.",
+    "locaties": [
+      "zinnik",
+      "hautmont",
+      "bergen"
+    ],
+    "rustplaats": {
+      "plaats": "zinnik",
+      "toelichting": ""
+    },
     "feestdatum": "07-14",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
@@ -1767,6 +2466,66 @@
       "maastricht"
     ],
     "feestdatum": "07-16",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "reinildis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Reinildis",
+    "alternatief": [
+      "Reinildis van Saintes",
+      "Reineldis"
+    ],
+    "titels": [
+      "Martelares"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/reinildis/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/meester-van-elsloo-1520-1530-heilige-renildis-van-saintes-sint-lambertuskerk-neeroeteren-8-09-2019.jpg",
+    "betekenis_lage_landen": "Reinildis van Saintes is in de traditie een zuster van Gudula en\nmartelares te Saintes (België). Zij is iemand anders dan Relindis van\nAldeneik.",
+    "locaties": [
+      "saintes"
+    ],
+    "feestdatum": "07-16",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "fredegandus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Fredegandus",
+    "alternatief": [
+      "Fredegand van Deurne",
+      "Frédegand de Deurne"
+    ],
+    "titels": [
+      "Abt"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/fredegandus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Fredegandus is de patroon van Deurne. Of hij werkelijk abt was van\neen abdij die de Vikingen in 836 zouden hebben verwoest, is onbewezen.",
+    "locaties": [
+      "deurne"
+    ],
+    "feestdatum": "07-17",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -1946,6 +2705,36 @@
     "feestdatum": "08-07"
   },
   {
+    "id": "gaugericus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Gaugericus",
+    "alternatief": [
+      "Géry",
+      "Gaugericus van Kamerijk"
+    ],
+    "titels": [
+      "Bisschop van Kamerijk"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/gaugericus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Gaugericus bestuurde het bisdom Kamerijk, dat historisch tot de\nNederlanden hoorde. De zetel ligt nu in Frankrijk.",
+    "locaties": [
+      "kamerijk"
+    ],
+    "feestdatum": "08-11",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "teruggave-transfiguratie",
     "soort": "feest",
     "cyclus": "jaar",
@@ -1964,6 +2753,42 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/transfiguratie.jpg",
+    "feestdatum": "08-13",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "zwentibold",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Zwentibold",
+    "alternatief": [
+      "Swentibold",
+      "Sanderbout",
+      "Sindbald",
+      "Zwentibold van Lotharingen"
+    ],
+    "titels": [
+      "Koning van Lotharingen"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/zwentibold/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/zwentiboldbrunnen-muenstereifel.jpg",
+    "betekenis_lage_landen": "Zwentibold was de laatste koning van Lotharingen en ligt te\nSusteren. De lokale Kerk eerde hem als martelaar. Of dat genoeg is\nvoor deze kalender, is nog open.",
+    "locaties": [
+      "susteren"
+    ],
+    "rustplaats": {
+      "plaats": "susteren",
+      "toelichting": "Sint-Amelbergabasiliek"
+    },
     "feestdatum": "08-13",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
@@ -2284,6 +3109,66 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "bertinus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Bertinus",
+    "alternatief": [
+      "Bertin",
+      "Bertinus van Sithiu"
+    ],
+    "titels": [
+      "Abt van Sithiu"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/bertinus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/simon-marmion-scene-della-vita-di-san-bertino-1459-01.jpg",
+    "betekenis_lage_landen": "Bertinus bestuurde de abdij Sithiu, later Sint-Bertijns. Historisch\nVlaanderen, nu Frankrijk.",
+    "locaties": [
+      "sint-omaars"
+    ],
+    "feestdatum": "09-05",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "hilduard",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Hilduard",
+    "alternatief": [
+      "Hildward",
+      "Hilduard van Dikkelvenne"
+    ],
+    "titels": [
+      "Bisschop"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/hilduard/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Hilduard (Hildward) wordt op de Vlaamse kalender herdacht als\nbisschop te Dikkelvenne (Oost-Vlaanderen), achtste eeuw.",
+    "locaties": [
+      "dikkelvenne"
+    ],
+    "feestdatum": "09-07",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "voorfeest-geboorte-moeder-gods",
     "soort": "feest",
     "cyclus": "jaar",
@@ -2328,6 +3213,38 @@
     "icoon": "iconen/geboorte-moeder-gods.jpg",
     "vastenniveau": "vis",
     "feestdatum": "09-08",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "audomarus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Audomarus",
+    "alternatief": [
+      "Omaar",
+      "Omer",
+      "Audomarus van Sint-Omaars"
+    ],
+    "titels": [
+      "Bisschop van Terwaan"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/audomarus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/omer-et-le-roi-dagobert.jpg",
+    "betekenis_lage_landen": "Audomarus kerstende het bisdom Terwaan. De zetel ligt nu in\nFrankrijk; historisch raakte het Vlaanderen.",
+    "locaties": [
+      "sint-omaars",
+      "terwaan"
+    ],
+    "feestdatum": "09-09",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2385,6 +3302,43 @@
       "maastricht"
     ],
     "feestdatum": "09-10",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "guido-van-anderlecht",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Guido van Anderlecht",
+    "alternatief": [
+      "Wido van Anderlecht",
+      "Guidon d'Anderlecht"
+    ],
+    "titels": [
+      "Pelgrim",
+      "Koster"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/guido-van-anderlecht/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/tableau-st-guidon-d-anderlecht.jpg",
+    "betekenis_lage_landen": "Guido was koster te Laken, pelgrim, en stierf in 1012 te\nAnderlecht. Zijn graf in de kapittelkerk werd een Brussels\nbedevaartsoord. Werk en dood in huidig België, vóór het schisma.",
+    "locaties": [
+      "anderlecht",
+      "laken",
+      "brussel"
+    ],
+    "rustplaats": {
+      "plaats": "anderlecht",
+      "toelichting": "Sint-Pieter-en-Sint-Guidokerk"
+    },
+    "feestdatum": "09-12",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2458,6 +3412,37 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/kruisverheffing.jpg",
     "vastenniveau": "streng",
+    "feestdatum": "09-14",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "maternus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Maternus",
+    "alternatief": [
+      "Maternus van Keulen",
+      "Maternus van Tongeren"
+    ],
+    "titels": [
+      "Bisschop van Keulen"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/maternus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Maternus is historisch de eerste bekende bisschop van Keulen. Of\nhij in Tongeren werkte, is de open vraag, net als bij andere vroege\nMaaslandse bisschoppen.",
+    "locaties": [
+      "keulen",
+      "tongeren"
+    ],
     "feestdatum": "09-14",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
@@ -2546,6 +3531,41 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "gerulfus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Gerulfus",
+    "alternatief": [
+      "Gerolf",
+      "Gerulf van Drongen"
+    ],
+    "titels": [
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/gerulfus/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/moord-op-gerolf-sint-gerolfkerk-drongen-16-07-2019.jpg",
+    "betekenis_lage_landen": "Gerulfus is een van de oudste Vlaamse martelaren: een jongen uit\nMerendree die na zijn vormsel te Gent onderweg naar huis bij Drongen\nwerd vermoord. Cultus in Drongen (Sint-Gerolfkerk).",
+    "locaties": [
+      "drongen",
+      "merendree"
+    ],
+    "rustplaats": {
+      "plaats": "drongen",
+      "toelichting": "Sint-Gerolfkerk"
+    },
+    "feestdatum": "09-25",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "bavo",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -2601,6 +3621,110 @@
     "icoon": "iconen/pokrov.jpg",
     "vastenniveau": "vis",
     "feestdatum": "10-01",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "beregisus",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Beregisus",
+    "alternatief": [
+      "Berégise",
+      "Beregisus van Andage"
+    ],
+    "titels": [
+      "Abt van Andage"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/beregisus/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Beregisus stichtte het klooster Andage in de Ardennen, later\nSaint-Hubert (België). Dat is kloosterstichting in de zevende/achtste\neeuw.",
+    "locaties": [
+      "saint-hubert"
+    ],
+    "feestdatum": "10-02",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "gerardus-van-brogne",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Gerardus van Brogne",
+    "alternatief": [
+      "Gérard de Brogne",
+      "Gerardus van Namen",
+      "Gerhard van Brogne"
+    ],
+    "titels": [
+      "Abt",
+      "Kloosterhervormer"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/gerardus-van-brogne/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/gerardo-de-brogne-cropped.jpg",
+    "betekenis_lage_landen": "Gerardus stichtte de abdij van Brogne bij Namen en herstelde de\nBenedictijnse tucht in onder meer Saint-Ghislain, de Sint-Pietersabdij\nen de Sint-Baafsabdij te Gent. Dat is kloosterbestuur in huidig België,\nruim vóór het schisma.",
+    "locaties": [
+      "brogne",
+      "gent"
+    ],
+    "rustplaats": {
+      "plaats": "brogne",
+      "toelichting": "Abdij van Saint-Gérard"
+    },
+    "feestdatum": "10-03",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "ghislain",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Ghislain",
+    "alternatief": [
+      "Gislenus",
+      "Geleyn",
+      "Ghislenus van Henegouwen"
+    ],
+    "titels": [
+      "Abt",
+      "Kluizenaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/ghislain/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/0-chasse-de-st-ghislain-procession-du-car-d-or.jpg",
+    "betekenis_lage_landen": "Ghislain leefde als kluizenaar bij Castrilocus (Mons) en stichtte\neen klooster te Ursidongus, nu Saint-Ghislain in Henegouwen (België).\nHij gaf geestelijke raad aan Woutruide bij de stichting van Bergen.",
+    "locaties": [
+      "saint-ghislain",
+      "bergen"
+    ],
+    "rustplaats": {
+      "plaats": "saint-ghislain",
+      "toelichting": ""
+    },
+    "feestdatum": "10-10",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2739,7 +3863,7 @@
       "heilige"
     ],
     "onderdrukt_wekelijks_vasten": false,
-    "icoon": null,
+    "icoon": "iconen/20180228-li-ge-cath-drale-saint-paul-22-harlindis-relindis.jpg",
     "betekenis_lage_landen": "Herlindis leidde het vrouwenklooster Aldeneik in het huidige Belgisch\nLimburg: prediking en kloosterleven aan de Maas, in de kring van\nWillibrord (die haar tot abdis wijdde) en later Bonifatius. Dat is werk\nin de Lage Landen vóór het schisma, geen latere cultus alleen.",
     "locaties": [
       "maaseik"
@@ -2749,6 +3873,37 @@
       "toelichting": "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
     },
     "feestdatum": "10-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "muno-van-nassogne",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Muno van Nassogne",
+    "alternatief": [
+      "Monon",
+      "Monon de Nassogne"
+    ],
+    "titels": [
+      "Kluizenaar",
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/muno-van-nassogne/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Muno (Monon) leefde als kluizenaar te Nassogne in de Belgische\nArdennen en werd daar vermoord. Martelaarschap in huidig België.",
+    "locaties": [
+      "nassogne"
+    ],
+    "feestdatum": "10-18",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2853,6 +4008,36 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "florbertus-van-gent",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Florbertus van Gent",
+    "alternatief": [
+      "Florbert van Gent",
+      "Floribertus van Gent"
+    ],
+    "titels": [
+      "Abt van Sint-Pieters te Gent"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/florbertus-van-gent/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Florbertus was de eerste abt van de Sint-Pietersabdij op de\nBlandijnberg te Gent, door Amandus aangesteld. Hij is iemand anders dan\nFloribert van Luik.",
+    "locaties": [
+      "gent"
+    ],
+    "feestdatum": "11-01",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "odrada",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -2951,6 +4136,67 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "willehad",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Willehad",
+    "alternatief": [
+      "Willehad van Bremen",
+      "Willehad van Dokkum"
+    ],
+    "titels": [
+      "Bisschop van Bremen"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/willehad/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/bischof-willehad.jpg",
+    "betekenis_lage_landen": "Willehad staat op de Groningse kalender als geloofsverkondiger.\nHet zwaartepunt van zijn werk lag in Saksen en Bremen.",
+    "locaties": [
+      "bremen",
+      "frisia"
+    ],
+    "feestdatum": "11-08",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "bertuinus-van-malonne",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Bertuinus van Malonne",
+    "alternatief": [
+      "Bertuin",
+      "Bertuinus"
+    ],
+    "titels": [
+      "Abt van Malonne"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/bertuinus-van-malonne/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/maastricht-schatkamer-st-servaasbasiliek-reliekarm-st-bertuinus-van-malonne.jpg",
+    "betekenis_lage_landen": "Bertuinus stichtte of bestuurde het klooster Malonne bij Namen.\nDat is kloosterbestuur in huidig België, zevende eeuw.",
+    "locaties": [
+      "malonne"
+    ],
+    "feestdatum": "11-11",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "lebuinus",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -2984,6 +4230,37 @@
       "plaats": "deventer",
       "toelichting": "Lebuïnuskerk"
     },
+    "feestdatum": "11-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "livinus-van-gent",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Livinus van Gent",
+    "alternatief": [
+      "Lieven van Gent",
+      "Livinus"
+    ],
+    "titels": [
+      "Bisschop",
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/livinus-van-gent/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/sint-lievenis-houtem-livinuskapel-belgi.jpg",
+    "betekenis_lage_landen": "Livinus (Lieven) is in de Gentse traditie een Ierse missionaris\ndie in Vlaanderen predikte en de marteldood stierf. De feestdag is\ndezelfde als die van Lebuinus van Deventer (12 november). De vraag is\nniet of Gent hem eert — dat doet het — maar of achter die cultus een\nzelfstandige historische persoon schuilgaat.",
+    "locaties": [
+      "gent"
+    ],
     "feestdatum": "11-12",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
@@ -3151,6 +4428,36 @@
       "plaats": "sint-truiden",
       "toelichting": "Onze-Lieve-Vrouwekerk (schrijn)"
     },
+    "feestdatum": "11-23",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "wilfetrudis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Wilfetrudis van Nijvel",
+    "alternatief": [
+      "Wilfetrudis",
+      "Wulfetrudis"
+    ],
+    "titels": [
+      "Abdis van Nijvel"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/wilfetrudis/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Wilfetrudis was abdis van Nijvel in de lijn van Gertrudis. Bestuur\nvan hetzelfde Brabantse klooster.",
+    "locaties": [
+      "nijvel"
+    ],
     "feestdatum": "11-23",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
