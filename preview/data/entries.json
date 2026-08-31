@@ -216,7 +216,7 @@
       "Maagd",
       "Patrones van Brussel"
     ],
-    "samenvatting": "Brabantse maagd; patrones van Brussel (Sint-Michiel en Sint-Goedele).\nFeestdag 8 januari.",
+    "samenvatting": "",
     "url": "/heiligen/gudula-van-brussel/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -270,7 +270,7 @@
     "titels": [
       "Kloosterlinge"
     ],
-    "samenvatting": "Legendarische kloosterlinge van Drongen bij Gent; blind geboren dochter\nvan Basinus. Feestdagen 26 januari en 20 juni.",
+    "samenvatting": "",
     "url": "/heiligen/adelgondis-van-drongen/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -303,7 +303,7 @@
     "titels": [
       "Stichteres van Maubeuge"
     ],
-    "samenvatting": "Frankische edelvrouw uit Henegouwen; stichteres en abdis van Maubeuge.\nFeestdag 30 januari. Cultus ook in Vlaanderen (o.a. Alken, As).",
+    "samenvatting": "",
     "url": "/heiligen/adelgonda/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -312,7 +312,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/adelgonda.jpg",
-    "betekenis_lage_landen": "Adelgonda (Aldegonda) behoort tot de Merovingische heiligenfamilie van\nHenegouwen (ouders Walbertus en Bertilia; zuster Waltrudis). Maubeuge lag\nin historisch Henegouwen, nu in Frankrijk; relieken en patroonaten leven\nwel in Vlaanderen voort. Of dat genoeg is voor vaste selectie, vraagt\nnader onderzoek.",
+    "betekenis_lage_landen": "Adelgonda (Aldegonda) behoort tot de Merovingische heiligenfamilie van\nHenegouwen (ouders Walbertus en Bertilia; zuster Waltrudis). Maubeuge lag\nin historisch Henegouwen, nu in Frankrijk; relieken en patroonaten leven\nwel in Vlaanderen voort (onder meer Alken en As). Of dat genoeg is voor\nvaste selectie, vraagt nader onderzoek.",
     "locaties": [
       "maubeuge"
     ],
@@ -409,7 +409,7 @@
     "titels": [
       "Tweede bisschop van Maastricht"
     ],
-    "samenvatting": "Traditioneel tweede bisschop van Maastricht na Servatius. Historisch\nvrijwel onbekend; feestdag 5 februari.",
+    "samenvatting": "",
     "url": "/heiligen/agricolaus-van-maastricht/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -443,7 +443,7 @@
       "Missiebisschop",
       "Bisschop van Maastricht"
     ],
-    "samenvatting": "Apostel van Vlaanderen: kerstening langs de Schelde, stichter van Gentse\nabdijen en Elno; kort bisschop van Maastricht. Feestdag 6 februari.",
+    "samenvatting": "",
     "url": "/heiligen/amandus-van-maastricht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -458,6 +458,43 @@
       "elno",
       "doornik"
     ],
+    "feestdatum": "02-06",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "relindis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Relindis",
+    "alternatief": [
+      "Reinhild",
+      "Renula",
+      "Relinde",
+      "Relindis van Aldeneik",
+      "Relindis van Maaseik"
+    ],
+    "titels": [
+      "Abdis van Aldeneik"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/relindis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Relindis leidde Aldeneik na haar zuster Herlindis. Het klooster lag in\nhet huidige Belgisch Limburg. De overlevering laat Bonifatius haar tot\nabdis wijden. Dat is bestuur van een klooster in de Lage Landen vóór\nhet schisma.",
+    "locaties": [
+      "maaseik"
+    ],
+    "rustplaats": {
+      "plaats": "maaseik",
+      "toelichting": "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+    },
     "feestdatum": "02-06",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
@@ -486,36 +523,6 @@
     "feestdatum_gregoriaans": null
   },
   {
-    "id": "walburga",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Walburga",
-    "alternatief": [
-      "Walburgis",
-      "Walpurga"
-    ],
-    "titels": [
-      "Abdis van Heidenheim"
-    ],
-    "samenvatting": "Angelsaksische abdis van Heidenheim; zuster van Willibald en Winnibald.\nFeestdag 25 februari.",
-    "url": "/heiligen/walburga/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/walburga.jpg",
-    "betekenis_lage_landen": "Walburga werkte in Germanië (Heidenheim/Eichstätt), niet in de Lage\nLanden. Wel is er middeleeuwse en latere cultus (onder meer Antwerpen,\nOudenaarde, Veurne, Zutphen, Groningen, Netterden).",
-    "locaties": [
-      "heidenheim"
-    ],
-    "feestdatum": "02-25",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
     "id": "swidbert",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -531,7 +538,7 @@
       "Missiebisschop",
       "Stichter van Kaiserswerth"
     ],
-    "samenvatting": "Angelsaksische metgezel van Willibrord; predikte in Friesland; stichtte\nKaiserswerth. Feestdag 1 maart.",
+    "samenvatting": "",
     "url": "/heiligen/swidbert/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -569,7 +576,7 @@
     "titels": [
       "Vierde bisschop van Utrecht"
     ],
-    "samenvatting": "Neef en opvolger van Gregorius van Utrecht; vierde bisschop (ca. 776–784).\nMet hem werd Utrecht een vaste bisschopszetel. Meerdere gedenkdagen.",
+    "samenvatting": "",
     "url": "/heiligen/albericus-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -588,36 +595,6 @@
     "feestdatum_gregoriaans": null
   },
   {
-    "id": "fridolin",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Fridolin",
-    "alternatief": [
-      "Fridolin van Säckingen",
-      "Fridolin von Säckingen"
-    ],
-    "titels": [
-      "Abt, verlichter van de Boven-Rijn"
-    ],
-    "samenvatting": "Ierse of Frankische missionaris; stichtte het klooster op de Rijn-eiland\nSäckingen. Feestdag 6 maart.",
-    "url": "/heiligen/fridolin/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/fridolin.jpg",
-    "betekenis_lage_landen": "Fridolin hoort in oudere catalogi van «heiligen van de Lage Landen», maar\nzijn werk lag aan de Boven-Rijn (Säckingen, Glarus, Elzas). Er is geen\naantoonbare missie of cultuskern in het huidige NL/BE/LUX.",
-    "locaties": [
-      "saeckingen"
-    ],
-    "feestdatum": "03-06",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
     "id": "gertrudis",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -631,7 +608,7 @@
     "titels": [
       "Abdis van Nijvel"
     ],
-    "samenvatting": "Dochter van Iduberga; leidde het klooster van Nijvel. Feestdag 17 maart.",
+    "samenvatting": "",
     "url": "/heiligen/gertrudis/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -667,7 +644,7 @@
       "Missionaris",
       "Bisschop van Sens"
     ],
-    "samenvatting": "Frankische bisschop van Sens; missionaris in Friesland naast Willibrord.\nFeestdag 20 maart.",
+    "samenvatting": "",
     "url": "/heiligen/wulfram/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -748,7 +725,7 @@
     "titels": [
       "Bisschop van Münster"
     ],
-    "samenvatting": "Geboren bij Utrecht; predikte onder de Friezen en Saksen; eerste bisschop\nvan Münster. Feestdag 26 maart.",
+    "samenvatting": "",
     "url": "/heiligen/ludger/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -806,7 +783,7 @@
       "Stichteres van Bergen",
       "Abdis"
     ],
-    "samenvatting": "Stichteres van het klooster waaruit Bergen (Mons) groeide; zuster van\nAldegonda. Feestdag 9 april.",
+    "samenvatting": "",
     "url": "/heiligen/woutruide/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -844,7 +821,7 @@
       "Abt van Rath Melsigi",
       "Missionaris-inspirator"
     ],
-    "samenvatting": "Angelsaksische abt te Rath Melsigi; zond missionarissen naar Friesland\n(o.a. Willibrord), ging zelf niet mee. Overleden op Pasen 24 april 729.\nOp de Orthodoxe kalender ook herdacht op 23 december.",
+    "samenvatting": "",
     "url": "/heiligen/egbert-van-rathmelsigi/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -876,7 +853,7 @@
     "titels": [
       "Bisschop van Luik"
     ],
-    "samenvatting": "Tweede bisschop van Luik; opvolger van Hubertus. Feestdag 27 april.",
+    "samenvatting": "",
     "url": "/heiligen/floribert/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -906,7 +883,7 @@
     "titels": [
       "Bisschop van Tongeren"
     ],
-    "samenvatting": "Traditionele bisschop op de vroege Tongeren-/Maastrichtlijst; historisch\nnauwelijks vast te stellen. Feestdag 30 april.",
+    "samenvatting": "",
     "url": "/heiligen/quirillus-van-tongern/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -936,7 +913,7 @@
     "titels": [
       "Abt van Fosses"
     ],
-    "samenvatting": "Ierse monnik; broer van Fursey en Foillan; abt van Fosses bij Namen.\nFeestdag 1 mei.",
+    "samenvatting": "",
     "url": "/heiligen/ultan/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -968,7 +945,7 @@
     "titels": [
       "Bisschop van Utrecht"
     ],
-    "samenvatting": "Graaf van Hoei, later bisschop van Utrecht (995–1010); stichter van\nThorn en Hohorst. Feestdag 3 mei.",
+    "samenvatting": "",
     "url": "/heiligen/ansfried-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -1000,7 +977,7 @@
     "titels": [
       "Bisschop van Maastricht"
     ],
-    "samenvatting": "Bisschop van Tongeren-Maastricht; historisch bevestigd op concilies\n(535, 549). Cultus te Hoei. Feestdag 7 mei.",
+    "samenvatting": "",
     "url": "/heiligen/domitianus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1032,7 +1009,7 @@
     "titels": [
       "Stichteres van Nijvel"
     ],
-    "samenvatting": "Echtgenote van Pepijn van Landen; stichtte de abdij van Nijvel.\nFeestdag 8 mei.",
+    "samenvatting": "",
     "url": "/heiligen/iduberga/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1067,7 +1044,7 @@
       "Missionaris",
       "Bisschop"
     ],
-    "samenvatting": "Ierse (of Schotse) missionaris; stichtte met Plechelmus en Otger het\nklooster te Sint Odiliënberg. Feestdag 11 mei (Roermond).",
+    "samenvatting": "",
     "url": "/heiligen/wiro/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1103,7 +1080,7 @@
     "titels": [
       "Bisschop van Tongeren"
     ],
-    "samenvatting": "Eerste historisch bevestigde bisschop van Tongeren; begraven in Maastricht.\nFeestdag 13 mei.",
+    "samenvatting": "",
     "url": "/heiligen/servatius/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1138,7 +1115,7 @@
     "titels": [
       "Martelares van Geel"
     ],
-    "samenvatting": "Ierse maagd-martelares, vereerd te Geel. Feestdag 15 mei.",
+    "samenvatting": "",
     "url": "/heiligen/dymphna/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1174,7 +1151,7 @@
       "Bisschop van Maastricht en Luik",
       "Apostel van de Ardennen"
     ],
-    "samenvatting": "Leerling van Lambertus; verplaatste de zetel van Maastricht naar Luik.\nSterfdag 30 mei; ook 3 november herdacht.",
+    "samenvatting": "",
     "url": "/heiligen/hubertus-van-maastricht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1207,7 +1184,7 @@
       "Aartsbisschop",
       "Martelaar"
     ],
-    "samenvatting": "Angelsaksische missionaris; aartsbisschop van Mainz; martelaar bij\nDokkum. Feestdag 5 juni.",
+    "samenvatting": "",
     "url": "/heiligen/bonifatius/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1239,7 +1216,7 @@
     "titels": [
       "Bisschop van Noyon"
     ],
-    "samenvatting": "Bisschop van Vermand/Noyon en Doornik; vroegvereerd in Vlaanderen.\nFeestdag 8 juni.",
+    "samenvatting": "",
     "url": "/heiligen/medardus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1271,7 +1248,7 @@
     "titels": [
       "Maagd-martelares van Rhenen"
     ],
-    "samenvatting": "Maagd-martelares, vereerd te Rhenen; middeleeuwse Ursula-legende.\nFeestdag 12 juni.",
+    "samenvatting": "",
     "url": "/heiligen/cunera/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1303,7 +1280,7 @@
       "Priester",
       "Kanunnik van Utrecht"
     ],
-    "samenvatting": "Priester en kanunnik van Utrecht; door bisschop Frederik naar Stavoren\ngezonden. Feestdag 12 juni.",
+    "samenvatting": "",
     "url": "/heiligen/odulphus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1336,7 +1313,7 @@
     "titels": [
       "Maagd & martelares"
     ],
-    "samenvatting": "Zevende-eeuwse martelares uit Dilbeek; patrones van de gemeente.\nFeestdag 17 juni (ook 16/18/24 juni in Brabantse traditie).",
+    "samenvatting": "",
     "url": "/heiligen/alena-van-dilbeek/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -1369,7 +1346,7 @@
       "Abt",
       "Geloofsverkondiger in Kennemerland"
     ],
-    "samenvatting": "Abt en missionaris, vereerd te Velsen (Kennemerland); metgezel van\nWillibrord volgens de overlevering. Feestdag 21 juni.",
+    "samenvatting": "",
     "url": "/heiligen/engelmund/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1396,7 +1373,7 @@
       "Walfridus"
     ],
     "titels": [],
-    "samenvatting": "Plaatselijke martelaar, vereerd te Bedum. Feestdag 22 juni.",
+    "samenvatting": "",
     "url": "/heiligen/walfridus-bedum/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -1454,7 +1431,7 @@
       "Martelaar",
       "Patroon van Mechelen"
     ],
-    "samenvatting": "Patroonheilige van Mechelen; volgens de overlevering missionaris en\nmartelaar. Feestdag 24 juni (in het bisdom Mechelen-Brussel 1 juli).",
+    "samenvatting": "",
     "url": "/heiligen/rumold/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1488,7 +1465,7 @@
     "titels": [
       "Aartsdiaken"
     ],
-    "samenvatting": "Aartsdiaken en metgezel van Willibrord; begraven te Egmond. Feestdag\n25 juni.",
+    "samenvatting": "",
     "url": "/heiligen/adelbert/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1549,7 +1526,7 @@
       "Aartsbisschop van Shanghai en San Francisco",
       "Wonderdoener"
     ],
-    "samenvatting": "Aartsbisschop van de Russische Kerk Buiten Rusland; als bisschop van\nWest-Europa betrokken bij de Nederlandse orthodoxe missie. Feestdag\n2 juli (nieuwe stijl).",
+    "samenvatting": "",
     "url": "/heiligen/johannes-van-shanghai/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1582,7 +1559,7 @@
     "titels": [
       "Maagd"
     ],
-    "samenvatting": "Lotharingse edelvrouw; kloosterlinge te Munsterbilzen, gesticht en\nbegraven te Temse (~772). Feestdag 10 juli; attribuut: steur.",
+    "samenvatting": "",
     "url": "/heiligen/amalberga-van-temse/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -1614,7 +1591,7 @@
       "Archimandriet",
       "Stichter van het klooster van Johannes de Doper in Essex"
     ],
-    "samenvatting": "Leerling van Silouan de Athoniet; stichter van het klooster in Essex.\nBezocht Gent; gaf raad aan de latere abdis van Asten. Feestdag 11 juli.",
+    "samenvatting": "",
     "url": "/heiligen/sophrony-van-essex/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1648,7 +1625,7 @@
       "Priester",
       "Geloofsverkondiger bij Deventer"
     ],
-    "samenvatting": "Leerling van Gregorius van Utrecht; werkte met Lebuïnus in Overijssel.\nFeestdag 14 juli.",
+    "samenvatting": "",
     "url": "/heiligen/marcellinus-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1679,7 +1656,7 @@
       "Diaken",
       "Geloofsverkondiger aan de Nederrijn"
     ],
-    "samenvatting": "Diaken en geloofsverkondiger; met Wiro en Plechelm stichter van het\nklooster te Odiliënberg. Feestdag 15 juli.",
+    "samenvatting": "",
     "url": "/heiligen/otger/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1714,7 +1691,7 @@
     "titels": [
       "Bisschop, geloofsverkondiger aan de Nederrijn"
     ],
-    "samenvatting": "Angelsaksische missionaris; klooster Berg (Odiliënberg) met Wiro en\nOtger. Feestdag 15 juli.",
+    "samenvatting": "",
     "url": "/heiligen/plechelm-von-odilienberg/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1745,7 +1722,7 @@
     "titels": [
       "Bisschop van Maastricht"
     ],
-    "samenvatting": "Bisschop van Maastricht, opvolger van Monulphus in de overlevering.\nFeestdag 16 juli (samen met Monulphus).",
+    "samenvatting": "",
     "url": "/heiligen/gondulphus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1776,7 +1753,7 @@
     "titels": [
       "Bisschop van Maastricht"
     ],
-    "samenvatting": "Bisschop van Maastricht; bouwde een stenen kerk boven het graf van\nServatius. Feestdag 16 juli (samen met Gondulphus).",
+    "samenvatting": "",
     "url": "/heiligen/monulphus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1809,7 +1786,7 @@
       "Bisschop van Utrecht",
       "Martelaar"
     ],
-    "samenvatting": "Bisschop van Utrecht; predikte in het noorden van het bisdom;\nvolgens de legende vermoord te Utrecht. Feestdag 18 juli.",
+    "samenvatting": "",
     "url": "/heiligen/frederich/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -1846,7 +1823,7 @@
     "titels": [
       "Bisschop van Utrecht"
     ],
-    "samenvatting": "Bisschop van Utrecht (1027–1054); bouwde stiftskerken en versterkte\nhet wereldlijk gezag van het bisdom. Feestdag 19/24 juli (tradities\nverschillen).",
+    "samenvatting": "",
     "url": "/heiligen/bernulphus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2030,7 +2007,7 @@
       "Priester",
       "Geloofsverkondiger in Friesland"
     ],
-    "samenvatting": "Angelsaksische priester in het gevolg van Willibrord; vereerd te Elst\nen Westervoort. Feestdag 14 augustus.",
+    "samenvatting": "",
     "url": "/heiligen/werenfrid/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -2113,7 +2090,7 @@
     "titels": [
       "Hieromartelaar"
     ],
-    "samenvatting": "Priester-martelaar van Noordwijk, volgens de overlevering door Noormannen\ngedood. Feestdag 17 augustus.",
+    "samenvatting": "",
     "url": "/heiligen/jeroen-van-noordwijk/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -2166,7 +2143,7 @@
     "titels": [
       "Wijbisschop van Utrecht"
     ],
-    "samenvatting": "Angelsaksische wijbisschop naast Gregorius van Utrecht vanaf 767;\nwerkzaam in Friesland. Feestdag 25 augustus.",
+    "samenvatting": "",
     "url": "/heiligen/alubertus-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2197,7 +2174,7 @@
     "titels": [
       "Abt van Utrecht"
     ],
-    "samenvatting": "Leerling van Bonifatius; abt van Sint-Maarten en beheerder van het\nbisdom Utrecht. Feestdag 25 augustus.",
+    "samenvatting": "",
     "url": "/heiligen/gregorius-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2284,7 +2261,7 @@
       "Bisschop van Maastricht",
       "Stichter van Stavelot"
     ],
-    "samenvatting": "Frankische kloosterstichter; bisschop van Maastricht; stichter van\nStavelot-Malmedy. Feestdag 3 september.",
+    "samenvatting": "",
     "url": "/heiligen/remaclus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2326,38 +2303,6 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/geboorte-moeder-gods.jpg",
     "feestdatum": "09-07",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
-    "id": "adela-van-vlaanderen",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Adela van Vlaanderen",
-    "alternatief": [
-      "Adela van Ieper",
-      "Adela van Mesen",
-      "Adela van Messines",
-      "Adelheid van Frankrijk"
-    ],
-    "titels": [
-      "Weduwe & kloosterlinge"
-    ],
-    "samenvatting": "Franse koningsdochter, gravin van Vlaanderen en stichteres van de abdij\nvan Mesen; daar later kloosterlinge. Feestdag 8 september.",
-    "url": "/heiligen/adela-van-vlaanderen/",
-    "lage_landen": true,
-    "bronlaag": "encyclopedie",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": null,
-    "betekenis_lage_landen": "Adela stichtte en bewoonde de abdij van Mesen (West-Vlaanderen) en werkte\nmee aan kapittels en abdijen in het graafschap. De band met de Lage Landen\nis geografisch en dynastisch duidelijk; haar dood (1079) en cultus\nvallen na 1054.",
-    "locaties": [
-      "mesen"
-    ],
-    "feestdatum": "09-08",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -2426,7 +2371,7 @@
       "Bisschop van Maastricht",
       "Martelaar"
     ],
-    "samenvatting": "Leerling van Remaclus; bisschop van Maastricht; vermoord op reis naar\nde koning. Feestdag 10 september.",
+    "samenvatting": "",
     "url": "/heiligen/theodaard-van-maastricht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2555,7 +2500,7 @@
       "Bisschop van Maastricht",
       "Martelaar"
     ],
-    "samenvatting": "Bisschop van Maastricht; predikte in Brabant en Toxandrië; vermoord te\nLuik. Feestdag 17 september.",
+    "samenvatting": "",
     "url": "/heiligen/lambertus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2611,7 +2556,7 @@
       "Allowin"
     ],
     "titels": [],
-    "samenvatting": "Edelman die kluizenaar werd bij de abdij van Sint-Baafs te Gent.\nFeestdag 1 oktober.",
+    "samenvatting": "",
     "url": "/heiligen/bavo/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -2752,7 +2697,7 @@
     "titels": [
       "Patroonheilige van Lier"
     ],
-    "samenvatting": "Edelman en kluizenaar; stadspatroon van Lier. Feestdag 11 oktober.",
+    "samenvatting": "",
     "url": "/heiligen/gommar/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2770,6 +2715,44 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "herlindis",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Herlindis",
+    "alternatief": [
+      "Harlindis",
+      "Herlinde",
+      "Herlind",
+      "Harlinde",
+      "Herlindis van Aldeneik",
+      "Herlindis van Maaseik"
+    ],
+    "titels": [
+      "Abdis van Aldeneik"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/herlindis/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "betekenis_lage_landen": "Herlindis leidde het vrouwenklooster Aldeneik in het huidige Belgisch\nLimburg: prediking en kloosterleven aan de Maas, in de kring van\nWillibrord (die haar tot abdis wijdde) en later Bonifatius. Dat is werk\nin de Lage Landen vóór het schisma, geen latere cultus alleen.",
+    "locaties": [
+      "maaseik"
+    ],
+    "rustplaats": {
+      "plaats": "maaseik",
+      "toelichting": "Sint-Catharinakerk te Maaseik (relieken; graftraditie Aldeneik)"
+    },
+    "feestdatum": "10-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "oda-van-amay",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -2783,7 +2766,7 @@
     "titels": [
       "Stichteres van kerken"
     ],
-    "samenvatting": "Merovingische edelvrouw (Chrodoara); vereerd te Amay bij Hoei.\nFeestdag 23 oktober.",
+    "samenvatting": "",
     "url": "/heiligen/oda-van-amay/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2818,7 +2801,7 @@
     "titels": [
       "Kluizenares"
     ],
-    "samenvatting": "Kluizenares te Meldert (Brabant); weigerde huwelijk en leefde als\nheremiet. Feestdag 29 oktober.",
+    "samenvatting": "",
     "url": "/heiligen/ermelindis/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2852,7 +2835,7 @@
       "Martelaar",
       "Abt van Fosses"
     ],
-    "samenvatting": "Ierse monnik; leraar te Nijvel; abt van Fosses; vermoord in het\nKolenwoud. Feestdag 31 oktober.",
+    "samenvatting": "",
     "url": "/heiligen/foillan/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2882,7 +2865,7 @@
     "titels": [
       "Maagd van Balen"
     ],
-    "samenvatting": "Maagd uit Scheps bij Balen; begraven te Alem volgens de legende.\nFeestdag 5 november.",
+    "samenvatting": "",
     "url": "/heiligen/odrada/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2913,7 +2896,7 @@
     "titels": [
       "Abt van Wormhout"
     ],
-    "samenvatting": "Bretonse of Welshe monnik; prior/abt van Wormhout; cultus in\nWinoksbergen (Bergues). Feestdag 6 november.",
+    "samenvatting": "",
     "url": "/heiligen/winnocus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2944,7 +2927,7 @@
       "Apostel van de Friezen",
       "Aartsbisschop van Utrecht"
     ],
-    "samenvatting": "Angelsaksische missionaris; stichtte de zetel van Utrecht en predikte\nonder de Friezen. Feestdag 7 november.",
+    "samenvatting": "",
     "url": "/heiligen/willibrord/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -2983,7 +2966,7 @@
       "Missionaris",
       "Apostel van de IJsselstreek"
     ],
-    "samenvatting": "Angelsaksische priester; stichtte de kerk van Deventer. Feestdag\n12 november.",
+    "samenvatting": "",
     "url": "/heiligen/lebuinus/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3070,7 +3053,7 @@
     "titels": [
       "Abdis van Susteren"
     ],
-    "samenvatting": "Eerste abdis van het vrouwenklooster te Susteren; † omstreeks 900.\nFeestdag 21 (en 27) november.",
+    "samenvatting": "",
     "url": "/heiligen/amalberga-van-susteren/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3151,7 +3134,7 @@
       "Abt",
       "Stichter van de abdij van Sint-Truiden"
     ],
-    "samenvatting": "Frankische edelman uit Haspengouw; stichter van de abdij waaruit\nSint-Truiden groeide. Feestdag 23 november.",
+    "samenvatting": "",
     "url": "/heiligen/trudo/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3210,7 +3193,7 @@
     "titels": [
       "Bisschop van Noyon-Doornik"
     ],
-    "samenvatting": "Monnik van Luxeuil; bisschop van het samengevoegde bisdom Noyon-Doornik.\nBevorderde de christelijke missie in het huidige België. Feestdag 27 november.",
+    "samenvatting": "",
     "url": "/heiligen/acharius-van-doornik/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3238,7 +3221,7 @@
       "Oda van Brabant"
     ],
     "titels": [],
-    "samenvatting": "Schotse (of Ierse) kluizenares, vereerd in de Meierij (Sint-Oedenrode).\nFeestdag 28 november.",
+    "samenvatting": "",
     "url": "/heiligen/oda-van-de-peel/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -3267,7 +3250,7 @@
     "titels": [
       "Bisschop van Utrecht"
     ],
-    "samenvatting": "Bisschop van Utrecht (899–917); geleerde en hagiograaf. Feestdag\n29 november.",
+    "samenvatting": "",
     "url": "/heiligen/radboud/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -3301,7 +3284,7 @@
       "Bisschop van Noyon-Doornik",
       "Apostel van Vlaanderen"
     ],
-    "samenvatting": "Edelsmid en raadsman van Dagobert; bisschop van Noyon-Doornik;\nmissie in Vlaanderen. Feestdag 1 december.",
+    "samenvatting": "",
     "url": "/heiligen/eligius/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3336,7 +3319,7 @@
     "titels": [
       "Bisschop van Terwaan"
     ],
-    "samenvatting": "Bisschop van Terwaan (vanaf 816/817); verbonden met Sint-Bertinus.\nOverleden te Ekelsbeke. Feestdag 14 december.",
+    "samenvatting": "",
     "url": "/heiligen/folciunus/",
     "lage_landen": true,
     "bronlaag": "encyclopedie",
@@ -3368,7 +3351,7 @@
     "titels": [
       "Bisschop van Atrecht en Kamerijk"
     ],
-    "samenvatting": "Bisschop van Atrecht-Kamerijk; stichter van kloosters in de regio\n(onder meer Sint-Vaast, Lobbes). Feestdag in Gent 15 december.",
+    "samenvatting": "",
     "url": "/heiligen/aubertus-van-kamerijk/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3399,7 +3382,7 @@
     "titels": [
       "Abdis van Andenne"
     ],
-    "samenvatting": "Dochter van Iduberga en Pepijn van Landen; stichtte het klooster van\nAndenne. Feestdag 17 december.",
+    "samenvatting": "",
     "url": "/heiligen/begga/",
     "lage_landen": true,
     "bronlaag": "nagekeken",
@@ -3418,36 +3401,6 @@
       "toelichting": "Abdij van Andenne"
     },
     "feestdatum": "12-17",
-    "feestdatum_juliaans": null,
-    "feestdatum_gregoriaans": null
-  },
-  {
-    "id": "winnibald",
-    "soort": "heilige",
-    "cyclus": "jaar",
-    "vorm": "dag",
-    "naam": "Winnibald",
-    "alternatief": [
-      "Wunibald",
-      "Winebald"
-    ],
-    "titels": [
-      "Abt van Heidenheim"
-    ],
-    "samenvatting": "Angelsaksische abt van Heidenheim; broer van Willibald en Walburga.\nFeestdag 18 december.",
-    "url": "/heiligen/winnibald/",
-    "lage_landen": true,
-    "bronlaag": "nagekeken",
-    "observances": [
-      "heilige"
-    ],
-    "onderdrukt_wekelijks_vasten": false,
-    "icoon": "iconen/winnibald.jpg",
-    "betekenis_lage_landen": "Winnibald (Wunibald) werkte onder Bonifatius in Thüringen, Beieren en\nMainz en stichtte Heidenheim in het bisdom Eichstätt. Er is geen\naantoonbaar missiewerk in de Lage Landen; de band loopt vooral via de\nBonifatius-familie (Engeland/Germanië).",
-    "locaties": [
-      "heidenheim"
-    ],
-    "feestdatum": "12-18",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -3488,7 +3441,7 @@
     "titels": [
       "Bisschop van Utrecht"
     ],
-    "samenvatting": "Bisschop van Utrecht (ca. 854–866) tijdens Noormanneninvallen.\nFeestdag 22 december.",
+    "samenvatting": "",
     "url": "/heiligen/hunger-van-utrecht/",
     "lage_landen": true,
     "bronlaag": "nagekeken",

@@ -138,6 +138,14 @@
     "streek": "vlaanderen"
   },
   {
+    "id": "fulda",
+    "naam": "Fulda",
+    "alternatief": [],
+    "lat": 50.555,
+    "lon": 9.675,
+    "soort": "plaats"
+  },
+  {
     "id": "echternach",
     "naam": "Echternach",
     "alternatief": [],
@@ -272,6 +280,17 @@
     ],
     "lat": 50.633,
     "lon": 5.567,
+    "soort": "plaats"
+  },
+  {
+    "id": "maaseik",
+    "naam": "Maaseik",
+    "alternatief": [
+      "Aldeneik",
+      "Aldeneyk"
+    ],
+    "lat": 51.098,
+    "lon": 5.793,
     "soort": "plaats"
   },
   {
@@ -420,6 +439,14 @@
     "lon": 5.359,
     "soort": "plaats",
     "streek": "frisia"
+  },
+  {
+    "id": "tauberbischofsheim",
+    "naam": "Tauberbischofsheim",
+    "alternatief": [],
+    "lat": 49.622,
+    "lon": 9.663,
+    "soort": "plaats"
   },
   {
     "id": "susteren",
