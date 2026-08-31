@@ -1307,7 +1307,9 @@
         `<p><strong>Lijst</strong> toont de namen in een tabel. De kaart van ` +
         `plaatsen zit dan achter de balk onder het zoeken.</p>` +
         `<p><strong>Kaart</strong> zet die plaatsen groot in beeld ` +
-        `(Nederland en België). Een klik op een marker zoekt op die plaats; ` +
+        `(Nederland en België). Steden en dorpen zijn blauwe spelden; ` +
+        `streken (Friesland, Vlaanderen) een gouden cirkel. Een klik op een ` +
+        `streek markeert het gebied. Een klik op een marker zoekt daarop; ` +
         `de lijst blijft eronder staan.</p>`;
       if (meer) meer.hidden = true;
       return;
