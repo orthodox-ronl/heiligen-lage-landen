@@ -173,11 +173,11 @@
 
   function streekStyle(selected) {
     return {
-      radius: selected ? 11 : 8,
+      radius: selected ? 14 : 12,
       color: STREEK_RAND,
       weight: selected ? 3 : 2,
       fillColor: STREEK_KLEUR,
-      fillOpacity: selected ? 1 : 0.92,
+      fillOpacity: selected ? 1 : 0.95,
       className: "kaart-streek-punt",
     };
   }
@@ -188,7 +188,7 @@
       weight: 2,
       dashArray: "7 5",
       fillColor: STREEK_KLEUR,
-      fillOpacity: 0.22,
+      fillOpacity: 0.4,
       className: "kaart-streek-vlak",
       interactive: true,
     };
@@ -202,7 +202,7 @@
     const hull = convexHull(pts);
     let layer;
     if (hull.length >= 3) {
-      layer = L.polygon(padLatLngs(hull, 1.22), vlakStyle());
+      layer = L.polygon(padLatLngs(hull, 1.28), vlakStyle());
     } else {
       const center = pts.length
         ? L.latLngBounds(pts).getCenter()
