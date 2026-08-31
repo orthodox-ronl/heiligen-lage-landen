@@ -1228,10 +1228,10 @@
       bodyEl.innerHTML = popoverListHtml(items);
     } else {
       bodyEl.innerHTML =
-        `<p class="muted day-popover-empty">Geen feesten of heiligen van de Lage Landen op deze dag. ` +
+        `<p class="muted day-popover-empty">Geen feesten of heiligen. ` +
         achtergrondLink(
           "heiligen",
-          "Waarom niet iedere heilige hier staat"
+          "(uitleg)"
         ) +
         `</p>`;
     }
