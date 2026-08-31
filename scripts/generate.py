@@ -1402,6 +1402,11 @@ ACHTERGROND_TOPICS: list[dict[str, str]] = [
         "description": "Wat de kleuren op de jaarkalender betekenen",
     },
     {
+        "id": "jaarkalender",
+        "title": "Jaarkalender",
+        "description": "Het burgerlijke jaar in maanden: kleuren, Nieuw/Oud, en de weg naar de dag",
+    },
+    {
         "id": "vasten",
         "title": "Vasten",
         "description": "Waar onze vastenregels vandaan komen, en wat de kalender toont",

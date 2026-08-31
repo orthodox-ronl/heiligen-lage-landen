@@ -13,7 +13,10 @@ heiligenoverzicht heeft een eigen nav-item).
 ## Titel en inleiding
 
 **Wel:** korte aanduiding (vaste feesten van jaar- en paascyclus;
-vastenperiodes en wekelijkse vastendagen).
+vastenperiodes en wekelijkse vastendagen). De paginatitel is een
+info-term, zonder kop in de popover: korte samenvatting van de lijst,
+afgesloten met ([meer uitleg]({{% ref "/uitleg/feesten" %}})) respectievelijk
+([meer uitleg]({{% ref "/uitleg/vasten" %}})).
 
 **Niet:** de volledige clerus-uitleg; selectie van heiligen.
 

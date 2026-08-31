@@ -2448,6 +2448,15 @@ button.button {
   font-size: 1.05rem;
 }
 
+.info-popover h2[hidden] {
+  display: none !important;
+  margin: 0;
+}
+
+.info-popover:has(h2[hidden]) #info-popover-body > p:first-child {
+  margin-top: 0;
+}
+
 .info-popover p {
   margin: 0.45rem 0 0;
   font-size: 0.92rem;

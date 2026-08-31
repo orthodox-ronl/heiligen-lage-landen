@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="section-list">
+  <div class="list-sticky-head">
+    <h1><span class="info-term" tabindex="0" data-info-tip="pagina-vasten">{{ .Title }}</span></h1>
+  </div>
+  {{ .Content }}
+  <ul class="entry-list">
+    {{ range sort .Pages "Params.overzicht_sortering" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ if .Params.feestdatum }}
+          <span class="meta">
+            {{ if .Params.vierdatum_oud }}
+              {{ partial "feestdatum-kort.html" .Params.feestdatum }}
+              {{ partial "vierdatum-oud.html" .Params.vierdatum_oud }}
+            {{ else }}
+              {{ partial "vierdatum-gelijk.html" (partial "feestdatum-kort.html" .Params.feestdatum) }}
+            {{ end }}
+          </span>
+        {{ else if and .Params.van .Params.tot }}
+          <span class="meta">
+            {{ partial "feestdatum-kort.html" .Params.van }}{{- with .Params.van_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+            – {{ partial "feestdatum-kort.html" .Params.tot }}{{- with .Params.tot_oud }} {{ partial "vierdatum-oud.html" . }}{{ end }}
+          </span>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

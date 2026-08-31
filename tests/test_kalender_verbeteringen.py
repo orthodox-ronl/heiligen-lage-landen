@@ -115,6 +115,39 @@ def test_jaarkalender_titel_heeft_agenda_popup() -> None:
     js = JS.read_text(encoding="utf-8")
     assert 'kind === "jaarkalender"' in js
     assert 'assetUrl("agenda/")' in js
+    assert 'meerUitlegHtml("jaarkalender")' in js
+    assert "Kalender op telefoon of tablet" not in js
+
+
+def test_overzicht_titels_hebben_pagina_popover() -> None:
+    layouts = {
+        "pagina-feesten": ROOT / "site" / "layouts" / "feesten" / "list.html",
+        "pagina-vasten": ROOT / "site" / "layouts" / "vasten" / "list.html",
+        "pagina-synaxarion": ROOT
+        / "site"
+        / "layouts"
+        / "_default"
+        / "synaxarion.html",
+        "pagina-lezingenrooster": ROOT
+        / "site"
+        / "layouts"
+        / "_default"
+        / "lezingenrooster.html",
+    }
+    js = JS.read_text(encoding="utf-8")
+    uitleg = {
+        "pagina-feesten": "feesten",
+        "pagina-vasten": "vasten",
+        "pagina-synaxarion": "synaxarion",
+        "pagina-lezingenrooster": "lezingen",
+    }
+    for tip, path in layouts.items():
+        html = path.read_text(encoding="utf-8")
+        assert f'data-info-tip="{tip}"' in html, path.name
+        assert f'kind === "{tip}"' in js
+        assert f'meerUitlegHtml("{uitleg[tip]}")' in js
+    assert "function setPaginaTitelTrigger" in js
+    assert 'heading.textContent = "Synaxarion"' not in js
 
 
 def test_statische_synaxarion_lijst_en_js_fallback() -> None:

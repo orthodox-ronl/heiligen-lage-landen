@@ -12,6 +12,9 @@ en van hun betekenis voor de Orthodoxie. Het gaat hier om heiligen van:
 2. na het schisma, die in de Orthodoxe Kerk worden vereerd én hebben bijgedragen
    aan de Orthodoxie in Nederland of België.
 
+Dit is **geen** volledig menologion, **geen** typikon en **geen** liturgisch
+boek: de nadruk ligt op die heiligen en op een praktisch hulpmiddel.
+
 De bedoeling is om deze heiligen weer wat bekender te maken. Dat doen we door 
 in het kort over hun leven te verhalen en de betekenis die zij hebben gehad, om
 vervolgens door te verwijzen naar bronnen die dat allemaal veel uitvoeriger doen.
@@ -23,18 +26,19 @@ nut bewijst. Daartoe is dit overzicht aangevuld met:
   alleen aangeeft welke Heilige(n) van de Lage Landen dan worden herdacht,
   maar ook wat de dagelijkse lezingen zijn, de toepasselijke vastenregel, en meer.
   De gebruiker kan ook kiezen of de 'nieuwe' (Gregoriaanse) of de 'oude' (Juliaanse)
-  kalender moet worden getoond. [(Meer uitleg)]({{% ref "uitleg/jaarkalender" %}})
+  kalender moet worden getoond. [(Meer uitleg)]({{% ref "/uitleg/jaarkalender" %}})
 - de mogelijkheid eze kalender [beschikbaar te maken op uw telefoon of tablet]({{% ref "/agenda" %}}),
   waarbij u kunt kiezen wat u daarin wilt zien, en of het de oude of nieuwe 
-  kalender betreft. [(Meer uitleg)]({{% ref "uitleg/agenda" %}})
+  kalender betreft. [(Meer uitleg)]({{% ref "/uitleg/agenda" %}})
 - een aantal (sorteerbare) overzichten van de grote vaste [feesten]({{% ref "/feesten" %}})
   van zowel de jaarcyclus als de paascyclus. [(Meer uitleg)]({{% ref "uitleg/feesten" %}})
 - een [synaxarion]({{% ref "/synaxarion" %}}), d.w.z. een lijst waarin zowel de grote vaste feesten
   en gedenkdagen van de heiligen van de Lage Landen voorkomen, die op verschillende manieren kan
   worden getoond en gesorteerd. [(Meer uitleg)]({{% ref "uitleg/synaxarion" %}})
 - het [lezingenrooster]({{% ref "/lezingenrooster" %}}), met daarin voor elke dag de Apostel
-  en het Evangelie van die dag. [(Meer uitleg)]({{% ref "uitleg/lezingenrooster" %}})
+  en het Evangelie van die dag. [(Meer uitleg)]({{% ref "/uitleg/lezingen" %}})
 - een overzicht van de verschillende [vastendagen en periodes]({{% ref "/vasten" %}}).
+  [(Meer uitleg)]({{% ref "/uitleg/vasten" %}})
 
 Omdat er nogal wat bronnen zijn die onderling niet allemaal consistent zijn,
 zijn de keuzes die we hebben gemaakt steeds gedocumenteerd, niet alleen in de verschillende

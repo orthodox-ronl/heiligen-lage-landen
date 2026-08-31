@@ -16,9 +16,14 @@ pagina-header (zie hieronder), ook tijdens scrollen.
 
 ## Titel
 
-**Wel:** de sitenaam **Jaarkalender** als info-term: popover legt uit
-dat u de kalender op telefoon of tablet kunt zetten, met link naar
+**Wel:** de sitenaam **Jaarkalender** als info-term, zonder kop in de
+popover. Eerst een korte samenvatting van het raster (kleuren, klik naar
+de datumpagina, Nieuw/Oud), afgesloten met
+([meer uitleg]({{% ref "/uitleg/jaarkalender" %}})); daaronder dat u de
+kalender op telefoon of tablet kunt zetten, met link naar
 [Agenda]({{% ref "/agenda" %}}). Agenda staat niet in de hoofdnavigatie.
+
+**Niet:** een kop in de popover die de paginatitel herhaalt.
 
 ## Sticky header
 

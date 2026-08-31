@@ -97,6 +97,33 @@
     );
   }
 
+  function meerUitlegHtml(id) {
+    return `(${achtergrondLink(id, "meer uitleg")})`;
+  }
+
+  function setPaginaTitelTrigger(heading, tip, text) {
+    if (!heading) return;
+    heading.innerHTML =
+      `<span class="info-term" tabindex="0" data-info-tip="${escapeHtml(tip)}">` +
+      `${escapeHtml(text)}</span>`;
+    wireInfoTips(heading);
+  }
+
+  function setPopoverTitleVisible(title, dlg, visible, heading) {
+    if (title) {
+      title.hidden = !visible;
+      title.textContent = visible ? heading || "" : "";
+    }
+    if (!dlg) return;
+    if (visible) {
+      dlg.setAttribute("aria-labelledby", "info-popover-title");
+      dlg.removeAttribute("aria-label");
+    } else {
+      dlg.removeAttribute("aria-labelledby");
+      dlg.setAttribute("aria-label", "Uitleg");
+    }
+  }
+
   function getStyle() {
     const params = new URLSearchParams(window.location.search);
     const fromQuery = params.get("stijl");
@@ -1241,7 +1268,9 @@
     const body = document.getElementById("info-popover-body");
     const title = document.getElementById("info-popover-title");
     const meer = document.getElementById("info-popover-meer");
+    const dlg = document.getElementById("info-popover");
     if (!body || !title) return;
+    setPopoverTitleVisible(title, dlg, true, "Info");
     const kind = (trigger && trigger.dataset.infoTip) || "nav";
     if (kind === "kalender-dag") {
       fillKalenderDagPopover(
@@ -1351,14 +1380,72 @@
       return;
     }
     if (kind === "jaarkalender") {
-      title.textContent = "Kalender op telefoon of tablet";
+      setPopoverTitleVisible(title, dlg, false);
       body.innerHTML =
+        `<p>De jaarkalender is het burgerlijke jaar, maand voor maand. ` +
+        `De kleur van een dag zegt wat voor soort dag het is: feest, ` +
+        `heilige, vasten of vastenvrij. Een klik opent de datumpagina. ` +
+        `Met Nieuw of Oud kiest u of vaste feesten op de nieuwe of de ` +
+        `oude kalender vallen. ${meerUitlegHtml("jaarkalender")}</p>` +
         `<p>U kunt deze jaarkalender ook in de agenda-app van uw telefoon ` +
-        `of tablet zetten. Die blijft dan vanzelf bijgewerkt.</p>`;
+        `of tablet zetten. Die blijft dan vanzelf bijgewerkt. Dat doet u ` +
+        `via de pagina <a class="text-link" href="${assetUrl("agenda/")}">` +
+        `Agenda</a>.</p>`;
       if (meer) {
-        meer.hidden = false;
-        meer.innerHTML =
-          `<a class="text-link" href="${assetUrl("agenda/")}">Naar Agenda</a>`;
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "pagina-feesten") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Deze pagina is een lijst van de grote vaste feesten van de ` +
+        `jaar- en paascyclus. Bij Rangschikking kiest u de volgorde: ` +
+        `kerkelijk jaar (standaard), januari tot december, naar rang, of ` +
+        `op naam. ${meerUitlegHtml("feesten")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "pagina-vasten") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Deze pagina somt de vastenperiodes en de wekelijkse ` +
+        `vastendagen op, met hun data. Elke naam opent de pagina van die ` +
+        `periode of dag. ${meerUitlegHtml("vasten")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "pagina-synaxarion") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Het Synaxarion toont wat altijd op dezelfde feestdatum hoort: ` +
+        `heiligen van de Lage Landen, vaste feesten en vaste vasten. U ` +
+        `bladert per maand of op alfabet, en kunt zoeken op naam. Wat van ` +
+        `Pascha afhangt, hoort op de datumpagina van een bepaald jaar. ` +
+        `${meerUitlegHtml("synaxarion")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "pagina-lezingenrooster") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Het lezingenrooster toont voor elke dag de Apostel en het ` +
+        `Evangelie over een langere periode, met dezelfde verwijzingen ` +
+        `als op de datumpagina. Dagen zonder liturgie van dit type staan ` +
+        `als korte status. ${meerUitlegHtml("lezingen")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
       }
       return;
     }
@@ -3147,7 +3234,7 @@
     if (dayEntries) dayEntries.hidden = true;
     if (browse) browse.hidden = false;
     if (browseHead) browseHead.hidden = false;
-    if (heading) heading.textContent = "Synaxarion";
+    if (heading) setPaginaTitelTrigger(heading, "pagina-synaxarion", "Synaxarion");
     wireWeergavePanel("synaxarion");
     updateSynaxarionWeergaveSummary();
 

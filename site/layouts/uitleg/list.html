@@ -3,11 +3,11 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ $all := .Pages }}
-  {{ $bekend := slice "datumpagina" "toon" "lezingen" "vasten" "heiligen" "nieuw-oud" "feestdatum" "synaxarion" "feesten" "kleuren" "agenda" "reactie" }}
+  {{ $bekend := slice "datumpagina" "toon" "lezingen" "vasten" "heiligen" "jaarkalender" "nieuw-oud" "feestdatum" "synaxarion" "feesten" "kleuren" "agenda" "reactie" }}
   {{ $groepen := slice
     (dict "titel" "Op één dag" "slugs" (slice "datumpagina" "toon" "lezingen" "vasten"))
     (dict "titel" "Heiligen van hier" "slugs" (slice "heiligen"))
-    (dict "titel" "Kalender gebruiken" "slugs" (slice "nieuw-oud" "feestdatum" "synaxarion" "feesten" "kleuren" "agenda"))
+    (dict "titel" "Kalender gebruiken" "slugs" (slice "jaarkalender" "nieuw-oud" "feestdatum" "synaxarion" "feesten" "kleuren" "agenda"))
     (dict "titel" "Reageren" "slugs" (slice "reactie"))
   }}
   <div class="uitleg-groepen">

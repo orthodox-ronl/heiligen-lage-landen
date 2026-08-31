@@ -23,8 +23,10 @@ pagina-header (zie hieronder), ook tijdens scrollen.
 
 ## Titel
 
-**Wel:** de naam Synaxarion; geen tweede ondertitel die het tot
-menaion maakt.
+**Wel:** de naam Synaxarion als info-term, zonder kop in de popover:
+korte samenvatting (vaste jaarcyclus, bladeren, zoeken), afgesloten met
+([meer uitleg]({{% ref "/uitleg/synaxarion" %}})). Geen tweede ondertitel
+die het tot menaion maakt.
 
 **Niet:** hymnen, diensten, typikon-rubrieken.
 

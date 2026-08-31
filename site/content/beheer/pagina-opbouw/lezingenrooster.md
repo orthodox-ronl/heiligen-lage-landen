@@ -14,6 +14,12 @@ URL: `/lezingenrooster/`. Bron: handmatig
 **Wel:** de sitenavbar blijft altijd zichtbaar. Daaronder de
 pagina-header (zie hieronder), ook tijdens scrollen.
 
+## Titel
+
+**Wel:** de naam Lezingenrooster als info-term, zonder kop in de popover:
+korte samenvatting (Apostel en Evangelie over een periode), afgesloten
+met ([meer uitleg]({{% ref "/uitleg/lezingen" %}})).
+
 ## Sticky header
 
 **Wel:** maandnavigatie `‹ {maand jjjj} ›`; Nieuw/Oud; knop Weergave.

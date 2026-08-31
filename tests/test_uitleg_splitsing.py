@@ -23,6 +23,7 @@ HANDMATIGE_ONDERWERPEN = (
     "feesten",
     "heiligen",
     "kleuren",
+    "jaarkalender",
     "agenda",
     "toon",
 )
@@ -229,6 +230,7 @@ def test_uitleg_overzicht_groepeert_onderwerpen() -> None:
         "synaxarion",
         "feesten",
         "kleuren",
+        "jaarkalender",
         "agenda",
         "reactie",
     ):
