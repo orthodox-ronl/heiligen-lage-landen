@@ -371,7 +371,8 @@ rustplaats:
 zoeken; een marker alleen als een heilige die streek-id zelf in
 `locaties` heeft. Op een heilige: liever concrete plaatsen; streek-ids
 alleen als aanvulling of bij gebrek aan een betere plek. Optioneel
-`streek:` op een plaats koppelt zoeken («Vlaanderen» vindt Drongen).
+`streek:` op een plaats koppelt zoeken («Vlaanderen» vindt Drongen)
+en het kaartvlak van die streek (geen bestuurlijke grens).
 Geen relieken- of bedevaartenlijst.
 
 ## Icoon

@@ -13,8 +13,9 @@ een heiligenpagina kunt verwachten, en waarom een dag soms **geen heilige** toon
 Het [overzicht van heiligen]({{% ref "/heiligen" %}}) is de ingang op
 **persoon** (zoeken, belang, verhaal, datum). U kunt daar ook zoeken op
 plaats of streek — Utrecht, Vlaanderen, Friesland — en de plaatsen op een kaart
-zien. Streken staan cursief in de lijst, zodat u ze van steden en dorpen
-kunt onderscheiden. In het [Synaxarion]({{% ref "/uitleg/synaxarion" %}}) 
+zien. Streken staan cursief in de lijst. Op de kaart zijn het gouden cirkels;
+een klik markeert het gebied, zodat u ze van steden en dorpen kunt
+onderscheiden. In het [Synaxarion]({{% ref "/uitleg/synaxarion" %}}) 
 zit een overzicht van heiligen op **datum**.
 
 ## Wie staat erin?

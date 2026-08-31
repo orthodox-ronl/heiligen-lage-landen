@@ -129,7 +129,9 @@ concrete plaatsen; streek-ids alleen als aanvulling of bij gebrek aan
 een betere plek. Relieken en bedevaarten horen niet in dit veld.
 
 `generate.py` schrijft `site/static/data/plaatsen.json` en zet
-plaatsnamen plus zoektekst op de heiligenpagina.
+plaatsnamen plus zoektekst op de heiligenpagina. Op de kaart is een streek
+een gouden cirkel (geen speld); selectie tekent een vlak over de plaatsen
+met `streek:` naar die id — geen provinciegrens.
 
 ## Icoon
 

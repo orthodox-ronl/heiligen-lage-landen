@@ -1005,8 +1005,10 @@ def write_generated_indexes(
         [
             "U kunt zoeken op naam — ook op een andere naam van dezelfde "
             "heilige — of op plaats, bijvoorbeeld Utrecht, Vlaanderen of "
-            "Friesland. De kaart toont die plaatsen. Streken staan cursief, "
-            "zodat u ze van steden en dorpen kunt onderscheiden.",
+            "Friesland. De kaart toont steden en dorpen als spelden en "
+            "streken als een gouden cirkel; een klik op de streek markeert "
+            "het gebied. Streken staan cursief in de lijst, zodat u ze van "
+            "steden en dorpen kunt onderscheiden.",
             "",
             "</details>",
             "",
