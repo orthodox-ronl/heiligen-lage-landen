@@ -1,0 +1,35 @@
+---
+description: Interne links naar heiligen, feesten, vasten en uitleg — YAML vs handmatige markdown
+alwaysApply: true
+---
+
+# Interne links
+
+Twee lagen. Geen tweede autolink over alle markdown. Pagina verzinnen = geen link.
+
+## YAML (`data/`) — bron voor generate
+
+In `verhaal`, `betekenis`, `samenvatting`, `betekenis_lage_landen`, `over_bronnen`:
+canonieke naam (`namen.primair` / `alternatief`), **geen** markdown-URL.
+`generate.py` (`link_internal_entries`) zet links naar `/heiligen/<id>/` en
+`/feesten/<id>/`.
+
+Uitzondering — harde `[label](/pad/)` alleen als de zichtbare tekst **niet**
+de catalogusnaam is (korte «teruggave», vasten, sectie `/heiligen/`).
+
+Niet redigeren: `site/content/heiligen|feesten|vasten/` (afdruk).
+
+## Handmatige pagina’s (`site/content/uitleg/`, `beheer/`)
+
+Als de zin **naar die entiteit wijst** (voorbeeld, grensgeval, «zie dit feest»),
+link met Hugo `ref`. Id = YAML-bestandsnaam.
+
+```markdown
+[heiligen van de Lage Landen]({{% ref "/feesten/zondag-heiligen-lage-landen" %}})
+[Willibrord]({{% ref "/heiligen/willibrord" %}})
+```
+
+Pad: `/heiligen/<id>`, `/feesten/<id>`, `/vasten/<id>`, of een bestaande uitleg-URL.
+
+Niet linken: louter illustratie (datumtabel, naamvoorbeeld «Lebuinus en Lubuinus»);
+iemand zonder pagina; overzicht/kalender/Synaxarion (die hebben al id→URL).

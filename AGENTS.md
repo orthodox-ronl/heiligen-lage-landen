@@ -36,4 +36,5 @@ icoon
 - Site: `site/` (Hugo)
 - Uitleg: `site/content/uitleg/` (gebruikers) + `*-technisch.md` (niet in het overzicht)
 - Beheerders: `site/content/beheer/`
+- Interne links: YAML platte namen (generate autolinkt); uitleg/beheer `{{% ref %}}` als de zin naar de pagina wijst — `.cursor/rules/interne-links.mdc`
 - CI: `.github/workflows/pages.yml` (main → prod, andere branch → `/preview/`)
