@@ -70,6 +70,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/saint-pharaildis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Pharaïldis (Veerle) is een Gentse heilige van de achtste eeuw:\nmaagd, met een sterke lokale cultus in Vlaanderen. De traditie maakt\nhaar tot zuster van Gudula.",
     "locaties": [
       "gent"
@@ -256,6 +257,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gudula-van-brussel.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Goedele/Gudula is de stadsheilige van Brussel: haar relieken kwamen via\nMoorsel naar de burchtkapel en in 1047 naar de Michaelskerk, sindsdien\nSint-Michiel en Sint-Goedele. Opvoeding in Nijvel (Gertrudis) en leven\nrond Moorsel/Hamme verbinden haar met de Pippiniden-kloostercultuur van\nBrabant.",
     "locaties": [
       "brussel"
@@ -309,6 +311,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/poppo-von-stablo-3.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Poppo werd te Deinze geboren en was abt van Stavelot-Malmedy\n(België). Hij hervormde kloosters in Lotharingen. Hij stierf in 1048,\nvóór het schisma, te Marchiennes (nu Frankrijk); het werk in Stavelot\nis de opnamegrond.",
     "locaties": [
       "stavelot",
@@ -341,6 +344,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Adelgondis is een lokale Gentse/Vlaamse heilige: haar verhaal speelt in\nDrongen aan de Leie, in de tijd van Amandus’ prediking. Glasramen in de\nSint-Gerulfuskerk houden de cultus levend. Niet te verwarren met\nAldegonda van Maubeuge.",
     "locaties": [
       "drongen"
@@ -374,6 +378,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/adelgonda.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Adelgonda (Aldegonda) behoort tot de Merovingische heiligenfamilie van\nHenegouwen (ouders Walbertus en Bertilia; zuster Waltrudis). Maubeuge lag\nin historisch Henegouwen, nu in Frankrijk; relieken en patroonaten leven\nwel in Vlaanderen voort (onder meer Alken en As). Of dat genoeg is voor\nvaste selectie, vraagt nader onderzoek.",
     "locaties": [
       "maubeuge"
@@ -455,6 +460,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/berlindis-van-meerbeke-berlindiskapel-meerbeke.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Berlindis wordt vereerd te Meerbeke (Vlaanderen). De Vlaamse\nkalender zet haar op 3 februari; GCatholic geeft sterfjaar 940. In\nbeide lezingen is het pre-schisma en in huidig België.",
     "locaties": [
       "meerbeke"
@@ -485,6 +491,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/vis-glise-saint-martin-ch-sse-de-saint-hadelin-01.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Hadelinus stichtte of bestuurde het klooster Celles bij Dinant\n(België). Relieken en cultus te Wezet (Visé).",
     "locaties": [
       "celles",
@@ -541,6 +548,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Agricolaus staat op de traditionele Maastrichter bisschoppenlijst als\nopvolger van Servatius. De band met Maastricht is liturgisch en\ngenealogisch; historisch is over hem niets met zekerheid bekend.",
     "locaties": [
       "maastricht"
@@ -575,6 +583,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/amandus-van-maastricht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Amandus is een van de centrale Merovingische missionarissen van de\nLage Landen: Gent (Sint-Pieters, Sint-Baafs), Elno (Saint-Amand-les-\nEaux bij Doornik) en enkele jaren de Maastrichter zetel. Zijn werk\nvormde de kerkelijke kaart van Vlaanderen en het Maasland vóór de\nAngelsaksische missie.",
     "locaties": [
       "maastricht",
@@ -610,6 +619,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/kapel-harlindis-en-relindis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Relindis leidde Aldeneik na haar zuster Herlindis. Het klooster lag in\nhet huidige Belgisch Limburg. De overlevering laat Bonifatius haar tot\nabdis wijden. Dat is bestuur van een klooster in de Lage Landen vóór\nhet schisma.",
     "locaties": [
       "maaseik"
@@ -667,6 +677,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/st-eleutherius-of-tournai-baptizing-converts-detail-workshop-of-arnold-of-nijmegen-flemish-c-1500-1525-nelson-atkins-museum-of-art-dsc08491.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Eleutherius was bisschop van Doornik (huidig België) in de vroege\nzesde eeuw. Dat is kerkbestuur in de zuidelijke Lage Landen, ruim vóór\nhet schisma.",
     "locaties": [
       "doornik"
@@ -701,11 +712,43 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Eucherius was bisschop van Orléans. Of zijn laatste jaren in de\nLage Landen kerkelijk werk waren, is de open vraag.",
     "locaties": [
       "sint-truiden"
     ],
     "feestdatum": "02-20",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "walburga",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Walburga",
+    "alternatief": [
+      "Walburgis",
+      "Walpurga"
+    ],
+    "titels": [
+      "Abdis van Heidenheim"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/walburga/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/walburga.jpg",
+    "selectie": "kandidaat-schrappen",
+    "betekenis_lage_landen": "Walburga werkte in Germanië (Heidenheim/Eichstätt), niet in de Lage\nLanden. Wel is er middeleeuwse en latere cultus (onder meer Antwerpen,\nOudenaarde, Veurne, Zutphen, Groningen, Netterden).",
+    "locaties": [
+      "heidenheim"
+    ],
+    "feestdatum": "02-25",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -734,6 +777,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/swidbert.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Swidbert (Suitbertus) behoorde tot de elf missionarissen die in 690 met\nWillibrord naar Friesland kwamen. Hij werd tot missiebisschop gewijd,\nwerkte onder meer bij de Bructeren, en stichtte met steun van Pepijn en\nPlectrudis het klooster op de Rijn-eilandjes dat Kaiserswerth werd. Zijn\nFriese start verbindt hem met de Utrechtse missiekring, ook al ligt zijn\ngrafklooster aan de Nederrijn.",
     "locaties": [
       "kaiserswerth",
@@ -769,6 +813,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/kunigunde.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Cunegonde is in Luxemburg geboren en in Bamberg werkzaam geweest.\nOf geboorte in LU volstaat, is de open vraag.",
     "locaties": [
       "bamberg"
@@ -802,12 +847,44 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Albericus maakte van Utrecht een gevestigd bisdom na de missietijd van\nWillibrord en Gregorius. Hij steunde Ludgers werk in Friesland en wordt\ntraditioneel in Susteren begraven — kernfiguur van de Utrechtse kerk in\nde Lage Landen.",
     "locaties": [
       "utrecht",
       "susteren"
     ],
     "feestdatum": "03-04",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "fridolin",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Fridolin",
+    "alternatief": [
+      "Fridolin van Säckingen",
+      "Fridolin von Säckingen"
+    ],
+    "titels": [
+      "Abt, verlichter van de Boven-Rijn"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/fridolin/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/fridolin.jpg",
+    "selectie": "kandidaat-schrappen",
+    "betekenis_lage_landen": "Fridolin hoort in oudere catalogi van «heiligen van de Lage Landen», maar\nzijn werk lag aan de Boven-Rijn (Säckingen, Glarus, Elzas). Er is geen\naantoonbare missie of cultuskern in het huidige NL/BE/LUX.",
+    "locaties": [
+      "saeckingen"
+    ],
+    "feestdatum": "03-06",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -834,6 +911,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gertrudis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gertrudis maakte Nijvel tot het huis-klooster van de Pippiniden: onderwijs\nvoor meisjes, boeken uit Rome, banden met het columbaanse monnikendom.\nHaar moeder Iduberga stichtte Nijvel; Gertrudis leidde het na 652. Uit\nNijvel gingen nonnen naar Andenne (Begga). De vita van circa 680 is vroeg\ngenoeg om haar als historische abdis van Brabant te lezen, niet als late\nlegende.",
     "locaties": [
       "nijvel"
@@ -870,6 +948,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/wintershoven-sint-lambertusbron-13.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Landoaldus predikte in de Haspengouw, stichtte een kerk te\nWintershoven (Belgisch Limburg) en was volgens de traditie leermeester\nvan Lambertus. Floribert verhief zijn relieken. Dat is missie en\nkerkstichting in huidig België, zevende eeuw.",
     "locaties": [
       "wintershoven",
@@ -903,6 +982,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/wulfram.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Wulfram predikte in Friesland na de Frankische herovering van het\nUtrechtse rivierengebied (na 695). Hij meldde zich bij Willibrord en\nwerkte vooral rond Medemblik, aan het hof van Radboud. De bekende\ndooplegende — Radboud die afziet omdat hij zijn voorouders niet wil\nmissen — en verhalen over redding van offerkinderen horen bij die\nFriese missie. Zo staat hij naast Willibrord in de kerstening van\nFriesland, ook al stierf hij te Fontenelle.",
     "locaties": [
       "frisia"
@@ -984,6 +1064,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ludger.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ludger (Liudger) werd rond 742 bij Utrecht geboren en volgde onderwijs\nonder Gregorius van Utrecht. Hij predikte in Friesland (onder meer na de\ndood van Bonifatius), stichtte kloosters en werd in 805 eerste bisschop\nvan Münster. Zijn Friese wortels en missiewerk verbinden de Utrechtse\nschool met de kerstening van het noorden; daarom hoort hij in deze\nkalender, ook al lag zijn bisschopszetel in Westfalen.",
     "locaties": [
       "utrecht",
@@ -1042,6 +1123,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/woutruide.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Woutruide (Waudru/Waldetrudis) is de stadsheilige van Bergen: haar\nklooster op de heuvel Castrilocus werd de kern van Mons. Samen met\nzuster Aldegonda (Maubeuge) en echtgenoot Vincentius Madelgarius\n(Hautmont) hoort zij bij de Merovingische heiligenfamilie van\nHenegouwen — een wortel van het christendom in de zuidelijke Lage\nLanden. Ook Herentals eert haar als patrones.",
     "locaties": [
       "bergen"
@@ -1076,6 +1158,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gaspar-de-crayer-saint-macarius-of-ghent.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Macarius stierf te Gent in 1012. De vraag is of sterven in een\nGentse abdij telt als «hier iets gedaan».",
     "locaties": [
       "gent"
@@ -1107,6 +1190,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/coll-giale-saint-ursmer-lobbes-int-rieur-14-cropped2.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ursmar was abtbisschop van Lobbes (Henegouwen, België): hij bouwde\nde kloosterkerk, voerde de Benedictijnse regel in en predikte in de\nstreek. Lobbes werd een van de kersteningcentra van het zuiden.",
     "locaties": [
       "lobbes"
@@ -1140,6 +1224,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Wolbodo was bisschop van Luik (1018–1021). Dat is kerkbestuur in\nhuidig België, vlak vóór het schisma.",
     "locaties": [
       "luik"
@@ -1174,6 +1259,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Egbert bleef in Ierland, maar Rath Melsigi werd onder hem kweekschool\nvoor de Friese missie. Hij zond Wigbert, later Willibrord en anderen.\nTitus Brandsma noemde die rol instrumenteel voor de kerstening van de\nLage Landen. De band is reëel maar indirect.",
     "locaties": [
       "rath-melsigi"
@@ -1204,6 +1290,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/56044-clt-0001-01-lobbes-crypte.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Erminus volgde Ursmar op als abtbisschop van Lobbes. Bestuur van\ndezelfde Belgische abdij, eerste helft achtste eeuw.",
     "locaties": [
       "lobbes"
@@ -1236,6 +1323,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/floribert.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Floribert volgt Hubertus op als bisschop van het bisdom\nTongeren-Maastricht-Luik (vanaf 727). Zijn zetel en graf hoorden bij\nde Sint-Lambertuskathedraal te Luik. Daarmee staat hij in de lijn van\nde Maaslandse bisschoppen die de kerk van de zuidelijke Lage Landen\norganiseerden.",
     "locaties": [
       "luik"
@@ -1265,6 +1353,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Forannan, Ierse bisschop, werd abt van Waulsort aan de Maas\n(België) en stierf daar in 982.",
     "locaties": [
       "waulsort"
@@ -1295,6 +1384,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Quirillus hoort bij de middeleeuwse reeks «heilige bisschoppen» van\nTongeren-Maastricht. Die lijst is grotendeels apocrief: na Servatius is\ner pas vanaf Falco enige zekerheid. Quirillus blijft dus een grensgeval —\ncultus en naam op de lokale lijst, geen harde vita — en vraagt nader\nonderzoek voordat hij als stevige LL-heilige telt.",
     "locaties": [
       "tongeren"
@@ -1333,6 +1423,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/abdijkerk-thorn-ramen-h-ansifridus-h-hilsonidis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Hilsondis is in de Thornse overlevering de gravin die, met Ansfried,\nde abdij van Thorn stichtte (Nederlands Limburg, tiende eeuw). Dat is\nkloosterstichting in huidig Nederland, ruim vóór het schisma. De\nliturgische gedachtenis te Thorn is 1 mei.",
     "locaties": [
       "thorn"
@@ -1367,6 +1458,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ultan.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ultan hoort bij de Ierse kring rond Gertrudis van Nijvel: met Foillan\nkwam hij naar Fosses (Fosses-la-Ville), stichting op land van Itta en\nGertrudis. Na Foillans dood werd Ultan abt. Zo verbindt hij de\nAngelsaksisch-Ierse missie met monastiek leven in het huidige Wallonië\n— dezelfde regio als Begga en Gertrudis.",
     "locaties": [
       "fosses"
@@ -1399,6 +1491,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ansfried-van-utrecht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ansfried verbindt Lotharingse adel met het Utrechtse bisdom: graaf van\nHoei, stichter van Thorn (met Hilsondis) en Hohorst bij Amersfoort, en\nbisschop te Utrecht tot zijn dood in 1010. Kernheilige van de\nmiddeleeuwse Utrechtse kerk in de Lage Landen.",
     "locaties": [
       "utrecht"
@@ -1431,6 +1524,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/domitianus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Domitianus hoort tot de vroegste historisch greepbare bisschoppen van\nde Maasstreek. Hij ondertekende als bisschop van Tongeren te Maastricht\n(Clermont 535) en als bisschop van Tongeren (Orléans 549). Zijn graf-\nen cultuscentrum lag te Hoei; Maastricht bewaart een vingerreliek.\nZo verbindt hij Tongeren, Maastricht en het latere Luikse bisdom.",
     "locaties": [
       "maastricht"
@@ -1463,6 +1557,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Iduberga (Itta) legde met Nijvel (ca. 640/649, raad van Amandus) het\nhuis-klooster van de Pippiniden. Haar dochters Gertrudis (Nijvel) en\nBegga (Andenne) zetten die lijn voort; Fosses-la-Ville diende Ierse\nmissiebroeders. Zonder haar is de Brabantse kloostergeschiedenis van\nde zevende eeuw niet te vertellen.",
     "locaties": [
       "nijvel"
@@ -1498,6 +1593,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/wiro.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Wiro is de stichterheilige van Sint Odiliënberg bij Roermond: met\nPlechelmus en Otger bouwde hij op land van Pepijn van Herstal een\nSint-Pietersklooster. De Maas-Limburgse cultus (basiliek, Roermond,\nvroeger ook Utrecht) maakt hem een vaste heilige van de noordelijke\nLage Landen, ondanks legendaire vita-details.",
     "locaties": [
       "odilienberg"
@@ -1534,6 +1630,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/servatius.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Servatius is de vroegst bevestigde bisschop van de Maasstreek. Zijn graf\nin Maastricht werd al in de vijfde eeuw een bedevaartsoord; de later hem\ngewijde basiliek geldt als de oudste kerk van de Nederlanden boven een\nheiligengraf. Daarmee hoort hij tot de wortel van het christendom in de\nLage Landen, nog vóór de Angelsaksische missie van de zevende en achtste\neeuw. De Orthodoxe Kerk eert hem als heilige van vóór het schisma.",
     "locaties": [
       "tongeren",
@@ -1569,6 +1666,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/dymphna.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Dymphna is de heilige van Geel. De middeleeuwse vita (dertiende eeuw)\nplaatst haar vlucht uit Ierland en haar moord door haar vader in de\nKempen; of dat historisch is, is onzeker. Wat vaststaat is de cultus te\nGeel, die de stad tot een van de oudste Europese centra van zorg voor\nmensen met een psychische aandoening maakte (gezinsverpleging). OrthodoxWiki\nneemt haar op als maagd-martelares.",
     "locaties": [
       "geel"
@@ -1604,6 +1702,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/martyrdom-of-st-dymphna-and-st-gerebernus-by-jacques-de-l-ange-attr-or-gerard-seghers-attr.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gerebernus is de priester-metgezel van Dymphna. Volgens de vita\nvluchtte hij met haar naar de Kempen en werd hij bij Geel mee vermoord.\nHij hoort bij hetzelfde martelaarschap als Dymphna, op dezelfde dag.",
     "locaties": [
       "geel"
@@ -1634,6 +1733,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/guibert-de-gembloux-cropped.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Guibertus stichtte de abdij van Gembloers (Gembloux) in huidig\nBelgië. Dat is kloosterstichting vóór het schisma.",
     "locaties": [
       "gembloers"
@@ -1666,6 +1766,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/hubertus-van-maastricht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Hubertus is de schakel tussen Maastricht en Luik: hij droeg Lambertus’\ngebeente over en vestigde de bisschopstoel te Luik (ca. 717/718). Zijn\nmissie in Brabant en de Ardennen verklaart de vele Hubertuskerken in\nZuid-Nederland en België. De jachtlegende (hert met kruis) is laat\n(vanaf ca. 15e eeuw) en mag de historische bisschop niet vervangen.",
     "locaties": [
       "maastricht",
@@ -1699,6 +1800,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bonifatius.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Bonifatius (Wynfrith) werkte met en na Willibrord in Friesland en Utrecht,\nhervormde de Frankische kerk en stierf op 5 juni 754 bij Dokkum, met\ntientallen metgezellen, tijdens een vormseltocht onder de Friezen. Dat\nmartelaarschap op Friese grond is het keerpunt van de noordelijke\nmissie: Utrecht bleef, de Friese heidenen kregen een bloedgetuige.\nOrthodoxWiki en het Heiligenlexikon bevestigen die lijn. De gezellen\nhebben een eigen groepspagina; Eoban heeft daarnaast een eigen pagina.",
     "locaties": [
       "dokkum",
@@ -1732,6 +1834,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Eoban predikte met Bonifatius onder de Friezen en stierf op 5 juni\n754 bij Dokkum. Dat martelaarschap op Friese grond is hetzelfde keerpunt\nals bij Bonifatius zelf. Hij hoort bij de Gezellen van Bonifatius te\nDokkum, maar heeft eigen merites: hulpbisschop van Utrecht en met name\ngenoemde martelaar.",
     "locaties": [
       "dokkum",
@@ -1765,6 +1868,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bonifatius1954.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Op 5 juni 754 werden bij Dokkum, tijdens een vormseltocht onder de\nFriezen, Bonifatius en zijn gevolg vermoord. Die gezellen zijn heilig\nals martelaren van die dag op Friese grond. Twee van hen hebben ook een\neigen pagina: Bonifatius (leider van de missie) en Eoban (hulpbisschop\nvan Utrecht). De overige namen (onder meer Adolar, Bosa, Elleher,\nGundekar, Hamund, Hathawulf, Scirebald, Waccar, Walter, Wintrung) zijn\nbekend als leden van deze groep.",
     "locaties": [
       "dokkum",
@@ -1796,6 +1900,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/medardus.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Medardus’ zetel Noyon ligt in Picardië, maar hij werd ook bisschop van\nDoornik en wordt verbonden met missie onder de Vlamingen. Zijn cultus\ntrok vroeg naar Vlaanderen en het Rijnland.",
     "locaties": [
       "noyon"
@@ -1828,6 +1933,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/cunera.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Cunera is de stadsheilige van Rhenen. De late legende (Ursula-cyclus:\neen maagd die te Rhenen achterbleef en werd gewurgd) is historisch\nniet hard te maken. De middeleeuwse cultus — relieken, Cunerakerk en\n-toren, paardenmarkt — is wel een feit van de Utrechtse\nheiligenverering. Daarom hoort zij in deze kalender.",
     "locaties": [
       "rhenen"
@@ -1860,6 +1966,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/odulphus-hemelum.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Odulphus verbindt het Utrechtse kapittel met de Friese missie in de\nnegende eeuw, in het spoor van Willibrord, Bonifatius en Ludger. Hij\npredikte te Stavoren en keerde naar Utrecht terug. Later droeg de\nabdij bij Stavoren zijn naam. Daarmee hoort hij tot de tweede golf van\nkerstening in het noorden van de Lage Landen, ná de martelaren van de\nachtste eeuw.",
     "locaties": [
       "utrecht",
@@ -1894,6 +2001,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Landelinus stichtte het klooster Lobbes in Henegouwen (België).\nCrespin (nu Frankrijk) hoort bij dezelfde stichtingsgolf; Lobbes is de\nBelgische kern.",
     "locaties": [
       "lobbes",
@@ -1925,6 +2033,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/alena-van-dilbeek.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Alena is een typisch Brabantse lokale heilige: Dilbeek, Vorst en de\nAffligemse elevatie van 1193 verbinden haar cultus vast aan Vlaams-\nBrabant. De vita is laat en legendarisch, maar de plaatselijke band\nmet de Lage Landen is onbetwist.",
     "locaties": [
       "dilbeek"
@@ -1958,6 +2067,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/engelmund.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Engelmund is de schutspatroon van Velsen. De overlevering plaatst hem\nbij Willibrords missie in Kennemerland; contemporaine bronnen ontbreken,\nmaar de lokale cultus (kerken in Velsen-Zuid, Driehuis, IJmuiden;\nrelieken in Haarlem) is reëel. Daarmee hoort hij bij de vroegste\nHollandse heiligenverering rond één concrete plaats: Velsen.",
     "locaties": [
       "velsen"
@@ -1985,6 +2095,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/walfridus-bedum.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Walfridus is de heilige van Bedum in Groningen: volgens de\nplaatselijke overlevering een landbouwer (soms met zijn zoon Radfridus)\ndie bij een Noormanneninval werd gedood. De middeleeuwse kerk van Bedum\ndroeg zijn naam. Een zelfstandige vroege vita is hier niet gevonden;\nWikipedia is voorlopig de enige geraadpleegde bron. De cultus is\nGronings en lokaal, geen algemene Nederlandse missieheilige.",
     "locaties": [
       "bedum"
@@ -2043,6 +2154,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/rumold.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Rumold is de stadsheilige van Mechelen. De relieken in de\nSint-Romboutskathedraal en de middeleeuwse vita (*Passio Sancti Rumoldi*,\nelfde eeuw, Diederik van Sint-Truiden) maken hem tot een van de\nhoofdfiguren van de Vlaamse heiligenverering. Hoe legendarisch het\nlevensverhaal ook is: de cultus is lokaal, oud en aan Mechelen gebonden.",
     "locaties": [
       "mechelen"
@@ -2077,6 +2189,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Theodulfus was abt van Lobbes in de achtste eeuw. Zelfde\nBelgische kloosterlijn als Ursmar en Erminus.",
     "locaties": [
       "lobbes"
@@ -2107,6 +2220,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/adelbert.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Adelbert is de huisheilige van Egmond: metgezel van Willibrord, later\nvereerd in de abdij die boven zijn graf groeide. Daarmee is hij de\nschakel tussen de Friese missie en het Noord-Hollandse\nkloosterchristendom. De abdij van Egmond werd het geestelijk centrum\nvan Holland; zijn cultus is daarvan de kiem.",
     "locaties": [
       "egmond"
@@ -2168,6 +2282,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/johannes-van-shanghai.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Johannes Maximovitsj is de post-schismatische heilige die het duidelijkst\nheeft bijgedragen aan de Orthodoxie in Nederland. De Orthodoxe Kerk in\nNederland schrijft de stichting van Nederlandstalige parochies vooral\naan hem toe, tot de synodale oprichting van het bisdom Den Haag en\nNederland in 1965, met Jakob Akkersdijk als eerste bisschop. Dat laatste\nsteunt op een kerkelijke website, niet op een hier geraadpleegd synodaal\nstuk.\n\nRussische overzichten maken de keten concreter: in 1952 bezocht hij de\ngemeenschap van Jakob Akkersdijk en Adriaan Korporaal; in 1954 nam hij\ndie op in zijn bisdom, wijdde Jakob tot hiëromonnik en zette de parochie\nvan Johannes de Doper in Den Haag om tot vrouwenklooster. Die jaartallen\nstaan in compilaties (Russische Wikipedia, Azbuka palomnika), niet in\neen hier gevonden contemporain document. Het klooster in Pervijze (1976)\nwerd gesticht door een monnik uit dat Haagse huis: institutionele\nvoortzetting van dezelfde missie, geen aparte heilige.",
     "locaties": [
       "den-haag"
@@ -2197,6 +2312,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/st-landrada.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Landrada stichtte het klooster Munsterbilzen in Belgisch Limburg\nen was er eerste abdis. Amalberga van Temse zou er haar vorming hebben\ngekregen. Dat is kloosterstichting in huidig België, zevende eeuw.",
     "locaties": [
       "munsterbilzen"
@@ -2230,6 +2346,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/amalberga-van-temse.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Temse aan de Schelde eert haar als patrones (Wegom-bedevaart);\nrelieken gingen naar de Sint-Pietersabdij te Gent. Vita en wonderen\n(steur, ganzen te Mater) verankeren haar stevig in Vlaanderen —\nonderscheiden van Amalberga van Susteren en van Maubeuge.",
     "locaties": [
       "temse"
@@ -2262,6 +2379,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/sophrony-van-essex.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Sophrony heeft in de Lage Landen zelf gehandeld, niet alleen via zijn\ngeschriften. Op 14 september 1980 ging hij voor in de Goddelijke Liturgie\nin de parochie van de apostel Andreas te Gent en sprak met de parochianen\n(aartsbisdom België, jubileum 2022). De kerk daar is later mede aan hem\ntoegewijd.\n\nMoeder Maria, eerste abdis van het klooster in Asten (1989), getuigt in\neen interview op de kloosterwebsite dat zij hem in Essex ontmoette bij\nhaar terugkeer naar Nederland. Hij was niet haar geestelijke vader, maar\nde ontmoeting was «heel belangrijk». Zijn raad: woon niet als moniale bij\neen parochie; zoek ruimte om te bouwen. Dat is haar eigen getuigenis,\ngeen onafhankelijke derde.",
     "locaties": [
       "gent",
@@ -2296,6 +2414,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/marcellinus-van-utrecht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Marcellinus (Marchelm/Markhelm) is de brug tussen de Utrechtse school\nen de IJssel/Twente-missie: met Lebuïnus predikte hij rond Deventer,\nOldenzaal en Coevorden. Relieken rusten bij Lebuïnus in Deventer. Zo\nhoort hij bij de kerstening van het oosten van de noordelijke Lage\nLanden, ook al blijft zijn biografie fragmentarisch.",
     "locaties": [
       "utrecht"
@@ -2327,6 +2446,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/saint-vaincent.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Vincentius (Madelgarius) stichtte de abdij van Zinnik/Soignies in\nhuidig België en was de echtgenoot van Woutruide van Bergen. Hautmont\nligt nu in Frankrijk; Zinnik is de Belgische stichting die hem in deze\nkalender plaatst.",
     "locaties": [
       "zinnik",
@@ -2364,6 +2484,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/otger.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Otger hoort bij het drietal Angelsaksische (of Ierse) missionarissen dat\nomstreeks 700 het klooster op de Petrusberg stichtte, het huidige Sint\nOdiliënberg in Limburg. Zonder hem is de lokale kerstening van de\nRoerstreek onvolledig: Wiro en Plechelm staan al in deze kalender; Otger\nis de derde van dezelfde stichting. De basiliek draagt nog hun drie namen.",
     "locaties": [
       "odilienberg"
@@ -2399,6 +2520,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/plechelm-von-odilienberg.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Plechelm (Plechelmus) hoort bij de Maas–Nederrijn-missie: met Wiro en\nOtger stichtte hij ca. 700 het klooster op de Sint-Petrusberg\n(Odiliënberg). Relieken gingen via Utrecht naar Oldenzaal (954), waar\nde Sint-Plechelmusbasiliek zijn hoofdcentrum werd. Zo verbindt hij\nLimburg met Twente binnen één Lage-Landen-cultus.",
     "locaties": [
       "odilienberg"
@@ -2430,6 +2552,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/monulphus-gondulphus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gondulphus wordt samen met Monulphus vereerd als bisschop van Maastricht\nin de vroege zevende eeuw. Hun gemeenschappelijke cultus (reliekverheffing\n1039, feestdag 16 juli) hoort bij dezelfde Servaasbasiliek. Zelfs als de\nvitae legendarisch zijn, is de lokale bisschoppelijke opvolging na\nServatius en Monulphus deel van de Maaslandse kerkgeschiedenis.",
     "locaties": [
       "maastricht"
@@ -2461,6 +2584,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/monulphus-gondulphus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Monulphus maakte het graf van Servatius tot een stenen kerk — de kern\nvan de latere Sint-Servaasbasiliek. Gregorius van Tours noemt die\n*templum magnum* nog in de zesde eeuw. Daarmee is Monulphus de bouwer\ndie de Maaslandse bisschopsstad een duurzaam heiligencentrum gaf, na\nServatius en vóór Lambertus en Hubertus.",
     "locaties": [
       "maastricht"
@@ -2491,6 +2615,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/meester-van-elsloo-1520-1530-heilige-renildis-van-saintes-sint-lambertuskerk-neeroeteren-8-09-2019.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Reinildis van Saintes is in de traditie een zuster van Gudula en\nmartelares te Saintes (België). Zij is iemand anders dan Relindis van\nAldeneik.",
     "locaties": [
       "saintes"
@@ -2521,6 +2646,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Fredegandus is de patroon van Deurne. Of hij werkelijk abt was van\neen abdij die de Vikingen in 836 zouden hebben verwoest, is onbewezen.",
     "locaties": [
       "deurne"
@@ -2554,6 +2680,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/frederich.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Frederik was bisschop van Utrecht in de Karolingische tijd (ca.\n815–838). Hij predikte onder meer op Walcheren en, met Odulphus,\nin het noorden. Zijn martelaarslegende en graf in de Salvatorkerk\nmaken hem tot een vaste Utrechtse heilige van vóór het schisma —\nkern van de noordelijke Lage Landen.",
     "locaties": [
       "utrecht"
@@ -2591,6 +2718,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bernulphus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Bernulphus (Bernold) was rijksbisschop van Utrecht onder Koenraad II\nen Hendrik III. Onder hem groeide het Oversticht (Hamaland, Salland,\nDrenthe, Deventer). Hij stichtte of herbouwde Pieterskerk, Janskerk\nen Paulusabdij in Utrecht en de Lebuïnuskerk in Deventer. Daarmee\nhoort hij tot de kern van de middeleeuwse Utrechtse kerk — westers\nepiscopaat in de Lage Landen, maar lokaal onmisbaar.",
     "locaties": [
       "utrecht"
@@ -2726,6 +2854,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Gaugericus bestuurde het bisdom Kamerijk, dat historisch tot de\nNederlanden hoorde. De zetel ligt nu in Frankrijk.",
     "locaties": [
       "kamerijk"
@@ -2781,6 +2910,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/zwentiboldbrunnen-muenstereifel.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Zwentibold was de laatste koning van Lotharingen en ligt te\nSusteren. De lokale Kerk eerde hem als martelaar. Of dat genoeg is\nvoor deze kalender, is nog open.",
     "locaties": [
       "susteren"
@@ -2841,6 +2971,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/werenfrid.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Werenfrid (Werenfried) predikte volgens de overlevering in de Betuwe en\nFriesland, in de kring van Willibrord. Elst en Westervoort bewaren zijn\ncultus. Heiligen.net en Wikipedia zijn de geraadpleegde bronnen; een\nvroege vita is hier niet nagetrokken. De betekenis is lokaal: de\nIJssel-Rijn-delta tussen Utrecht en Deventer.",
     "locaties": [
       "westervoort",
@@ -2924,6 +3055,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/jeroen-van-noordwijk.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Jeroen is de hieromartelaar van de Hollandse kust. De overlevering\n(heiligen.net, Wikipedia) plaatst zijn dood in 856/857 te Noordwijk,\ntijdens Noormanneninvallen: een priester die de plaatselijke kerk diende\nen weigerde te vluchten. Een vroege vita of contemporaine oorkonde is\nhier niet geraadpleegd; de cultus te Noordwijk is wel middeleeuws\nbevestigd in latere kalenders en plaatselijke verering.",
     "locaties": [
       "noordwijk"
@@ -2977,6 +3109,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Alubertus vulde als gewijde bisschop de leemte op toen Gregorius Utrecht\nals priester-abt bestuurde. Hij kwam uit Northumbria, werkte in\nFriesland en nam Ludger mee naar York voor diens diakenwijding — een\nschakel in de Utrechtse/Friese missie van de Lage Landen.",
     "locaties": [
       "utrecht",
@@ -3008,6 +3141,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gregorius-van-utrecht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gregorius maakte de Utrechtse school tot missiecentrum voor Friezen,\nSaksen en anderen; uit die school kwam onder meer Ludger. Na de dood\nvan Bonifatius en Eoban (754) bestuurde hij het bisdom zonder\nbisschopswijding. Zijn vita door Ludger verbindt de Pippiniden-missie\nmet de kerk van de noordelijke Lage Landen.",
     "locaties": [
       "utrecht",
@@ -3095,6 +3229,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/remaclus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Remaclus verbindt de Maasstreek met de Ardennen: als bisschop van\nMaastricht (na Amandus) en als stichter van Stavelot (en Malmedy)\nonder Sigibert III. Leerlingen als Theodardus, Trudo en Hadelinus\nzetten die lijn voort. Zijn cultus en schrijn in Stavelot horen bij de\nvroegmiddeleeuwse kerk van de zuidelijke Lage Landen.",
     "locaties": [
       "maastricht",
@@ -3130,6 +3265,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/simon-marmion-scene-della-vita-di-san-bertino-1459-01.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Bertinus bestuurde de abdij Sithiu, later Sint-Bertijns. Historisch\nVlaanderen, nu Frankrijk.",
     "locaties": [
       "sint-omaars"
@@ -3160,6 +3296,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Hilduard (Hildward) wordt op de Vlaamse kalender herdacht als\nbisschop te Dikkelvenne (Oost-Vlaanderen), achtste eeuw.",
     "locaties": [
       "dikkelvenne"
@@ -3188,6 +3325,39 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/geboorte-moeder-gods.jpg",
     "feestdatum": "09-07",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "adela-van-vlaanderen",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Adela van Vlaanderen",
+    "alternatief": [
+      "Adela van Ieper",
+      "Adela van Mesen",
+      "Adela van Messines",
+      "Adelheid van Frankrijk"
+    ],
+    "titels": [
+      "Weduwe & kloosterlinge"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/adela-van-vlaanderen/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/baldwin-v-of-flanders-and-adela-of-france.jpg",
+    "selectie": "kandidaat-schrappen",
+    "betekenis_lage_landen": "Adela stichtte en bewoonde de abdij van Mesen (West-Vlaanderen) en werkte\nmee aan kapittels en abdijen in het graafschap. De band met de Lage Landen\nis geografisch en dynastisch duidelijk; haar dood (1079) en cultus\nvallen na 1054.",
+    "locaties": [
+      "mesen"
+    ],
+    "feestdatum": "09-08",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -3239,6 +3409,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/omer-et-le-roi-dagobert.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Audomarus kerstende het bisdom Terwaan. De zetel ligt nu in\nFrankrijk; historisch raakte het Vlaanderen.",
     "locaties": [
       "sint-omaars",
@@ -3297,6 +3468,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/theodaard-van-maastricht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Theodaard (Theodardus) staat in de Maaslijn tussen Remaclus en Lambertus:\nabt te Stavelot, daarna bisschop van Tongeren-Maastricht. Zijn martelaarschap\n(klacht over plundering van het bisdom) en de latere overbrenging van\nrelieken naar Luik door Lambertus verankeren hem in de vroege kerk van\nde Maasstreek; Maastricht bewaart nog een moderne reliekhouder.",
     "locaties": [
       "maastricht"
@@ -3328,6 +3500,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/tableau-st-guidon-d-anderlecht.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Guido was koster te Laken, pelgrim, en stierf in 1012 te\nAnderlecht. Zijn graf in de kapittelkerk werd een Brussels\nbedevaartsoord. Werk en dood in huidig België, vóór het schisma.",
     "locaties": [
       "anderlecht",
@@ -3438,6 +3611,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Maternus is historisch de eerste bekende bisschop van Keulen. Of\nhij in Tongeren werkte, is de open vraag, net als bij andere vroege\nMaaslandse bisschoppen.",
     "locaties": [
       "keulen",
@@ -3494,6 +3668,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/lambertus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Lambertus is de martelaarsbisschop van de Maaszetel. Hij volgde zijn\noom Theodardus op, predikte onder de nog heidense Toxandren rond\nTongeren, en werd circa 705 in zijn huis te Luik vermoord. Zijn\nopvolger Hubertus bracht de relieken naar Luik en verlegde de zetel\ndaarheen. Maastricht en Luik danken hun middeleeuwse bisschopsstad aan\ndeze keten.",
     "locaties": [
       "maastricht",
@@ -3552,6 +3727,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/moord-op-gerolf-sint-gerolfkerk-drongen-16-07-2019.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gerulfus is een van de oudste Vlaamse martelaren: een jongen uit\nMerendree die na zijn vormsel te Gent onderweg naar huis bij Drongen\nwerd vermoord. Cultus in Drongen (Sint-Gerolfkerk).",
     "locaties": [
       "drongen",
@@ -3562,6 +3738,45 @@
       "toelichting": "Sint-Gerolfkerk"
     },
     "feestdatum": "09-25",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "lioba",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Lioba",
+    "alternatief": [
+      "Leoba",
+      "Leobgyth",
+      "Leobgytha",
+      "Leofgyth",
+      "Truthgeba",
+      "Lioba van Tauberbischofsheim"
+    ],
+    "titels": [
+      "Abdis van Tauberbischofsheim"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/lioba/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "kandidaat-schrappen",
+    "betekenis_lage_landen": "Lioba (Leobgytha) leidde het vrouwenklooster dat Bonifatius in\nTauberbischofsheim stichtte en vormde nonnen voor de Duitse missie.\nEr is geen aantoonbaar verblijf of werk in Nederland of België.",
+    "locaties": [
+      "tauberbischofsheim"
+    ],
+    "rustplaats": {
+      "plaats": "fulda",
+      "toelichting": "Petersberg bij Fulda (samen met de relieken van Bonifatius)"
+    },
+    "feestdatum": "09-28",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -3585,6 +3800,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bavo.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Bavo (Allowin) is de stadsheilige van Gent. De overlevering maakt hem tot\neen bekeerde edelman die onder Amandus tot inkeer kwam en als kluizenaar\nbij de Gentse abdij stierf. De Sint-Baafskathedraal draagt zijn naam.\nEen Heiligenlexikon-artikel is in deze ronde niet op een stabiele URL\ngevonden; tot die toets volgt de tekst Wikipedia.",
     "locaties": [
       "gent"
@@ -3646,6 +3862,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Beregisus stichtte het klooster Andage in de Ardennen, later\nSaint-Hubert (België). Dat is kloosterstichting in de zevende/achtste\neeuw.",
     "locaties": [
       "saint-hubert"
@@ -3678,6 +3895,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gerardo-de-brogne-cropped.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gerardus stichtte de abdij van Brogne bij Namen en herstelde de\nBenedictijnse tucht in onder meer Saint-Ghislain, de Sint-Pietersabdij\nen de Sint-Baafsabdij te Gent. Dat is kloosterbestuur in huidig België,\nruim vóór het schisma.",
     "locaties": [
       "brogne",
@@ -3715,6 +3933,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/0-chasse-de-st-ghislain-procession-du-car-d-or.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ghislain leefde als kluizenaar bij Castrilocus (Mons) en stichtte\neen klooster te Ursidongus, nu Saint-Ghislain in Henegouwen (België).\nHij gaf geestelijke raad aan Woutruide bij de stichting van Bergen.",
     "locaties": [
       "saint-ghislain",
@@ -3830,6 +4049,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/gommar.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Gommar (Gummarus) is de stadsheilige van Lier: rond zijn kluizenarij\nNivesdonck groeide de stad. De cultus (verheffing ca. 815, kapittel,\nprocessie) maakt hem een vaste Brabantse heilige van de Lage Landen,\nlos van de late en legendarische details van zijn huwelijksvita.",
     "locaties": [
       "lier"
@@ -3864,6 +4084,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/20180228-li-ge-cath-drale-saint-paul-22-harlindis-relindis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Herlindis leidde het vrouwenklooster Aldeneik in het huidige Belgisch\nLimburg: prediking en kloosterleven aan de Maas, in de kring van\nWillibrord (die haar tot abdis wijdde) en later Bonifatius. Dat is werk\nin de Lage Landen vóór het schisma, geen latere cultus alleen.",
     "locaties": [
       "maaseik"
@@ -3899,6 +4120,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Muno (Monon) leefde als kluizenaar te Nassogne in de Belgische\nArdennen en werd daar vermoord. Martelaarschap in huidig België.",
     "locaties": [
       "nassogne"
@@ -3930,6 +4152,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/oda-van-amay.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Oda/Chrodoara is de stichtster-heilige van Amay (Maasland, bij Hoei):\nde sarcofaaginscriptie noemt haar edelvrouw die uit eigen middelen\nheiligdommen stichtte. Dat maakt haar een concrete Merovingische\nheilige van het Luikse Maasdal, niet een late Brabantse legende.",
     "locaties": [
       "amay"
@@ -3965,6 +4188,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/ermelindis.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Ermelindis is een Brabantse kluizenares met cultuscentrum te Meldert\n(bij Hoegaarden/Tienen). Haar vita is legendair, maar de lokale\nbedevaart en kapellen (onder meer Lovenjoel) maken haar tot een\nvaste heilige van Vlaams-Brabant — typisch voor de heiligenkalender\nvan de Lage Landen.",
     "locaties": [
       "meldert"
@@ -3999,6 +4223,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/foillan.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Foillan werkte in het Pepijnse milieu te Nijvel (Gertrudis) en werd\nabt van het door haar gestichte klooster Fosses (Namen). Zijn\nmartelaarschap bij Le Rœulx en cultus te Fosses-la-Ville maken hem\ntot een Ierse missieheilige van het Maas-Sambergegebied — kern van\nde zuidelijke Lage Landen.",
     "locaties": [
       "fosses"
@@ -4029,6 +4254,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Florbertus was de eerste abt van de Sint-Pietersabdij op de\nBlandijnberg te Gent, door Amandus aangesteld. Hij is iemand anders dan\nFloribert van Luik.",
     "locaties": [
       "gent"
@@ -4059,6 +4285,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/odrada.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Odrada verbindt de Antwerpse Kempen (Balen/Scheps, Millegem) met\nAlem aan de Maas: kapittelcultus vanaf de elfde eeuw, vita 1304,\nrelieken tot in Balen. Zij is een lokale heilige van beide zijden van\nde huidige grens — precies het type Lage-Landen-cultus van deze\nkalender.",
     "locaties": [
       "balen"
@@ -4090,6 +4317,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/winnocus.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Winnocus werkte in historisch Vlaanderen: monnik onder Bertinus te\nSithiu (Saint-Omer), daarna stichter/leider van de cel te Wormhout —\nmissiepost voor de streek. Relieken gingen later naar Bergues\n(Winoksbergen). Het gebied ligt nu in Frankrijk; de historische\nVlaamse context is reëel.",
     "locaties": [
       "wormhout"
@@ -4121,6 +4349,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/willibrord.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Willibrord is de apostel van de Friezen en de stichter van de\nbisschopszetel Utrecht (695/696, met steun van Pepijn van Herstal en\nwijding door paus Sergius I). Vanuit Utrecht liep de kerstening van\nHolland, Friesland en de IJsselstreek; Echternach werd zijn\ngrafklooster. Zonder hem is de vroege kerk van de noordelijke Lage\nLanden niet te vertellen. OrthodoxWiki eert hem als heilige van de\nongedeelde Kerk.",
     "locaties": [
       "utrecht",
@@ -4157,6 +4386,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bischof-willehad.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Willehad staat op de Groningse kalender als geloofsverkondiger.\nHet zwaartepunt van zijn werk lag in Saksen en Bremen.",
     "locaties": [
       "bremen",
@@ -4188,6 +4418,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/maastricht-schatkamer-st-servaasbasiliek-reliekarm-st-bertuinus-van-malonne.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Bertuinus stichtte of bestuurde het klooster Malonne bij Namen.\nDat is kloosterbestuur in huidig België, zevende eeuw.",
     "locaties": [
       "malonne"
@@ -4221,6 +4452,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/lebuinus.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Lebuinus (Liafwin) is de apostel van de IJsselstreek. Onder Gregorius\nvan Utrecht zette hij na Bonifatius’ dood de missie voort, bouwde een\nkapel te Wilp en daarna de kerk te Deventer, waar heidense Saksen die\nkerk verbrandden en hij haar herbouwde. Ludger begroef hem daar. De\nLebuïnuskerk blijft het stadsheiligtom van Deventer.",
     "locaties": [
       "deventer",
@@ -4257,6 +4489,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/sint-lievenis-houtem-livinuskapel-belgi.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Livinus (Lieven) is in de Gentse traditie een Ierse missionaris\ndie in Vlaanderen predikte en de marteldood stierf. De feestdag is\ndezelfde als die van Lebuinus van Deventer (12 november). De vraag is\nniet of Gent hem eert — dat doet het — maar of achter die cultus een\nzelfstandige historische persoon schuilgaat.",
     "locaties": [
       "gent"
@@ -4339,6 +4572,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/amalberga-van-susteren.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Susteren (Limburg) bewaart haar graf in de romaans-basilicale\nSint-Amelbergakerk, samen met andere Utrechtse/Limburgse heiligen.\nDe abdij gaat terug op Willibrords schenking (714); Amalberga staat\nvoor de vroegmiddeleeuwse kloostercultus in Nederlands Limburg.",
     "locaties": [
       "susteren"
@@ -4420,6 +4654,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/trudo.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Trudo is de naamgever van Sint-Truiden: op zijn landgoed Zerkingen\n(Haspengouw) bouwde hij kerk en klooster, gewijd onder Theodardus.\nRemaclus zond hem naar Metz voor opleiding; zo verbindt hij de\nMaastrichtse missielijn met een blijvende stedelijke en abdijcultus in\nBelgisch Limburg.",
     "locaties": [
       "sint-truiden"
@@ -4454,6 +4689,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Wilfetrudis was abdis van Nijvel in de lijn van Gertrudis. Bestuur\nvan hetzelfde Brabantse klooster.",
     "locaties": [
       "nijvel"
@@ -4509,6 +4745,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/acharius-van-doornik.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Acharius bestuurde Doornik (Tournai) en Noyon en steunde Amandus’ werk in\nhet Belgische Merovingische rijk. Via hem kwam ook het bisdom Terwaan tot\nstand, met Omaars als eerste bisschop. Zo hoort hij bij de vroegste\nbisschoppelijke organisatie van de zuidelijke Lage Landen.",
     "locaties": [
       "doornik",
@@ -4537,6 +4774,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/oda-van-de-peel.png",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Oda is de heilige van de Meierij: volgens de overlevering een blinde\nprinses die na genezing kluizenares werd in de Peel, bij het latere\nSint-Oedenrode. De plaatsnaam bewaart haar cultus. Wikipedia is de\ngeraadpleegde bron; de vita is laat en legendarisch. Haar betekenis is\nBrabants-lokaal, naast Oda van Amay (een andere heilige in deze\nkalender).",
     "locaties": [
       "sint-oedenrode"
@@ -4566,6 +4804,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/radboud.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Radboud is de Utrechtse bisschop van de vroege tiende eeuw: bestuurder\nin een tijd van Noormanneninvallen, en schrijver van heiligenlevens\n(onder meer van Bonifatius en van Utrechtse voorgangers). Daarmee is\nhij én herder én de eerste literaire stem van de Utrechtse kerk. De\nRadbouduniversiteit draagt zijn naam. Wikipedia en heiligen.net zijn\nhier de bronnen; zijn Latijnse werken zijn niet in deze ronde\nnageslagen.",
     "locaties": [
       "utrecht"
@@ -4600,6 +4839,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/eligius.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Als bisschop van Noyon-Doornik predikte Eligius onder Vlamingen,\nMorinen en Menapiërs en verder in Brabant/Antwerpen. Hij geldt als\n«apostel van Vlaanderen»: zijn bisdom en cultus (paardenzegeningen,\nsmidsgilden) lopen dwars door Noord-Frankrijk en België. Zonder hem\nmist de vroegmiddeleeuwse kerk van Vlaanderen een kernfiguur.",
     "locaties": [
       "doornik",
@@ -4635,6 +4875,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Folciunus (Folquinus) bestuurde het bisdom Terwaan, dat tot in\nVlaanderen reikte, en was nauw verbonden met de Sint-Bertinusabdij\nte Sint-Omaars. Hij stierf te Ekelsbeke (Frans-Vlaanderen). De zetel\nligt nu in Frankrijk; de Vlaamse band blijft.",
     "locaties": [
       "terwaan"
@@ -4667,6 +4908,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/aubertus-van-kamerijk.jpg",
+    "selectie": "nader-onderzoek",
     "betekenis_lage_landen": "Aubertus (Autbertus) bestierde het bisdom Atrecht-Kamerijk, dat tot\nin Henegouwen reikte. Hij stimuleerde missie en kloosterstichtingen\n(Sint-Vaast te Atrecht, Lobbes, Wallers, Crespin) die de vroegmiddeleeuwse\nkerk in het zuiden van de Lage Landen vormden. De zetel ligt nu in\nFrankrijk; de band met Vlaanderen/Henegouwen blijft.",
     "locaties": [
       "kamerijk"
@@ -4698,6 +4940,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/begga.jpg",
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Begga hoort tot het Pippinidische huis dat Nijvel, Andenne en de\nMaasvallei tot kerken- en kloosterland maakte. Als weduwe stichtte zij\nomstreeks 691/692 het vrouwenklooster te Andenne, bevolkt vanuit Nijvel\n(haar moeder Iduberga en zuster Gertrudis). Daarmee is zij een schakel\nin dezelfde stichtingsgeschiedenis als Iduberga en Gertrudis, die al in\ndeze kalender staan.",
     "locaties": [
       "andenne",
@@ -4708,6 +4951,37 @@
       "toelichting": "Abdij van Andenne"
     },
     "feestdatum": "12-17",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "winnibald",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Winnibald",
+    "alternatief": [
+      "Wunibald",
+      "Winebald"
+    ],
+    "titels": [
+      "Abt van Heidenheim"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/winnibald/",
+    "lage_landen": true,
+    "bronlaag": "nagekeken",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/winnibald.jpg",
+    "selectie": "kandidaat-schrappen",
+    "betekenis_lage_landen": "Winnibald (Wunibald) werkte onder Bonifatius in Thüringen, Beieren en\nMainz en stichtte Heidenheim in het bisdom Eichstätt. Er is geen\naantoonbaar missiewerk in de Lage Landen; de band loopt vooral via de\nBonifatius-familie (Engeland/Germanië).",
+    "locaties": [
+      "heidenheim"
+    ],
+    "feestdatum": "12-18",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -4757,6 +5031,7 @@
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": null,
+    "selectie": "voldoet",
     "betekenis_lage_landen": "Hunger (Hungerus Frisus) stond de Utrechtse kerk voor in een crisis:\nVikingen bedreigden Dorestad/Utrecht; de clerus week uit naar\nSint-Odiliënberg (858) en later Prüm en Deventer. Als bisschop uit\nFriesland belichaamt hij de Friese–Utrechtse band in de negende eeuw.\nZijn standpunt in de huwelijkszaak van Lotharius II toont moreel\ngezag naast de vluchtgeschiedenis.",
     "locaties": [
       "utrecht"

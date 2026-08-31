@@ -1,0 +1,2018 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orthodox-ronl//kalender//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Heiligen nader (oud)
+X-WR-TIMEZONE:UTC
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240212
+DTEND;VALUE=DATE:20240213
+DTSTAMP:20260831T151926Z
+UID:9c554d23-5376-5197-8ee9-7abfe8e08357
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2024-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240218
+DTEND;VALUE=DATE:20240219
+DTSTAMP:20260831T151926Z
+UID:8bba33b5-69f8-5788-8794-b096be10d416
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: 1 Tim. 4:9-15\nEvange
+ lie: Luc. 19:1-10\nHeilige: Agricolaus van Maastricht\nMeer: https://ortho
+ dox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-02-18&stijl=juli
+ aans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240304
+DTEND;VALUE=DATE:20240305
+DTSTAMP:20260831T151926Z
+UID:64fa2549-a407-5160-8260-b3df292d1406
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nApostel: 1 Joh. 2:18-3:10\nEv
+ angelie: Mark. 11:1-11\nHeilige: Eucherius van Orléans\nMeer: https://orth
+ odox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-03-04&stijl=jul
+ iaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-04&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240316
+DTEND;VALUE=DATE:20240317
+DTSTAMP:20260831T151926Z
+UID:79a65466-af38-5efb-8dd1-0428131a3855
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nApostel: Rom. 14:19-26\nEvangelie
+ : Matt. 6:1-13\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2024-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240423
+DTEND;VALUE=DATE:20240424
+DTSTAMP:20260831T151926Z
+UID:ea112412-080f-5461-b286-67211d6cf939
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nGeen liturgie met Apostel/Evange
+ lie van de dag.\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2024-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240507
+DTEND;VALUE=DATE:20240508
+DTSTAMP:20260831T151926Z
+UID:5c101655-5ac2-5b0d-b987-896ab0d6a532
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 2:14-21\nEvangeli
+ e: Luc. 24:12-35\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2024-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240513
+DTEND;VALUE=DATE:20240514
+DTSTAMP:20260831T151926Z
+UID:5b35cd43-9224-5ca4-9963-c846cb7ab021
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 3:19-26\nEvangeli
+ e: Joh. 2:1-11\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2024-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240621
+DTEND;VALUE=DATE:20240622
+DTSTAMP:20260831T151926Z
+UID:39c360be-a784-504e-92ab-a79a6ce4c7d8
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Hand. 27:1-44\nEvangelie:
+  Joh. 17:18-26\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2024-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240730
+DTEND;VALUE=DATE:20240731
+DTSTAMP:20260831T151926Z
+UID:072c6b68-492c-5491-91fe-a995cd0e3e7e
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 1:1-9\nEvangelie:
+  Matt. 13:24-30\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2024-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240824
+DTEND;VALUE=DATE:20240825
+DTSTAMP:20260831T151926Z
+UID:efa68882-11f2-5f68-9dd3-74425a514d3c
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: Rom. 14:6-9\nEvangel
+ ie: Matt. 15:32-39\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2024-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240826
+DTEND;VALUE=DATE:20240827
+DTSTAMP:20260831T151926Z
+UID:e5710365-259d-5143-a69c-94f6b8cc1a34
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 1 Kor. 15:12-19\nEva
+ ngelie: Matt. 21:18-22\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2024-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240918
+DTEND;VALUE=DATE:20240919
+DTSTAMP:20260831T151926Z
+UID:c5c55223-6b3d-568b-9ab5-e517865e7f8a
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: 2 Kor. 9:12-10:7\nEv
+ angelie: Luc. 4:1-15\nHeilige: Bertinus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2024-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240922
+DTEND;VALUE=DATE:20240923
+DTSTAMP:20260831T151926Z
+UID:92d5c352-cd31-5e3c-88ba-db2c5cebdc56
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Gal. 6:11-18\nEvange
+ lie: Joh. 3:13-17\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2024-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240927
+DTEND;VALUE=DATE:20240928
+DTSTAMP:20260831T151926Z
+UID:2c20b70c-8e65-570a-8fb3-716d00b6ef2a
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241119
+DTEND;VALUE=DATE:20241120
+DTSTAMP:20260831T151926Z
+UID:6603235f-20ed-5fa4-94e7-d8ce8f3a4d0b
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: Kol. 2:20-3:3\nEvange
+ lie: Luc. 17:26-37\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2024-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241121
+DTEND;VALUE=DATE:20241122
+DTSTAMP:20260831T151926Z
+UID:b493f350-413c-5624-adae-40e003a6c5f2
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2024-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241125
+DTEND;VALUE=DATE:20241126
+DTSTAMP:20260831T151926Z
+UID:0d6a47d5-cbef-56f3-b776-bd3216300fa4
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 1 Tess. 1:1-5\nEvang
+ elie: Luc. 19:37-44\nHeilige: Livinus van Gent\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2024-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241227
+DTEND;VALUE=DATE:20241228
+DTSTAMP:20260831T151926Z
+UID:00b79539-efc3-5c36-91aa-48aace222414
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: 2 Tim. 1:1-2\, 8-18\
+ nEvangelie: Mark. 12:1-12\nHeilige: Folciunus\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2024-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241228
+DTEND;VALUE=DATE:20241229
+DTSTAMP:20260831T151926Z
+UID:4933391b-57f7-5f6b-8abb-3fd5dc88d33e
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Gal. 5:22-6:2\nEvang
+ elie: Luc. 17:3-10\nHeilige: Aubertus van Kamerijk\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2024-12-28&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250212
+DTEND;VALUE=DATE:20250213
+DTSTAMP:20260831T151926Z
+UID:1fcc15e6-ae35-5740-bd38-47c591d49bb0
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2025-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250218
+DTEND;VALUE=DATE:20250219
+DTSTAMP:20260831T151926Z
+UID:e22aa5ff-7045-5917-bbfd-13349bb8351d
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: 1 Joh. 3:11-20\nEvang
+ elie: Mark. 14:10-42\nHeilige: Agricolaus van Maastricht\nMeer: https://or
+ thodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-02-18&stijl=j
+ uliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250305
+DTEND;VALUE=DATE:20250306
+DTSTAMP:20260831T151926Z
+UID:a3945e0c-4a4d-533a-bc2f-37a5e2982e0f
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Eucherius van Orléans\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2025-03-05&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250316
+DTEND;VALUE=DATE:20250317
+DTSTAMP:20260831T151926Z
+UID:4762c7d7-0614-56ae-a005-3793352e7874
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nApostel: Heb. 1:10-2:3\nEvangelie
+ : Mark. 2:1-12\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2025-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+DTSTAMP:20260831T151926Z
+UID:a8c1c08d-d348-59a4-9ed3-987f4f141d11
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nApostel: Hand. 2:22-36\nEvangeli
+ e: Joh. 1:35-51\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2025-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250507
+DTEND;VALUE=DATE:20250508
+DTSTAMP:20260831T151926Z
+UID:914aaeaa-cfc2-5604-baee-d14ec2890bc4
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 8:18-25\nEvangeli
+ e: Joh. 6:35-39\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2025-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250513
+DTEND;VALUE=DATE:20250514
+DTSTAMP:20260831T151926Z
+UID:d3f4368f-a9b3-5115-82db-dcf3ad776160
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 10:21-33\nEvangel
+ ie: Joh. 7:1-13\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2025-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250621
+DTEND;VALUE=DATE:20250622
+DTSTAMP:20260831T151926Z
+UID:436141ff-18e2-5ebf-ae2c-1469752118e6
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Rom. 3:19-26\nEvangelie: 
+ Matt. 7:1-8\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2025-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250730
+DTEND;VALUE=DATE:20250731
+DTSTAMP:20260831T151926Z
+UID:07201681-241a-53ac-9dfe-ce7b3b115970
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 10:12-22\nEvangel
+ ie: Matt. 16:20-24\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2025-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250824
+DTEND;VALUE=DATE:20250825
+DTSTAMP:20260831T151926Z
+UID:1a9b0b94-73c7-5142-9528-66762efd5b3f
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 1 Kor. 9:2-12\nEvang
+ elie: Matt. 18:23-35\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2025-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250826
+DTEND;VALUE=DATE:20250827
+DTSTAMP:20260831T151926Z
+UID:af651e90-fc13-539b-8bd7-96341e21f0cf
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 2 Kor. 5:15-21\nEvan
+ gelie: Mark. 1:16-22\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2025-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250918
+DTEND;VALUE=DATE:20250919
+DTSTAMP:20260831T151926Z
+UID:05a2b4e6-25f9-50a5-a820-d7aa30ff8438
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: Gal. 3:23-4:5\nEvang
+ elie: Mark. 6:30-45\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2025-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250922
+DTEND;VALUE=DATE:20250923
+DTSTAMP:20260831T151926Z
+UID:d457ebe3-386a-5ed4-9434-8cf7b769b9c2
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Gal. 4:28-5:10\nEvan
+ gelie: Luc. 3:19-22\nHeilige: Audomarus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2025-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+DTSTAMP:20260831T151926Z
+UID:fbda8ec0-cdae-5939-8f25-60f2881b1dfd
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251119
+DTEND;VALUE=DATE:20251120
+DTSTAMP:20260831T151926Z
+UID:e1df8e61-488f-5f7f-812d-66b42bcad1de
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: 1 Tess. 4:1-12\nEvang
+ elie: Luc. 15:1-10\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2025-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251121
+DTEND;VALUE=DATE:20251122
+DTSTAMP:20260831T151926Z
+UID:42d9a68a-20b4-56d8-9c08-bac2d778c194
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2025-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251125
+DTEND;VALUE=DATE:20251126
+DTSTAMP:20260831T151926Z
+UID:632cee99-07e8-54f8-843d-ec45e4a1ffe9
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 2 Tess. 1:10-2:2\nEv
+ angelie: Luc. 17:26-37\nHeilige: Livinus van Gent\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2025-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251227
+DTEND;VALUE=DATE:20251228
+DTSTAMP:20260831T151926Z
+UID:9d6877d1-b3e1-5e30-ac35-b6da72f730bf
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Ef. 2:11-13\nEvangel
+ ie: Luc. 16:10-15\nHeilige: Folciunus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2025-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251228
+DTEND;VALUE=DATE:20251229
+DTSTAMP:20260831T151926Z
+UID:a8a3f4e7-fd0b-5186-bc39-9930bd3e6512
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Kol. 3:4-11\nEvangel
+ ie: Luc. 14:16-24\nHeilige: Aubertus van Kamerijk\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2025-12-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260212
+DTEND;VALUE=DATE:20260213
+DTSTAMP:20260831T151926Z
+UID:759bd209-75c2-5370-84f8-bec7e0ffb0d1
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2026-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
+DTSTAMP:20260831T151926Z
+UID:82ec2b38-ce83-50b8-b100-6cbba6f33588
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nHeilige: Agricolaus van Maastr
+ icht\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?da
+ tum=2026-02-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260305
+DTEND;VALUE=DATE:20260306
+DTSTAMP:20260831T151926Z
+UID:22eec3c2-8305-5e0d-9f26-831f4f99e5ae
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Eucherius van Orléans\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2026-03-05&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+DTSTAMP:20260831T151926Z
+UID:925da341-513a-51c7-951f-ff51c77ef965
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2026-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260424
+DTSTAMP:20260831T151926Z
+UID:73dab1bd-6faa-59a1-a25b-53aff5050c18
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nApostel: Hand. 4:23-31\nEvangeli
+ e: Joh. 5:24-30\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2026-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+DTSTAMP:20260831T151926Z
+UID:281c6998-13d9-550c-b14a-63c0d8cc412b
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 10:34-43\nEvangel
+ ie: Joh. 8:12-20\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2026-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+DTSTAMP:20260831T151926Z
+UID:24b9cca9-1673-53f7-8678-6b598b660e93
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 13:13-24\nEvangel
+ ie: Joh. 6:5-14\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2026-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+DTSTAMP:20260831T151926Z
+UID:f084d730-5be4-52b6-bfb0-e7068bf63f4b
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Heb. 4:14-5:6\nEvangelie:
+  Mark. 8:34-9:1\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2026-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20260731
+DTSTAMP:20260831T151926Z
+UID:ac5a7f15-191f-558f-9472-15029585bfb2
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 14:6-19\nEvangeli
+ e: Matt. 20:17-28\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2026-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+DTSTAMP:20260831T151926Z
+UID:a84db98d-1369-5cfc-824a-414f3c5cce2a
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 2 Kor. 8:7-15\nEvang
+ elie: Mark. 3:6-12\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2026-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+DTSTAMP:20260831T151926Z
+UID:b09bf42d-6829-577d-9713-a4959589ae20
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 2 Kor. 9:12-10:7\nEv
+ angelie: Mark. 3:20-27\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2026-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+DTSTAMP:20260831T151926Z
+UID:daaa9d4b-0065-57b6-9196-f103360d13d3
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: Ef. 1:7-17\nEvangeli
+ e: Mark. 8:1-10\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2026-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+DTSTAMP:20260831T151926Z
+UID:a70ddac4-95fe-5644-a193-5fc04c15295d
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Ef. 2:19-3:7\nEvange
+ lie: Luc. 3:23-4:1\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2026-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+DTSTAMP:20260831T151926Z
+UID:270cf3bf-a478-5e2d-909d-185468a4af21
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+DTSTAMP:20260831T151926Z
+UID:9d41f936-7a98-5762-a575-c529736eaae2
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: 2 Tess. 2:13-3:5\nEva
+ ngelie: Luc. 16:1-9\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2026-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+DTSTAMP:20260831T151926Z
+UID:ea510928-bdbd-5f8f-b846-1b2877fb87c6
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2026-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+DTSTAMP:20260831T151926Z
+UID:c7a11bce-9628-5228-8ba0-2b3745d3352c
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 1 Tim. 1:18-20\; 2:8
+ -15\nEvangelie: Luc. 18:15-17\, 26-30\nHeilige: Livinus van Gent\nMeer: ht
+ tps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-11-25
+ &stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+DTSTAMP:20260831T151926Z
+UID:b6b02957-367e-545d-a8fa-4e3ced1f4da9
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Kol. 3:4-11\nEvangel
+ ie: Luc. 14:16-24\nHeilige: Folciunus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2026-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+DTSTAMP:20260831T151926Z
+UID:199f6257-3c7d-5175-a101-2fa8069d6ede
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Heb. 11:17-23\, 27-3
+ 1\nEvangelie: Mark. 9:42-10:1\nHeilige: Aubertus van Kamerijk\nMeer: https
+ ://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-12-28&st
+ ijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+DTSTAMP:20260831T151926Z
+UID:167948e8-6038-5098-a121-c1399f1b359a
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2027-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+DTSTAMP:20260831T151926Z
+UID:0dffde2e-4d99-5a43-a935-c7a24e92976a
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: 1 Petr. 4:12-5:5\nEva
+ ngelie: Mark. 12:38-44\nHeilige: Agricolaus van Maastricht\nMeer: https://
+ orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-02-18&stijl
+ =juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+DTSTAMP:20260831T151926Z
+UID:1829c88b-5ccd-55c3-ac29-1a7fb134f045
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nApostel: 2 Joh. 1:1-13\nEvang
+ elie: Mark. 15:22-25\, 33-41\nHeilige: Eucherius van Orléans\nMeer: https:
+ //orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-03-05&sti
+ jl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+DTSTAMP:20260831T151926Z
+UID:17618fa8-c42b-5be8-a233-97e1855c17cd
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2027-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+DTSTAMP:20260831T151926Z
+UID:d92748fe-7812-5265-b121-2c9ba53fad26
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nGeen liturgie met Apostel/Evange
+ lie van de dag.\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2027-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+DTSTAMP:20260831T151926Z
+UID:0e890480-e08f-5d20-a293-4f8d4fe11df8
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 3:1-8\nEvangelie:
+  Joh. 2:12-22\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2027-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+DTSTAMP:20260831T151926Z
+UID:5e798f14-f502-512f-992d-881935fe9fc3
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 4:23-31\nEvangeli
+ e: Joh. 5:24-30\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2027-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+DTSTAMP:20260831T151926Z
+UID:9d1d2594-90fd-5f28-87a7-7a8b2f7d368c
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Ef. 5:9-19\nEvangelie: Ma
+ tt. 18:10-20\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2027-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+DTSTAMP:20260831T151926Z
+UID:b6dfa59f-ffb0-5bbc-8cc0-6f7e08fee1d1
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 4:5-8\nEvangelie:
+  Matt. 13:44-54\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2027-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270825
+DTSTAMP:20260831T151926Z
+UID:e42b3865-2d79-59a4-b9c6-0932058d6cce
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 1 Kor. 15:29-38\nEva
+ ngelie: Matt. 21:23-27\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2027-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270826
+DTEND;VALUE=DATE:20270827
+DTSTAMP:20260831T151926Z
+UID:8ffb563c-5594-56ac-a55f-216a24c9ec17
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 2 Kor. 1:1-7\nEvange
+ lie: Matt. 21:43-46\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2027-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
+DTSTAMP:20260831T151926Z
+UID:58e976f3-c1bc-5b33-8f2a-20eeb50b4809
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: 1 Kor. 2:6-9\nEvange
+ lie: Matt. 22:15-22\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2027-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270922
+DTEND;VALUE=DATE:20270923
+DTSTAMP:20260831T151926Z
+UID:cbdbdc83-8021-5824-8ae4-674d0f10c860
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: 2 Kor. 13:3-13\nEvan
+ gelie: Luc. 4:1-15\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2027-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+DTSTAMP:20260831T151926Z
+UID:27dd9738-25cf-5516-b71a-cb3fc8c80d87
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+DTSTAMP:20260831T151926Z
+UID:d71e70e4-ed8f-5652-a284-9f673e62bdd9
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: Kol. 4:10-18\nEvangel
+ ie: Luc. 16:15-18\; 17:1-4\nHeilige: Winnocus\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2027-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271121
+DTEND;VALUE=DATE:20271122
+DTSTAMP:20260831T151926Z
+UID:f3a6bb13-2065-5a5a-a93c-5b1721550875
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Gal. 6:11-18\; Heb. 2
+ :2-10\nEvangelie: Luc. 12:16-21\; Luc. 10:16-21\nHeilige: Willehad\nMeer: 
+ https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-11-
+ 21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271126
+DTSTAMP:20260831T151926Z
+UID:2773bb6c-eab4-5ad6-b2b5-682a63f99e28
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 1 Tess. 2:9-14\nEvan
+ gelie: Luc. 18:31-34\nHeilige: Livinus van Gent\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2027-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+DTSTAMP:20260831T151926Z
+UID:832427be-0156-54bd-a8af-268009c4e9d8
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: 2 Tim. 2:20-26\nEvan
+ gelie: Mark. 10:46-52\nHeilige: Folciunus\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2027-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+DTSTAMP:20260831T151926Z
+UID:32297aa2-d4c5-58e7-8bc8-d5cef9255f59
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: 2 Tim. 3:16-4:4\nEva
+ ngelie: Mark. 11:11-23\nHeilige: Aubertus van Kamerijk\nMeer: https://orth
+ odox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-12-28&stijl=jul
+ iaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280212
+DTEND;VALUE=DATE:20280213
+DTSTAMP:20260831T151926Z
+UID:286132e8-af13-57c5-8ad0-ec2e8465d4bf
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2028-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280218
+DTEND;VALUE=DATE:20280219
+DTSTAMP:20260831T151926Z
+UID:6e86b4c9-38c8-5a94-befd-d25fa6645d4b
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: 2 Joh. 1:1-13\nEvange
+ lie: Mark. 15:22-25\, 33-41\nHeilige: Agricolaus van Maastricht\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-02-18&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280304
+DTEND;VALUE=DATE:20280305
+DTSTAMP:20260831T151926Z
+UID:d0e4c0f7-fa97-5dda-8ef2-311219b3a9b7
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nApostel: Heb. 1:1-12\nEvangel
+ ie: Mark. 2:23-3:5\nHeilige: Eucherius van Orléans\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2028-03-04&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 03-04&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280316
+DTEND;VALUE=DATE:20280317
+DTSTAMP:20260831T151926Z
+UID:fd01229c-bee3-5ccb-811e-6a58d1f9b729
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2028-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280423
+DTEND;VALUE=DATE:20280424
+DTSTAMP:20260831T151926Z
+UID:0e8e3f41-1a0e-599f-b44b-41c64d8b70d0
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nApostel: Hand. 5:12-20\nEvangeli
+ e: Joh. 20:19-31\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.
+ github.io/heiligen-lage-landen/datum/?datum=2028-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280507
+DTEND;VALUE=DATE:20280508
+DTSTAMP:20260831T151926Z
+UID:be7bf633-ce86-5f54-b14e-39c772c05708
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 9:32-42\nEvangeli
+ e: Joh. 5:1-15\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2028-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280513
+DTEND;VALUE=DATE:20280514
+DTSTAMP:20260831T151926Z
+UID:c844919e-caa8-5c3c-b467-706250da294c
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 12:1-11\nEvangeli
+ e: Joh. 8:31-42\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2028-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280621
+DTEND;VALUE=DATE:20280622
+DTSTAMP:20260831T151926Z
+UID:b9de65be-32cf-540f-b577-b779f41e0c93
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Rom. 8:2-13\nEvangelie: M
+ att. 10:16-22\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/he
+ iligen-lage-landen/datum/?datum=2028-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280730
+DTEND;VALUE=DATE:20280731
+DTSTAMP:20260831T151926Z
+UID:074363b3-56fc-59cb-abdf-11e19f6cbf30
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 1:10-18\nEvangeli
+ e: Matt. 14:14-22\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2028-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280824
+DTEND;VALUE=DATE:20280825
+DTSTAMP:20260831T151926Z
+UID:ae551940-fdd7-5563-bb85-de3a89379ceb
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 2 Kor. 7:1-10\nEvang
+ elie: Mark. 1:29-35\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2028-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280826
+DTEND;VALUE=DATE:20280827
+DTSTAMP:20260831T151926Z
+UID:2a84af90-840e-57de-80fd-ea2f084dcada
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 1 Kor. 1:26-29\nEvan
+ gelie: Matt. 20:29-34\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.gi
+ thub.io/heiligen-lage-landen/datum/?datum=2028-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280918
+DTEND;VALUE=DATE:20280919
+DTSTAMP:20260831T151926Z
+UID:e59a8756-d785-574c-95db-cc2be30c141b
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: Gal. 4:28-5:10\nEvan
+ gelie: Luc. 3:19-22\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2028-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280922
+DTEND;VALUE=DATE:20280923
+DTSTAMP:20260831T151926Z
+UID:29e596ee-d942-51ff-bcae-5a8873fd2aef
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Ef. 1:7-17\nEvangeli
+ e: Luc. 4:22-30\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2028-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280927
+DTEND;VALUE=DATE:20280928
+DTSTAMP:20260831T151926Z
+UID:88f9215c-3f86-59ff-a7d4-4901eb443816
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281119
+DTEND;VALUE=DATE:20281120
+DTSTAMP:20260831T151926Z
+UID:000bd58c-bc1b-5ba6-a793-0a771f6b1ebc
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: Ef. 2:14-22\nEvangeli
+ e: Luc. 12:16-21\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2028-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281121
+DTEND;VALUE=DATE:20281122
+DTSTAMP:20260831T151926Z
+UID:b9912f6b-26d3-5341-8558-86cc898e2512
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2028-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281125
+DTEND;VALUE=DATE:20281126
+DTSTAMP:20260831T151926Z
+UID:230457ec-8e3f-5888-aa37-4ad1d6150777
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: Gal. 1:3-10\nEvangel
+ ie: Luc. 10:19-21\nHeilige: Livinus van Gent\nMeer: https://orthodox-ronl.
+ github.io/heiligen-lage-landen/datum/?datum=2028-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281227
+DTEND;VALUE=DATE:20281228
+DTSTAMP:20260831T151926Z
+UID:2800d276-79bb-588a-b667-8737a579ebf8
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Heb. 10:1-18\nEvange
+ lie: Mark. 8:30-34\nHeilige: Folciunus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2028-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281228
+DTEND;VALUE=DATE:20281229
+DTSTAMP:20260831T151926Z
+UID:f858567e-0bb8-5a12-ad0f-6039b47a0ea5
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Heb. 10:35-11:7\nEva
+ ngelie: Mark. 9:10-16\nHeilige: Aubertus van Kamerijk\nMeer: https://ortho
+ dox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-12-28&stijl=juli
+ aans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290212
+DTEND;VALUE=DATE:20290213
+DTSTAMP:20260831T151926Z
+UID:0ac0c258-2c7f-530d-a2a1-1031dc1021fc
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2029-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290218
+DTEND;VALUE=DATE:20290219
+DTSTAMP:20260831T151926Z
+UID:fb121361-fe21-5dbf-b7db-42ace5cccbf5
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: Rom. 13:11-14:4\nEvan
+ gelie: Matt. 6:14-21\nHeilige: Agricolaus van Maastricht\nMeer: https://or
+ thodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-02-18&stijl=j
+ uliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290305
+DTEND;VALUE=DATE:20290306
+DTSTAMP:20260831T151926Z
+UID:af4c5b5e-dc10-5a80-ab0b-655b5b6cdd16
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Eucherius van Orléans\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2029-03-05&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290316
+DTEND;VALUE=DATE:20290317
+DTSTAMP:20260831T151926Z
+UID:3cfb88d5-07db-507c-b874-c89192108ede
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2029-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290423
+DTEND;VALUE=DATE:20290424
+DTSTAMP:20260831T151926Z
+UID:14594e57-35ba-5418-8325-01c33e6fa08c
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nApostel: Hand. 6:8-7:5\, 47-60\n
+ Evangelie: Joh. 4:46-54\nHeilige: Macarius van Gent\nMeer: https://orthodo
+ x-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-04-23&stijl=juliaa
+ ns
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290507
+DTEND;VALUE=DATE:20290508
+DTSTAMP:20260831T151926Z
+UID:b8dc4c3e-9c2f-58dc-b3c6-9c52137b5bbe
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 12:12-17\nEvangel
+ ie: Joh. 8:42-51\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2029-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290513
+DTEND;VALUE=DATE:20290514
+DTSTAMP:20260831T151926Z
+UID:2ab33cf2-bc89-593d-8ca6-5463fabab267
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 16:16-34\nEvangel
+ ie: Joh. 9:1-38\nHeilige: Quirillus van Tongern\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2029-05-13&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290621
+DTEND;VALUE=DATE:20290622
+DTSTAMP:20260831T151926Z
+UID:35724dd7-1014-56f9-8213-500a633da752
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Rom. 11:13-24\nEvangelie:
+  Matt. 11:27-30\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2029-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290730
+DTEND;VALUE=DATE:20290731
+DTSTAMP:20260831T151926Z
+UID:221c7c84-895a-5163-90ab-d6379badf4a0
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 15:12-19\nEvangel
+ ie: Matt. 21:18-22\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2029-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290824
+DTEND;VALUE=DATE:20290825
+DTSTAMP:20260831T151926Z
+UID:c5fc49d0-0050-5e99-9870-bd230dc7059a
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 2 Kor. 11:5-21\nEvan
+ gelie: Mark. 4:1-9\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.githu
+ b.io/heiligen-lage-landen/datum/?datum=2029-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290826
+DTEND;VALUE=DATE:20290827
+DTSTAMP:20260831T151926Z
+UID:d2c4eb80-a25a-51b2-a25b-22c6e0f6a24c
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 1 Kor. 16:13-24\nEva
+ ngelie: Matt. 21:33-42\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2029-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290918
+DTEND;VALUE=DATE:20290919
+DTSTAMP:20260831T151926Z
+UID:e2e46a1c-f795-5309-b736-895d9caddebd
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: Ef. 2:19-3:7\nEvange
+ lie: Luc. 3:23-4:1\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2029-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290922
+DTEND;VALUE=DATE:20290923
+DTSTAMP:20260831T151926Z
+UID:359cfa5a-05ce-502d-96ca-f9791d3adf37
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: 1 Kor. 2:6-9\nEvange
+ lie: Matt. 10:37-11:1\nHeilige: Audomarus\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2029-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290927
+DTEND;VALUE=DATE:20290928
+DTSTAMP:20260831T151926Z
+UID:cb9b4a97-c3d8-5ce5-be6d-8db391e152f0
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291119
+DTEND;VALUE=DATE:20291120
+DTSTAMP:20260831T151926Z
+UID:aa34c327-6928-5ba9-a68c-bc313bfb5940
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: 1 Tim. 1:1-7\nEvangel
+ ie: Luc. 17:20-25\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2029-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291121
+DTEND;VALUE=DATE:20291122
+DTSTAMP:20260831T151926Z
+UID:c0ed96ad-ce18-54b1-b7c4-e99ccc338e88
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2029-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291125
+DTEND;VALUE=DATE:20291126
+DTSTAMP:20260831T151926Z
+UID:bf29032c-2671-5552-9faf-8e5828ff882a
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: Ef. 5:9-19\nEvangeli
+ e: Luc. 13:10-17\nHeilige: Livinus van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2029-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291227
+DTEND;VALUE=DATE:20291228
+DTSTAMP:20260831T151926Z
+UID:6dbf3147-5744-5df2-936d-9d5d9dc8b7a9
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Jak.1:19-27\nEvangel
+ ie: Mark. 10:17-27\nHeilige: Folciunus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2029-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291228
+DTEND;VALUE=DATE:20291229
+DTSTAMP:20260831T151926Z
+UID:4c476c96-19f9-52c8-bff0-f88decb625bf
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Jak.2:1-13\nEvangeli
+ e: Mark. 10:23-32\nHeilige: Aubertus van Kamerijk\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2029-12-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300212
+DTEND;VALUE=DATE:20300213
+DTSTAMP:20260831T151926Z
+UID:6a9e77e9-bd79-5749-a0d9-13db5144eca6
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2030-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300218
+DTEND;VALUE=DATE:20300219
+DTSTAMP:20260831T151926Z
+UID:0cf87e42-c06a-5bf0-9ecd-4b6bb6b39cbb
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: 2 Petr. 1:20-2:9\nEva
+ ngelie: Mark. 13:9-13\nHeilige: Agricolaus van Maastricht\nMeer: https://o
+ rthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-02-18&stijl=
+ juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300305
+DTEND;VALUE=DATE:20300306
+DTSTAMP:20260831T151926Z
+UID:805e0ca6-f6bd-528d-bbba-cfd370616311
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nApostel: Jud. 1:1-10\nEvangel
+ ie: Luc. 22:39-42\, 45-23:1\nHeilige: Eucherius van Orléans\nMeer: https:/
+ /orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-03-05&stij
+ l=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300316
+DTEND;VALUE=DATE:20300317
+DTSTAMP:20260831T151926Z
+UID:b557d3b8-ccc6-5d2e-a837-fa38414cb94f
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nApostel: Heb. 1:1-12\nEvangelie: 
+ Mark. 2:23-3:5\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2030-03-16&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300423
+DTEND;VALUE=DATE:20300424
+DTSTAMP:20260831T151926Z
+UID:0220be95-4de5-5047-a0fe-b5cf6dbd197a
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nGeen liturgie met Apostel/Evange
+ lie van de dag.\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2030-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300507
+DTEND;VALUE=DATE:20300508
+DTSTAMP:20260831T151926Z
+UID:2439e192-f054-5b30-b4c3-669bb34b2a9c
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 4:1-10\nEvangelie
+ : Joh. 3:16-21\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2030-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300513
+DTEND;VALUE=DATE:20300514
+DTSTAMP:20260831T151926Z
+UID:342f2a70-f3da-555e-8c9e-2894dc09a39d
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 6:8-7:5\, 47-60\n
+ Evangelie: Joh. 4:46-54\nHeilige: Quirillus van Tongern\nMeer: https://ort
+ hodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-05-13&stijl=ju
+ liaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300621
+DTEND;VALUE=DATE:20300622
+DTSTAMP:20260831T151926Z
+UID:319823cc-a8f2-5dfe-b634-7d779b3e19a1
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Rom. 2:14-29\nEvangelie: 
+ Matt. 5:33-41\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/he
+ iligen-lage-landen/datum/?datum=2030-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300730
+DTEND;VALUE=DATE:20300731
+DTSTAMP:20260831T151926Z
+UID:730621a1-9cab-5b21-a5a6-14269329a99a
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 6:20-7:12\nEvange
+ lie: Matt. 14:1-13\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2030-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300824
+DTEND;VALUE=DATE:20300825
+DTSTAMP:20260831T151926Z
+UID:559515c8-8ddb-59a9-a79a-1288d814a4fa
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: Rom. 15:30-33\nEvang
+ elie: Matt. 17:24-18:4\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2030-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300826
+DTEND;VALUE=DATE:20300827
+DTSTAMP:20260831T151926Z
+UID:9dcb5c99-ac2d-5b83-990b-ffc04ece0e17
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 2 Kor. 2:4-15\nEvang
+ elie: Matt. 23:13-22\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2030-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300918
+DTEND;VALUE=DATE:20300919
+DTSTAMP:20260831T151926Z
+UID:b9213299-57e1-5b84-810d-52447895d8f0
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: 2 Kor. 13:3-13\nEvan
+ gelie: Luc. 4:1-15\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2030-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300922
+DTEND;VALUE=DATE:20300923
+DTSTAMP:20260831T151926Z
+UID:41fef174-7fef-56f3-8d4d-3964bc8e5d95
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Gal. 6:11-18\nEvange
+ lie: Joh. 3:13-17\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2030-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300927
+DTEND;VALUE=DATE:20300928
+DTSTAMP:20260831T151926Z
+UID:8ec46395-b48a-509c-8777-83d5ba697f92
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301119
+DTEND;VALUE=DATE:20301120
+DTSTAMP:20260831T151926Z
+UID:a09901a5-3206-5503-bdb4-c7da9cc8c0f4
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: 1 Tess. 1:6-10\nEvang
+ elie: Luc. 17:26-37\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github
+ .io/heiligen-lage-landen/datum/?datum=2030-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301121
+DTEND;VALUE=DATE:20301122
+DTSTAMP:20260831T151926Z
+UID:a65b22c0-9e0d-5296-9c18-304b84470e4f
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2030-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301125
+DTEND;VALUE=DATE:20301126
+DTSTAMP:20260831T151926Z
+UID:dffd5cba-2ef7-5362-a975-c4ded298407a
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 1 Tess. 2:20-3:8\nEv
+ angelie: Luc. 19:37-44\nHeilige: Livinus van Gent\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2030-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+DTSTAMP:20260831T151926Z
+UID:c9e0c64e-4f18-5daf-b72a-cc4941135af8
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Tit. 1:15-2:10\nEvan
+ gelie: Mark. 12:1-12\nHeilige: Folciunus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2030-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301228
+DTEND;VALUE=DATE:20301229
+DTSTAMP:20260831T151926Z
+UID:8787709c-7f81-5bcd-a365-b162f15c033b
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Ef. 1:16-23\nEvangel
+ ie: Luc. 17:3-10\nHeilige: Aubertus van Kamerijk\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2030-12-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310212
+DTEND;VALUE=DATE:20310213
+DTSTAMP:20260831T151926Z
+UID:058e5a61-a068-5403-9f54-2d9dbb466efe
+SUMMARY:Adelgonda
+DESCRIPTION:Feestdatum: 30 januari Juliaans\nApostel: Heb. 13:7-16\nEvangel
+ ie: Matt. 5:14-19\nHeilige: Adelgonda\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2031-02-12&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-12&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310218
+DTEND;VALUE=DATE:20310219
+DTSTAMP:20260831T151926Z
+UID:93b4b17d-5020-5f43-9abf-b6aecb64eb2b
+SUMMARY:Agricolaus van Maastricht
+DESCRIPTION:Feestdatum: 5 februari Juliaans\nApostel: Jud. 1:1-10\nEvangeli
+ e: Luc. 22:39-42\, 45-23:1\nHeilige: Agricolaus van Maastricht\nMeer: http
+ s://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-02-18&s
+ tijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310305
+DTEND;VALUE=DATE:20310306
+DTSTAMP:20260831T151926Z
+UID:dc89db7c-76d4-57c7-89a2-4b6d5d68438f
+SUMMARY:Eucherius van Orléans
+DESCRIPTION:Feestdatum: 20 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Eucherius van Orléans\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2031-03-05&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 03-05&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310316
+DTEND;VALUE=DATE:20310317
+DTSTAMP:20260831T151926Z
+UID:c770c183-31f3-5521-80f8-78c68383361c
+SUMMARY:Cunegonde van Luxemburg
+DESCRIPTION:Feestdatum: 3 maart Juliaans\nApostel: Heb. 4:14-5:6\nEvangelie
+ : Mark. 8:34-9:1\nHeilige: Cunegonde van Luxemburg\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2031-03-16&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 03-16&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310423
+DTEND;VALUE=DATE:20310424
+DTSTAMP:20260831T151926Z
+UID:521e842a-4159-5ed9-9b83-6913b7e87a4c
+SUMMARY:Macarius van Gent
+DESCRIPTION:Feestdatum: 10 april Juliaans\nApostel: Hand. 4:13-22\nEvangeli
+ e: Joh. 5:17-24\nHeilige: Macarius van Gent\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2031-04-23&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-23&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310507
+DTEND;VALUE=DATE:20310508
+DTSTAMP:20260831T151926Z
+UID:db61a53b-14ca-5cbb-9128-4f2e7f2ae1fc
+SUMMARY:Egbert van Rathmelsigi
+DESCRIPTION:Feestdatum: 24 april Juliaans\nApostel: Hand. 14:6-18\nEvangeli
+ e: Joh. 7:14-30\nHeilige: Egbert van Rathmelsigi\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2031-05-07&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 05-07&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310513
+DTEND;VALUE=DATE:20310514
+DTSTAMP:20260831T151926Z
+UID:e22ac624-c57b-5f98-8615-a1ca9ac0321a
+SUMMARY:Quirillus van Tongern
+DESCRIPTION:Feestdatum: 30 april Juliaans\nApostel: Hand. 12:25-13:12\nEvan
+ gelie: Joh. 8:51-59\nHeilige: Quirillus van Tongern\nMeer: https://orthodo
+ x-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-05-13&stijl=juliaa
+ ns
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 05-13&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310621
+DTEND;VALUE=DATE:20310622
+DTSTAMP:20260831T151926Z
+UID:9a38a326-f2a7-5a92-a6ed-980afdd89333
+SUMMARY:Medardus
+DESCRIPTION:Feestdatum: 8 juni Juliaans\nApostel: Rom. 3:28-4:3\nEvangelie:
+  Matt. 7:24-8:4\nHeilige: Medardus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2031-06-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310730
+DTEND;VALUE=DATE:20310731
+DTSTAMP:20260831T151926Z
+UID:522cbdaf-3ef1-577d-abcf-5a0b651e7604
+SUMMARY:Fredegandus
+DESCRIPTION:Feestdatum: 17 juli Juliaans\nApostel: 1 Kor. 13:4-14:5\nEvange
+ lie: Matt. 20:1-16\nHeilige: Fredegandus\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2031-07-30&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 07-30&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310824
+DTEND;VALUE=DATE:20310825
+DTSTAMP:20260831T151926Z
+UID:296eda54-5f6e-5600-b985-0e0d9d0c8c39
+SUMMARY:Gaugericus
+DESCRIPTION:Feestdatum: 11 augustus Juliaans\nApostel: 1 Kor. 15:1-11\nEvan
+ gelie: Matt. 19:16-26\nHeilige: Gaugericus\nMeer: https://orthodox-ronl.gi
+ thub.io/heiligen-lage-landen/datum/?datum=2031-08-24&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 08-24&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310826
+DTEND;VALUE=DATE:20310827
+DTSTAMP:20260831T151926Z
+UID:5ed77103-0d2e-53ae-8dfd-0f573aac0d2c
+SUMMARY:Zwentibold
+DESCRIPTION:Feestdatum: 13 augustus Juliaans\nApostel: 2 Kor. 8:16-9:5\nEva
+ ngelie: Mark. 3:13-19\nHeilige: Zwentibold\nMeer: https://orthodox-ronl.gi
+ thub.io/heiligen-lage-landen/datum/?datum=2031-08-26&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 08-26&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310918
+DTEND;VALUE=DATE:20310919
+DTSTAMP:20260831T151926Z
+UID:4c184593-f6ac-558f-85e3-8a195f629380
+SUMMARY:Bertinus
+DESCRIPTION:Feestdatum: 5 september Juliaans\nApostel: Ef. 1:1-9\nEvangelie
+ : Mark. 7:24-30\nHeilige: Bertinus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2031-09-18&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-18&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310922
+DTEND;VALUE=DATE:20310923
+DTSTAMP:20260831T151926Z
+UID:32425cba-5b20-5223-b92a-d33f8d0eced2
+SUMMARY:Audomarus
+DESCRIPTION:Feestdatum: 9 september Juliaans\nApostel: Ef. 1:22-2:3\nEvange
+ lie: Luc. 3:19-22\nHeilige: Audomarus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2031-09-22&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-22&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310927
+DTEND;VALUE=DATE:20310928
+DTSTAMP:20260831T151926Z
+UID:e0dd26ab-30b5-5896-96b0-9e53a0aabeb4
+SUMMARY:Maternus
+DESCRIPTION:Feestdatum: 14 september Juliaans\nApostel: 1 Kor. 1:18-24\nEva
+ ngelie: Joh. 19:6-11\, 13-20\, 25-28\, 30-35\nHeilige: Maternus\nMeer: htt
+ ps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-09-27&
+ stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311119
+DTEND;VALUE=DATE:20311120
+DTSTAMP:20260831T151926Z
+UID:5a6bfd92-7644-51a3-a5aa-ca93e8f85cd7
+SUMMARY:Winnocus
+DESCRIPTION:Feestdatum: 6 november Juliaans\nApostel: 2 Tess. 2:1-12\nEvang
+ elie: Luc. 15:1-10\nHeilige: Winnocus\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2031-11-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 11-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311121
+DTEND;VALUE=DATE:20311122
+DTSTAMP:20260831T151926Z
+UID:778410fa-f2d5-57f3-9432-df50b4ba5f71
+SUMMARY:Willehad
+DESCRIPTION:Feestdatum: 8 november Juliaans\nApostel: Heb. 2:2-10\nEvangeli
+ e: Luc. 10:16-21\nHeilige: Willehad\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2031-11-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 11-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311125
+DTEND;VALUE=DATE:20311126
+DTSTAMP:20260831T151926Z
+UID:1ccf48f3-1060-54ca-b06b-7d7deebe03a4
+SUMMARY:Livinus van Gent
+DESCRIPTION:Feestdatum: 12 november Juliaans\nApostel: 1 Tim. 1:8-14\nEvang
+ elie: Luc. 17:26-37\nHeilige: Livinus van Gent\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2031-11-25&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 11-25&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311227
+DTEND;VALUE=DATE:20311228
+DTSTAMP:20260831T151926Z
+UID:069abffb-7a6e-57d4-bc6f-db455d9048f6
+SUMMARY:Folciunus
+DESCRIPTION:Feestdatum: 14 december Juliaans\nApostel: Ef. 5:1-8\nEvangelie
+ : Luc. 14:1-11\nHeilige: Folciunus\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2031-12-27&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-27&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311228
+DTEND;VALUE=DATE:20311229
+DTSTAMP:20260831T151926Z
+UID:7126dc46-f526-57af-a425-ba9c0552daa8
+SUMMARY:Aubertus van Kamerijk
+DESCRIPTION:Feestdatum: 15 december Juliaans\nApostel: Kol. 3:4-11\nEvangel
+ ie: Luc. 14:16-24\nHeilige: Aubertus van Kamerijk\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2031-12-28&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-28&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
