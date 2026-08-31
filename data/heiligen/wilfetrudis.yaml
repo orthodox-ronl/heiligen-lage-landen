@@ -1,0 +1,35 @@
+id: wilfetrudis
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abdis van Nijvel."
+namen:
+  primair: Wilfetrudis van Nijvel
+  alternatief:
+  - Wilfetrudis
+  - Wulfetrudis
+datum:
+  waarde: "11-23"
+  stijl: gregoriaans
+titels:
+  - Abdis van Nijvel
+periode: "7e eeuw"
+locaties:
+  - nijvel
+betekenis_lage_landen: |
+  Wilfetrudis was abdis van Nijvel in de lijn van Gertrudis. Bestuur
+  van hetzelfde Brabantse klooster.
+verhaal: |
+  Nicht of opvolgster in de abdij van Nijvel na Gertrudis. Zevende
+  eeuw.
+over_bronnen: |
+  Wilfetrudis voldoet: abdis te Nijvel (België), zevende eeuw ([1]).
+  Gertrudis heeft een eigen pagina.
+referenties:
+  - label: "Wikipedia (NL) — Wilfetrudis van Nijvel"
+    url: "https://nl.wikipedia.org/wiki/Wilfetrudis_van_Nijvel"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Abdis van Nijvel, zevende eeuw.

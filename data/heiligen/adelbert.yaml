@@ -13,6 +13,9 @@ namen:
 datum:
   waarde: "06-25"
   stijl: gregoriaans
+  extra:
+    - waarde: "06-15"
+      toelichting: overbrenging van de relieken (922)
 titels:
   - Aartsdiaken
 periode: "740"

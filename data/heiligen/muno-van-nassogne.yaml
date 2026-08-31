@@ -1,0 +1,41 @@
+id: muno-van-nassogne
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Kluizenaar/martelaar te Nassogne."
+namen:
+  primair: Muno van Nassogne
+  alternatief:
+  - Monon
+  - Monon de Nassogne
+datum:
+  waarde: "10-18"
+  stijl: gregoriaans
+titels:
+  - Kluizenaar
+  - Martelaar
+periode: "† ca. 645"
+locaties:
+  - nassogne
+betekenis_lage_landen: |
+  Muno (Monon) leefde als kluizenaar te Nassogne in de Belgische
+  Ardennen en werd daar vermoord. Martelaarschap in huidig België.
+verhaal: |
+  Schotse of Ierse kluizenaar in de Ardennen, gedood omstreeks 645 te
+  Nassogne. Plaatselijke cultus tot op heden.
+over_bronnen: |
+  Muno voldoet: kluizenarij en martelaarschap te Nassogne (België)
+  ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Muno van Nassogne"
+    url: "https://nl.wikipedia.org/wiki/Muno_van_Nassogne"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Kluizenaar Nassogne, zevende eeuw.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Monon de Nassogne, religious, died Belgium 645.

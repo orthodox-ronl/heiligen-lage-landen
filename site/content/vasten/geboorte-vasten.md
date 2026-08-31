@@ -21,7 +21,7 @@ vastenniveau: lichter
 onderdrukt_wekelijks_vasten: true
 ---
 
-Vasten van 15 november <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(28 nov)</span> tot Kerstavond (24 december <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(6 jan)</span>), ter voorbereiding op Kerstfeest.
+Vasten van 15 november <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(28 nov)</span> tot Kerstavond (24 december <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(6 jan)</span>), ter voorbereiding op [Kerstfeest](/feesten/kerst/).
 
 ## Verhaal
 
@@ -33,8 +33,8 @@ westers woord; in orthodox jargon zijn Geboortevasten of Filipsvasten gebruikeli
 
 ## Verder lezen en kijken
 
-- [Wikipedia (EN) — Nativity Fast](https://en.wikipedia.org/wiki/Nativity_Fast) — geraadpleegd 2026-08-16
-- [OrthodoxWiki — Geboorte van Christus](https://orthodoxwiki.org/Nativity) — geraadpleegd 2026-08-16
+[1] [Wikipedia (EN) — Nativity Fast](https://en.wikipedia.org/wiki/Nativity_Fast) — geraadpleegd 2026-08-16
+[2] [OrthodoxWiki — Geboorte van Christus](https://orthodoxwiki.org/Nativity) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

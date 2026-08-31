@@ -12,14 +12,14 @@ namen:
 datum:
   waarde: "11-29"
   stijl: gregoriaans
-titels:
-  - Bisschop van Utrecht
-periode: "917"
 icoon:
   bestand: iconen/radboud.jpg
   rechten: ok
-  licentie: "Public domain"
+  licentie: Public domain
   bron: "Wikimedia Commons — File:Radboud broerenkerk zwolle.jpg"
+titels:
+  - Bisschop van Utrecht
+periode: "917"
 locaties:
   - utrecht
 betekenis_lage_landen: |

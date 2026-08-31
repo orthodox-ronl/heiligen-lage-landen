@@ -2,7 +2,7 @@
 title: "Synaxarion"
 description: "De vaste jaarcyclus: heiligen en feesten die altijd op een kalenderdag horen"
 uitleg_stijl: synaxarion
-git_date: 2026-08-20
+git_date: 2026-08-31
 ---
 
 Het [Synaxarion]({{% ref "/synaxarion" %}}) is het overzicht van de **vaste
@@ -19,9 +19,9 @@ de zoek- en bladerpagina bij diezelfde vaste cyclus — geen liturgisch
 
 **Wel:** alles met een vaste plaats in het jaar.
 
-**Niet:** wat van Pascha afhangt (Palmzondag, de Grote Vasten, Pinksteren),
+**Niet:** wat van Pascha afhangt ([Palmzondag]({{% ref "/feesten/palmzondag" %}}), de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}), [Pinksteren]({{% ref "/feesten/pinksteren" %}})),
 het wekelijkse woensdag- en vrijdagvasten, en zondagen die van de weekdag
-van Kerst of Theofanie afhangen. Die horen bij een *bepaald jaar*. Daarvoor
+van [Kerst]({{% ref "/feesten/kerst" %}}) of [Theofanie]({{% ref "/feesten/theofanie" %}}) afhangen. Die horen bij een *bepaald jaar*. Daarvoor
 opent u een [datumpagina]({{% ref "/uitleg/datumpagina" %}}).
 
 U kunt zoeken op naam, ook op andere namen die dezelfde heilige of hetzelfde

@@ -12,13 +12,19 @@ namen:
 datum:
   waarde: "06-22"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/walfridus-bedum.jpg
+    primair: true
+    rechten: ok
+    licentie: Public domain
+    bron: "Wikimedia Commons — File:Walfridus - kist.jpg"
+  - bestand: iconen/bedum-walfridus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Bedum - Walfridus.jpg"
 locaties:
   - bedum
-icoon:
-  bestand: iconen/walfridus-bedum.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Walfridus - kist.jpg"
 betekenis_lage_landen: |
   Walfridus is de heilige van Bedum in Groningen: volgens de
   plaatselijke overlevering een landbouwer (soms met zijn zoon Radfridus)

@@ -1,0 +1,51 @@
+id: eucherius-van-orleans
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Bisschop van Orléans; band met de Lage Landen via ballingschap."
+selectie_toelichting_publiek: |
+  **Voor.** GCatholic laat hem in 743 in België sterven. De Vlaamse
+  kalender zet hem op 20 februari. Sommige bronnen plaatsen zijn
+  ballingschap in Hasnon of Sint-Truiden.
+
+  **Twijfel.** Zijn episcopaat was Orléans (Frankrijk). Als hij hier
+  alleen als verbannene stierf, is dat dunner dan «hier iets gedaan».
+  Vergelijkbaar met pelgrims die hier sterven.
+namen:
+  primair: Eucherius van Orléans
+  alternatief:
+  - Eucher d'Orléans
+  - Eucherius
+datum:
+  waarde: "02-20"
+  stijl: gregoriaans
+titels:
+  - Bisschop van Orléans
+periode: "† 743"
+locaties:
+  - sint-truiden
+betekenis_lage_landen: |
+  Eucherius was bisschop van Orléans. Of zijn laatste jaren in de
+  Lage Landen kerkelijk werk waren, is de open vraag.
+verhaal: |
+  Bisschop van Orléans, in conflict met Karel Martel, verbannen.
+  GCatholic: dood in België, 743. Feestdag 20 februari.
+over_bronnen: |
+  **Voor.** GCatholic: death place Belgium, 743 ([2]). Vlaamse kalender
+  ([1]).
+
+  **Twijfel.** Titel en werk zijn Orléans. Ballingschap is geen
+  prediking of stichting.
+referenties:
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      20 februari: Eucherius van Orléans (743?).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Eucher d'Orléans, bishop, born France, died Belgium 743.

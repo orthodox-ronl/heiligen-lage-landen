@@ -1,0 +1,68 @@
+id: ghislain
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Kluizenaar en abt; Saint-Ghislain ligt in België."
+namen:
+  primair: Ghislain
+  alternatief:
+  - Gislenus
+  - Geleyn
+  - Ghislenus van Henegouwen
+datum:
+  waarde: "10-10"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/0-chasse-de-st-ghislain-procession-du-car-d-or.jpg
+  rechten: ok
+  licentie: CC BY 4.0
+  bron: "Wikimedia Commons — File:0 Chasse de St Ghislain - Procession du Car d'Or.JPG"
+titels:
+  - Abt
+  - Kluizenaar
+periode: "† ca. 680"
+locaties:
+  - saint-ghislain
+  - bergen
+rustplaats:
+  plaats: saint-ghislain
+betekenis_lage_landen: |
+  Ghislain leefde als kluizenaar bij Castrilocus (Mons) en stichtte
+  een klooster te Ursidongus, nu Saint-Ghislain in Henegouwen (België).
+  Hij gaf geestelijke raad aan Woutruide bij de stichting van Bergen.
+verhaal: |
+  Ghislain vestigde zich in de zevende eeuw in Henegouwen, eerst bij
+  Castrilocus, later te Ursidongus. Aubertus van Kamerijk onderzocht en
+  beschermde hem. Hij bewoog Vincentius Madelgarius en Woutruide tot het
+  kloosterleven en stond in contact met Adelgonda van Maubeuge. Hij stierf
+  omstreeks 680 in zijn klooster, dat zijn naam kreeg.
+over_bronnen: |
+  Ghislain voldoet: kluizenarij en kloosterstichting in Henegouwen;
+  Saint-Ghislain is België, niet Frankrijk ([2], [3], [4]). Heiligen.net
+  plaatst de plaats ten onrechte in Noord-Frankrijk ([1]); GCatholic en
+  de encyclopedie van Henegouwen corrigeren dat ([3], [4]).
+referenties:
+  - bron_id: hnet
+    label: "heiligen.net — Ghislain van St-Ghislain"
+    url: "https://www.heiligen.net/heiligen/10/10/10-10-0683-ghislain.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Vita; let op: de pagina zet Saint-Ghislain ten onrechte in Frankrijk.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Gislenus"
+    url: "https://www.heiligenlexikon.de/CatholicEncyclopedia/Gislenus.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Catholic Encyclopedia: Ursidongus bij Mons, band met Waudru en Aldegondis.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Ghislain de Mons, abbot, died Belgium 680.
+  - label: "Wikipedia (NL) — Ghislenus van Henegouwen"
+    url: "https://nl.wikipedia.org/wiki/Ghislenus_van_Henegouwen"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandstalig overzicht; plaats in Henegouwen.

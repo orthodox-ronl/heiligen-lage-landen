@@ -14,6 +14,11 @@ namen:
 datum:
   waarde: "08-14"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/werenfrid.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:Heilige Werenfridus van Elst Prelaten en bisschoppen van Utrecht (serietitel), RP-P-BI-1494.jpg"
 titels:
   - Monnik
   - Priester
@@ -22,11 +27,6 @@ locaties:
   - westervoort
   - elst
 periode: "~760"
-icoon:
-  bestand: iconen/werenfrid.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Heilige Werenfridus van Elst Prelaten en bisschoppen van Utrecht (serietitel), RP-P-BI-1494.jpg"
 betekenis_lage_landen: |
   Werenfrid (Werenfried) predikte volgens de overlevering in de Betuwe en
   Friesland, in de kring van Willibrord. Elst en Westervoort bewaren zijn

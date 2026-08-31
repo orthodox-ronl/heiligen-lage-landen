@@ -15,14 +15,14 @@ namen:
 datum:
   waarde: "11-27"
   stijl: gregoriaans
-titels:
-  - Bisschop van Noyon-Doornik
-periode: "~639"
 icoon:
   bestand: iconen/acharius-van-doornik.jpg
   rechten: ok
-  licentie: "CC0"
+  licentie: CC0
   bron: "Wikimedia Commons — File:Haspres (Nord, Fr) église, buste Saint Achaire.JPG"
+titels:
+  - Bisschop van Noyon-Doornik
+periode: "~639"
 locaties:
   - doornik
   - noyon

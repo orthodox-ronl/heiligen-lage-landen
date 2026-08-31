@@ -6,7 +6,8 @@ git_date: 2026-08-22
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/kalender/`. Bron: handmatig [`site/content/kalender/_index.md`]({{% ref "/kalender" %}})
-+ JS.
++ JS. Zonder JavaScript: uitleg en links naar Synaxarion en Agenda;
+het raster (Pascha, kleuren, vandaag) blijft in de browser.
 
 ## Sticky (sitebreed)
 

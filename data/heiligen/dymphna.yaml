@@ -13,6 +13,11 @@ namen:
 datum:
   waarde: "05-15"
   stijl: gregoriaans
+  extra:
+    - waarde: "05-30"
+      toelichting: katholieke gedachtenis
+    - waarde: "10-27"
+      toelichting: overbrenging van de relieken
 titels:
   - Martelares van Geel
 periode: "7e eeuw"
@@ -21,11 +26,17 @@ locaties:
 rustplaats:
   plaats: geel
   toelichting: "Sint-Dimpnakerk"
-icoon:
-  bestand: iconen/dymphna.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Sv Dimfna Irska.jpg"
+iconen:
+  - bestand: iconen/dymphna.jpg
+    primair: true
+    rechten: ok
+    licentie: "CC0"
+    bron: "Wikimedia Commons — File:Sv Dimfna Irska.jpg"
+  - bestand: iconen/martyrdom-of-st-dymphna-and-st-gerebernus-by-jacques-de-l-ange-attr-or-gerard-seghers-attr.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Martyrdom of St Dymphna and St Gerebernus by Jacques de l'Ange (attr.) or Gerard Seghers (attr.).jpg"
 betekenis_lage_landen: |
   Dymphna is de heilige van Geel. De middeleeuwse vita (dertiende eeuw)
   plaatst haar vlucht uit Ierland en haar moord door haar vader in de

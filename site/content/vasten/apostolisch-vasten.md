@@ -36,20 +36,20 @@ onderdrukt_wekelijks_vasten: true
 </table>
 </div>
 
-Van de maandag na Allerheiligen tot de vooravond van Petrus en Paulus (29 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(12 jul)</span>).
+Van de maandag na [Allerheiligen](/feesten/allerheiligen-zondag/) tot de vooravond van [Petrus en Paulus](/feesten/petrus-en-paulus/) (29 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(12 jul)</span>).
 
 ## Verhaal
 
-Het Apostelvasten begint op de maandag na Allerheiligen-zondag (de zondag
-na Pinksteren) en eindigt op 28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 jul)</span>, de dag vóór het feest van de apostelen
-Petrus en Paulus (29 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(12 jul)</span>). De lengte wisselt met Pascha: soms kort, soms lang.
+Het Apostelvasten begint op de maandag na [Allerheiligen-zondag](/feesten/allerheiligen-zondag/) (de zondag
+na [Pinksteren](/feesten/pinksteren/)) en eindigt op 28 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(11 jul)</span>, de dag vóór het feest van de apostelen
+[Petrus en Paulus](/feesten/petrus-en-paulus/) (29 juni <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(12 jul)</span>). De lengte wisselt met [Pascha](/feesten/pascha/): soms kort, soms lang.
 De strengheid is doorgaans lichter dan de Grote Vasten, maar woensdag/vrijdag
 blijven streng; details (vis, olie, wijn) volgen typikon en lokale praktijk.
 
 ## Verder lezen en kijken
 
-- [Wikipedia (EN) — Apostles' Fast](https://en.wikipedia.org/wiki/Apostles%27_Fast) — geraadpleegd 2026-08-16
-- [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
+[1] [Wikipedia (EN) — Apostles' Fast](https://en.wikipedia.org/wiki/Apostles%27_Fast) — geraadpleegd 2026-08-16
+[2] [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

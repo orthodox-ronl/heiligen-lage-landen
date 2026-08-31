@@ -1,0 +1,64 @@
+id: eoban
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaar te Dokkum met Bonifatius."
+namen:
+  primair: Eoban
+  alternatief:
+  - Eoban van Utrecht
+  - Eoban von Utrecht
+datum:
+  waarde: "06-05"
+  stijl: gregoriaans
+titels:
+  - Bisschop
+  - Martelaar
+periode: "† 754"
+locaties:
+  - dokkum
+  - utrecht
+  - frisia
+betekenis_lage_landen: |
+  Eoban predikte met Bonifatius onder de Friezen en stierf op 5 juni
+  754 bij Dokkum. Dat martelaarschap op Friese grond is hetzelfde keerpunt
+  als bij Bonifatius zelf. Hij hoort bij de Gezellen van Bonifatius te
+  Dokkum, maar heeft eigen merites: hulpbisschop van Utrecht en met name
+  genoemde martelaar.
+verhaal: |
+  Eoban was een Angelsaksische benedictijn en priester. Hij
+  evangeliseerde met Willibrord en Bonifatius in Friesland en werd
+  waarschijnlijk door Bonifatius tot hulpbisschop van Utrecht benoemd. Op
+  5 juni 754 werd hij bij Dokkum vermoord, samen met Bonifatius en de
+  overige gezellen. Relieken van Eoban en Adolar kwamen later in Erfurt
+  terecht.
+over_bronnen: |
+  Eoban voldoet: prediking in Friesland en martelaarschap te Dokkum
+  (huidig Nederland) in 754, vóór het schisma ([1], [2], [3]). Hij maakt
+  ook deel uit van de Gezellen van Bonifatius te Dokkum; die groep heeft
+  een eigen pagina. Eigen merites: Utrechtse wijbisschop en met name
+  genoemde martelaar ([1]).
+referenties:
+  - label: "Wikipedia (NL) — Eoban"
+    url: "https://nl.wikipedia.org/wiki/Eoban"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Angelsaksische bisschop, Dokkum 754, relieken Erfurt, feestdag 5 juni.
+  - label: "GCatholic — Saints of Netherlands"
+    url: "https://gcatholic.org/saints/data/country-NL"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Eoban von Utrecht, bishop, died Netherlands 754.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Bonifatius"
+    url: "https://www.heiligenlexikon.de/BiographienB/Bonifatius.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita van Bonifatius met de Dokkumse martelaren, waaronder Eoban.
+  - label: "Wikipedia (NL) — Bonifatius (heilige)"
+    url: "https://nl.wikipedia.org/wiki/Bonifatius_(heilige)"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Martelaarschap bij Dokkum met gevolg.

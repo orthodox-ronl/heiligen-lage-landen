@@ -1,0 +1,44 @@
+id: erminus-van-lobbes
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Opvolger van Ursmar te Lobbes."
+namen:
+  primair: Erminus van Lobbes
+  alternatief:
+  - Ermin
+  - Erminus
+datum:
+  waarde: "04-25"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/56044-clt-0001-01-lobbes-crypte.jpg
+  rechten: ok
+  licentie: CC BY-SA 3.0
+  bron: "Wikimedia Commons — File:56044-CLT-0001-01_lobbes_crypte.jpg"
+titels:
+  - Abtbisschop van Lobbes
+periode: "† 737"
+locaties:
+  - lobbes
+betekenis_lage_landen: |
+  Erminus volgde Ursmar op als abtbisschop van Lobbes. Bestuur van
+  dezelfde Belgische abdij, eerste helft achtste eeuw.
+verhaal: |
+  Leerling van Ursmar, abtbisschop van Lobbes vanaf ca. 711, gestorven
+  in 737.
+over_bronnen: |
+  Erminus voldoet: abtbisschop te Lobbes (België), † 737 ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Erminus van Lobbes"
+    url: "https://nl.wikipedia.org/wiki/Erminus_van_Lobbes"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Opvolger van Ursmar, † 737.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Ermin de Lobbes, bishop, died Belgium 737.

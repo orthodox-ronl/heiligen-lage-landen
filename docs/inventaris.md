@@ -124,6 +124,17 @@ staat niet hier. Live: `/beheer/selectie/`.
 | `quirillus-van-tongern` | Vroege bisschop van Tongeren; of hij historisch is, is onzeker |
 | `winnocus` | Wormhout; historisch Vlaanderen, nu Frankrijk |
 | `egbert-van-rathmelsigi` | Indirecte invloed via opleiding missie (Rath Melsigi); zelf niet hier |
+| `livinus-van-gent` | Gentse martelaarstraditie; waarschijnlijk hagiografische variant van Lebuinus |
+| `fredegandus` | Patroon van Deurne; abdij historisch onbewezen |
+| `macarius-van-gent` | Pelgrim, gestorven te Gent; weinig eigen werk aantoonbaar |
+| `zwentibold` | Koning van Lotharingen; lokale martelaarscultus te Susteren |
+| `eucherius-van-orleans` | Bisschop van Orléans; band via ballingschap |
+| `willehad` | Friese missie mogelijk; hoofdzakelijk Bremen/Saksen |
+| `maternus` | Eerste bisschop van Keulen; Tongeren-band legendarisch |
+| `gaugericus` | Bisschop van Kamerijk; zetel nu in Frankrijk |
+| `audomarus` | Bisschop van Terwaan; Sint-Omaars nu in Frankrijk |
+| `bertinus` | Abt van Sithiu; Sint-Omaars nu in Frankrijk |
+| `cunegonde-van-luxemburg` | Geboren in Luxemburg; werk in Bamberg |
 
 ### Kandidaat-schrappen
 

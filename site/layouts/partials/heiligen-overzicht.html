@@ -46,7 +46,43 @@
     <span role="columnheader">Plaatsen</span>
     <span role="columnheader">Feestdatum</span>
   </div>
-  <div id="heiligen-table" class="heiligen-table" data-heiligen-lijst role="table" aria-label="Heiligen"></div>
+  <div id="heiligen-table" class="heiligen-table" data-heiligen-lijst role="table" aria-label="Heiligen">
+    {{- range sort .Pages "Title" -}}
+      {{- if eq (.Params.selectie | default "nader-onderzoek") "voldoet" -}}
+        <div class="heiligen-row is-sort-naam" role="row">
+          <div role="cell">
+            <span class="heiligen-namen">
+              {{- with .Params.icoon -}}
+                <img class="list-icoon" src="{{ . | relURL }}" alt="" width="28" height="28">
+              {{- end -}}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{- with .Params.alternatief -}}
+                <span class="meta">ook {{ delimit . ", " }}</span>
+              {{- end -}}
+            </span>
+          </div>
+          <div role="cell">
+            {{- $plaatsen := slice -}}
+            {{- range (.Params.locatie_items | default slice) -}}
+              {{- $plaatsen = $plaatsen | append . -}}
+            {{- end -}}
+            {{- range $i, $p := $plaatsen -}}
+              {{- if $i -}}, {{ end -}}
+              <span{{ if eq $p.soort "streek" }} class="meta-streek"{{ end }}>{{ $p.naam }}</span>
+            {{- end -}}
+          </div>
+          <div role="cell">
+            {{- with .Params.feestdatum -}}
+              <a href="{{ "datum/" | relURL }}?dag={{ . }}">{{ partial "feestdatum-kort.html" . }}</a>
+            {{- end -}}
+            {{- if and .Params.feestdatum .Params.vierdatum_oud (ne .Params.vierdatum_oud .Params.feestdatum) }}
+              {{ partial "vierdatum-oud.html" .Params.vierdatum_oud }}
+            {{- end -}}
+          </div>
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </div>
   {{- $items := slice -}}
   {{- range sort .Pages "Title" -}}
     {{- $plaatsen := slice -}}

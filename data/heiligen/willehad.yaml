@@ -1,0 +1,66 @@
+id: willehad
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Friese missie mogelijk; hoofdzakelijk Bremen/Saksen."
+selectie_toelichting_publiek: |
+  **Voor.** De Groningse bisdomkalender gedenkt Willehad op 8 november.
+  Hij was Angelsaksisch missionaris in de Friese en Saksische wereld, in
+  de kring van Willibrord en Bonifatius.
+
+  **Twijfel.** Zijn bewezen episcopaat is Bremen. Of hij in huidig
+  Nederland predikte (en niet alleen in het Duitse Friese/Saksische
+  gebied), is niet hard. Vergelijk Swidbert (Kaiserswerth) die wél in
+  Friesland met Willibrord werkte.
+namen:
+  primair: Willehad
+  alternatief:
+  - Willehad van Bremen
+  - Willehad van Dokkum
+datum:
+  waarde: "11-08"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/bischof-willehad.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Bischof Willehad.jpg"
+  - bestand: iconen/willehad-predikt-in-drenthe.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Willehad predikt in Drenthe.jpg"
+titels:
+  - Bisschop van Bremen
+periode: "† 789"
+locaties:
+  - bremen
+  - frisia
+betekenis_lage_landen: |
+  Willehad staat op de Groningse kalender als geloofsverkondiger.
+  Het zwaartepunt van zijn werk lag in Saksen en Bremen.
+verhaal: |
+  Angelsaksisch missionaris, predikte onder Friezen en Saksen, werd
+  eerste bisschop van Bremen, stierf in 789. Feestdag 8 november te
+  Groningen, dezelfde dag als de Utrechtse bisschoppen.
+over_bronnen: |
+  **Voor.** Nederlandse bisdomkalender Groningen 8 november ([1]).
+  Pre-schisma missionaris in de Friese wereld.
+
+  **Twijfel.** Episcopaat Bremen; Friese prediking in huidig NL is niet
+  eenduidig ([2]).
+referenties:
+  - label: "Katholiek.org — Nederlandse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      8 november: Willehad van Bremen — Groningen.
+  - label: "Wikipedia (NL) — Willehad"
+    url: "https://nl.wikipedia.org/wiki/Willehad"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Angelsaksische missionaris, bisschop van Bremen, † 789.

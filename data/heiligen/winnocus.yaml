@@ -14,6 +14,9 @@ namen:
 datum:
   waarde: "11-06"
   stijl: gregoriaans
+  extra:
+    - waarde: "09-18"
+      toelichting: overbrenging van de relieken
 titels:
   - Abt van Wormhout
 periode: "~640–717"

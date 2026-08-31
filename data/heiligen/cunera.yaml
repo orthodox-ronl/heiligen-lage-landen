@@ -15,6 +15,9 @@ namen:
 datum:
   waarde: "06-12"
   stijl: gregoriaans
+  extra:
+    - waarde: "10-28"
+      toelichting: sterfdag volgens de legende
 titels:
   - Maagd-martelares van Rhenen
 periode: "† 451 (legende)"

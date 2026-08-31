@@ -1,0 +1,42 @@
+id: beregisus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht Andage, later Saint-Hubert."
+namen:
+  primair: Beregisus
+  alternatief:
+  - Berégise
+  - Beregisus van Andage
+datum:
+  waarde: "10-02"
+  stijl: gregoriaans
+titels:
+  - Abt van Andage
+periode: "† ca. 725"
+locaties:
+  - saint-hubert
+betekenis_lage_landen: |
+  Beregisus stichtte het klooster Andage in de Ardennen, later
+  Saint-Hubert (België). Dat is kloosterstichting in de zevende/achtste
+  eeuw.
+verhaal: |
+  Beregisus, volgens de traditie aartsdiaken van de palts, stichtte
+  Andage. Het klooster werd later het centrum van de Hubertuscultus
+  (Saint-Hubert).
+over_bronnen: |
+  Beregisus voldoet: stichting van Andage/Saint-Hubert in België
+  ([1], [2]).
+referenties:
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bérégise d'Andage, abbot, died Belgium 725.
+  - label: "FSSPX — Heiligen van de Lage Landen"
+    url: "https://fsspx.be/nl/heiligen-lage-landen-34309"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      2 oktober: H. Beregisus.

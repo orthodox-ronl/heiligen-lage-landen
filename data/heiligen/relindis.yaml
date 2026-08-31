@@ -16,6 +16,16 @@ namen:
 datum:
   waarde: "02-06"
   stijl: gregoriaans
+  extra:
+    - waarde: "10-12"
+      toelichting: gedachtenis samen met Herlindis
+    - waarde: "02-13"
+      toelichting: gedachtenis in het bisdom Luik
+icoon:
+  bestand: iconen/kapel-harlindis-en-relindis.jpg
+  rechten: ok
+  licentie: CC BY 4.0
+  bron: "Wikimedia Commons — File:Kapel_harlindis_en_relindis.jpg"
 titels:
   - Abdis van Aldeneik
 periode: "8e eeuw"

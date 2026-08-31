@@ -1,0 +1,62 @@
+id: poppo-van-stavelot
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Geboren te Deinze; abt van Stavelot-Malmedy."
+namen:
+  primair: Poppo van Stavelot
+  alternatief:
+  - Poppo van Deinze
+  - Poppon de Stavelot
+datum:
+  waarde: "01-25"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/poppo-von-stablo-3.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Poppo_von_Stablo_3.jpg"
+  - bestand: iconen/pm-135561-b-deinze.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:PM 135561 B Deinze.jpg"
+titels:
+  - Abt van Stavelot
+periode: "978–1048"
+locaties:
+  - stavelot
+  - gent
+betekenis_lage_landen: |
+  Poppo werd te Deinze geboren en was abt van Stavelot-Malmedy
+  (België). Hij hervormde kloosters in Lotharingen. Hij stierf in 1048,
+  vóór het schisma, te Marchiennes (nu Frankrijk); het werk in Stavelot
+  is de opnamegrond.
+verhaal: |
+  Poppo (978–1048), uit Deinze, werd na een pelgrimstocht monnik en
+  daarna abt van Stavelot-Malmedy. Hij voerde de Gorze-hervorming door in
+  een reeks Lotharingse abdijen. Hij stierf op 25 januari 1048.
+over_bronnen: |
+  Poppo voldoet: geboren in Deinze, abt van Stavelot in huidig België,
+  † 1048 ([1], [2], [3]). Sterfplaats Marchiennes is nu Frankrijk; dat
+  doet niet af aan het abbatiaat te Stavelot.
+referenties:
+  - label: "Wikipedia (NL) — Poppo van Stavelot"
+    url: "https://nl.wikipedia.org/wiki/Poppo_van_Stavelot"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Deinze, Stavelot-Malmedy, hervormer, † 1048.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      25 januari: Poppo van Deinze (1048).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Poppon de Stavelot, abbot, born Belgium; GCatholic zet de dood in Frankrijk.

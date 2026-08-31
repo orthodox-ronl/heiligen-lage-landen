@@ -1,0 +1,69 @@
+id: vincentius-madelgarius
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht Zinnik; echtgenoot van Woutruide."
+namen:
+  primair: Vincentius Madelgarius
+  alternatief:
+  - Madelgarius
+  - Vincentius van Zinnik
+  - Mauger
+datum:
+  waarde: "07-14"
+  stijl: gregoriaans
+  extra:
+    - waarde: "04-09"
+      toelichting: soms samen met Woutruide
+    - waarde: "09-20"
+      toelichting: tweede lokale gedachtenis
+iconen:
+  - bestand: iconen/saint-vaincent.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Saint-Vaincent.JPG"
+titels:
+  - Abt
+periode: "† ca. 677"
+locaties:
+  - zinnik
+  - hautmont
+  - bergen
+rustplaats:
+  plaats: zinnik
+betekenis_lage_landen: |
+  Vincentius (Madelgarius) stichtte de abdij van Zinnik/Soignies in
+  huidig België en was de echtgenoot van Woutruide van Bergen. Hautmont
+  ligt nu in Frankrijk; Zinnik is de Belgische stichting die hem in deze
+  kalender plaatst.
+verhaal: |
+  Hoge beambte onder Dagobert, gehuwd met Woutruide; vier kinderen
+  die als heiligen worden vereerd. Het paar koos het kloosterleven. Hij
+  trad in te Hautmont (bij Maubeuge) onder de naam Vincentius en stond
+  later aan de wieg van de abdij van Zinnik. Hij stierf omstreeks 677.
+over_bronnen: |
+  Vincentius voldoet vanwege de stichting van Zinnik in huidig België
+  ([1], [2], [3]). Hautmont (nu Frankrijk) is dezelfde Merovingische
+  familie als Woutruide en Adelgonda; de Belgische stichting weegt hier
+  zwaarder dan de Franse. Woutruide heeft een eigen pagina.
+referenties:
+  - label: "Wikipedia (NL) — Vincentius Madelgarius"
+    url: "https://nl.wikipedia.org/wiki/Vincentius_Madelgarius"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Huwelijk met Waldetrudis, Hautmont en Zinnik.
+  - bron_id: hnet
+    label: "heiligen.net — Vincentius Madelgarius"
+    url: "https://www.heiligen.net/heiligen/07/14/07-14-0677-vincentius.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandse vita: hof, Waltrudis, kinderen, Hautmont, Soignies.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Vincent (Madelgaire de Famars de Soignies), abbot, died Belgium 677.

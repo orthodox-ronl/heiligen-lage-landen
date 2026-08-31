@@ -17,14 +17,20 @@ datum:
   extra:
   - waarde: "05-04"
     toelichting: 4 mei (translatio)
+iconen:
+  - bestand: iconen/plechelm-von-odilienberg.jpg
+    primair: true
+    rechten: ok
+    licentie: Public domain
+    bron: "Wikimedia Commons — File:Zegel Plechelmuskapittel anno 1244.jpg"
+  - bestand: iconen/de-lutte-beeld-van-sint-plechelmus-op-de-toren-van-de-sint-plechelmuskerk.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:De_Lutte_-_Beeld_van_Sint_Plechelmus_op_de_toren_van_de_Sint_Plechelmuskerk.jpg"
 titels:
   - Bisschop, geloofsverkondiger aan de Nederrijn
 periode: "† 732 (?)"
-icoon:
-  bestand: iconen/plechelm-von-odilienberg.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Zegel Plechelmuskapittel anno 1244.jpg"
 locaties:
   - odilienberg
 betekenis_lage_landen: |

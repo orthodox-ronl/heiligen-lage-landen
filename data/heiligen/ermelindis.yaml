@@ -14,16 +14,16 @@ namen:
 datum:
   waarde: "10-29"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/ermelindis.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:H. Ermelindis, RP-P-2019-3710.jpg"
 titels:
   - Kluizenares
 periode: "6e eeuw"
 locaties:
   - meldert
-icoon:
-  bestand: iconen/ermelindis.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:H. Ermelindis, RP-P-2019-3710.jpg"
 betekenis_lage_landen: |
   Ermelindis is een Brabantse kluizenares met cultuscentrum te Meldert
   (bij Hoegaarden/Tienen). Haar vita is legendair, maar de lokale

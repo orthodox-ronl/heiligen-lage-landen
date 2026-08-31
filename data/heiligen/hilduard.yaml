@@ -1,0 +1,40 @@
+id: hilduard
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Missiebisschop te Dikkelvenne."
+namen:
+  primair: Hilduard
+  alternatief:
+  - Hildward
+  - Hilduard van Dikkelvenne
+datum:
+  waarde: "09-07"
+  stijl: gregoriaans
+titels:
+  - Bisschop
+periode: "† ca. 760"
+locaties:
+  - dikkelvenne
+betekenis_lage_landen: |
+  Hilduard (Hildward) wordt op de Vlaamse kalender herdacht als
+  bisschop te Dikkelvenne (Oost-Vlaanderen), achtste eeuw.
+verhaal: |
+  Missiebisschop in de Gentse streek, gestorven omstreeks 760.
+  Gedachtenis 7 september.
+over_bronnen: |
+  Hilduard voldoet: werk te Dikkelvenne in huidig België, † ca. 760
+  ([1], [2]).
+referenties:
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      7 september: Hildward van Dikkelvenne (ca. 750).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Hilduard, bishop, died Belgium 760.

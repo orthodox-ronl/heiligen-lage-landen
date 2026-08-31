@@ -22,19 +22,19 @@ vastenniveau: streng
 onderdrukt_wekelijks_vasten: true
 ---
 
-Vasten van 1 tot en met 14 augustus <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(27 aug)</span>, ter voorbereiding op het Ontslapen.
+Vasten van 1 tot en met 14 augustus <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(27 aug)</span>, ter voorbereiding op het [Ontslapen](/feesten/ontslapen-moeder-gods/).
 
 ## Verhaal
 
-Het Moeder Gods vasten bereidt voor op het feest van het Ontslapen van de
+Het Moeder Gods vasten bereidt voor op het feest van het [Ontslapen](/feesten/ontslapen-moeder-gods/) van de
 Moeder Gods (15 augustus <span class="vierdatum-oud" tabindex="0" data-info-tip="vierdatum-oud" title="Datum op de oude kalender">(28 aug)</span>). In veel tradities is hij streng (vergelijkbaar met
 de Grote Vasten: geen vlees/zuivel; vis vaak beperkt, o.a. op bepaalde feesten
 in augustus). Exacte versoepelingen hangen van typikon en parochie af.
 
 ## Verder lezen en kijken
 
-- [Wikipedia (EN) — Dormition Fast](https://en.wikipedia.org/wiki/Dormition_Fast) — geraadpleegd 2026-08-16
-- [OrthodoxWiki — Ontslapen](https://orthodoxwiki.org/Dormition) — geraadpleegd 2026-08-16
+[1] [Wikipedia (EN) — Dormition Fast](https://en.wikipedia.org/wiki/Dormition_Fast) — geraadpleegd 2026-08-16
+[2] [OrthodoxWiki — Ontslapen](https://orthodoxwiki.org/Dormition) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

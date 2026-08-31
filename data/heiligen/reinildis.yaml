@@ -1,0 +1,42 @@
+id: reinildis
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelares te Saintes; niet Relindis van Aldeneik."
+namen:
+  primair: Reinildis
+  alternatief:
+  - Reinildis van Saintes
+  - Reineldis
+datum:
+  waarde: "07-16"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/meester-van-elsloo-1520-1530-heilige-renildis-van-saintes-sint-lambertuskerk-neeroeteren-8-09-2019.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Meester_van_Elsloo_(1520-1530)_Heilige_Renildis_van_Saintes_Sint-Lambertuskerk_(Neeroeteren)_8-09-2019.jpg"
+titels:
+  - Martelares
+periode: "7e/8e eeuw"
+locaties:
+  - saintes
+betekenis_lage_landen: |
+  Reinildis van Saintes is in de traditie een zuster van Gudula en
+  martelares te Saintes (België). Zij is iemand anders dan Relindis van
+  Aldeneik.
+verhaal: |
+  Volgens de Brabantse familiestamboom (Witger, Amalberga, Gudula)
+  leefde Reinildis als kluizenares en werd zij te Saintes vermoord.
+  Feestdag 16 juli.
+over_bronnen: |
+  Reinildis voldoet als martelares te Saintes in huidig België ([1]).
+  Niet te verwarren met Relindis van Aldeneik (eigen pagina).
+referenties:
+  - label: "Wikipedia (NL) — Reinildis"
+    url: "https://nl.wikipedia.org/wiki/Reinildis"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Saintes, traditie als zuster van Gudula, feestdag 16 juli.

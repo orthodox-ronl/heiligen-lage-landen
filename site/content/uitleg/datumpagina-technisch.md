@@ -29,10 +29,12 @@ beheerd).
 
 ## Brondata in de browser
 
-De pagina leest `site/static/data/entries.json` (gegenereerd). Per entry
+De pagina leest `entries.json` (in de HTML ingebed, anders fetch van
+`site/static/data/entries.json`). Per entry
 staan onder meer `soort`, `cyclus`, `feestdatum`, `occurrences` (paascyclus)
 en `period_occurrences` (periodes). Wijzig die JSON **niet** met de hand;
-`scripts/generate.py` schrijft hem opnieuw.
+`scripts/generate.py` schrijft hem opnieuw. Zonder JavaScript verwijst de
+pagina naar het Synaxarion.
 
 ## Wat er op een dag komt
 

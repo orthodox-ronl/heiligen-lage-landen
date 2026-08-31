@@ -1,0 +1,56 @@
+id: pharaildis
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Gentse maagd; zuster van Gudula in de traditie."
+namen:
+  primair: Pharaïldis
+  alternatief:
+  - Veerle
+  - Faraïldis van Gent
+  - Pharaildis van Gent
+datum:
+  waarde: "01-04"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/saint-pharaildis.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Saint_Pharaildis.jpg"
+titels:
+  - Maagd van Gent
+periode: "† ca. 750"
+locaties:
+  - gent
+betekenis_lage_landen: |
+  Pharaïldis (Veerle) is een Gentse heilige van de achtste eeuw:
+  maagd, met een sterke lokale cultus in Vlaanderen. De traditie maakt
+  haar tot zuster van Gudula.
+verhaal: |
+  Volgens de overlevering was Pharaïldis een dochter uit het
+  Brabantse heiligengeslacht (Gudula, Reinildis). Zij leefde als
+  godvruchtige vrouw in de Gentse streek en stierf omstreeks 750. Haar
+  feestdag is 4 januari op de Vlaamse kalender.
+over_bronnen: |
+  Pharaïldis voldoet: leven en cultus in Gent/Vlaanderen, † ca. 750
+  ([1], [2], [3]). De genealogische koppeling aan Gudula is traditioneel,
+  niet contemporain bewezen; het verblijf in de Gentse streek is de
+  opnamegrond.
+referenties:
+  - label: "Wikipedia (NL) — Pharaïldis van Gent"
+    url: "https://nl.wikipedia.org/wiki/Phara%C3%AFldis_van_Gent"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Gentse maagd, traditie als zuster van Gudula, feestdag 4 januari.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      4 januari: Faraïldis van Gent (ca. 750).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Belgische heilige, achtste eeuw.

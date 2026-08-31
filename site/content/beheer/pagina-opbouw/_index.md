@@ -26,10 +26,10 @@ live wijziging vanwege dat slot.
 | Soort | Voor wie | Canonieke URL | Bron |
 | --- | --- | --- | --- |
 | [Startpagina (heiligenoverzicht)]({{% ref "/beheer/pagina-opbouw/startpagina" %}}) | Bezoeker | `/` | Layout + heiligenindex |
-| [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}) | Bezoeker | `/datum/?datum=jjjj-mm-dd` | Handmatig `_index.md` + JS |
-| [Jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}}) | Bezoeker | `/kalender/` | Handmatig + JS |
+| [Datumpagina]({{% ref "/beheer/pagina-opbouw/datumpagina" %}}) | Bezoeker | `/datum/?datum=jjjj-mm-dd` | Handmatig `_index.md` + JS (Synaxarion als fallback) |
+| [Jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}}) | Bezoeker | `/kalender/` | Handmatig + JS (Synaxarion/Agenda als fallback) |
 | [Lezingenrooster]({{% ref "/beheer/pagina-opbouw/lezingenrooster" %}}) | Bezoeker / clerus | `/lezingenrooster/` (nav: Overzichten) | Handmatig + JS |
-| [Synaxarion]({{% ref "/beheer/pagina-opbouw/synaxarion" %}}) | Bezoeker | `/synaxarion/` (nav: Overzichten) | Handmatig + JS |
+| [Synaxarion]({{% ref "/beheer/pagina-opbouw/synaxarion" %}}) | Bezoeker | `/synaxarion/` (nav: Overzichten) | Gegenereerde HTML-lijst + JS |
 | [Heiligenoverzicht]({{% ref "/beheer/pagina-opbouw/heiligenoverzicht" %}}) | Bezoeker | `/` en `/heiligen/` | Gegenereerde index + layout |
 | [Heilige (detail)]({{% ref "/beheer/pagina-opbouw/heilige" %}}) | Bezoeker | `/heiligen/<id>/` | Gegenereerd uit YAML |
 | [Feest (detail)]({{% ref "/beheer/pagina-opbouw/feest" %}}) | Bezoeker | `/feesten/<id>/` | Gegenereerd uit YAML |

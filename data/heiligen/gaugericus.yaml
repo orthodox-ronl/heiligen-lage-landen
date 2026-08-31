@@ -1,0 +1,51 @@
+id: gaugericus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Bisschop van Kamerijk; zetel nu in Frankrijk."
+selectie_toelichting_publiek: |
+  **Voor.** Gaugericus (Géry) was bisschop van Kamerijk (ca. 580–623)
+  en predikte in een bisdom dat tot Henegouwen reikte. Vlaamse kalender
+  11 augustus.
+
+  **Twijfel.** Kamerijk ligt nu in Frankrijk. Dat is hetzelfde dossier
+  als Aubertus van Kamerijk (al nader onderzoek): historisch de
+  Nederlanden, huidige grens trekt de zetel weg.
+namen:
+  primair: Gaugericus
+  alternatief:
+  - Géry
+  - Gaugericus van Kamerijk
+datum:
+  waarde: "08-11"
+  stijl: gregoriaans
+titels:
+  - Bisschop van Kamerijk
+periode: "† 623 of 626"
+locaties:
+  - kamerijk
+betekenis_lage_landen: |
+  Gaugericus bestuurde het bisdom Kamerijk, dat historisch tot de
+  Nederlanden hoorde. De zetel ligt nu in Frankrijk.
+verhaal: |
+  Bisschop van Kamerijk in de late zesde en vroege zevende eeuw,
+  gestorven 623 of 626. Feestdag 11 augustus.
+over_bronnen: |
+  **Voor.** Episcopaat Kamerijk, prediking in een bisdom dat Henegouwen
+  raakte ([1], [2]).
+
+  **Twijfel.** Zelfde geografische grens als Aubertus van Kamerijk
+  (eigen pagina, nader onderzoek).
+referenties:
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      11 augustus: Gaugericus van Kamerijk (623 of 626).
+  - label: "Wikipedia (NL) — Gaugericus"
+    url: "https://nl.wikipedia.org/wiki/Gaugericus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bisschop van Kamerijk, vroege zevende eeuw.

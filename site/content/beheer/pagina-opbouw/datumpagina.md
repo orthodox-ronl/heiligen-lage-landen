@@ -7,7 +7,9 @@ git_date: 2026-08-30
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/datum/?datum=2026-07-01` (burgerlijk `jjjj-mm-dd`). Optioneel
 `&stijl=juliaans`. Bron: handmatig
-[`site/content/datum/_index.md`]({{% ref "/datum" %}}) + JS. De
+[`site/content/datum/_index.md`]({{% ref "/datum" %}}) + JS. Zonder
+JavaScript: verwijzing naar het Synaxarion (vaste cyclus, geen jaartal).
+De
 [startpagina]({{% ref "/beheer/pagina-opbouw/startpagina" %}}) is het
 heiligenoverzicht, niet de dagkaart. De datumpagina staat niet in de
 hoofdnavigatie; u komt er via de jaarkalender of via een feestdatum.

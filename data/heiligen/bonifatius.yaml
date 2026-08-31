@@ -14,6 +14,17 @@ namen:
 datum:
   waarde: "06-05"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/bonifatius.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Bonifatius van Fulda (tg-uact-334).jpg"
+  - bestand: iconen/saint-boniface-by-cornelis-bloemaert.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Saint Boniface by Cornelis Bloemaert.jpg"
 titels:
   - Aartsbisschop
   - Martelaar
@@ -22,30 +33,30 @@ locaties:
   - dokkum
   - utrecht
   - frisia
-icoon:
-  bestand: iconen/bonifatius.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Bonifatius van Fulda (tg-uact-334).jpg"
 betekenis_lage_landen: |
   Bonifatius (Wynfrith) werkte met en na Willibrord in Friesland en Utrecht,
   hervormde de Frankische kerk en stierf op 5 juni 754 bij Dokkum, met
   tientallen metgezellen, tijdens een vormseltocht onder de Friezen. Dat
   martelaarschap op Friese grond is het keerpunt van de noordelijke
   missie: Utrecht bleef, de Friese heidenen kregen een bloedgetuige.
-  OrthodoxWiki en het Heiligenlexikon bevestigen die lijn.
+  OrthodoxWiki en het Heiligenlexikon bevestigen die lijn. De gezellen
+  hebben een eigen groepspagina; Eoban heeft daarnaast een eigen pagina.
 verhaal: |
   Geboren in Wessex (circa 672–675), monnik te Exeter en Nursling, ging
   hij in 716 en opnieuw in 718 naar het vasteland. Paus Gregorius II gaf
   hem de naam Bonifatius. Hij werkte in Hessen, Thüringen en Beieren,
   werd in 722 bisschop, later aartsbisschop van Mainz, en kroonde Pepijn
   de Korte. Tegen het einde van zijn leven keerde hij naar Friesland terug.
-  Bij Dokkum werd hij met zijn gevolg vermoord. Zijn relieken rusten in
-  Fulda; Dokkum blijft de Nederlandse martelaarsplaats.
+  Bij Dokkum werd hij met zijn gevolg vermoord — zie de Gezellen van
+  Bonifatius te Dokkum; onder hen Eoban als hulpbisschop van Utrecht. Zijn
+  relieken rusten in Fulda; Dokkum blijft de Nederlandse martelaarsplaats.
 over_bronnen: |
-  De vita van Willibald van Mainz (achtste eeuw) is de hoofdbron; latere
-  wonderverhalen (onder meer de eik van Geismar) horen bij de Duitse
-  missie, niet bij Dokkum.
+  Bonifatius voldoet: prediking in Friesland en Utrecht en martelaarschap
+  te Dokkum in 754 ([2], [3], [4]). De vita van Willibald van Mainz
+  (achtste eeuw) is de hoofdbron ([2]); latere wonderverhalen (onder meer
+  de eik van Geismar) horen bij de Duitse missie, niet bij Dokkum. Hij is
+  ook lid van de Gezellen van Bonifatius te Dokkum, maar heeft eigen
+  merites als missieleider.
 referenties:
   - label: "OrthodoxWiki — Boniface"
     url: "https://orthodoxwiki.org/Boniface"

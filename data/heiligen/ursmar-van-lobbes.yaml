@@ -1,0 +1,70 @@
+id: ursmar-van-lobbes
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abtbisschop van Lobbes."
+namen:
+  primair: Ursmar van Lobbes
+  alternatief:
+  - Ursmarus
+  - Ursmer de Lobbes
+  - Ursmar
+datum:
+  waarde: "04-18"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/coll-giale-saint-ursmer-lobbes-int-rieur-14-cropped2.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Collégiale_Saint-Ursmer_(Lobbes)_-_Intérieur_14_(cropped2).JPG"
+  - bestand: iconen/coll-giale-saint-ursmer-lobbes-crypte-03.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Collégiale Saint-Ursmer (Lobbes) - Crypte 03.JPG"
+titels:
+  - Abtbisschop van Lobbes
+periode: "ca. 645–713"
+locaties:
+  - lobbes
+rustplaats:
+  plaats: lobbes
+  toelichting: "Sint-Ursmarkerk"
+betekenis_lage_landen: |
+  Ursmar was abtbisschop van Lobbes (Henegouwen, België): hij bouwde
+  de kloosterkerk, voerde de Benedictijnse regel in en predikte in de
+  streek. Lobbes werd een van de kersteningcentra van het zuiden.
+verhaal: |
+  Ursmar, opgeleid in het klooster, werd door Landelinus tot priester
+  gewijd en rond 689 abtbisschop van Lobbes. Hij bouwde de kerk die later
+  zijn naam droeg (wijding 697) en trad rond 711 af ten gunste van Erminus.
+  Hij stierf in 713 te Lobbes.
+over_bronnen: |
+  Ursmar voldoet: bestuur en prediking te Lobbes in huidig België,
+  † 713 ([1], [2], [3]).
+referenties:
+  - bron_id: hlex
+    label: "Heiligenlexikon — Ursmar von Lobbes"
+    url: "https://www.heiligenlexikon.de/BiographienU/Ursmar.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita: Lobbes, kerkbouw, Erminus, feestdag 18 april.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      18 april: Ursmarus van Lobbes (713).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Ursmer de Lobbes, bishop, died Belgium 713.
+  - label: "Wikipedia (NL) — Ursmarus van Lobbes"
+    url: "https://nl.wikipedia.org/wiki/Ursmarus_van_Lobbes"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandstalig overzicht van de abtbisschop van Lobbes.

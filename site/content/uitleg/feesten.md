@@ -2,7 +2,7 @@
 title: "Overzicht van feesten"
 description: "Hoe de lijst van vaste feesten is gerangschikt, en hoe u een andere volgorde kiest"
 uitleg_stijl: feesten
-git_date: 2026-08-30
+git_date: 2026-08-31
 ---
 
 Het [overzicht van vaste feesten]({{% ref "/feesten" %}}) is een lijst, geen
@@ -15,8 +15,8 @@ of gewicht). Die keuzes staan hier bij **Rangschikking**.
 ## Vier volgordes
 
 **Kerkelijk jaar** (standaard). Van 1 september tot 31 augustus, daarna wat
-van Pascha afhangt. September is het begin van het kerkelijk jaar. Transfiguratie
-en het Ontslapen staan daardoor aan het *einde* van die loop, niet «ergens in
+van Pascha afhangt. September is het begin van het kerkelijk jaar. [Transfiguratie]({{% ref "/feesten/transfiguratie" %}})
+en het [Ontslapen]({{% ref "/feesten/ontslapen-moeder-gods" %}}) staan daardoor aan het *einde* van die loop, niet «ergens in
 augustus».
 
 **Januari–december.** Dezelfde **feestdata**, maar de lijst begint bij

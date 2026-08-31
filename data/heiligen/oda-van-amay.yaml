@@ -14,6 +14,20 @@ namen:
 datum:
   waarde: "10-23"
   stijl: gregoriaans
+  extra:
+    - waarde: "07-09"
+      toelichting: overbrenging van de relieken
+iconen:
+  - bestand: iconen/oda-van-amay.jpg
+    primair: true
+    rechten: ok
+    licentie: CC BY 4.0
+    bron: "Wikimedia Commons — File:Sainte Ode d'Amay (Jean Del Cour, c 1680), KIK-IRPA b028727.jpg"
+  - bestand: iconen/sarcophage-de-sancta-chrodoara.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Sarcophage de Sancta Chrodoara.JPG"
 titels:
   - Stichteres van kerken
 periode: "vóór 634"
@@ -22,11 +36,6 @@ locaties:
 rustplaats:
   plaats: amay
   toelichting: "Collegiale Sint-Joris-en-Sint-Oda; Chrodoara-sarcofaag"
-icoon:
-  bestand: iconen/oda-van-amay.jpg
-  rechten: ok
-  licentie: "CC BY 4.0"
-  bron: "Wikimedia Commons — File:Sainte Ode d'Amay (Jean Del Cour, c 1680), KIK-IRPA b028727.jpg"
 betekenis_lage_landen: |
   Oda/Chrodoara is de stichtster-heilige van Amay (Maasland, bij Hoei):
   de sarcofaaginscriptie noemt haar edelvrouw die uit eigen middelen

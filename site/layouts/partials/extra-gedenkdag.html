@@ -1,0 +1,10 @@
+{{/*
+  Secundaire gedenkdagen tussen haakjes achter de canonieke feestdag.
+  Popover: data-info-tip="extra-gedenkdag".
+  Gebruik: {{ partial "extra-gedenkdag.html" .Params.gedenkdagen_extra }}
+*/}}
+{{- $items := . -}}
+{{- if $items -}}
+{{- $payload := $items | jsonify -}}
+<span class="extra-gedenkdag" tabindex="0" data-info-tip="extra-gedenkdag" data-extra-gedenkdagen="{{ $payload }}" title="Andere gedenkdagen">({{- range $i, $item := $items -}}{{- if $i }}; {{ end -}}<a href="{{ printf "/datum/?dag=%s" $item.waarde | relURL }}">{{ $item.label }}</a>{{- end -}})</span>
+{{- end -}}

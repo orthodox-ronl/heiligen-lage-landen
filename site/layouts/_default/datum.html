@@ -5,7 +5,14 @@
   </h1>
 
   <div class="today-card" id="today-card" aria-live="polite">
-    <div id="today-entries">Laden…</div>
+    <div id="today-entries">
+      <p class="js-fallback">
+        Deze pagina toont één burgerlijke dag in een jaar (vasten, lezingen, paascyclus).
+        Daarvoor is JavaScript nodig. De vaste jaarcyclus staat in het
+        <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>.
+      </p>
+    </div>
   </div>
 </section>
+{{ partial "entries-json.html" . }}
 {{ end }}

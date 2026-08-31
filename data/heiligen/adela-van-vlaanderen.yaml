@@ -15,6 +15,13 @@ namen:
 datum:
   waarde: "09-08"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/baldwin-v-of-flanders-and-adela-of-france.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Baldwin V of Flanders and Adela of France.jpg"
 titels:
   - Weduwe & kloosterlinge
 periode: "~1010–1079"

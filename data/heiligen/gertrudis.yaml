@@ -17,6 +17,11 @@ datum:
   extra:
     - waarde: "02-12"
       toelichting: 12 februari (eerdere catalogusdatum; hoofddag is 17 maart)
+icoon:
+  bestand: iconen/gertrudis.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:Gertrudis van Nijvel.jpg"
 titels:
   - Abdis van Nijvel
 periode: "659"
@@ -25,11 +30,6 @@ locaties:
 rustplaats:
   plaats: nijvel
   toelichting: "Abdij van Nijvel"
-icoon:
-  bestand: iconen/gertrudis.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Gertrudis van Nijvel.jpg"
 betekenis_lage_landen: |
   Gertrudis maakte Nijvel tot het huis-klooster van de Pippiniden: onderwijs
   voor meisjes, boeken uit Rome, banden met het columbaanse monnikendom.

@@ -1,0 +1,39 @@
+{{- if os.FileExists "static/data/synaxarion.json" -}}
+{{- $data := os.ReadFile "static/data/synaxarion.json" | transform.Unmarshal -}}
+{{- $maanden := $data.maanden | default slice -}}
+{{- range $i, $maand := $maanden -}}
+{{- if gt $i 0 -}}
+<div class="list-month-break" role="separator" aria-label="{{ $maand.naam }}" data-month-key="{{ $maand.key }}">
+  <span class="list-month-break-label">{{ $maand.naam }}</span>
+</div>
+{{- end -}}
+{{- range $maand.dagen -}}
+<div class="date-list-row" role="row" data-month-key="{{ $maand.key }}" data-mmdd="{{ .mmdd }}">
+  <div class="date-list-dag" role="cell">
+    <a href="{{ "synaxarion/" | relURL }}?dag={{ .mmdd }}">{{ .dag }}</a>
+  </div>
+  <div class="date-list-naam" role="cell">
+    <span class="synaxarion-stack">
+      {{- range .items -}}
+      <span class="synaxarion-stack-item date-list-naam-item">
+        {{- if .icoon -}}
+        <img class="list-icoon" src="{{ .icoon | relURL }}" alt="" width="28" height="28">
+        {{- end -}}
+        <a href="{{ .url | relURL }}">{{ .naam }}</a>
+      </span>
+      {{- end -}}
+    </span>
+  </div>
+  <div class="date-list-soort" role="cell">
+    <span class="synaxarion-stack">
+      {{- range .items -}}
+      <span class="synaxarion-stack-item">{{ .soort }}</span>
+      {{- end -}}
+    </span>
+  </div>
+</div>
+{{- end -}}
+{{- end -}}
+{{- else -}}
+<p class="js-fallback">Het Synaxarion kon niet worden opgebouwd. Bouw de site opnieuw (<code>generate</code>).</p>
+{{- end -}}

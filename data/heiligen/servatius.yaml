@@ -18,6 +18,11 @@ datum:
   extra:
     - waarde: "06-07"
       toelichting: 7 juni (overbrenging van de relieken)
+icoon:
+  bestand: iconen/servatius.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:Servatius van Maastricht (tg-uact-614).jpg"
 titels:
   - Bisschop van Tongeren
 periode: "384?"
@@ -27,11 +32,6 @@ locaties:
 rustplaats:
   plaats: maastricht
   toelichting: "Sint-Servaasbasiliek"
-icoon:
-  bestand: iconen/servatius.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Servatius van Maastricht (tg-uact-614).jpg"
 betekenis_lage_landen: |
   Servatius is de vroegst bevestigde bisschop van de Maasstreek. Zijn graf
   in Maastricht werd al in de vijfde eeuw een bedevaartsoord; de later hem

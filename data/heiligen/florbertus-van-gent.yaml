@@ -1,0 +1,38 @@
+id: florbertus-van-gent
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Eerste abt van de Sint-Pietersabdij te Gent."
+namen:
+  primair: Florbertus van Gent
+  alternatief:
+  - Florbert van Gent
+  - Floribertus van Gent
+datum:
+  waarde: "11-01"
+  stijl: gregoriaans
+titels:
+  - Abt van Sint-Pieters te Gent
+periode: "† ca. 661"
+locaties:
+  - gent
+betekenis_lage_landen: |
+  Florbertus was de eerste abt van de Sint-Pietersabdij op de
+  Blandijnberg te Gent, door Amandus aangesteld. Hij is iemand anders dan
+  Floribert van Luik.
+verhaal: |
+  Afkomstig uit de abdij van Elno (Saint-Amand-les-Eaux) werd
+  Florbertus door Amandus naar Gent gehaald als eerste abt van de nieuwe
+  Sint-Pietersabdij. Hij stierf omstreeks 661. Een heiligverklaring wordt
+  in 1049 vermeld; feestdag 1 november.
+over_bronnen: |
+  Florbertus voldoet: abt van een Gentse abdij in de zevende eeuw
+  ([1]). Niet te verwarren met Floribert van Luik, die een eigen pagina heeft.
+referenties:
+  - label: "Wikipedia (NL) — Florbertus van Gent"
+    url: "https://nl.wikipedia.org/wiki/Florbertus_van_Gent"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Eerste abt Sint-Pietersabdij Gent, † ca. 661, feestdag 1 november.

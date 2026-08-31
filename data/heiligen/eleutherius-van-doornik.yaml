@@ -1,0 +1,49 @@
+id: eleutherius-van-doornik
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Bisschop van Doornik."
+namen:
+  primair: Eleutherius van Doornik
+  alternatief:
+  - Eleutherius
+  - Éleuthère de Tournai
+datum:
+  waarde: "02-20"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/st-eleutherius-of-tournai-baptizing-converts-detail-workshop-of-arnold-of-nijmegen-flemish-c-1500-1525-nelson-atkins-museum-of-art-dsc08491.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:St_Eleutherius_of_Tournai_Baptizing_Converts_(detail),_workshop_of_Arnold_of_Nijmegen,_Flemish,_c._1500-1525_-_Nelson-Atkins_Museum_of_Art_-_DSC08491.JPG"
+titels:
+  - Bisschop van Doornik
+periode: "† 531"
+locaties:
+  - doornik
+rustplaats:
+  plaats: doornik
+betekenis_lage_landen: |
+  Eleutherius was bisschop van Doornik (huidig België) in de vroege
+  zesde eeuw. Dat is kerkbestuur in de zuidelijke Lage Landen, ruim vóór
+  het schisma.
+verhaal: |
+  Eleutherius geldt als bisschop van Doornik; hij stierf in 531.
+  Doornik was toen een belangrijke Frankische zetel. Zijn cultus hoort bij
+  de kathedraal van Doornik.
+over_bronnen: |
+  Eleutherius voldoet: bisschop van Doornik in huidig België, † 531
+  ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Eleutherius van Doornik"
+    url: "https://nl.wikipedia.org/wiki/Eleutherius_van_Doornik"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bisschop van Doornik, zesde eeuw.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Éleuthère de Tournai, bishop, † 531.

@@ -8,9 +8,9 @@ generator: scripts/generate.py
 Gegenereerd uit `selectie` op heiligen-YAML. Niet bedoeld voor bezoekers.
 Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 
-**74** heiligen.
+**115** heiligen.
 
-## Voldoet (61)
+## Voldoet (91)
 
 - [Acharius van Doornik](/heiligen/acharius-van-doornik/) (`data/heiligen/acharius-van-doornik.yaml`) — Bisschop van Doornik-Noyon; steunde de missie in het Belgische Merovingische gebied.
 - [Adelbert](/heiligen/adelbert/) (`data/heiligen/adelbert.yaml`) — Egmond; metgezel van Willibrord.
@@ -24,40 +24,65 @@ Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 - [Ansfried van Utrecht](/heiligen/ansfried-van-utrecht/) (`data/heiligen/ansfried-van-utrecht.yaml`) — Bisschop van Utrecht; stichter van Thorn en Hohorst.
 - [Bavo](/heiligen/bavo/) (`data/heiligen/bavo.yaml`) — Gent.
 - [Begga](/heiligen/begga/) (`data/heiligen/begga.yaml`) — Dochter van Iduberga; stichting Andenne.
+- [Beregisus](/heiligen/beregisus/) (`data/heiligen/beregisus.yaml`) — Sticht Andage, later Saint-Hubert.
+- [Berlindis van Meerbeke](/heiligen/berlindis-van-meerbeke/) (`data/heiligen/berlindis-van-meerbeke.yaml`) — Kloosterlinge te Meerbeke.
 - [Bernulphus](/heiligen/bernulphus/) (`data/heiligen/bernulphus.yaml`) — Bisschop van Utrecht; sterfjaar 1054, westers episcopaat in de Lage Landen.
+- [Bertuinus van Malonne](/heiligen/bertuinus-van-malonne/) (`data/heiligen/bertuinus-van-malonne.yaml`) — Abt/bisschop van Malonne bij Namen.
 - [Bonifatius](/heiligen/bonifatius/) (`data/heiligen/bonifatius.yaml`) — Missie in Friesland; martelaarschap bij Dokkum.
 - [Cunera](/heiligen/cunera/) (`data/heiligen/cunera.yaml`) — Rhenen.
 - [Domitianus](/heiligen/domitianus/) (`data/heiligen/domitianus.yaml`) — Bisschop van Maastricht.
 - [Dymphna](/heiligen/dymphna/) (`data/heiligen/dymphna.yaml`) — Geel.
+- [Eleutherius van Doornik](/heiligen/eleutherius-van-doornik/) (`data/heiligen/eleutherius-van-doornik.yaml`) — Bisschop van Doornik.
 - [Eligius](/heiligen/eligius/) (`data/heiligen/eligius.yaml`) — Bisdom Noyon-Doornik; prediking in Vlaanderen.
 - [Engelmund](/heiligen/engelmund/) (`data/heiligen/engelmund.yaml`) — Velsen / Holland.
+- [Eoban](/heiligen/eoban/) (`data/heiligen/eoban.yaml`) — Martelaar te Dokkum met Bonifatius.
 - [Ermelindis](/heiligen/ermelindis/) (`data/heiligen/ermelindis.yaml`) — Brabant (Meldert).
+- [Erminus van Lobbes](/heiligen/erminus-van-lobbes/) (`data/heiligen/erminus-van-lobbes.yaml`) — Opvolger van Ursmar te Lobbes.
+- [Florbertus van Gent](/heiligen/florbertus-van-gent/) (`data/heiligen/florbertus-van-gent.yaml`) — Eerste abt van de Sint-Pietersabdij te Gent.
 - [Floribert](/heiligen/floribert/) (`data/heiligen/floribert.yaml`) — Bisschop van Luik.
 - [Foillan](/heiligen/foillan/) (`data/heiligen/foillan.yaml`) — Fosses.
+- [Forannan van Waulsort](/heiligen/forannan-van-waulsort/) (`data/heiligen/forannan-van-waulsort.yaml`) — Abt van Waulsort.
 - [Frederich](/heiligen/frederich/) (`data/heiligen/frederich.yaml`) — Bisschop van Utrecht.
+- [Gerardus van Brogne](/heiligen/gerardus-van-brogne/) (`data/heiligen/gerardus-van-brogne.yaml`) — Sticht Brogne; hervormt Gentse abdijen vóór 1054.
+- [Gerebernus](/heiligen/gerebernus/) (`data/heiligen/gerebernus.yaml`) — Martelaar te Geel met Dymphna.
 - [Gertrudis](/heiligen/gertrudis/) (`data/heiligen/gertrudis.yaml`) — Abdis van Nijvel.
+- [Gerulfus](/heiligen/gerulfus/) (`data/heiligen/gerulfus.yaml`) — Martelaar te Drongen/Merendree.
+- [Gezellen van Bonifatius te Dokkum](/heiligen/gezellen-bonifatius-dokkum/) (`data/heiligen/gezellen-bonifatius-dokkum.yaml`) — Martelaren te Dokkum op 5 juni 754.
+- [Ghislain](/heiligen/ghislain/) (`data/heiligen/ghislain.yaml`) — Kluizenaar en abt; Saint-Ghislain ligt in België.
 - [Gommar](/heiligen/gommar/) (`data/heiligen/gommar.yaml`) — Patroon van Lier; kluizenaar Nivesdonck.
 - [Gondulphus](/heiligen/gondulphus/) (`data/heiligen/gondulphus.yaml`) — Bisschop van Maastricht; cultus samen met Monulphus.
 - [Gregorius van Utrecht](/heiligen/gregorius-van-utrecht/) (`data/heiligen/gregorius-van-utrecht.yaml`) — Abt en beheerder van Utrecht; leerling van Bonifatius.
 - [Gudula van Brussel](/heiligen/gudula-van-brussel/) (`data/heiligen/gudula-van-brussel.yaml`) — Patrones van Brussel; Moorsel–Brussel-cultus.
+- [Guibertus van Gembloers](/heiligen/guibertus-van-gembloers/) (`data/heiligen/guibertus-van-gembloers.yaml`) — Sticht de abdij van Gembloers.
+- [Guido van Anderlecht](/heiligen/guido-van-anderlecht/) (`data/heiligen/guido-van-anderlecht.yaml`) — Koster te Laken; gestorven te Anderlecht.
+- [Hadelinus van Celles](/heiligen/hadelinus-van-celles/) (`data/heiligen/hadelinus-van-celles.yaml`) — Abt van Celles bij Dinant.
 - [Herlindis](/heiligen/herlindis/) (`data/heiligen/herlindis.yaml`) — Eerste abdis van Aldeneik bij Maaseik; gewijd door Willibrord.
+- [Hilduard](/heiligen/hilduard/) (`data/heiligen/hilduard.yaml`) — Missiebisschop te Dikkelvenne.
+- [Hilsondis](/heiligen/hilsondis/) (`data/heiligen/hilsondis.yaml`) — Sticht de abdij van Thorn; Thornse liturgische gedachtenis.
 - [Hubertus van Maastricht](/heiligen/hubertus-van-maastricht/) (`data/heiligen/hubertus-van-maastricht.yaml`) — Laatste bisschop van Maastricht; eerste van Luik.
 - [Hunger van Utrecht](/heiligen/hunger-van-utrecht/) (`data/heiligen/hunger-van-utrecht.yaml`) — Bisschop van Utrecht in de Vikingtijd.
 - [Iduberga](/heiligen/iduberga/) (`data/heiligen/iduberga.yaml`) — Stichteres van Nijvel; moeder van Gertrudis en Begga.
 - [Jeroen van Noordwijk](/heiligen/jeroen-van-noordwijk/) (`data/heiligen/jeroen-van-noordwijk.yaml`) — Noordwijk.
 - [Johannes van Shanghai](/heiligen/johannes-van-shanghai/) (`data/heiligen/johannes-van-shanghai.yaml`) — Bisschop van West-Europa; Nederlandse missie, klooster Den Haag, bisdom 1965.
 - [Lambertus](/heiligen/lambertus/) (`data/heiligen/lambertus.yaml`) — Bisschop van Maastricht; martelaar te Luik.
+- [Landelinus van Lobbes](/heiligen/landelinus-van-lobbes/) (`data/heiligen/landelinus-van-lobbes.yaml`) — Stichter van Lobbes.
+- [Landoaldus](/heiligen/landoaldus/) (`data/heiligen/landoaldus.yaml`) — Missie Haspengouw; kerk Wintershoven; leermeester van Lambertus.
+- [Landrada](/heiligen/landrada/) (`data/heiligen/landrada.yaml`) — Sticht abdij Munsterbilzen.
 - [Lebuinus](/heiligen/lebuinus/) (`data/heiligen/lebuinus.yaml`) — Deventer / Friesland.
 - [Ludger](/heiligen/ludger/) (`data/heiligen/ludger.yaml`) — Geboren bij Utrecht; missie in Friesland.
 - [Marcellinus van Utrecht](/heiligen/marcellinus-van-utrecht/) (`data/heiligen/marcellinus-van-utrecht.yaml`) — Utrechtse school; missie Deventer/Twente met Lebuïnus.
 - [Monulphus](/heiligen/monulphus/) (`data/heiligen/monulphus.yaml`) — Bisschop van Maastricht; stenen kerk boven het graf van Servatius.
+- [Muno van Nassogne](/heiligen/muno-van-nassogne/) (`data/heiligen/muno-van-nassogne.yaml`) — Kluizenaar/martelaar te Nassogne.
 - [Oda van Amay](/heiligen/oda-van-amay/) (`data/heiligen/oda-van-amay.yaml`) — Amay bij Hoei; Chrodoara-sarcofaag.
 - [Oda van de Peel](/heiligen/oda-van-de-peel/) (`data/heiligen/oda-van-de-peel.yaml`) — Peel.
 - [Odrada](/heiligen/odrada/) (`data/heiligen/odrada.yaml`) — Balen/Scheps en Alem; Kempen–Maas-cultus.
 - [Odulphus](/heiligen/odulphus/) (`data/heiligen/odulphus.yaml`) — Kanunnik van Utrecht; missie in Friesland (Stavoren).
 - [Otger](/heiligen/otger/) (`data/heiligen/otger.yaml`) — Metgezel van Wiro en Plechelm; stichting Odiliënberg.
+- [Pharaïldis](/heiligen/pharaildis/) (`data/heiligen/pharaildis.yaml`) — Gentse maagd; zuster van Gudula in de traditie.
 - [Plechelm von Odilienberg](/heiligen/plechelm-von-odilienberg/) (`data/heiligen/plechelm-von-odilienberg.yaml`) — Odiliënberg met Wiro en Otger; cultus Oldenzaal.
+- [Poppo van Stavelot](/heiligen/poppo-van-stavelot/) (`data/heiligen/poppo-van-stavelot.yaml`) — Geboren te Deinze; abt van Stavelot-Malmedy.
 - [Radboud](/heiligen/radboud/) (`data/heiligen/radboud.yaml`) — Bisschop van Utrecht.
+- [Reinildis](/heiligen/reinildis/) (`data/heiligen/reinildis.yaml`) — Martelares te Saintes; niet Relindis van Aldeneik.
 - [Relindis](/heiligen/relindis/) (`data/heiligen/relindis.yaml`) — Tweede abdis van Aldeneik bij Maaseik; opvolgster van Herlindis.
 - [Remaclus](/heiligen/remaclus/) (`data/heiligen/remaclus.yaml`) — Maastricht / Stavelot.
 - [Rumold](/heiligen/rumold/) (`data/heiligen/rumold.yaml`) — Patroon van Mechelen; prediking en martelaarschap in Vlaanderen.
@@ -65,25 +90,41 @@ Wijzig het veld in `data/heiligen/`; deze pagina niet redigeren.
 - [Sophrony van Essex](/heiligen/sophrony-van-essex/) (`data/heiligen/sophrony-van-essex.yaml`) — Liturgie in Gent (14 september 1980); geestelijke raad aan de stichteres van Asten.
 - [Swidbert](/heiligen/swidbert/) (`data/heiligen/swidbert.yaml`) — Missie met Willibrord in Friesland; later Kaiserswerth.
 - [Theodaard van Maastricht](/heiligen/theodaard-van-maastricht/) (`data/heiligen/theodaard-van-maastricht.yaml`) — Maastricht.
+- [Theodulfus van Lobbes](/heiligen/theodulfus-van-lobbes/) (`data/heiligen/theodulfus-van-lobbes.yaml`) — Abt van Lobbes.
 - [Trudo](/heiligen/trudo/) (`data/heiligen/trudo.yaml`) — Sint-Truiden.
 - [Ultan](/heiligen/ultan/) (`data/heiligen/ultan.yaml`) — Fosses (met Foillan).
+- [Ursmar van Lobbes](/heiligen/ursmar-van-lobbes/) (`data/heiligen/ursmar-van-lobbes.yaml`) — Abtbisschop van Lobbes.
+- [Vincentius Madelgarius](/heiligen/vincentius-madelgarius/) (`data/heiligen/vincentius-madelgarius.yaml`) — Sticht Zinnik; echtgenoot van Woutruide.
 - [Walfridus (Bedum)](/heiligen/walfridus-bedum/) (`data/heiligen/walfridus-bedum.yaml`) — Bedum.
 - [Werenfrid](/heiligen/werenfrid/) (`data/heiligen/werenfrid.yaml`) — Westervoort / Friesland.
+- [Wilfetrudis van Nijvel](/heiligen/wilfetrudis/) (`data/heiligen/wilfetrudis.yaml`) — Abdis van Nijvel.
 - [Willibrord](/heiligen/willibrord/) (`data/heiligen/willibrord.yaml`) — Apostel van de Friezen; aartsbisschop van Utrecht.
 - [Wiro](/heiligen/wiro/) (`data/heiligen/wiro.yaml`) — Limburg / Odiliënberg.
+- [Wolbodo](/heiligen/wolbodo/) (`data/heiligen/wolbodo.yaml`) — Bisschop van Luik.
 - [Woutruide](/heiligen/woutruide/) (`data/heiligen/woutruide.yaml`) — Bergen (Waudru).
 - [Wulfram](/heiligen/wulfram/) (`data/heiligen/wulfram.yaml`) — Missie onder de Friezen.
 
-## Nader onderzoek (8)
+## Nader onderzoek (19)
 
 - [Adelgonda](/heiligen/adelgonda/) (`data/heiligen/adelgonda.yaml`) — Stichteres van Maubeuge; historisch Henegouwen, nu Frankrijk.
 - [Agricolaus van Maastricht](/heiligen/agricolaus-van-maastricht/) (`data/heiligen/agricolaus-van-maastricht.yaml`) — Tweede bisschop van Maastricht; of de vroege bisschoppenlijst historisch is, is onzeker.
 - [Aubertus van Kamerijk](/heiligen/aubertus-van-kamerijk/) (`data/heiligen/aubertus-van-kamerijk.yaml`) — Bisschop van Kamerijk; zetel nu in Frankrijk, bisdom reikte tot Henegouwen.
+- [Audomarus](/heiligen/audomarus/) (`data/heiligen/audomarus.yaml`) — Bisschop van Terwaan; Sint-Omaars nu in Frankrijk.
+- [Bertinus](/heiligen/bertinus/) (`data/heiligen/bertinus.yaml`) — Abt van Sithiu; Sint-Omaars nu in Frankrijk.
+- [Cunegonde van Luxemburg](/heiligen/cunegonde-van-luxemburg/) (`data/heiligen/cunegonde-van-luxemburg.yaml`) — Geboren in Luxemburg; werk in Bamberg.
 - [Egbert van Rathmelsigi](/heiligen/egbert-van-rathmelsigi/) (`data/heiligen/egbert-van-rathmelsigi.yaml`) — Zelf niet in de Lage Landen; leidde te Rath Melsigi missionarissen op (o.a. Willibrord). Indirecte invloed — deur open, geen actieve jacht.
+- [Eucherius van Orléans](/heiligen/eucherius-van-orleans/) (`data/heiligen/eucherius-van-orleans.yaml`) — Bisschop van Orléans; band met de Lage Landen via ballingschap.
 - [Folciunus](/heiligen/folciunus/) (`data/heiligen/folciunus.yaml`) — Folquinus van Terwaan; bisdom nu in Frankrijk, gestorven te Ekelsbeke.
+- [Fredegandus](/heiligen/fredegandus/) (`data/heiligen/fredegandus.yaml`) — Patroon van Deurne; abdij historisch onbewezen.
+- [Gaugericus](/heiligen/gaugericus/) (`data/heiligen/gaugericus.yaml`) — Bisschop van Kamerijk; zetel nu in Frankrijk.
+- [Livinus van Gent](/heiligen/livinus-van-gent/) (`data/heiligen/livinus-van-gent.yaml`) — Gentse martelaarstraditie; waarschijnlijk hagiografische variant van Lebuinus.
+- [Macarius van Gent](/heiligen/macarius-van-gent/) (`data/heiligen/macarius-van-gent.yaml`) — Pelgrim, gestorven te Gent; weinig eigen werk aantoonbaar.
+- [Maternus](/heiligen/maternus/) (`data/heiligen/maternus.yaml`) — Eerste bisschop van Keulen; Tongeren-band legendarisch.
 - [Medardus](/heiligen/medardus/) (`data/heiligen/medardus.yaml`) — Bisschop van Noyon/Doornik; band met de Lage Landen via Doornik en latere cultus.
 - [Quirillus van Tongern](/heiligen/quirillus-van-tongern/) (`data/heiligen/quirillus-van-tongern.yaml`) — Vroege bisschop van Tongeren; of hij historisch is, is onzeker.
+- [Willehad](/heiligen/willehad/) (`data/heiligen/willehad.yaml`) — Friese missie mogelijk; hoofdzakelijk Bremen/Saksen.
 - [Winnocus](/heiligen/winnocus/) (`data/heiligen/winnocus.yaml`) — Abt van Wormhout; historisch Vlaanderen, nu Frankrijk.
+- [Zwentibold](/heiligen/zwentibold/) (`data/heiligen/zwentibold.yaml`) — Koning van Lotharingen; lokale martelaarscultus te Susteren.
 
 ## Kandidaat om te schrappen (5)
 

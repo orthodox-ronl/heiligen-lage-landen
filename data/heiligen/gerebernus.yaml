@@ -1,0 +1,60 @@
+id: gerebernus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaar te Geel met Dymphna."
+namen:
+  primair: Gerebernus
+  alternatief:
+  - Gerebern
+  - Gerebran
+datum:
+  waarde: "05-15"
+  stijl: gregoriaans
+  extra:
+    - waarde: "05-30"
+      toelichting: katholieke gedachtenis (samen met Dymphna)
+    - waarde: "10-27"
+      toelichting: overbrenging van de relieken
+iconen:
+  - bestand: iconen/martyrdom-of-st-dymphna-and-st-gerebernus-by-jacques-de-l-ange-attr-or-gerard-seghers-attr.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Martyrdom of St Dymphna and St Gerebernus by Jacques de l'Ange (Attr.) or Gerard Seghers (Attr.).jpg"
+titels:
+  - Priester
+  - Martelaar
+periode: "7e eeuw (traditie)"
+locaties:
+  - geel
+betekenis_lage_landen: |
+  Gerebernus is de priester-metgezel van Dymphna. Volgens de vita
+  vluchtte hij met haar naar de Kempen en werd hij bij Geel mee vermoord.
+  Hij hoort bij hetzelfde martelaarschap als Dymphna, op dezelfde dag.
+verhaal: |
+  De late vita maakt Gerebernus tot de Ierse priester die Dymphna
+  doopte en haar naar het vasteland volgde. Bij Geel werden beiden
+  gedood. Zijn relieken gingen later naar Sonsbeck (Duitsland). Feestdag
+  15 mei, dezelfde als Dymphna. Dymphna heeft een eigen pagina; Gerebernus
+  staat hier op eigen merites als martelaar te Geel.
+over_bronnen: |
+  Gerebernus voldoet als martelaar te Geel (huidig België) in de
+  traditie van de zevende eeuw ([1], [2]). De vita is laat (dertiende
+  eeuw), dezelfde onzekerheid als bij Dymphna; de cultus te Geel is de
+  vaste kern. Hij is geen louter groepsnaam: de bronnen noemen hem
+  persoonlijk als priester en martelaar.
+referenties:
+  - label: "Wikipedia (NL) — Gerebernus"
+    url: "https://nl.wikipedia.org/wiki/Gerebernus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Ierse priester, metgezel van Dimpna, martelaar Geel, feestdag 15 mei.
+  - label: "Wikipedia (NL) — Dimpna van Geel"
+    url: "https://nl.wikipedia.org/wiki/Dimpna_van_Geel"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Vlucht naar de Kempen met Gerebernus; beider martelaarschap.

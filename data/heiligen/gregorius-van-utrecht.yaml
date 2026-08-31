@@ -13,6 +13,11 @@ namen:
 datum:
   waarde: "08-25"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/gregorius-van-utrecht.jpg
+  rechten: ok
+  licentie: CC BY-SA 3.0
+  bron: "Wikimedia Commons — File:Reliquienbueste Gregor von Utrecht.jpeg"
 titels:
   - Abt van Utrecht
 periode: "ca. 707–775"
@@ -22,11 +27,6 @@ locaties:
 rustplaats:
   plaats: susteren
   toelichting: "Kopreliek in Sint-Amelberga (Susteren); overig Utrecht"
-icoon:
-  bestand: iconen/gregorius-van-utrecht.jpg
-  rechten: ok
-  licentie: "CC BY-SA 3.0"
-  bron: "Wikimedia Commons — File:Reliquienbueste Gregor von Utrecht.jpeg"
 betekenis_lage_landen: |
   Gregorius maakte de Utrechtse school tot missiecentrum voor Friezen,
   Saksen en anderen; uit die school kwam onder meer Ludger. Na de dood

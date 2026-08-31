@@ -29,8 +29,8 @@ passen de strengheid vaak aan (economia).
 
 ## Verder lezen en kijken
 
-- [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
-- [OrthodoxWiki — Church Calendar](https://orthodoxwiki.org/Church_Calendar) — geraadpleegd 2026-08-16
+[1] [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
+[2] [OrthodoxWiki — Church Calendar](https://orthodoxwiki.org/Church_Calendar) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

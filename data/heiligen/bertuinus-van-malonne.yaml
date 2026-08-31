@@ -1,0 +1,53 @@
+id: bertuinus-van-malonne
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abt/bisschop van Malonne bij Namen."
+namen:
+  primair: Bertuinus van Malonne
+  alternatief:
+  - Bertuin
+  - Bertuinus
+datum:
+  waarde: "11-11"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/maastricht-schatkamer-st-servaasbasiliek-reliekarm-st-bertuinus-van-malonne.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:Maastricht, Schatkamer St-Servaasbasiliek, reliekarm St-Bertuinus van Malonne.jpg"
+  - bestand: iconen/berthuin-de-malonne.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Berthuin_de_Malonne.JPG"
+titels:
+  - Abt van Malonne
+periode: "† ca. 698"
+locaties:
+  - malonne
+betekenis_lage_landen: |
+  Bertuinus stichtte of bestuurde het klooster Malonne bij Namen.
+  Dat is kloosterbestuur in huidig België, zevende eeuw.
+verhaal: |
+  Bertuinus, volgens de traditie van Angelsaksische of Ierse
+  afkomst, vestigde zich te Malonne in de Maasvallei en stierf omstreeks
+  698.
+over_bronnen: |
+  Bertuinus voldoet: Malonne ligt in België; sterfjaar ca. 698
+  ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Bertuinus van Malonne"
+    url: "https://nl.wikipedia.org/wiki/Bertuinus_van_Malonne"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Abt van Malonne, † ca. 698.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bertuin de Malonne, bishop, died Belgium 698.

@@ -1,8 +1,9 @@
-"""Genereer Hugo-content, entries.json en ICS-feeds."""
+"""Genereer Hugo-content, entries.json, synaxarion.json en ICS-feeds."""
 
 from __future__ import annotations
 
 import argparse
+import calendar
 import json
 import re
 import shutil
@@ -388,27 +389,37 @@ def bronlaag_note_md(entry: dict[str, Any]) -> str:
     return BRONLAAG_ENCYCLOPEDIE
 
 
-def over_bronnen_md(entry: dict[str, Any]) -> str:
+def over_bronnen_md(
+    entry: dict[str, Any],
+    catalog: list[dict[str, Any]] | None = None,
+) -> str:
     """Sectie met optionele toelichting + bronlaag-noot."""
     delen: list[str] = ["## Over de bronnen", ""]
     extra = (entry.get("over_bronnen") or "").strip()
     if extra:
-        delen.append(extra)
+        delen.append(
+            link_internal_entries(extra, str(entry.get("id") or ""), catalog)
+        )
         delen.append("")
     delen.append(bronlaag_note_md(entry))
     delen.append("")
     return "\n".join(delen)
 
-def selectie_note_md(entry: dict[str, Any]) -> str:
+def selectie_note_md(
+    entry: dict[str, Any],
+    catalog: list[dict[str, Any]] | None = None,
+) -> str:
     """Uitklap bij nader-onderzoek / kandidaat-schrappen; niets bij voldoet."""
     if entry.get("soort") != "heilige":
         return ""
     sel = str(entry.get("selectie") or "nader-onderzoek").strip()
     if sel not in {"nader-onderzoek", "kandidaat-schrappen"}:
         return ""
-    tekst = (
+    tekst = link_internal_entries(
         (entry.get("selectie_toelichting_publiek") or "").strip()
-        or (entry.get("selectie_toelichting") or "").strip()
+        or (entry.get("selectie_toelichting") or "").strip(),
+        str(entry.get("id") or ""),
+        catalog,
     )
     if not tekst:
         return ""
@@ -454,11 +465,78 @@ def iter_civil_days(start: date, end: date):
         cur += timedelta(days=1)
 
 
+_MD_LINK_OR_HTML = re.compile(r"(\[[^\]]*\]\([^)]*\)|<[^>]+>)")
+_NAME_BOUND = r"A-Za-zÀ-ÿ0-9"
+
+
+def link_catalog_for(entries: list[dict[str, Any]] | None) -> list[tuple[str, str]]:
+    """(naam, permalink) langste naam eerst; minstens 4 tekens."""
+    if not entries:
+        return []
+    rows: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for entry in entries:
+        if entry.get("soort") not in {"heilige", "feest"}:
+            continue
+        permalink = entry_permalink(entry)
+        namen = entry.get("namen") or {}
+        for naam in [namen.get("primair"), *(namen.get("alternatief") or [])]:
+            n = str(naam or "").strip()
+            if len(n) < 4:
+                continue
+            key = n.casefold()
+            if key in seen:
+                continue
+            seen.add(key)
+            rows.append((n, permalink))
+    rows.sort(key=lambda t: len(t[0]), reverse=True)
+    return rows
+
+
+def link_internal_entries(
+    text: str,
+    current_id: str,
+    catalog: list[dict[str, Any]] | None,
+) -> str:
+    """Maak markdown-links naar andere heiligen- en feestpagina’s."""
+    if not text or not catalog:
+        return text
+    names = [
+        (n, p)
+        for n, p in link_catalog_for(catalog)
+        if not p.rstrip("/").endswith(f"/{current_id}")
+    ]
+    if not names:
+        return text
+    pattern = re.compile(
+        rf"(?<![{_NAME_BOUND}])("
+        + "|".join(re.escape(n) for n, _ in names)
+        + rf")(?![{_NAME_BOUND}])"
+    )
+    lookup = {n.casefold(): p for n, p in names}
+
+    def repl(match: re.Match[str]) -> str:
+        raw = match.group(1)
+        url = lookup.get(raw.casefold())
+        if not url:
+            return raw
+        return f"[{raw}]({url})"
+
+    parts = _MD_LINK_OR_HTML.split(text)
+    out: list[str] = []
+    for i, part in enumerate(parts):
+        if i % 2 == 1:
+            out.append(part)
+        else:
+            out.append(pattern.sub(repl, part))
+    return "".join(out)
+
+
 def render_refs_md(refs: list[dict[str, Any]]) -> str:
     if not refs:
         return "_Nog geen bronnen._\n"
     lines = []
-    for ref in refs:
+    for i, ref in enumerate(refs, start=1):
         label = ref.get("label") or "Bron"
         url = ref.get("url")
         geraadpleegd = ref.get("geraadpleegd")
@@ -467,16 +545,16 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
         # Publiek: inhoud; anders fallback opmerking (oudere data).
         lezerstekst = inhoud or opmerking
         if url:
-            line = f"- [{label}]({url})"
+            line = f"[{i}] [{label}]({url})"
         elif ref.get("isbn"):
             pagina = ref.get("pagina")
-            line = f"- {label} — ISBN {ref['isbn']}"
+            line = f"[{i}] {label} — ISBN {ref['isbn']}"
             if pagina:
                 line += f", p. {pagina}"
         elif ref.get("locator"):
-            line = f"- {label} — {ref['locator']}"
+            line = f"[{i}] {label} — {ref['locator']}"
         else:
-            line = f"- {label}"
+            line = f"[{i}] {label}"
         extras = []
         if geraadpleegd:
             extras.append(f"geraadpleegd {geraadpleegd}")
@@ -486,6 +564,55 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
             line += f" — {'; '.join(extras)}"
         lines.append(line)
     return "\n".join(lines) + "\n"
+
+
+def extra_gedenkdagen_payload(
+    extras: list[dict[str, Any]] | None,
+) -> list[dict[str, str]]:
+    """Lezerstekst voor extra gedenkdagen (niet de canonieke sterfdag)."""
+    items: list[dict[str, str]] = []
+    for extra in extras or []:
+        fd = extra.get("feestdatum")
+        if not fd:
+            continue
+        toel = extra_toelichting_na_link(
+            (extra.get("toelichting") or "").strip(), fd
+        )
+        items.append(
+            {
+                "waarde": fd,
+                "label": mmdd_label_short(fd),
+                "label_lang": mmdd_label(fd),
+                "toelichting": toel,
+            }
+        )
+    return items
+
+
+def extra_gedenkdagen_html(extras: list[dict[str, Any]] | None) -> str:
+    """Haakjes achter de feestdag, met popover."""
+    items = extra_gedenkdagen_payload(extras)
+    if not items:
+        return ""
+    bits = []
+    for item in items:
+        fd = item["waarde"]
+        bits.append(
+            f'<a href="/datum/?dag={html_escape(fd)}">'
+            f"{html_escape(item['label'])}</a>"
+        )
+    inner = "; ".join(bits)
+    payload = html_escape(
+        json.dumps(items, ensure_ascii=False, separators=(",", ":")),
+        quote=True,
+    )
+    return (
+        f' <span class="extra-gedenkdag" tabindex="0" '
+        f'data-info-tip="extra-gedenkdag" '
+        f'data-extra-gedenkdagen="{payload}" '
+        f'title="Andere gedenkdagen">'
+        f"({inner})</span>"
+    )
 
 
 def period_bounds_for_year(
@@ -583,12 +710,23 @@ def overzicht_rang(entry: dict[str, Any]) -> str:
     return "overig"
 
 
-def write_entry_page(entry: dict[str, Any]) -> None:
+def write_entry_page(
+    entry: dict[str, Any],
+    catalog: list[dict[str, Any]] | None = None,
+) -> None:
     kind = SOORT_DIR[entry["soort"]]
     title = entry["namen"]["primair"]
     dn = entry["datum_norm"]
     feestdatum = dn.get("feestdatum")
     vorm = dn.get("vorm") or "dag"
+    extra_items = extra_gedenkdagen_payload(entry.get("datum_extra_norm"))
+    eid = str(entry.get("id") or "")
+
+    def prose(text: str) -> str:
+        linked = link_internal_entries(text, eid, catalog)
+        if entry.get("soort") in {"feest", "vasten"}:
+            return annotate_prose_dates(linked)
+        return linked
     fm = [
         "---",
         f"title: {yaml_quote(title)}",
@@ -616,6 +754,14 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         fm.append(f"feestdatum: {feestdatum}")
         oud = julian_feast_to_civil_date(date.today().year, feestdatum)
         fm.append(f"vierdatum_oud: {mmdd_from_date(oud)}")
+        if extra_items:
+            fm.append("gedenkdagen_extra:")
+            for item in extra_items:
+                fm.append(f"  - waarde: {item['waarde']}")
+                fm.append(f"    label: {yaml_quote(item['label'])}")
+                fm.append(f"    label_lang: {yaml_quote(item['label_lang'])}")
+                if item["toelichting"]:
+                    fm.append(f"    toelichting: {yaml_quote(item['toelichting'])}")
     if dn.get("van") and dn.get("tot"):
         fm.append(f"van: {dn['van']}")
         fm.append(f"tot: {dn['tot']}")
@@ -805,6 +951,7 @@ def write_entry_page(entry: dict[str, Any]) -> None:
         body.append(
             f"**Feestdag:** [{mmdd_label(feestdatum)}](/datum/?dag={feestdatum}) "
             f"{oud_vierdatum_html(burgerlijk_label_short(oud))}"
+            f"{extra_gedenkdagen_html(entry.get('datum_extra_norm'))}"
         )
         body.append("")
         if dn.get("gregoriaans") or dn.get("juliaans"):
@@ -839,35 +986,29 @@ def write_entry_page(entry: dict[str, Any]) -> None:
     if betekenis:
         body.append("## Betekenis voor de Lage Landen")
         body.append("")
-        body.append(annotate_prose_dates(betekenis) if entry.get("soort") in {"feest", "vasten"} else betekenis)
+        body.append(prose(betekenis))
         body.append("")
     if entry.get("soort") != "heilige" and entry.get("samenvatting"):
-        samenvatting = entry["samenvatting"].strip()
-        if entry.get("soort") in {"feest", "vasten"}:
-            samenvatting = annotate_prose_dates(samenvatting)
-        body.append(samenvatting)
+        body.append(prose(entry["samenvatting"].strip()))
         body.append("")
     if entry.get("verhaal"):
         body.append("## Verhaal")
         body.append("")
-        verhaal = entry["verhaal"].strip()
-        if entry.get("soort") in {"feest", "vasten"}:
-            verhaal = annotate_prose_dates(verhaal)
-        body.append(verhaal)
+        body.append(prose(entry["verhaal"].strip()))
         body.append("")
     if entry.get("soort") == "feest":
         betekenis_feest = (entry.get("betekenis") or "").strip()
         if betekenis_feest:
             body.append(betekenis_heading_html(entry))
             body.append("")
-            body.append(betekenis_feest)
+            body.append(prose(betekenis_feest))
             body.append("")
     body.append("## Verder lezen en kijken")
     body.append("")
     body.append(render_refs_md(entry.get("referenties") or []))
     body.append("")
-    body.append(over_bronnen_md(entry))
-    selectie_blok = selectie_note_md(entry)
+    body.append(over_bronnen_md(entry, catalog))
+    selectie_blok = selectie_note_md(entry, catalog)
     if selectie_blok:
         body.append(selectie_blok)
         body.append("")
@@ -1550,6 +1691,124 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
         STATIC_DATA / "entries.json",
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
     )
+    write_synaxarion_json(payload)
+
+
+_SYNAXARION_MAANDEN = (
+    "",
+    "januari",
+    "februari",
+    "maart",
+    "april",
+    "mei",
+    "juni",
+    "juli",
+    "augustus",
+    "september",
+    "oktober",
+    "november",
+    "december",
+)
+
+
+def _is_fixed_cycle_item(item: dict[str, Any]) -> bool:
+    if item.get("cyclus") == "paascyclus":
+        return False
+    if item.get("vorm") in {"weekdagen", "weekdag_relatief"}:
+        return False
+    return True
+
+
+def _mmdd_in_range(mmdd: str, van: str, tot: str) -> bool:
+    if van <= tot:
+        return van <= mmdd <= tot
+    return mmdd >= van or mmdd <= tot
+
+
+def _fixed_item_on_mmdd(item: dict[str, Any], mmdd: str) -> bool:
+    if not _is_fixed_cycle_item(item):
+        return False
+    van = item.get("van")
+    tot = item.get("tot")
+    if van and tot:
+        return _mmdd_in_range(mmdd, van, tot)
+    return item.get("feestdatum") == mmdd
+
+
+def _synaxarion_importance(item: dict[str, Any]) -> int:
+    if item.get("soort") == "feest":
+        eid = item.get("id") or ""
+        if eid.startswith(("voorfeest-", "nafeest-", "synaxis-", "teruggave-")):
+            return 2
+        return 0
+    if item.get("soort") == "heilige":
+        return 1
+    if item.get("soort") == "vasten":
+        if item.get("vorm") == "weekdagen":
+            return 4
+        return 3
+    return 5
+
+
+def _synaxarion_kind_label(item: dict[str, Any]) -> str:
+    if item.get("soort") == "vasten":
+        if item.get("vorm") == "weekdagen":
+            return "Vasten (wekelijks)"
+        if item.get("vorm") in {"periode", "periode_hybride"}:
+            return "Vastenperiode"
+        return "Vasten"
+    if item.get("cyclus") == "paascyclus":
+        return "Paascyclus"
+    if item.get("vorm") == "weekdag_relatief":
+        return "Feest (weekdag t.o.v. anker)"
+    if item.get("soort") == "feest":
+        return "Feest"
+    return "Heilige"
+
+
+def write_synaxarion_json(payload: list[dict[str, Any]]) -> None:
+    """Vaste jaarcyclus voor Hugo: HTML-lijst zonder burgerlijk jaartal."""
+    fixed = [item for item in payload if _is_fixed_cycle_item(item)]
+    maanden: list[dict[str, Any]] = []
+    for month in range(1, 13):
+        days_in_month = calendar.monthrange(2024, month)[1]
+        mm = f"{month:02d}"
+        dagen: list[dict[str, Any]] = []
+        for day in range(1, days_in_month + 1):
+            mmdd = f"{mm}-{day:02d}"
+            day_items = [item for item in fixed if _fixed_item_on_mmdd(item, mmdd)]
+            if not day_items:
+                continue
+            day_items.sort(
+                key=lambda e: (_synaxarion_importance(e), e.get("naam") or "")
+            )
+            dagen.append(
+                {
+                    "mmdd": mmdd,
+                    "dag": day,
+                    "items": [
+                        {
+                            "naam": item["naam"],
+                            "url": item["url"],
+                            "icoon": item.get("icoon") or "",
+                            "soort": _synaxarion_kind_label(item),
+                        }
+                        for item in day_items
+                    ],
+                }
+            )
+        if dagen:
+            maanden.append(
+                {
+                    "key": mm,
+                    "naam": _SYNAXARION_MAANDEN[month],
+                    "dagen": dagen,
+                }
+            )
+    write_text(
+        STATIC_DATA / "synaxarion.json",
+        json.dumps({"maanden": maanden}, ensure_ascii=False, indent=2) + "\n",
+    )
 
 
 
@@ -1569,6 +1828,7 @@ def clean_generated() -> None:
         "content/feesten",
         "content/vasten",
         "static/data/entries.json",
+        "static/data/synaxarion.json",
         "static/data/lezingen-dagen.json",
         "static/data/plaatsen.json",
     ):
@@ -1601,7 +1861,7 @@ def main() -> int:
     write_vasten_uitleg()
     write_generated_indexes(entries)
     for entry in entries:
-        write_entry_page(entry)
+        write_entry_page(entry, entries)
     write_entries_json(entries)
     write_plaatsen_json()
     write_beheer_selectie(entries)

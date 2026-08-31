@@ -29,8 +29,8 @@ gewoonte bepalen mede hoe streng een gelovige dit houdt.
 
 ## Verder lezen en kijken
 
-- [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
-- [OCA — The Orthodox Faith: Fasting](https://www.oca.org/orthodoxy/the-orthodox-faith/spirituality/prayer-fasting-and-almsgiving/fasting) — geraadpleegd 2026-08-16
+[1] [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
+[2] [OCA — The Orthodox Faith: Fasting](https://www.oca.org/orthodoxy/the-orthodox-faith/spirituality/prayer-fasting-and-almsgiving/fasting) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

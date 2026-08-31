@@ -14,6 +14,9 @@ namen:
 datum:
   waarde: "03-20"
   stijl: gregoriaans
+  extra:
+    - waarde: "09-03"
+      toelichting: aankomst van relieken in Gent
 titels:
   - Missionaris
   - Bisschop van Sens

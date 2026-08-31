@@ -108,3 +108,27 @@ def test_jaarkalender_titel_heeft_agenda_popup() -> None:
     js = JS.read_text(encoding="utf-8")
     assert 'kind === "jaarkalender"' in js
     assert 'assetUrl("agenda/")' in js
+
+
+def test_statische_synaxarion_lijst_en_js_fallback() -> None:
+    syn = (ROOT / "site" / "layouts" / "_default" / "synaxarion.html").read_text(
+        encoding="utf-8"
+    )
+    assert 'partial "synaxarion-lijst.html"' in syn
+    assert 'partial "entries-json.html"' in syn
+    kal = (ROOT / "site" / "layouts" / "_default" / "kalender.html").read_text(
+        encoding="utf-8"
+    )
+    assert "js-fallback" in kal
+    assert "synaxarion/" in kal
+    datum = (ROOT / "site" / "layouts" / "_default" / "datum.html").read_text(
+        encoding="utf-8"
+    )
+    assert "js-fallback" in datum
+    assert "Laden…" not in datum
+    js = JS.read_text(encoding="utf-8")
+    assert "kalender-entries-data" in js
+    heiligen = (
+        ROOT / "site" / "layouts" / "partials" / "heiligen-overzicht.html"
+    ).read_text(encoding="utf-8")
+    assert 'class="heiligen-row is-sort-naam"' in heiligen

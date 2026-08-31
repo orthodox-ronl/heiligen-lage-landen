@@ -36,8 +36,8 @@ selectie_toelichting_publiek: |
   `selectie_toelichting_publiek` als die afwijkt van de korte beheerzin.
   Bij `voldoet`: geen uitklap.
 - `datum.waarde` is de canonieke gedenkdag (sterfdag bij twijfel).
-  Orthodox bekende extra dagen: `datum.extra` → **Andere gedenkdagen**
-  op de pagina, niet in de infobox.
+  Extra dagen: `datum.extra` → tussen haakjes achter de feestdatum
+  (popover) en **Andere gedenkdagen**; niet op jaarkalender of Synaxarion.
 - `selectie` komt in de Hugo-front matter van heiligenpagina’s, zodat het
   [overzicht]({{% ref "/heiligen" %}}) **Opgenomen** (alleen `voldoet`)
   en **Alles** (groepen in de kalender / nader onderzoek / kandidaat)

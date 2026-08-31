@@ -1,0 +1,58 @@
+id: fredegandus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Patroon van Deurne; abdij historisch onbewezen."
+selectie_toelichting_publiek: |
+  **Voor.** Deurne (bij Antwerpen) eert Fredegandus als eerste abt van
+  een benedictijnenabdij in de zevende/achtste eeuw. De Vlaamse kalender
+  zet hem op 17 juli.
+
+  **Twijfel.** Hij wordt pas in de twaalfde eeuw genoemd (in een vita van
+  Gummarus). Van de abdij Quortolodora zijn geen concrete sporen. De
+  cultus is laat (reliek 1512, pest). Dat kan lokale toewijzing zijn
+  zonder dat hij hier heeft gewerkt.
+namen:
+  primair: Fredegandus
+  alternatief:
+  - Fredegand van Deurne
+  - Frédegand de Deurne
+datum:
+  waarde: "07-17"
+  stijl: gregoriaans
+titels:
+  - Abt
+periode: "7e/8e eeuw (traditie)"
+locaties:
+  - deurne
+betekenis_lage_landen: |
+  Fredegandus is de patroon van Deurne. Of hij werkelijk abt was van
+  een abdij die de Vikingen in 836 zouden hebben verwoest, is onbewezen.
+verhaal: |
+  Einde zevende eeuw abt te Deurne volgens de late traditie. Eerste
+  schriftelijke vermelding twaalfde eeuw. Reliek in 1512 tegen de pest.
+  De parochiekerk is sinds 1597 aan hem gewijd.
+over_bronnen: |
+  **Voor.** Plaats Deurne (België) en pre-schisma datering in de
+  traditie ([1], [2], [3]).
+
+  **Twijfel.** Wikipedia: nauwelijks iets bekend; abdij onbewezen; eerste
+  vermelding 12e eeuw ([1]). Dat is te dun voor voldoet.
+referenties:
+  - label: "Wikipedia (NL) — Fredegandus"
+    url: "https://nl.wikipedia.org/wiki/Fredegandus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Deurne, late vermelding, reliek 1512, kerk 1597.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      17 juli: Fredegand van Deurne (700–750).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Frédegand de Deurne, abbot, died Belgium 740.

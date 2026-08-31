@@ -13,6 +13,14 @@ namen:
 datum:
   waarde: "09-03"
   stijl: gregoriaans
+  extra:
+    - waarde: "06-25"
+      toelichting: overbrenging van de relieken
+icoon:
+  bestand: iconen/remaclus.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:Devotieprent van de heilige Remaclus van Stavelot, asset C1OcKdbDLYZSMpi6TMkhc9lA.tif"
 titels:
   - Bisschop van Maastricht
   - Stichter van Stavelot
@@ -23,11 +31,6 @@ locaties:
 rustplaats:
   plaats: stavelot
   toelichting: "Remaclusschrijn, Sint-Sebastiaanskerk"
-icoon:
-  bestand: iconen/remaclus.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Devotieprent van de heilige Remaclus van Stavelot, asset C1OcKdbDLYZSMpi6TMkhc9lA.tif"
 betekenis_lage_landen: |
   Remaclus verbindt de Maasstreek met de Ardennen: als bisschop van
   Maastricht (na Amandus) en als stichter van Stavelot (en Malmedy)

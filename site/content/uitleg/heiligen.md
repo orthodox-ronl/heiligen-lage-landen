@@ -2,7 +2,7 @@
 title: "Heiligen van de Lage Landen"
 description: "Wie in deze kalender staat, hoe stevig de tekst is, en waarom een dag zonder heilige kan"
 uitleg_stijl: heiligen
-git_date: 2026-08-29
+git_date: 2026-08-31
 ---
 
 Deze site verzamelt **heiligen die bij de Lage Landen horen**, naast de
@@ -26,10 +26,20 @@ Iemand hoort in deze lijst als minstens één van beide geldt:
   kerk of klooster. Het is niet genoeg als de heilige alleen op doorreis is
   geweest, of dat er een parochie naar is genoemd.
 - **Na het schisma:** de heilige wordt in de Orthodoxe Kerk vereerd én
-  heeft bijgedragen aan de Orthodoxie in Nederland of België. Voorbeelden
-  zijn de heilige Johannes van Shanghai, die bijdroeg aan het opzetten van
-  de Orthodoxie hier, en de heilige Sophrony van Essex, die in Gent
-  voorging en het kloosterleven in Asten mee vormgaf.
+  heeft bijgedragen aan de Orthodoxie in Nederland of België. Voorbeelden zijn
+  de [heilige Johannes van Shanghai]({{% ref "/heiligen/johannes-van-shanghai" %}}),
+  die bijdroeg aan het opzetten van de Orthodoxie hier, en de 
+  heilige [Sophrony van Essex]({{% ref "/heiligen/sophrony-van-essex" %}}),
+  die in Gent voorging en het kloosterleven in Asten mee vormgaf.
+
+Er zijn uiteraard grensgevallen. [Lioba]({{% ref "/heiligen/lioba" %}})
+wordt als heilige getoond in het icoon van de
+"[heiligen van de Lage Landen]({{% ref "/feesten/zondag-heiligen-lage-landen" %}})",
+maar ze heeft niet (aantoonbaar) in de Lage Landen gewoond of iets gedaan.
+[Egbert van Rathmelsigi]({{% ref "/heiligen/egbert-van-rathmelsigi" %}}) is
+weliswaar verantwoordelijk voor de opleiding van veel missionarissen van de
+Lage Landen, zoals Wigbert, en later [Willibrord]({{% ref "/heiligen/willibrord" %}})
+en anderen, maar is er zelf nooit geweest en heeft er dan ook niets gedaan.
 
 De huidige lijst is een start. Wie er al in staat, schrappen we niet
 zomaar. Blijkt later dat iemand niet aan deze maatstaf voldoet, of is
@@ -44,8 +54,9 @@ Het [overzicht]({{% ref "/heiligen" %}}) toont standaard **Opgenomen**
 dat overzicht, niet op de datumpagina of in de agenda).
 
 **Indirecte invloed** (bijvoorbeeld iemand die missionarissen opleidde
-maar zelf niet hier predikte) kan als grensgeval blijven staan. We zoeken
-zulke heiligen niet actief op; de deur blijft open tot er een besluit is.
+maar zelf niet hier predikte, zoals [Lioba]({{% ref "/heiligen/lioba" %}}))
+kan als grensgeval blijven staan. We zoeken zulke heiligen niet actief op;
+de deur blijft open tot er een besluit is.
 
 Ontbreekt iemand die wél voldoet, dan hoort die erbij. Dat vullen we
 geleidelijk aan. Zie [Reactie geven]({{% ref "/uitleg/reactie" %}}).
@@ -59,9 +70,10 @@ Orthodoxie heeft opgebouwd. Daarom staan hier bijvoorbeeld niet Nektarios
 van Egina, Nicolaas van Myra of Serafim van Sarov — hoe vertrouwd die
 namen in parochies ook zijn.
 
-Later kan een aparte, duidelijk gemerkte groep **parochiepatronen**
-onderaan de daglijst komen, met een link naar de betreffende parochie.
-Dat is vooralsnog geen onderdeel van deze kalender.
+Als daar later behoefte aan blijkt te zijn, is het altijd mogelijk om een aparte,
+duidelijk gemerkte groep **parochiepatronen** onderaan de daglijst toe te voegen,
+met een link naar de betreffende parochie.
+Vooralsnog is dat geen onderdeel van deze kalender.
 
 Ook de **universele menologion** (iedere heilige van de Kerk, elke dag)
 hoort hier niet. Een dag zonder heilige van de Lage Landen is dus geen
@@ -69,7 +81,7 @@ fout: er kunnen wel een feest, vasten of lezingen zijn.
 
 ## Zondag van de heiligen van de Lage Landen
 
-De eerste zondag na Pinksteren is [Allerheiligen]({{% ref "/feesten/allerheiligen-zondag" %}}):
+De eerste zondag na [Pinksteren]({{% ref "/feesten/pinksteren" %}}) is [Allerheiligen]({{% ref "/feesten/allerheiligen-zondag" %}}):
 alle heiligen, bekend en onbekend. In de Slavische traditie is de
 **tweede** zondag na Pinksteren de gedachtenis van de heiligen van de
 **lokale Kerk** (in Rusland: de heiligen van het Russische land).
@@ -106,9 +118,12 @@ Bovenaan staat hoe **stevig** die tekst is:
 - **Nagekeken:** de tekst steunt op een lexikon, vita of vergelijkbare
   bron. Wikipedia en heiligen.net mogen aanvullen; die alleen zijn niet
   genoeg.
-- **Open naslagwerk:** de tekst volgt Wikipedia of heiligen.net. Dat zijn
-  zorgvuldig bijgehouden naslagwerken, geen kerkelijke uitgave. Later
-  toetsen we aan een lexikon of vita.
+- **Open naslagwerk:** de tekst volgt
+  [Wikipedia](https://nl.wikipedia.org/w/index.php?search=heiligen+van+de+lage+landen+-tijdlijn+-dagen&title=Speciaal%3AZoeken&profile=advanced&fulltext=1&ns0=1),
+  [heiligen.net](https://heiligen.net/) of andere open bronnen.
+  We kiezen wel voor naslagwerken waarvan we overtuigd zijn dat ze
+  zorgvuldig worden bijgehouden, ondanks dat het geen kerkelijke uitgaven zijn. 
+  Later toetsen we aan een lexikon of vita.
 
 Soms staat er een afbeelding bij, soms meer dan één. Alleen als we die
 met een duidelijke licentie lokaal mogen tonen; een plaatje elders op

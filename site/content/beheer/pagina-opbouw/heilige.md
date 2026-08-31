@@ -42,22 +42,19 @@ leesvolgorde.
 **Wel:** dezelfde canonieke dag als in de infobox, inclusief haakjes met
 alleen de oude burgerlijke datum; bij geen vaste dag:
 dezelfde vijfjaren-tabel als op een feest (lopend jaar plus vier). Extra
-gedenkdagen (orthodox bekend)
-als **Andere gedenkdagen**, niet als tweede canonieke Feestdag.
+gedenkdagen als **Andere gedenkdagen**, en tussen haakjes achter de
+feestdatum (infobox en body), met popover.
 
-**Niet:** een andere canonieke datum dan in de infobox; een katholieke
-of lokale datum die in de Orthodoxe Kerk niet bekend is.
+**Niet:** een andere canonieke datum dan in de infobox.
 
 ## Meerdere gedenkdagen
 
-Sommige heiligen hebben meer dan één dag (verschil orthodox/katholiek,
-of meerdere orthodoxe gedachtenissen). **Canoniek** is de sterfdag
-(bij Johannes de Doper: de Onthoofding). Andere dagen noemen we als
-zij **ook in de Orthodoxe Kerk** bekend zijn: in YAML `datum.extra`,
-op de pagina onder **Andere gedenkdagen**.
-
-In YAML is `datum.waarde` die canonieke dag. Extra dagen komen niet
-als tweede infobox-Feestdag.
+Sommige heiligen hebben meer dan één dag (sterfdag, overbrenging van
+relieken, lokale kalender, of een tweede orthodoxe gedachtenis).
+**Canoniek** is de sterfdag. Andere dagen staan in YAML `datum.extra`
+en op de pagina tussen haakjes achter de feestdatum, plus onder
+**Andere gedenkdagen**. Extra dagen komen niet als tweede infobox-Feestdag
+en niet op jaarkalender of Synaxarion.
 
 ## Betekenis voor de Lage Landen
 

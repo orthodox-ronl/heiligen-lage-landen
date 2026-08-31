@@ -1,0 +1,58 @@
+id: audomarus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Bisschop van Terwaan; Sint-Omaars nu in Frankrijk."
+selectie_toelichting_publiek: |
+  **Voor.** Audomarus (Omaar) was bisschop van Terwaan en stichtte het
+  klooster Sithiu (Sint-Omaars). Het historische bisdom reikte tot
+  Vlaanderen. Vlaamse kalender 9 september.
+
+  **Twijfel.** Terwaan en Sint-Omaars liggen nu in Frankrijk. Zelfde
+  dossier als Folciunus van Terwaan (al nader onderzoek).
+namen:
+  primair: Audomarus
+  alternatief:
+  - Omaar
+  - Omer
+  - Audomarus van Sint-Omaars
+datum:
+  waarde: "09-09"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/omer-et-le-roi-dagobert.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Omer et le Roi Dagobert.jpg"
+titels:
+  - Bisschop van Terwaan
+periode: "† 670"
+locaties:
+  - sint-omaars
+  - terwaan
+betekenis_lage_landen: |
+  Audomarus kerstende het bisdom Terwaan. De zetel ligt nu in
+  Frankrijk; historisch raakte het Vlaanderen.
+verhaal: |
+  Leerling van Eustachius van Luxeuil, bisschop van Terwaan, stichter
+  van Sithiu. Gestorven in 670. Feestdag 9 september.
+over_bronnen: |
+  **Voor.** Missiebisschop van een bisdom dat tot de historische
+  Nederlanden hoorde ([1], [2]).
+
+  **Twijfel.** Plaats nu Frankrijk; vergelijk Folciunus (eigen pagina).
+referenties:
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      9 september: Audomarus van St. Omer (670).
+  - label: "Wikipedia (NL) — Audomarus"
+    url: "https://nl.wikipedia.org/wiki/Audomarus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bisschop van Terwaan, stichter Sithiu.

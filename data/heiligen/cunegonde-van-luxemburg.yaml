@@ -1,0 +1,58 @@
+id: cunegonde-van-luxemburg
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Geboren in Luxemburg; werk in Bamberg."
+selectie_toelichting_publiek: |
+  **Voor.** Cunegonde werd in Luxemburg geboren (ca. 975) en stierf in
+  1040, vóór het schisma. GCatholic zet haar bij Luxembourg. Feestdag
+  3 maart.
+
+  **Twijfel.** Haar werk (keizerin, stichting Bamberg) lag in het Duitse
+  rijk, niet in de Lage Landen. Geboorte alleen is volgens de criteria
+  niet genoeg — dezelfde lijn als Lioba (geboren elders, werk in
+  Germanië, kandidaat-schrappen) maar omgekeerd: geboren hier, werk
+  elders.
+namen:
+  primair: Cunegonde van Luxemburg
+  alternatief:
+  - Kunigunde
+  - Cunegonde
+datum:
+  waarde: "03-03"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/kunigunde.jpg
+  rechten: ok
+  licentie: CC BY-SA 3.0
+  bron: "Wikimedia Commons — File:Kunigunde.png"
+titels:
+  - Keizerin
+periode: "ca. 975–1040"
+locaties:
+  - bamberg
+betekenis_lage_landen: |
+  Cunegonde is in Luxemburg geboren en in Bamberg werkzaam geweest.
+  Of geboorte in LU volstaat, is de open vraag.
+verhaal: |
+  Dochter van het Luxemburgse grafelijk huis, echtgenote van keizer
+  Hendrik II, medestichteres van het bisdom Bamberg. Gestorven in 1040.
+  Feestdag 3 maart.
+over_bronnen: |
+  **Voor.** Geboorte Luxemburg, † 1040, feestdag 3 maart ([1], [2]).
+
+  **Twijfel.** Werk Bamberg (Duitsland). Het criterium eist iets gedaan
+  in NL/BE/LU, niet alleen geboren zijn ([1]).
+referenties:
+  - label: "Wikipedia (NL) — Cunegonde van Luxemburg"
+    url: "https://nl.wikipedia.org/wiki/Cunegonde_van_Luxemburg"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Geboren Luxemburg, keizerin, Bamberg, † 1040.
+  - label: "GCatholic — Saints of Luxembourg"
+    url: "https://gcatholic.org/saints/data/country-LU"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Cunigunde of Luxembourg, born Luxembourg, died Germany 1040.

@@ -13,6 +13,14 @@ namen:
 datum:
   waarde: "11-07"
   stijl: gregoriaans
+  extra:
+    - waarde: "10-19"
+      toelichting: overbrenging van de relieken (Utrecht)
+icoon:
+  bestand: iconen/willibrord.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
 titels:
   - Apostel van de Friezen
   - Aartsbisschop van Utrecht
@@ -24,11 +32,6 @@ locaties:
 rustplaats:
   plaats: echternach
   toelichting: "Abdij van Echternach"
-icoon:
-  bestand: iconen/willibrord.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
 betekenis_lage_landen: |
   Willibrord is de apostel van de Friezen en de stichter van de
   bisschopszetel Utrecht (695/696, met steun van Pepijn van Herstal en

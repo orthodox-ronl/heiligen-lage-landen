@@ -9,6 +9,7 @@ site/content/datum/*
 site/content/heiligen/
 site/content/feesten/
 site/static/data/entries.json
+site/static/data/synaxarion.json
 site/static/data/plaatsen.json
 site/static/data/lezingen-dagen.json
 site/static/ics/*.ics

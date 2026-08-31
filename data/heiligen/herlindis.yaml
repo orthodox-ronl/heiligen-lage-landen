@@ -17,6 +17,16 @@ namen:
 datum:
   waarde: "10-12"
   stijl: gregoriaans
+  extra:
+    - waarde: "02-13"
+      toelichting: gedachtenis in het bisdom Luik (samen met Relindis)
+iconen:
+  - bestand: iconen/20180228-li-ge-cath-drale-saint-paul-22-harlindis-relindis.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:20180228 Liège, Cathédrale Saint-Paul 22 (Harlindis & Relindis).jpg"
 titels:
   - Abdis van Aldeneik
 periode: "~695–~750"

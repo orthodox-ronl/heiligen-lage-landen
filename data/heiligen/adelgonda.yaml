@@ -16,16 +16,22 @@ namen:
 datum:
   waarde: "01-30"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/adelgonda.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:H. Aldegondis van Maubeuge, RP-P-1904-365.jpg"
+  - bestand: iconen/sint-aldegondis-16-09-2008-16-45-20.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Sint-Aldegondis_16-09-2008_16-45-20.JPG"
 titels:
   - Stichteres van Maubeuge
 periode: "~630–684"
 locaties:
   - maubeuge
-icoon:
-  bestand: iconen/adelgonda.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:H. Aldegondis van Maubeuge, RP-P-1904-365.jpg"
 betekenis_lage_landen: |
   Adelgonda (Aldegonda) behoort tot de Merovingische heiligenfamilie van
   Henegouwen (ouders Walbertus en Bertilia; zuster Waltrudis). Maubeuge lag

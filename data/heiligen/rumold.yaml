@@ -18,6 +18,17 @@ datum:
   extra:
     - waarde: "07-01"
       toelichting: 1 juli (bisdom Mechelen-Brussel)
+iconen:
+  - bestand: iconen/rumold.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Rombout van Mechelen (tg-uact-637).jpg"
+  - bestand: iconen/saint-rumbold-arc.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Saint_Rumbold_arc.JPG"
 titels:
   - Martelaar
   - Patroon van Mechelen
@@ -27,11 +38,6 @@ locaties:
 rustplaats:
   plaats: mechelen
   toelichting: "Sint-Romboutskathedraal"
-icoon:
-  bestand: iconen/rumold.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Rombout van Mechelen (tg-uact-637).jpg"
 betekenis_lage_landen: |
   Rumold is de stadsheilige van Mechelen. De relieken in de
   Sint-Romboutskathedraal en de middeleeuwse vita (*Passio Sancti Rumoldi*,

@@ -1,0 +1,59 @@
+id: maternus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Eerste bisschop van Keulen; Tongeren-band legendarisch."
+selectie_toelichting_publiek: |
+  **Voor.** De traditie maakt Maternus tot eerste bisschop van Tongeren
+  én Keulen, deelnemer aan de concilies van Rome (313) en Arles (314).
+  FSSPX zet hem op 14 september.
+
+  **Twijfel.** Historisch is hij bisschop van Keulen. De Tongerense
+  apostolaten zijn dezelfde soort late constructie als bij Quirillus van
+  Tongeren (al nader onderzoek). Keulen is niet de Lage Landen.
+namen:
+  primair: Maternus
+  alternatief:
+  - Maternus van Keulen
+  - Maternus van Tongeren
+datum:
+  waarde: "09-14"
+  stijl: gregoriaans
+titels:
+  - Bisschop van Keulen
+periode: "† ca. 328"
+locaties:
+  - keulen
+  - tongeren
+betekenis_lage_landen: |
+  Maternus is historisch de eerste bekende bisschop van Keulen. Of
+  hij in Tongeren werkte, is de open vraag, net als bij andere vroege
+  Maaslandse bisschoppen.
+verhaal: |
+  Maternus wordt in 313 en 314 op concilies genoemd als bisschop van
+  Keulen. Latere lijsten maken hem tot apostel van Tongeren. Feestdag
+  14 september.
+over_bronnen: |
+  **Voor.** Vroege bisschop, concilies 313/314; Tongeren-traditie ([1],
+  [2]).
+
+  **Twijfel.** Zelfde dossier als Quirillus: Keulen is hard, Tongeren is
+  legende ([1]).
+referenties:
+  - label: "Wikipedia (NL) — Maternus van Keulen"
+    url: "https://nl.wikipedia.org/wiki/Maternus_van_Keulen"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bisschop van Keulen, concilies, Tongeren-traditie.
+  - label: "FSSPX — Heiligen van de Lage Landen"
+    url: "https://fsspx.be/nl/heiligen-lage-landen-34309"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      14 september: H. Maternus.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Maternus von Köln, bishop, † 328.

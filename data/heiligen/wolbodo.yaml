@@ -1,0 +1,38 @@
+id: wolbodo
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Bisschop van Luik."
+namen:
+  primair: Wolbodo
+  alternatief:
+  - Wolbodo van Luik
+datum:
+  waarde: "04-21"
+  stijl: gregoriaans
+titels:
+  - Bisschop van Luik
+periode: "† 1021"
+locaties:
+  - luik
+betekenis_lage_landen: |
+  Wolbodo was bisschop van Luik (1018–1021). Dat is kerkbestuur in
+  huidig België, vlak vóór het schisma.
+verhaal: |
+  Wolbodo, eerst kanunnik en scholaster, werd in 1018 bisschop van
+  Luik en stierf op 21 april 1021. Hij wordt lokaal als heilige vereerd.
+over_bronnen: |
+  Wolbodo voldoet: bisschop van Luik, † 1021 ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Wolbodo (heilige)"
+    url: "https://nl.wikipedia.org/wiki/Wolbodo_(heilige)"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bisschop van Luik 1018–1021, feestdag 21 april.
+  - label: "FSSPX — Heiligen van de Lage Landen"
+    url: "https://fsspx.be/nl/heiligen-lage-landen-34309"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      21 april: H. Wolbodo.

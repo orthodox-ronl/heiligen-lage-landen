@@ -1,0 +1,61 @@
+id: guido-van-anderlecht
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Koster te Laken; gestorven te Anderlecht."
+namen:
+  primair: Guido van Anderlecht
+  alternatief:
+  - Wido van Anderlecht
+  - Guidon d'Anderlecht
+datum:
+  waarde: "09-12"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/tableau-st-guidon-d-anderlecht.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Tableau st Guidon d'Anderlecht.jpg"
+  - bestand: iconen/saintguidon.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Saintguidon.JPG"
+titels:
+  - Pelgrim
+  - Koster
+periode: "ca. 950–1012"
+locaties:
+  - anderlecht
+  - laken
+  - brussel
+rustplaats:
+  plaats: anderlecht
+  toelichting: "Sint-Pieter-en-Sint-Guidokerk"
+betekenis_lage_landen: |
+  Guido was koster te Laken, pelgrim, en stierf in 1012 te
+  Anderlecht. Zijn graf in de kapittelkerk werd een Brussels
+  bedevaartsoord. Werk en dood in huidig België, vóór het schisma.
+verhaal: |
+  Brabantse boerenzoon, koster van de Onze-Lieve-Vrouwekapel te Laken.
+  Na een mislukte handelsperiode ondernam hij pelgrimstochten naar
+  Jeruzalem en Rome. Hij stierf op 12 september 1012 te Anderlecht. Later
+  wonderen bij zijn graf vestigden de cultus.
+over_bronnen: |
+  Guido voldoet: koster te Laken en sterfplaats Anderlecht, 1012
+  ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Guido van Anderlecht"
+    url: "https://nl.wikipedia.org/wiki/Guido_van_Anderlecht"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Laken, pelgrimstochten, dood Anderlecht 1012, feestdag 12 september.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Guidon d'Anderlecht, layperson, born and died Belgium 1012.

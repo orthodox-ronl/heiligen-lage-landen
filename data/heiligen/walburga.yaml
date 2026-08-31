@@ -13,6 +13,9 @@ namen:
 datum:
   waarde: "02-25"
   stijl: gregoriaans
+  extra:
+    - waarde: "05-01"
+      toelichting: overbrenging van de relieken (Walpurgisnacht)
 titels:
   - Abdis van Heidenheim
 periode: "~710–779"

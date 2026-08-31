@@ -1,0 +1,79 @@
+id: zwentibold
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Koning van Lotharingen; lokale martelaarscultus te Susteren."
+selectie_toelichting_publiek: |
+  **Voor.** Zwentibold regeerde Lotharingen (895–900), verleende
+  handelsrechten aan Tiel, Deventer en Utrecht, bevorderde kerken en
+  kloosters, en werd in 900 bij de Maas gedood. Hij ligt te Susteren;
+  middeleeuwse martelaarscultus. Dochters Benedicta en Cecilia werden
+  abdissen van Susteren. Amalberga van Susteren (eigen pagina) voedde
+  hen op.
+
+  **Twijfel.** De bronnen tekenen hem vooral als vorst, niet als
+  prediker of abt. De cultus is lokaal en deels politiek (Lotharings
+  zelfbewustzijn). Of «koning + graf + cultus» gelijkstaat aan «hier
+  iets gedaan» in kerkelijke zin, is dezelfde vraag als bij andere
+  vorstelijke figuren.
+namen:
+  primair: Zwentibold
+  alternatief:
+  - Swentibold
+  - Sanderbout
+  - Sindbald
+  - Zwentibold van Lotharingen
+datum:
+  waarde: "08-13"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/zwentiboldbrunnen-muenstereifel.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Zwentiboldbrunnen_muenstereifel.jpg"
+  - bestand: iconen/skull-of-zwentibold.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Skull of Zwentibold.jpg"
+titels:
+  - Koning van Lotharingen
+periode: "ca. 870–900"
+locaties:
+  - susteren
+rustplaats:
+  plaats: susteren
+  toelichting: "Sint-Amelbergabasiliek"
+betekenis_lage_landen: |
+  Zwentibold was de laatste koning van Lotharingen en ligt te
+  Susteren. De lokale Kerk eerde hem als martelaar. Of dat genoeg is
+  voor deze kalender, is nog open.
+verhaal: |
+  Onechte zoon van Arnulf van Karinthië, in 895 koning van
+  Lotharingen. Hij verleende Tiel tolrechten (896) en steunde de kerk na
+  de Noormanneninvallen. Op 13 augustus 900 werd hij nabij de Maas
+  gedood. Graf en relieken te Susteren. Amalberga van Susteren heeft een
+  eigen pagina.
+over_bronnen: |
+  **Voor.** Verblijf en dood in de Maasvallei, kerkelijke schenkingen,
+  graf Susteren, middeleeuwse heiligenverering ([1], [2]).
+
+  **Twijfel.** Wikipedia tekent hem als vorst; de heiligheid is lokale
+  martelaarscultus, mogelijk meer symbool dan vita ([1]). Heiligen.net
+  heeft een feestdagpagina ([2]), geen rijke kerkelijke vita.
+referenties:
+  - label: "Wikipedia (NL) — Zwentibold"
+    url: "https://nl.wikipedia.org/wiki/Zwentibold"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Koning Lotharingen, Tiel, Susteren, cultus, feestdag 13 augustus.
+  - bron_id: hnet
+    label: "heiligen.net — Zwentibold"
+    url: "https://www.heiligen.net/heiligen/08/13/08-13-0900-zwentibold.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Korte heiligenpagina, 13 augustus 900.

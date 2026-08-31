@@ -1,0 +1,114 @@
+id: hilsondis
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht de abdij van Thorn; Thornse liturgische gedachtenis."
+namen:
+  primair: Hilsondis
+  alternatief:
+  - Hilsundis
+  - Hilsuindis
+  - Herswindis
+  - Hereswindis
+  - Hereswint
+  - Heresuint
+  - Hildewaris
+  - Hilsondis van Thorn
+datum:
+  waarde: "05-01"
+  stijl: gregoriaans
+  extra:
+    - waarde: "06-01"
+      toelichting: overgeleverde sterfdatum (niet de Thornse liturgische gedachtenis)
+icoon:
+  bestand: iconen/abdijkerk-thorn-ramen-h-ansifridus-h-hilsonidis.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Abdijkerk Thorn - Ramen H-Ansifridus H-Hilsonidis.jpg"
+titels:
+  - Gravin van Strijen
+  - Stichteres van Thorn
+  - Eerste abdis van Thorn
+periode: "† ca. 994"
+locaties:
+  - thorn
+rustplaats:
+  plaats: thorn
+  toelichting: "Abdijkerk van Thorn (graftraditie van de stichteres)"
+betekenis_lage_landen: |
+  Hilsondis is in de Thornse overlevering de gravin die, met Ansfried,
+  de abdij van Thorn stichtte (Nederlands Limburg, tiende eeuw). Dat is
+  kloosterstichting in huidig Nederland, ruim vóór het schisma. De
+  liturgische gedachtenis te Thorn is 1 mei.
+verhaal: |
+  In de Thornse traditie is Hilsondis (ook Hilsundis, Hilsuindis;
+  in oudere liturgie Herswindis/Hereswindis) gravin van Strijen, echtgenote
+  van Ansfried en stichteres van het stift Thorn, rond de jaren 980–992.
+  Ansfried, later bisschop van Utrecht, heeft een eigen pagina. Hun
+  dochter wordt in latere bronnen Benedicta genoemd en eerste abdis; andere
+  overleveringen maken Hilsondis zelf tot eerste abdis. Zij stierf omstreeks
+  994 en werd te Thorn begraven.
+
+  De namen zijn niet van meet af aan inwisselbaar. Herswindis is de
+  oudere naam in de liturgische traditie: het Thornse ceremoniale Officia
+  propria (rond 1700, naar ouder voorbeeld) noemt haar herhaaldelijk sancta
+  en koppelt haar nagedachtenis aan die van Ansfried; haar tombe speelt in
+  de lokale liturgie. Hilsondis verschijnt later prominent in politieke en
+  stichtingsdocumenten (onder meer het grafschrift en het necrologium). In
+  de Thornse traditie zijn beide namen uiteindelijk als dezelfde vrouw
+  gaan functioneren.
+
+  De duidelijker gedocumenteerde Thornse liturgische gedachtenis is
+  1 mei: vernieuwde necrologia (1715) herdenken die dag de stichteres
+  (fundatrix Hilsundis). 1 juni is de vermoedelijke of overgeleverde
+  sterfdatum; die dag niet zonder voorbehoud als liturgische feestdag
+  presenteren.
+over_bronnen: |
+  Hilsondis voldoet: stichting van Thorn in huidig Nederland, tiende
+  eeuw, vóór het schisma ([1], [2], [3]).
+
+  De feestdag op deze kalender is 1 mei, de Thornse necrologische
+  gedachtenis van de stichteres ([2], met foto van het necrologium op
+  1 mei). 1 juni blijft als extra dag genoteerd: overgeleverde sterfdatum,
+  geen even duidelijk gedocumenteerde liturgische feestdag.
+
+  Herswindis en Hilsondis: Jongbloed toont dat de oudere liturgie
+  (Officia propria) Herswindis als heilige eert en van Hilsondis niets
+  weet, terwijl latere stichtings- en grafteksten Hilsondis als fundatrix
+  voeren ([2]). Habets en Flament identificeerden beide al met hetzelfde
+  grafmonument; sindsdien is die identiteit in de Thornse traditie de
+  regel ([2]). Jongbloed zelf opent de mogelijkheid van twee Ansfrieden
+  en twee echtgenotes; voor deze kalender volgt de Thornse praktijk die
+  de namen als één vrouw laat functioneren, met de naamgeschiedenis
+  hierboven.
+
+  De titel eerste abdis is later en niet eenduidig: het grafschrift en
+  Egidius van Orval noemen de dochter (Benedicta) eerste abdis; andere
+  bronnen Hilsondis zelf ([1], [2]). Het necrologium zegt fundatrix, niet
+  abdis ([2]).
+referenties:
+  - label: "Wikipedia (NL) — Hilsondis"
+    url: "https://nl.wikipedia.org/wiki/Hilsondis"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Overzicht: namen, stichting Thorn 992, dochter Benedicta of zelf eerste abdis, graf te Thorn.
+  - label: "Jongbloed — Listige Immo en Herswind (PSHAL / LGOG-jaarboek 2009)"
+    url: "https://platform.openjournals.nl/PSHAL/article/download/21667/23377/53209"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Studie van de Thornse liturgie en naamgeving: necrologium 1 mei
+      (fundatrix Hilsundis, met afbeelding); Officia propria eert
+      Herswindis als sancta; Hilsondis later in stichtings- en grafteksten;
+      identificatie Herswindis/Hilsondis in de lokale traditie.
+  - label: "Wikipedia (NL) — Ansfried"
+    url: "https://nl.wikipedia.org/wiki/Ansfried"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Echtgenoot; stichting Thorn; bisschop van Utrecht.
+  - label: "Wikipedia (NL) — Abdij van Thorn"
+    url: "https://nl.wikipedia.org/wiki/Abdij_van_Thorn"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Stichting na 972 / voor 992; Hilsondis als stichteres in later falsum; dochter eerste abdis.

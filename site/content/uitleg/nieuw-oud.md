@@ -2,7 +2,7 @@
 title: "Nieuwe en Oude kalender"
 description: "Welke kalender uw parochie volgt, en wat de knop Nieuw/Oud doet"
 uitleg_stijl: nieuw-oud
-git_date: 2026-08-22
+git_date: 2026-08-31
 ---
 
 In de Orthodoxe Kerk vieren niet alle parochies de vaste feesten op dezelfde
@@ -29,7 +29,7 @@ veel kloosters — viert ze op de oude.
 
 ## Een voorbeeld: Kerst
 
-Kerst is in beide kalenders **25 december**. Dat is de **feestdatum**: de
+[Kerst]({{% ref "/feesten/kerst" %}}) is in beide kalenders **25 december**. Dat is de **feestdatum**: de
 naam van de dag in het kerkelijk jaar. Zie [Feestdatum]({{% ref "/uitleg/feestdatum" %}}).
 
 - Volgt uw parochie de **nieuwe** kalender, dan is de viering op 25 december
@@ -38,17 +38,17 @@ naam van de dag in het kerkelijk jaar. Zie [Feestdatum]({{% ref "/uitleg/feestda
   25 december — maar volgens de oude telling. Op een Nederlandse kalender is
   dat **7 januari**.
 
-Hetzelfde geldt voor andere vaste dagen. De Besnijdenis des Heren is 1 januari
+Hetzelfde geldt voor andere vaste dagen. De [Besnijdenis des Heren]({{% ref "/feesten/besnijdenis-des-heren" %}}) is 1 januari
 als feestdatum; volgens de oude kalender viert men die op 14 januari
 burgerlijk.
 
 ## Pascha verschuift niet
 
-**Pascha** (Orthodox Pasen) en alles wat daarvan afhangt — de Grote Vasten,
-Palmzondag, Hemelvaart, Pinksteren — vallen in **beide** standen op dezelfde
+**[Pascha]({{% ref "/feesten/pascha" %}})** (Orthodox Pasen) en alles wat daarvan afhangt — de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}),
+[Palmzondag]({{% ref "/feesten/palmzondag" %}}), [Hemelvaart]({{% ref "/feesten/hemelvaart" %}}), [Pinksteren]({{% ref "/feesten/pinksteren" %}}) — vallen in **beide** standen op dezelfde
 burgerlijke dag. Alle Orthodoxe kerken gebruiken daarvoor dezelfde berekening.
 
-De knop Nieuw/Oud verplaatst dus alleen de *vaste* feesten (Kerst, Theofanie,
+De knop Nieuw/Oud verplaatst dus alleen de *vaste* feesten (Kerst, [Theofanie]({{% ref "/feesten/theofanie" %}}),
 heiligen met een vaste dag, en zo verder). Pascha blijft staan.
 
 Dit is iets anders dan het verschil tussen westers en Orthodox Pasen. Dat

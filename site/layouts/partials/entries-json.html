@@ -1,0 +1,3 @@
+{{- if os.FileExists "static/data/entries.json" -}}
+<script type="application/json" id="kalender-entries-data">{{ os.ReadFile "static/data/entries.json" | safeJS }}</script>
+{{- end -}}

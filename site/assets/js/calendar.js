@@ -1428,6 +1428,39 @@
       fillNieuwOudMeer(meer);
       return;
     }
+    if (kind === "extra-gedenkdag") {
+      title.textContent = "Andere gedenkdagen";
+      let extraItems = [];
+      try {
+        extraItems = JSON.parse(
+          (trigger && trigger.dataset.extraGedenkdagen) || "[]"
+        );
+      } catch (err) {
+        extraItems = [];
+      }
+      const lis = extraItems
+        .map((it) => {
+          const label = escapeHtml(String((it && it.label_lang) || (it && it.label) || ""));
+          const toel = String((it && it.toelichting) || "").trim();
+          return toel
+            ? `<li><strong>${label}</strong> — ${escapeHtml(toel)}</li>`
+            : `<li><strong>${label}</strong></li>`;
+        })
+        .join("");
+      body.innerHTML =
+        `<p>De eerste datum is de <strong>canonieke gedenkdag</strong> ` +
+        `(meestal de sterfdag). Data tussen haakjes zijn <strong>andere dagen</strong> ` +
+        `waarop deze heilige ook herdacht wordt: overbrenging van relieken, ` +
+        `een lokale kalender, of een tweede gedachtenis.</p>` +
+        (lis ? `<ul>${lis}</ul>` : "") +
+        `<p>Die extra dagen staan niet als tweede feestdag op de jaarkalender ` +
+        `of in het Synaxarion.</p>`;
+      if (meer) {
+        meer.hidden = false;
+        meer.innerHTML = achtergrondLink("heiligen", "Meer over de heiligen");
+      }
+      return;
+    }
     if (kind === "vierdatum-gelijk") {
       title.textContent = "Zelfde burgerlijke dag";
       body.innerHTML =
@@ -1698,6 +1731,15 @@
 
   async function loadEntries() {
     await loadVastenNiveaus();
+    const inline = document.getElementById("kalender-entries-data");
+    if (inline) {
+      try {
+        const parsed = JSON.parse(inline.textContent || "");
+        if (Array.isArray(parsed) && parsed.length) return parsed;
+      } catch (_) {
+        /* val terug op fetch */
+      }
+    }
     const url = assetUrl("data/entries.json");
     const res = await fetch(url);
     if (!res.ok) throw new Error(`entries.json (${res.status}) ${url}`);
@@ -3793,10 +3835,36 @@
         }
       }
     } catch (err) {
+      const msg =
+        "<p>Kon kalenderdata niet laden. Vernieuw de pagina of probeer later opnieuw.</p>";
       const cardEntries = document.getElementById("today-entries");
-      if (cardEntries) {
-        cardEntries.innerHTML =
-          "<p>Kon kalenderdata niet laden. Vernieuw de pagina of probeer later opnieuw.</p>";
+      if (cardEntries && !cardEntries.querySelector(".today-dag-hoofd")) {
+        const fallback = cardEntries.querySelector(".js-fallback");
+        if (fallback) fallback.insertAdjacentHTML("afterend", msg);
+        else cardEntries.innerHTML = msg;
+      }
+      const grid = document.getElementById("year-grid");
+      if (grid && !grid.querySelector(".month-card")) {
+        const fallback = grid.querySelector(".js-fallback");
+        if (fallback) fallback.insertAdjacentHTML("afterend", msg);
+        else grid.innerHTML = msg;
+      }
+      const synList = document.getElementById("synaxarion-list");
+      if (synList && !synList.querySelector(".date-list-row")) {
+        synList.innerHTML = msg;
+      }
+      const roost = document.getElementById("rooster-tables");
+      if (roost && !roost.querySelector(".rooster-row")) {
+        const fallback = roost.querySelector(".js-fallback");
+        if (fallback) {
+          fallback.insertAdjacentHTML(
+            "afterend",
+            "<p class=\"muted\">Lezingengegevens konden niet worden geladen.</p>"
+          );
+        } else {
+          roost.innerHTML =
+            "<p class=\"muted\">Lezingengegevens konden niet worden geladen.</p>";
+        }
       }
       console.error(err);
     }

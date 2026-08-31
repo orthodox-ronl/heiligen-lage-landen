@@ -1,7 +1,7 @@
 ---
 title: "Lezingen van de dag"
 description: "Apostel en Evangelie: welke lezing wanneer, volgens Moskou (ROCOR bij twijfel)"
-git_date: 2026-08-29
+git_date: 2026-08-31
 ---
 
 Op de [datumpagina]({{% ref "/uitleg/datumpagina" %}}) en het [lezingenrooster]({{% ref "/lezingenrooster" %}})
@@ -80,29 +80,29 @@ Liturgische perikoop-nummering in de Apostel- en Evangelieboeken.
 
 ### 1. Kalendercontext
 
-Beweeglijke dagen (paascyclus) rekenen we vanaf **Orthodox Pascha**. Vaste
+Beweeglijke dagen (paascyclus) rekenen we vanaf **Orthodox [Pascha]({{% ref "/feesten/pascha" %}})**. Vaste
 feesten gebruiken de feestdatum, consistent met de rest van deze site (nieuw
 of oud). Zie ook de uitleg over
 [nieuwe en oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 
 ### 2. Bekende feestlezingen
 
-Staat er voor die dag een bekende feestlezing (Pascha, Theofanie, Kerst, Palmzondag,
+Staat er voor die dag een bekende feestlezing ([Pascha]({{% ref "/feesten/pascha" %}}), [Theofanie]({{% ref "/feesten/theofanie" %}}), [Kerst]({{% ref "/feesten/kerst" %}}), [Palmzondag]({{% ref "/feesten/palmzondag" %}}),
 en zo verder), dan geldt die. Zij **vervangt** de doorlopende lezing, tenzij
 regel 5 iets anders voorschrijft (bijvoorbeeld: op zondag beide lezen).
 
 **Zaterdag en zondag rond grootfeesten.** Op de zaterdag en de zondag
-vóór Kruisverheffing (14 september), en op de zaterdag en de zondag erna,
+vóór [Kruisverheffing]({{% ref "/feesten/kruisverheffing" %}}) (14 september), en op de zaterdag en de zondag erna,
 gelden eigen Apostel- en Evangelielezingen over het Kruis. Hetzelfde
 geldt rond Theofanie (zaterdag en zondag vóór 6 januari; zaterdag erna)
 en de zaterdag vóór Kerst. Dat zijn geen extra feestdagen op de
 jaarkalender: ze hebben geen eigen feestdienst, alleen die speciale
 lezingen. Valt zo’n zaterdag of zondag samen met een groot feest
-(bijvoorbeeld de Geboorte van de Moeder Gods op 8 september, de
-Besnijdenis op 1 januari, of het feest zelf), dan gaat dat feest voor.
+(bijvoorbeeld de [Geboorte van de Moeder Gods]({{% ref "/feesten/geboorte-moeder-gods" %}}) op 8 september, de
+[Besnijdenis]({{% ref "/feesten/besnijdenis-des-heren" %}}) op 1 januari, of het feest zelf), dan gaat dat feest voor.
 De zondag ná Kruisverheffing is ook het anker van de Lucaanse sprong
-hieronder. Op **1 september** (begin van het kerkelijk jaar) en op de
-**zondag ná 10 oktober** (Vaderen van het Zevende Concilie, Nicea 787)
+hieronder. Op **1 september** ([begin van het kerkelijk jaar]({{% ref "/feesten/begin-kerkelijk-jaar" %}})) en op de
+**zondag ná 10 oktober** ([Vaderen van het Zevende Concilie]({{% ref "/feesten/zondag-vaderen-zevende-concilie" %}}), Nicea 787)
 gelden eveneens eigen Apostel en Evangelie.
 
 ### 3. Doorlopende weekreeks
@@ -121,10 +121,10 @@ nog achterloopt (преступка). Zie Azbyka voor de drempels (rond eind maa
 begin april Juliaans).
 
 **Theofanie-отступка in de winter.** Eerst geldt: zolang de doorlopende reeks
-na Pinksteren nog weken 32 en 33 heeft vóór de zondag van de tollenaar en de
-farizeeër, lezen we die gewone eindreeks gewoon uit. Voorbeeld **2025**:
+na Pinksteren nog weken 32 en 33 heeft vóór de [zondag van de tollenaar en de
+farizeeër]({{% ref "/feesten/zondag-tollenaar-en-farizeeer" %}}), lezen we die gewone eindreeks gewoon uit. Voorbeeld **2025**:
 Tollenaar valt op 9 februari; 1 februari is nog de 32e week, 3–8 februari de
-33e week (2 februari is Ontmoeting in de tempel). Er is dan géén “gat” en dus
+33e week (2 februari is [Ontmoeting in de Tempel]({{% ref "/feesten/ontmoeting-in-de-tempel" %}})). Er is dan géén “gat” en dus
 geen herhaling.
 
 Alleen als er *na* week 33 nog weekdagen overblijven tot Tollenaar (één tot
@@ -136,7 +136,7 @@ overgang naar het Triodion kloppen.
 ### 4. Vasten zonder die liturgie
 
 Op sommige vastendagen is er geen liturgie met Apostel en Evangelie “van de
-dag” (bijvoorbeeld weekdagen in de Grote Vasten, met Oudtestamentische lezingen
+dag” (bijvoorbeeld weekdagen in de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}), met Oudtestamentische lezingen
 op de uren). De site markeert dat dan als: geen liturgie van dit type.
 
 ### 5. Rang en samenval

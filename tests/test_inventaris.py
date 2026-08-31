@@ -23,11 +23,22 @@ NADER = {
     "adelgonda",
     "agricolaus-van-maastricht",
     "aubertus-van-kamerijk",
+    "audomarus",
+    "bertinus",
+    "cunegonde-van-luxemburg",
     "egbert-van-rathmelsigi",
+    "eucherius-van-orleans",
     "folciunus",
+    "fredegandus",
+    "gaugericus",
+    "livinus-van-gent",
+    "macarius-van-gent",
+    "maternus",
     "medardus",
     "quirillus-van-tongern",
+    "willehad",
     "winnocus",
+    "zwentibold",
 }
 
 

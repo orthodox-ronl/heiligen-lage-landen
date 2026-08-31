@@ -15,15 +15,24 @@ namen:
 datum:
   waarde: "01-08"
   stijl: gregoriaans
+  extra:
+    - waarde: "01-19"
+      toelichting: gedachtenis in het bisdom Gent
+iconen:
+  - bestand: iconen/gudula-van-brussel.jpg
+    primair: true
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:Statue of Saint Gudula.jpg"
+  - bestand: iconen/goedele.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Goedele.jpg"
 titels:
   - Maagd
   - Patrones van Brussel
 periode: "ca. 650–712"
-icoon:
-  bestand: iconen/gudula-van-brussel.jpg
-  rechten: ok
-  licentie: "CC BY-SA 4.0"
-  bron: "Wikimedia Commons — File:Statue of Saint Gudula.jpg"
 locaties:
   - brussel
 betekenis_lage_landen: |

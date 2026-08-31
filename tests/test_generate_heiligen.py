@@ -330,6 +330,61 @@ def test_entry_page_andere_gedenkdagen(
     assert "5 januari oude kalender" not in body
     assert "gedachtenis op de Orthodoxe kalender" in body
     assert "23 december —" not in body
+    assert "extra-gedenkdag" in body
+    assert "gedenkdagen_extra:" in (
+        content / "heiligen" / "voorbeeld.md"
+    ).read_text(encoding="utf-8")
+
+
+def test_internal_links_in_verhaal(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    catalog = [
+        _heilige(
+            id="willibrord",
+            namen={"primair": "Willibrord", "alternatief": []},
+            selectie="voldoet",
+        ),
+        _heilige(
+            id="bonifatius",
+            namen={"primair": "Bonifatius", "alternatief": ["Bonifacius"]},
+            selectie="voldoet",
+            verhaal="Hij werkte met Willibrord en stierf bij Dokkum.",
+        ),
+    ]
+    write_entry_page(catalog[1], catalog)
+    body = _split_hugo_markdown(
+        (content / "heiligen" / "bonifatius.md").read_text(encoding="utf-8")
+    )[1]
+    assert "[Willibrord](/heiligen/willibrord/)" in body
+    assert "[Bonifatius](/heiligen/bonifatius/)" not in body
+
+
+def test_referenties_genummerd(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    write_entry_page(
+        _heilige(
+            selectie="voldoet",
+            over_bronnen="Volgens [1] predikte hij in Gent.",
+            referenties=[
+                {
+                    "label": "Wikipedia (NL) — Voorbeeld",
+                    "url": "https://nl.wikipedia.org/wiki/Voorbeeld",
+                    "inhoud": "Overzicht.",
+                }
+            ],
+        )
+    )
+    body = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )[1]
+    assert "[1] [Wikipedia (NL) — Voorbeeld]" in body
+    assert "Volgens [1] predikte hij in Gent." in body
 
 
 def test_andere_gedenkdagen_zonder_dubbele_datum_in_toelichting(
@@ -521,6 +576,38 @@ def test_entries_json_slaat_kandidaat_schrappen_over(
     by_id = {item["id"]: item for item in payload}
     assert "schrijf" not in by_id
     assert "blijf" in by_id
+
+
+def test_synaxarion_json_alleen_vaste_cyclus(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    static = tmp_path / "static" / "data"
+    monkeypatch.setattr("generate.STATIC_DATA", static)
+    vast = _heilige(id="blijf", selectie="voldoet")
+    vast["namen"] = {"primair": "Blijf", "alternatief": []}
+    pascha = {
+        **_heilige(id="pascha", soort="feest", cyclus="paascyclus"),
+        "namen": {"primair": "Pascha", "alternatief": []},
+        "source_path": "data/feesten/pascha.yaml",
+        "observances": ["feest"],
+        "datum_norm": {
+            "vorm": "dag",
+            "paascyclus_offset": 0,
+            "stijl": "gregoriaans",
+        },
+    }
+    write_entries_json([vast, pascha])
+    data = json.loads((static / "synaxarion.json").read_text(encoding="utf-8"))
+    namen = [
+        item["naam"]
+        for maand in data["maanden"]
+        for dag in maand["dagen"]
+        for item in dag["items"]
+    ]
+    assert "Blijf" in namen
+    assert "Pascha" not in namen
+    nov = next(m for m in data["maanden"] if m["key"] == "11")
+    assert any(d["mmdd"] == "11-07" for d in nov["dagen"])
 
 
 def test_beheer_selectie_groepeert_en_toont_toelichting() -> None:

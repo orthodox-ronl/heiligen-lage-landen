@@ -1,0 +1,53 @@
+id: berlindis-van-meerbeke
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Kloosterlinge te Meerbeke."
+namen:
+  primair: Berlindis van Meerbeke
+  alternatief:
+  - Berlindis
+  - Berlende
+datum:
+  waarde: "02-03"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/berlindis-van-meerbeke-berlindiskapel-meerbeke.jpg
+  rechten: ok
+  licentie: CC BY-SA 3.0
+  bron: "Wikimedia Commons — File:Berlindiskapel Meerbeke.JPG"
+titels:
+  - Religieuze
+periode: "7e/10e eeuw"
+locaties:
+  - meerbeke
+betekenis_lage_landen: |
+  Berlindis wordt vereerd te Meerbeke (Vlaanderen). De Vlaamse
+  kalender zet haar op 3 februari; GCatholic geeft sterfjaar 940. In
+  beide lezingen is het pre-schisma en in huidig België.
+verhaal: |
+  Berlindis, volgens de ene traditie zevende eeuw (nicht van Amandus),
+  volgens GCatholic tiende eeuw, leefde als religieuze te Meerbeke. Haar
+  grafkerk is de lokale cultusplaats.
+over_bronnen: |
+  Berlindis voldoet: leven en cultus te Meerbeke (België), vóór 1054
+  ([1], [2], [3]). De datering (7e vs. 10e eeuw) verschilt per bron; beide
+  vallen vóór het schisma.
+referenties:
+  - label: "Wikipedia (NL) — Berlindis van Meerbeke"
+    url: "https://nl.wikipedia.org/wiki/Berlindis_van_Meerbeke"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Meerbeke, lokale cultus, feestdag 3 februari.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      3 februari: Berlindis van Meerbeke (ca. 702).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Berlindis van Meerbeke, religious, died Belgium 940.

@@ -25,11 +25,11 @@ Die dagnaam is gelijk in de nieuwe (Gregoriaanse) en oude (Juliaanse) kalender.
 automatische +13 op de feestdatum zelf toegepast.
 
 Bij een heilige met **meer gedenkdagen**: `datum.waarde` is canoniek de
-**sterfdag** (of, bij twijfel, die dag). Andere dagen alleen in
-`datum.extra` als ze **in de Orthodoxe Kerk bekend** zijn (niet een
-louter katholieke of lokale datum). Generate zet ze op de pagina onder
-**Andere gedenkdagen**; de infobox toont alleen de canonieke dag. Extra
-dagen komen niet automatisch op jaarkalender of Synaxarion.
+**sterfdag** (of, bij twijfel, die dag). Andere dagen in `datum.extra`
+(overbrenging van relieken, lokale kalender, tweede orthodoxe gedachtenis),
+met `toelichting` wat die dag is. Generate zet ze tussen haakjes achter de
+feestdatum (popover) en onder **Andere gedenkdagen**. Extra dagen komen
+niet op jaarkalender of Synaxarion.
 
 ```yaml
 datum:
@@ -105,7 +105,9 @@ Pagina’s onder `/vasten/{id}/`; zichtbaar in synaxarion/agenda/kalender met
 aan/uit-filters. ICS: `vasten-*.ics` en combinaties met heiligen/feesten.
 
 Het **Synaxarion** (`/synaxarion/`, optioneel `?dag=MM-DD`) toont alleen de vaste
-jaarcyclus. Een **datumpagina** (`/datum/?datum=2026-08-15`) toont wat er
+jaarcyclus. De bladerlijst staat in de HTML (`synaxarion.json`); JS is voor
+zoeken, filteren en de dagweergave.
+Een **datumpagina** (`/datum/?datum=2026-08-15`) toont wat er
 op die dag in dat jaar valt, inclusief paascyclus en wekelijks vasten.
 
 Optioneel op entries:

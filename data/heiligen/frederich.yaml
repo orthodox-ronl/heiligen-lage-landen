@@ -15,6 +15,11 @@ namen:
 datum:
   waarde: "07-18"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/frederich.jpg
+  rechten: ok
+  licentie: Public domain
+  bron: "Wikimedia Commons — File:Frederik van Utrecht.jpg"
 titels:
   - Bisschop van Utrecht
   - Martelaar
@@ -24,11 +29,6 @@ locaties:
 rustplaats:
   plaats: utrecht
   toelichting: "Sint-Salvatorkerk (Oudmunster; verdwenen)"
-icoon:
-  bestand: iconen/frederich.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Frederik van Utrecht.jpg"
 betekenis_lage_landen: |
   Frederik was bisschop van Utrecht in de Karolingische tijd (ca.
   815–838). Hij predikte onder meer op Walcheren en, met Odulphus,

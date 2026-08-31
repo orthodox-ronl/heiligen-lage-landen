@@ -15,15 +15,21 @@ namen:
 datum:
   waarde: "09-10"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/theodaard-van-maastricht.jpg
+    primair: true
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:2014 Liège, Cathédral St-Paul, saints du diocèse (06a) (Saint-Théodarde).jpg"
+  - bestand: iconen/schatkamer-st-servaasbasiliek-maastricht-reliekhouder-st-theodardus-1936.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:Schatkamer St-Servaasbasiliek Maastricht, reliekhouder St-Theodardus (1936).jpg"
 titels:
   - Bisschop van Maastricht
   - Martelaar
 periode: "~618–670"
-icoon:
-  bestand: iconen/theodaard-van-maastricht.jpg
-  rechten: ok
-  licentie: "CC BY-SA 4.0"
-  bron: "Wikimedia Commons — File:2014 Liège, Cathédral St-Paul, saints du diocèse (06a) (Saint-Théodarde).jpg"
 locaties:
   - maastricht
 betekenis_lage_landen: |

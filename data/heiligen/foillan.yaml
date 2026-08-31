@@ -15,6 +15,9 @@ namen:
 datum:
   waarde: "10-31"
   stijl: gregoriaans
+  extra:
+    - waarde: "01-16"
+      toelichting: vinding en overbrenging van de relieken
 titels:
   - Ierse monnik
   - Martelaar

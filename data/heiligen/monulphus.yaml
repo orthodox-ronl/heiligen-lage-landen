@@ -17,16 +17,16 @@ datum:
   extra:
     - waarde: "08-10"
       toelichting: 10 augustus (overbrenging van de relieken, met Gondulphus)
+icoon:
+  bestand: iconen/monulphus-gondulphus.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Crayer,Gaspar de-16xx-De opstanding van de HH. Monulphus en Gondulphus uit hun graven BM.jpg"
 titels:
   - Bisschop van Maastricht
 periode: "599?"
 locaties:
   - maastricht
-icoon:
-  bestand: iconen/monulphus-gondulphus.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:Crayer,Gaspar de-16xx-De opstanding van de HH. Monulphus en Gondulphus uit hun graven BM.jpg"
 betekenis_lage_landen: |
   Monulphus maakte het graf van Servatius tot een stenen kerk — de kern
   van de latere Sint-Servaasbasiliek. Gregorius van Tours noemt die

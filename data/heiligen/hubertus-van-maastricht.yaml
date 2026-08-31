@@ -17,15 +17,21 @@ datum:
   extra:
   - waarde: "11-03"
     toelichting: 3 november (gedachtenis / translatio-traditie)
+iconen:
+  - bestand: iconen/hubertus-van-maastricht.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Hubertus van Luik (tg-uact-341).jpg"
+  - bestand: iconen/lambert-mathieu-1804-1861-de-bekering-van-sint-hubertus-saint-hubert-1846-basiliek-van-sint-hubertus-24-02-2021.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Lambert Mathieu (1804-1861) De bekering van Sint-Hubertus Saint-Hubert (1846) Basiliek van Sint-Hubertus 24-02-2021.jpg"
 titels:
   - Bisschop van Maastricht en Luik
   - Apostel van de Ardennen
 periode: "ca. 655–727"
-icoon:
-  bestand: iconen/hubertus-van-maastricht.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Hubertus van Luik (tg-uact-341).jpg"
 locaties:
   - maastricht
   - luik

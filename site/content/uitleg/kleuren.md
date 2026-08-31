@@ -2,7 +2,7 @@
 title: "Kleuren in de jaarkalender"
 description: "Wat de kleuren op de jaarkalender betekenen"
 uitleg_stijl: kleuren
-git_date: 2026-08-23
+git_date: 2026-08-31
 ---
 
 Op de [jaarkalender]({{% ref "/kalender" %}}) heeft elke dag een kleur. Die
@@ -16,7 +16,7 @@ strak; u ziet dan de combinatie van de soorten hieronder.
 <li><span class="swatch day-feest"></span> een vast feest</li>
 <li><span class="swatch day-heilige"></span> een of meer heiligen</li>
 <li><span class="swatch day-vasten"></span> vasten (een periode of woensdag/vrijdag)</li>
-<li><span class="swatch day-vastenvrij"></span> expliciet vastenvrij (bijvoorbeeld de Lichte Week)</li>
+<li><span class="swatch day-vastenvrij"></span> expliciet vastenvrij (bijvoorbeeld de [Lichte Week]({{% ref "/feesten/lichte-week" %}}))</li>
 </ul>
 
 De kleur zegt niet *hoe streng* het vasten is. Dat staat op de dag zelf, als

@@ -13,6 +13,14 @@ namen:
 datum:
   waarde: "09-17"
   stijl: gregoriaans
+  extra:
+    - waarde: "05-31"
+      toelichting: overbrenging van de relieken naar Luik
+icoon:
+  bestand: iconen/lambertus.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:St-Lambert-Liège.jpg"
 titels:
   - Bisschop van Maastricht
   - Martelaar
@@ -23,11 +31,6 @@ locaties:
 rustplaats:
   plaats: luik
   toelichting: "Sint-Lambertuskathedraal"
-icoon:
-  bestand: iconen/lambertus.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:St-Lambert-Liège.jpg"
 betekenis_lage_landen: |
   Lambertus is de martelaarsbisschop van de Maaszetel. Hij volgde zijn
   oom Theodardus op, predikte onder de nog heidense Toxandren rond

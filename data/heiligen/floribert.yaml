@@ -15,16 +15,16 @@ namen:
 datum:
   waarde: "04-27"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/floribert.jpg
+  rechten: ok
+  licentie: Public domain
+  bron: "Wikimedia Commons — File:Liège, Cathédral St-Paul, saints du diocèse - Floribert.jpg"
 titels:
   - Bisschop van Luik
 periode: "ca. 685–746"
 locaties:
   - luik
-icoon:
-  bestand: iconen/floribert.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Liège, Cathédral St-Paul, saints du diocèse - Floribert.jpg"
 betekenis_lage_landen: |
   Floribert volgt Hubertus op als bisschop van het bisdom
   Tongeren-Maastricht-Luik (vanaf 727). Zijn zetel en graf hoorden bij

@@ -16,15 +16,18 @@ namen:
 datum:
   waarde: "12-01"
   stijl: gregoriaans
+  extra:
+    - waarde: "06-25"
+      toelichting: translatiefeest (warme Elooi)
+icoon:
+  bestand: iconen/eligius.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:A Goldsmith in his Shop MET DT711.jpg"
 titels:
   - Bisschop van Noyon-Doornik
   - Apostel van Vlaanderen
 periode: "ca. 588–660"
-icoon:
-  bestand: iconen/eligius.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:A Goldsmith in his Shop MET DT711.jpg"
 locaties:
   - doornik
   - noyon

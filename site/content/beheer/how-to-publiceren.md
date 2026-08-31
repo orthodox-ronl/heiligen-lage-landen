@@ -24,6 +24,7 @@ verwacht vastenniveau is meestal: YAML-voorbeeld aangepast, code nog niet.
 - **Schrijft opnieuw:** `site/content/heiligen/`, `feesten/`, `vasten/`
   (inclusief hun `_index.md`), `site/content/uitleg/vasten.md`,
   `vasten-technisch.md`, `site/static/data/entries.json`,
+  `site/static/data/synaxarion.json`,
   `site/static/data/plaatsen.json`, `site/static/ics/*.ics`.
 - **Laat staan (body):** `site/content/_index.md`, `kalender/_index.md`,
   `synaxarion/_index.md`, `datum/_index.md`, `agenda/_index.md`,

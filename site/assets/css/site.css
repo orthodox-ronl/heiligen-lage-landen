@@ -1077,12 +1077,21 @@ main.main > :is(article, section) > h1 {
 .vierdatum-oud:hover,
 .vierdatum-oud:focus-visible,
 .vierdatum-gelijk:hover,
-.vierdatum-gelijk:focus-visible {
+.vierdatum-gelijk:focus-visible,
+.extra-gedenkdag:hover,
+.extra-gedenkdag:focus-visible {
   text-decoration-color: var(--gold-soft);
   outline: none;
 }
 
-.infobox-table .vierdatum-oud {
+.extra-gedenkdag {
+  cursor: help;
+  text-decoration: underline dotted color-mix(in srgb, var(--muted) 70%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.infobox-table .vierdatum-oud,
+.infobox-table .extra-gedenkdag {
   display: inline;
   margin-left: 0.15rem;
 }
@@ -2824,6 +2833,12 @@ html[data-theme="light"] .vasten-badge-geen {
 
 .hint {
   color: var(--muted);
+}
+
+.js-fallback {
+  color: var(--muted);
+  max-width: 40rem;
+  line-height: 1.45;
 }
 
 .reactie-form {

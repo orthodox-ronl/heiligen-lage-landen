@@ -13,16 +13,16 @@ namen:
 datum:
   waarde: "05-01"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/ultan.jpg
+  rechten: ok
+  licentie: CC BY-SA 4.0
+  bron: "Wikimedia Commons — File:Monaghan Saint Macartan's Cathedral Window Clogher Saints II Detail Saint Ultan 2013 09 21.jpg"
 titels:
   - Abt van Fosses
 periode: "~610–686"
 locaties:
   - fosses
-icoon:
-  bestand: iconen/ultan.jpg
-  rechten: ok
-  licentie: "CC BY-SA 4.0"
-  bron: "Wikimedia Commons — File:Monaghan Saint Macartan's Cathedral Window Clogher Saints II Detail Saint Ultan 2013 09 21.jpg"
 betekenis_lage_landen: |
   Ultan hoort bij de Ierse kring rond Gertrudis van Nijvel: met Foillan
   kwam hij naar Fosses (Fosses-la-Ville), stichting op land van Itta en

@@ -51,8 +51,9 @@ datum:
 [Feestdatum (technisch)]({{% ref "/uitleg/feestdatum-technisch" %}}).
 
 Meerdere gedenkdagen: `datum.waarde` is de **sterfdag** (canoniek).
-Andere dagen alleen in `datum.extra` als ze in de Orthodoxe Kerk bekend
-zijn. Zie het [contract Heilige]({{% ref "/beheer/pagina-opbouw/heilige" %}}).
+Andere dagen in `datum.extra` (overbrenging, lokale kalender, tweede
+orthodoxe gedachtenis), met toelichting. Zie het
+[contract Heilige]({{% ref "/beheer/pagina-opbouw/heilige" %}}).
 
 ```yaml
 datum:

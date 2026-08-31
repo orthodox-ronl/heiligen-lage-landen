@@ -13,7 +13,7 @@ de knop Nieuw/Oud. Dat is óf een echte vastenregel (*streng*, *vis*,
 *vastenvrij*, …), óf het grijze **geen vasten** als er vandaag niets over
 vasten is voorgeschreven (zoals een dinsdag in juli). Wijst u op het
 label, dan verschijnt een korte uitleg. Er worden geen twee vasten tegelijk
-getoond: als een dag in de Grote Vasten valt, is dat het vasten van die
+getoond: als een dag in de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}) valt, is dat het vasten van die
 dag, niet nog eens het wekelijkse vrijdagvasten.
 
 Deze pagina is bedoeld om samen met de clerus te lezen. Zij beschrijft waar
@@ -24,7 +24,7 @@ Economia en de zegen van de biechtvader gaan altijd vóór een website.
 
 We volgen in de eerste plaats het **Slavische typikon**, zoals de
 Russisch-Orthodoxe Kerk in Moskou het hanteert: de hoofdstukken 32 en 33 van
-het Typikon (en hoofdstuk 49 voor Lazarus-zaterdag), de kerkelijke kalender van
+het Typikon (en hoofdstuk 49 voor [Lazarus-zaterdag]({{% ref "/feesten/lazarus-zaterdag" %}})), de kerkelijke kalender van
 de Uitgeverij van het Moskouse Patriarchaat
 ([calendar.rop.ru](http://calendar.rop.ru)) en de veelgebruikte dagkalender
 [days.pravoslavie.ru](https://days.pravoslavie.ru/).
@@ -34,7 +34,7 @@ kijken we naar de **ROCOR**. Die kerk gebruikt hetzelfde Sabbas-typikon. Een
 toegankelijke Engelse weergave is die van pater Seraphim Rose; de samenvatting
 van de OCA komt uit dezelfde Slavische traditie.
 
-De regels hier gaan over liturgische dagen: Aankondiging, Grote Week, en zo
+De regels hier gaan over liturgische dagen: [Aankondiging]({{% ref "/feesten/aankondiging" %}}), [Grote Week]({{% ref "/vasten/grote-week" %}}), en zo
 verder. Of de parochie die dagen op de nieuwe of de oude kalender viert, is een
 aparte keuze (de knop Nieuw/Oud op deze site).
 
@@ -76,9 +76,9 @@ de datumpagina, niet in de jaarkalender en niet in de agenda.
 
 ### Zaterdag en zondag in een strenge periode
 
-In de Grote Vasten en het Ontslapen-vasten is een gewone weekdag streng.
+In de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}) en het [Ontslapen-vasten]({{% ref "/vasten/ontslapen-vasten" %}}) is een gewone weekdag streng.
 Op zaterdag en zondag zijn wijn en olie toegestaan, vis niet. In de
-**Grote Week** geldt die weekendversoepeling niet: die dagen blijven streng.
+**[Grote Week]({{% ref "/vasten/grote-week" %}})** geldt die weekendversoepeling niet: die dagen blijven streng.
 
 <table class="vasten-tabel">
 <thead><tr><th>Wanneer</th><th>Op de kalender</th><th>Toelichting</th></tr></thead>
@@ -95,11 +95,11 @@ Op zaterdag en zondag zijn wijn en olie toegestaan, vis niet. In de
 
 ### Apostelen- en Geboortevasten
 
-In het Apostelen- en het Geboortevasten volgt de kalender het weekschema
+In het [Apostelvasten]({{% ref "/vasten/apostolisch-vasten" %}}) en het [Geboortevasten]({{% ref "/vasten/geboorte-vasten" %}}) volgt de kalender het weekschema
 uit typikon hoofdstuk 33: maandag, woensdag en vrijdag streng; dinsdag en
 donderdag wijn en olie; zaterdag en zondag vis.
 
-De Boterweek hoort daar niet bij. Dat is de week vóór de Grote Vasten:
+De [Boterweek]({{% ref "/feesten/boterweek" %}}) hoort daar niet bij. Dat is de week vóór de Grote Vasten:
 geen vlees, wel zuivel, ook op woensdag en vrijdag.
 
 <table class="vasten-tabel">
@@ -135,11 +135,11 @@ kalender toont dan wijn en olie.
 ### Een feest versoepelt, het maakt de periode niet strenger
 
 Valt een feestdag in een vastenperiode, dan mag het feest het vasten
-lichter maken, nooit zwaarder. Zo is er vis op de Aankondiging (zolang die
-niet in de Grote Week valt), op Palmzondag, op de Transfiguratie en op de
-Tempelgang van de Moeder Gods. Op woensdag of vrijdag buiten een periode
-kan vis ook bij de Geboorte van de Moeder Gods, Petrus en Paulus, en de
-Geboorte van Johannes.
+lichter maken, nooit zwaarder. Zo is er vis op de [Aankondiging]({{% ref "/feesten/aankondiging" %}}) (zolang die
+niet in de Grote Week valt), op [Palmzondag]({{% ref "/feesten/palmzondag" %}}), op de [Transfiguratie]({{% ref "/feesten/transfiguratie" %}}) en op de
+[Tempelgang van de Moeder Gods]({{% ref "/feesten/tempelgang-moeder-gods" %}}). Op woensdag of vrijdag buiten een periode
+kan vis ook bij de [Geboorte van de Moeder Gods]({{% ref "/feesten/geboorte-moeder-gods" %}}), [Petrus en Paulus]({{% ref "/feesten/petrus-en-paulus" %}}), en de
+[Geboorte van Johannes]({{% ref "/feesten/geboorte-johannes-doper" %}}).
 
 <table class="vasten-tabel">
 <thead><tr><th>Wanneer</th><th>Op de kalender</th><th>Toelichting</th></tr></thead>
@@ -157,9 +157,9 @@ Geboorte van Johannes.
 
 ### Lazarus-zaterdag
 
-Volgens typikon hoofdstuk 49 is op Lazarus-zaterdag gekookt voedsel met
+Volgens typikon hoofdstuk 49 is op [Lazarus-zaterdag]({{% ref "/feesten/lazarus-zaterdag" %}}) gekookt voedsel met
 olie toegestaan, plus wijn, en kaviaar als die er is. **Vis is er niet.**
-Vis hoort bij Palmzondag, de dag erna. Omdat deze kalender kaviaar niet
+Vis hoort bij [Palmzondag]({{% ref "/feesten/palmzondag" %}}), de dag erna. Omdat deze kalender kaviaar niet
 apart kan tonen, laat zij Lazarus-zaterdag zien als wijn en olie, net als
 andere zaterdagen in de Grote Vasten.
 
@@ -176,8 +176,8 @@ andere zaterdagen in de Grote Vasten.
 
 ### In de Grote Week geen vis, ook niet op de Aankondiging
 
-Valt de Aankondiging in de Grote Week, dan is vis niet toegestaan. Het
-typikon staat tot Grote Donderdag olie en wijn toe; op Grote Vrijdag alleen
+Valt de [Aankondiging]({{% ref "/feesten/aankondiging" %}}) in de [Grote Week]({{% ref "/vasten/grote-week" %}}), dan is vis niet toegestaan. Het
+typikon staat tot [Grote Donderdag]({{% ref "/feesten/grote-donderdag" %}}) olie en wijn toe; op [Grote Vrijdag]({{% ref "/feesten/grote-vrijdag" %}}) alleen
 wijn. Deze kalender gaat in de hele Grote Week niet verder dan wijn en olie
 als een feest anders vis zou geven.
 
@@ -190,11 +190,11 @@ kalender kan dat wel, bijvoorbeeld in 2026.
 ### Sommige feesten zijn zelf een vastendag
 
 Buiten een vastenperiode zijn er feesten die zelf vasten meebrengen: de
-Kruisverheffing en de Onthoofding van Johannes. Die dagen zijn streng, ook
+[Kruisverheffing]({{% ref "/feesten/kruisverheffing" %}}) en de [Onthoofding van Johannes]({{% ref "/feesten/onthoofding-johannes-doper" %}}). Die dagen zijn streng, ook
 als ze op zaterdag of zondag vallen.
 
 Andere feesten maken alleen het wekelijkse woensdag- of vrijdagvasten
-lichter (vis), of zetten het uit. Met Kerst en Theofanie is er geen vasten,
+lichter (vis), of zetten het uit. Met [Kerst]({{% ref "/feesten/kerst" %}}) en [Theofanie]({{% ref "/feesten/theofanie" %}}) is er geen vasten,
 ook niet als die dagen op vrijdag vallen.
 
 <table class="vasten-tabel">
@@ -213,8 +213,7 @@ ook niet als die dagen op vrijdag vallen.
 
 ### Vastenvrije weken
 
-In de Lichte Week, de week van de Tollenaar en de Farizeeër, en de week na
-Pinksteren is er geen vasten. Woensdag en vrijdag tellen dan niet als
+In de [Lichte Week]({{% ref "/feesten/lichte-week" %}}), de [week van de Tollenaar en de Farizeeër]({{% ref "/feesten/vastenvrije-week-tollenaar" %}}), en de [week na Pinksteren]({{% ref "/feesten/vastenvrije-week-pinksteren" %}}) is er geen vasten. Woensdag en vrijdag tellen dan niet als
 vastendagen.
 
 <table class="vasten-tabel">
@@ -229,18 +228,18 @@ vastendagen.
 ## Wat we vereenvoudigen
 
 - Droog eten en gekookt voedsel zonder olie vallen beide onder «streng». De kalender telt niet hoeveel maaltijden er op een dag zijn.
-- Kaviaar op Lazarus-zaterdag heeft geen eigen weergave; de kalender toont wijn en olie.
-- Als de Aankondiging op Grote Vrijdag valt, onderscheidt de kalender «alleen wijn» niet van «wijn en olie».
+- Kaviaar op [Lazarus-zaterdag]({{% ref "/feesten/lazarus-zaterdag" %}}) heeft geen eigen weergave; de kalender toont wijn en olie.
+- Als de [Aankondiging]({{% ref "/feesten/aankondiging" %}}) op [Grote Vrijdag]({{% ref "/feesten/grote-vrijdag" %}}) valt, onderscheidt de kalender «alleen wijn» niet van «wijn en olie».
 - Schelpdieren (zonder ruggengraat) staan niet apart in de kalender. Wie ze op een strenge dag eet, volgt de lokale zegen, niet deze site.
 
 ## Wat nog niet in de kalender staat
 
 Dit volgt het typikon nog niet. Na overleg kunnen we een punt hieronder tot regel maken; dan past de kalender mee.
 
-- Olie of wijn op middelfeesten in de Grote Vasten, zoals de veertig martelaren van Sebaste of het voorfeest van de Aankondiging.
+- Olie of wijn op middelfeesten in de Grote Vasten, zoals de veertig martelaren van Sebaste of het [voorfeest van de Aankondiging]({{% ref "/feesten/voorfeest-aankondiging" %}}).
 - Vis op een heilige met doxologie of wake in het Apostelen- of Geboortevasten (typikon hoofdstuk 33, naar de rang van de dienst).
-- Grote Donderdag: het typikon staat wijn en olie toe; de kalender laat de Grote Week streng, behalve als de Aankondiging daar valt (dan wijn en olie).
-- De vooravond van Theofanie als aparte strenge dag.
+- [Grote Donderdag]({{% ref "/feesten/grote-donderdag" %}}): het typikon staat wijn en olie toe; de kalender laat de [Grote Week]({{% ref "/vasten/grote-week" %}}) streng, behalve als de Aankondiging daar valt (dan wijn en olie).
+- De vooravond van [Theofanie]({{% ref "/feesten/theofanie" %}}) als aparte strenge dag.
 - Het tempelfeest van de parochie: vis of olie op die dag.
 
 ## Bronnen

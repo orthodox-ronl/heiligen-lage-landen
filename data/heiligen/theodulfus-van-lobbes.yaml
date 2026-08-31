@@ -1,0 +1,38 @@
+id: theodulfus-van-lobbes
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abt van Lobbes."
+namen:
+  primair: Theodulfus van Lobbes
+  alternatief:
+  - Theodulfus
+  - Théodulphe de Lobbes
+datum:
+  waarde: "06-24"
+  stijl: gregoriaans
+titels:
+  - Abt van Lobbes
+periode: "† 758"
+locaties:
+  - lobbes
+betekenis_lage_landen: |
+  Theodulfus was abt van Lobbes in de achtste eeuw. Zelfde
+  Belgische kloosterlijn als Ursmar en Erminus.
+verhaal: |
+  Abt van Lobbes, gestorven in 758.
+over_bronnen: |
+  Theodulfus voldoet: abt te Lobbes (België), † 758 ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Theodulfus van Lobbes"
+    url: "https://nl.wikipedia.org/wiki/Theodulfus_van_Lobbes"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Abt van Lobbes, † 758.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Théodulphe de Lobbes, bishop, died Belgium 758.

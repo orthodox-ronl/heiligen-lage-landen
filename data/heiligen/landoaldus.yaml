@@ -1,0 +1,75 @@
+id: landoaldus
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Missie Haspengouw; kerk Wintershoven; leermeester van Lambertus."
+namen:
+  primair: Landoaldus
+  alternatief:
+  - Landoald
+  - Landoaldus van Wintershoven
+  - Landoald van Gent
+datum:
+  waarde: "03-19"
+  stijl: gregoriaans
+  extra:
+    - waarde: "06-13"
+      toelichting: verheffing van de relieken
+    - waarde: "06-14"
+      toelichting: overbrenging van de relieken
+icoon:
+  bestand: iconen/wintershoven-sint-lambertusbron-13.jpg
+  rechten: ok
+  licentie: CC0
+  bron: "Wikimedia Commons — File:Wintershoven-Sint-Lambertusbron_(13).jpg"
+titels:
+  - Priester
+  - Geloofsverkondiger
+periode: "† ca. 668"
+locaties:
+  - wintershoven
+  - gent
+betekenis_lage_landen: |
+  Landoaldus predikte in de Haspengouw, stichtte een kerk te
+  Wintershoven (Belgisch Limburg) en was volgens de traditie leermeester
+  van Lambertus. Floribert verhief zijn relieken. Dat is missie en
+  kerkstichting in huidig België, zevende eeuw.
+verhaal: |
+  Landoaldus kwam volgens de overlevering met Amandus uit Rome mee
+  naar het gebied tussen Maas en Schelde. Hij diende Remaclus en Theodaard
+  en zou Lambertus hebben opgevoed. Rond 659 stichtte hij een
+  Petruskerkje te Wintershoven. Hij stierf omstreeks 668. Metgezellen
+  (onder meer de diaken Amantius en zijn zuster Vinciana) horen bij de
+  Heiligen van Wintershoven; Landoaldus is de kernfiguur. In 980 gingen
+  relieken naar de Sint-Baafsabdij te Gent.
+over_bronnen: |
+  Landoaldus voldoet: prediking en kerkstichting te Wintershoven in
+  huidig België, ca. 659–668 ([1], [2], [3]). De Wintershovense
+  gezellen hebben geen eigen pagina: hun historiciteit is dunner; zij
+  worden in dit verhaal genoemd. Lambertus en Floribert hebben wel een
+  eigen pagina.
+referenties:
+  - label: "Wikipedia (NL) — Landoaldus"
+    url: "https://nl.wikipedia.org/wiki/Landoaldus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Wintershoven, Amandus, Lambertus, elevatie door Floribert, translatio Gent.
+  - bron_id: hnet
+    label: "heiligen.net — Landoald van Gent"
+    url: "https://www.heiligen.net/heiligen/03/19/03-19-0668-landoald.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandse vita met gezellen Amantius, Vinciana, Adeltrudis.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Landoald vom Hespengau"
+    url: "https://www.heiligenlexikon.de/BiographienL/Landoald.htm"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita: Haspengouw, Wintershoven, feestdag 19 maart.
+  - label: "Wikipedia (NL) — Heiligen van Wintershoven"
+    url: "https://nl.wikipedia.org/wiki/Heiligen_van_Wintershoven"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Groepsheiligen rond Wintershoven, zevende eeuw.

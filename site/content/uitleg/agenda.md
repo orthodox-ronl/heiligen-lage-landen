@@ -2,7 +2,7 @@
 title: "Agenda"
 description: "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of abonneren"
 uitleg_stijl: agenda
-git_date: 2026-08-19
+git_date: 2026-08-31
 ---
 
 De pagina [Agenda]({{% ref "/agenda" %}}) is bedoeld om de kerkelijke
@@ -25,7 +25,7 @@ Op die pagina doet u drie keuzes:
 
 **Vasten** in die keuze betekent vasten (streng, wijn en olie, vis,
 lichter). **Vastenvrij** is de uitzondering: dagen die de Kerk
-uitdrukkelijk vrij van vasten houdt, zoals de Lichte Week of Kerst.
+uitdrukkelijk vrij van vasten houdt, zoals de [Lichte Week]({{% ref "/feesten/lichte-week" %}}) of [Kerst]({{% ref "/feesten/kerst" %}}).
 Een gewone dinsdag of donderdag zonder regel komt **niet** als vasten
 én **niet** als vastenvrij in de agenda; in de titel staat dan niets
 over eten. Vinkt u alleen Vasten aan, dan komen de vrije dagen niet in de
@@ -45,7 +45,7 @@ alleen Vasten aan, abonneer, en herhaal voor Feesten of Heiligen.
 ## Wat u in de agenda ziet
 
 Elke dag is **één** afspraak. De titel (kopregel in week- of maandweergave)
-kiest in deze volgorde: een **grootfeest** (de twaalf, Pascha, Grote Week);
+kiest in deze volgorde: een **grootfeest** (de twaalf, [Pascha]({{% ref "/feesten/pascha" %}}), [Grote Week]({{% ref "/vasten/grote-week" %}}));
 anders een **heilige van de Lage Landen**; anders de rest (ander feest of
 de liturgische weeknaam). Op **maandag** staat de liturgische week vooraan
 (`2e week na Pinksteren`), ook als die dag een heilige heeft — behalve bij

@@ -40,6 +40,13 @@
     </div>
   </div>
 
-  <div id="rooster-tables" class="rooster-tables" role="table" aria-label="Lezingenrooster"></div>
+  <div id="rooster-tables" class="rooster-tables" role="table" aria-label="Lezingenrooster">
+    <p class="js-fallback">
+      Het lezingenrooster hoort bij een burgerlijk jaar en vraagt JavaScript.
+      De vaste jaarcyclus staat in het
+      <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>.
+    </p>
+  </div>
 </section>
+{{ partial "entries-json.html" . }}
 {{ end }}

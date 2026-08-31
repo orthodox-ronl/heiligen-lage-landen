@@ -1,0 +1,74 @@
+id: gerardus-van-brogne
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht Brogne; hervormt Gentse abdijen vóór 1054."
+namen:
+  primair: Gerardus van Brogne
+  alternatief:
+  - Gérard de Brogne
+  - Gerardus van Namen
+  - Gerhard van Brogne
+datum:
+  waarde: "10-03"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/gerardo-de-brogne-cropped.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Gerardo_de_Brogne_(cropped).JPG"
+titels:
+  - Abt
+  - Kloosterhervormer
+periode: "ca. 890–959"
+locaties:
+  - brogne
+  - gent
+rustplaats:
+  plaats: brogne
+  toelichting: "Abdij van Saint-Gérard"
+betekenis_lage_landen: |
+  Gerardus stichtte de abdij van Brogne bij Namen en herstelde de
+  Benedictijnse tucht in onder meer Saint-Ghislain, de Sint-Pietersabdij
+  en de Sint-Baafsabdij te Gent. Dat is kloosterbestuur in huidig België,
+  ruim vóór het schisma.
+verhaal: |
+  Gerardus werd rond 890 geboren te Stave bij Namen, diende aan het
+  hof van de graaf van Namen en werd monnik te Saint-Denis. In 923 keerde
+  hij terug en vormde Brogne om tot benedictijnenabdij. Graaf Arnulf I van
+  Vlaanderen haalde hem naar Gent; hij hervormde daar Sint-Pieters en
+  Sint-Baafs, en verder onder meer Saint-Ghislain. Hij stierf in 959 als
+  kluizenaar en werd in Brogne begraven. De pauselijke heiligverklaring
+  van 1131 bevestigt een oudere lokale cultus.
+over_bronnen: |
+  Gerardus voldoet aan het criterium: hij is vóór 1054 in huidig
+  België geweest en heeft daar kloosters gesticht en hervormd. Geboorte
+  bij Namen, stichting van Brogne en hervorming van de Gentse abdijen
+  staan in [1], [2] en [3]. Sterfjaar 959 ([1], [4]). De heiligverklaring
+  van 1131 is later; voor pre-schisma-heiligen telt het werk en de
+  plaatselijke verering, niet die Romeinse procedure.
+referenties:
+  - label: "Wikipedia (NL) — Gerardus van Brogne"
+    url: "https://nl.wikipedia.org/wiki/Gerardus_van_Brogne"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Leven, Gentse hervormingen, heiligverklaring 1131, feestdag 3 oktober.
+  - bron_id: hnet
+    label: "heiligen.net — Gerardus van Brogne"
+    url: "https://www.heiligen.net/heiligen/10/03/10-03-0959-gerardus.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandse vita: Namen, Saint-Denis, Brogne, Gent.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Gerhard von Brogne"
+    url: "https://www.heiligenlexikon.de/BiographienG/Gerhard_von_Brogne.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita: Stave, Brogne, hervorming van 18 kloosters in Lotharingen en Vlaanderen.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Gérard de Brogne, abt, geboren en gestorven in België, † 959.

@@ -15,16 +15,22 @@ namen:
 datum:
   waarde: "05-07"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/domitianus.jpg
+    primair: true
+    rechten: ok
+    licentie: CC BY 4.0
+    bron: "Wikimedia Commons — File:Coffret des reliques de la châsse de Saint Domitien (KIK-IRPA x000991).jpg"
+  - bestand: iconen/20180228-li-ge-cath-drale-st-paul18-st-domitien.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:20180228 Liège, Cathédrale St-Paul18 (St Domitien).jpg"
 titels:
   - Bisschop van Maastricht
 periode: "† ca. 560"
 locaties:
   - maastricht
-icoon:
-  bestand: iconen/domitianus.jpg
-  rechten: ok
-  licentie: "CC BY 4.0"
-  bron: "Wikimedia Commons — File:Coffret des reliques de la châsse de Saint Domitien (KIK-IRPA x000991).jpg"
 betekenis_lage_landen: |
   Domitianus hoort tot de vroegste historisch greepbare bisschoppen van
   de Maasstreek. Hij ondertekende als bisschop van Tongeren te Maastricht

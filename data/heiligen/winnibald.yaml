@@ -13,14 +13,14 @@ namen:
 datum:
   waarde: "12-18"
   stijl: gregoriaans
-titels:
-  - Abt van Heidenheim
-periode: "701–761"
 icoon:
   bestand: iconen/winnibald.jpg
   rechten: ok
-  licentie: "Public domain"
+  licentie: Public domain
   bron: "Wikimedia Commons — File:Wunibald Pontifikale Gundekarianum 11. Jahrhundert.jpg"
+titels:
+  - Abt van Heidenheim
+periode: "701–761"
 locaties:
   - heidenheim
 betekenis_lage_landen: |

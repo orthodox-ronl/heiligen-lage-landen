@@ -1,0 +1,33 @@
+id: forannan-van-waulsort
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abt van Waulsort."
+namen:
+  primair: Forannan van Waulsort
+  alternatief:
+  - Forannan
+datum:
+  waarde: "04-30"
+  stijl: gregoriaans
+titels:
+  - Abt van Waulsort
+periode: "† 982"
+locaties:
+  - waulsort
+betekenis_lage_landen: |
+  Forannan, Ierse bisschop, werd abt van Waulsort aan de Maas
+  (België) en stierf daar in 982.
+verhaal: |
+  Forannan kwam uit Ierland, werd abt van de Iers-Lotharingse abdij
+  Waulsort en stierf in 982.
+over_bronnen: |
+  Forannan voldoet: abt te Waulsort in België, † 982 ([1]).
+referenties:
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Forannan de Waulsort, bishop, died Belgium 982.

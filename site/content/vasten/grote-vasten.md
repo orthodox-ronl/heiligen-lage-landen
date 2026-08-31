@@ -35,21 +35,21 @@ onderdrukt_wekelijks_vasten: true
 </table>
 </div>
 
-Van Schone Maandag tot en met Lazarus-zaterdag (veertigdagen); daarna volgt de Grote Week.
+Van [Schone Maandag](/feesten/schone-maandag/) tot en met [Lazarus-zaterdag](/feesten/lazarus-zaterdag/) (veertigdagen); daarna volgt de Grote Week.
 
 ## Verhaal
 
-De Grote Vasten (veertigdagen) opent op Schone Maandag en loopt tot Lazarus-
-zaterdag. De Grote Week tot Pascha is apart genoteerd. Typisch voor leken die
+De Grote Vasten (veertigdagen) opent op [Schone Maandag](/feesten/schone-maandag/) en loopt tot Lazarus-
+zaterdag. De Grote Week tot [Pascha](/feesten/pascha/) is apart genoteerd. Typisch voor leken die
 het klassieke schema volgen: geen vlees, geen zuivel/eieren; meestal geen vis;
-wijn en olie vaak op zaterdag en zondag. Vis klassiek o.a. op Aankondiging en
-Palmzondag. Parochiepraktijk en economia wijken hiervan af.
+wijn en olie vaak op zaterdag en zondag. Vis klassiek o.a. op [Aankondiging](/feesten/aankondiging/) en
+[Palmzondag](/feesten/palmzondag/). Parochiepraktijk en economia wijken hiervan af.
 
 ## Verder lezen en kijken
 
-- [OrthodoxWiki — Great Lent](https://orthodoxwiki.org/Great_Lent) — geraadpleegd 2026-08-16
-- [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
-- [OCA — Great Lent](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/great-lent) — geraadpleegd 2026-08-16
+[1] [OrthodoxWiki — Great Lent](https://orthodoxwiki.org/Great_Lent) — geraadpleegd 2026-08-16
+[2] [OrthodoxWiki — Fasting](https://orthodoxwiki.org/Fasting) — geraadpleegd 2026-08-16
+[3] [OCA — Great Lent](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/great-lent) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

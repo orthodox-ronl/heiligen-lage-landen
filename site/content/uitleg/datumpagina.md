@@ -2,7 +2,7 @@
 title: "Datumpagina’s"
 description: "Wat er op één burgerlijke dag in een bepaald jaar valt"
 uitleg_stijl: datumpagina
-git_date: 2026-08-30
+git_date: 2026-08-31
 ---
 
 De startpagina is het [overzicht van heiligen van de Lage Landen]({{% ref "/heiligen" %}}).
@@ -23,19 +23,19 @@ In het vak met de inhoud van de dag staat eerst het vastenlabel
 woensdag of vrijdag, geen vastenperiode, en de Kerk zet het vasten ook
 niet uit — dan staat daar het grijze **geen vasten**, niet het groene
 *vastenvrij*. *Vastenvrij* is de uitzondering waarbij de Kerk het vasten
-uitdrukkelijk uitzet (Lichte Week, Kerst, Theofanie). Wijst u op het
+uitdrukkelijk uitzet ([Lichte Week]({{% ref "/feesten/lichte-week" %}}), [Kerst]({{% ref "/feesten/kerst" %}}), [Theofanie]({{% ref "/feesten/theofanie" %}})). Wijst u op het
 label, dan verschijnt een korte uitleg; meer detail staat op de pagina
 [Vasten]({{% ref "/uitleg/vasten" %}}).
-Valt de dag in een vastenperiode (bijvoorbeeld het Apostelvasten), dan staat
+Valt de dag in een vastenperiode (bijvoorbeeld het [Apostelvasten]({{% ref "/vasten/apostolisch-vasten" %}})), dan staat
 die naam tussen haakjes, met een link naar de pagina over die periode.
 Daarachter kiest u **Nieuw** of **Oud**. Met **Oud** staan vaste feesten op
-hun burgerlijke vierdatum. De Besnijdenis des Heren (feestdatum 1 januari)
-staat dan op 14 januari. **Pascha** en de rest van de paascyclus schuiven
+hun burgerlijke vierdatum. De [Besnijdenis des Heren]({{% ref "/feesten/besnijdenis-des-heren" %}}) (feestdatum 1 januari)
+staat dan op 14 januari. **[Pascha]({{% ref "/feesten/pascha" %}})** en de rest van de paascyclus schuiven
 niet mee. De burgerlijke datum in de titel blijft staan. Zie
 [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 
 Daaronder staat wat voor dag het is: bijvoorbeeld de 23e donderdag na
-Pinksteren, of de Zondag van de verloren zoon. Is het een feestdag, dan
+Pinksteren, of de [Zondag van de verloren zoon]({{% ref "/feesten/zondag-verloren-zoon" %}}). Is het een feestdag, dan
 staat hier de naam van het feest — die wordt niet nog eens herhaald.
 Heeft dat feest een icoon op deze site, dan staat het icoon ernaast
 (eronder op een smal scherm). Alleen het primaire icoon; andere
@@ -60,7 +60,7 @@ daarvan staat een korte zin met een link waarom de dag leeg kan zijn.
 ## Eén vastenregel
 
 Het label bovenaan is **één** regel: het vasten van die dag. Er worden geen
-twee vasten tegelijk getoond. Valt de dag in de Grote Vasten, dan is dat het
+twee vasten tegelijk getoond. Valt de dag in de [Grote Vasten]({{% ref "/vasten/grote-vasten" %}}), dan is dat het
 vasten; het wekelijkse vrijdagvasten wordt niet nog eens apart genoemd.
 
 De regels — waar ze vandaan komen, en wat de kalender vereenvoudigt — staan

@@ -15,6 +15,15 @@
     </ul>
   </div>
   {{ .Content }}
-  <div id="year-grid" class="year-grid"></div>
+  <div id="year-grid" class="year-grid">
+    <p class="js-fallback">
+      De jaarkalender (Pascha, vastenkleuren, vandaag) wordt in de browser getekend.
+      De vaste heiligen en feesten staan in het
+      <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>.
+      Op telefoon of computer:
+      <a href="{{ "agenda/" | relURL }}">Agenda (ICS)</a>.
+    </p>
+  </div>
 </section>
+{{ partial "entries-json.html" . }}
 {{ end }}

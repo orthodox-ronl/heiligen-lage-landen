@@ -15,8 +15,10 @@ Technische bijlage bij de [uitleg Synaxarion]({{% ref "/uitleg/synaxarion" %}}).
 - `/synaxarion/` — bladeren (maand of alfabet) en zoeken
 - `/synaxarion/?dag=08-15` — vaste cyclus van die feestdatum (MM-DD)
 
-Layout: `site/layouts/_default/synaxarion.html`. Data:
-`site/static/data/entries.json` (na `generate.py`).
+Layout: `site/layouts/_default/synaxarion.html`. De bladerlijst (maanden)
+staat in de HTML via `site/static/data/synaxarion.json` (na `generate.py`).
+Zoeken, alfabet en `?dag=` blijven JavaScript; die leest
+`entries.json` (in de pagina ingebed, anders via fetch).
 
 ## Welke entries
 

@@ -13,16 +13,21 @@ namen:
 datum:
   waarde: "10-01"
   stijl: gregoriaans
+  extra:
+    - waarde: "05-10"
+      toelichting: overbrenging van de relieken (bisdom Haarlem)
+    - waarde: "08-09"
+      toelichting: verheffing van de relieken
+icoon:
+  bestand: iconen/bavo.jpg
+  rechten: ok
+  licentie: CC BY 4.0
+  bron: "Wikimedia Commons — File:Saint Bavo. Engraving by J. Matham. Wellcome V0031689.jpg"
 locaties:
   - gent
 rustplaats:
   plaats: gent
   toelichting: "Sint-Baafskathedraal"
-icoon:
-  bestand: iconen/bavo.jpg
-  rechten: ok
-  licentie: "CC BY 4.0"
-  bron: "Wikimedia Commons — File:Saint Bavo. Engraving by J. Matham. Wellcome V0031689.jpg"
 betekenis_lage_landen: |
   Bavo (Allowin) is de stadsheilige van Gent. De overlevering maakt hem tot
   een bekeerde edelman die onder Amandus tot inkeer kwam en als kluizenaar

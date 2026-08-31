@@ -1,0 +1,45 @@
+id: landelinus-van-lobbes
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Stichter van Lobbes."
+namen:
+  primair: Landelinus van Lobbes
+  alternatief:
+  - Landelin
+  - Landelinus
+datum:
+  waarde: "06-15"
+  stijl: gregoriaans
+titels:
+  - Abt
+  - Stichter van Lobbes
+periode: "† 654"
+locaties:
+  - lobbes
+  - crespin
+betekenis_lage_landen: |
+  Landelinus stichtte het klooster Lobbes in Henegouwen (België).
+  Crespin (nu Frankrijk) hoort bij dezelfde stichtingsgolf; Lobbes is de
+  Belgische kern.
+verhaal: |
+  Landelinus, bekeerde rover in de traditie, stichtte kloosters in
+  de streek van de Hene, waaronder Lobbes (ca. 650) en Crespin. Hij
+  wijdde Ursmar tot priester. Hij stierf in 654.
+over_bronnen: |
+  Landelinus voldoet door de stichting van Lobbes in huidig België
+  ([1], [2]). Crespin ligt nu in Frankrijk; dat is dezelfde grens als bij
+  Adelgonda, maar Lobbes weegt hier.
+referenties:
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Landelin de Lobbes, abbot, died Belgium 654.
+  - label: "Wikipedia (NL) — Landelinus"
+    url: "https://nl.wikipedia.org/wiki/Landelinus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Stichter van Lobbes en Crespin.

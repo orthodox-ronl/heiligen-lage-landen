@@ -13,6 +13,14 @@ namen:
 datum:
   waarde: "11-23"
   stijl: gregoriaans
+  extra:
+    - waarde: "08-11"
+      toelichting: verheffing van de relieken te Sint-Truiden
+icoon:
+  bestand: iconen/trudo.jpg
+  rechten: ok
+  licentie: Public domain
+  bron: "Wikimedia Commons — File:Saint Trudon.jpg"
 titels:
   - Abt
   - Stichter van de abdij van Sint-Truiden
@@ -22,11 +30,6 @@ locaties:
 rustplaats:
   plaats: sint-truiden
   toelichting: "Onze-Lieve-Vrouwekerk (schrijn)"
-icoon:
-  bestand: iconen/trudo.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Saint Trudon.jpg"
 betekenis_lage_landen: |
   Trudo is de naamgever van Sint-Truiden: op zijn landgoed Zerkingen
   (Haspengouw) bouwde hij kerk en klooster, gewijd onder Theodardus.

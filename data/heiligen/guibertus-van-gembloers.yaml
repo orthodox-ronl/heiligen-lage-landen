@@ -1,0 +1,46 @@
+id: guibertus-van-gembloers
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht de abdij van Gembloers."
+namen:
+  primair: Guibertus van Gembloers
+  alternatief:
+  - Guibert de Gembloux
+  - Wibert van Gembloers
+datum:
+  waarde: "05-23"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/guibert-de-gembloux-cropped.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Guibert_de_Gembloux_(cropped).jpg"
+titels:
+  - Stichter van Gembloers
+periode: "† 962"
+locaties:
+  - gembloers
+betekenis_lage_landen: |
+  Guibertus stichtte de abdij van Gembloers (Gembloux) in huidig
+  België. Dat is kloosterstichting vóór het schisma.
+verhaal: |
+  Guibertus, Lotharingse edelman, stichtte midden tiende eeuw de
+  abdij van Gembloers. Hij stierf in 962.
+over_bronnen: |
+  Guibertus voldoet: stichting van Gembloers in België, † 962
+  ([1], [2]). GCatholic zet de dood in Frankrijk; de abdij zelf ligt in
+  België ([2]).
+referenties:
+  - label: "Wikipedia (NL) — Guibertus van Gembloers"
+    url: "https://nl.wikipedia.org/wiki/Guibertus_van_Gembloers"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Stichter van Gembloers, † 962.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Guibert de Gembloux, religious, † 962.

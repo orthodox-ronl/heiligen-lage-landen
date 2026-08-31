@@ -1,0 +1,60 @@
+id: bertinus
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Abt van Sithiu; Sint-Omaars nu in Frankrijk."
+selectie_toelichting_publiek: |
+  **Voor.** Bertinus was abt van Sithiu (Sint-Bertijns) en werkte met
+  Audomarus in de kerstening van de streek. Vlaamse kalender 5 september.
+
+  **Twijfel.** Sithiu/Sint-Omaars ligt nu in Frankrijk. Zelfde grens als
+  Audomarus en Folciunus.
+namen:
+  primair: Bertinus
+  alternatief:
+  - Bertin
+  - Bertinus van Sithiu
+datum:
+  waarde: "09-05"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/simon-marmion-scene-della-vita-di-san-bertino-1459-01.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY 3.0
+    bron: "Wikimedia Commons — File:Simon marmion, scene della vita di san bertino, 1459, 01.JPG"
+  - bestand: iconen/simon-marmion-scene-della-vita-di-san-bertino-1459-02.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY 3.0
+    bron: "Wikimedia Commons — File:Simon marmion, scene della vita di san bertino, 1459, 02.JPG"
+titels:
+  - Abt van Sithiu
+periode: "† 698"
+locaties:
+  - sint-omaars
+betekenis_lage_landen: |
+  Bertinus bestuurde de abdij Sithiu, later Sint-Bertijns. Historisch
+  Vlaanderen, nu Frankrijk.
+verhaal: |
+  Abt van Sithiu, gestorven in 698. Feestdag 5 september. Winnocus
+  werd bij hem gevormd (eigen pagina, nader onderzoek omdat Wormhout nu
+  in Frankrijk ligt).
+over_bronnen: |
+  **Voor.** Abbatiaat in historisch Vlaanderen, † 698 ([1], [2]).
+
+  **Twijfel.** Plaats nu Frankrijk.
+referenties:
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      5 september: Bertin van Sithiu (698).
+  - label: "Wikipedia (NL) — Bertinus"
+    url: "https://nl.wikipedia.org/wiki/Bertinus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Abt van Sithiu, zevende eeuw.

@@ -1,0 +1,156 @@
+id: livinus-van-gent
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Gentse martelaarstraditie; waarschijnlijk hagiografische variant van Lebuinus."
+selectie_toelichting_publiek: |
+  **Voor.** De Vlaamse en Gentse kalender gedenken Lieven van Gent op
+  12 november als Ierse bisschop-martelaar in Vlaanderen, met een eigen
+  passio, cultus (onder meer Sint-Lievens-Houtem) en een plaats in
+  GCatholic.
+
+  **Twijfel.** De *Passio Livini* (elfde eeuw) is vrijwel zeker
+  afhankelijk van de oudere *Vita Lebuini*. Livinus is daarmee
+  waarschijnlijk een latere hagiografische variant of dubbelganger van
+  Lebuinus van Deventer, niet een onafhankelijk overgeleverde
+  historische figuur. Deze kalender houdt beide fiches voorlopig
+  naast elkaar, tot een uitdrukkelijk besluit.
+namen:
+  primair: Livinus van Gent
+  alternatief:
+  - Lieven van Gent
+  - Livinus
+datum:
+  waarde: "11-12"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/sint-lievenis-houtem-livinuskapel-belgi.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Sint-Lievenis-Houtem - Livinuskapel - België.jpg"
+  - bestand: iconen/sint-lievens-houtem-kerk-marteldood-livinus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Sint-Lievens-Houtem Kerk Marteldood Livinus.JPG"
+titels:
+  - Bisschop
+  - Martelaar
+periode: "7e eeuw (traditie)"
+locaties:
+  - gent
+betekenis_lage_landen: |
+  Livinus (Lieven) is in de Gentse traditie een Ierse missionaris
+  die in Vlaanderen predikte en de marteldood stierf. De feestdag is
+  dezelfde als die van Lebuinus van Deventer (12 november). De vraag is
+  niet of Gent hem eert — dat doet het — maar of achter die cultus een
+  zelfstandige historische persoon schuilgaat.
+verhaal: |
+  Volgens de Gentse *Passio* kwam Livinus uit Ierland, predikte hij
+  in Vlaanderen, verbleef hij bij het graf van Bavo te Gent en werd hij
+  onthoofd. Feestdag 12 november; lokale cultus onder meer te
+  Sint-Lievens-Houtem.
+
+  Die passio is laat (elfde eeuw, ten onrechte aan Bonifatius
+  toegeschreven) en volgt in opbouw de oudere *Vita Lebuini* van
+  Lebuinus van Deventer, die een eigen pagina heeft. De Gentse tekst
+  voegt een Ierse jeugd, discipelen en een martelaarsdood toe die bij
+  Lebuinus ontbreken.
+over_bronnen: |
+  **Voor.** Cultus en feestdag 12 november in Vlaanderen ([1], [2],
+  [8]). De *Passio* plaatst prediking en martelaarschap in de Gentse
+  streek ([3]).
+
+  **Twijfel.** De *Vita Lebuini antiqua* (waarschijnlijk negende eeuw)
+  is ouder dan de *Passio Livini* / BHL 4960 (elfde eeuw, vóór 1058)
+  ([4], [3], [6]). Maurice Coens vroeg in 1952 of de auteur van de
+  Passio de Vita Lebuini tot voorbeeld nam ([5]); repertoria
+  formuleren sindsdien dat gegevens over Liafwin zijn gebruikt voor de
+  biografie van de fictieve martelaar Livinus, apostel van Brabant
+  ([6]). Parallelle episodes (Angelsaksische zending en een
+  Gregorius/Augustinus-figuur; gastvrouw Abarhilda / Erapahildis;
+  beschermer Folcbert / Florbertus; Davo / Bavo; zeereis; confrontatie
+  met heidenen) maken toeval onwaarschijnlijk ([3], [4], [7]).
+
+  Dat is geen bewijs dat de historische personen identiek waren. De
+  Passio heeft veel eigen stof (Ierse afkomst, discipelen Foillanus,
+  Elias en Kilianus, onthoofding) die in de Vita Lebuini ontbreekt
+  ([3]). Lebuinus sterft als missionaris te Deventer, zonder
+  martelaarschap ([4]). De namen Lebuinus/Livinus/Liafwin lopen in
+  elkaar over en delen 12 november ([9], [10], [11]). Een recente
+  samenvatting van de Koninklijke Commissie voor Geschiedenis herhaalt
+  de klassieke positie: monniken van Sint-Baafs stelden een vita van
+  Livinus samen naar het model van de Vita Lebuini en schreven die aan
+  Bonifatius toe ([12]).
+
+  Voorzichtige formulering: de Gentse Livinus is waarschijnlijk een
+  elfde-eeuwse hagiografische constructie waarin de traditie van de
+  historische Lebuinus is verwerkt. Of daarachter toch een zelfstandige
+  persoon schuilgaat, is niet betrouwbaar vast te stellen. Daarom blijft
+  deze fiche voorlopig staan, naast Lebuinus.
+referenties:
+  - label: "Wikipedia (NL) — Livinus van Gent"
+    url: "https://nl.wikipedia.org/wiki/Livinus_van_Gent"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Gentse martelaarstraditie, feestdag 12 november.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      12 november: Lieven van Gent met Brictius en Krafaïldus.
+  - label: "Wikisource — Vita et martyrium S. Livini (Passio Livini)"
+    url: "https://la.wikisource.org/wiki/Vita_et_martyrium_S._Livini"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Latijnse passio (Migne): Ierse afkomst, zeereis, Gent/Bavo, martelaarschap.
+  - label: "Fordham — Vita Lebuini antiqua (Engelse vertaling)"
+    url: "https://sourcebooks.fordham.edu/basis/lebuin.asp"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Oudere vita van Lebuinus (editie Hofmeister, MGH): Abarhilda, Folcbert, Davo, Marklo.
+  - label: "Coens — L'auteur de la Passio Livini s'est-il inspiré de la Vita Lebuini?"
+    locator: "Analecta Bollandiana 70 (1952), p. 285–305"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Bollandistisch onderzoek naar literaire afhankelijkheid van de Passio t.o.v. de Vita Lebuini.
+  - label: "Carasso-Kok — Repertorium, lemma Liafwin"
+    url: "https://www.dbnl.org/tekst/cara006repe01_01/cara006repe01_01_0023.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Gegevens over Liafwin gebruikt bij de biografie van de fictieve martelaar Livinus, apostel van Brabant.
+  - label: "SEMafoor — vergelijking namen Passio Livini / Vita Lebuini"
+    url: "https://semafoor.info/nl/ArchiveDocument/Document?Dir=SEM_PDF&File=SEM_14_1"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Zet parallellen naast elkaar, onder meer Folcbert/Florbertus en Davo/Bavo.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Livinus van Gent, bishop, died Belgium 657.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Lebuin von Deventer"
+    url: "https://www.heiligenlexikon.de/BiographienL/Lebuin_Liafwin_Livinus.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikon stelt de vraag of Lebuinus en Livinus dezelfde zijn; zelfde feestdag.
+  - label: "Orthodoxe Encyclopedie — Lebuin"
+    url: "https://www.pravenc.ru/text/2463217.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lebuinus wordt geregeld met Livinus verward; beiden 12 november.
+  - label: "Freise — Die Entstehung der Vita Lebuini (Jahrbuch 36, 1964)"
+    url: "https://www.historische-kommission.niedersachsen.de/download/77516/JB_36_1964.pdf"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Beide heiligen dezelfde sterfdag (12 november); naamvormen lopen in elkaar over.
+  - label: "Koninklijke Commissie voor Geschiedenis — Flandre orientale"
+    url: "https://commissionroyalehistoire.be/wp-content/uploads/2023/05/07_flandreOrientale_1_5.pdf"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Sint-Baafs zou een vita van Livinus hebben samengesteld naar het model van de Vita Lebuini en die aan Bonifatius hebben toegeschreven.

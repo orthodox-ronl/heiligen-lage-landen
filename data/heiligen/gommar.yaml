@@ -15,14 +15,20 @@ namen:
 datum:
   waarde: "10-11"
   stijl: gregoriaans
+iconen:
+  - bestand: iconen/gommar.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Gummarus van Lier (tg-uact-1080).jpg"
+  - bestand: iconen/beeld-van-sint-gummarus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:Beeld van Sint-Gummarus.jpg"
 titels:
   - Patroonheilige van Lier
 periode: "ca. 710–775"
-icoon:
-  bestand: iconen/gommar.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:Gummarus van Lier (tg-uact-1080).jpg"
 locaties:
   - lier
 betekenis_lage_landen: |

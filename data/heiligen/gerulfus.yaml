@@ -1,0 +1,64 @@
+id: gerulfus
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaar te Drongen/Merendree."
+namen:
+  primair: Gerulfus
+  alternatief:
+  - Gerolf
+  - Gerulf van Drongen
+datum:
+  waarde: "09-25"
+  stijl: gregoriaans
+  extra:
+    - waarde: "09-21"
+      toelichting: andere lokale gedachtenis
+iconen:
+  - bestand: iconen/moord-op-gerolf-sint-gerolfkerk-drongen-16-07-2019.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 4.0
+    bron: "Wikimedia Commons — File:Moord_op_Gerolf_Sint-Gerolfkerk_Drongen_16-07-2019.jpg"
+titels:
+  - Martelaar
+periode: "ca. 740–ca. 750"
+locaties:
+  - drongen
+  - merendree
+rustplaats:
+  plaats: drongen
+  toelichting: "Sint-Gerolfkerk"
+betekenis_lage_landen: |
+  Gerulfus is een van de oudste Vlaamse martelaren: een jongen uit
+  Merendree die na zijn vormsel te Gent onderweg naar huis bij Drongen
+  werd vermoord. Cultus in Drongen (Sint-Gerolfkerk).
+verhaal: |
+  Zoon van Lentgoldus en Ratguera te Merendree. Na het vormsel in de
+  Sint-Pietersabdij te Gent werd hij door zijn peter vermoord. Hij
+  vergaf de dader. Graf te Merendree, later cultus te Drongen. Feestdag
+  25 september in Gent, 21 september elders.
+over_bronnen: |
+  Gerulfus voldoet: martelaarschap bij Drongen in huidig België,
+  achtste eeuw ([1], [2], [3]). De vita is laat en legendarisch van toon;
+  de lokale cultus en de plaats zijn de opnamegrond.
+referenties:
+  - label: "Wikipedia (NL) — Gerulfus"
+    url: "https://nl.wikipedia.org/wiki/Gerulfus"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Martelaar Merendree/Drongen, feestdagen 21 en 25 september.
+  - bron_id: hnet
+    label: "heiligen.net — Gerulf van Drongen"
+    url: "https://www.heiligen.net/heiligen/09/25/09-25-0748-gerulf.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandse vita: vormsel Gent, moord bij Drongen.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      25 september: Gerulf van Drongen (748).

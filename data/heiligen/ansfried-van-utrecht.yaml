@@ -20,28 +20,34 @@ datum:
       toelichting: 11 mei
     - waarde: "11-08"
       toelichting: 8 november (met alle heilige bisschoppen van Utrecht)
+iconen:
+  - bestand: iconen/ansfried-van-utrecht.jpg
+    primair: true
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Standbeeld van Ansfried, stichter van de abdij van het Limburgse stadje Thorn.JPG"
+  - bestand: iconen/ansfriedcodex.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Ansfriedcodex.JPG"
 titels:
   - Bisschop van Utrecht
 periode: "~940–1010"
 locaties:
   - utrecht
-icoon:
-  bestand: iconen/ansfried-van-utrecht.jpg
-  rechten: ok
-  licentie: "CC BY-SA 3.0"
-  bron: "Wikimedia Commons — File:Standbeeld van Ansfried, stichter van de abdij van het Limburgse stadje Thorn.JPG"
 betekenis_lage_landen: |
   Ansfried verbindt Lotharingse adel met het Utrechtse bisdom: graaf van
-  Hoei, stichter van Thorn (met Hereswind) en Hohorst bij Amersfoort, en
+  Hoei, stichter van Thorn (met Hilsondis) en Hohorst bij Amersfoort, en
   bisschop te Utrecht tot zijn dood in 1010. Kernheilige van de
   middeleeuwse Utrechtse kerk in de Lage Landen.
 verhaal: |
   Geboren te Leuven (~940); militaire en juridische vorming, graaf van
-  Hoei. Met zijn vrouw Hereswind stichtte hij de abdij van Thorn. Na haar
-  dood werd hij in 995 onder Otto III bisschop van Utrecht. Hij stichtte
-  Hohorst (Heiligenberg), leefde later half als monnik, werd blind en
-  stierf op 3 mei 1010 te Hohorst; begraven in de Dom te Utrecht.
-  Kroniek: Alpertus van Metz.
+  Hoei. Met zijn vrouw Hilsondis (Herswindis; eigen pagina) stichtte hij
+  de abdij van Thorn. Na haar dood werd hij in 995 onder Otto III
+  bisschop van Utrecht. Hij stichtte Hohorst (Heiligenberg), leefde later
+  half als monnik, werd blind en stierf op 3 mei 1010 te Hohorst; begraven
+  in de Dom te Utrecht. Kroniek: Alpertus van Metz.
 referenties:
   - label: "Wikipedia (NL) — Ansfried"
     url: "https://nl.wikipedia.org/wiki/Ansfried"

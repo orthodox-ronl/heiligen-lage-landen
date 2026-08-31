@@ -1,0 +1,62 @@
+id: macarius-van-gent
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Pelgrim, gestorven te Gent; weinig eigen werk aantoonbaar."
+selectie_toelichting_publiek: |
+  **Voor.** Macarius stierf in 1012 te Gent en wordt daar als heilige
+  vereerd (10 april). Hij was in de Lage Landen en de Gentse abdij nam
+  hem op.
+
+  **Twijfel.** Hij was pelgrim (in de traditie uit Armenië of Antiochië)
+  die in Gent aankwam en er stierf. «Alleen gestorven» of late cultus is
+  volgens de criteria niet genoeg: hij moet hier iets hebben gedaan.
+  Prediking of bestuur is niet hard te maken.
+namen:
+  primair: Macarius van Gent
+  alternatief:
+  - Macharius
+  - Macarius of Armenia
+datum:
+  waarde: "04-10"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/gaspar-de-crayer-saint-macarius-of-ghent.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:Gaspar_de_Crayer_–_Saint_Macarius_of_Ghent.jpg"
+titels:
+  - Pelgrim
+periode: "† 1012"
+locaties:
+  - gent
+betekenis_lage_landen: |
+  Macarius stierf te Gent in 1012. De vraag is of sterven in een
+  Gentse abdij telt als «hier iets gedaan».
+verhaal: |
+  Pelgrim die in de Sint-Baafsabdij of Sint-Pietersabdij te Gent
+  werd opgenomen en daar in 1012 stierf. Feestdag 10 april.
+over_bronnen: |
+  **Voor.** Dood en cultus te Gent, 1012, vóór het schisma ([1], [2]).
+
+  **Twijfel.** GCatholic noemt hem layperson; de bronnen maken hem tot
+  pelgrim, niet tot prediker of stichter ([2]). Dat lijkt op cultus zonder
+  eigen werk.
+referenties:
+  - label: "Wikipedia (NL) — Macharius"
+    url: "https://nl.wikipedia.org/wiki/Macharius"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Pelgrim, dood te Gent 1012, feestdag 10 april.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      10 april: Macarius van Gent (1012).
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Macarius of Armenia, layperson, died Belgium 1012.

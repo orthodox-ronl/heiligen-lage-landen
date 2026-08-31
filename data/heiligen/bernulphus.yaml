@@ -16,6 +16,11 @@ namen:
 datum:
   waarde: "07-24"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/bernulphus.jpg
+  rechten: ok
+  licentie: Public domain
+  bron: "Wikimedia Commons — File:Bishop Bernold on old wall painting in the Pieterskerk in Utrecht.jpg"
 titels:
   - Bisschop van Utrecht
 periode: "† 1054"
@@ -24,11 +29,6 @@ locaties:
 rustplaats:
   plaats: utrecht
   toelichting: "Pieterskerk"
-icoon:
-  bestand: iconen/bernulphus.jpg
-  rechten: ok
-  licentie: "Public domain"
-  bron: "Wikimedia Commons — File:Bishop Bernold on old wall painting in the Pieterskerk in Utrecht.jpg"
 betekenis_lage_landen: |
   Bernulphus (Bernold) was rijksbisschop van Utrecht onder Koenraad II
   en Hendrik III. Onder hem groeide het Oversticht (Hamaland, Salland,

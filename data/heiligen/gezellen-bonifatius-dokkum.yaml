@@ -1,0 +1,80 @@
+id: gezellen-bonifatius-dokkum
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaren te Dokkum op 5 juni 754."
+namen:
+  primair: Gezellen van Bonifatius te Dokkum
+  alternatief:
+  - Martelaren van Dokkum
+  - Gezellen van Bonifatius
+  - Dokkumse martelaren
+datum:
+  waarde: "06-05"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/bonifatius1954.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Bonifatius1954.jpg"
+  - bestand: iconen/bonifatius-kapel-2.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Bonifatius Kapel 2.jpg"
+titels:
+  - Martelaren
+periode: "754"
+locaties:
+  - dokkum
+  - frisia
+betekenis_lage_landen: |
+  Op 5 juni 754 werden bij Dokkum, tijdens een vormseltocht onder de
+  Friezen, Bonifatius en zijn gevolg vermoord. Die gezellen zijn heilig
+  als martelaren van die dag op Friese grond. Twee van hen hebben ook een
+  eigen pagina: Bonifatius (leider van de missie) en Eoban (hulpbisschop
+  van Utrecht). De overige namen (onder meer Adolar, Bosa, Elleher,
+  Gundekar, Hamund, Hathawulf, Scirebald, Waccar, Walter, Wintrung) zijn
+  bekend als leden van deze groep.
+verhaal: |
+  Bonifatius keerde tegen het einde van zijn leven naar Friesland
+  terug. Bij Dokkum werd hij met tientallen metgezellen gedood. GCatholic
+  noemt naast Eoban onder meer Adolar von Erfurt, Bosa, Elleher, Gundekar,
+  Hamund, Hathawulf, Scirebald, Waccar, Walter en Wintrung, allen
+  gestorven in 754 in de Nederlanden. Relieken van Bonifatius gingen naar
+  Fulda; die van Eoban en Adolar later naar Erfurt.
+
+  Zelfstandig in deze kalender: Bonifatius en Eoban. Deze pagina is de
+  groepsgedachtenis van de overige martelaren.
+over_bronnen: |
+  De groep voldoet als martelaren in huidig Nederland in 754 ([2], [3]).
+  Bonifatius en Eoban hebben eigen merites (missieleiding respectievelijk
+  Utrechts episcopaat) en dus een eigen heiligenpagina ([1], [4]). De
+  overige namen zijn heilig vanwege lidmaatschap van deze martelaarsgroep
+  ([2]).
+referenties:
+  - label: "Wikipedia (NL) — Bonifatius (heilige)"
+    url: "https://nl.wikipedia.org/wiki/Bonifatius_(heilige)"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Martelaarschap bij Dokkum met gevolg, 5 juni 754.
+  - label: "GCatholic — Saints of Netherlands"
+    url: "https://gcatholic.org/saints/data/country-NL"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lijst van Dokkumse martelaren 754, onder wie Eoban en Adolar.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Bonifatius"
+    url: "https://www.heiligenlexikon.de/BiographienB/Bonifatius.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita: Dokkum, metgezellen, relieken Fulda.
+  - label: "Wikipedia (NL) — Eoban"
+    url: "https://nl.wikipedia.org/wiki/Eoban"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Hulpbisschop, martelaar Dokkum, eigen reliekentraditie te Erfurt.

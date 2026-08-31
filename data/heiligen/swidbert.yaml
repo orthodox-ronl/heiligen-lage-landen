@@ -15,6 +15,9 @@ namen:
 datum:
   waarde: "03-01"
   stijl: gregoriaans
+  extra:
+    - waarde: "09-04"
+      toelichting: gedachtenis in Keulen en Essen
 titels:
   - Missiebisschop
   - Stichter van Kaiserswerth

@@ -1,0 +1,59 @@
+id: landrada
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Sticht abdij Munsterbilzen."
+namen:
+  primair: Landrada
+  alternatief:
+  - Landrada van Munsterbilzen
+datum:
+  waarde: "07-08"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/st-landrada.jpg
+  rechten: ok
+  licentie: Publiek domein
+  bron: "Wikimedia Commons — File:St._Landrada.jpg"
+titels:
+  - Abdis van Munsterbilzen
+periode: "† ca. 690"
+locaties:
+  - munsterbilzen
+betekenis_lage_landen: |
+  Landrada stichtte het klooster Munsterbilzen in Belgisch Limburg
+  en was er eerste abdis. Amalberga van Temse zou er haar vorming hebben
+  gekregen. Dat is kloosterstichting in huidig België, zevende eeuw.
+verhaal: |
+  Landrada leefde als kluizenares tot zij te Munsterbilzen een
+  klooster stichtte. Lambertus zou de kapel hebben ingezegend en haar
+  later de laatste sacramenten hebben toegediend. Zij stierf omstreeks
+  690. Relieken gingen later naar Gent.
+over_bronnen: |
+  Landrada voldoet: stichting en bestuur van Munsterbilzen in huidig
+  België, † ca. 690 ([1], [2], [3]). Vlaamse bisdomkalender 8 juli ([4]).
+referenties:
+  - bron_id: hnet
+    label: "heiligen.net — Landrada van Munsterbilzen"
+    url: "https://www.heiligen.net/heiligen/07/08/07-08-0690-landrada.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Stichting Munsterbilzen, Lambertus, vorming van Amalberga.
+  - bron_id: hlex
+    label: "Heiligenlexikon — Landrada von Munsterbilzen"
+    url: "https://www.heiligenlexikon.de/BiographienL/Landrada_von_Munsterbilzen.html"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Lexikonvita: abdis Munsterbilzen, feestdag 8 juli.
+  - label: "Wikipedia (NL) — Landrada"
+    url: "https://nl.wikipedia.org/wiki/Landrada"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Nederlandstalige pagina (indien aanwezig) of doorverwijzing Munsterbilzen.
+  - label: "Katholiek.org — Vlaamse heiligenkalender"
+    url: "http://www.katholiek.org/heiligenkalender.php"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      8 juli: Landrada van Munsterbilzen (ca. 691).

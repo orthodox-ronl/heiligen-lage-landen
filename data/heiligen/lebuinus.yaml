@@ -20,6 +20,17 @@ datum:
   extra:
     - waarde: "11-16"
       toelichting: 16 november
+iconen:
+  - bestand: iconen/lebuinus.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:H. Lebuinus van Deventer Nederlandse heiligen (serietitel), RP-P-OB-62.084.jpg"
+  - bestand: iconen/lebuinus-lebuinus.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Lebuinus.jpg"
 titels:
   - Missionaris
   - Apostel van de IJsselstreek
@@ -30,11 +41,6 @@ locaties:
 rustplaats:
   plaats: deventer
   toelichting: "Lebuïnuskerk"
-icoon:
-  bestand: iconen/lebuinus.jpg
-  rechten: ok
-  licentie: "CC0"
-  bron: "Wikimedia Commons — File:H. Lebuinus van Deventer Nederlandse heiligen (serietitel), RP-P-OB-62.084.jpg"
 betekenis_lage_landen: |
   Lebuinus (Liafwin) is de apostel van de IJsselstreek. Onder Gregorius
   van Utrecht zette hij na Bonifatius’ dood de missie voort, bouwde een
@@ -50,11 +56,13 @@ verhaal: |
   vakliteratuur als belangrijk voor de Saksische instellingen.
 
   Hij stierf te Deventer omstreeks 773–780. Ludger vond later zijn
-  relieken terug onder de herbouwde kerk. Of hij dezelfde is als Livinus
-  van Gent (zelfde feestdag), is omstreden; deze kalender houdt Lebuinus
-  van Deventer aan. 16 november is een tweede lokale gedachtenis in de
-  eerdere catalogus; het Heiligenlexikon noemt 12 november als
-  hoofddag en translaties in juni/juli.
+  relieken terug onder de herbouwde kerk. Livinus van Gent (zelfde
+  feestdag) heeft een eigen pagina: de *Passio Livini* is waarschijnlijk
+  een elfde-eeuwse hagiografische bewerking van deze vita, geen
+  onafhankelijke historische dubbelganger. Deze kalender houdt Lebuinus
+  aan als de historische missionaris. 16 november is een tweede lokale
+  gedachtenis in de eerdere catalogus; het Heiligenlexikon noemt
+  12 november als hoofddag en translaties in juni/juli.
 referenties:
   - bron_id: hlex
     label: "Heiligenlexikon — Lebuin von Deventer"

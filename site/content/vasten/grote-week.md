@@ -34,11 +34,11 @@ onderdrukt_wekelijks_vasten: true
 </table>
 </div>
 
-Grote Maandag tot en met Grote Zaterdag: met Christus naar Jeruzalem.
+[Grote Maandag](/feesten/grote-maandag/) tot en met [Grote Zaterdag](/feesten/grote-zaterdag/): met Christus naar Jeruzalem.
 
 ## Verhaal
 
-De Grote Week volgt op Palmzondag. De veertig dagen zijn vervuld: de
+De Grote Week volgt op [Palmzondag](/feesten/palmzondag/). De veertig dagen zijn vervuld: de
 Kerk gaat met de Heer naar Jeruzalem, niet om het lijden na te spelen,
 maar om met Hem te sterven en te leven. Vasten en nachtdiensten maken
 daar ruimte voor; ze zijn middel, geen doel. De paaspreek nodigt tot
@@ -47,10 +47,10 @@ en economia kunnen verlichten — vraag het de priester.
 
 ## Verder lezen en kijken
 
-- [Chrysostomos — Paaspreek (in de nachtdienst)](https://www.oca.org/fs/sermons/the-paschal-sermon) — geraadpleegd 2026-08-21; De tafel is gereed; wie op het elfde uur komt, wordt niet beschaamd.
-- [OCA — Het Orthodoxe geloof: Heilige Week](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/holy-week) — geraadpleegd 2026-08-21; De metten van Grote Maandag: met de Heer opgaan naar Jeruzalem.
-- [OCA — Het Orthodoxe geloof: vasten in de Grote Vasten](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/lenten-fasting) — geraadpleegd 2026-08-21; Vasten als wacht en omkeer, niet als doel op zich.
-- [OrthodoxWiki — Holy Week](https://orthodoxwiki.org/Holy_Week) — geraadpleegd 2026-08-16
+[1] [Chrysostomos — Paaspreek (in de nachtdienst)](https://www.oca.org/fs/sermons/the-paschal-sermon) — geraadpleegd 2026-08-21; De tafel is gereed; wie op het elfde uur komt, wordt niet beschaamd.
+[2] [OCA — Het Orthodoxe geloof: Heilige Week](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/holy-week) — geraadpleegd 2026-08-21; De metten van Grote Maandag: met de Heer opgaan naar Jeruzalem.
+[3] [OCA — Het Orthodoxe geloof: vasten in de Grote Vasten](https://www.oca.org/orthodoxy/the-orthodox-faith/worship/the-church-year/lenten-fasting) — geraadpleegd 2026-08-21; Vasten als wacht en omkeer, niet als doel op zich.
+[4] [OrthodoxWiki — Holy Week](https://orthodoxwiki.org/Holy_Week) — geraadpleegd 2026-08-16
 
 
 ## Over de bronnen

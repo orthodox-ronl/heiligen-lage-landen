@@ -1,0 +1,49 @@
+id: hadelinus-van-celles
+soort: heilige
+bronlaag: nagekeken
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abt van Celles bij Dinant."
+namen:
+  primair: Hadelinus van Celles
+  alternatief:
+  - Hadelin
+  - Hadelinus
+datum:
+  waarde: "02-03"
+  stijl: gregoriaans
+iconen:
+  - bestand: iconen/vis-glise-saint-martin-ch-sse-de-saint-hadelin-01.jpg
+    primair: true
+    soort: reproductie
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Visé - Église Saint-Martin - Châsse de Saint-Hadelin 01.JPG"
+titels:
+  - Abt van Celles
+periode: "† ca. 690"
+locaties:
+  - celles
+  - wezet
+betekenis_lage_landen: |
+  Hadelinus stichtte of bestuurde het klooster Celles bij Dinant
+  (België). Relieken en cultus te Wezet (Visé).
+verhaal: |
+  Hadelinus, leerling in de kring van Remaclus, vestigde zich in de
+  zevende eeuw te Celles in de Maasvallei. Hij stierf omstreeks 690.
+  Zijn reliekschrijn te Wezet is een bekend Maaslands kunstwerk.
+over_bronnen: |
+  Hadelinus voldoet: abt te Celles in huidig België, † ca. 690
+  ([1], [2]).
+referenties:
+  - label: "Wikipedia (NL) — Hadelinus van Celles"
+    url: "https://nl.wikipedia.org/wiki/Hadelinus_van_Celles"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Abt van Celles, relieken Wezet.
+  - label: "GCatholic — Saints of Belgium"
+    url: "https://gcatholic.org/saints/data/country-BE"
+    geraadpleegd: "2026-08-31"
+    inhoud: >
+      Hadelin, abbot, died Belgium 690.

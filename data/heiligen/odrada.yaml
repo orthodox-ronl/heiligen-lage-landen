@@ -13,6 +13,9 @@ namen:
 datum:
   waarde: "11-05"
   stijl: gregoriaans
+  extra:
+    - waarde: "11-03"
+      toelichting: gedachtenis in het bisdom Den Bosch
 titels:
   - Maagd van Balen
 periode: "8e eeuw (?)"

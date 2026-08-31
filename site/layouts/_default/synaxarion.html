@@ -65,11 +65,16 @@
 
   {{ .Content }}
 
-  <div id="synaxarion-day-entries" class="table-wrap" hidden>Laden…</div>
+  <div id="synaxarion-day-entries" class="table-wrap" hidden>
+    <p class="js-fallback">Kies een dag in de lijst hieronder. Met JavaScript ziet u alleen die feestdatum.</p>
+  </div>
 
   <div id="synaxarion-browse">
     <p class="hint" id="synaxarion-hint"></p>
-    <div id="synaxarion-list" class="synaxarion-date-list" role="table" aria-label="Synaxarion"></div>
+    <div id="synaxarion-list" class="synaxarion-date-list" role="table" aria-label="Synaxarion">
+      {{ partial "synaxarion-lijst.html" . }}
+    </div>
   </div>
 </section>
+{{ partial "entries-json.html" . }}
 {{ end }}
