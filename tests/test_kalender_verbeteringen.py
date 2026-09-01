@@ -133,6 +133,11 @@ def test_overzicht_titels_hebben_pagina_popover() -> None:
         / "layouts"
         / "_default"
         / "lezingenrooster.html",
+        "pagina-heiligen": ROOT
+        / "site"
+        / "layouts"
+        / "partials"
+        / "heiligen-overzicht.html",
     }
     js = JS.read_text(encoding="utf-8")
     uitleg = {
@@ -140,6 +145,7 @@ def test_overzicht_titels_hebben_pagina_popover() -> None:
         "pagina-vasten": "vasten",
         "pagina-synaxarion": "synaxarion",
         "pagina-lezingenrooster": "lezingen",
+        "pagina-heiligen": "heiligen",
     }
     for tip, path in layouts.items():
         html = path.read_text(encoding="utf-8")

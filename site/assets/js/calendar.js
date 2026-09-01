@@ -1301,8 +1301,8 @@
       title.textContent = "Heiligen van de Lage Landen";
       body.innerHTML =
         `<p>Alleen heiligen die in de Lage Landen hebben gewerkt, of na het ` +
-        `schisma de Orthodoxie hier hebben opgebouwd. Bijgevolg staat niet iedere ` +
-        `heilige van de universele Kerk in dit overzicht.</p>`;
+        `schisma de Orthodoxie hier hebben opgebouwd. Andere heiligen van de ` +
+        `universele Kerk staan dus <i>niet</i> in dit overzicht.</p>`;
       if (meer) {
         meer.hidden = false;
         meer.innerHTML = achtergrondLink(
@@ -1391,6 +1391,21 @@
         `of tablet zetten. Die blijft dan vanzelf bijgewerkt. Dat doet u ` +
         `via de pagina <a class="text-link" href="${assetUrl("agenda/")}">` +
         `Agenda</a>.</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "pagina-heiligen") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Dit overzicht toont de heiligen die bij de Lage Landen horen: ` +
+        `wie hier heeft gewerkt, of na het schisma de Orthodoxie hier heeft ` +
+        `opgebouwd — niet iedere heilige van de universele Kerk. U zoekt op ` +
+        `naam of plaats, kiest Opgenomen of Alles, en sorteert op naam, ` +
+        `datum of plaats. De kaart van plaatsen zit achter de balk onder ` +
+        `het zoeken. ${meerUitlegHtml("heiligen")}</p>`;
       if (meer) {
         meer.hidden = true;
         meer.innerHTML = "";

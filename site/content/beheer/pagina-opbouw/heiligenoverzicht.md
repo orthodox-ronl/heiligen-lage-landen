@@ -17,9 +17,11 @@ pagina-header.
 
 ## Sticky header
 
-**Wel:** titel **Heiligen van de Lage Landen** met popover (criterium,
-link naar [uitleg heiligen]({{% ref "/uitleg/heiligen" %}})) en het
-**aantal** tussen haakjes (volgt Opgenomen/Alles en de zoekterm);
+**Wel:** titel **Heiligen van de Lage Landen** als info-term, zonder kop
+in de popover: korte samenvatting van de lijst (wie erin hoort, zoeken,
+Toon, sorteren, kaart), afgesloten met
+([meer uitleg]({{% ref "/uitleg/heiligen" %}})); het **aantal** tussen
+haakjes (volgt Opgenomen/Alles en de zoekterm);
 zoekveld; **Toon:** Opgenomen (default) / Alles, met popover op het
 label; **Weergave:** Lijst (default) / Kaart, met popover op het label;
 **Sorteren:** Naam (default) / Datum / Plaats, met popover op het
