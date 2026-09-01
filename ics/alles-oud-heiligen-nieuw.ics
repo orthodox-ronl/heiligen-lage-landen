@@ -7,21 +7,9 @@ X-WR-CALNAME:Vervallen — nieuwe link op de site
 X-WR-TIMEZONE:UTC
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260831
-DTEND;VALUE=DATE:20260901
-DTSTAMP:20260831T152109Z
-UID:ce100770-7335-556e-8668-7d9ba7ba2200
-SUMMARY:Deze agenda-link werkt niet meer
-DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder dit abonnem
- ent en kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-la
- ge-landen/agenda/
-URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
-DTSTAMP:20260831T152109Z
+DTSTAMP:20260901T060457Z
 UID:bfadad21-6819-5053-b28d-56873d068c68
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder dit abonnem
@@ -31,10 +19,10 @@ URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260907
-DTEND;VALUE=DATE:20260908
-DTSTAMP:20260831T152109Z
-UID:3c54138b-89ed-542c-9ba2-27424c491c63
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DTSTAMP:20260901T060457Z
+UID:3fafacb6-6340-57ba-93d0-a14b30e23149
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder dit abonnem
  ent en kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-la
@@ -43,10 +31,22 @@ URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260930
-DTEND;VALUE=DATE:20261001
-DTSTAMP:20260831T152109Z
-UID:6ef39042-4466-5418-8af4-c495051d379f
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+DTSTAMP:20260901T060457Z
+UID:61e1c246-50ab-5ff9-8f67-0b75c3f76ee3
+SUMMARY:Deze agenda-link werkt niet meer
+DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder dit abonnem
+ ent en kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-la
+ ge-landen/agenda/
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+DTSTAMP:20260901T060457Z
+UID:e5bb7d40-fed2-530a-b2f1-317beb870a4e
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder dit abonnem
  ent en kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-la
