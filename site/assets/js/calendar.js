@@ -151,19 +151,20 @@
       "agenda-omlijsting": {
         uitleg: "feesten",
         html:
-          "Voorfeest, nafeest, synaxis en teruggave rond een groot feest.",
-      },
-      "agenda-vasten": {
-        uitleg: "vasten",
-        html:
-          "Dagen met een vastenregel (streng, wijn en olie, vis, lichter). " +
-          "Niet hetzelfde als vastenvrij.",
+          "Voorfeest, nafeest (tot en met de teruggave) en synaxis bij " +
+          "de grote feesten: de dagen eromheen.",
       },
       "agenda-week": {
         uitleg: "vasten",
         html:
           "Het wekelijkse woensdag- en vrijdagvasten, tenzij een periode " +
           "of feestdag het uitzet.",
+      },
+      "agenda-vasten": {
+        uitleg: "vasten",
+        html:
+          "Dagen met een vastenregel (streng, wijn en olie, vis, lichter). " +
+          "Niet hetzelfde als vastenvrij.",
       },
       "agenda-periodes": {
         uitleg: "vasten",
@@ -1499,11 +1500,97 @@
       }
       return;
     }
+    if (kind === "pagina-agenda") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Hier zet u de kerkelijke kalender op uw telefoon of computer: ` +
+        `Google Calendar, Apple Agenda, Outlook. U kiest wat u wilt zien ` +
+        `(heiligen van de Lage Landen, feesten, vasten) en abonneert of ` +
+        `downloadt. ${meerUitlegHtml("agenda")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "agenda-abonneren") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Abonneren koppelt uw agenda-app aan deze site. Nieuwe dagen ` +
+        `komen vanzelf mee; de kalender blijft geldig, zolang de link ` +
+        `bestaat. Om technische redenen zijn de extra vinkjes beperkt tot ` +
+        `de meest gebruikelijke mixen. ${meerUitlegHtml("agenda")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "agenda-downloaden") {
+      setPopoverTitleVisible(title, dlg, false);
+      const tot = icsDownloadTotDatum();
+      body.innerHTML =
+        `<p>Downloaden geeft een bestand van dit moment. Alle extra ` +
+        `vinkjes zijn mogelijk. Het bestand loopt tot en met <strong>${tot}</strong>; ` +
+        `latere heiligen of feesten komen er niet vanzelf in. ` +
+        `${meerUitlegHtml("agenda")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "agenda-stap-abonneren") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Abonneren blijft vanzelf bijgewerkt; dat wilt u meestal. ` +
+        `Downloaden is een eenmalig bestand, met alle extra vinkjes. ` +
+        `${meerUitlegHtml("agenda")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "agenda-stap-kalender") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Nieuw: Kerst op 25 december. Oud: Kerst op 7 januari. ` +
+        `<em>Oud, heiligen nieuw</em> houdt de oude feestdagen, maar zet ` +
+        `heiligen van de Lage Landen op de burgerlijke datum. ` +
+        `${meerUitlegHtml("nieuw-oud")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    if (kind === "agenda-stap-inhoud") {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>Wat u aanklikt, komt in de agenda. Onder Heiligen, Feesten ` +
+        `en Vasten staan extra vinkjes. De weken hieronder volgen mee. ` +
+        `${meerUitlegHtml("agenda")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
     const agendaChip = agendaChipPopover(kind);
     if (agendaChip) {
       setPopoverTitleVisible(title, dlg, false);
+      const locked = trigger.closest(".chip-ics-unavailable");
+      const lockHtml = locked
+        ? `<p>Dit vinkje is grijs omdat deze mix geen abonnement heeft: ` +
+          `er is geen agenda-link die vanzelf bijgewerkt blijft. ` +
+          `Kies <strong>Downloaden</strong> voor een eenmalig bestand, ` +
+          `of zet eerst alleen één soort aan (Heiligen, Feesten of Vasten). ` +
+          `${meerUitlegHtml("agenda")}</p>`
+        : "";
       body.innerHTML =
-        `<p>${agendaChip.html} ${meerUitlegHtml(agendaChip.uitleg)}</p>`;
+        `<p>${agendaChip.html} ${meerUitlegHtml(agendaChip.uitleg)}</p>` +
+        lockHtml;
       if (meer) {
         meer.hidden = true;
         meer.innerHTML = "";
@@ -3618,35 +3705,66 @@
   ];
   const ICS_FEEST_GROEPEN = ["grote", "overige", "omlijsting"];
   const ICS_VASTEN_GROEPEN = ["week", "periodes", "feest"];
+  const ICS_FEEST_ZONDER_OMLIJSTING = ICS_FEEST_GROEPEN.filter(
+    (g) => g !== "omlijsting"
+  );
+  const ICS_VASTEN_ZONDER_WEEK = ICS_VASTEN_GROEPEN.filter((g) => g !== "week");
+  const ICS_YEAR_BACK = 2;
+  const ICS_YEAR_FORWARD = 5;
+
+  function icsDownloadTotDatum() {
+    const y = new Date().getFullYear() + ICS_YEAR_FORWARD;
+    return `31 december ${y}`;
+  }
 
   function feastAgendaGroep(entry) {
     if (!entry || entry.soort !== "feest") return null;
     if (GROOTFEEST_IDS.has(entry.id || "")) return "grote";
-    if (isRandFeest(entry)) return "omlijsting";
+    const id = entry.id || "";
+    if (
+      id.startsWith("voorfeest-") ||
+      id.startsWith("nafeest-") ||
+      id.startsWith("teruggave-") ||
+      id.startsWith("synaxis-")
+    ) {
+      return "omlijsting";
+    }
     return "overige";
   }
 
-  function agendaSpecFromForm() {
-    const parents = new Set(checkedShows("ics-show"));
+  function namedChecked(name, toggleEl) {
+    return Array.from(document.querySelectorAll(`input[name="${name}"]`))
+      .filter((el) => (el === toggleEl ? !el.checked : el.checked))
+      .map((el) => el.value);
+  }
+
+  function agendaSpecFromChecked(shows, heilige, feest, vasten) {
+    const parents = new Set(shows);
     const heiligen = [];
     if (parents.has("heilige")) {
-      const raw = checkedShows("ics-heilige");
       for (const [tok, yamlSel] of ICS_HEILIGE_TOKENS) {
-        if (raw.includes(tok)) heiligen.push(yamlSel);
+        if (heilige.includes(tok)) heiligen.push(yamlSel);
       }
     }
-    const feesten = parents.has("feest")
-      ? checkedShows("ics-feest").filter((g) => ICS_FEEST_GROEPEN.includes(g))
-      : [];
-    const vasten = parents.has("vasten")
-      ? checkedShows("ics-vasten").filter((g) => ICS_VASTEN_GROEPEN.includes(g))
-      : [];
     return {
       heiligen,
-      feesten,
-      vasten,
+      feesten: parents.has("feest")
+        ? feest.filter((g) => ICS_FEEST_GROEPEN.includes(g))
+        : [],
+      vasten: parents.has("vasten")
+        ? vasten.filter((g) => ICS_VASTEN_GROEPEN.includes(g))
+        : [],
       vastenvrij: parents.has("vastenvrij"),
     };
+  }
+
+  function agendaSpecFromForm(toggleEl) {
+    return agendaSpecFromChecked(
+      namedChecked("ics-show", toggleEl),
+      namedChecked("ics-heilige", toggleEl),
+      namedChecked("ics-feest", toggleEl),
+      namedChecked("ics-vasten", toggleEl)
+    );
   }
 
   function specKinds(spec) {
@@ -3727,58 +3845,190 @@
     return stijl;
   }
 
-  function icsJaarPart(part) {
-    if (part === "oud-heiligen-nieuw") return "oud";
-    return part;
+  function feedKey(spec) {
+    const kinds = specKinds(spec);
+    if (!kinds.length) return null;
+    if (nestedIsDefault(spec)) return parentSubsetKey(kinds);
+    const parts = [];
+    const hk = heiligenFileKey(spec.heiligen);
+    if (hk) parts.push(hk);
+    const fk = feestenFileKey(spec.feesten);
+    if (fk) parts.push(fk);
+    const vk = vastenFileKey(spec.vasten);
+    if (vk) parts.push(vk);
+    if (spec.vastenvrij) parts.push("vastenvrij");
+    return parts.length ? parts.join("-") : null;
   }
 
-  function icsSaintPart(part) {
-    if (part === "oud-heiligen-nieuw") return "nieuw";
-    return part;
+  function feastSubscribeOk(spec) {
+    if (!spec.feesten.length) return true;
+    return (
+      sameSet(spec.feesten, ICS_FEEST_GROEPEN) ||
+      sameSet(spec.feesten, ICS_FEEST_ZONDER_OMLIJSTING)
+    );
+  }
+
+  function vastenSubscribeOk(spec) {
+    if (!spec.vasten.length) return true;
+    return (
+      sameSet(spec.vasten, ICS_VASTEN_GROEPEN) ||
+      sameSet(spec.vasten, ICS_VASTEN_ZONDER_WEEK)
+    );
+  }
+
+  function icsFeedPublished(spec) {
+    const kinds = specKinds(spec);
+    if (!kinds.length) return false;
+    if (nestedIsDefault(spec) || kinds.length === 1) return true;
+    return feastSubscribeOk(spec) && vastenSubscribeOk(spec);
+  }
+
+  function icsChoiceHasFeed(spec) {
+    return specKinds(spec).length > 0 && icsFeedPublished(spec);
+  }
+
+  function resetAgendaKeuzesDefault() {
+    document.querySelectorAll('input[name="ics-show"]').forEach((el) => {
+      el.checked = true;
+    });
+    document.querySelectorAll('input[name="ics-heilige"]').forEach((el) => {
+      el.checked = el.value === "opgenomen";
+    });
+    document.querySelectorAll('input[name="ics-feest"]').forEach((el) => {
+      el.checked = true;
+    });
+    document.querySelectorAll('input[name="ics-vasten"]').forEach((el) => {
+      el.checked = true;
+    });
+  }
+
+  function syncAgendaIcsLocks() {
+    const lock = icsModus() === "abonneren";
+    document
+      .querySelectorAll(".agenda-keuzes input[type='checkbox']")
+      .forEach((inp) => {
+        const chip = inp.closest(".chip");
+        if (chip) chip.classList.remove("chip-ics-unavailable");
+        const box = inp.closest("[data-ics-parent]");
+        if (box && box.hidden) {
+          inp.disabled = true;
+          return;
+        }
+        if (!lock) {
+          inp.disabled = false;
+          return;
+        }
+        const next = agendaSpecFromForm(inp);
+        const ok = icsChoiceHasFeed(next);
+        inp.disabled = !ok;
+        if (!ok && chip) chip.classList.add("chip-ics-unavailable");
+      });
+  }
+
+  function icsEscape(text) {
+    return String(text)
+      .replace(/\\/g, "\\\\")
+      .replace(/\n/g, "\\n")
+      .replace(/,/g, "\\,")
+      .replace(/;/g, "\\;");
+  }
+
+  function icsFoldLine(line) {
+    const limit = 75;
+    if (line.length <= limit) return line;
+    const parts = [line.slice(0, limit)];
+    let rest = line.slice(limit);
+    while (rest.length) {
+      parts.push(" " + rest.slice(0, limit - 1));
+      rest = rest.slice(limit - 1);
+    }
+    return parts.join("\r\n");
+  }
+
+  function buildAgendaIcs(spec, stijl) {
+    const key = feedKey(spec) || "agenda";
+    const part = stijlBestandsdeel(spec, stijl);
+    const now = new Date();
+    const stamp =
+      now.getUTCFullYear() +
+      String(now.getUTCMonth() + 1).padStart(2, "0") +
+      String(now.getUTCDate()).padStart(2, "0") +
+      "T" +
+      String(now.getUTCHours()).padStart(2, "0") +
+      String(now.getUTCMinutes()).padStart(2, "0") +
+      String(now.getUTCSeconds()).padStart(2, "0") +
+      "Z";
+    const y0 = now.getFullYear() - ICS_YEAR_BACK;
+    const y1 = now.getFullYear() + ICS_YEAR_FORWARD;
+    const lines = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//orthodox-ronl//kalender//NL",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      `X-WR-CALNAME:${icsEscape("Orthodox · Lage Landen (" + part + ")")}`,
+      "X-WR-TIMEZONE:UTC",
+      "X-PUBLISHED-TTL:P1D",
+    ];
+    let d = new Date(y0, 0, 1);
+    const end = new Date(y1, 11, 31);
+    while (d <= end) {
+      const ctx = agendaDayContext(spec, stijl, d);
+      if (ctx.title) {
+        const start = `${ctx.year}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+        const nxt = addDays(d, 1);
+        const endD = `${nxt.getFullYear()}${String(nxt.getMonth() + 1).padStart(2, "0")}${String(nxt.getDate()).padStart(2, "0")}`;
+        const href = daySurfaceHref(ctx.year, ctx.mmdd, ctx.yearStyle, {
+          bindStyle: true,
+        });
+        const abs = href.startsWith("http")
+          ? href
+          : `${window.location.origin}${href.startsWith("/") ? "" : "/"}${href}`;
+        const uid = `${key}-${part}-${start}@orthodox-ronl`;
+        lines.push(
+          "BEGIN:VEVENT",
+          `DTSTART;VALUE=DATE:${start}`,
+          `DTEND;VALUE=DATE:${endD}`,
+          `DTSTAMP:${stamp}`,
+          `UID:${uid}`,
+          `SUMMARY:${icsEscape(ctx.title)}`,
+          `DESCRIPTION:${icsEscape("Meer: " + abs)}`,
+          `URL:${abs}`,
+          "TRANSP:TRANSPARENT",
+          "END:VEVENT"
+        );
+      }
+      d = addDays(d, 1);
+    }
+    lines.push("END:VCALENDAR");
+    return lines.map(icsFoldLine).join("\r\n") + "\r\n";
+  }
+
+  function downloadAgendaIcsFile(spec, stijl, file) {
+    const name = (file && file.split("/").pop()) || `${feedKey(spec) || "agenda"}-${stijl}.ics`;
+    if (icsFeedPublished(spec) && file) {
+      const a = document.createElement("a");
+      a.href = assetUrl("ics/" + file);
+      a.setAttribute("download", name);
+      a.click();
+      return;
+    }
+    const blob = new Blob([buildAgendaIcs(spec, stijl)], {
+      type: "text/calendar;charset=utf-8",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    a.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 2000);
   }
 
   function icsFeedRelpaths(spec, stijl) {
-    const kinds = specKinds(spec);
-    if (!kinds.length) return [];
+    const key = feedKey(spec);
+    if (!key) return [];
     const part = stijlBestandsdeel(spec, stijl);
-    const yearPart = icsJaarPart(part);
-    const saintPart = icsSaintPart(part);
-    if (nestedIsDefault(spec)) {
-      const key = parentSubsetKey(kinds);
-      return key ? [`v2/${key}-${part}.ics`] : [];
-    }
-    const extras = spec.heiligen.filter((s) => s !== "voldoet");
-    const baseHeiligen = spec.heiligen.includes("voldoet") ? ["voldoet"] : [];
-    const baseSpec = {
-      heiligen: baseHeiligen,
-      feesten: spec.feesten,
-      vasten: spec.vasten,
-      vastenvrij: spec.vastenvrij,
-    };
-    if (
-      nestedIsDefault(baseSpec) &&
-      extras.length &&
-      spec.heiligen.includes("voldoet")
-    ) {
-      const key = parentSubsetKey(kinds);
-      const basePart = stijlBestandsdeel(baseSpec, stijl);
-      const files = [`v2/${key}-${basePart}.ics`];
-      for (const [tok, yamlSel] of ICS_HEILIGE_TOKENS) {
-        if (extras.includes(yamlSel)) {
-          files.push(`v2/heiligen-${tok}-${saintPart}.ics`);
-        }
-      }
-      return files;
-    }
-    const files = [];
-    const hk = heiligenFileKey(spec.heiligen);
-    if (hk) files.push(`v2/${hk}-${saintPart}.ics`);
-    const fk = feestenFileKey(spec.feesten);
-    if (fk) files.push(`v2/${fk}-${yearPart}.ics`);
-    const vk = vastenFileKey(spec.vasten);
-    if (vk) files.push(`v2/${vk}-${yearPart}.ics`);
-    if (spec.vastenvrij) files.push(`v2/vastenvrij-${yearPart}.ics`);
-    return files;
+    return [`v2/${key}-${part}.ics`];
   }
 
   function displayAgendaEntries(dayEntries, spec) {
@@ -4182,24 +4432,28 @@
       vastenvrij: "vastenvrij",
     };
     const wat = nlOpsomming(shows.map((s) => labels[s] || s));
-    const extra =
-      files.length > 1
-        ? ` Dat zijn ${files.length} agenda’s (elk een eigen kleur); voeg elke link toe.`
-        : "";
+    if (!icsFeedPublished(spec) && modus === "abonneren") {
+      return (
+        "Deze mix van extra vinkjes onder Feesten of Vasten, samen met andere soorten, " +
+        "heeft geen aparte agenda-link. Zet die extra vinkjes weer aan, of vink maar " +
+        "één soort aan (alleen Heiligen, alleen Feesten of alleen Vasten) en kopieer " +
+        "dan een tweede link."
+      );
+    }
     if (stijl === "oud-heiligen-nieuw") {
       const mixed =
         "de oude kalender voor feesten en vasten, heiligen op de nieuwe datum";
       if (modus === "downloaden") {
-        return `De knop downloadt ${wat} volgens ${mixed} als bestand.${extra}`;
+        return `De knop downloadt ${wat} volgens ${mixed} als bestand.`;
       }
-      return `De knop kopieert de link voor ${wat} volgens ${mixed}. Plak die in uw agenda-app; de stappen staan hieronder.${extra}`;
+      return `De knop kopieert de link voor ${wat} volgens ${mixed}. Plak die in uw agenda-app; de stappen staan hieronder.`;
     }
     const kal =
       stijl === "oud" ? "de oude kalender" : "de nieuwe kalender";
     if (modus === "downloaden") {
-      return `De knop downloadt ${wat} volgens ${kal} als bestand.${extra}`;
+      return `De knop downloadt ${wat} volgens ${kal} als bestand.`;
     }
-    return `De knop kopieert de link voor ${wat} volgens ${kal}. Plak die in uw agenda-app; de stappen staan hieronder.${extra}`;
+    return `De knop kopieert de link voor ${wat} volgens ${kal}. Plak die in uw agenda-app; de stappen staan hieronder.`;
   }
 
   function setHidden(el, hidden) {
@@ -4243,6 +4497,7 @@
   function updateAgendaUi() {
     if (!document.querySelector("[data-agenda]")) return;
     syncAgendaSubkeuzes();
+    syncAgendaIcsLocks();
     const spec = agendaSpecFromForm();
     const files = icsFeedRelpaths(
       spec,
@@ -4256,6 +4511,9 @@
     const modus = icsModus();
     const urls = files.map((f) => assetUrl("ics/" + f));
     const url = urls[0] || "";
+    const hasKinds = specKinds(spec).length > 0;
+    const published = icsFeedPublished(spec);
+    const klaar = modus === "downloaden" ? hasKinds : hasKinds && published;
     const download = document.getElementById("ics-download");
     const copyBtn = document.getElementById("ics-copy");
     const samenvatting = document.getElementById("ics-samenvatting");
@@ -4266,10 +4524,11 @@
     const howtoDl = document.getElementById("ics-howto-downloaden");
     const webcal = document.getElementById("ics-webcal");
     const mixedHint = document.getElementById("ics-stijl-hint-mixed");
-    const klaar = Boolean(file);
+    const tipApart = document.getElementById("ics-tip-apart");
 
     renderAgendaVoorbeeld(spec, stijl);
     if (mixedHint) mixedHint.hidden = stijl !== "oud-heiligen-nieuw";
+    if (tipApart) tipApart.hidden = modus !== "abonneren";
 
     if (samenvatting) {
       samenvatting.textContent = agendaSamenvatting(
@@ -4283,7 +4542,7 @@
       status.textContent = "";
     }
 
-    if (urlInput) urlInput.value = urls.join("\n");
+    if (urlInput) urlInput.value = url;
     setHidden(urlRow, !(klaar && modus === "abonneren"));
     setHidden(howtoAbo, modus !== "abonneren");
     setHidden(howtoDl, modus !== "downloaden");
@@ -4292,11 +4551,15 @@
       const toonDownload = klaar && modus === "downloaden";
       setHidden(download, !toonDownload);
       if (toonDownload) {
-        download.href = url;
-        download.setAttribute("download", file.split("/").pop());
+        if (published && file) {
+          download.href = url;
+          download.setAttribute("download", file.split("/").pop());
+        } else {
+          download.href = "#";
+          download.removeAttribute("download");
+        }
         download.classList.remove("is-disabled");
-        download.textContent =
-          files.length > 1 ? "Download het eerste bestand" : "Download de kalender";
+        download.textContent = "Download de kalender";
       } else {
         download.removeAttribute("href");
         download.removeAttribute("download");
@@ -4308,8 +4571,7 @@
       copyBtn.disabled = !toonCopy;
       copyBtn.classList.toggle("is-disabled", !toonCopy);
       if (toonCopy && copyBtn.dataset.copied !== "1") {
-        copyBtn.textContent =
-          files.length > 1 ? "Kopieer de agenda-links" : "Kopieer de agenda-link";
+        copyBtn.textContent = "Kopieer de agenda-link";
       }
     }
     if (webcal) {
@@ -4344,15 +4606,49 @@
         .querySelectorAll(
           'input[name="ics-show"], input[name="ics-heilige"], input[name="ics-feest"], input[name="ics-vasten"], input[name="ics-stijl"], input[name="ics-modus"]'
         )
-        .forEach((el) => el.addEventListener("change", updateAgendaUi));
+        .forEach((el) =>
+          el.addEventListener("change", () => {
+            if (
+              el.name === "ics-modus" &&
+              el.value === "abonneren" &&
+              el.checked &&
+              !icsChoiceHasFeed(agendaSpecFromForm())
+            ) {
+              resetAgendaKeuzesDefault();
+            }
+            updateAgendaUi();
+          })
+        );
+      root.querySelectorAll(".agenda-keuzes .chip").forEach((chip) => {
+        chip.addEventListener("click", (ev) => {
+          if (!chip.classList.contains("chip-ics-unavailable")) return;
+          const term = chip.querySelector("[data-info-tip]");
+          if (!term) return;
+          if (term === ev.target || term.contains(ev.target)) return;
+          ev.preventDefault();
+          openInfoPopover(term);
+        });
+      });
+      const downloadBtn = document.getElementById("ics-download");
+      if (downloadBtn) {
+        downloadBtn.addEventListener("click", (ev) => {
+          const spec = agendaSpecFromForm();
+          const stijl =
+            (document.querySelector('input[name="ics-stijl"]:checked') || {})
+              .value || "nieuw";
+          if (icsFeedPublished(spec)) return;
+          ev.preventDefault();
+          const files = icsFeedRelpaths(spec, stijl);
+          downloadAgendaIcsFile(spec, stijl, files[0] || null);
+        });
+      }
       const copyBtn = document.getElementById("ics-copy");
       if (copyBtn) {
         copyBtn.addEventListener("click", async () => {
           const files = icsFeedFiles();
           if (!files.length) return;
-          const urls = files.map((f) => assetUrl("ics/" + f));
-          const blob = urls.join("\n");
-          const ok = await copyAgendaUrl(blob);
+          const url = assetUrl("ics/" + files[0]);
+          const ok = await copyAgendaUrl(url);
           const status = document.getElementById("ics-status");
           copyBtn.dataset.copied = "1";
           copyBtn.textContent = ok
@@ -4361,15 +4657,12 @@
           if (status) {
             status.dataset.sticky = "1";
             status.textContent = ok
-              ? files.length > 1
-                ? "De agenda-links staan op het klembord. Plak elke regel als apart abonnement."
-                : "De agenda-link staat op het klembord. Plak die in de stappen hieronder."
+              ? "De agenda-link staat op het klembord. Plak die in de stappen hieronder."
               : "Selecteer de agenda-link hieronder en kopieer die zelf (Ctrl+C of Cmd+C).";
           }
           window.setTimeout(() => {
             copyBtn.dataset.copied = "0";
-            copyBtn.textContent =
-              files.length > 1 ? "Kopieer de agenda-links" : "Kopieer de agenda-link";
+            copyBtn.textContent = "Kopieer de agenda-link";
             if (status) {
               status.dataset.sticky = "0";
               status.textContent = "";

@@ -215,56 +215,98 @@ def stijl_bestandsdeel(spec: AgendaSpec, stijl: str) -> str:
     return stijl
 
 
-def v2_relpaths(spec: AgendaSpec, stijl: str) -> list[str]:
-    """Eén of meer v2-feeds die samen de keuze dekken. Leeg = niets aangevinkt."""
+def feed_key(spec: AgendaSpec) -> str | None:
+    """Bestandsstem van één v2-feed voor dit setje vinkjes."""
     kinds = spec.kinds()
     if not kinds:
-        return []
-    part = stijl_bestandsdeel(spec, stijl)
-    year_part = jaar_stijl(part) if part != STIJL_OUD_HEILIGEN_NIEUW else "oud"
-    saint_part = heiligen_stijl_van(part)
-
+        return None
     if nested_is_default(spec):
-        key = subset_key(kinds)
-        assert key
-        return [f"{ICS_V2_DIR}/{key}-{part}.ics"]
-
-    extras = spec.heiligen - DEFAULT_HEILIGEN
-    if (
-        nested_is_default(
-            AgendaSpec(
-                heiligen=DEFAULT_HEILIGEN if spec.heiligen else frozenset(),
-                feesten=spec.feesten,
-                vasten=spec.vasten,
-                vastenvrij=spec.vastenvrij,
-            )
-        )
-        and extras
-        and DEFAULT_HEILIGEN <= spec.heiligen
-    ):
-        base = spec_from_kinds(kinds)
-        base_part = stijl_bestandsdeel(base, stijl)
-        key = subset_key(kinds)
-        assert key
-        files = [f"{ICS_V2_DIR}/{key}-{base_part}.ics"]
-        for yaml_sel, tok in HEILIGE_SELECTIE_TOKENS:
-            if yaml_sel in extras:
-                files.append(f"{ICS_V2_DIR}/heiligen-{tok}-{saint_part}.ics")
-        return files
-
-    files: list[str] = []
+        return subset_key(kinds)
+    parts: list[str] = []
     hk = heiligen_file_key(spec.heiligen)
     if hk:
-        files.append(f"{ICS_V2_DIR}/{hk}-{saint_part}.ics")
+        parts.append(hk)
     fk = feesten_file_key(spec.feesten)
     if fk:
-        files.append(f"{ICS_V2_DIR}/{fk}-{year_part}.ics")
+        parts.append(fk)
     vk = vasten_file_key(spec.vasten)
     if vk:
-        files.append(f"{ICS_V2_DIR}/{vk}-{year_part}.ics")
+        parts.append(vk)
     if spec.vastenvrij:
-        files.append(f"{ICS_V2_DIR}/vastenvrij-{year_part}.ics")
-    return files
+        parts.append("vastenvrij")
+    return "-".join(parts) if parts else None
+
+
+def v2_relpaths(spec: AgendaSpec, stijl: str) -> list[str]:
+    """Precies één v2-feed voor de keuze, of leeg als niets is aangevinkt."""
+    key = feed_key(spec)
+    if not key:
+        return []
+    part = stijl_bestandsdeel(spec, stijl)
+    return [f"{ICS_V2_DIR}/{key}-{part}.ics"]
+
+
+FEEST_ZONDER_OMLIJSTING = DEFAULT_FEESTEN - {"omlijsting"}
+VASTEN_ZONDER_WEEK = DEFAULT_VASTEN - {"week"}
+
+
+def feast_subscribe_ok(spec: AgendaSpec) -> bool:
+    if not spec.feesten:
+        return True
+    return spec.feesten in (DEFAULT_FEESTEN, FEEST_ZONDER_OMLIJSTING)
+
+
+def vasten_subscribe_ok(spec: AgendaSpec) -> bool:
+    if not spec.vasten:
+        return True
+    return spec.vasten in (DEFAULT_VASTEN, VASTEN_ZONDER_WEEK)
+
+
+def publish_feed_spec(spec: AgendaSpec) -> bool:
+    """Welke combinaties als statisch v2-bestand worden gebouwd.
+
+    Standaard mix, extra heiligen daarop, weglaten van omlijsting of van
+    woensdag/vrijdag, en elke extra keuze binnen één hoofdssoort.
+    """
+    kinds = spec.kinds()
+    if not kinds:
+        return False
+    if nested_is_default(spec) or len(kinds) == 1:
+        return True
+    return feast_subscribe_ok(spec) and vasten_subscribe_ok(spec)
+
+
+def iter_agenda_specs() -> Iterator[AgendaSpec]:
+    yaml_sels = tuple(yaml_sel for yaml_sel, _tok in HEILIGE_SELECTIE_TOKENS)
+    heiligen_opties: tuple[frozenset[str], ...] = (frozenset(),) + _nonempty_subsets(
+        yaml_sels
+    )
+    feesten_opties: tuple[frozenset[str], ...] = (frozenset(),) + _nonempty_subsets(
+        FEEST_GROEPEN
+    )
+    vasten_opties: tuple[frozenset[str], ...] = (frozenset(),) + _nonempty_subsets(
+        VASTEN_GROEPEN
+    )
+    for heiligen in heiligen_opties:
+        for feesten in feesten_opties:
+            for vasten in vasten_opties:
+                for vastenvrij in (False, True):
+                    spec = AgendaSpec(
+                        heiligen=heiligen,
+                        feesten=feesten,
+                        vasten=vasten,
+                        vastenvrij=vastenvrij,
+                    )
+                    if spec.kinds():
+                        yield spec
+
+
+def stijlen_voor_spec(spec: AgendaSpec) -> tuple[str, ...]:
+    stijlen = ["nieuw", "oud"]
+    kinds = spec.kinds()
+    if "heilige" in kinds and kinds - {"heilige"}:
+        stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
+    return tuple(stijlen)
 
 
 def sunset_dates(today: date | None = None) -> list[date]:
@@ -853,6 +895,7 @@ def build_ics(
     spec: AgendaSpec | None = None,
     years: Iterable[int] | None = None,
     lezingen_payload: dict[str, Any] | None = None,
+    grouped: dict[date, list[dict[str, Any]]] | None = None,
 ) -> str:
     """Bouw ICS: één hele-dag-afspraak per burgerlijke dag in de subset."""
     if spec is None:
@@ -868,7 +911,8 @@ def build_ics(
         lezingen_payload = build_lezingen_dagen_payload(year_list)
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     year_s = jaar_stijl(stijl)
-    grouped = occurrences_by_date(context, stijl, year_list)
+    if grouped is None:
+        grouped = occurrences_by_date(context, stijl, year_list)
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -977,64 +1021,21 @@ def build_sunset_ics(*, old_filename: str, today: date | None = None) -> str:
 
 
 def _v2_feed_jobs() -> list[tuple[str, str, AgendaSpec]]:
-    """(relpath zonder map, stijl, spec) voor alle v2-bestanden."""
+    """(bestandsnaam in v2/, stijl, spec) voor alle v2-bestanden."""
     jobs: list[tuple[str, str, AgendaSpec]] = []
     seen: set[str] = set()
-
-    def add(key: str, stijl: str, spec: AgendaSpec) -> None:
-        filename = f"{key}-{stijl}.ics"
-        if filename in seen:
-            return
-        seen.add(filename)
-        jobs.append((filename, stijl, spec))
-
-    for kinds in ICS_COMBOS:
-        key = subset_key(kinds)
+    for spec in iter_agenda_specs():
+        if not publish_feed_spec(spec):
+            continue
+        key = feed_key(spec)
         assert key
-        spec = spec_from_kinds(kinds)
-        stijlen = ["nieuw", "oud"]
-        if "heilige" in kinds and kinds - {"heilige"}:
-            stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
-        for stijl in stijlen:
-            add(key, stijl, spec)
-
-    yaml_sels = tuple(yaml_sel for yaml_sel, _tok in HEILIGE_SELECTIE_TOKENS)
-    for sels in _nonempty_subsets(yaml_sels):
-        key = heiligen_file_key(sels)
-        assert key
-        spec = AgendaSpec(
-            heiligen=sels,
-            feesten=frozenset(),
-            vasten=frozenset(),
-            vastenvrij=False,
-        )
-        for stijl in ("nieuw", "oud"):
-            add(key, stijl, spec)
-
-    for groups in _nonempty_subsets(FEEST_GROEPEN):
-        key = feesten_file_key(groups)
-        assert key
-        spec = AgendaSpec(
-            heiligen=frozenset(),
-            feesten=groups,
-            vasten=frozenset(),
-            vastenvrij=False,
-        )
-        for stijl in ("nieuw", "oud"):
-            add(key, stijl, spec)
-
-    for groups in _nonempty_subsets(VASTEN_GROEPEN):
-        key = vasten_file_key(groups)
-        assert key
-        spec = AgendaSpec(
-            heiligen=frozenset(),
-            feesten=frozenset(),
-            vasten=groups,
-            vastenvrij=False,
-        )
-        for stijl in ("nieuw", "oud"):
-            add(key, stijl, spec)
-
+        for stijl in stijlen_voor_spec(spec):
+            part = stijl_bestandsdeel(spec, stijl)
+            filename = f"{key}-{part}.ics"
+            if filename in seen:
+                continue
+            seen.add(filename)
+            jobs.append((filename, stijl, spec))
     return jobs
 
 
@@ -1053,10 +1054,17 @@ def write_ics(
 
         lezingen_payload = build_lezingen_dagen_payload(list(occurrence_years()))
     today = date.today()
+    year_list = _occurrence_years(today)
+    grouped_by_stijl: dict[str, dict[date, list[dict[str, Any]]]] = {}
     for name in old_ics_filenames():
         write_text(STATIC_ICS / name, build_sunset_ics(old_filename=name, today=today))
     for filename, stijl, spec in _v2_feed_jobs():
-        key = filename[: -len(f"-{stijl}.ics")]
+        key = feed_key(spec)
+        assert key
+        grouped = grouped_by_stijl.get(stijl)
+        if grouped is None:
+            grouped = occurrences_by_date(entries, stijl, year_list)
+            grouped_by_stijl[stijl] = grouped
         write_text(
             v2_dir / filename,
             build_ics(
@@ -1066,6 +1074,8 @@ def write_ics(
                 context_entries=entries,
                 feed_key=key,
                 spec=spec,
+                years=year_list,
                 lezingen_payload=lezingen_payload,
+                grouped=grouped,
             ),
         )

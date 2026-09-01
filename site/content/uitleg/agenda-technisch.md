@@ -32,15 +32,21 @@ De vier hoofdssoorten blijven `heiligen` / `feesten` / `vasten` /
 Daarbinnen, defaults van de agendapagina:
 
 - heiligen = alleen `selectie: voldoet` (Opgenomen)
-- feesten = grote + overige + omlijsting (voorfeest, nafeest, synaxis, teruggave)
-- vasten = wo/vr + periodes + feestdagen met vasten
+- feesten = grote + overige + omlijsting (voorfeest, nafeest inclusief
+  teruggave, synaxis)
+- vasten = week (woensdag/vrijdag) + periodes + feestdagen met vasten
 - vastenvrij = aan
 
 Afwijkende subfilters krijgen eigen sleutels (`heiligen-nader`,
-`feesten-grote`, `vasten-week`, …) of een **tweede** feed naast `alles`
-(bijvoorbeeld `v2/alles-nieuw.ics` plus `v2/heiligen-nader-nieuw.ics`).
+`feesten-grote`, `feesten-grote-overige`, `vasten-week`, …). Extra
+heiligen-vinkjes bovenop een verder standaard mix, en het weglaten van
+omlijsting of van woensdag/vrijdag, zitten in **hetzelfde** bestand
+(niet een tweede feed naast `alles`).
 `v2_relpaths` in `scripts/ics.py` is de norm; `icsFeedRelpaths` in
-`calendar.js` is de spiegel.
+`calendar.js` is de spiegel. Elke keuze is **één** URL. Andere
+kruiscombinaties van extra vinkjes onder Feesten of Vasten mét andere
+hoofdssoorten worden niet als extra bestand gebouwd; de pagina maakt
+die vinkjes bij abonneren grijs.
 
 `stijl` is `nieuw`, `oud`, of bij heiligen plus minstens één andere soort
 `oud-heiligen-nieuw`. De agendapagina bouwt de knop uit de keuzes van de
@@ -51,9 +57,9 @@ Vasten in de feed zijn dagen met een vastenniveau anders dan `vrij`,
 gefilterd op de aangevinkte vastensoorten. Vastenvrij is alleen
 `niveau: vrij`. Een gewone dinsdag zonder vasten zit in geen van beide.
 
-- **Abonneren:** de knop kopieert de HTTPS-URL(s); bij meerdere feeds
-  één URL per regel. Apple: `webcal:` op de eerste feed.
-- **Downloaden:** dezelfde URL(s); bij meerdere feeds de eerste via de knop.
+- **Abonneren:** de knop kopieert de HTTPS-URL. Apple: `webcal:` op
+  dezelfde feed.
+- **Downloaden:** dezelfde URL.
 
 `X-WR-CALNAME` is kort, bijvoorbeeld `Orthodox · Lage Landen (nieuw)`.
 `UID` van v2-feeds is `uuid5` van `v2:{sleutel}:{stijl}:{datum}`.

@@ -74,6 +74,8 @@ def test_agenda_heeft_vastenvrij_keuze() -> None:
     js = JS.read_text(encoding="utf-8")
     assert "vastenvrij" in js
     assert "function icsFeedRelpaths" in js
+    assert "function feedKey" in js
+    assert "Kopieer de agenda-links" not in js
     assert "v2/" in js
 
 
@@ -138,6 +140,7 @@ def test_overzicht_titels_hebben_pagina_popover() -> None:
         / "layouts"
         / "partials"
         / "heiligen-overzicht.html",
+        "pagina-agenda": ROOT / "site" / "layouts" / "_default" / "agenda.html",
     }
     js = JS.read_text(encoding="utf-8")
     uitleg = {
@@ -146,6 +149,7 @@ def test_overzicht_titels_hebben_pagina_popover() -> None:
         "pagina-synaxarion": "synaxarion",
         "pagina-lezingenrooster": "lezingen",
         "pagina-heiligen": "heiligen",
+        "pagina-agenda": "agenda",
     }
     for tip, path in layouts.items():
         html = path.read_text(encoding="utf-8")

@@ -267,15 +267,39 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     assert "Download de kalender" in layout
     assert "ics-voorbeeld-week" in layout
     assert "ics-voorbeeld-week-rijk" in layout
-    assert "Wat u aanklikt" in layout
+    assert "Wat u aanklikt" not in layout
+    assert "Kies de stand" not in layout
     assert "U mag één of meer" not in layout
     assert 'data-info-tip="agenda-opgenomen"' in layout
+    assert 'data-info-tip="agenda-abonneren"' in layout
+    assert 'data-info-tip="agenda-omlijsting"' in layout
+    assert 'data-info-tip="agenda-week"' in layout
+    assert 'data-info-tip="agenda-stap-kalender"' in layout
+    assert 'data-info-tip="pagina-agenda"' in layout
+    assert "agenda-voorbeelden" in layout
+    assert 'value="omlijsting"' in layout
+    assert 'value="week"' in layout
+    intro = (ROOT / "site" / "content" / "agenda" / "_index.md").read_text(
+        encoding="utf-8"
+    )
+    assert "Eén abonnement is één kleur" not in intro
+    assert "ics-tip-apart" in layout
+    assert "één kleur in uw app" in layout
     assert "Open in Apple Agenda" in layout
     assert "function icsDayTitle" in js
     assert "function findIllustratieveAgendaWeek" in js
     assert "function agendaChipPopover" in js
     assert "ics-all-links" not in js
-    assert "heiligen-feesten-nieuw" not in js
+    assert "Kopieer de agenda-links" not in js
+    assert layout.find('name="ics-modus"') < layout.find('name="ics-stijl"')
+    assert layout.find('name="ics-stijl"') < layout.find('name="ics-show"')
+    assert "chip-ics-unavailable" in (
+        ROOT / "site" / "assets" / "css" / "site.css"
+    ).read_text(encoding="utf-8")
+    assert "function syncAgendaIcsLocks" in js
+    assert "function resetAgendaKeuzesDefault" in js
+    assert "function buildAgendaIcs" in js
+    assert "chip-ics-unavailable" in js
 
 
 def test_jaarkalender_en_uitleg_zelfde_legenda_swatches() -> None:

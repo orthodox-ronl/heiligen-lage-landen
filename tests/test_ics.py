@@ -14,10 +14,15 @@ from ics import (  # noqa: E402
     ICS_COMBOS,
     SITE_PUBLIC_URL,
     AgendaSpec,
+    FEEST_ZONDER_OMLIJSTING,
+    VASTEN_ZONDER_WEEK,
+    _v2_feed_jobs,
     build_ics,
     build_sunset_ics,
     calendar_name,
     day_title,
+    feed_key,
+    publish_feed_spec,
     spec_from_kinds,
     subset_key,
     v2_relpaths,
@@ -275,9 +280,6 @@ def test_maandag_toont_weeknaam() -> None:
 def test_nader_onderzoek_opt_in() -> None:
     spec = AgendaSpec(
         heiligen=frozenset({"voldoet", "nader-onderzoek"}),
-        feesten=frozenset({"grote", "overige", "omlijsting"}),
-        vasten=frozenset({"week", "periodes", "feest"}),
-        vastenvrij=True,
     )
     events = parse_events(_build(ALLES, spec=spec))
     ev = events["20260608"]
@@ -319,16 +321,43 @@ def test_oud_heiligen_nieuw_willibrord_op_zeven_november() -> None:
     assert "heiligen nieuw" in _unfold(ics)
 
 
-def test_v2_relpaths_default_en_nader() -> None:
+def test_v2_relpaths_een_feed_per_keuze() -> None:
     default = AgendaSpec()
     assert v2_relpaths(default, "nieuw") == ["v2/alles-nieuw.ics"]
     met_nader = AgendaSpec(
         heiligen=frozenset({"voldoet", "nader-onderzoek"})
     )
     assert v2_relpaths(met_nader, "nieuw") == [
-        "v2/alles-nieuw.ics",
-        "v2/heiligen-nader-nieuw.ics",
+        "v2/heiligen-opgenomen-nader-feesten-vasten-vastenvrij-nieuw.ics"
     ]
+    assert len(v2_relpaths(met_nader, "nieuw")) == 1
+    names = [name for name, _stijl, _spec in _v2_feed_jobs()]
+    assert len(names) == len(set(names))
+    nader_file = v2_relpaths(met_nader, "nieuw")[0].removeprefix("v2/")
+    assert nader_file in names
+    assert feed_key(default) == "alles"
+
+
+def test_subscribe_kan_omlijsting_en_week_weglaten() -> None:
+    zonder_omlijsting = AgendaSpec(feesten=FEEST_ZONDER_OMLIJSTING)
+    assert publish_feed_spec(zonder_omlijsting)
+    assert v2_relpaths(zonder_omlijsting, "nieuw") == [
+        "v2/heiligen-feesten-grote-overige-vasten-vastenvrij-nieuw.ics"
+    ]
+    zonder_week = AgendaSpec(vasten=VASTEN_ZONDER_WEEK)
+    assert publish_feed_spec(zonder_week)
+    assert v2_relpaths(zonder_week, "nieuw") == [
+        "v2/heiligen-feesten-vasten-periodes-feest-vastenvrij-nieuw.ics"
+    ]
+    alleen_grote_met_heiligen = AgendaSpec(feesten=frozenset({"grote"}))
+    assert not publish_feed_spec(alleen_grote_met_heiligen)
+    alleen_grote = AgendaSpec(
+        heiligen=frozenset(),
+        feesten=frozenset({"grote"}),
+        vasten=frozenset(),
+        vastenvrij=False,
+    )
+    assert publish_feed_spec(alleen_grote)
 
 
 def test_sunset_ics_herinnert_aan_agenda() -> None:

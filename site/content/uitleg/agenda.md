@@ -2,7 +2,7 @@
 title: "Agenda"
 description: "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of abonneren"
 uitleg_stijl: agenda
-git_date: 2026-08-31
+git_date: 2026-09-01
 ---
 
 De pagina [Agenda]({{% ref "/agenda" %}}) is bedoeld om de kerkelijke
@@ -15,15 +15,19 @@ op de [jaarkalender]({{% ref "/kalender" %}}) (popup met link).
 
 Op die pagina doet u drie keuzes:
 
-1. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
-   vastenvrij — één of meer. Onder Heiligen, Feesten en Vasten staan
-   extra vinkjes (opgenomen / nader onderzoek / kandidaat; groepen
-   feesten; woensdag-en-vrijdag, periodes, feestdagen met vasten).
-2. **Nieuwe of oude kalender**, zoals uw parochie viert — of **oud, heiligen
-   nieuw**: vaste feesten op de oude kalender, heiligen van de Lage Landen
-   op de burgerlijke feestdatum. Zie
+1. **Abonneren** of **downloaden**. Bij abonneren zijn sommige extra
+   vinkjes grijs: die mix heeft geen vaste agenda-link. Bij downloaden
+   mag elke mix (een eenmalig bestand).
+2. **Nieuwe of oude kalender** — of **oud, heiligen nieuw**: vaste feesten
+   op de oude kalender, heiligen van de Lage Landen op de burgerlijke
+   feestdatum. Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
-3. **Abonneren** of **downloaden**.
+3. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
+   vastenvrij — één of meer. Onder Heiligen, Feesten en Vasten staan
+   extra vinkjes (opgenomen / nader onderzoek / kandidaat; grote en overige
+   feesten plus voorfeest/nafeest/synaxis; woensdag/vrijdag, periodes,
+   feestdagen met vasten). Daaronder ziet u hoe de keuze in een week
+   uitpakt.
 
 **Vasten** in die keuze betekent vasten (streng, wijn en olie, vis,
 lichter). **Vastenvrij** is de uitzondering: dagen die de Kerk
@@ -43,7 +47,9 @@ Downloaden slaat een bestand op voor dit moment; nieuwe heiligen of
 feesten komen daar **niet** vanzelf in.
 
 Eén abonnement is één kleur. Wilt u vasten een eigen kleur geven, vink dan
-alleen Vasten aan, abonneer, en herhaal voor Feesten of Heiligen.
+alleen Vasten aan, kopieer de link, en herhaal voor Feesten of Heiligen.
+Elke set vinkjes is één agenda-link; een tweede agenda haalt u op met
+andere vinkjes.
 
 ## Wat u in de agenda ziet
 
@@ -88,3 +94,4 @@ altijd voor.
 
 Bestandsnamen van de feeds en hoe ze worden gebouwd, staan op de
 [technische pagina bij deze uitleg]({{% ref "/uitleg/agenda-technisch" %}}).
+

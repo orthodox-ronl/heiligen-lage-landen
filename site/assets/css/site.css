@@ -1479,12 +1479,18 @@ main.main > :is(article, section) > h1 {
 .agenda-stappen h2 {
   font-family: var(--serif);
   font-size: 1.2rem;
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.7rem;
 }
 
 .agenda-stappen h2::before {
   content: counter(agenda-stap) ". ";
   color: var(--gold-soft);
+}
+
+.agenda-stappen h2 .info-term {
+  font: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 .agenda-stappen p {
@@ -1501,12 +1507,25 @@ main.main > :is(article, section) > h1 {
   margin: 0 0 0.85rem;
 }
 
-.agenda-voorbeeld {
+.agenda-voorbeelden {
+  display: grid;
+  gap: 1.25rem;
   margin: 0 0 1.75rem;
+}
+
+.agenda-voorbeeld {
+  margin: 0;
   padding: 1rem 1.15rem 1.15rem;
   background: var(--bg-elev);
   border: 1px solid var(--line);
   border-radius: 0.4rem;
+}
+
+@media (min-width: 48rem) {
+  .agenda-voorbeelden:has(#ics-voorbeeld-rijk:not([hidden])) {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 }
 
 .agenda-voorbeeld h2 {
@@ -2045,6 +2064,15 @@ button.button {
   font: inherit;
   font-weight: inherit;
   color: inherit;
+}
+
+.chip-ics-unavailable {
+  opacity: 0.55;
+  cursor: help;
+}
+
+.chip-ics-unavailable input {
+  cursor: not-allowed;
 }
 
 .letter-btn {
