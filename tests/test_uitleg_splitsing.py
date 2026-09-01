@@ -284,7 +284,7 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     )
     assert "Eén abonnement is één kleur" not in intro
     assert "ics-tip-apart" in layout
-    assert "één kleur in uw app" in layout
+    assert "voor elke agenda-link één kleur" in layout
     assert "Open in Apple Agenda" in layout
     assert "function icsDayTitle" in js
     assert "function findIllustratieveAgendaWeek" in js
