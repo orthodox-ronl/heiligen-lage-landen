@@ -94,11 +94,11 @@ def test_schema_bronlaag_geen_stub() -> None:
 
 def test_lege_dag_linkt_naar_uitleg_heiligen() -> None:
     js = (SITE / "assets" / "js" / "calendar.js").read_text(encoding="utf-8")
-    assert "Waarom niet iedere heilige hier staat" in js
+    assert "Geen feest/gedachtenis van een Heilige van de Lage Landen" in js
     assert "today-geen-heilige" in js
     assert "today-heiligen-koor" in js
     assert "zondag-heiligen-lage-landen" in js
-    assert 'achtergrondLink(' in js
+    assert "achtergrondLink(" in js
     assert '"heiligen"' in js
 
 
