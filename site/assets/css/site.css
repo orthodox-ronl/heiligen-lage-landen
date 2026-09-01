@@ -2041,6 +2041,12 @@ button.button {
   padding: 0.22rem 0.6rem;
 }
 
+.chip .info-term {
+  font: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 .letter-btn {
   appearance: none;
   border: 1px solid var(--line);

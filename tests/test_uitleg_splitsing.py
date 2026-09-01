@@ -266,8 +266,14 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     assert "Kopieer de agenda-link" in layout
     assert "Download de kalender" in layout
     assert "ics-voorbeeld-week" in layout
+    assert "ics-voorbeeld-week-rijk" in layout
+    assert "Wat u aanklikt" in layout
+    assert "U mag één of meer" not in layout
+    assert 'data-info-tip="agenda-opgenomen"' in layout
     assert "Open in Apple Agenda" in layout
     assert "function icsDayTitle" in js
+    assert "function findIllustratieveAgendaWeek" in js
+    assert "function agendaChipPopover" in js
     assert "ics-all-links" not in js
     assert "heiligen-feesten-nieuw" not in js
 

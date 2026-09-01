@@ -11,7 +11,7 @@ U kiest eerst **wat** u wilt zien (heiligen van de Lage Landen, feesten,
 vasten, vastenvrij; extra vinkjes onder Heiligen, Feesten en Vasten)
 en of dat bij de **nieuwe** of de **oude** kalender hoort.
 **Vasten** is vasten; **vastenvrij** is de uitzondering (zoals de Lichte Week).
-Daaronder ziet u een voorbeeldweek: zo komt een dag in uw agenda te staan.
+Daaronder ziet u voorbeeldweken: zo komt een dag in uw agenda te staan.
 Daarna kiest u hoe u de kalender wilt hebben:
 
 - **Abonneren** — een koppeling. Nieuwe dagen komen vanzelf mee. Dit is wat

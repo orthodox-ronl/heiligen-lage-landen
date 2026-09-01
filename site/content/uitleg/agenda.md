@@ -34,7 +34,8 @@ over eten. Vinkt u alleen Vasten aan, dan komen de vrije dagen niet in de
 agenda; vinkt u Vastenvrij aan, dan wel, met een kort label
 *vastenvrij* in de titel.
 
-Onder de keuzes staat een **voorbeeldweek**: de titel die u in de
+Onder de keuzes staan voorbeeldweken: eerst deze week, en als het zinvol
+is een latere week waarin uw keuze meer laat zien. De titel is wat u in de
 maandweergave van uw app zult zien. De knop daaronder verandert mee.
 Abonneren kopieert een link die u in de agenda-app plakt; de app blijft
 dan vanzelf bijgewerkt. Op Apple kunt u de agenda ook direct openen.

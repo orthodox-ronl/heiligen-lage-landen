@@ -101,6 +101,93 @@
     return `(${achtergrondLink(id, "meer uitleg")})`;
   }
 
+  function agendaChipPopover(kind) {
+    const tips = {
+      "agenda-heiligen": {
+        uitleg: "heiligen",
+        html:
+          "Heiligen van de Lage Landen: wie hier heeft gewerkt, of na het " +
+          "schisma de Orthodoxie hier heeft opgebouwd. Niet iedere heilige " +
+          "van de universele Kerk.",
+      },
+      "agenda-opgenomen": {
+        uitleg: "heiligen",
+        html:
+          "Namen die in deze kalender horen. U ziet hen ook op de " +
+          "datumpagina, in het Synaxarion en in de jaarkalender.",
+      },
+      "agenda-nader": {
+        uitleg: "heiligen",
+        html:
+          "Namen die we nog toetsen. Ze staan in het heiligenoverzicht " +
+          "onder Nader onderzoek, niet op de jaarkalender of de datumpagina.",
+      },
+      "agenda-kandidaat": {
+        uitleg: "heiligen",
+        html:
+          "Namen die waarschijnlijk niet blijven. Alleen in het " +
+          "heiligenoverzicht (groep Kandidaat), niet op jaarkalender, " +
+          "datumpagina of Synaxarion. In de agenda alleen als u dit aanvinkt.",
+      },
+      "agenda-feesten": {
+        uitleg: "feesten",
+        html:
+          "Vaste feesten van de jaar- en paascyclus. Onder dit vinkje " +
+          "kiest u of de grote feesten, de overige, en voorfeest, nafeest " +
+          "en synaxis meegaan.",
+      },
+      "agenda-grote": {
+        uitleg: "feesten",
+        html:
+          "De twaalf grote feesten, met Pascha daarboven. Die dagen " +
+          "krijgen in de agenda-titel voorrang.",
+      },
+      "agenda-overige": {
+        uitleg: "feesten",
+        html:
+          "Andere feesten van de Heer, de Moeder Gods, apostelen en " +
+          "overige feestdagen — niet de twaalf grote.",
+      },
+      "agenda-omlijsting": {
+        uitleg: "feesten",
+        html:
+          "Voorfeest, nafeest, synaxis en teruggave rond een groot feest.",
+      },
+      "agenda-vasten": {
+        uitleg: "vasten",
+        html:
+          "Dagen met een vastenregel (streng, wijn en olie, vis, lichter). " +
+          "Niet hetzelfde als vastenvrij.",
+      },
+      "agenda-week": {
+        uitleg: "vasten",
+        html:
+          "Het wekelijkse woensdag- en vrijdagvasten, tenzij een periode " +
+          "of feestdag het uitzet.",
+      },
+      "agenda-periodes": {
+        uitleg: "vasten",
+        html:
+          "De vastenperiodes, zoals de Grote Vasten, het Apostelvasten, " +
+          "het Geboortevasten en het Ontslapen-vasten.",
+      },
+      "agenda-feestvasten": {
+        uitleg: "vasten",
+        html:
+          "Feestdagen waarop de Kerk vasten houdt, bijvoorbeeld de " +
+          "Onthoofding van Johannes de Doper.",
+      },
+      "agenda-vastenvrij": {
+        uitleg: "vasten",
+        html:
+          "Dagen waarop de Kerk het vasten uitdrukkelijk uitzet, zoals de " +
+          "Lichte Week of Kerst. Een gewone dinsdag zonder regel is geen " +
+          "vastenvrij.",
+      },
+    };
+    return tips[kind] || null;
+  }
+
   function setPaginaTitelTrigger(heading, tip, text) {
     if (!heading) return;
     heading.innerHTML =
@@ -1406,6 +1493,17 @@
         `naam of plaats, kiest Opgenomen of Alles, en sorteert op naam, ` +
         `datum of plaats. De kaart van plaatsen zit achter de balk onder ` +
         `het zoeken. ${meerUitlegHtml("heiligen")}</p>`;
+      if (meer) {
+        meer.hidden = true;
+        meer.innerHTML = "";
+      }
+      return;
+    }
+    const agendaChip = agendaChipPopover(kind);
+    if (agendaChip) {
+      setPopoverTitleVisible(title, dlg, false);
+      body.innerHTML =
+        `<p>${agendaChip.html} ${meerUitlegHtml(agendaChip.uitleg)}</p>`;
       if (meer) {
         meer.hidden = true;
         meer.innerHTML = "";
@@ -3836,50 +3934,182 @@
     return x;
   }
 
-  function renderAgendaVoorbeeld(spec, stijl) {
-    const list = document.getElementById("ics-voorbeeld-week");
-    if (!list) return;
-    try {
-    const shows = specKinds(spec);
-    if (!shows.length) {
-      list.innerHTML =
-        "<li class=\"muted\">Kies minstens één soort dag.</li>";
-      return;
-    }
+  function agendaDayContext(spec, stijl, d) {
     const yearStyle = icsJaarStyle(stijl);
-    const start = startOfIsoWeek(new Date());
+    const year = d.getFullYear();
+    const mmdd = mmddFromDate(d);
+    const matched = entriesForAgendaDay(mmdd, year, stijl);
+    const weekday = isoWeekdayFromMmdd(mmdd, year);
+    const title = icsDayTitle(
+      matched,
+      spec,
+      weekday,
+      mmdd,
+      year,
+      yearStyle
+    );
+    const shown = displayAgendaEntries(matched, spec);
+    const mixSrc = mixAgendaEntries(matched, spec);
+    let mixMmdd = mmdd;
+    if (yearStyle === "juliaans") {
+      mixMmdd = mmddFromDate(civilToLiturgical(year, mmdd));
+    }
+    const vasten = mixVastenniveau(mixSrc, weekday, mixMmdd);
+    return { d, year, mmdd, weekday, yearStyle, title, shown, vasten };
+  }
+
+  function agendaWeekStats(spec, stijl, monday) {
+    const stats = {
+      saints: 0,
+      feesten: 0,
+      groot: 0,
+      vasten: 0,
+      periodVasten: 0,
+      vrij: 0,
+      nonempty: 0,
+    };
+    for (let i = 0; i < 7; i++) {
+      const ctx = agendaDayContext(spec, stijl, addDays(monday, i));
+      if (ctx.title) stats.nonempty += 1;
+      if (ctx.shown.some((e) => e.soort === "heilige")) stats.saints += 1;
+      const feestShown = ctx.shown.filter((e) => e.soort === "feest");
+      if (feestShown.length) {
+        stats.feesten += 1;
+        if (feestShown.some(isGrootfeest)) stats.groot += 1;
+      }
+      if (ctx.vasten) {
+        if (ctx.vasten.niveau === "vrij") stats.vrij += 1;
+        else {
+          stats.vasten += 1;
+          if (ctx.vasten.periode) stats.periodVasten += 1;
+        }
+      }
+    }
+    return stats;
+  }
+
+  function agendaWeekCovered(stats, spec) {
+    let n = 0;
+    if (spec.heiligen.length && stats.saints) n += 1;
+    if (spec.feesten.length && stats.feesten) n += 1;
+    if (spec.vasten.includes("periodes") && stats.periodVasten) n += 1;
+    else if (spec.vasten.length && stats.vasten) n += 1;
+    if (spec.vastenvrij && stats.vrij) n += 1;
+    return n;
+  }
+
+  function scoreAgendaWeek(stats, spec) {
+    let s = agendaWeekCovered(stats, spec) * 60;
+    if (spec.heiligen.length && stats.saints) s += 100 + stats.saints * 12;
+    if (spec.feesten.length && stats.feesten) {
+      s += 100 + stats.feesten * 12 + stats.groot * 25;
+    }
+    if (spec.vasten.includes("periodes") && stats.periodVasten) {
+      s += 80 + stats.periodVasten * 10;
+    } else if (spec.vasten.length && stats.vasten) {
+      s += 12;
+    }
+    if (spec.vastenvrij && stats.vrij) s += 70 + stats.vrij * 12;
+    s += stats.nonempty;
+    return s;
+  }
+
+  function agendaWeekWantedRich(spec) {
+    let n = 0;
+    if (spec.heiligen.length) n += 1;
+    if (spec.feesten.length) n += 1;
+    if (spec.vastenvrij) n += 1;
+    if (spec.vasten.includes("periodes") || spec.vasten.includes("feest")) {
+      n += 1;
+    }
+    return n;
+  }
+
+  function findIllustratieveAgendaWeek(spec, stijl, currentMonday) {
+    if (!agendaWeekWantedRich(spec)) return null;
+    const wantSaint = spec.heiligen.length > 0;
+    const wantFeast = spec.feesten.length > 0;
+    const passes = [
+      (st) => (!wantSaint || st.saints) && (!wantFeast || st.feesten),
+      (st) => !wantSaint || st.saints,
+      (st) => !wantFeast || st.feesten,
+      (st) => st.nonempty >= 3,
+    ];
+    for (const ok of passes) {
+      for (let w = 1; w <= 80; w++) {
+        const monday = addDays(currentMonday, w * 7);
+        const stats = agendaWeekStats(spec, stijl, monday);
+        if (!ok(stats)) continue;
+        return { monday, score: scoreAgendaWeek(stats, spec), stats };
+      }
+    }
+    return null;
+  }
+
+  function agendaVoorbeeldWeekHtml(spec, stijl, monday) {
     const days = ["ma", "di", "wo", "do", "vr", "za", "zo"];
     const items = [];
     for (let i = 0; i < 7; i++) {
-      const d = addDays(start, i);
-      const year = d.getFullYear();
-      const mmdd = mmddFromDate(d);
-      const matched = entriesForAgendaDay(mmdd, year, stijl);
-      const weekday = isoWeekdayFromMmdd(mmdd, year);
-      const title = icsDayTitle(
-        matched,
-        spec,
-        weekday,
-        mmdd,
-        year,
-        yearStyle
-      );
+      const d = addDays(monday, i);
+      const ctx = agendaDayContext(spec, stijl, d);
       const dag = `${days[i]} ${d.getDate()} ${MONTHS[d.getMonth() + 1]}`;
-      const tekst = title
-        ? escapeHtml(title)
+      const tekst = ctx.title
+        ? escapeHtml(ctx.title)
         : "<span class=\"muted\">niets op deze dag</span>";
-      const href = daySurfaceHref(year, mmdd, yearStyle, { bindStyle: true });
+      const href = daySurfaceHref(ctx.year, ctx.mmdd, ctx.yearStyle, {
+        bindStyle: true,
+      });
       items.push(
         `<li><a class="agenda-voorbeeld-link" href="${href}">` +
           `<span class="agenda-voorbeeld-dag">${escapeHtml(dag)}</span>` +
           `<span class="agenda-voorbeeld-titel">${tekst}</span></a></li>`
       );
     }
-    list.innerHTML = items.join("");
+    return items.join("");
+  }
+
+  function weekVanKop(monday) {
+    const dag = monday.getDate();
+    const maand = MONTHS[monday.getMonth() + 1];
+    const jaar = monday.getFullYear();
+    const nu = new Date();
+    if (jaar === nu.getFullYear()) return `week van ${dag} ${maand}`;
+    return `week van ${dag} ${maand} ${jaar}`;
+  }
+
+  function renderAgendaVoorbeeld(spec, stijl) {
+    const list = document.getElementById("ics-voorbeeld-week");
+    const rijkWrap = document.getElementById("ics-voorbeeld-rijk");
+    const rijkList = document.getElementById("ics-voorbeeld-week-rijk");
+    const rijkKop = document.getElementById("ics-voorbeeld-rijk-kop");
+    if (!list) return;
+    try {
+      const shows = specKinds(spec);
+      if (!shows.length) {
+        list.innerHTML =
+          "<li class=\"muted\">Kies minstens één soort dag.</li>";
+        if (rijkWrap) rijkWrap.hidden = true;
+        return;
+      }
+      const currentMonday = startOfIsoWeek(new Date());
+      list.innerHTML = agendaVoorbeeldWeekHtml(spec, stijl, currentMonday);
+      const extra = findIllustratieveAgendaWeek(spec, stijl, currentMonday);
+      if (rijkWrap && rijkList && rijkKop && extra) {
+        rijkKop.textContent = `Zo ziet de ${weekVanKop(extra.monday)} eruit`;
+        rijkList.innerHTML = agendaVoorbeeldWeekHtml(
+          spec,
+          stijl,
+          extra.monday
+        );
+        rijkWrap.hidden = false;
+      } else if (rijkWrap) {
+        rijkWrap.hidden = true;
+      }
     } catch (err) {
       list.innerHTML =
         `<li class="muted">Kon het voorbeeld niet tekenen. ` +
         `${escapeHtml(String(err && err.message ? err.message : err))}</li>`;
+      if (rijkWrap) rijkWrap.hidden = true;
     }
   }
 

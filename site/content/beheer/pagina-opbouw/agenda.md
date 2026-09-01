@@ -24,7 +24,9 @@ beheer-generate-uitleg.
 vinkjes: opgenomen (default aan), nader onderzoek en kandidaat (default
 uit); feestgroepen grote / overige / omlijsting (default aan); vasten
 wo/vr, periodes, feestdagen met vasten (default aan). Kandidaat niet op
-jaarkalender of datumpagina.
+jaarkalender of datumpagina. Korte zin: wat u aanklikt komt in de agenda.
+Popover op de chiptekst (geen kop; `(meer uitleg)` naar heiligen, feesten
+of vasten). Het vinkje zelf blijft aanklikbaar.
 
 **Niet:** universeel menologion als optie.
 
@@ -45,12 +47,15 @@ momentopname.
 
 ## Voorbeeldweek
 
-**Wel:** hoe een dag in de app-titel oogt (grootfeest, heilige van hier,
-weeknaam op maandag); vasten of vastenvrij als kort label als aangevinkt
-én als er die dag een regel is. Geen vastenlabel als er geen regel is.
+**Wel:** twee blokken. Eerst **deze week** (ISO-maandag tot zondag).
+Daarna, als de keuze daar aanleiding toe geeft, een tweede week
+(`Zo ziet de week van … eruit`) later in het jaar, waarin heilige, feest,
+vastenperiode of vastenvrij zichtbaar is al naar gelang de vinkjes.
+Titel = app-titel; vastenlabel alleen als aangevinkt én er die dag een
+regel is.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
-titellogica.
+titellogica; de tweede week tonen als die niet rijker is dan deze week.
 
 ## Actie en how-to per app
 
