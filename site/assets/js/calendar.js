@@ -1556,8 +1556,6 @@
       setPopoverTitleVisible(title, dlg, false);
       body.innerHTML =
         `<p>Nieuw: Kerst op 25 december. Oud: Kerst op 7 januari. ` +
-        `<em>Oud, heiligen nieuw</em> houdt de oude feestdagen, maar zet ` +
-        `heiligen van de Lage Landen op de burgerlijke datum. ` +
         `${meerUitlegHtml("nieuw-oud")}</p>`;
       if (meer) {
         meer.hidden = true;
@@ -3835,16 +3833,6 @@
     return "vasten-" + bits.join("-");
   }
 
-  function stijlBestandsdeel(spec, stijl) {
-    const kinds = specKinds(spec);
-    if (stijl === "oud-heiligen-nieuw") {
-      if (!kinds.includes("heilige")) return "oud";
-      if (kinds.length === 1) return "nieuw";
-      return "oud-heiligen-nieuw";
-    }
-    return stijl;
-  }
-
   function feedKey(spec) {
     const kinds = specKinds(spec);
     if (!kinds.length) return null;
@@ -3947,7 +3935,7 @@
 
   function buildAgendaIcs(spec, stijl) {
     const key = feedKey(spec) || "agenda";
-    const part = stijlBestandsdeel(spec, stijl);
+    const part = stijl;
     const now = new Date();
     const stamp =
       now.getUTCFullYear() +
@@ -4027,8 +4015,7 @@
   function icsFeedRelpaths(spec, stijl) {
     const key = feedKey(spec);
     if (!key) return [];
-    const part = stijlBestandsdeel(spec, stijl);
-    return [`v2/${key}-${part}.ics`];
+    return [`v2/${key}-${stijl}.ics`];
   }
 
   function displayAgendaEntries(dayEntries, spec) {
@@ -4188,7 +4175,12 @@
     const yearStyle = icsJaarStyle(stijl);
     const year = d.getFullYear();
     const mmdd = mmddFromDate(d);
-    const matched = entriesForAgendaDay(mmdd, year, stijl);
+    const matched = entriesOnMmdd(
+      calendarEntries || [],
+      mmdd,
+      icsJaarStyle(stijl),
+      year
+    );
     const weekday = isoWeekdayFromMmdd(mmdd, year);
     const title = icsDayTitle(
       matched,
@@ -4367,24 +4359,6 @@
     return stijl === "nieuw" ? "gregoriaans" : "juliaans";
   }
 
-  function entriesForAgendaDay(mmdd, year, icsStijl) {
-    const all = calendarEntries || [];
-    if (icsStijl === "oud-heiligen-nieuw") {
-      const saints = all.filter(
-        (e) =>
-          e.soort === "heilige" &&
-          entryMatchesMmdd(e, mmdd, year, "gregoriaans", all)
-      );
-      const rest = all.filter(
-        (e) =>
-          e.soort !== "heilige" &&
-          entryMatchesMmdd(e, mmdd, year, "juliaans", all)
-      );
-      return rest.concat(saints);
-    }
-    return entriesOnMmdd(all, mmdd, icsJaarStyle(icsStijl), year);
-  }
-
   function webcalUrl(httpsUrl) {
     return httpsUrl.replace(/^https:/i, "webcal:");
   }
@@ -4439,14 +4413,6 @@
         "één soort aan (alleen Heiligen, alleen Feesten of alleen Vasten) en kopieer " +
         "dan een tweede link."
       );
-    }
-    if (stijl === "oud-heiligen-nieuw") {
-      const mixed =
-        "de oude kalender voor feesten en vasten, heiligen op de nieuwe datum";
-      if (modus === "downloaden") {
-        return `De knop downloadt ${wat} volgens ${mixed} als bestand.`;
-      }
-      return `De knop kopieert de link voor ${wat} volgens ${mixed}. Plak die in uw agenda-app; de stappen staan hieronder.`;
     }
     const kal =
       stijl === "oud" ? "de oude kalender" : "de nieuwe kalender";
@@ -4523,11 +4489,9 @@
     const howtoAbo = document.getElementById("ics-howto-abonneren");
     const howtoDl = document.getElementById("ics-howto-downloaden");
     const webcal = document.getElementById("ics-webcal");
-    const mixedHint = document.getElementById("ics-stijl-hint-mixed");
     const tipApart = document.getElementById("ics-tip-apart");
 
     renderAgendaVoorbeeld(spec, stijl);
-    if (mixedHint) mixedHint.hidden = stijl !== "oud-heiligen-nieuw";
     if (tipApart) tipApart.hidden = modus !== "abonneren";
 
     if (samenvatting) {

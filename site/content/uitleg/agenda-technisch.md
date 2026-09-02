@@ -5,7 +5,7 @@ uitleg_stijl: agenda-technisch
 build:
   list: never
   render: always
-git_date: 2026-08-31
+git_date: 2026-09-02
 ---
 
 Technische bijlage bij de [uitleg Agenda]({{% ref "/uitleg/agenda" %}}).
@@ -48,10 +48,12 @@ kruiscombinaties van extra vinkjes onder Feesten of Vasten mét andere
 hoofdssoorten worden niet als extra bestand gebouwd; de pagina maakt
 die vinkjes bij abonneren grijs.
 
-`stijl` is `nieuw`, `oud`, of bij heiligen plus minstens één andere soort
-`oud-heiligen-nieuw`. De agendapagina bouwt de knop uit de keuzes van de
+`stijl` is `nieuw` of `oud`. De agendapagina bouwt de knop uit de keuzes van de
 bezoeker. Geen lijst van alle feeds op de pagina.
 UI: `site/layouts/_default/agenda.html` en `calendar.js`.
+
+Oude `oud-heiligen-nieuw`-feeds (v2 én paden zonder `v2/`) zijn tombstones
+naar `/agenda/`.
 
 Vasten in de feed zijn dagen met een vastenniveau anders dan `vrij`,
 gefilterd op de aangevinkte vastensoorten. Vastenvrij is alleen
@@ -97,8 +99,6 @@ die subfilter aan staat.
 - **oud:** vaste feesten op Juliaanse feestdatum → burgerlijke vierdatum;
   paascyclus ongewijzigd; Juliaanse dagnaam in de `DESCRIPTION`, niet in
   de titel.
-- **oud-heiligen-nieuw:** zelfde als oud voor feesten, vasten en lezingen;
-  heiligen op de Gregoriaanse feestdatum.
 - Wekelijks vasten: burgerlijke weekdag, in beide stijlen. In een
   vastenperiode wint de periode in `mix_vastenniveau`; staat **periodes**
   uit en **woensdag en vrijdag** aan, dan telt weer het wekelijkse vasten.

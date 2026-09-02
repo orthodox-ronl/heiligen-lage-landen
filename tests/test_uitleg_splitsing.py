@@ -262,6 +262,8 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     js = (ROOT / "site" / "assets" / "js" / "calendar.js").read_text(encoding="utf-8")
     assert "ics-all-links" not in layout
     assert "Alle vaste feeds" not in layout
+    assert "oud-heiligen-nieuw" not in layout
+    assert "oud-heiligen-nieuw" not in js
     assert 'name="ics-modus"' in layout
     assert "Kopieer de agenda-link" in layout
     assert "Download de kalender" in layout

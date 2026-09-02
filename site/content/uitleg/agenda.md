@@ -2,7 +2,7 @@
 title: "Agenda"
 description: "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of abonneren"
 uitleg_stijl: agenda
-git_date: 2026-09-01
+git_date: 2026-09-02
 ---
 
 De pagina [Agenda]({{% ref "/agenda" %}}) is bedoeld om de kerkelijke
@@ -18,9 +18,7 @@ Op die pagina doet u drie keuzes:
 1. **Abonneren** of **downloaden**. Bij abonneren zijn sommige extra
    vinkjes grijs: die mix heeft geen vaste agenda-link. Bij downloaden
    mag elke mix (een eenmalig bestand).
-2. **Nieuwe of oude kalender** — of **oud, heiligen nieuw**: vaste feesten
-   op de oude kalender, heiligen van de Lage Landen op de burgerlijke
-   feestdatum. Zie
+2. **Nieuwe of oude kalender.** Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 3. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
    vastenvrij — één of meer. Onder Heiligen, Feesten en Vasten staan
@@ -70,10 +68,6 @@ Onderaan staat *Meer:* met de datumpagina.
 - Bij **oud** vallen ze op de burgerlijke dag waarop de oude kalender viert
   (Kerst op 7 januari). De oude feestdatum staat in de tekst van de
   afspraak, niet in de titel.
-- Bij **oud, heiligen nieuw** vallen vaste feesten zoals bij oud; heiligen
-  van de Lage Landen vallen op de burgerlijke feestdatum (Willibrord op
-  7 november, niet op 20 november). Lezingen en vasten volgen de oude
-  kalender.
 - Woensdag- en vrijdagvasten volgen de gewone week: het is de woensdag of
   vrijdag van de burgerlijke week, in beide standen.
 

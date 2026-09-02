@@ -306,19 +306,16 @@ def test_otger_plechelm_op_vijftien_juli() -> None:
     assert "Plechelm" in ev["summary"]
 
 
-def test_oud_heiligen_nieuw_willibrord_op_zeven_november() -> None:
-    from ics import STIJL_OUD_HEILIGEN_NIEUW
+def test_geen_oud_heiligen_nieuw_als_live_feed() -> None:
+    from ics import STIJL_OUD_HEILIGEN_NIEUW, old_ics_filenames, sunset_mixed_v2_filenames
 
-    events = parse_events(_build(ALLES, stijl=STIJL_OUD_HEILIGEN_NIEUW))
-    assert "Willibrord" in events["20261107"]["summary"]
-    assert "20261120" not in events or "Willibrord" not in events.get(
-        "20261120", {}
-    ).get("summary", "")
-    kerst = julian_feast_to_civil_date(2025, "12-25")
-    assert kerst == date(2026, 1, 7)
-    assert "Kerst" in events[kerst.strftime("%Y%m%d")]["summary"]
-    ics = _build(ALLES, stijl=STIJL_OUD_HEILIGEN_NIEUW)
-    assert "heiligen nieuw" in _unfold(ics)
+    names = [name for name, _stijl, _spec in _v2_feed_jobs()]
+    assert all(STIJL_OUD_HEILIGEN_NIEUW not in n for n in names)
+    assert any(STIJL_OUD_HEILIGEN_NIEUW in n for n in old_ics_filenames())
+    mixed_v2 = sunset_mixed_v2_filenames()
+    assert mixed_v2
+    assert "alles-oud-heiligen-nieuw.ics" in mixed_v2
+    assert all(n.endswith(f"-{STIJL_OUD_HEILIGEN_NIEUW}.ics") for n in mixed_v2)
 
 
 def test_v2_relpaths_een_feed_per_keuze() -> None:

@@ -1,7 +1,7 @@
 ---
 title: "Agenda"
 description: "Contract: kalender op telefoon of computer"
-git_date: 2026-08-21
+git_date: 2026-09-02
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -44,9 +44,7 @@ doosje.
 
 ## Stap 2: Nieuw of oud
 
-**Wel:** Nieuw; Oud; en **Oud, heiligen nieuw** (vaste feesten en vasten
-op de oude kalender, heiligen van de Lage Landen op de burgerlijke
-feestdatum). Compacte popover op de staptitel, met
+**Wel:** Nieuw of Oud. Compacte popover op de staptitel, met
 ([meer uitleg]({{% ref "/uitleg/nieuw-oud" %}})). Geen framing alsof de
 keuze de stand van de parochie moet volgen.
 

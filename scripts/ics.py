@@ -100,22 +100,7 @@ def calendar_name(key: str, stijl: str) -> str:
     else:
         title = key.replace("-", " ")
         title = title[:1].upper() + title[1:]
-    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
-        return f"{title} (oud, heiligen nieuw)"
     return f"{title} ({stijl})"
-
-
-def jaar_stijl(stijl: str) -> str:
-    """Kalenderstijl van feesten, vasten en lezingen."""
-    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
-        return "oud"
-    return stijl
-
-
-def heiligen_stijl_van(stijl: str) -> str:
-    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
-        return "nieuw"
-    return stijl
 
 
 @dataclass(frozen=True)
@@ -204,17 +189,6 @@ def nested_is_default(spec: AgendaSpec) -> bool:
     return True
 
 
-def stijl_bestandsdeel(spec: AgendaSpec, stijl: str) -> str:
-    kinds = spec.kinds()
-    if stijl == STIJL_OUD_HEILIGEN_NIEUW:
-        if "heilige" not in kinds:
-            return "oud"
-        if kinds == frozenset({"heilige"}):
-            return "nieuw"
-        return STIJL_OUD_HEILIGEN_NIEUW
-    return stijl
-
-
 def feed_key(spec: AgendaSpec) -> str | None:
     """Bestandsstem van één v2-feed voor dit setje vinkjes."""
     kinds = spec.kinds()
@@ -242,8 +216,7 @@ def v2_relpaths(spec: AgendaSpec, stijl: str) -> list[str]:
     key = feed_key(spec)
     if not key:
         return []
-    part = stijl_bestandsdeel(spec, stijl)
-    return [f"{ICS_V2_DIR}/{key}-{part}.ics"]
+    return [f"{ICS_V2_DIR}/{key}-{stijl}.ics"]
 
 
 FEEST_ZONDER_OMLIJSTING = DEFAULT_FEESTEN - {"omlijsting"}
@@ -301,14 +274,6 @@ def iter_agenda_specs() -> Iterator[AgendaSpec]:
                         yield spec
 
 
-def stijlen_voor_spec(spec: AgendaSpec) -> tuple[str, ...]:
-    stijlen = ["nieuw", "oud"]
-    kinds = spec.kinds()
-    if "heilige" in kinds and kinds - {"heilige"}:
-        stijlen.append(STIJL_OUD_HEILIGEN_NIEUW)
-    return tuple(stijlen)
-
-
 def sunset_dates(today: date | None = None) -> list[date]:
     today = today or date.today()
     out = {today, today + timedelta(days=7), today + timedelta(days=30)}
@@ -332,11 +297,31 @@ def old_ics_filenames() -> list[str]:
     return names
 
 
+def sunset_mixed_v2_filenames() -> list[str]:
+    """v2-feeds die 'oud, heiligen nieuw' waren; nu tombstone."""
+    names: list[str] = []
+    seen: set[str] = set()
+    for spec in iter_agenda_specs():
+        if not publish_feed_spec(spec):
+            continue
+        kinds = spec.kinds()
+        if "heilige" not in kinds or not (kinds - {"heilige"}):
+            continue
+        key = feed_key(spec)
+        assert key
+        filename = f"{key}-{STIJL_OUD_HEILIGEN_NIEUW}.ics"
+        if filename in seen:
+            continue
+        seen.add(filename)
+        names.append(filename)
+    return names
+
+
 def datum_pagina_url(civil: date, *, stijl: str | None = None) -> str:
     """URL naar de datumpagina; bij oud-feeds stijl=juliaans meegeven."""
     dag = mmdd_from_date(civil)
     url = f"{SITE_PUBLIC_URL}/datum/?datum={civil.year}-{quote(dag)}"
-    year = jaar_stijl(stijl) if stijl else None
+    year = stijl
     if year == "oud":
         url += "&stijl=juliaans"
     elif year == "nieuw":
@@ -467,12 +452,8 @@ def occurrences_by_date(
     entries: list[dict[str, Any]],
     stijl: str,
     years: Iterable[int],
-    *,
-    heiligen_stijl: str | None = None,
 ) -> dict[date, list[dict[str, Any]]]:
     years = list(years)
-    year_stijl = jaar_stijl(stijl)
-    saint_stijl = heiligen_stijl or heiligen_stijl_van(stijl)
     by_date: dict[date, list[dict[str, Any]]] = defaultdict(list)
     weekly: list[dict[str, Any]] = []
     for entry in entries:
@@ -480,15 +461,14 @@ def occurrences_by_date(
             weekly.append(entry)
             continue
         seen: set[date] = set()
-        entry_stijl = saint_stijl if entry.get("soort") == "heilige" else year_stijl
-        for civil in iter_occurrences(entry, entry_stijl, years):
+        for civil in iter_occurrences(entry, stijl, years):
             if civil in seen:
                 continue
             seen.add(civil)
             by_date[civil].append(entry)
     for entry in weekly:
         seen: set[date] = set()
-        for civil in iter_occurrences(entry, year_stijl, years):
+        for civil in iter_occurrences(entry, stijl, years):
             if civil in seen:
                 continue
             seen.add(civil)
@@ -762,7 +742,7 @@ def day_title(
         for e in shown
         if e.get("soort") in {"heilige", "feest"}
     ]
-    year_s = jaar_stijl(stijl)
+    year_s = stijl
     if indicatie is ...:
         indicatie = mix_vastenniveau(
             mix_src,
@@ -910,7 +890,7 @@ def build_ics(
 
         lezingen_payload = build_lezingen_dagen_payload(year_list)
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    year_s = jaar_stijl(stijl)
+    year_s = stijl
     if grouped is None:
         grouped = occurrences_by_date(context, stijl, year_list)
     lines = [
@@ -1029,9 +1009,8 @@ def _v2_feed_jobs() -> list[tuple[str, str, AgendaSpec]]:
             continue
         key = feed_key(spec)
         assert key
-        for stijl in stijlen_voor_spec(spec):
-            part = stijl_bestandsdeel(spec, stijl)
-            filename = f"{key}-{part}.ics"
+        for stijl in ("nieuw", "oud"):
+            filename = f"{key}-{stijl}.ics"
             if filename in seen:
                 continue
             seen.add(filename)
@@ -1058,6 +1037,11 @@ def write_ics(
     grouped_by_stijl: dict[str, dict[date, list[dict[str, Any]]]] = {}
     for name in old_ics_filenames():
         write_text(STATIC_ICS / name, build_sunset_ics(old_filename=name, today=today))
+    for name in sunset_mixed_v2_filenames():
+        write_text(
+            v2_dir / name,
+            build_sunset_ics(old_filename=f"{ICS_V2_DIR}/{name}", today=today),
+        )
     for filename, stijl, spec in _v2_feed_jobs():
         key = feed_key(spec)
         assert key
