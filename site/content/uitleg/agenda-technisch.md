@@ -5,7 +5,7 @@ uitleg_stijl: agenda-technisch
 build:
   list: never
   render: always
-git_date: 2026-09-02
+git_date: 2026-09-05
 ---
 
 Technische bijlage bij de [uitleg Agenda]({{% ref "/uitleg/agenda" %}}).
@@ -79,7 +79,7 @@ Die paden **niet** opnieuw vullen met echte kalenderdagen.
 Eén hele-dag-afspraak per burgerlijke dag die in de subset iets toont.
 `SUMMARY` volgt `day_title` in `scripts/ics.py` (spiegel `icsDayTitle` in
 `calendar.js`): grootfeest, anders heilige van de Lage Landen, anders
-overig feest of `daglabel`. Op maandag (geen grootfeest) komt
+overig feest of `daglabel`. Op maandag zonder grootfeest of heilige komt
 `week_kop_label` vooraan. Vastenlabels komen uit `mix_vastenniveau` in
 `scripts/vasten.py` en staan alleen in `SUMMARY`/`DESCRIPTION` als er
 een regel is én de bijbehorende vasten-subfilter aan staat.

@@ -727,8 +727,9 @@ def day_title(
 ) -> str | None:
     """SUMMARY voor één dag, of None als de feed die dag overslaat.
 
-    Prioriteit: grootfeest, heilige van de Lage Landen, overige feesten/daglabel.
-    Op maandag (geen grootfeest) staat de liturgische week vooraan.
+    Prioriteit: grootfeest, anders heilige van de Lage Landen, anders
+    overige feesten/daglabel. Op maandag zonder grootfeest of heilige
+    staat de liturgische week vooraan.
     """
     from lezingen import week_kop_label
 
@@ -762,10 +763,11 @@ def day_title(
     headline = ""
     if groot:
         headline = kop_titel(groot)
+    elif saints:
+        headline = kop_titel(saints)
     elif civil.isoweekday() == 1 and "feest" in kinds:
         week = week_kop_label(civil)
-        extra = saints or rest
-        extra_t = kop_titel(extra)
+        extra_t = kop_titel(rest)
         if week and extra_t:
             headline = f"{week} · {extra_t}"
         elif week:
@@ -774,8 +776,6 @@ def day_title(
             headline = extra_t
         else:
             headline = daglabel
-    elif saints:
-        headline = kop_titel(saints)
     elif rest:
         headline = kop_titel(rest)
     else:

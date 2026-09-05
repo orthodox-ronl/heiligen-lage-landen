@@ -4141,16 +4141,15 @@
     let headline = "";
     if (groot.length) {
       headline = groot.map(icsNaam).join(", ");
+    } else if (saints.length) {
+      headline = saints.map(icsNaam).join(", ");
     } else if (weekday === 1 && kinds.has("feest")) {
       const week = year && mmdd ? weekKopLabel(year, mmdd) : "";
-      const extra = saints.length ? saints : rest;
-      const extraT = extra.map(icsNaam).join(", ");
+      const extraT = rest.map(icsNaam).join(", ");
       if (week && extraT) headline = `${week} · ${extraT}`;
       else if (week) headline = week;
       else if (extraT) headline = extraT;
       else headline = daglabel;
-    } else if (saints.length) {
-      headline = saints.map(icsNaam).join(", ");
     } else if (rest.length) {
       headline = rest.map(icsNaam).join(", ");
     } else {

@@ -277,13 +277,30 @@ def test_maandag_toont_weeknaam() -> None:
     assert "Medardus" not in ev["summary"]
 
 
+def test_maandag_heilige_wint_van_weeknaam() -> None:
+    saint = {
+        "id": "testheilige",
+        "soort": "heilige",
+        "selectie": "voldoet",
+        "namen": {"primair": "Testheilige"},
+    }
+    title = day_title(
+        [saint],
+        kinds=ALLES,
+        civil=date(2026, 6, 8),
+        stijl="nieuw",
+    )
+    assert title == "Testheilige"
+
+
 def test_nader_onderzoek_opt_in() -> None:
     spec = AgendaSpec(
         heiligen=frozenset({"voldoet", "nader-onderzoek"}),
     )
     events = parse_events(_build(ALLES, spec=spec))
     ev = events["20260608"]
-    assert "Medardus" in ev["summary"]
+    assert ev["summary"].startswith("Medardus")
+    assert "week na Pinksteren" not in ev["summary"]
 
 
 def test_geestesmaandag_niet_weeknaam() -> None:
