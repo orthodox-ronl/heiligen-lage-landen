@@ -1,0 +1,549 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orthodox-ronl//kalender//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Heiligen kandidaat zonder lezingen (oud)
+X-WR-TIMEZONE:UTC
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240309
+DTEND;VALUE=DATE:20240310
+DTSTAMP:20260905T084810Z
+UID:6cd74329-37e8-5eb4-ae59-90c2e4a921a9
+SUMMARY:Walburga (kandidaat) · T6
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nApostel: 1 Kor. 10:23-28\nEva
+ ngelie: Luc. 21:8-9\, 25-27\, 33-36\nHeilige: Walburga (kandidaat)\nMeer: 
+ https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-03-
+ 09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-09&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240319
+DTEND;VALUE=DATE:20240320
+DTSTAMP:20260905T084810Z
+UID:f5a7ca86-d1ae-5cfd-85f9-d5576dd80aa9
+SUMMARY:Fridolin (kandidaat) · T8
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2024-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240921
+DTEND;VALUE=DATE:20240922
+DTSTAMP:20260905T084810Z
+UID:5006e0b3-4e82-5fec-9492-c87a8cfbfcb3
+SUMMARY:Adela van Vlaanderen (kandidaat) · T3
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 4-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241011
+DTEND;VALUE=DATE:20241012
+DTSTAMP:20260905T084810Z
+UID:32bf777a-6d6b-5d27-be4f-3130eccf6fd1
+SUMMARY:Lioba (kandidaat) · T6
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: Ef. 1:7-17\nEvangel
+ ie: Luc. 9:12-18\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-ronl.
+ github.io/heiligen-lage-landen/datum/?datum=2024-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241231
+DTEND;VALUE=DATE:20250101
+DTSTAMP:20260905T084810Z
+UID:0e6237be-a059-5386-8634-ca6188079881
+SUMMARY:Winnibald (kandidaat) · T2
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: 2 Tim. 3:16-4:4\nEva
+ ngelie: Mark. 12:18-27\nHeilige: Winnibald (kandidaat)\nMeer: https://orth
+ odox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-12-31&stijl=jul
+ iaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250310
+DTEND;VALUE=DATE:20250311
+DTSTAMP:20260905T084810Z
+UID:367efb7a-98a8-50cb-8c1b-7f0023797251
+SUMMARY:Walburga (kandidaat) · T4
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Walburga (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2025-03-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250319
+DTEND;VALUE=DATE:20250320
+DTSTAMP:20260905T084810Z
+UID:5f2b60bd-68b0-50b1-a2be-e6f2a3229d0d
+SUMMARY:Fridolin (kandidaat) · T5
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2025-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250921
+DTEND;VALUE=DATE:20250922
+DTSTAMP:20260905T084810Z
+UID:41808ac2-a886-5b6c-a7b7-911e4e318564
+SUMMARY:Adela van Vlaanderen (kandidaat) · T6
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 5-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251011
+DTEND;VALUE=DATE:20251012
+DTSTAMP:20260905T084810Z
+UID:ff1955a3-aa84-56be-89ef-ad1f7134dea7
+SUMMARY:Lioba (kandidaat) · T8
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: 1 Kor. 15:39-45\nEv
+ angelie: Luc. 5:27-32\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2025-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251231
+DTEND;VALUE=DATE:20260101
+DTSTAMP:20260905T084810Z
+UID:3fb1a99b-536f-5f71-a8c6-b31873fbdc7e
+SUMMARY:Winnibald (kandidaat) · T4
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Heb. 10:1-18\nEvange
+ lie: Mark. 8:30-34\nHeilige: Winnibald (kandidaat)\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2025-12-31&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260310
+DTEND;VALUE=DATE:20260311
+DTSTAMP:20260905T084810Z
+UID:48ff6f9b-57f9-5813-b9f5-cba2a17957f7
+SUMMARY:Walburga (kandidaat) · T6
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Walburga (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2026-03-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260320
+DTSTAMP:20260905T084810Z
+UID:869f5bd0-0ed9-580c-8241-1b1d221cfb9c
+SUMMARY:Fridolin (kandidaat) · T7
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2026-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+DTSTAMP:20260905T084810Z
+UID:1d8c79bb-7f68-5dd9-b507-fc8a753ed178
+SUMMARY:Adela van Vlaanderen (kandidaat) · T7
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 6-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+DTSTAMP:20260905T084810Z
+UID:be079d31-5ff5-5783-8e1d-e6b6ce48e35d
+SUMMARY:Lioba (kandidaat) · T2
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: 2 Kor. 11:31-12:9\n
+ Evangelie: Luc. 7:11-16\nHeilige: Lioba (kandidaat)\nMeer: https://orthodo
+ x-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-10-11&stijl=juliaa
+ ns
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20260905T084810Z
+UID:43e924bf-ac31-597a-aa56-3b695e559bcf
+SUMMARY:Winnibald (kandidaat) · T5
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Jak.1:19-27\nEvangel
+ ie: Mark. 10:17-27\nHeilige: Winnibald (kandidaat)\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2026-12-31&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+DTSTAMP:20260905T084810Z
+UID:8d1fbd79-4d6f-5d87-8715-872780700a09
+SUMMARY:Walburga (kandidaat) · T7
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nHeilige: Walburga (kandidaat)
+ \nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=
+ 2027-03-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+DTSTAMP:20260905T084810Z
+UID:feb7c1ba-16ec-54dc-9707-755d08a8481e
+SUMMARY:Fridolin (kandidaat) · T8
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2027-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+DTSTAMP:20260905T084810Z
+UID:4e94fa13-78fd-59ff-936f-6b3a6c358e02
+SUMMARY:Adela van Vlaanderen (kandidaat) · T4
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 7-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+DTSTAMP:20260905T084810Z
+UID:a8c24635-ad2e-58e3-b0b7-488d742dcbf3
+SUMMARY:Lioba (kandidaat) · T7
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: Ef. 1:22-2:3\nEvang
+ elie: Luc. 7:36-50\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2027-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+DTSTAMP:20260905T084810Z
+UID:dec36995-72ec-5558-86f9-282364250678
+SUMMARY:Winnibald (kandidaat) · T2
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Tit. 1:15-2:10\nEvan
+ gelie: Mark. 12:1-12\nHeilige: Winnibald (kandidaat)\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-12-31&stijl=julia
+ ans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280309
+DTEND;VALUE=DATE:20280310
+DTSTAMP:20260905T084810Z
+UID:ec1097e1-8976-56fa-9581-d843333afe20
+SUMMARY:Walburga (kandidaat) · T4
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Walburga (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2028-03-09&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 03-09&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280319
+DTEND;VALUE=DATE:20280320
+DTSTAMP:20260905T084810Z
+UID:110c2e40-7dfb-5dfb-b103-f795d25c0552
+SUMMARY:Fridolin (kandidaat) · T6
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nApostel: Heb. 4:14-5:6\nEvangelie
+ : Mark. 8:34-9:1\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ro
+ nl.github.io/heiligen-lage-landen/datum/?datum=2028-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280921
+DTEND;VALUE=DATE:20280922
+DTSTAMP:20260905T084810Z
+UID:d3619a72-cf47-507e-ba4f-b99057e39eed
+SUMMARY:Adela van Vlaanderen (kandidaat) · T6
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 8-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281011
+DTEND;VALUE=DATE:20281012
+DTSTAMP:20260905T084810Z
+UID:5a95aec3-d426-5662-8b31-728d3d41b18e
+SUMMARY:Lioba (kandidaat) · T1
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: Fil. 1:12-20\nEvang
+ elie: Luc. 8:22-25\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-ron
+ l.github.io/heiligen-lage-landen/datum/?datum=2028-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281231
+DTEND;VALUE=DATE:20290101
+DTSTAMP:20260905T084810Z
+UID:09e5728b-61e6-56ba-aa48-b0fed4dc6559
+SUMMARY:Winnibald (kandidaat) · T5
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Heb. 11:9-10\, 17-23
+ \, 32-40\nEvangelie: Matt. 1:1-25\nHeilige: Winnibald (kandidaat)\nMeer: h
+ ttps://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-12-3
+ 1&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290310
+DTEND;VALUE=DATE:20290311
+DTSTAMP:20260905T084810Z
+UID:33dcffa6-d3c9-5d23-bdc9-50fcc3a10b83
+SUMMARY:Walburga (kandidaat) · T6
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nApostel: Heb. 10:32-38\nEvang
+ elie: Mark. 2:14-17\nHeilige: Walburga (kandidaat)\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2029-03-10&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290319
+DTEND;VALUE=DATE:20290320
+DTSTAMP:20260905T084810Z
+UID:ebb2efb0-cb71-53be-8119-8468bd864747
+SUMMARY:Fridolin (kandidaat) · T8
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2029-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290921
+DTEND;VALUE=DATE:20290922
+DTSTAMP:20260905T084810Z
+UID:7451b93c-7703-51f2-878b-35059c885774
+SUMMARY:Adela van Vlaanderen (kandidaat) · T7
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=202
+ 9-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291011
+DTEND;VALUE=DATE:20291012
+DTSTAMP:20260905T084810Z
+UID:a67fff30-9bc5-5808-b650-322199fa8a63
+SUMMARY:Lioba (kandidaat) · T2
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: Fil. 3:1-8\nEvangel
+ ie: Luc. 9:7-11\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-ronl.g
+ ithub.io/heiligen-lage-landen/datum/?datum=2029-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291231
+DTEND;VALUE=DATE:20300101
+DTSTAMP:20260905T084810Z
+UID:48cb57fe-de7c-5bb1-bbde-a0f976f2dcbb
+SUMMARY:Winnibald (kandidaat) · T6
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Jak.2:14-26\nEvangel
+ ie: Mark. 10:46-52\nHeilige: Winnibald (kandidaat)\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2029-12-31&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300310
+DTEND;VALUE=DATE:20300311
+DTSTAMP:20260905T084810Z
+UID:69af5ae8-38e5-5845-9293-8558c8a0d1da
+SUMMARY:Walburga (kandidaat) · T8
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nApostel: Rom. 13:11-14:4\nEva
+ ngelie: Matt. 6:14-21\nHeilige: Walburga (kandidaat)\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-03-10&stijl=julia
+ ans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300319
+DTEND;VALUE=DATE:20300320
+DTSTAMP:20260905T084810Z
+UID:22d51e0e-d4d2-582f-8fb6-58b0aae9e68f
+SUMMARY:Fridolin (kandidaat) · T1
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2030-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300921
+DTEND;VALUE=DATE:20300922
+DTSTAMP:20260905T084810Z
+UID:010a4aeb-4e87-56bf-ab16-7b8c115f1d38
+SUMMARY:Adela van Vlaanderen (kandidaat) · T4
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=203
+ 0-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301011
+DTEND;VALUE=DATE:20301012
+DTSTAMP:20260905T084810Z
+UID:9c86b34d-673b-5960-85b6-46b95dd5afcd
+SUMMARY:Lioba (kandidaat) · T7
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: Ef. 4:17-25\nEvange
+ lie: Luc. 9:12-18\nHeilige: Lioba (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2030-10-11&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301231
+DTEND;VALUE=DATE:20310101
+DTSTAMP:20260905T084810Z
+UID:ec805397-cbea-52e2-965c-e002c25647e3
+SUMMARY:Winnibald (kandidaat) · T3
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Heb. 4:1-13\nEvangel
+ ie: Mark. 12:18-27\nHeilige: Winnibald (kandidaat)\nMeer: https://orthodox
+ -ronl.github.io/heiligen-lage-landen/datum/?datum=2030-12-31&stijl=juliaan
+ s
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310310
+DTEND;VALUE=DATE:20310311
+DTSTAMP:20260905T084810Z
+UID:3ce52ac8-9a9a-5af6-9f74-69254a180320
+SUMMARY:Walburga (kandidaat) · T5
+DESCRIPTION:Feestdatum: 25 februari Juliaans\nGeen liturgie met Apostel/Eva
+ ngelie van de dag.\nHeilige: Walburga (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2031-03-10&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 03-10&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310319
+DTEND;VALUE=DATE:20310320
+DTSTAMP:20260905T084810Z
+UID:a7d5346e-dba6-5af4-bb48-c73d63821e88
+SUMMARY:Fridolin (kandidaat) · T6
+DESCRIPTION:Feestdatum: 6 maart Juliaans\nGeen liturgie met Apostel/Evangel
+ ie van de dag.\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl
+ .github.io/heiligen-lage-landen/datum/?datum=2031-03-19&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 03-19&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310921
+DTEND;VALUE=DATE:20310922
+DTSTAMP:20260905T084810Z
+UID:aa7028b4-4024-5821-8502-2a1adc826fa5
+SUMMARY:Adela van Vlaanderen (kandidaat) · T7
+DESCRIPTION:Feestdatum: 8 september Juliaans\nApostel: Fil. 2:5-11\nEvangel
+ ie: Luc. 10:38-42\; 11:27-28\nHeilige: Adela van Vlaanderen (kandidaat)\nM
+ eer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=203
+ 1-09-21&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-21&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311011
+DTEND;VALUE=DATE:20311012
+DTSTAMP:20260905T084810Z
+UID:30b40075-5cfc-5c8a-87c6-ec0b94cf8898
+SUMMARY:Lioba (kandidaat) · T1
+DESCRIPTION:Feestdatum: 28 september Juliaans\nApostel: 1 Kor. 15:58-16:3\n
+ Evangelie: Luc. 5:27-32\nHeilige: Lioba (kandidaat)\nMeer: https://orthodo
+ x-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-10-11&stijl=juliaa
+ ns
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 10-11&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311231
+DTEND;VALUE=DATE:20320101
+DTSTAMP:20260905T084810Z
+UID:01bde199-824a-57d7-bb24-8164533ca83c
+SUMMARY:Winnibald (kandidaat) · T5
+DESCRIPTION:Feestdatum: 18 december Juliaans\nApostel: Jak.1:1-18\nEvangeli
+ e: Mark. 10:11-16\nHeilige: Winnibald (kandidaat)\nMeer: https://orthodox-
+ ronl.github.io/heiligen-lage-landen/datum/?datum=2031-12-31&stijl=juliaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-31&stijl=juliaans
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

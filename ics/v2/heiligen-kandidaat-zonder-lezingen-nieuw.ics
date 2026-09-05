@@ -1,0 +1,527 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orthodox-ronl//kalender//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Heiligen kandidaat zonder lezingen (nieuw)
+X-WR-TIMEZONE:UTC
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240225
+DTEND;VALUE=DATE:20240226
+DTSTAMP:20260905T084810Z
+UID:653420f6-b37a-5b52-80b8-e8e1dd5b250a
+SUMMARY:Walburga (kandidaat) · T5
+DESCRIPTION:Apostel: 2 Tim. 3:10-15\nEvangelie: Luc. 18:10-14\nHeilige: Wal
+ burga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lan
+ den/datum/?datum=2024-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240306
+DTEND;VALUE=DATE:20240307
+DTSTAMP:20260905T084810Z
+UID:642283e2-90e1-5b1c-83a5-16c3676eaab1
+SUMMARY:Fridolin (kandidaat) · T6
+DESCRIPTION:Apostel: 1 Joh. 3:21-4:6\nEvangelie: Mark. 14:43-15:1\nHeilige:
+  Fridolin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage
+ -landen/datum/?datum=2024-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240908
+DTEND;VALUE=DATE:20240909
+DTSTAMP:20260905T084810Z
+UID:8644adad-0a1e-5911-a215-655ee9971338
+SUMMARY:Adela van Vlaanderen (kandidaat) · T2
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2024-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240928
+DTEND;VALUE=DATE:20240929
+DTSTAMP:20260905T084810Z
+UID:2dbe462f-c42e-5b8d-a55d-87bbf3818d47
+SUMMARY:Lioba (kandidaat) · T4
+DESCRIPTION:Apostel: 1 Kor. 4:1-5\nEvangelie: Luc. 5:17-26\nHeilige: Lioba 
+ (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2024-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241218
+DTEND;VALUE=DATE:20241219
+DTSTAMP:20260905T084810Z
+UID:07d989e0-e23b-5bc5-851e-9d9c8cacc39a
+SUMMARY:Winnibald (kandidaat) · T8
+DESCRIPTION:Apostel: 1 Tim. 1:18-20\; 2:8-15\nEvangelie: Mark. 10:11-16\nHe
+ ilige: Winnibald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2024-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250225
+DTEND;VALUE=DATE:20250226
+DTSTAMP:20260905T084810Z
+UID:8f927f3a-63cd-539a-bcfc-149995f9ed28
+SUMMARY:Walburga (kandidaat) · T2
+DESCRIPTION:Apostel: Jud. 1:1-10\nEvangelie: Luc. 22:39-42\, 45-23:1\nHeili
+ ge: Walburga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-l
+ age-landen/datum/?datum=2025-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250306
+DTEND;VALUE=DATE:20250307
+DTSTAMP:20260905T084810Z
+UID:1be55a26-a593-54d4-88a4-a7c950cdfbbd
+SUMMARY:Fridolin (kandidaat) · T3
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Frido
+ lin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2025-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250908
+DTEND;VALUE=DATE:20250909
+DTSTAMP:20260905T084810Z
+UID:70ab6e42-cea7-5207-aa5a-1123ec7b9dc5
+SUMMARY:Adela van Vlaanderen (kandidaat) · T4
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2025-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250928
+DTEND;VALUE=DATE:20250929
+DTSTAMP:20260905T084810Z
+UID:b9041944-eeee-5aa0-b0f3-a428c495fd26
+SUMMARY:Lioba (kandidaat) · T7
+DESCRIPTION:Apostel: 2 Kor. 6:1-10\nEvangelie: Luc. 5:1-11\nHeilige: Lioba 
+ (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2025-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251218
+DTEND;VALUE=DATE:20251219
+DTSTAMP:20260905T084810Z
+UID:1e905edf-06b9-5f89-88af-7d9eb16921c1
+SUMMARY:Winnibald (kandidaat) · T2
+DESCRIPTION:Apostel: Tit. 1:5-2:1\nEvangelie: Mark. 9:10-16\nHeilige: Winni
+ bald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2025-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260225
+DTEND;VALUE=DATE:20260226
+DTSTAMP:20260905T084810Z
+UID:328dbf55-584a-5dc2-ab41-c4bdaaf4a83b
+SUMMARY:Walburga (kandidaat) · T4
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Walbu
+ rga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2026-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+DTSTAMP:20260905T084810Z
+UID:30578553-ace8-5075-bb33-44891a521612
+SUMMARY:Fridolin (kandidaat) · T5
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Frido
+ lin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2026-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DTSTAMP:20260905T084810Z
+UID:47d8a76e-cf1d-5be5-96ff-03dba11a09d1
+SUMMARY:Adela van Vlaanderen (kandidaat) · T5
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2026-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+DTSTAMP:20260905T084810Z
+UID:e2bfddad-6047-5eb8-8005-081d50a73d8d
+SUMMARY:Lioba (kandidaat) · T8
+DESCRIPTION:Apostel: Ef. 4:25-32\nEvangelie: Luc. 4:37-44\nHeilige: Lioba (
+ kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2026-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+DTSTAMP:20260905T084810Z
+UID:e610948d-7272-53a6-b999-5bd184cc4a5a
+SUMMARY:Winnibald (kandidaat) · T3
+DESCRIPTION:Apostel: Heb. 7:18-25\nEvangelie: Mark. 9:33-41\nHeilige: Winni
+ bald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2026-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+DTSTAMP:20260905T084810Z
+UID:996fdc99-35c1-5383-9b56-715f6a7ae5da
+SUMMARY:Walburga (kandidaat) · T5
+DESCRIPTION:Apostel: 1 Joh. 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nHeilige: 
+ Walburga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-
+ landen/datum/?datum=2027-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+DTSTAMP:20260905T084810Z
+UID:77f317f7-4242-5969-aec2-461eccef62ae
+SUMMARY:Fridolin (kandidaat) · T6
+DESCRIPTION:Apostel: 1 Kor. 10:23-28\nEvangelie: Luc. 21:8-9\, 25-27\, 33-3
+ 6\nHeilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl.github.io/he
+ iligen-lage-landen/datum/?datum=2027-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270908
+DTEND;VALUE=DATE:20270909
+DTSTAMP:20260905T084810Z
+UID:5fa69b57-dc14-5534-b57a-d01e65609143
+SUMMARY:Adela van Vlaanderen (kandidaat) · T2
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2027-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270928
+DTEND;VALUE=DATE:20270929
+DTSTAMP:20260905T084810Z
+UID:1f47f04a-0497-5547-95b9-f4e59a2dcd75
+SUMMARY:Lioba (kandidaat) · T5
+DESCRIPTION:Apostel: Gal. 2:21-3:7\nEvangelie: Luc. 5:12-16\nHeilige: Lioba
+  (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/d
+ atum/?datum=2027-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271218
+DTEND;VALUE=DATE:20271219
+DTSTAMP:20260905T084810Z
+UID:97fd1f22-ef09-530c-9a66-eb99672ee364
+SUMMARY:Winnibald (kandidaat) · T8
+DESCRIPTION:Apostel: Gal. 3:8-12\nEvangelie: Luc. 13:18-29\nHeilige: Winnib
+ ald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2027-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280225
+DTEND;VALUE=DATE:20280226
+DTSTAMP:20260905T084810Z
+UID:bbe5c334-8be8-594d-a120-3c82818dd6d0
+SUMMARY:Walburga (kandidaat) · T2
+DESCRIPTION:Heilige: Walburga (kandidaat)\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2028-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280306
+DTEND;VALUE=DATE:20280307
+DTSTAMP:20260905T084810Z
+UID:1692aa44-f893-562b-bf49-741bfe81d3b1
+SUMMARY:Fridolin (kandidaat) · T4
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Frido
+ lin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2028-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280908
+DTEND;VALUE=DATE:20280909
+DTSTAMP:20260905T084810Z
+UID:7630721c-b6ca-5b24-9b9e-93e08087599b
+SUMMARY:Adela van Vlaanderen (kandidaat) · T4
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2028-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280928
+DTEND;VALUE=DATE:20280929
+DTSTAMP:20260905T084810Z
+UID:1d09e7ea-71cb-5fb7-8538-9f398f16efa5
+SUMMARY:Lioba (kandidaat) · T7
+DESCRIPTION:Apostel: Ef. 4:14-19\nEvangelie: Luc. 6:12-19\nHeilige: Lioba (
+ kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2028-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281218
+DTEND;VALUE=DATE:20281219
+DTSTAMP:20260905T084810Z
+UID:261cebb5-4ad8-5ce1-b77a-a5eaeca19f9a
+SUMMARY:Winnibald (kandidaat) · T3
+DESCRIPTION:Apostel: Heb. 3:5-11\, 17-19\nEvangelie: Mark. 9:42-10:1\nHeili
+ ge: Winnibald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-
+ lage-landen/datum/?datum=2028-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290225
+DTEND;VALUE=DATE:20290226
+DTSTAMP:20260905T084810Z
+UID:97087506-398e-5430-85fd-b2c67b24d058
+SUMMARY:Walburga (kandidaat) · T5
+DESCRIPTION:Apostel: Heb. 11:24-26\, 32-12:2\nEvangelie: Joh. 1:43-51\nHeil
+ ige: Walburga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-
+ lage-landen/datum/?datum=2029-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290306
+DTEND;VALUE=DATE:20290307
+DTSTAMP:20260905T084810Z
+UID:2fa55652-6a74-5aee-a32a-dfb8f7fd3207
+SUMMARY:Fridolin (kandidaat) · T6
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Frido
+ lin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2029-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290908
+DTEND;VALUE=DATE:20290909
+DTSTAMP:20260905T084810Z
+UID:1e17509c-fc23-5e5a-af94-fa5b629f14a9
+SUMMARY:Adela van Vlaanderen (kandidaat) · T5
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2029-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290928
+DTEND;VALUE=DATE:20290929
+DTSTAMP:20260905T084810Z
+UID:d1a301cc-b5c5-5c98-8477-7ac0b330abdb
+SUMMARY:Lioba (kandidaat) · T8
+DESCRIPTION:Apostel: Ef. 6:18-24\nEvangelie: Luc. 6:17-23\nHeilige: Lioba (
+ kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2029-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291218
+DTEND;VALUE=DATE:20291219
+DTSTAMP:20260905T084810Z
+UID:4c175510-19c2-53d2-8bec-c5fc0882c3f1
+SUMMARY:Winnibald (kandidaat) · T4
+DESCRIPTION:Apostel: Heb. 9:8-10\, 15-23\nEvangelie: Mark. 8:22-26\nHeilige
+ : Winnibald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-la
+ ge-landen/datum/?datum=2029-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300225
+DTEND;VALUE=DATE:20300226
+DTSTAMP:20260905T084810Z
+UID:e3da1443-631a-5a1b-a871-9412d217a7db
+SUMMARY:Walburga (kandidaat) · T6
+DESCRIPTION:Apostel: 1 Joh. 2:18-3:10\nEvangelie: Mark. 11:1-11\nHeilige: W
+ alburga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-l
+ anden/datum/?datum=2030-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300306
+DTEND;VALUE=DATE:20300307
+DTSTAMP:20260905T084810Z
+UID:cdcedace-427f-5508-abb9-a733cc5e3c2d
+SUMMARY:Fridolin (kandidaat) · T7
+DESCRIPTION:Heilige: Fridolin (kandidaat)\nMeer: https://orthodox-ronl.gith
+ ub.io/heiligen-lage-landen/datum/?datum=2030-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300908
+DTEND;VALUE=DATE:20300909
+DTSTAMP:20260905T084810Z
+UID:e716ae9e-5b0b-59f7-8f65-8b63532149fa
+SUMMARY:Adela van Vlaanderen (kandidaat) · T3
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2030-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300928
+DTEND;VALUE=DATE:20300929
+DTSTAMP:20260905T084810Z
+UID:1f0ad2da-fdbf-54dd-850b-607a0742904d
+SUMMARY:Lioba (kandidaat) · T5
+DESCRIPTION:Apostel: 1 Kor. 4:17-5:5\nEvangelie: Luc. 5:17-26\nHeilige: Lio
+ ba (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2030-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301218
+DTEND;VALUE=DATE:20301219
+DTSTAMP:20260905T084810Z
+UID:73c65d23-2e6b-5354-ab83-84acf96bd365
+SUMMARY:Winnibald (kandidaat) · T1
+DESCRIPTION:Apostel: 1 Tim. 5:22-6:11\nEvangelie: Mark. 10:11-16\nHeilige: 
+ Winnibald (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage
+ -landen/datum/?datum=2030-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310225
+DTEND;VALUE=DATE:20310226
+DTSTAMP:20260905T084810Z
+UID:5958d839-0a81-5e4b-80b0-838fea194237
+SUMMARY:Walburga (kandidaat) · T3
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Walbu
+ rga (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2031-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310306
+DTEND;VALUE=DATE:20310307
+DTSTAMP:20260905T084810Z
+UID:bfed064e-20f8-58b5-acea-39aa50846e73
+SUMMARY:Fridolin (kandidaat) · T4
+DESCRIPTION:Geen liturgie met Apostel/Evangelie van de dag.\nHeilige: Frido
+ lin (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2031-03-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 03-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310908
+DTEND;VALUE=DATE:20310909
+DTSTAMP:20260905T084810Z
+UID:30318623-349f-59f9-b095-b8f4dc69ce72
+SUMMARY:Adela van Vlaanderen (kandidaat) · T5
+DESCRIPTION:Apostel: Fil. 2:5-11\nEvangelie: Luc. 10:38-42\; 11:27-28\nHeil
+ ige: Adela van Vlaanderen (kandidaat)\nMeer: https://orthodox-ronl.github.
+ io/heiligen-lage-landen/datum/?datum=2031-09-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310928
+DTEND;VALUE=DATE:20310929
+DTSTAMP:20260905T084810Z
+UID:9dff394c-8857-5d56-a811-16384be3ae33
+SUMMARY:Lioba (kandidaat) · T8
+DESCRIPTION:Apostel: 2 Kor. 6:16-7:1\nEvangelie: Luc. 5:1-11\nHeilige: Liob
+ a (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/
+ datum/?datum=2031-09-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 09-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311218
+DTEND;VALUE=DATE:20311219
+DTSTAMP:20260905T084810Z
+UID:1175e214-ecd0-5a23-b9fc-c75588793e1c
+SUMMARY:Winnibald (kandidaat) · T3
+DESCRIPTION:Apostel: Heb. 7:1-6\nEvangelie: Mark. 9:10-16\nHeilige: Winniba
+ ld (kandidaat)\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2031-12-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

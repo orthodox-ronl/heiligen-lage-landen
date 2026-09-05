@@ -10,8 +10,11 @@
 <strong>tombstone</strong> — geen kalenderdagen meer, wel herinneringen naar <code>/agenda/</code></li></ul><p>Die bestanden worden bij elke generate <strong>gewist en opnieuw gezet</strong>.
 Niet met de hand redigeren. Inhoud is <strong>dag-centrisch</strong> (één <code>VEVENT</code>
 per burgerlijke dag), behalve tombstones (enkele herinneringsdagen).</p><h3 id=v2-sleutels>v2-sleutels</h3><p>De vier hoofdssoorten blijven <code>heiligen</code> / <code>feesten</code> / <code>vasten</code> /
-<code>vastenvrij</code> (combinaties met koppelteken; <code>alles</code> = alle vier).</p><p>Daarbinnen, defaults van de agendapagina:</p><ul><li>heiligen = alleen <code>selectie: voldoet</code> (Opgenomen)</li><li>feesten = grote + overige + omlijsting (voorfeest, nafeest inclusief
-teruggave, synaxis)</li><li>vasten = week (woensdag/vrijdag) + periodes + feestdagen met vasten</li><li>vastenvrij = aan</li></ul><p>Afwijkende subfilters krijgen eigen sleutels (<code>heiligen-nader</code>,
+<code>vastenvrij</code> (combinaties met koppelteken; <code>alles</code> = alle vier).
+<strong>Lezingen</strong> is een extra vinkje (default aan): niet in <code>alles</code> als
+apart token; uit = achtervoegsel <code>-zonder-lezingen</code>. Alleen lezingen =
+sleutel <code>lezingen</code>.</p><p>Daarbinnen, defaults van de agendapagina:</p><ul><li>heiligen = alleen <code>selectie: voldoet</code> (Opgenomen)</li><li>feesten = grote + overige + omlijsting (voorfeest, nafeest inclusief
+teruggave, synaxis)</li><li>vasten = week (woensdag/vrijdag) + periodes + feestdagen met vasten</li><li>vastenvrij = aan</li><li>lezingen = aan</li></ul><p>Afwijkende subfilters krijgen eigen sleutels (<code>heiligen-nader</code>,
 <code>feesten-grote</code>, <code>feesten-grote-overige</code>, <code>vasten-week</code>, …). Extra
 heiligen-vinkjes bovenop een verder standaard mix, en het weglaten van
 omlijsting of van woensdag/vrijdag, zitten in <strong>hetzelfde</strong> bestand
@@ -34,8 +37,11 @@ krijgen in plaats van stille, verouderde dagen. <code>X-WR-CALNAME</code>:
 Die paden <strong>niet</strong> opnieuw vullen met echte kalenderdagen.</p><h2 id=gedrag>Gedrag</h2><p>Eén hele-dag-afspraak per burgerlijke dag die in de subset iets toont.
 <code>SUMMARY</code> volgt <code>day_title</code> in <code>scripts/ics.py</code> (spiegel <code>icsDayTitle</code> in
 <code>calendar.js</code>): grootfeest, anders heilige van de Lage Landen, anders
-overig feest of <code>daglabel</code>. Op maandag zonder grootfeest of heilige komt
-<code>week_kop_label</code> vooraan. Vastenlabels komen uit <code>mix_vastenniveau</code> in
+overig feest. Op maandag zonder grootfeest of heilige komt
+<code>week_kop_label</code> vooraan als Feesten aan staat. Het lezingen-<code>daglabel</code>
+op andere dagen alleen als <code>AgendaSpec.lezingen</code>. Elke <code>SUMMARY</code> eindigt
+met <code>T</code> plus <code>octoechos_toon</code> (<code>T1</code>–<code>T8</code>). Vastenlabels komen uit
+<code>mix_vastenniveau</code> in
 <code>scripts/vasten.py</code> en staan alleen in <code>SUMMARY</code>/<code>DESCRIPTION</code> als er
 een regel is én de bijbehorende vasten-subfilter aan staat.
 <code>URL</code> wijst naar de datumpagina.</p><p><code>DESCRIPTION</code> volgt de datumpagina-box zonder website-links in de regels:
@@ -60,4 +66,4 @@ jaar … +4).</p><p><code>site/content/agenda/_index.md</code> is handmatig (bod
 ·
 <a href=https://orthodox-ronl.github.io/heiligen-lage-landen/uitleg/reactie/>Reactie</a>
 ·
-<a href=https://orthodox-ronl.github.io/heiligen-lage-landen/beheer/>Voor beheerders</a></p><div class=site-meta><p class=page-git-date>Bijgewerkt: 2026-09-05</p></div></div></footer><div id=info-popover class=info-popover hidden role=tooltip aria-labelledby=info-popover-title><h2 id=info-popover-title>Info</h2><div id=info-popover-body></div><p class=info-popover-meer id=info-popover-meer hidden></p></div><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/js/theme.min.c1fe5ae25747007cb4583b109c4a5a753a403b55e279fca61593f5517714515c.js defer></script><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/js/calendar.min.ad1f7c3ac311f31ff1c54c070d4f0a5ec4ba694bbbc4cb7fb1cfa6f7003cffba.js defer></script></body></html>
+<a href=https://orthodox-ronl.github.io/heiligen-lage-landen/beheer/>Voor beheerders</a></p><div class=site-meta><p class=page-git-date>Bijgewerkt: 2026-09-05</p></div></div></footer><div id=info-popover class=info-popover hidden role=tooltip aria-labelledby=info-popover-title><h2 id=info-popover-title>Info</h2><div id=info-popover-body></div><p class=info-popover-meer id=info-popover-meer hidden></p></div><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/js/theme.min.c1fe5ae25747007cb4583b109c4a5a753a403b55e279fca61593f5517714515c.js defer></script><script src=https://orthodox-ronl.github.io/heiligen-lage-landen/js/calendar.min.32bc17d9d0a7c2daef38e1e324bc84918ebb343a69624897e4e0381bb2267f35.js defer></script></body></html>
