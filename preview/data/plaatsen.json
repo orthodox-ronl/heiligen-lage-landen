@@ -523,5 +523,252 @@
     "lat": 52.517,
     "lon": 6.083,
     "soort": "plaats"
+  },
+  {
+    "id": "brogne",
+    "naam": "Saint-Gérard",
+    "alternatief": [
+      "Brogne",
+      "Saint-Gerard"
+    ],
+    "lat": 50.354,
+    "lon": 4.822,
+    "soort": "plaats"
+  },
+  {
+    "id": "wintershoven",
+    "naam": "Wintershoven",
+    "alternatief": [],
+    "lat": 50.847,
+    "lon": 5.389,
+    "soort": "plaats"
+  },
+  {
+    "id": "munsterbilzen",
+    "naam": "Munsterbilzen",
+    "alternatief": [],
+    "lat": 50.893,
+    "lon": 5.528,
+    "soort": "plaats"
+  },
+  {
+    "id": "lobbes",
+    "naam": "Lobbes",
+    "alternatief": [],
+    "lat": 50.346,
+    "lon": 4.262,
+    "soort": "plaats"
+  },
+  {
+    "id": "saint-ghislain",
+    "naam": "Saint-Ghislain",
+    "alternatief": [],
+    "lat": 50.448,
+    "lon": 3.816,
+    "soort": "plaats"
+  },
+  {
+    "id": "zinnik",
+    "naam": "Zinnik",
+    "alternatief": [
+      "Soignies"
+    ],
+    "lat": 50.579,
+    "lon": 4.071,
+    "soort": "plaats"
+  },
+  {
+    "id": "celles",
+    "naam": "Celles",
+    "alternatief": [],
+    "lat": 50.243,
+    "lon": 4.695,
+    "soort": "plaats"
+  },
+  {
+    "id": "malonne",
+    "naam": "Malonne",
+    "alternatief": [],
+    "lat": 50.437,
+    "lon": 4.831,
+    "soort": "plaats"
+  },
+  {
+    "id": "waulsort",
+    "naam": "Waulsort",
+    "alternatief": [],
+    "lat": 50.206,
+    "lon": 4.819,
+    "soort": "plaats"
+  },
+  {
+    "id": "anderlecht",
+    "naam": "Anderlecht",
+    "alternatief": [],
+    "lat": 50.836,
+    "lon": 4.314,
+    "soort": "plaats"
+  },
+  {
+    "id": "nassogne",
+    "naam": "Nassogne",
+    "alternatief": [],
+    "lat": 50.128,
+    "lon": 5.342,
+    "soort": "plaats"
+  },
+  {
+    "id": "meerbeke",
+    "naam": "Meerbeke",
+    "alternatief": [],
+    "lat": 50.829,
+    "lon": 4.045,
+    "soort": "plaats",
+    "streek": "vlaanderen"
+  },
+  {
+    "id": "thorn",
+    "naam": "Thorn",
+    "alternatief": [],
+    "lat": 51.167,
+    "lon": 5.918,
+    "soort": "plaats"
+  },
+  {
+    "id": "saintes",
+    "naam": "Saintes",
+    "alternatief": [],
+    "lat": 50.643,
+    "lon": 4.159,
+    "soort": "plaats"
+  },
+  {
+    "id": "dikkelvenne",
+    "naam": "Dikkelvenne",
+    "alternatief": [],
+    "lat": 50.917,
+    "lon": 3.7,
+    "soort": "plaats",
+    "streek": "vlaanderen"
+  },
+  {
+    "id": "gembloers",
+    "naam": "Gembloers",
+    "alternatief": [
+      "Gembloux"
+    ],
+    "lat": 50.561,
+    "lon": 4.696,
+    "soort": "plaats"
+  },
+  {
+    "id": "deurne",
+    "naam": "Deurne",
+    "alternatief": [
+      "Deurne bij Antwerpen"
+    ],
+    "lat": 51.225,
+    "lon": 4.462,
+    "soort": "plaats",
+    "streek": "vlaanderen"
+  },
+  {
+    "id": "merendree",
+    "naam": "Merendree",
+    "alternatief": [],
+    "lat": 51.077,
+    "lon": 3.576,
+    "soort": "plaats",
+    "streek": "vlaanderen"
+  },
+  {
+    "id": "laken",
+    "naam": "Laken",
+    "alternatief": [],
+    "lat": 50.878,
+    "lon": 4.348,
+    "soort": "plaats"
+  },
+  {
+    "id": "bremen",
+    "naam": "Bremen",
+    "alternatief": [],
+    "lat": 53.079,
+    "lon": 8.802,
+    "soort": "plaats"
+  },
+  {
+    "id": "keulen",
+    "naam": "Keulen",
+    "alternatief": [
+      "Köln",
+      "Cologne"
+    ],
+    "lat": 50.938,
+    "lon": 6.96,
+    "soort": "plaats"
+  },
+  {
+    "id": "sint-omaars",
+    "naam": "Sint-Omaars",
+    "alternatief": [
+      "Saint-Omer",
+      "Sithiu"
+    ],
+    "lat": 50.748,
+    "lon": 2.261,
+    "soort": "plaats"
+  },
+  {
+    "id": "orleans",
+    "naam": "Orléans",
+    "alternatief": [],
+    "lat": 47.903,
+    "lon": 1.909,
+    "soort": "plaats"
+  },
+  {
+    "id": "bamberg",
+    "naam": "Bamberg",
+    "alternatief": [],
+    "lat": 49.898,
+    "lon": 10.889,
+    "soort": "plaats"
+  },
+  {
+    "id": "wezet",
+    "naam": "Wezet",
+    "alternatief": [
+      "Visé"
+    ],
+    "lat": 50.738,
+    "lon": 5.695,
+    "soort": "plaats"
+  },
+  {
+    "id": "crespin",
+    "naam": "Crespin",
+    "alternatief": [],
+    "lat": 50.42,
+    "lon": 3.663,
+    "soort": "plaats"
+  },
+  {
+    "id": "hautmont",
+    "naam": "Hautmont",
+    "alternatief": [],
+    "lat": 50.248,
+    "lon": 3.921,
+    "soort": "plaats"
+  },
+  {
+    "id": "saint-hubert",
+    "naam": "Saint-Hubert",
+    "alternatief": [
+      "Andage"
+    ],
+    "lat": 50.026,
+    "lon": 5.374,
+    "soort": "plaats"
   }
 ]

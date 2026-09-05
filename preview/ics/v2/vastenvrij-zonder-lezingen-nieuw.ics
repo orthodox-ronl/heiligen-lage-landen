@@ -1,0 +1,3138 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orthodox-ronl//kalender//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Vastenvrij zonder lezingen (nieuw)
+X-WR-TIMEZONE:UTC
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240106
+DTEND;VALUE=DATE:20240107
+DTSTAMP:20260905T090539Z
+UID:06c113dd-4b54-5077-95ba-b713f068f18e
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T5
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2024-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240226
+DTEND;VALUE=DATE:20240227
+DTSTAMP:20260905T090539Z
+UID:1a9ce149-ca50-5334-86e6-c9e3c87d0dbb
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2024-02-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240227
+DTEND;VALUE=DATE:20240228
+DTSTAMP:20260905T090539Z
+UID:f5fdcfb0-3358-532d-832d-87c6cdefc7b1
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2024-02-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240228
+DTEND;VALUE=DATE:20240229
+DTSTAMP:20260905T090539Z
+UID:55195199-6479-5568-81e4-7c3995c3344d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2024-02-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240229
+DTEND;VALUE=DATE:20240301
+DTSTAMP:20260905T090539Z
+UID:9f1aee8f-c670-5bb8-8fb1-43c57ec4a855
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2024-02-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 02-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240301
+DTEND;VALUE=DATE:20240302
+DTSTAMP:20260905T090539Z
+UID:466a8888-7a24-5db1-8115-4387bfce4d7a
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2024-03-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240302
+DTEND;VALUE=DATE:20240303
+DTSTAMP:20260905T090539Z
+UID:d2a4039d-887f-5569-87d7-0118641f66b9
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2024-03-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240303
+DTEND;VALUE=DATE:20240304
+DTSTAMP:20260905T090539Z
+UID:c0fcc73e-6da9-517e-a950-a54ac6a0ed95
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T6
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2024-03-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 03-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240505
+DTEND;VALUE=DATE:20240506
+DTSTAMP:20260905T090539Z
+UID:a50989d1-1a74-55f6-9808-77256c71a5b9
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2024-05-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240506
+DTEND;VALUE=DATE:20240507
+DTSTAMP:20260905T090539Z
+UID:3da32b0d-ca85-59a2-9fc0-b98477bda880
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2024-05-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240507
+DTEND;VALUE=DATE:20240508
+DTSTAMP:20260905T090539Z
+UID:bbce3bbf-e2ce-5048-99cc-7cd1dbaea493
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2024-05-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240508
+DTEND;VALUE=DATE:20240509
+DTSTAMP:20260905T090539Z
+UID:4f0a940e-4bfe-5228-8ad8-ea811b6a8b5d
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2024-05-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240509
+DTEND;VALUE=DATE:20240510
+DTSTAMP:20260905T090539Z
+UID:59f5504e-ee33-5921-a5e5-d557bb34cada
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2024-05-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240510
+DTEND;VALUE=DATE:20240511
+DTSTAMP:20260905T090539Z
+UID:44ab41b7-e83a-5951-bdcf-5dea1163a0b0
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2024-05-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240511
+DTEND;VALUE=DATE:20240512
+DTSTAMP:20260905T090539Z
+UID:575b50c4-ff6b-5f79-a874-7b3ffdc90dcc
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2024-05-11&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 05-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240623
+DTEND;VALUE=DATE:20240624
+DTSTAMP:20260905T090539Z
+UID:7e6708e0-c41c-500a-88e0-789f75105da1
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2024-06-23&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240624
+DTEND;VALUE=DATE:20240625
+DTSTAMP:20260905T090539Z
+UID:64470c5b-e45e-5b8d-bfd7-ab1dbbca2d7d
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2024-06-24&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-24&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240625
+DTEND;VALUE=DATE:20240626
+DTSTAMP:20260905T090539Z
+UID:f17f00ab-c426-582b-a946-b5fdf6492f6b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2024-06-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240626
+DTEND;VALUE=DATE:20240627
+DTSTAMP:20260905T090539Z
+UID:0a86ae17-8978-5266-805a-9045e62cf3fb
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2024-06-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240627
+DTEND;VALUE=DATE:20240628
+DTSTAMP:20260905T090539Z
+UID:9c72b614-774d-51d9-a08f-803450417266
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2024-06-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240628
+DTEND;VALUE=DATE:20240629
+DTSTAMP:20260905T090539Z
+UID:6211186f-2b5b-53dd-9c74-e97fda086364
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2024-06-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240629
+DTEND;VALUE=DATE:20240630
+DTSTAMP:20260905T090539Z
+UID:26e71049-6b07-562c-acc0-2a15f6200604
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: 2 Kor. 11
+ :21-12:9\nEvangelie: Matt. 16:13-19\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2024-06-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240630
+DTEND;VALUE=DATE:20240701
+DTSTAMP:20260905T090539Z
+UID:065cf383-fff0-573e-b22d-eecbb75dbaea
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-06-30&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 06-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241225
+DTEND;VALUE=DATE:20241226
+DTSTAMP:20260905T090539Z
+UID:0bf663d4-6a45-5ea1-907a-ea95962ecaf8
+SUMMARY:vastenvrij · Woensdagvasten · T1
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2024-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241226
+DTEND;VALUE=DATE:20241227
+DTSTAMP:20260905T090539Z
+UID:5cf59402-49de-504a-acb4-bf374d535c9c
+SUMMARY:vastenvrij · Nafeest van Kerst · T1
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2024-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241227
+DTEND;VALUE=DATE:20241228
+DTSTAMP:20260905T090539Z
+UID:dbf6197c-ad35-52a0-b9be-a2710d19c4cb
+SUMMARY:vastenvrij · Nafeest van Kerst · T1
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 1:1-2\, 8-18\nE
+ vangelie: Mark. 12:1-12\nMeer: https://orthodox-ronl.github.io/heiligen-la
+ ge-landen/datum/?datum=2024-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241228
+DTEND;VALUE=DATE:20241229
+DTSTAMP:20260905T090539Z
+UID:3806ac6e-4efa-55eb-bf2f-a61c850bea2b
+SUMMARY:vastenvrij · Nafeest van Kerst · T1
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 5:22-6:2\nEvangel
+ ie: Luc. 17:3-10\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2024-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241229
+DTEND;VALUE=DATE:20241230
+DTSTAMP:20260905T090539Z
+UID:992b0264-f310-5cb2-b381-102b8d5bf6f3
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2024-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241230
+DTEND;VALUE=DATE:20241231
+DTSTAMP:20260905T090539Z
+UID:647c6cb2-1cd8-58ec-a754-edfadf8de64e
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 2:20-26\nEvange
+ lie: Mark. 12:13-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-l
+ anden/datum/?datum=2024-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241231
+DTEND;VALUE=DATE:20250101
+DTSTAMP:20260905T090539Z
+UID:d5f4ff34-8fb3-5c9b-bdca-b052719ed6d7
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 3:16-4:4\nEvang
+ elie: Mark. 12:18-27\nMeer: https://orthodox-ronl.github.io/heiligen-lage-
+ landen/datum/?datum=2024-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2024-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250106
+DTEND;VALUE=DATE:20250107
+DTSTAMP:20260905T090539Z
+UID:962c90ad-4c7c-5785-9353-55dd701d2b00
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T3
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2025-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250210
+DTEND;VALUE=DATE:20250211
+DTSTAMP:20260905T090539Z
+UID:d744e743-1722-585b-bbbc-672081314893
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2025-02-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250211
+DTEND;VALUE=DATE:20250212
+DTSTAMP:20260905T090539Z
+UID:04706f5e-f5b4-5b84-9d3e-9a1ad68c7661
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2025-02-11&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250212
+DTEND;VALUE=DATE:20250213
+DTSTAMP:20260905T090539Z
+UID:40e4ca5b-5148-56e1-b07f-1bd5dcc2e24d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2025-02-12&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-12&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250213
+DTEND;VALUE=DATE:20250214
+DTSTAMP:20260905T090539Z
+UID:b9c06f3a-1fd5-59a5-a068-fdf3ea1ad3ec
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2025-02-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250214
+DTEND;VALUE=DATE:20250215
+DTSTAMP:20260905T090539Z
+UID:06a5a1cd-b375-5fc9-817b-12aa4ee533d1
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2025-02-14&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-14&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250216
+DTSTAMP:20260905T090539Z
+UID:4c8de76f-813c-5390-ac9c-a41089068102
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2025-02-15&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-15&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250216
+DTEND;VALUE=DATE:20250217
+DTSTAMP:20260905T090539Z
+UID:8bd23ee8-de59-5c9c-8b12-313b69326c51
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2025-02-16&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 02-16&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250420
+DTEND;VALUE=DATE:20250421
+DTSTAMP:20260905T090539Z
+UID:7b3167d0-95c7-5fa7-915e-7d75188de8a8
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2025-04-20&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-20&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250421
+DTEND;VALUE=DATE:20250422
+DTSTAMP:20260905T090539Z
+UID:2f88fa7a-ea5b-5b18-a24b-960da9cb5d65
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2025-04-21&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-21&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250422
+DTEND;VALUE=DATE:20250423
+DTSTAMP:20260905T090539Z
+UID:f15acf4e-ff4d-5d6a-adb8-bc4b344b6853
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2025-04-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+DTSTAMP:20260905T090539Z
+UID:cdcc7a68-7fc8-5d8a-a32e-c1b86a587acf
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 12:1-11\nEvangelie: Jo
+ h. 15:17-16:2\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/
+ datum/?datum=2025-04-23&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250425
+DTSTAMP:20260905T090539Z
+UID:cf305f7b-5912-503a-8ac0-a86d4cf87d95
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2025-04-24&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-24&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250425
+DTEND;VALUE=DATE:20250426
+DTSTAMP:20260905T090539Z
+UID:4a3ab0ad-5bb5-53fd-aca1-9427fd8f21ce
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2025-04-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250426
+DTEND;VALUE=DATE:20250427
+DTSTAMP:20260905T090539Z
+UID:538a5e0d-7bc5-5421-9108-3fa3ba61f619
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2025-04-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 04-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250608
+DTEND;VALUE=DATE:20250609
+DTSTAMP:20260905T090539Z
+UID:7c94a041-7899-5d2b-83f0-7a71d40e19c9
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2025-06-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250609
+DTEND;VALUE=DATE:20250610
+DTSTAMP:20260905T090539Z
+UID:c906ce8f-2ac6-59ad-9b34-835c4448190f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2025-06-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250610
+DTEND;VALUE=DATE:20250611
+DTSTAMP:20260905T090539Z
+UID:a3e1db28-886e-5930-9509-dbb56a1660db
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2025-06-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250611
+DTEND;VALUE=DATE:20250612
+DTSTAMP:20260905T090539Z
+UID:9a81b5a6-a27e-5a6a-935c-c0b200187201
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2025-06-11&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250612
+DTEND;VALUE=DATE:20250613
+DTSTAMP:20260905T090539Z
+UID:4aea17b0-00a6-569a-81a7-480c73d54cd6
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2025-06-12&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-12&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250613
+DTEND;VALUE=DATE:20250614
+DTSTAMP:20260905T090539Z
+UID:dc5347c7-8dc4-544c-b2fe-4a5ef03dce4f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2025-06-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250614
+DTEND;VALUE=DATE:20250615
+DTSTAMP:20260905T090539Z
+UID:690ab5d5-62dd-5f18-a1b8-3710d12b7084
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2025-06-14&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-14&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20250615
+DTEND;VALUE=DATE:20250616
+DTSTAMP:20260905T090539Z
+UID:f68ad78a-6ff0-5ce7-a0bf-109eab2133b9
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-06-15&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 06-15&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251225
+DTEND;VALUE=DATE:20251226
+DTSTAMP:20260905T090539Z
+UID:54415ac8-8351-574d-9b45-b6a23dc0c183
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus) · T3
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2025-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251226
+DTEND;VALUE=DATE:20251227
+DTSTAMP:20260905T090539Z
+UID:3b489d54-14ee-5ecd-b56b-cfb93a3a27cf
+SUMMARY:vastenvrij · Nafeest van Kerst · T3
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2025-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251227
+DTEND;VALUE=DATE:20251228
+DTSTAMP:20260905T090539Z
+UID:c518afbf-dd88-55ab-b29d-08ec112cc30c
+SUMMARY:vastenvrij · Nafeest van Kerst · T3
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Ef. 2:11-13\nEvangelie
+ : Luc. 16:10-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2025-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251228
+DTEND;VALUE=DATE:20251229
+DTSTAMP:20260905T090539Z
+UID:71b6eed4-ac2f-535f-9c03-7da26417ad13
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2025-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251229
+DTEND;VALUE=DATE:20251230
+DTSTAMP:20260905T090539Z
+UID:215ec1b2-7e52-58b0-ba20-938892b5d501
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 8:7-13\nEvangelie
+ : Mark. 8:11-21\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2025-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251230
+DTEND;VALUE=DATE:20251231
+DTSTAMP:20260905T090539Z
+UID:abdec201-2d1c-5c32-b346-3f1b25e45868
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 9:8-10\, 15-23\nE
+ vangelie: Mark. 8:22-26\nMeer: https://orthodox-ronl.github.io/heiligen-la
+ ge-landen/datum/?datum=2025-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20251231
+DTEND;VALUE=DATE:20260101
+DTSTAMP:20260905T090539Z
+UID:32320658-3925-5d71-8df7-410bf0d8cf60
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:1-18\nEvangeli
+ e: Mark. 8:30-34\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2025-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2025-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260106
+DTEND;VALUE=DATE:20260107
+DTSTAMP:20260905T090539Z
+UID:1c2c6ef0-0ebc-5267-861e-fd0fe94da8cd
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T5
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2026-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+DTSTAMP:20260905T090539Z
+UID:a445fc5a-1c21-5a2b-8073-98acace3b699
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 7:
+ 7-17\nEvangelie: Luc. 2:22-40\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2026-02-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260203
+DTEND;VALUE=DATE:20260204
+DTSTAMP:20260905T090539Z
+UID:ac191977-43a5-509a-90df-5f42ca1ce3e8
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2026-02-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260204
+DTEND;VALUE=DATE:20260205
+DTSTAMP:20260905T090539Z
+UID:e8511752-cb60-57a8-a72a-7d13adabb33c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2026-02-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260205
+DTEND;VALUE=DATE:20260206
+DTSTAMP:20260905T090539Z
+UID:4f3e2ab9-7232-5860-badf-2fcb329da8a1
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2026-02-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+DTSTAMP:20260905T090539Z
+UID:e1e9d6fe-217d-5505-86e1-4e3bee7f99b4
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2026-02-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260207
+DTEND;VALUE=DATE:20260208
+DTSTAMP:20260905T090539Z
+UID:375a9933-4e57-5ffe-a0ae-6026b3efeb20
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2026-02-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260209
+DTSTAMP:20260905T090539Z
+UID:5854c39d-0965-543f-bb1d-bdb4d35d83f9
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T2
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2026-02-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 02-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+DTSTAMP:20260905T090539Z
+UID:5b1652c1-f46e-52fd-8772-f60f5cf45389
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2026-04-12&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-12&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+DTSTAMP:20260905T090539Z
+UID:40d805c5-674e-50f7-a771-260fb4322c94
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2026-04-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+DTSTAMP:20260905T090539Z
+UID:e5937803-3d8d-55bc-bbe8-51e28c12438c
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2026-04-14&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-14&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260415
+DTEND;VALUE=DATE:20260416
+DTSTAMP:20260905T090539Z
+UID:df5ddc69-a204-5466-a38f-ec741ceb82f8
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2026-04-15&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-15&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260416
+DTEND;VALUE=DATE:20260417
+DTSTAMP:20260905T090539Z
+UID:287c4cc1-491d-5522-9ecc-e1e3da3beaa0
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2026-04-16&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-16&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260418
+DTSTAMP:20260905T090539Z
+UID:e83e98bb-5ae3-5070-b5d8-fdf14775f723
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2026-04-17&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-17&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+DTSTAMP:20260905T090539Z
+UID:e5a8b370-39aa-548a-a98b-912deca02c0b
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2026-04-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 04-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+DTSTAMP:20260905T090539Z
+UID:ba10a9d8-ec7b-5b19-8420-0ad980537a3e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2026-05-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 05-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+DTSTAMP:20260905T090539Z
+UID:4c730275-4912-565f-bc50-498813613625
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2026-06-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260602
+DTEND;VALUE=DATE:20260603
+DTSTAMP:20260905T090539Z
+UID:fea7b741-ed90-5294-95b7-15219ec6d3a8
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2026-06-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260604
+DTSTAMP:20260905T090539Z
+UID:38506c3b-6540-5063-9547-d0358dbf3fc2
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2026-06-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+DTSTAMP:20260905T090539Z
+UID:5046fa35-0825-5c71-8117-0c74a4853799
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2026-06-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+DTSTAMP:20260905T090539Z
+UID:38241f8c-feed-50a0-a2a7-3bb7b8633aea
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2026-06-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260607
+DTSTAMP:20260905T090539Z
+UID:bc35ef4f-c550-5bed-a008-7e70baae29c4
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2026-06-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+DTSTAMP:20260905T090539Z
+UID:b5e9a1fc-969b-55fa-9b96-10a9f42b8cf7
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-06-07&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 06-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+DTSTAMP:20260905T090539Z
+UID:d57617d4-98e9-5559-8497-07d3610257bc
+SUMMARY:vastenvrij · Vrijdagvasten · T4
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2026-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+DTSTAMP:20260905T090539Z
+UID:22a23b65-ffda-5962-bbb2-75d41f15d0af
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2026-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+DTSTAMP:20260905T090539Z
+UID:fb1aac19-73bc-55b8-b1bf-3986cf7d2f51
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2026-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+DTSTAMP:20260905T090539Z
+UID:2dee7fd1-79e6-53df-8e61-a95fdb0db602
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 11:17-23\, 27-31\
+ nEvangelie: Mark. 9:42-10:1\nMeer: https://orthodox-ronl.github.io/heilige
+ n-lage-landen/datum/?datum=2026-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+DTSTAMP:20260905T090539Z
+UID:cb1fa0c3-59f4-5aa2-b832-ad063812a0d2
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 12:25-26\; 13:22-
+ 25\nEvangelie: Mark. 10:2-12\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2026-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+DTSTAMP:20260905T090539Z
+UID:9b2aa1c6-e06a-5bce-a5c5-2f4b52b8aea5
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.1:1-18\nEvangelie:
+  Mark. 10:11-16\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2026-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20260905T090539Z
+UID:3e35580a-f168-5876-9281-1bc7e3fbcefe
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.1:19-27\nEvangelie
+ : Mark. 10:17-27\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2026-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2026-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+DTSTAMP:20260905T090539Z
+UID:4a459cf2-b895-5f51-8c76-238c5a3cd9e5
+SUMMARY:vastenvrij · Woensdagvasten · T6
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2027-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+DTSTAMP:20260905T090539Z
+UID:d8e7f1ae-3222-58a0-898e-ae4250ecf22e
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2027-02-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+DTSTAMP:20260905T090539Z
+UID:b6c5c767-cc09-5d33-9343-51f7308d9564
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2027-02-23&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+DTSTAMP:20260905T090539Z
+UID:f7aff2dc-722e-526a-9679-fa344eb8e614
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2027-02-24&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-24&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+DTSTAMP:20260905T090539Z
+UID:e434ef0d-656e-520a-b326-a4a160d7a61f
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2027-02-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+DTSTAMP:20260905T090539Z
+UID:3db27cc0-99c4-5cbc-9f21-1f2152332ad4
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2027-02-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+DTSTAMP:20260905T090539Z
+UID:52ec4073-e065-5d07-9f86-9211dd919630
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2027-02-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+DTSTAMP:20260905T090539Z
+UID:4eb85a2a-0607-53fe-8ba9-bb455d29564d
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T6
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2027-02-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 02-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+DTSTAMP:20260905T090539Z
+UID:d5a68669-7be0-57d9-affd-ac947f012353
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2027-05-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+DTSTAMP:20260905T090539Z
+UID:203ebfe6-335e-5a1b-946d-3fc96d57d524
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2027-05-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+DTSTAMP:20260905T090539Z
+UID:002e0174-eae9-5c79-884f-2945cc4d71de
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2027-05-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+DTSTAMP:20260905T090539Z
+UID:fced290f-616e-528a-a61f-908d8d846e39
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2027-05-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+DTSTAMP:20260905T090539Z
+UID:f501d1f1-0e61-5ac0-ab77-2c95f554e49a
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2027-05-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+DTSTAMP:20260905T090539Z
+UID:e8ed813f-caea-5f96-ad05-f57271acb4b3
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2027-05-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+DTSTAMP:20260905T090539Z
+UID:452d0b9c-51c0-585e-a55d-bb5e39261965
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2027-05-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 05-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+DTSTAMP:20260905T090539Z
+UID:2ca15256-b31d-57af-aeed-e120db9ba493
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2027-06-20&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-20&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+DTSTAMP:20260905T090539Z
+UID:2f042443-7ea6-5615-a21b-44dcc93caacb
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2027-06-21&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-21&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+DTSTAMP:20260905T090539Z
+UID:66c6b2c3-766e-51b2-82c0-dccc11ecb3f2
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2027-06-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+DTSTAMP:20260905T090539Z
+UID:1482433e-89a7-5ae8-837c-59a9d6b23b47
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2027-06-23&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+DTSTAMP:20260905T090539Z
+UID:36d4836b-f624-5e34-8de5-c167ffb6a6b4
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 13:1
+ 1-14:4\nEvangelie: Luc. 1:5-25\, 57-68\, 76\, 80\nMeer: https://orthodox-r
+ onl.github.io/heiligen-lage-landen/datum/?datum=2027-06-24&stijl=gregoriaa
+ ns
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-24&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+DTSTAMP:20260905T090539Z
+UID:a88f9541-2150-5195-b9ab-24695475a595
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2027-06-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+DTSTAMP:20260905T090539Z
+UID:7761cc5f-19f3-516f-89e7-5f49ed26ea22
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2027-06-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+DTSTAMP:20260905T090539Z
+UID:52519563-1986-544e-8ad4-49c81c6a6304
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-06-27&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 06-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+DTSTAMP:20260905T090539Z
+UID:7bd016cd-36ab-5968-aace-83b3b1dfd7bc
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus) · T1
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2027-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+DTSTAMP:20260905T090539Z
+UID:b39ce348-7f00-58e0-a411-a74ff2afd4b6
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2027-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+DTSTAMP:20260905T090539Z
+UID:ac681bac-68f4-5fd3-bf66-ce6dd72dac23
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 2:20-26\nEvange
+ lie: Mark. 10:46-52\nMeer: https://orthodox-ronl.github.io/heiligen-lage-l
+ anden/datum/?datum=2027-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+DTSTAMP:20260905T090539Z
+UID:0d328b04-3fd2-5379-8526-61295dafe034
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 3:16-4:4\nEvang
+ elie: Mark. 11:11-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-
+ landen/datum/?datum=2027-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271229
+DTEND;VALUE=DATE:20271230
+DTSTAMP:20260905T090539Z
+UID:9cc38978-9eec-595d-a3c1-4922865d963d
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:9-22\nEvangel
+ ie: Mark. 11:23-26\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2027-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271230
+DTEND;VALUE=DATE:20271231
+DTSTAMP:20260905T090539Z
+UID:a65f385a-5ab8-53ee-b4ee-bf1a4c1bc817
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Tit. 1:5-2:1\nEvangeli
+ e: Mark. 11:27-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lan
+ den/datum/?datum=2027-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+DTSTAMP:20260905T090539Z
+UID:075cb815-486f-5825-aede-28342446181e
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Tit. 1:15-2:10\nEvange
+ lie: Mark. 12:1-12\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2027-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2027-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280106
+DTEND;VALUE=DATE:20280107
+DTSTAMP:20260905T090539Z
+UID:2b262eb8-2b81-5d17-b577-8bcac9a2dba9
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T3
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2028-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280207
+DTEND;VALUE=DATE:20280208
+DTSTAMP:20260905T090539Z
+UID:810ac50e-3ec7-5b71-9138-7786c6198e5c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2028-02-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280208
+DTEND;VALUE=DATE:20280209
+DTSTAMP:20260905T090539Z
+UID:51a28f11-37c3-589b-81ee-e894406126e2
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2028-02-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280209
+DTEND;VALUE=DATE:20280210
+DTSTAMP:20260905T090539Z
+UID:6963b2ef-d4c2-5130-bb29-45c64fc96f5c
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2028-02-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280210
+DTEND;VALUE=DATE:20280211
+DTSTAMP:20260905T090539Z
+UID:0e4dedee-553d-536e-87ea-4747629e1a73
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2028-02-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280211
+DTEND;VALUE=DATE:20280212
+DTSTAMP:20260905T090539Z
+UID:45a278d9-44cc-5bfa-b96c-ecf3d88ce88a
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2028-02-11&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280212
+DTEND;VALUE=DATE:20280213
+DTSTAMP:20260905T090539Z
+UID:1e54856d-8892-53dc-a434-6dcf22f6fd74
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2028-02-12&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-12&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280213
+DTEND;VALUE=DATE:20280214
+DTSTAMP:20260905T090539Z
+UID:5bbc58bb-8e74-5595-9fae-a805552c3aa0
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2028-02-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 02-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+DTSTAMP:20260905T090539Z
+UID:2a73e962-7e02-513c-99e4-a7ec9a4f0b55
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2028-04-16&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-16&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+DTSTAMP:20260905T090539Z
+UID:51a696ea-817f-50e5-b7cd-2226d5acde4a
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2028-04-17&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-17&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280418
+DTEND;VALUE=DATE:20280419
+DTSTAMP:20260905T090539Z
+UID:787a69a8-f44f-518e-8e70-f69a4c3a7233
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2028-04-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280419
+DTEND;VALUE=DATE:20280420
+DTSTAMP:20260905T090539Z
+UID:a36ff6c2-3a7e-59d2-8cdc-c79aa88260a4
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2028-04-19&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-19&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280420
+DTEND;VALUE=DATE:20280421
+DTSTAMP:20260905T090539Z
+UID:f0faed9b-b688-513d-9e24-87b2bb62165a
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2028-04-20&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-20&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280421
+DTEND;VALUE=DATE:20280422
+DTSTAMP:20260905T090539Z
+UID:e6c33680-1ade-5b3b-94a6-4f85373f8184
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2028-04-21&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-21&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280422
+DTEND;VALUE=DATE:20280423
+DTSTAMP:20260905T090539Z
+UID:b3cefd64-f2dc-5f09-9f6c-dc3f042529a9
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2028-04-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 04-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+DTSTAMP:20260905T090539Z
+UID:505acce2-75cf-550f-a2b4-d9acff84c065
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2028-06-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280605
+DTEND;VALUE=DATE:20280606
+DTSTAMP:20260905T090539Z
+UID:0db163a8-d786-57c7-b0d3-72da24f06df1
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2028-06-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280606
+DTEND;VALUE=DATE:20280607
+DTSTAMP:20260905T090539Z
+UID:a2e53716-5781-59fc-a4fe-6a30a5922cdc
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2028-06-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280607
+DTEND;VALUE=DATE:20280608
+DTSTAMP:20260905T090539Z
+UID:ab476a76-6fdb-5a5a-b331-2bfe10b84838
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2028-06-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280608
+DTEND;VALUE=DATE:20280609
+DTSTAMP:20260905T090539Z
+UID:64d08fda-163a-5bd3-a911-1331ea9eb460
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2028-06-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280609
+DTEND;VALUE=DATE:20280610
+DTSTAMP:20260905T090539Z
+UID:76143bf6-175e-50d5-a56b-e26fc35f9601
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2028-06-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280610
+DTEND;VALUE=DATE:20280611
+DTSTAMP:20260905T090539Z
+UID:18f3e8d4-b4cf-57fe-9cb7-670300cf7dba
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2028-06-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20280611
+DTEND;VALUE=DATE:20280612
+DTSTAMP:20260905T090539Z
+UID:cf2568e9-f368-5515-84a9-0bae1f1b1eb3
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-06-11&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 06-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281225
+DTEND;VALUE=DATE:20281226
+DTSTAMP:20260905T090539Z
+UID:b35e29db-11d8-52c6-b148-550aefbad15d
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus) · T4
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2028-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281226
+DTEND;VALUE=DATE:20281227
+DTSTAMP:20260905T090539Z
+UID:e5c4ee5c-7271-5c74-8eef-e3eadf02625e
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2028-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281227
+DTEND;VALUE=DATE:20281228
+DTSTAMP:20260905T090539Z
+UID:770ab003-995e-50eb-9cae-48da29416060
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:1-18\nEvangeli
+ e: Mark. 8:30-34\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2028-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281228
+DTEND;VALUE=DATE:20281229
+DTSTAMP:20260905T090539Z
+UID:3eaccc71-84c5-5099-9bdb-e299f05f54ff
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 10:35-11:7\nEvang
+ elie: Mark. 9:10-16\nMeer: https://orthodox-ronl.github.io/heiligen-lage-l
+ anden/datum/?datum=2028-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281229
+DTEND;VALUE=DATE:20281230
+DTSTAMP:20260905T090539Z
+UID:2c6fb696-2708-5552-a07b-e5b1d63e874b
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 11:8\, 11-16\nEva
+ ngelie: Mark. 9:33-41\nMeer: https://orthodox-ronl.github.io/heiligen-lage
+ -landen/datum/?datum=2028-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281230
+DTEND;VALUE=DATE:20281231
+DTSTAMP:20260905T090539Z
+UID:0fea1a85-dbee-5d0d-893e-ac6f5923fc2f
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 1 Tim. 3:14-4:5\nEvang
+ elie: Matt. 3:1-11\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2028-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20281231
+DTEND;VALUE=DATE:20290101
+DTSTAMP:20260905T090539Z
+UID:d01f2d91-5dbe-5487-ae47-263b7af09a26
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:5-8\nEvangeli
+ e: Mark. 1:1-8\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2028-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2028-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290106
+DTEND;VALUE=DATE:20290107
+DTSTAMP:20260905T090539Z
+UID:7647a7dd-c303-5c79-a09f-97bb8023b49d
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T5
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2029-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290129
+DTEND;VALUE=DATE:20290130
+DTSTAMP:20260905T090539Z
+UID:4c2ea9b4-17bc-5f86-8e0e-5968f0941393
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2029-01-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 01-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290130
+DTEND;VALUE=DATE:20290131
+DTSTAMP:20260905T090539Z
+UID:77c2fab7-bb1b-5f12-a76c-cb7c858fb2a9
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 13
+ :7-16\nEvangelie: Matt. 5:14-19\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2029-01-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 01-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290131
+DTEND;VALUE=DATE:20290201
+DTSTAMP:20260905T090539Z
+UID:12e081ce-e6cd-568b-81e1-56698757dd45
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2029-01-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 01-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290201
+DTEND;VALUE=DATE:20290202
+DTSTAMP:20260905T090539Z
+UID:0fcbc8bd-e831-5607-97aa-ae5d8d9cfac8
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2029-02-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290202
+DTEND;VALUE=DATE:20290203
+DTSTAMP:20260905T090539Z
+UID:15c70d17-9a03-50f0-8f1f-99fc71756a08
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: Heb. 7:
+ 7-17\nEvangelie: Luc. 2:22-40\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2029-02-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290203
+DTEND;VALUE=DATE:20290204
+DTSTAMP:20260905T090539Z
+UID:5e81645e-80ac-55ca-a9da-3798f8c3ed58
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2029-02-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290204
+DTEND;VALUE=DATE:20290205
+DTSTAMP:20260905T090539Z
+UID:d30af053-faef-5ac9-aba9-16e9068ff8af
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T2
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2029-02-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 02-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290408
+DTEND;VALUE=DATE:20290409
+DTSTAMP:20260905T090539Z
+UID:5639a5e4-bb20-5834-b168-0e9c6a204633
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2029-04-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290409
+DTEND;VALUE=DATE:20290410
+DTSTAMP:20260905T090539Z
+UID:5796b0f7-9bac-5971-880e-20436be917a2
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2029-04-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290410
+DTEND;VALUE=DATE:20290411
+DTSTAMP:20260905T090539Z
+UID:c82687fe-6a1c-5c75-92c8-ef734beb9048
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2029-04-10&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-10&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290411
+DTEND;VALUE=DATE:20290412
+DTSTAMP:20260905T090539Z
+UID:d9472d78-8169-546e-ae28-258cfcfee66c
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2029-04-11&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-11&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290412
+DTEND;VALUE=DATE:20290413
+DTSTAMP:20260905T090539Z
+UID:f546ecd1-0469-589e-8028-57a2f4490ff0
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2029-04-12&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-12&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+DTSTAMP:20260905T090539Z
+UID:45a43192-5c1b-59ec-8faa-94ed764f3882
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2029-04-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+DTSTAMP:20260905T090539Z
+UID:782ed0cf-db05-5497-90a3-f5ac42a90071
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2029-04-14&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 04-14&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+DTSTAMP:20260905T090539Z
+UID:91e0aabe-3865-5b9f-8d6b-c75b8e58318c
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2029-05-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290528
+DTEND;VALUE=DATE:20290529
+DTSTAMP:20260905T090539Z
+UID:dda70c95-110e-5980-a97b-95e03f4496be
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2029-05-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290529
+DTEND;VALUE=DATE:20290530
+DTSTAMP:20260905T090539Z
+UID:dedba518-3b50-5daf-87cf-d658c3b7bca4
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2029-05-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290530
+DTEND;VALUE=DATE:20290531
+DTSTAMP:20260905T090539Z
+UID:11295d37-b7ef-5049-a59f-4a6af0dae606
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2029-05-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290531
+DTEND;VALUE=DATE:20290601
+DTSTAMP:20260905T090539Z
+UID:db41ea75-bdc0-5736-ae61-a0eed572243e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2029-05-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 05-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290601
+DTEND;VALUE=DATE:20290602
+DTSTAMP:20260905T090539Z
+UID:b370f713-4391-5e21-8536-0c2c8a16fb7f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2029-06-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 06-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290602
+DTEND;VALUE=DATE:20290603
+DTSTAMP:20260905T090539Z
+UID:c38407b9-4061-5a42-a5ad-cf4f78f29422
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2029-06-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 06-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20290603
+DTEND;VALUE=DATE:20290604
+DTSTAMP:20260905T090539Z
+UID:2608669b-316c-5166-a28d-3d4d88f7c254
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-06-03&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 06-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291225
+DTEND;VALUE=DATE:20291226
+DTSTAMP:20260905T090539Z
+UID:578a5efb-cea5-55e3-a833-afb5b4c29294
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus) · T5
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2029-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291226
+DTEND;VALUE=DATE:20291227
+DTSTAMP:20260905T090539Z
+UID:ebcdcc48-8449-5a58-afd1-226ea2c1b654
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2029-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291227
+DTEND;VALUE=DATE:20291228
+DTSTAMP:20260905T090539Z
+UID:9bc180e5-9752-583a-849d-9c7ebeee2196
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.1:19-27\nEvangelie
+ : Mark. 10:17-27\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2029-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291228
+DTEND;VALUE=DATE:20291229
+DTSTAMP:20260905T090539Z
+UID:08392cf3-5aea-5ee7-9616-f9aab09817c7
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.2:1-13\nEvangelie:
+  Mark. 10:23-32\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2029-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291229
+DTEND;VALUE=DATE:20291230
+DTSTAMP:20260905T090539Z
+UID:01bbb035-b779-5960-ac0b-07a881de416f
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Kol. 1:3-6\nEvangelie:
+  Luc. 16:10-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2029-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291230
+DTEND;VALUE=DATE:20291231
+DTSTAMP:20260905T090539Z
+UID:4c242997-a80b-5c44-9670-4247e70ff45b
+SUMMARY:vastenvrij · Nafeest van Kerst · T6
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: 2 Tim. 4:5-8\nEvangeli
+ e: Mark. 1:1-8\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2029-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20291231
+DTEND;VALUE=DATE:20300101
+DTSTAMP:20260905T090539Z
+UID:9278d44c-07aa-55a2-86ae-eb394cf1660c
+SUMMARY:vastenvrij · Nafeest van Kerst · T6
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.2:14-26\nEvangelie
+ : Mark. 10:46-52\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2029-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2029-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300106
+DTEND;VALUE=DATE:20300107
+DTSTAMP:20260905T090539Z
+UID:02b02313-d206-50a8-9d05-b2a1a0f503d0
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T7
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2030-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300218
+DTEND;VALUE=DATE:20300219
+DTSTAMP:20260905T090539Z
+UID:145ade92-3c7d-5ad1-a0b5-9358b4763412
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2030-02-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300219
+DTEND;VALUE=DATE:20300220
+DTSTAMP:20260905T090539Z
+UID:0258607f-2604-5f47-a749-3c8b9ee7e3a0
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2030-02-19&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-19&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300220
+DTEND;VALUE=DATE:20300221
+DTSTAMP:20260905T090539Z
+UID:b899bc20-c5ec-5f7d-9634-916635330f74
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2030-02-20&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-20&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300221
+DTEND;VALUE=DATE:20300222
+DTSTAMP:20260905T090539Z
+UID:9646d9d9-8032-56dd-b1f4-c0b1b49ddc93
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2030-02-21&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-21&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300222
+DTEND;VALUE=DATE:20300223
+DTSTAMP:20260905T090539Z
+UID:fb46c11e-9b58-577d-814b-8d127beba616
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2030-02-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300223
+DTEND;VALUE=DATE:20300224
+DTSTAMP:20260905T090539Z
+UID:bbe4e4b5-923d-5be9-8c06-3043b53f5523
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T5
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2030-02-23&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300224
+DTEND;VALUE=DATE:20300225
+DTSTAMP:20260905T090539Z
+UID:831ff5c5-173b-5c72-a273-1778f72340a8
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T6
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2030-02-24&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 02-24&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300428
+DTEND;VALUE=DATE:20300429
+DTSTAMP:20260905T090539Z
+UID:4bb6442c-be79-5a08-9e3f-493812823641
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2030-04-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 04-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300429
+DTEND;VALUE=DATE:20300430
+DTSTAMP:20260905T090539Z
+UID:44f5303d-5d09-547f-b8b0-9a49e19befc3
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2030-04-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 04-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300430
+DTEND;VALUE=DATE:20300501
+DTSTAMP:20260905T090539Z
+UID:0f760f32-ee89-52ec-b58c-eedf0a7e9b61
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2030-04-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 04-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+DTSTAMP:20260905T090539Z
+UID:37d7f5a0-39f4-5186-a406-83f857f225c7
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2030-05-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300502
+DTEND;VALUE=DATE:20300503
+DTSTAMP:20260905T090539Z
+UID:15250d26-ea78-5ec3-a51d-73b13a20048d
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2030-05-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300503
+DTEND;VALUE=DATE:20300504
+DTSTAMP:20260905T090539Z
+UID:5dc9662b-000b-5699-a951-f3c9bee3f6fa
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2030-05-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300504
+DTEND;VALUE=DATE:20300505
+DTSTAMP:20260905T090539Z
+UID:2007b704-c538-5d3b-9d5a-53af5aca170f
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2030-05-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 05-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300616
+DTEND;VALUE=DATE:20300617
+DTSTAMP:20260905T090539Z
+UID:e6015431-139e-547a-a08e-f950cede9dd1
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2030-06-16&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-16&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300617
+DTEND;VALUE=DATE:20300618
+DTSTAMP:20260905T090539Z
+UID:48293033-2a5b-542f-af12-ff154a4f3b8e
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2030-06-17&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-17&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300618
+DTEND;VALUE=DATE:20300619
+DTSTAMP:20260905T090539Z
+UID:29abaff1-d699-54e4-922e-84761b85a487
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2030-06-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300619
+DTEND;VALUE=DATE:20300620
+DTSTAMP:20260905T090539Z
+UID:6d34c873-cae9-5572-abff-915f7c22069b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2030-06-19&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-19&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300620
+DTEND;VALUE=DATE:20300621
+DTSTAMP:20260905T090539Z
+UID:4a376cca-4eec-5b20-88a6-4a5f6f4e3401
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2030-06-20&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-20&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300621
+DTEND;VALUE=DATE:20300622
+DTSTAMP:20260905T090539Z
+UID:a9629a94-e14a-5ec2-9d39-4fa11c6eb85b
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2030-06-21&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-21&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300622
+DTEND;VALUE=DATE:20300623
+DTSTAMP:20260905T090539Z
+UID:829f99dc-e4ff-56c6-8beb-4c971fd72eba
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2030-06-22&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-22&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20300623
+DTEND;VALUE=DATE:20300624
+DTSTAMP:20260905T090539Z
+UID:83793300-8557-5d7d-9899-c028ee10a9a9
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-06-23&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 06-23&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+DTSTAMP:20260905T090539Z
+UID:7a286531-33f6-517e-90f7-b456fb828dc1
+SUMMARY:vastenvrij · Woensdagvasten · T2
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2030-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301226
+DTEND;VALUE=DATE:20301227
+DTSTAMP:20260905T090539Z
+UID:e165ad8f-2ae4-50c6-9f44-c63cbef0d41f
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2030-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+DTSTAMP:20260905T090539Z
+UID:ecd12421-b32a-51d1-8ead-d0dba290b2c8
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Tit. 1:15-2:10\nEvange
+ lie: Mark. 12:1-12\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2030-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301228
+DTEND;VALUE=DATE:20301229
+DTSTAMP:20260905T090539Z
+UID:490379fb-2288-5dd3-b92d-10df91c6d0a5
+SUMMARY:vastenvrij · Nafeest van Kerst · T2
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Ef. 1:16-23\nEvangelie
+ : Luc. 17:3-10\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen
+ /datum/?datum=2030-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301229
+DTEND;VALUE=DATE:20301230
+DTSTAMP:20260905T090539Z
+UID:b54cc595-4a34-5cbe-aa9c-dc026cd66e68
+SUMMARY:vastenvrij · Nafeest van Kerst · T3
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2030-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301230
+DTEND;VALUE=DATE:20301231
+DTSTAMP:20260905T090539Z
+UID:ee796db6-7d70-5be6-be52-79ca0c3394be
+SUMMARY:vastenvrij · Nafeest van Kerst · T3
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 3:5-11\, 17-19\nE
+ vangelie: Mark. 12:13-17\nMeer: https://orthodox-ronl.github.io/heiligen-l
+ age-landen/datum/?datum=2030-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20301231
+DTEND;VALUE=DATE:20310101
+DTSTAMP:20260905T090539Z
+UID:457a3212-4b19-53f9-9a10-2cded53b8e1c
+SUMMARY:vastenvrij · Nafeest van Kerst · T3
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 4:1-13\nEvangelie
+ : Mark. 12:18-27\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2030-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2030-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310106
+DTEND;VALUE=DATE:20310107
+DTSTAMP:20260905T090539Z
+UID:9d47f756-0600-5edb-a55d-2f2042b444f9
+SUMMARY:vastenvrij · Theofanie (Doop des Heren) · T4
+DESCRIPTION:Vastenvrij — Theofanie (Doop des Heren)\nApostel: Tit. 2:11-14\
+ ; 3:4-7\nEvangelie: Matt. 3:13-17\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2031-01-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 01-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310203
+DTEND;VALUE=DATE:20310204
+DTSTAMP:20260905T090539Z
+UID:fbd22524-2df7-5671-9bbf-af2f133b2b91
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  1:20-2:9\nEvangelie: Mark. 13:9-13\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2031-02-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310204
+DTEND;VALUE=DATE:20310205
+DTSTAMP:20260905T090539Z
+UID:59b97e3c-584a-517f-accd-28e185d416c7
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  2:9-22\nEvangelie: Mark. 13:14-23\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2031-02-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310205
+DTEND;VALUE=DATE:20310206
+DTSTAMP:20260905T090539Z
+UID:63dca671-8ef1-5a93-9d3b-642f7d715539
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Petr.
+  3:1-18\nEvangelie: Mark. 13:24-31\nMeer: https://orthodox-ronl.github.io/
+ heiligen-lage-landen/datum/?datum=2031-02-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310206
+DTEND;VALUE=DATE:20310207
+DTSTAMP:20260905T090539Z
+UID:5181b28a-1e15-5ea5-9e2b-6d085a63d7b3
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 1:8-2:6\nEvangelie: Mark. 13:31-14:2\nMeer: https://orthodox-ronl.github.i
+ o/heiligen-lage-landen/datum/?datum=2031-02-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310207
+DTEND;VALUE=DATE:20310208
+DTSTAMP:20260905T090539Z
+UID:2e8cb614-a330-5c16-a374-7b755ba487e0
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Joh. 
+ 2:7-17\nEvangelie: Mark. 14:3-9\nMeer: https://orthodox-ronl.github.io/hei
+ ligen-lage-landen/datum/?datum=2031-02-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310208
+DTEND;VALUE=DATE:20310209
+DTSTAMP:20260905T090539Z
+UID:0a457b02-b3c3-557a-b9b5-a3f100f29a83
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 2 Tim. 
+ 3:1-9\nEvangelie: Luc. 20:45-21:4\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2031-02-08&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310209
+DTEND;VALUE=DATE:20310210
+DTSTAMP:20260905T090539Z
+UID:8d141833-51a0-56ec-bbe0-1742080ab227
+SUMMARY:vastenvrij · Vastenvrije week na de tollenaar · T1
+DESCRIPTION:Vastenvrij — Vastenvrije week na de tollenaar\nApostel: 1 Kor. 
+ 6:12-20\nEvangelie: Luc. 15:11-32\nMeer: https://orthodox-ronl.github.io/h
+ eiligen-lage-landen/datum/?datum=2031-02-09&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 02-09&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310413
+DTEND;VALUE=DATE:20310414
+DTSTAMP:20260905T090539Z
+UID:1348e013-825e-518f-b031-99f0cee9740a
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:1-8\nEvangelie: Joh.
+  1:1-17\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum/
+ ?datum=2031-04-13&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-13&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310414
+DTEND;VALUE=DATE:20310415
+DTSTAMP:20260905T090539Z
+UID:38df9018-d1cc-54a8-af25-f85c6a91a797
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 1:12-17\, 21-26\nEvang
+ elie: Joh. 1:18-28\nMeer: https://orthodox-ronl.github.io/heiligen-lage-la
+ nden/datum/?datum=2031-04-14&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-14&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310415
+DTEND;VALUE=DATE:20310416
+DTSTAMP:20260905T090539Z
+UID:90ab9af8-a155-54db-9100-9ae8381e29ff
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:14-21\nEvangelie: Lu
+ c. 24:12-35\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/da
+ tum/?datum=2031-04-15&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-15&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310416
+DTEND;VALUE=DATE:20310417
+DTSTAMP:20260905T090539Z
+UID:e899ddcb-4d03-50e2-ae91-8116e3d67829
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:22-36\nEvangelie: Jo
+ h. 1:35-51\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2031-04-16&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-16&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310417
+DTEND;VALUE=DATE:20310418
+DTSTAMP:20260905T090539Z
+UID:df6a8d26-2780-526f-a5fb-5246538fe5c2
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 2:38-43\nEvangelie: Jo
+ h. 3:1-15\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datu
+ m/?datum=2031-04-17&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-17&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310418
+DTEND;VALUE=DATE:20310419
+DTSTAMP:20260905T090539Z
+UID:2e38d245-2704-580e-9e73-c8cd3a71c9d9
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:1-8\nEvangelie: Joh.
+  2:12-22\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/datum
+ /?datum=2031-04-18&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-18&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310419
+DTEND;VALUE=DATE:20310420
+DTSTAMP:20260905T090539Z
+UID:0598623b-2a7e-58d0-921d-3be733d561fd
+SUMMARY:vastenvrij · Lichte Week · T1
+DESCRIPTION:Vastenvrij — Lichte Week\nApostel: Hand. 3:11-16\nEvangelie: Jo
+ h. 3:22-33\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/dat
+ um/?datum=2031-04-19&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 04-19&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310601
+DTEND;VALUE=DATE:20310602
+DTSTAMP:20260905T090539Z
+UID:a0d931d6-8859-5fd1-b574-235e86962bf5
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Hand. 2:1
+ -11\nEvangelie: Joh. 7:37-52\; 8:12\nMeer: https://orthodox-ronl.github.io
+ /heiligen-lage-landen/datum/?datum=2031-06-01&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-01&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310602
+DTEND;VALUE=DATE:20310603
+DTSTAMP:20260905T090539Z
+UID:4c801abd-90c8-5f1b-9775-32ab8f66a87f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Ef. 5:9-1
+ 9\nEvangelie: Matt. 18:10-20\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2031-06-02&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-02&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310603
+DTEND;VALUE=DATE:20310604
+DTSTAMP:20260905T090539Z
+UID:9249db23-dc58-5b1e-9e62-a18fe394e5ce
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:1-
+ 7\, 13-17\nEvangelie: Matt. 4:25\; 5:1-13\nMeer: https://orthodox-ronl.git
+ hub.io/heiligen-lage-landen/datum/?datum=2031-06-03&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-03&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310604
+DTEND;VALUE=DATE:20310605
+DTSTAMP:20260905T090539Z
+UID:9d070493-665a-520f-99cd-8c99646c29a9
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:18
+ -27\nEvangelie: Matt. 5:20-26\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2031-06-04&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-04&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310605
+DTEND;VALUE=DATE:20310606
+DTSTAMP:20260905T090539Z
+UID:77b4fbf5-430a-5889-a58c-25690b7cd025
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:28
+ -2:9\nEvangelie: Matt. 5:27-32\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2031-06-05&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-05&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310606
+DTEND;VALUE=DATE:20310607
+DTSTAMP:20260905T090539Z
+UID:7aff4764-7457-58f3-8852-5a99943f3d6f
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 2:14
+ -29\nEvangelie: Matt. 5:33-41\nMeer: https://orthodox-ronl.github.io/heili
+ gen-lage-landen/datum/?datum=2031-06-06&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-06&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310607
+DTEND;VALUE=DATE:20310608
+DTSTAMP:20260905T090539Z
+UID:22dfb0f5-d30a-5dcc-b1a8-48d2f8e44a67
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T7
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Rom. 1:7-
+ 12\nEvangelie: Matt. 5:42-48\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2031-06-07&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-07&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20310608
+DTEND;VALUE=DATE:20310609
+DTSTAMP:20260905T090539Z
+UID:08a3a5d6-107a-5e6d-915c-e06e92ee75a4
+SUMMARY:vastenvrij · Vastenvrije week na Pinksteren · T8
+DESCRIPTION:Vastenvrij — Vastenvrije week na Pinksteren\nApostel: Heb. 11:3
+ 3-12:2\nEvangelie: Matt. 10:32-33\, 37-38\; 19:27-30\nMeer: https://orthod
+ ox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-06-08&stijl=grego
+ riaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 06-08&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311225
+DTEND;VALUE=DATE:20311226
+DTSTAMP:20260905T090539Z
+UID:b481405f-2e3c-5fed-8cf4-9955761f3d2d
+SUMMARY:vastenvrij · Kerstfeest (Geboorte van Christus) · T4
+DESCRIPTION:Vastenvrij — Kerstfeest (Geboorte van Christus)\nApostel: Gal. 
+ 4:4-7\nEvangelie: Matt. 2:1-12\nMeer: https://orthodox-ronl.github.io/heil
+ igen-lage-landen/datum/?datum=2031-12-25&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-25&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311226
+DTEND;VALUE=DATE:20311227
+DTSTAMP:20260905T090539Z
+UID:4fb081fd-f2fd-538a-a3ff-ddf9c1aed7ba
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 2:11-18\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2031-12-26&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-26&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311227
+DTEND;VALUE=DATE:20311228
+DTSTAMP:20260905T090539Z
+UID:e358c3b8-c00b-52b5-9406-eefa4591936a
+SUMMARY:vastenvrij · Nafeest van Kerst · T4
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Ef. 5:1-8\nEvangelie: 
+ Luc. 14:1-11\nMeer: https://orthodox-ronl.github.io/heiligen-lage-landen/d
+ atum/?datum=2031-12-27&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-27&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311228
+DTEND;VALUE=DATE:20311229
+DTSTAMP:20260905T090539Z
+UID:ffa29e64-2c89-5c44-85f2-8884f8825062
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Gal. 1:11-19\nEvangeli
+ e: Matt. 2:13-23\nMeer: https://orthodox-ronl.github.io/heiligen-lage-land
+ en/datum/?datum=2031-12-28&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-28&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311229
+DTEND;VALUE=DATE:20311230
+DTSTAMP:20260905T090539Z
+UID:9e3546b7-087c-5aef-8810-95149324643e
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 11:17-23\, 27-31\
+ nEvangelie: Mark. 9:42-10:1\nMeer: https://orthodox-ronl.github.io/heilige
+ n-lage-landen/datum/?datum=2031-12-29&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-29&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311230
+DTEND;VALUE=DATE:20311231
+DTSTAMP:20260905T090539Z
+UID:122e66b9-6a5a-5454-8a08-2417bf7dd964
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Heb. 12:25-26\; 13:22-
+ 25\nEvangelie: Mark. 10:2-12\nMeer: https://orthodox-ronl.github.io/heilig
+ en-lage-landen/datum/?datum=2031-12-30&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-30&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20311231
+DTEND;VALUE=DATE:20320101
+DTSTAMP:20260905T090539Z
+UID:e3f3ae6a-f7f8-5c6d-b046-d2189aaf7c99
+SUMMARY:vastenvrij · Nafeest van Kerst · T5
+DESCRIPTION:Vastenvrij — Nafeest van Kerst\nApostel: Jak.1:1-18\nEvangelie:
+  Mark. 10:11-16\nMeer: https://orthodox-ronl.github.io/heiligen-lage-lande
+ n/datum/?datum=2031-12-31&stijl=gregoriaans
+URL:https://orthodox-ronl.github.io/heiligen-lage-landen/datum/?datum=2031-
+ 12-31&stijl=gregoriaans
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
