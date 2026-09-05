@@ -28,6 +28,9 @@ per burgerlijke dag), behalve tombstones (enkele herinneringsdagen).
 
 De vier hoofdssoorten blijven `heiligen` / `feesten` / `vasten` /
 `vastenvrij` (combinaties met koppelteken; `alles` = alle vier).
+**Lezingen** is een extra vinkje (default aan): niet in `alles` als
+apart token; uit = achtervoegsel `-zonder-lezingen`. Alleen lezingen =
+sleutel `lezingen`.
 
 Daarbinnen, defaults van de agendapagina:
 
@@ -36,6 +39,7 @@ Daarbinnen, defaults van de agendapagina:
   teruggave, synaxis)
 - vasten = week (woensdag/vrijdag) + periodes + feestdagen met vasten
 - vastenvrij = aan
+- lezingen = aan
 
 Afwijkende subfilters krijgen eigen sleutels (`heiligen-nader`,
 `feesten-grote`, `feesten-grote-overige`, `vasten-week`, …). Extra
@@ -79,8 +83,11 @@ Die paden **niet** opnieuw vullen met echte kalenderdagen.
 Eén hele-dag-afspraak per burgerlijke dag die in de subset iets toont.
 `SUMMARY` volgt `day_title` in `scripts/ics.py` (spiegel `icsDayTitle` in
 `calendar.js`): grootfeest, anders heilige van de Lage Landen, anders
-overig feest of `daglabel`. Op maandag zonder grootfeest of heilige komt
-`week_kop_label` vooraan. Vastenlabels komen uit `mix_vastenniveau` in
+overig feest. Op maandag zonder grootfeest of heilige komt
+`week_kop_label` vooraan als Feesten aan staat. Het lezingen-`daglabel`
+op andere dagen alleen als `AgendaSpec.lezingen`. Elke `SUMMARY` eindigt
+met `T` plus `octoechos_toon` (`T1`–`T8`). Vastenlabels komen uit
+`mix_vastenniveau` in
 `scripts/vasten.py` en staan alleen in `SUMMARY`/`DESCRIPTION` als er
 een regel is én de bijbehorende vasten-subfilter aan staat.
 `URL` wijst naar de datumpagina.

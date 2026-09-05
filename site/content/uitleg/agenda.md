@@ -21,11 +21,11 @@ Op die pagina doet u drie keuzes:
 2. **Nieuwe of oude kalender.** Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
 3. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
-   vastenvrij — één of meer. Onder Heiligen, Feesten en Vasten staan
-   extra vinkjes (opgenomen / nader onderzoek / kandidaat; grote en overige
-   feesten plus voorfeest/nafeest/synaxis; woensdag/vrijdag, periodes,
-   feestdagen met vasten). Daaronder ziet u hoe de keuze in een week
-   uitpakt.
+   vastenvrij, lezingen — één of meer. Onder Heiligen, Feesten en Vasten
+   staan extra vinkjes (opgenomen / nader onderzoek / kandidaat; grote en
+   overige feesten plus voorfeest/nafeest/synaxis; woensdag/vrijdag,
+   periodes, feestdagen met vasten). Daaronder ziet u hoe de keuze in een
+   week uitpakt.
 
 **Vasten** in die keuze betekent vasten (streng, wijn en olie, vis,
 lichter). **Vastenvrij** is de uitzondering: dagen die de Kerk
@@ -35,6 +35,15 @@ Een gewone dinsdag of donderdag zonder regel komt **niet** als vasten
 over eten. Vinkt u alleen Vasten aan, dan komen de vrije dagen niet in de
 agenda; vinkt u Vastenvrij aan, dan wel, met een kort label
 *vastenvrij* in de titel.
+
+**Lezingen** (standaard aan) is bedoeld om **elke dag** in uw agenda
+Apostel en Evangelie te kunnen zien, ook als er die dag geen heilige of
+feest in de kopregel staat. Op maandag blijft de weeknaam staan als
+Feesten aan staat; op andere dagen noemt de kopregel de liturgische dag
+uit de lezingencyclus (bijvoorbeeld *17e dinsdag na Pinksteren*). De
+schriftlezingen zelf staan in de tekst van de afspraak: een maandweergave
+heeft geen ruimte voor Apostel én Evangelie in de titel. Zet Lezingen uit
+als u alleen dagen met heilige, feest of vasten wilt.
 
 Onder de keuzes staan voorbeeldweken: eerst deze week, en als het zinvol
 is een latere week waarin uw keuze meer laat zien. De titel is wat u in de
@@ -55,11 +64,15 @@ Elke dag is **één** afspraak. De titel (kopregel in week- of maandweergave)
 kiest in deze volgorde: een **grootfeest** (de twaalf, [Pascha]({{% ref "/feesten/pascha" %}}), [Grote Week]({{% ref "/vasten/grote-week" %}}));
 anders een **heilige van de Lage Landen**; anders de rest (ander feest of
 de liturgische weeknaam). Op **maandag** zonder grootfeest of heilige
-staat de liturgische week vooraan (`2e week na Pinksteren`). Vasten is een
-kort label als u vasten hebt aangevinkt
+staat de liturgische week vooraan (`2e week na Pinksteren`), als Feesten
+aan staat. Op andere dagen komt de liturgische dag uit de lezingencyclus
+alleen als **Lezingen** aan staat. Vasten is een kort label als u vasten
+hebt aangevinkt
 (*streng*, *wijn en olie*, *vis*) of *vastenvrij* als u vastenvrij hebt
 aangevinkt. Is er geen vastenregel, dan staat er niets over vasten in de
-titel en niet in de tekst van de afspraak. Tik op de dag voor vastenregel,
+titel en niet in de tekst van de afspraak. Aan het eind van elke kopregel
+staat de [toon van de week]({{% ref "/uitleg/toon" %}}) als `T1` tot
+`T8` (bijvoorbeeld `T3`). Tik op de dag voor vastenregel,
 andere namen, Apostel en Evangelie (zonder website-links) en heiligen.
 Onderaan staat *Meer:* met de datumpagina.
 

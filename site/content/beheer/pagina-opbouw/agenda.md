@@ -1,7 +1,7 @@
 ---
 title: "Agenda"
 description: "Contract: kalender op telefoon of computer"
-git_date: 2026-09-02
+git_date: 2026-09-05
 ---
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
@@ -52,12 +52,15 @@ keuze de stand van de parochie moet volgen.
 
 ## Stap 3: wat
 
-**Wel:** heiligen, feesten, vasten, vastenvrij (één of meer), met nested
+**Wel:** heiligen, feesten, vasten, vastenvrij, lezingen (één of meer),
+met nested
 vinkjes: opgenomen (default aan), nader onderzoek en kandidaat (default
 uit); feestgroepen grote / overige / voorfeest/nafeest/synaxis (één
 vinkje; default aan; teruggave bij omlijsting); vasten
 woensdag/vrijdag (één vinkje), periodes, feestdagen met vasten (default
-aan). Kandidaat niet op jaarkalender of datumpagina. Bij **abonneren**
+aan). Lezingen default aan: elke dag een afspraak voor Apostel/Evangelie
+in de tekst; kopregel op niet-maandagen het liturgische daglabel.
+Kandidaat niet op jaarkalender of datumpagina. Bij **abonneren**
 zijn voorfeest/nafeest/synaxis en woensdag/vrijdag wél aanklikbaar
 (weglaten mag); andere splitsingen onder Feesten of Vasten mét andere
 hoofdssoorten zijn grijs. Popover op de chiptekst (geen kop;
@@ -78,7 +81,7 @@ Daarna, als de keuze daar aanleiding toe geeft, een tweede week
 (`Zo ziet de week van … eruit`) later in het jaar, waarin heilige, feest,
 vastenperiode of vastenvrij zichtbaar is al naar gelang de vinkjes.
 Titel = app-titel; vastenlabel alleen als aangevinkt én er die dag een
-regel is.
+regel is; toon als `T1`–`T8` aan het eind van elke titel.
 
 **Niet:** website-links in de voorbeeldtitel; een tweede, afwijkende
 titellogica; de tweede week tonen als die niet rijker is dan deze week;

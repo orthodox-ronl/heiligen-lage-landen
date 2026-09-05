@@ -27,7 +27,7 @@ from ics import (  # noqa: E402
     subset_key,
     v2_relpaths,
 )
-from kalender import julian_feast_to_civil_date  # noqa: E402
+from kalender import julian_feast_to_civil_date, octoechos_toon  # noqa: E402
 from lezingen import build_lezingen_dagen_payload  # noqa: E402
 from load_entries import load_entries  # noqa: E402
 
@@ -53,6 +53,15 @@ def _payload():
     if _PAYLOAD is None:
         _PAYLOAD = build_lezingen_dagen_payload(YEARS)
     return _PAYLOAD
+
+
+def _toon(ymd: str) -> str:
+    d = date(int(ymd[:4]), int(ymd[4:6]), int(ymd[6:8]))
+    return f"T{octoechos_toon(d)}"
+
+
+def _titel(base: str, ymd: str) -> str:
+    return f"{base} · {_toon(ymd)}"
 
 
 def _unfold(text: str) -> str:
@@ -110,7 +119,7 @@ def _build(kinds: frozenset[str], stijl: str = "nieuw", years: list[int] | None 
 def test_albericus_in_grote_vasten_is_een_dagregel() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20260304"]
-    assert ev["summary"] == "Albericus van Utrecht · streng"
+    assert ev["summary"] == _titel("Albericus van Utrecht · streng", "20260304")
     assert "Grote Vasten" in ev["description"]
     assert "Heilige: Albericus van Utrecht" in ev["description"]
     assert ev["description"].split("\n")[-1].startswith("Meer:")
@@ -123,13 +132,15 @@ def test_albericus_in_grote_vasten_is_een_dagregel() -> None:
 
 def test_aankondiging_in_grote_vasten_heeft_vis() -> None:
     events = parse_events(_build(ALLES))
-    assert events["20260325"]["summary"] == "Aankondiging aan de Moeder Gods · vis"
+    assert events["20260325"]["summary"] == _titel(
+        "Aankondiging aan de Moeder Gods · vis", "20260325"
+    )
 
 
 def test_willibrord_zonder_vastensuffix() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20261107"]
-    assert ev["summary"] == "Willibrord"
+    assert ev["summary"] == _titel("Willibrord", "20261107")
     assert "Willibrord" in ev["description"]
     assert "Apostel:" in ev["description"]
     assert "Evangelie:" in ev["description"]
@@ -157,7 +168,7 @@ def test_juli_dinsdag_geen_vastenregel() -> None:
 def test_juli_woensdag_wekelijks_vasten() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20260715"]
-    assert ev["summary"].endswith("· wijn en olie")
+    assert ev["summary"].endswith(f"· wijn en olie · {_toon('20260715')}")
     assert "Vasten:" in ev["description"]
 
 
@@ -172,15 +183,19 @@ def test_pascha_een_balk_met_vastenvrij() -> None:
 def test_synaxis_en_nafeest_een_titel() -> None:
     events = parse_events(_build(ALLES))
     ev = events["20260107"]
-    assert ev["summary"] == "Synaxis van Johannes de Doper · wijn en olie"
+    assert ev["summary"] == _titel(
+        "Synaxis van Johannes de Doper · wijn en olie", "20260107"
+    )
     assert not ev["summary"].startswith("Nafeest")
     assert ev["description"].split("\n")[-1].startswith("Meer:")
 
 
 def test_vasten_only_grote_vasten_en_lege_dinsdag() -> None:
     events = parse_events(_build(VASTEN))
-    assert events["20260304"]["summary"] == "streng · Grote Vasten"
-    assert events["20260307"]["summary"] == "wijn en olie · Grote Vasten"
+    assert events["20260304"]["summary"] == _titel("streng · Grote Vasten", "20260304")
+    assert events["20260307"]["summary"] == _titel(
+        "wijn en olie · Grote Vasten", "20260307"
+    )
     assert "20260113" not in events
 
 
@@ -198,7 +213,7 @@ def test_lichte_week_in_vastenvrij() -> None:
 
 def test_heiligen_only_geen_vastenprefix() -> None:
     events = parse_events(_build(HEILIGEN))
-    assert events["20260304"]["summary"] == "Albericus van Utrecht"
+    assert events["20260304"]["summary"] == _titel("Albericus van Utrecht", "20260304")
     assert "streng" not in events["20260304"]["summary"]
 
 
@@ -275,6 +290,7 @@ def test_maandag_toont_weeknaam() -> None:
     ev = events["20260608"]
     assert ev["summary"].startswith("2e week na Pinksteren")
     assert "Medardus" not in ev["summary"]
+    assert ev["summary"].endswith(_toon("20260608"))
 
 
 def test_maandag_heilige_wint_van_weeknaam() -> None:
@@ -290,7 +306,7 @@ def test_maandag_heilige_wint_van_weeknaam() -> None:
         civil=date(2026, 6, 8),
         stijl="nieuw",
     )
-    assert title == "Testheilige"
+    assert title == _titel("Testheilige", "20260608")
 
 
 def test_nader_onderzoek_opt_in() -> None:
@@ -301,6 +317,19 @@ def test_nader_onderzoek_opt_in() -> None:
     ev = events["20260608"]
     assert ev["summary"].startswith("Medardus")
     assert "week na Pinksteren" not in ev["summary"]
+
+
+def test_dinsdag_met_lezingen_toont_daglabel() -> None:
+    events = parse_events(_build(ALLES))
+    ev = events["20260922"]
+    assert "dinsdag na Pinksteren" in ev["summary"]
+    assert ev["summary"].endswith(_toon("20260922"))
+
+
+def test_dinsdag_zonder_lezingen_geen_lege_dag() -> None:
+    spec = AgendaSpec(lezingen=False)
+    events = parse_events(_build(ALLES, spec=spec))
+    assert "20260922" not in events
 
 
 def test_geestesmaandag_niet_weeknaam() -> None:
@@ -350,6 +379,17 @@ def test_v2_relpaths_een_feed_per_keuze() -> None:
     nader_file = v2_relpaths(met_nader, "nieuw")[0].removeprefix("v2/")
     assert nader_file in names
     assert feed_key(default) == "alles"
+    assert feed_key(AgendaSpec(lezingen=False)) == "alles-zonder-lezingen"
+    alleen_lezingen = AgendaSpec(
+        heiligen=frozenset(),
+        feesten=frozenset(),
+        vasten=frozenset(),
+        vastenvrij=False,
+        lezingen=True,
+    )
+    assert feed_key(alleen_lezingen) == "lezingen"
+    assert publish_feed_spec(alleen_lezingen)
+    assert v2_relpaths(alleen_lezingen, "nieuw") == ["v2/lezingen-nieuw.ics"]
 
 
 def test_subscribe_kan_omlijsting_en_week_weglaten() -> None:

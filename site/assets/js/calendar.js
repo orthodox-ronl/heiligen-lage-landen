@@ -185,6 +185,16 @@
           "Lichte Week of Kerst. Een gewone dinsdag zonder regel is geen " +
           "vastenvrij.",
       },
+      "agenda-lezingen": {
+        uitleg: "lezingen",
+        html:
+          "Elke dag een afspraak, ook zonder heilige of feest, zodat u in " +
+          "de agenda-app Apostel en Evangelie van die dag kunt openen. De " +
+          "kopregel noemt de liturgische dag (bijvoorbeeld de 17e dinsdag " +
+          "na Pinksteren); de lezingen zelf staan in de tekst van de " +
+          "afspraak. Op maandag blijft de weeknaam staan als Feesten aan " +
+          "staat.",
+      },
     };
     return tips[kind] || null;
   }
@@ -1567,8 +1577,9 @@
       setPopoverTitleVisible(title, dlg, false);
       body.innerHTML =
         `<p>Wat u aanklikt, komt in de agenda. Onder Heiligen, Feesten ` +
-        `en Vasten staan extra vinkjes. De weken hieronder volgen mee. ` +
-        `${meerUitlegHtml("agenda")}</p>`;
+        `en Vasten staan extra vinkjes. Lezingen zet elke dag een ` +
+        `afspraak klaar voor Apostel en Evangelie. De weken hieronder ` +
+        `volgen mee. ${meerUitlegHtml("agenda")}</p>`;
       if (meer) {
         meer.hidden = true;
         meer.innerHTML = "";
@@ -3753,6 +3764,7 @@
         ? vasten.filter((g) => ICS_VASTEN_GROEPEN.includes(g))
         : [],
       vastenvrij: parents.has("vastenvrij"),
+      lezingen: parents.has("lezingen"),
     };
   }
 
@@ -3833,19 +3845,32 @@
     return "vasten-" + bits.join("-");
   }
 
+  function hasAgendaKeuze(spec) {
+    return specKinds(spec).length > 0 || Boolean(spec.lezingen);
+  }
+
   function feedKey(spec) {
     const kinds = specKinds(spec);
-    if (!kinds.length) return null;
-    if (nestedIsDefault(spec)) return parentSubsetKey(kinds);
-    const parts = [];
-    const hk = heiligenFileKey(spec.heiligen);
-    if (hk) parts.push(hk);
-    const fk = feestenFileKey(spec.feesten);
-    if (fk) parts.push(fk);
-    const vk = vastenFileKey(spec.vasten);
-    if (vk) parts.push(vk);
-    if (spec.vastenvrij) parts.push("vastenvrij");
-    return parts.length ? parts.join("-") : null;
+    if (!kinds.length && !spec.lezingen) return null;
+    let base;
+    if (!kinds.length) {
+      base = "lezingen";
+    } else if (nestedIsDefault(spec)) {
+      base = parentSubsetKey(kinds);
+    } else {
+      const parts = [];
+      const hk = heiligenFileKey(spec.heiligen);
+      if (hk) parts.push(hk);
+      const fk = feestenFileKey(spec.feesten);
+      if (fk) parts.push(fk);
+      const vk = vastenFileKey(spec.vasten);
+      if (vk) parts.push(vk);
+      if (spec.vastenvrij) parts.push("vastenvrij");
+      base = parts.length ? parts.join("-") : spec.lezingen ? "lezingen" : null;
+    }
+    if (!base) return null;
+    if (!spec.lezingen) return `${base}-zonder-lezingen`;
+    return base;
   }
 
   function feastSubscribeOk(spec) {
@@ -3866,13 +3891,13 @@
 
   function icsFeedPublished(spec) {
     const kinds = specKinds(spec);
-    if (!kinds.length) return false;
+    if (!kinds.length) return Boolean(spec.lezingen);
     if (nestedIsDefault(spec) || kinds.length === 1) return true;
     return feastSubscribeOk(spec) && vastenSubscribeOk(spec);
   }
 
   function icsChoiceHasFeed(spec) {
-    return specKinds(spec).length > 0 && icsFeedPublished(spec);
+    return hasAgendaKeuze(spec) && icsFeedPublished(spec);
   }
 
   function resetAgendaKeuzesDefault() {
@@ -4134,7 +4159,7 @@
     const saints = kinds.has("heilige") ? icsKopHeiligen(visible) : [];
     const rest = kinds.has("feest") ? icsKopOverigeFeesten(visible) : [];
     let daglabel = "";
-    if (kinds.has("feest") && year && style && mmdd) {
+    if (spec.lezingen && year && style && mmdd) {
       const lez = lezingenForDay(year, mmdd, style);
       if (lez && lez.daglabel) daglabel = lez.daglabel;
     }
@@ -4152,15 +4177,19 @@
       else headline = daglabel;
     } else if (rest.length) {
       headline = rest.map(icsNaam).join(", ");
-    } else {
+    } else if (spec.lezingen) {
       headline = daglabel;
     }
+    const toonDate =
+      year && mmdd ? dateFromMmdd(year, mmdd) : null;
+    const toon = toonDate ? `T${octoechosToon(toonDate)}` : "";
+    const withToon = (text) => (toon ? `${text} · ${toon}` : text);
     if (!headline && !showVasten) return null;
-    if (!showVasten) return headline || null;
+    if (!showVasten) return withToon(headline);
     const label = VASTEN_LABELS[vasten.niveau] || vasten.niveau;
-    if (headline) return `${headline} · ${label}`;
+    if (headline) return withToon(`${headline} · ${label}`);
     const bron = vastenBronNaam(vasten, mixSrc);
-    return bron ? `${label} · ${bron}` : label;
+    return withToon(bron ? `${label} · ${bron}` : label);
   }
 
   function startOfIsoWeek(d) {
@@ -4325,8 +4354,7 @@
     const rijkKop = document.getElementById("ics-voorbeeld-rijk-kop");
     if (!list) return;
     try {
-      const shows = specKinds(spec);
-      if (!shows.length) {
+      if (!hasAgendaKeuze(spec)) {
         list.innerHTML =
           "<li class=\"muted\">Kies minstens één soort dag.</li>";
         if (rijkWrap) rijkWrap.hidden = true;
@@ -4394,17 +4422,19 @@
   }
 
   function agendaSamenvatting(spec, stijl, modus, files) {
-    const shows = specKinds(spec);
-    if (!shows.length || !files.length) {
+    if (!hasAgendaKeuze(spec) || !files.length) {
       return "Kies minstens één soort dag. Daarna krijgt de knop hieronder een betekenis.";
     }
+    const shows = specKinds(spec);
     const labels = {
       heilige: "heiligen",
       feest: "feesten",
       vasten: "vasten",
       vastenvrij: "vastenvrij",
     };
-    const wat = nlOpsomming(shows.map((s) => labels[s] || s));
+    const bits = shows.map((s) => labels[s] || s);
+    if (spec.lezingen) bits.push("lezingen");
+    const wat = nlOpsomming(bits);
     if (!icsFeedPublished(spec) && modus === "abonneren") {
       return (
         "Deze mix van extra vinkjes onder Feesten of Vasten, samen met andere soorten, " +
@@ -4476,7 +4506,7 @@
     const modus = icsModus();
     const urls = files.map((f) => assetUrl("ics/" + f));
     const url = urls[0] || "";
-    const hasKinds = specKinds(spec).length > 0;
+    const hasKinds = hasAgendaKeuze(spec);
     const published = icsFeedPublished(spec);
     const klaar = modus === "downloaden" ? hasKinds : hasKinds && published;
     const download = document.getElementById("ics-download");

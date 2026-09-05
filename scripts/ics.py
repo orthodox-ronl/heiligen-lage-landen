@@ -15,6 +15,7 @@ from kalender import (
     gregorian_to_julian_calendar,
     julian_feast_to_civil_date,
     mmdd_from_date,
+    octoechos_toon,
     pascha_offset_date,
     weekday_relative_date,
 )
@@ -111,6 +112,7 @@ class AgendaSpec:
     feesten: frozenset[str] = DEFAULT_FEESTEN
     vasten: frozenset[str] = DEFAULT_VASTEN
     vastenvrij: bool = True
+    lezingen: bool = True
 
     def kinds(self) -> frozenset[str]:
         kinds: set[str] = set()
@@ -132,6 +134,7 @@ def spec_from_kinds(kinds: frozenset[str]) -> AgendaSpec:
         feesten=DEFAULT_FEESTEN if "feest" in kinds else frozenset(),
         vasten=DEFAULT_VASTEN if "vasten" in kinds else frozenset(),
         vastenvrij="vastenvrij" in kinds,
+        lezingen="feest" in kinds,
     )
 
 
@@ -192,23 +195,34 @@ def nested_is_default(spec: AgendaSpec) -> bool:
 def feed_key(spec: AgendaSpec) -> str | None:
     """Bestandsstem van één v2-feed voor dit setje vinkjes."""
     kinds = spec.kinds()
-    if not kinds:
+    if not kinds and not spec.lezingen:
         return None
-    if nested_is_default(spec):
-        return subset_key(kinds)
-    parts: list[str] = []
-    hk = heiligen_file_key(spec.heiligen)
-    if hk:
-        parts.append(hk)
-    fk = feesten_file_key(spec.feesten)
-    if fk:
-        parts.append(fk)
-    vk = vasten_file_key(spec.vasten)
-    if vk:
-        parts.append(vk)
-    if spec.vastenvrij:
-        parts.append("vastenvrij")
-    return "-".join(parts) if parts else None
+    if not kinds:
+        base = "lezingen"
+    elif nested_is_default(spec):
+        base = subset_key(kinds)
+        assert base
+    else:
+        parts: list[str] = []
+        hk = heiligen_file_key(spec.heiligen)
+        if hk:
+            parts.append(hk)
+        fk = feesten_file_key(spec.feesten)
+        if fk:
+            parts.append(fk)
+        vk = vasten_file_key(spec.vasten)
+        if vk:
+            parts.append(vk)
+        if spec.vastenvrij:
+            parts.append("vastenvrij")
+        base = "-".join(parts) if parts else None
+        if not base:
+            base = "lezingen" if spec.lezingen else None
+        if not base:
+            return None
+    if not spec.lezingen:
+        return f"{base}-zonder-lezingen"
+    return base
 
 
 def v2_relpaths(spec: AgendaSpec, stijl: str) -> list[str]:
@@ -243,7 +257,7 @@ def publish_feed_spec(spec: AgendaSpec) -> bool:
     """
     kinds = spec.kinds()
     if not kinds:
-        return False
+        return bool(spec.lezingen)
     if nested_is_default(spec) or len(kinds) == 1:
         return True
     return feast_subscribe_ok(spec) and vasten_subscribe_ok(spec)
@@ -264,14 +278,16 @@ def iter_agenda_specs() -> Iterator[AgendaSpec]:
         for feesten in feesten_opties:
             for vasten in vasten_opties:
                 for vastenvrij in (False, True):
-                    spec = AgendaSpec(
-                        heiligen=heiligen,
-                        feesten=feesten,
-                        vasten=vasten,
-                        vastenvrij=vastenvrij,
-                    )
-                    if spec.kinds():
-                        yield spec
+                    for lezingen in (False, True):
+                        spec = AgendaSpec(
+                            heiligen=heiligen,
+                            feesten=feesten,
+                            vasten=vasten,
+                            vastenvrij=vastenvrij,
+                            lezingen=lezingen,
+                        )
+                        if spec.kinds() or spec.lezingen:
+                            yield spec
 
 
 def sunset_dates(today: date | None = None) -> list[date]:
@@ -728,8 +744,10 @@ def day_title(
     """SUMMARY voor één dag, of None als de feed die dag overslaat.
 
     Prioriteit: grootfeest, anders heilige van de Lage Landen, anders
-    overige feesten/daglabel. Op maandag zonder grootfeest of heilige
-    staat de liturgische week vooraan.
+    overige feesten. Op maandag zonder grootfeest of heilige staat de
+    liturgische week vooraan (als Feesten aan staat). Op andere dagen
+    komt het lezingen-daglabel alleen als Lezingen aan staat.
+    Eindigt met de toon van de week (T1–T8).
     """
     from lezingen import week_kop_label
 
@@ -757,7 +775,7 @@ def day_title(
     saints = kop_heiligen(visible) if "heilige" in kinds else []
     rest = kop_overige_feesten(visible) if "feest" in kinds else []
     daglabel = ""
-    if "feest" in kinds and lezingen and lezingen.get("daglabel"):
+    if spec.lezingen and lezingen and lezingen.get("daglabel"):
         daglabel = str(lezingen["daglabel"])
 
     headline = ""
@@ -778,21 +796,23 @@ def day_title(
             headline = daglabel
     elif rest:
         headline = kop_titel(rest)
-    else:
+    elif spec.lezingen:
         headline = daglabel
+
+    toon = f"T{octoechos_toon(civil)}"
 
     if not headline and not show_vasten:
         return None
     if not show_vasten:
-        return headline or None
+        return f"{headline} · {toon}"
     assert isinstance(indicatie, VastenIndicatie)
     label = NIVEAU_LABELS.get(indicatie.niveau, indicatie.niveau)
     if headline:
-        return f"{headline} · {label}"
+        return f"{headline} · {label} · {toon}"
     bron = vasten_bron_naam(indicatie, day_entries)
     if bron:
-        return f"{label} · {bron}"
-    return label
+        return f"{label} · {bron} · {toon}"
+    return f"{label} · {toon}"
 
 
 def _juliaans_regel(entry: dict[str, Any], stijl: str) -> str | None:
@@ -903,8 +923,14 @@ def build_ics(
         "X-WR-TIMEZONE:UTC",
         "X-PUBLISHED-TTL:P1D",
     ]
-    for civil in sorted(grouped):
-        day_entries = grouped[civil]
+    if spec.lezingen:
+        days: list[date] = []
+        for year in year_list:
+            days.extend(_iter_civil_days(date(year, 1, 1), date(year, 12, 31)))
+    else:
+        days = sorted(grouped)
+    for civil in days:
+        day_entries = grouped.get(civil, [])
         mix_mmdd = _mix_mmdd(civil, year_s)
         indicatie = mix_vastenniveau(
             mix_entries(day_entries, spec), civil.isoweekday(), mix_mmdd

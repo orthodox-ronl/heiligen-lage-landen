@@ -274,7 +274,8 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     assert "U mag één of meer" not in layout
     assert 'data-info-tip="agenda-opgenomen"' in layout
     assert 'data-info-tip="agenda-abonneren"' in layout
-    assert 'data-info-tip="agenda-omlijsting"' in layout
+    assert 'data-info-tip="agenda-lezingen"' in layout
+    assert 'value="lezingen"' in layout
     assert 'data-info-tip="agenda-week"' in layout
     assert 'data-info-tip="agenda-stap-kalender"' in layout
     assert 'data-info-tip="pagina-agenda"' in layout
