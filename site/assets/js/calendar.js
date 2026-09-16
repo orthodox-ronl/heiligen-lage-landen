@@ -4325,7 +4325,7 @@
       const dag = `${days[i]} ${d.getDate()} ${MONTHS[d.getMonth() + 1]}`;
       const tekst = ctx.title
         ? escapeHtml(ctx.title)
-        : "<span class=\"muted\">niets op deze dag</span>";
+        : "<span class=\"muted\">---</span>";
       const href = daySurfaceHref(ctx.year, ctx.mmdd, ctx.yearStyle, {
         bindStyle: true,
       });
