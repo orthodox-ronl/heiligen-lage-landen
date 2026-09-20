@@ -984,13 +984,13 @@ def build_ics(
 
 
 def build_sunset_ics(*, old_filename: str, today: date | None = None) -> str:
-    """Herinneringen op een oude feed-URL: abonneren opnieuw via /agenda/."""
+    """Herinneringen op een oude feed-URL: linken opnieuw via /agenda/."""
     today = today or date.today()
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     summary = "Deze agenda-link werkt niet meer"
     description = (
         "Deze kalender wordt niet meer bijgewerkt. "
-        "Verwijder dit abonnement en kies een nieuwe link op "
+        "Verwijder deze link en kies een nieuwe link op "
         f"{AGENDA_PAGINA_URL}"
     )
     lines = [

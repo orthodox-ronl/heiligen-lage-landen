@@ -273,7 +273,7 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     assert "Kies de stand" not in layout
     assert "U mag één of meer" not in layout
     assert 'data-info-tip="agenda-opgenomen"' in layout
-    assert 'data-info-tip="agenda-abonneren"' in layout
+    assert 'data-info-tip="agenda-linken"' in layout
     assert 'data-info-tip="agenda-lezingen"' in layout
     assert 'value="lezingen"' in layout
     assert 'data-info-tip="agenda-week"' in layout
@@ -285,7 +285,6 @@ def test_agenda_pagina_heeft_geen_lijst_vaste_feeds() -> None:
     intro = (ROOT / "site" / "content" / "agenda" / "_index.md").read_text(
         encoding="utf-8"
     )
-    assert "Eén abonnement is één kleur" not in intro
     assert "ics-tip-apart" in layout
     assert "voor elke agenda-link één kleur" in layout
     assert "Open in Apple Agenda" in layout

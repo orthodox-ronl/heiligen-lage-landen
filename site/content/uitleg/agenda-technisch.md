@@ -50,7 +50,7 @@ omlijsting of van woensdag/vrijdag, zitten in **hetzelfde** bestand
 `calendar.js` is de spiegel. Elke keuze is **één** URL. Andere
 kruiscombinaties van extra vinkjes onder Feesten of Vasten mét andere
 hoofdssoorten worden niet als extra bestand gebouwd; de pagina maakt
-die vinkjes bij abonneren grijs.
+die vinkjes bij linken grijs.
 
 `stijl` is `nieuw` of `oud`. De agendapagina bouwt de knop uit de keuzes van de
 bezoeker. Geen lijst van alle feeds op de pagina.
@@ -63,7 +63,7 @@ Vasten in de feed zijn dagen met een vastenniveau anders dan `vrij`,
 gefilterd op de aangevinkte vastensoorten. Vastenvrij is alleen
 `niveau: vrij`. Een gewone dinsdag zonder vasten zit in geen van beide.
 
-- **Abonneren:** de knop kopieert de HTTPS-URL. Apple: `webcal:` op
+- **Linken:** de knop kopieert de HTTPS-URL. Apple: `webcal:` op
   dezelfde feed.
 - **Downloaden:** dezelfde URL.
 
@@ -72,9 +72,9 @@ gefilterd op de aangevinkte vastensoorten. Vastenvrij is alleen
 
 ## Tombstones
 
-Oude URL’s blijven bestaan zodat abonnementen een zichtbare melding
-krijgen in plaats van stille, verouderde dagen. `X-WR-CALNAME`:
-`Vervallen — nieuwe link op de site`. Enkele hele-dag-afspraken
+Oude URL’s blijven bestaan zodat ICS-koppelingen op een telefoon een
+zichtbare melding krijgen in plaats van stille, verouderde dagen.
+`X-WR-CALNAME`: `Vervallen — nieuwe link op de site`. Enkele hele-dag-afspraken
 (vandaag, +7, +30, volgende 1 september) met link naar `/agenda/`.
 Die paden **niet** opnieuw vullen met echte kalenderdagen.
 

@@ -1,6 +1,6 @@
 ---
 title: "Agenda"
-description: "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of abonneren"
+description: "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of linken"
 uitleg_stijl: agenda
 git_date: 2026-09-05
 ---
@@ -11,16 +11,30 @@ Apple Agenda, Outlook of een andere agenda-app. U hoeft deze website dan
 niet elke week te openen. U vindt die pagina via de titel **Jaarkalender**
 op de [jaarkalender]({{% ref "/kalender" %}}) (popup met link).
 
+Op deze pagina kunt u bepalen wat u wel en wat u niet in de agenda wilt
+zien die u op uw telefoon gaat zetten. Dat noemen we de 'mix' van de
+agenda. Voor elke mix (keuze-combinatie) is er een agenda beschikbaar,
+die loopt vanaf 1 januari van het lopende jaar en 2 jaar ervoor,
+tot en met 31 december van het lopende jaar en daarna nog 5 jaar.
+In 2026 lopen alle agenda's dus vanaf 1 januari 2024 tot en met 31 december 2031.
+
 ## Eerst kiezen, dan de knop
 
 Op die pagina doet u drie keuzes:
 
-1. **Abonneren** of **downloaden**. Bij abonneren zijn sommige extra
-   vinkjes grijs: die mix heeft geen vaste agenda-link. Bij downloaden
-   mag elke mix (een eenmalig bestand).
+1. **Linken** of **downloaden**. Als u de kalender downloadt, dan krijgt
+   u de agenda zoals die vandaag is; na een jaar of 5 moet u die opnieuw
+   downloaden op up-to-date te blijven. U kunt linken: dan komt er een 
+   koppeling op uw telefoon die ervoor zorgt dat de kalender wordt bijgewerkt
+   zodra dat hier op de site ook gebeurt. Als we nieuwe heiligen van de lage
+   landen krijgen (of verwijderen), dan werkt dat automatisch op uw telefoon
+   door. En elk jaar schuift de looptijd dan mee met die op deze site.
+   Een link is niet voor alle keuze-combinaties beschikbaar. Dus als u kiest
+   om te linken, dan zijn sommige extra keuze-vinkjes grijs, omdat voor die
+   keuze geen linkbare agenda is. Bij downloaden mag elke mix (een eenmalig bestand).
 2. **Nieuwe of oude kalender.** Zie
    [Nieuwe en Oude kalender]({{% ref "/uitleg/nieuw-oud" %}}).
-3. **Wat** u wilt zien: heiligen van de Lage Landen, feesten, vasten,
+3. **Wat** u wilt zien (de mix''): heiligen van de Lage Landen, feesten, vasten,
    vastenvrij, lezingen — één of meer. Onder Heiligen, Feesten en Vasten
    staan extra vinkjes (opgenomen / nader onderzoek / kandidaat; grote en
    overige feesten plus voorfeest/nafeest/synaxis; woensdag/vrijdag,
@@ -48,15 +62,17 @@ als u alleen dagen met heilige, feest of vasten wilt.
 Onder de keuzes staan voorbeeldweken: eerst deze week, en als het zinvol
 is een latere week waarin uw keuze meer laat zien. De titel is wat u in de
 maandweergave van uw app zult zien. De knop daaronder verandert mee.
-Abonneren kopieert een link die u in de agenda-app plakt; de app blijft
+Linken kopieert een link die u in de agenda-app plakt; de app blijft
 dan vanzelf bijgewerkt. Op Apple kunt u de agenda ook direct openen.
 Downloaden slaat een bestand op voor dit moment; nieuwe heiligen of
 feesten komen daar **niet** vanzelf in.
 
-Eén abonnement is één kleur. Wilt u vasten een eigen kleur geven, vink dan
-alleen Vasten aan, kopieer de link, en herhaal voor Feesten of Heiligen.
-Elke set vinkjes is één agenda-link; een tweede agenda haalt u op met
-andere vinkjes.
+In de apps op uw telefoon of computer heeft elke agenda één eigen kleur.
+Als u meer kleuren wilt gebruiken, dan kunt u voor verschillende mixen
+een agenda gebruiken, en elk daarvan een eigen kleur geven. Zo kunt u 
+bijvoorbeeld een vasten-agenda een eigen kleur geven, en een agenda voor
+Feesten en Heiligen. Elke set vinkjes is één agenda-link; een tweede 
+agenda haalt u op met andere vinkjes.
 
 ## Wat u in de agenda ziet
 
@@ -84,12 +100,11 @@ Onderaan staat *Meer:* met de datumpagina.
 - Woensdag- en vrijdagvasten volgen de gewone week: het is de woensdag of
   vrijdag van de burgerlijke week, in beide standen.
 
-Wie al geabonneerd was **vóór** de overstap op de map `/ics/v2/`: de oude
-link blijft bestaan, maar toont alleen een herinnering dat u een nieuwe
+Wie al gelinkte agenda's gebruikte **vóór** de overstap op de map `/ics/v2/`: 
+de oude link blijft bestaan, maar toont alleen een herinnering dat u een nieuwe
 link moet kiezen op de pagina [Agenda]({{% ref "/agenda" %}}). Verwijder
-het oude abonnement en voeg de nieuwe link toe. Google Calendar houdt
-oude, losse afspraken soms vast (andere id’s); verwijderen en opnieuw
-toevoegen helpt.
+de oude link en voeg de nieuwe toe. Google Calendar houdt oude, losse afspraken
+soms vast (andere id’s); verwijderen en opnieuw toevoegen helpt.
 
 Latere tekstwijzigingen in dezelfde feed (titel, beschrijving) komen na
 Google’s verversing vanzelf binnen — vaak uren, soms tot een dag.

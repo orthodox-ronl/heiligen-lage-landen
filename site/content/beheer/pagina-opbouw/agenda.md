@@ -13,7 +13,7 @@ niet in de hoofdnavigatie.
 ## Titel
 
 **Wel:** **Agenda** als info-term, zonder kop in de popover: korte
-samenvatting (kalender in de agenda-app; kiezen, abonneren of
+samenvatting (kalender in de agenda-app; kiezen, linken of
 downloaden), afgesloten met
 ([meer uitleg]({{% ref "/uitleg/agenda" %}})).
 
@@ -21,22 +21,22 @@ downloaden), afgesloten met
 
 ## Inleiding
 
-**Wel:** één of twee zinnen die op weg helpen (eerst abonneren of
+**Wel:** één of twee zinnen die op weg helpen (eerst linken of
 downloaden, daarna nieuw of oud, daarna wat u wilt zien).
 
 **Niet:** de stappen herhalen; kleur van agenda’s (dat staat één keer, bij
-de knoppen, alleen bij abonneren); een lijst van alle ruwe
+de knoppen, alleen bij linken); een lijst van alle ruwe
 `.ics`-bestanden; beheer-generate-uitleg.
 
-## Stap 1: abonneren of downloaden
+## Stap 1: linken of downloaden
 
-**Wel:** abonneren als default (blijft bijgewerkt); downloaden als
+**Wel:** linken als default (blijft bijgewerkt); downloaden als
 momentopname. Deze keuze staat eerst, omdat bij downloaden alle
 detailvinkjes mogen (bestand wordt in de browser gemaakt als er geen
 vaste feed is). Geen zin onder de kop: compacte popover op de
 staptitel, afgesloten met
 ([meer uitleg]({{% ref "/uitleg/agenda" %}})). Popover op de chiptekst:
-abonneren (beperkte mixen, blijft bijgewerkt); downloaden (alle mixen,
+linken (beperkte mixen, blijft bijgewerkt); downloaden (alle mixen,
 tot en met 31 december van huidig jaar + 5).
 
 **Niet:** technische webcal-details vóór de keuze; uitlegzinnen in het
@@ -60,14 +60,14 @@ vinkje; default aan; teruggave bij omlijsting); vasten
 woensdag/vrijdag (één vinkje), periodes, feestdagen met vasten (default
 aan). Lezingen default aan: elke dag een afspraak voor Apostel/Evangelie
 in de tekst; kopregel op niet-maandagen het liturgische daglabel.
-Kandidaat niet op jaarkalender of datumpagina. Bij **abonneren**
+Kandidaat niet op jaarkalender of datumpagina. Bij **linken**
 zijn voorfeest/nafeest/synaxis en woensdag/vrijdag wél aanklikbaar
 (weglaten mag); andere splitsingen onder Feesten of Vasten mét andere
 hoofdssoorten zijn grijs. Popover op de chiptekst (geen kop;
 `(meer uitleg)` naar heiligen, feesten of vasten). Compacte popover op
 de staptitel naar
 ([meer uitleg]({{% ref "/uitleg/agenda" %}})). Direct onder deze stap
-de voorbeeldweken. Terug naar abonneren met een ongeldige mix zet de
+de voorbeeldweken. Terug naar linken met een ongeldige mix zet de
 vinkjes terug op de standaard.
 
 **Niet:** universeel menologion als optie; losse vinkjes voor voorfeest,

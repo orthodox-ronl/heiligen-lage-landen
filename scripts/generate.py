@@ -1414,7 +1414,7 @@ ACHTERGROND_TOPICS: list[dict[str, str]] = [
     {
         "id": "agenda",
         "title": "Agenda",
-        "description": "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of abonneren",
+        "description": "De kerkelijke kalender op uw telefoon of computer: kiezen, downloaden of linken",
     },
     {
         "id": "lezingen",

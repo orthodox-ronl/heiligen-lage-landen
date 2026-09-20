@@ -85,7 +85,7 @@ python scripts/generate.py
 ```
 
 Overal waar de naam staat (pagina, Synaxarion, kalender, ICS-titel) volgt de
-nieuwe primaire naam. Oude ICS-abonnees zien de nieuwe titel na de
+nieuwe primaire naam. Oude ICS-agenda abonnees zien de nieuwe titel na de
 volgende publicatie.
 
 ## Wat u niet doet

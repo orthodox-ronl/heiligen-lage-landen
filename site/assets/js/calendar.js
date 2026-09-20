@@ -1515,7 +1515,7 @@
       body.innerHTML =
         `<p>Hier zet u de kerkelijke kalender op uw telefoon of computer: ` +
         `Google Calendar, Apple Agenda, Outlook. U kiest wat u wilt zien ` +
-        `(heiligen van de Lage Landen, feesten, vasten) en abonneert of ` +
+        `(heiligen van de Lage Landen, feesten, vasten) en linkt of ` +
         `downloadt. ${meerUitlegHtml("agenda")}</p>`;
       if (meer) {
         meer.hidden = true;
@@ -1523,10 +1523,10 @@
       }
       return;
     }
-    if (kind === "agenda-abonneren") {
+    if (kind === "agenda-linken") {
       setPopoverTitleVisible(title, dlg, false);
       body.innerHTML =
-        `<p>Abonneren koppelt uw agenda-app aan deze site. Nieuwe dagen ` +
+        `<p>Linken koppelt uw agenda-app aan deze site. Nieuwe dagen ` +
         `komen vanzelf mee; de kalender blijft geldig, zolang de link ` +
         `bestaat. Om technische redenen zijn de extra vinkjes beperkt tot ` +
         `de meest gebruikelijke mixen. ${meerUitlegHtml("agenda")}</p>`;
@@ -1550,11 +1550,14 @@
       }
       return;
     }
-    if (kind === "agenda-stap-abonneren") {
+    if (kind === "agenda-stap-linken") {
       setPopoverTitleVisible(title, dlg, false);
       body.innerHTML =
-        `<p>Abonneren blijft vanzelf bijgewerkt; dat wilt u meestal. ` +
-        `Downloaden is een eenmalig bestand, met alle extra vinkjes. ` +
+        `<p>Met 'linken' blijft de agenda vanzelf bijgewerkt;  ` +
+        `dat wilt u meestal, maar niet alle keuzes zijn dan mogelijk. ` +
+        `Met 'downloaden' krijgt u een eenmalig bestand, waarbij wel ` +
+        `alle extra keuze-vinkjes mogelijk zijn. Die wordt echter niet` +
+        `automatisch bijgewerkt. `+
         `${meerUitlegHtml("agenda")}</p>`;
       if (meer) {
         meer.hidden = true;
@@ -1591,8 +1594,8 @@
       setPopoverTitleVisible(title, dlg, false);
       const locked = trigger.closest(".chip-ics-unavailable");
       const lockHtml = locked
-        ? `<p>Dit vinkje is grijs omdat deze mix geen abonnement heeft: ` +
-          `er is geen agenda-link die vanzelf bijgewerkt blijft. ` +
+        ? `<p>Dit vinkje is grijs omdat er voor deze mix geen agenda-link is ` +
+          `die vanzelf bijgewerkt blijft. ` +
           `Kies <strong>Downloaden</strong> voor een eenmalig bestand, ` +
           `of zet eerst alleen één soort aan (Heiligen, Feesten of Vasten). ` +
           `${meerUitlegHtml("agenda")}</p>`
@@ -3916,7 +3919,7 @@
   }
 
   function syncAgendaIcsLocks() {
-    const lock = icsModus() === "abonneren";
+    const lock = icsModus() === "linken";
     document
       .querySelectorAll(".agenda-keuzes input[type='checkbox']")
       .forEach((inp) => {
@@ -4410,7 +4413,7 @@
   function icsModus() {
     return (
       (document.querySelector('input[name="ics-modus"]:checked') || {}).value ||
-      "abonneren"
+      "linken"
     );
   }
 
@@ -4435,7 +4438,7 @@
     const bits = shows.map((s) => labels[s] || s);
     if (spec.lezingen) bits.push("lezingen");
     const wat = nlOpsomming(bits);
-    if (!icsFeedPublished(spec) && modus === "abonneren") {
+    if (!icsFeedPublished(spec) && modus === "linken") {
       return (
         "Deze mix van extra vinkjes onder Feesten of Vasten, samen met andere soorten, " +
         "heeft geen aparte agenda-link. Zet die extra vinkjes weer aan, of vink maar " +
@@ -4515,13 +4518,13 @@
     const status = document.getElementById("ics-status");
     const urlRow = document.getElementById("ics-url-row");
     const urlInput = document.getElementById("ics-url");
-    const howtoAbo = document.getElementById("ics-howto-abonneren");
+    const howtoAbo = document.getElementById("ics-howto-linken");
     const howtoDl = document.getElementById("ics-howto-downloaden");
     const webcal = document.getElementById("ics-webcal");
     const tipApart = document.getElementById("ics-tip-apart");
 
     renderAgendaVoorbeeld(spec, stijl);
-    if (tipApart) tipApart.hidden = modus !== "abonneren";
+    if (tipApart) tipApart.hidden = modus !== "linken";
 
     if (samenvatting) {
       samenvatting.textContent = agendaSamenvatting(
@@ -4536,8 +4539,8 @@
     }
 
     if (urlInput) urlInput.value = url;
-    setHidden(urlRow, !(klaar && modus === "abonneren"));
-    setHidden(howtoAbo, modus !== "abonneren");
+    setHidden(urlRow, !(klaar && modus === "linken"));
+    setHidden(howtoAbo, modus !== "linken");
     setHidden(howtoDl, modus !== "downloaden");
 
     if (download) {
@@ -4559,7 +4562,7 @@
       }
     }
     if (copyBtn) {
-      const toonCopy = klaar && modus === "abonneren";
+      const toonCopy = klaar && modus === "linken";
       setHidden(copyBtn, !toonCopy);
       copyBtn.disabled = !toonCopy;
       copyBtn.classList.toggle("is-disabled", !toonCopy);
@@ -4568,7 +4571,7 @@
       }
     }
     if (webcal) {
-      const toonWebcal = klaar && modus === "abonneren";
+      const toonWebcal = klaar && modus === "linken";
       setHidden(webcal, !toonWebcal);
       if (toonWebcal) {
         webcal.href = webcalUrl(url);
@@ -4603,7 +4606,7 @@
           el.addEventListener("change", () => {
             if (
               el.name === "ics-modus" &&
-              el.value === "abonneren" &&
+              el.value === "linken" &&
               el.checked &&
               !icsChoiceHasFeed(agendaSpecFromForm())
             ) {
