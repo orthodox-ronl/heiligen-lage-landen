@@ -568,7 +568,7 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
             extras.append(lezerstekst)
         if extras:
             line += f" — {'; '.join(extras)}"
-        lines.append(line)
+        lines.append(f"- {line}")
     return "\n".join(lines) + "\n"
 
 

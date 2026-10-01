@@ -390,7 +390,7 @@ def test_referenties_genummerd(
     body = _split_hugo_markdown(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )[1]
-    assert "[1] [Wikipedia (NL) — Voorbeeld]" in body
+    assert "- [1] [Wikipedia (NL) — Voorbeeld]" in body
     assert "Volgens [1] predikte hij in Gent." in body
 
 
