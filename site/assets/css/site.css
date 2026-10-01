@@ -1361,6 +1361,18 @@ main.main > :is(article, section) > h1 {
   font-weight: 600;
 }
 
+.refs-list {
+  list-style: none;
+  margin: 0.35rem 0 1rem;
+  padding: 0;
+}
+
+.refs-list li {
+  margin: 0.4rem 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+}
+
 .infobox {
   float: right;
   clear: right;

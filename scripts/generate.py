@@ -539,9 +539,10 @@ def link_internal_entries(
 
 
 def render_refs_md(refs: list[dict[str, Any]]) -> str:
+    """Literatuurstijl: [1], [2] als markering, geen bullets."""
     if not refs:
         return "_Nog geen bronnen._\n"
-    lines = []
+    items: list[str] = []
     for i, ref in enumerate(refs, start=1):
         label = ref.get("label") or "Bron"
         url = ref.get("url")
@@ -551,25 +552,36 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
         # Publiek: inhoud; anders fallback opmerking (oudere data).
         lezerstekst = inhoud or opmerking
         if url:
-            line = f"[{i}] [{label}]({url})"
+            href = html_escape(str(url), quote=True)
+            lab = html_escape(str(label))
+            if str(url).startswith(("http://", "https://")):
+                head = (
+                    f"[{i}] "
+                    f'<a href="{href}" target="_blank" '
+                    f'rel="noopener noreferrer">{lab}</a>'
+                )
+            else:
+                head = f'[{i}] <a href="{href}">{lab}</a>'
         elif ref.get("isbn"):
             pagina = ref.get("pagina")
-            line = f"[{i}] {label} — ISBN {ref['isbn']}"
+            head = f"[{i}] {html_escape(str(label))} — ISBN {html_escape(str(ref['isbn']))}"
             if pagina:
-                line += f", p. {pagina}"
+                head += f", p. {html_escape(str(pagina))}"
         elif ref.get("locator"):
-            line = f"[{i}] {label} — {ref['locator']}"
+            head = (
+                f"[{i}] {html_escape(str(label))} — "
+                f"{html_escape(str(ref['locator']))}"
+            )
         else:
-            line = f"[{i}] {label}"
-        extras = []
+            head = f"[{i}] {html_escape(str(label))}"
+        extras: list[str] = []
         if geraadpleegd:
-            extras.append(f"geraadpleegd {geraadpleegd}")
+            extras.append(f"geraadpleegd {html_escape(str(geraadpleegd))}")
         if lezerstekst:
-            extras.append(lezerstekst)
-        if extras:
-            line += f" — {'; '.join(extras)}"
-        lines.append(f"- {line}")
-    return "\n".join(lines) + "\n"
+            extras.append(html_escape(lezerstekst))
+        tail = f" — {'; '.join(extras)}" if extras else ""
+        items.append(f"<li>{head}{tail}</li>")
+    return '<ol class="refs-list">\n' + "\n".join(items) + "\n</ol>\n"
 
 
 def extra_gedenkdagen_payload(

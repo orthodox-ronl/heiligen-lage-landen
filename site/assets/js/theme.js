@@ -11,6 +11,32 @@
     });
   }
 
+  function markExternalLinks() {
+    document.querySelectorAll("a[href]").forEach((a) => {
+      const href = a.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:")) {
+        return;
+      }
+      let absolute;
+      try {
+        absolute = new URL(href, window.location.href);
+      } catch (_) {
+        return;
+      }
+      if (absolute.protocol !== "http:" && absolute.protocol !== "https:") {
+        return;
+      }
+      if (absolute.origin === window.location.origin) {
+        return;
+      }
+      a.target = "_blank";
+      const rel = new Set((a.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+      rel.add("noopener");
+      rel.add("noreferrer");
+      a.setAttribute("rel", [...rel].join(" "));
+    });
+  }
+
   function init() {
     let theme = "dark";
     try {
@@ -34,6 +60,8 @@
         }
       });
     });
+
+    markExternalLinks();
   }
 
   if (document.readyState === "loading") {
