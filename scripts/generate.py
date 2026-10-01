@@ -393,8 +393,8 @@ def over_bronnen_md(
     entry: dict[str, Any],
     catalog: list[dict[str, Any]] | None = None,
 ) -> str:
-    """Sectie met optionele toelichting + bronlaag-noot."""
-    delen: list[str] = ["## Over de bronnen", ""]
+    """Uitklap met optionele toelichting + bronlaag-noot (standaard dicht)."""
+    delen: list[str] = []
     extra = (entry.get("over_bronnen") or "").strip()
     if extra:
         delen.append(
@@ -403,7 +403,13 @@ def over_bronnen_md(
         delen.append("")
     delen.append(bronlaag_note_md(entry))
     delen.append("")
-    return "\n".join(delen)
+    binnen = "\n".join(delen)
+    return (
+        '<details class="bronnen-details">\n'
+        "<summary>Over de bronnen</summary>\n\n"
+        f"{binnen}"
+        "</details>\n"
+    )
 
 def selectie_note_md(
     entry: dict[str, Any],

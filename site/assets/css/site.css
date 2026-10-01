@@ -1350,11 +1350,13 @@ main.main > :is(article, section) > h1 {
   margin-bottom: 0.75rem;
 }
 
-.selectie-details {
+.selectie-details,
+.bronnen-details {
   margin: 1.75rem 0 0;
 }
 
-.selectie-details summary {
+.selectie-details summary,
+.bronnen-details summary {
   cursor: pointer;
   font-weight: 600;
 }

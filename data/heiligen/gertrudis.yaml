@@ -39,16 +39,16 @@ betekenis_lage_landen: |
   legende.
 verhaal: |
   Gertrudis werd 625/626 geboren als dochter van Pepijn van Landen en
-  Iduberga. Het Heiligenlexikon merkt op dat geen vroege bron haar
-  uitdrukkelijk «abdis» noemt, wel leidster van Nijvel na de dood van haar
-  moeder (652). Zij stierf op 17 maart 659 (of 653). Ierse monniken in
-  Nijvel zouden die sterfdag — dezelfde als Patrick — hebben voorspeld.
-
-  Het Heiligenlexikon noemt Bavo van Gent als broer; die koppeling is in
-  overzichten gangbaar maar genealogisch niet onomstreden. De feestdag in
-  deze kalender volgt 17 maart (Heiligenlexikon, algemene traditie); 12
-  februari stond eerder als hoofddag in de catalogus zonder hier gevonden
-  bron.
+  Iduberga. Na de dood van haar moeder (652) leidde zij Nijvel. Zij
+  stierf op 17 maart 659 (of 653). Ierse monniken in Nijvel zouden die
+  sterfdag — dezelfde als Patrick — hebben voorspeld. Soms wordt Bavo
+  van Gent als haar broer genoemd.
+over_bronnen: |
+  Vroege bronnen noemen haar niet uitdrukkelijk «abdis», wel leidster van
+  Nijvel. De koppeling aan Bavo is in overzichten gangbaar maar
+  genealogisch omstreden. Canoniek is 17 maart (Heiligenlexikon); 12
+  februari stond eerder als hoofddag in onze catalogus zonder hier
+  gevonden bron.
 referenties:
   - bron_id: hlex
     label: "Heiligenlexikon — Gertrud von Nivelles"
@@ -62,3 +62,8 @@ referenties:
     geraadpleegd: "2026-08-20"
     inhoud: >
       Nederlandstalig overzicht van leven, abdij Nijvel en latere cultus.
+  - label: "heiligen.net — Geertruida van Nijvel"
+    url: "https://www.heiligen.net/heiligen/03/17/03-17-0659-geertruida.php"
+    geraadpleegd: "2026-10-01"
+    inhoud: >
+      Levensschets van Geertruida (Gertrudis) van Nijvel.
