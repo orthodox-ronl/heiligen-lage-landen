@@ -82,4 +82,5 @@ Verwar `goedkeuring` niet met `bronlaag`.
 ## Verder lezen en Over de bronnen
 
 Zelfde criteria als [Heilige]({{% ref "/beheer/pagina-opbouw/heilige" %}}):
-referenties voor de lezer; bronlaag-zin; geen how-to.
+referenties voor de lezer; **Over de bronnen** als uitklap (standaard
+dicht) met optionele toelichting en bronlaag-zin; geen how-to.

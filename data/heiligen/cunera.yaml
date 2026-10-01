@@ -29,17 +29,18 @@ icoon:
 locaties:
   - rhenen
 betekenis_lage_landen: |
-  Cunera is de stadsheilige van Rhenen. De late legende (Ursula-cyclus:
-  een maagd die te Rhenen achterbleef en werd gewurgd) is historisch
-  niet hard te maken. De middeleeuwse cultus — relieken, Cunerakerk en
-  -toren, paardenmarkt — is wel een feit van de Utrechtse
-  heiligenverering. Daarom hoort zij in deze kalender.
+  Cunera is de stadsheilige van Rhenen. De middeleeuwse cultus —
+  relieken, Cunerakerk en -toren, paardenmarkt — is een feit van de
+  Utrechtse heiligenverering.
 verhaal: |
   De overlevering voegt Cunera in bij de elfduizend maagden van Ursula:
   door de Friese koning Radboud naar Rhenen gebracht, gewurgd door diens
-  jaloerse vrouw. Dat is middeleeuwse legende. Historisch is de lokale
-  verering: de vroegere Petruskerk werd Cunerakerk; broederschap sinds
-  1392; de wurgdoek (koptisch weefsel) berust in Museum Catharijneconvent.
+  jaloerse vrouw. De lokale verering is wél historisch: de vroegere
+  Petruskerk werd Cunerakerk; broederschap sinds 1392; de wurgdoek
+  (koptisch weefsel) berust in Museum Catharijneconvent.
+over_bronnen: |
+  De Ursula-legende is middeleeuws en historisch niet hard te maken; de
+  Rhenense cultus wel.
 referenties:
   - bron_id: hlex
     label: "Heiligenlexikon — Kunera von Rhenen"

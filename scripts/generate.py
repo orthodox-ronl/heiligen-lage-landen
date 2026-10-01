@@ -393,8 +393,8 @@ def over_bronnen_md(
     entry: dict[str, Any],
     catalog: list[dict[str, Any]] | None = None,
 ) -> str:
-    """Sectie met optionele toelichting + bronlaag-noot."""
-    delen: list[str] = ["## Over de bronnen", ""]
+    """Uitklap met optionele toelichting + bronlaag-noot (standaard dicht)."""
+    delen: list[str] = []
     extra = (entry.get("over_bronnen") or "").strip()
     if extra:
         delen.append(
@@ -403,7 +403,13 @@ def over_bronnen_md(
         delen.append("")
     delen.append(bronlaag_note_md(entry))
     delen.append("")
-    return "\n".join(delen)
+    binnen = "\n".join(delen)
+    return (
+        '<details class="bronnen-details">\n'
+        "<summary>Over de bronnen</summary>\n\n"
+        f"{binnen}"
+        "</details>\n"
+    )
 
 def selectie_note_md(
     entry: dict[str, Any],
@@ -533,9 +539,10 @@ def link_internal_entries(
 
 
 def render_refs_md(refs: list[dict[str, Any]]) -> str:
+    """Literatuurstijl: [1], [2] in eigen kolom; tekst deelt één linker rand."""
     if not refs:
         return "_Nog geen bronnen._\n"
-    lines = []
+    items: list[str] = []
     for i, ref in enumerate(refs, start=1):
         label = ref.get("label") or "Bron"
         url = ref.get("url")
@@ -545,25 +552,39 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
         # Publiek: inhoud; anders fallback opmerking (oudere data).
         lezerstekst = inhoud or opmerking
         if url:
-            line = f"[{i}] [{label}]({url})"
+            href = html_escape(str(url), quote=True)
+            lab = html_escape(str(label))
+            if str(url).startswith(("http://", "https://")):
+                body = (
+                    f'<a href="{href}" target="_blank" '
+                    f'rel="noopener noreferrer">{lab}</a>'
+                )
+            else:
+                body = f'<a href="{href}">{lab}</a>'
         elif ref.get("isbn"):
             pagina = ref.get("pagina")
-            line = f"[{i}] {label} — ISBN {ref['isbn']}"
+            body = f"{html_escape(str(label))} — ISBN {html_escape(str(ref['isbn']))}"
             if pagina:
-                line += f", p. {pagina}"
+                body += f", p. {html_escape(str(pagina))}"
         elif ref.get("locator"):
-            line = f"[{i}] {label} — {ref['locator']}"
+            body = (
+                f"{html_escape(str(label))} — "
+                f"{html_escape(str(ref['locator']))}"
+            )
         else:
-            line = f"[{i}] {label}"
-        extras = []
+            body = html_escape(str(label))
+        extras: list[str] = []
         if geraadpleegd:
-            extras.append(f"geraadpleegd {geraadpleegd}")
+            extras.append(f"geraadpleegd {html_escape(str(geraadpleegd))}")
         if lezerstekst:
-            extras.append(lezerstekst)
+            extras.append(html_escape(lezerstekst))
         if extras:
-            line += f" — {'; '.join(extras)}"
-        lines.append(line)
-    return "\n".join(lines) + "\n"
+            body += f" — {'; '.join(extras)}"
+        items.append(
+            f'<li><span class="ref-n">[{i}]</span>'
+            f'<span class="ref-body">{body}</span></li>'
+        )
+    return '<ol class="refs-list">\n' + "\n".join(items) + "\n</ol>\n"
 
 
 def extra_gedenkdagen_payload(

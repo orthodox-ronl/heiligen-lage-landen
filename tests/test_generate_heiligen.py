@@ -80,14 +80,21 @@ def test_entry_page_heeft_betekenis_en_aliases(
     assert "## Betekenis voor de Lage Landen" in body
     assert "Predikte onder de Friezen." in body
     assert "## Over de plaats in deze kalender" not in body
-    assert "<details" not in body
+    assert "selectie-details" not in body
     assert "nagekeken aan een lexikon" not in body
-    # Bronnoot ná inhoud, onder kop Over de bronnen
-    assert "## Over de bronnen" in body
-    assert body.index("## Betekenis voor de Lage Landen") < body.index("## Over de bronnen")
-    assert body.index("## Verder lezen en kijken") < body.index("## Over de bronnen")
+    # Bronnoot ná inhoud, in uitklap Over de bronnen
+    assert '<details class="bronnen-details">' in body
+    assert "<summary>Over de bronnen</summary>" in body
+    assert body.index("## Betekenis voor de Lage Landen") < body.index(
+        "<summary>Over de bronnen</summary>"
+    )
+    assert body.index("## Verder lezen en kijken") < body.index(
+        "<summary>Over de bronnen</summary>"
+    )
     assert "open naslagwerken" in body
-    assert body.index("## Over de bronnen") < body.index("open naslagwerken")
+    assert body.index("<summary>Over de bronnen</summary>") < body.index(
+        "open naslagwerken"
+    )
     assert "## Verder lezen en kijken" in body
     assert "## Referenties" not in body
     assert "Synaxarion:" not in body
@@ -383,7 +390,11 @@ def test_referenties_genummerd(
     body = _split_hugo_markdown(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )[1]
-    assert "[1] [Wikipedia (NL) — Voorbeeld]" in body
+    assert '<ol class="refs-list">' in body
+    assert '<span class="ref-n">[1]</span>' in body
+    assert 'class="ref-body"' in body
+    assert "Wikipedia (NL) — Voorbeeld" in body
+    assert 'target="_blank"' in body
     assert "Volgens [1] predikte hij in Gent." in body
 
 
@@ -433,7 +444,7 @@ def test_entry_page_over_bronnen_toelichting(
     body = _split_hugo_markdown(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )[1]
-    assert "## Over de bronnen" in body
+    assert "<summary>Over de bronnen</summary>" in body
     assert "De vita van X is de hoofdbron." in body
     assert body.index("De vita van X is de hoofdbron.") < body.index("**Bron:**")
 

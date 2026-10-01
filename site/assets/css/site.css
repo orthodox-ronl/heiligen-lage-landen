@@ -1350,13 +1350,37 @@ main.main > :is(article, section) > h1 {
   margin-bottom: 0.75rem;
 }
 
-.selectie-details {
+.selectie-details,
+.bronnen-details {
   margin: 1.75rem 0 0;
 }
 
-.selectie-details summary {
+.selectie-details summary,
+.bronnen-details summary {
   cursor: pointer;
   font-weight: 600;
+}
+
+.refs-list {
+  list-style: none;
+  margin: 0.35rem 0 1rem;
+  padding: 0;
+}
+
+.refs-list li {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.45em;
+  margin: 0.4rem 0;
+  align-items: start;
+}
+
+.refs-list .ref-n {
+  font-variant-numeric: tabular-nums;
+}
+
+.refs-list .ref-body {
+  min-width: 0;
 }
 
 .infobox {

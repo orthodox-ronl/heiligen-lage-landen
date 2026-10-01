@@ -33,8 +33,7 @@ periode: "† 1012"
 locaties:
   - gent
 betekenis_lage_landen: |
-  Macarius stierf te Gent in 1012. De vraag is of sterven in een
-  Gentse abdij telt als «hier iets gedaan».
+  Macarius stierf te Gent in 1012 en wordt daar als heilige vereerd.
 verhaal: |
   Pelgrim die in de Sint-Baafsabdij of Sint-Pietersabdij te Gent
   werd opgenomen en daar in 1012 stierf. Feestdag 10 april.
@@ -42,8 +41,9 @@ over_bronnen: |
   **Voor.** Dood en cultus te Gent, 1012, vóór het schisma ([1], [2]).
 
   **Twijfel.** GCatholic noemt hem layperson; de bronnen maken hem tot
-  pelgrim, niet tot prediker of stichter ([2]). Dat lijkt op cultus zonder
-  eigen werk.
+  pelgrim, niet tot prediker of stichter ([2]). «Alleen gestorven» of
+  late cultus is volgens de criteria niet genoeg — prediking of bestuur
+  is niet hard te maken.
 referenties:
   - label: "Wikipedia (NL) — Macharius"
     url: "https://nl.wikipedia.org/wiki/Macharius"
@@ -60,3 +60,8 @@ referenties:
     geraadpleegd: "2026-08-31"
     inhoud: >
       Macarius of Armenia, layperson, died Belgium 1012.
+  - label: "heiligen.net — Macarius van Gent"
+    url: "https://www.heiligen.net/heiligen/04/10/04-10-1012-macarius.php"
+    geraadpleegd: "2026-10-01"
+    inhoud: >
+      Levensschets van Macarius van Gent.

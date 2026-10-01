@@ -34,7 +34,8 @@ selectie_toelichting_publiek: |
 - Bij `nader-onderzoek` of `kandidaat-schrappen` schrijft `generate.py`
   onderaan een uitklap **Plaats in deze kalender** (`<details>`). Gebruik
   `selectie_toelichting_publiek` als die afwijkt van de korte beheerzin.
-  Bij `voldoet`: geen uitklap.
+  Bij `voldoet`: geen uitklap. **Over de bronnen** is altijd een uitklap
+  (standaard dicht): optionele `over_bronnen`-toelichting plus bronlaag-zin.
 - `datum.waarde` is de canonieke gedenkdag (sterfdag bij twijfel).
   Extra dagen: `datum.extra` → tussen haakjes achter de feestdatum
   (popover) en **Andere gedenkdagen**; niet op jaarkalender of Synaxarion.

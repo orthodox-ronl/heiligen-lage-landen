@@ -182,11 +182,13 @@ Pagina-opbouw (na de infobox): zie het
 (en [Feest]({{% ref "/beheer/pagina-opbouw/feest" %}})).
 Huidige generatorvolgorde bij heiligen: feestdag-link → **Betekenis voor
 de Lage Landen** (`betekenis_lage_landen`) → verhaal →
-verder lezen → **Over de bronnen** → (alleen bij nader/kandidaat) uitklap
-**Plaats in deze kalender**. Bij feesten: feestdag (of de vijfjaren-tabel
-komende jaren) →
+verder lezen → uitklap **Over de bronnen** → (alleen bij nader/kandidaat)
+uitklap **Plaats in deze kalender**. Bij feesten: feestdag (of de
+vijfjaren-tabel komende jaren) →
 samenvatting → verhaal → **Betekenis** (`betekenis`, alleen als het veld
-er is) → verder lezen → **Over de bronnen**.
+er is) → verder lezen → uitklap **Over de bronnen**.
+Discussie over bronnen, vita-twijfel of «waarom deze feestdag» hoort in
+`over_bronnen`, niet in betekenis of verhaal.
 
 ```yaml
 betekenis_lage_landen: |

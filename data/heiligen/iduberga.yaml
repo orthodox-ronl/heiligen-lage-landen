@@ -35,8 +35,9 @@ verhaal: |
   en leefde er als non; zij liet boeken en relieken uit Rome en «van
   overzee» komen. Ook Fosses (Ierse monniken Foillan/Ultan) wordt haar
   toegeschreven. Zij stierf op 8 mei 652; Gertrudis leidde Nijvel verder.
-  Bavo als zoon/dochter van Iduberga is een gangbare catalogustraditie,
-  genealogisch niet onomstreden.
+over_bronnen: |
+  Bavo als kind van Iduberga is een gangbare catalogustraditie, maar
+  genealogisch omstreden.
 referenties:
   - bron_id: hlex
     label: "Heiligenlexikon — Iduberga von Nivelles"
@@ -56,3 +57,8 @@ referenties:
     geraadpleegd: "2026-08-20"
     inhoud: >
       Duitstalig overzicht van Nijvel, Fosses en genealogie Pepijniden.
+  - label: "heiligen.net — Ida van Nijvel"
+    url: "https://www.heiligen.net/heiligen/05/08/05-08-0652-ida.php"
+    geraadpleegd: "2026-10-01"
+    inhoud: >
+      Levensschets van Ida (Iduberga) van Nijvel.

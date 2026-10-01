@@ -1,0 +1,15 @@
+{{- /*
+  Externe http(s)-links in een nieuw tabblad; interne (zelfde site) niet.
+*/ -}}
+{{- $dest := .Destination -}}
+{{- $external := false -}}
+{{- if or (strings.HasPrefix $dest "http://") (strings.HasPrefix $dest "https://") -}}
+  {{- $base := strings.TrimSuffix site.BaseURL "/" -}}
+  {{- if not (strings.HasPrefix $dest $base) -}}
+    {{- $external = true -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $external }} target="_blank" rel="noopener noreferrer"{{ end -}}
+>{{ .Text | safeHTML }}</a>

@@ -87,10 +87,13 @@ schrijven.
 
 ## Over de bronnen
 
-**Wel:** optionele toelichting `over_bronnen`; daarna de zin over
-bronlaag (nagekeken vs. open naslagwerk) in gewone taal.
+**Wel:** onderaan een **uitklap** (`<details>`), standaard dicht.
+Daarin optionele toelichting `over_bronnen` (vita-twijfel, bronkeuze,
+kalenderkeuze van een datum) en daarna de zin over bronlaag
+(nagekeken vs. open naslagwerk) in gewone taal.
 
-**Niet:** `bron_id`-catalogusdump; how-to «zo voegt u een bron toe».
+**Niet:** `bron_id`-catalogusdump; how-to «zo voegt u een bron toe»;
+bron-technicalities in **Betekenis** of **Verhaal** (die horen hier).
 
 ## Plaats in deze kalender
 

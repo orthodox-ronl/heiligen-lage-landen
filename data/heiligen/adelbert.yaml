@@ -36,14 +36,14 @@ betekenis_lage_landen: |
   kloosterchristendom. De abdij van Egmond werd het geestelijk centrum
   van Holland; zijn cultus is daarvan de kiem.
 verhaal: |
-  Het Heiligenlexikon en de Nederlandse overlevering maken hem tot
-  Angelsaksische aartsdiaken in het gevolg van Willibrord. Hij zou te
-  Egmond hebben gepredikt en daar zijn begraven (circa 740). De abdij
-  van Egmond ontstond in de tiende eeuw rond dat graf.
-
-  Een zelfstandige vroege vita ontbreekt; veel rust op latere
-  abdijoverlevering. Wat vaststaat is de middeleeuwse cultus te Egmond
-  en de band met Willibrord in de heiligenkalenders van Holland.
+  Adelbert was Angelsaksische aartsdiaken in het gevolg van Willibrord.
+  Hij predikte te Egmond en werd daar begraven (circa 740). De abdij van
+  Egmond ontstond in de tiende eeuw rond dat graf; de middeleeuwse cultus
+  bewaart zijn band met Willibrord.
+over_bronnen: |
+  Het verhaal rust vooral op latere abdijoverlevering; een zelfstandige
+  vroege vita ontbreekt. Het Heiligenlexikon en heiligen.net bevestigen
+  de Egmondse cultus.
 referenties:
   - bron_id: hlex
     label: "Heiligenlexikon — Adelbert van Egmond"
@@ -57,3 +57,8 @@ referenties:
     geraadpleegd: "2026-08-16"
     inhoud: >
       Nederlandstalig overzicht van leven, Egmondse verering en feestdag.
+  - label: "heiligen.net — Adelbert van Egmond"
+    url: "https://www.heiligen.net/heiligen/06/25/06-25-0741-adelbert.php"
+    geraadpleegd: "2026-10-01"
+    inhoud: >
+      Levensschets: metgezel van Willibrord, prediking en graf te Egmond.
