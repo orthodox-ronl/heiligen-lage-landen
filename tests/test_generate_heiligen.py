@@ -391,7 +391,8 @@ def test_referenties_genummerd(
         (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
     )[1]
     assert '<ol class="refs-list">' in body
-    assert "[1]" in body
+    assert '<span class="ref-n">[1]</span>' in body
+    assert 'class="ref-body"' in body
     assert "Wikipedia (NL) — Voorbeeld" in body
     assert 'target="_blank"' in body
     assert "Volgens [1] predikte hij in Gent." in body

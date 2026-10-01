@@ -539,7 +539,7 @@ def link_internal_entries(
 
 
 def render_refs_md(refs: list[dict[str, Any]]) -> str:
-    """Literatuurstijl: [1], [2] als markering, geen bullets."""
+    """Literatuurstijl: [1], [2] in eigen kolom; tekst deelt één linker rand."""
     if not refs:
         return "_Nog geen bronnen._\n"
     items: list[str] = []
@@ -555,32 +555,35 @@ def render_refs_md(refs: list[dict[str, Any]]) -> str:
             href = html_escape(str(url), quote=True)
             lab = html_escape(str(label))
             if str(url).startswith(("http://", "https://")):
-                head = (
-                    f"[{i}] "
+                body = (
                     f'<a href="{href}" target="_blank" '
                     f'rel="noopener noreferrer">{lab}</a>'
                 )
             else:
-                head = f'[{i}] <a href="{href}">{lab}</a>'
+                body = f'<a href="{href}">{lab}</a>'
         elif ref.get("isbn"):
             pagina = ref.get("pagina")
-            head = f"[{i}] {html_escape(str(label))} — ISBN {html_escape(str(ref['isbn']))}"
+            body = f"{html_escape(str(label))} — ISBN {html_escape(str(ref['isbn']))}"
             if pagina:
-                head += f", p. {html_escape(str(pagina))}"
+                body += f", p. {html_escape(str(pagina))}"
         elif ref.get("locator"):
-            head = (
-                f"[{i}] {html_escape(str(label))} — "
+            body = (
+                f"{html_escape(str(label))} — "
                 f"{html_escape(str(ref['locator']))}"
             )
         else:
-            head = f"[{i}] {html_escape(str(label))}"
+            body = html_escape(str(label))
         extras: list[str] = []
         if geraadpleegd:
             extras.append(f"geraadpleegd {html_escape(str(geraadpleegd))}")
         if lezerstekst:
             extras.append(html_escape(lezerstekst))
-        tail = f" — {'; '.join(extras)}" if extras else ""
-        items.append(f"<li>{head}{tail}</li>")
+        if extras:
+            body += f" — {'; '.join(extras)}"
+        items.append(
+            f'<li><span class="ref-n">[{i}]</span>'
+            f'<span class="ref-body">{body}</span></li>'
+        )
     return '<ol class="refs-list">\n' + "\n".join(items) + "\n</ol>\n"
 
 
