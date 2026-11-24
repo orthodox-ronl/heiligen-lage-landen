@@ -21,6 +21,12 @@ plaatsen:
     lat: 53.20
     lon: 5.80
     soort: streek
+  - id: drenthe
+    naam: Drenthe
+    alternatief: [Thrianta, Drenterlant]
+    lat: 52.95
+    lon: 6.60
+    soort: streek
 
   - id: amay
     naam: Amay
@@ -77,6 +83,11 @@ plaatsen:
     lon: 4.264
     soort: plaats
     streek: vlaanderen
+  - id: dinant
+    naam: Dinant
+    lat: 50.261
+    lon: 4.912
+    soort: plaats
   - id: dokkum
     naam: Dokkum
     lat: 53.325

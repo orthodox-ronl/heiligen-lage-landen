@@ -4,6 +4,10 @@
     {{- $nVoldoet = add $nVoldoet 1 -}}
   {{- end -}}
 {{- end -}}
+{{- $toonBronvermelding := false -}}
+{{- with site.Data.iconen_instellingen -}}
+  {{- if .bronvermelding -}}{{- $toonBronvermelding = true -}}{{- end -}}
+{{- end -}}
 <section class="section-list" data-heiligen-index data-weergave="lijst" data-selectie="kalender">
   <div class="heiligen-sticky-head">
     <h1>
@@ -52,8 +56,8 @@
         <div class="heiligen-row is-sort-naam" role="row">
           <div role="cell">
             <span class="heiligen-namen">
-              {{- with .Params.icoon -}}
-                <img class="list-icoon" src="{{ . | relURL }}" alt="" width="28" height="28">
+              {{- if and .Params.icoon (or (ne .Params.icoon_rechten "bronvermelding") $toonBronvermelding) -}}
+                <img class="list-icoon" src="{{ .Params.icoon | relURL }}" alt="" width="28" height="28">
               {{- end -}}
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{- with .Params.alternatief -}}
@@ -90,7 +94,9 @@
       {{- $plaatsen = $plaatsen | append (dict "id" .id "naam" .naam "soort" .soort) -}}
     {{- end -}}
     {{- $icoon := "" -}}
-    {{- with .Params.icoon -}}{{- $icoon = . | relURL -}}{{- end -}}
+    {{- if and .Params.icoon (or (ne .Params.icoon_rechten "bronvermelding") $toonBronvermelding) -}}
+      {{- $icoon = .Params.icoon | relURL -}}
+    {{- end -}}
     {{- $item := dict
       "naam" .Title
       "url" .RelPermalink

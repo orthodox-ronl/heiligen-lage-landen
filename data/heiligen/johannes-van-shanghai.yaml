@@ -18,11 +18,18 @@ titels:
   - Aartsbisschop van Shanghai en San Francisco
   - Wonderdoener
 periode: "1896–1966"
-icoon:
-  bestand: iconen/johannes-van-shanghai.jpg
-  rechten: ok
-  licentie: "CC BY-SA 4.0"
-  bron: "Wikimedia Commons — File:Icon of John of Shanghai and San Francisco in Buenos Aires.jpg"
+iconen:
+  - bestand: iconen/johannes-van-shanghai.jpg
+    primair: true
+    rechten: ok
+    licentie: "CC BY-SA 4.0"
+    bron: "Wikimedia Commons — File:Icon of John of Shanghai and San Francisco in Buenos Aires.jpg"
+  - bestand: iconen/johannes-van-shanghai-oca.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "Orthodox Church in America (OCA) — https://images.oca.org/icons/lg/july/0702john-sanfrancisco.jpg"
+    toelichting: "Orthodox icoon van de OCA-heiligenkalender; proef bronvermelding."
 locaties:
   - den-haag
 betekenis_lage_landen: |

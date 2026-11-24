@@ -42,9 +42,11 @@ def _validate_icoon_item(
             f"{path}: {label}.bestand mag geen URL zijn; "
             "zet een lokaal bestand onder site/static/"
         )
-    if item.get("rechten") != "ok":
+    rechten = str(item.get("rechten") or "").strip()
+    if rechten not in {"ok", "bronvermelding"}:
         errors.append(
-            f"{path}: {label}.bestand gezet maar {label}.rechten is niet 'ok'"
+            f"{path}: {label}.bestand gezet maar {label}.rechten "
+            "moet 'ok' of 'bronvermelding' zijn"
         )
     if not str(item.get("bron") or "").strip():
         errors.append(f"{path}: {label}.bron verplicht als bestand is gezet")

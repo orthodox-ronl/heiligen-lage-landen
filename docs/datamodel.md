@@ -385,7 +385,7 @@ Eén icoon (bestaande entries):
 ```yaml
 icoon:
   bestand: iconen/willibrord.jpg   # relatief t.o.v. site/static/
-  rechten: ok                      # ok | onbekend | nee
+  rechten: ok                      # ok | onbekend | nee | bronvermelding
   licentie: "Publiek domein"
   bron: "Wikimedia Commons — File:…"
 ```
@@ -411,10 +411,17 @@ iconen:
     bron: "Wikimedia Commons — File:Odulphus.jpg"
 ```
 
-`rechten: ok` is verplicht om te tonen. `bestand` is een lokaal pad, geen
-`http(s)`-URL. `bron` en `licentie` zijn verplicht als `bestand` gezet is.
-`generate.py` zet het primaire pad plus bijschrift op de entry-pagina;
-overige zichtbare items komen als extra infobox-figuren. Ontbreekt een
-legaal bestand: veld weglaten. `icoon` en `iconen` niet combineren.
-Toevoegen: commando `icoon` (naam of id; parochieplaats + toestemming
-mag).
+`rechten: ok` = tonen met vrije of expliciet toegestane licentie.
+`rechten: bronvermelding` = echt icoon van een bron-site, alleen tonen
+als `site/data/iconen_instellingen.yaml` → `bronvermelding: true` (niet
+via UI; CI zet dit niet automatisch aan). Bijschrift: «Icoon van … ·
+weergegeven met bronvermelding (geen vrije licentie)». Na wijzigen van
+die flag: opnieuw `generate` (entries.json / front matter).
+
+`bestand` is een lokaal pad, geen `http(s)`-URL. `bron` en `licentie`
+zijn verplicht als `bestand` gezet is (`licentie` bij bronvermelding bv.
+de sitenaam of «Bronvermelding»). `generate.py` zet het primaire pad
+plus bijschrift op de entry-pagina; overige zichtbare items komen als
+extra infobox-figuren. Ontbreekt een legaal bestand: veld weglaten.
+`icoon` en `iconen` niet combineren. Toevoegen: commando `icoon` (naam
+of id; parochieplaats + toestemming mag).

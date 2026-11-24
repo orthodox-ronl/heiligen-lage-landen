@@ -20,11 +20,18 @@ periode: "742–809"
 locaties:
   - utrecht
   - frisia
-icoon:
-  bestand: iconen/ludger.jpg
-  rechten: ok
-  licentie: "Publiek domein"
-  bron: "Wikimedia Commons — File:Saintliudger.jpg"
+iconen:
+  - bestand: iconen/ludger.jpg
+    primair: true
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Saintliudger.jpg"
+  - bestand: iconen/ludger-orthodox.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "DOM Hl. Michael (dom-hl-michael.de) — Ikone Hl. Liudger von Münster"
+    toelichting: "Orthodox icoon; proef bronvermelding."
 betekenis_lage_landen: |
   Ludger (Liudger) werd rond 742 bij Utrecht geboren en volgde onderwijs
   onder Gregorius van Utrecht. Hij predikte in Friesland (onder meer na de

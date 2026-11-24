@@ -1,24 +1,16 @@
 id: willehad
 soort: heilige
-bronlaag: encyclopedie
+bronlaag: nagekeken
 cyclus: jaar
 lage_landen: true
-selectie: nader-onderzoek
-selectie_toelichting: "Friese missie mogelijk; hoofdzakelijk Bremen/Saksen."
-selectie_toelichting_publiek: |
-  **Voor.** De Groningse bisdomkalender gedenkt Willehad op 8 november.
-  Hij was Angelsaksisch missionaris in de Friese en Saksische wereld, in
-  de kring van Willibrord en Bonifatius.
-
-  **Twijfel.** Zijn bewezen episcopaat is Bremen. Of hij in huidig
-  Nederland predikte (en niet alleen in het Duitse Friese/Saksische
-  gebied), is niet hard. Vergelijk Swidbert (Kaiserswerth) die wél in
-  Friesland met Willibrord werkte.
+selectie: voldoet
+selectie_toelichting: "Prediking te Dokkum, Humsterland en Drenthe; later Bremen."
 namen:
   primair: Willehad
   alternatief:
   - Willehad van Bremen
   - Willehad van Dokkum
+  - Willehadus
 datum:
   waarde: "11-08"
   stijl: gregoriaans
@@ -29,41 +21,77 @@ iconen:
     rechten: ok
     licentie: Publiek domein
     bron: "Wikimedia Commons — File:Bischof Willehad.jpg"
+    toelichting: "Laatmiddeleeuwse houtsnede van Willehad als bisschop."
   - bestand: iconen/willehad-predikt-in-drenthe.jpg
     soort: reproductie
     rechten: ok
     licentie: Publiek domein
     bron: "Wikimedia Commons — File:Willehad predikt in Drenthe.jpg"
+    toelichting: "Traditie: Willehad predikt in Drenthe."
+  - bestand: iconen/willehad-orthodox.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "DOM Hl. Michael (dom-hl-michael.de) — Ikone Hl. Willehad von Bremen (Alexander Stoljarov)"
+    toelichting: "Orthodox icoon; proef bronvermelding."
 titels:
   - Bisschop van Bremen
+  - Missionaris
 periode: "† 789"
 locaties:
-  - bremen
+  - dokkum
+  - groningen
+  - drenthe
   - frisia
+  - bremen
 betekenis_lage_landen: |
-  Willehad staat op de Groningse kalender als geloofsverkondiger.
-  Het zwaartepunt van zijn werk lag in Saksen en Bremen.
+  Willehad predikte vóór zijn Bremer episcopaat in het Friese en
+  Groningse land: lang te Dokkum (waar Bonifatius was gevallen), daarna
+  over de Lauwers in Humsterland, en met vrucht in Drenthe. Dat werk in
+  huidig Nederland — niet alleen later Bremen — maakt hem tot heilige
+  van de Lage Landen. De Groningse kalender gedenkt hem op 8 november.
 verhaal: |
-  Angelsaksisch missionaris, predikte onder Friezen en Saksen, werd
-  eerste bisschop van Bremen, stierf in 789. Feestdag 8 november te
-  Groningen, dezelfde dag als de Utrechtse bisschoppen.
-over_bronnen: |
-  **Voor.** Nederlandse bisdomkalender Groningen 8 november ([1]).
-  Pre-schisma missionaris in de Friese wereld.
+  Willehad kwam uit Northumbrië, werd priester en trok omstreeks 772 naar
+  Friesland. Bij Dockynchirica (Dokkum) werkte hij lange tijd onder de
+  Friezen. Over de Lauwers predikte hij in Humarcha (Humsterland); daar
+  ontsnapte hij ternauwernood aan de dood. In Thrianta (Drenthe) doopte
+  hij velen, tot heidense tegenstand hem opnieuw in gevaar bracht.
 
-  **Twijfel.** Episcopaat Bremen; Friese prediking in huidig NL is niet
-  eenduidig ([2]).
+  Karel de Grote zond hem later naar de Saksen in Wigmodië. Na de
+  opstand van Widukind (782) vluchtte hij via Rome naar Echternach. In
+  787 werd hij bisschop; hij vestigde zijn zetel te Bremen, wijdde daar
+  op Allerheiligen 789 een Petruskerk, en stierf een week later (8
+  november) te Blexen aan de Wezer.
+over_bronnen: |
+  De Vita Willehadi (Ansgar-kring / Bremen) noemt Dokkum, Humarcha en
+  Thrianta expliciet vóór het Saksische episcopaat ([1], [2], [3]).
+  Identificatie Humarcha ≈ Humsterland en Thrianta ≈ Drenthe is
+  gangbaar in lexikon en vakliteratuur. Episcopaat Bremen is zeker; dat
+  heft de Friese prediking in huidig NL niet op.
 referenties:
-  - label: "Katholiek.org — Nederlandse heiligenkalender"
-    url: "http://www.katholiek.org/heiligenkalender.php"
-    geraadpleegd: "2026-08-31"
+  - label: "Heiligenlexikon — Willehad von Bremen"
+    url: "https://www.heiligenlexikon.de/BiographienW/Willehad_von_Bremen.html"
+    geraadpleegd: "2026-11-24"
     inhoud: >
-      8 november: Willehad van Bremen — Groningen.
+      Lexikonvita: Dokkum 772, Humsterland, Saksenmissie, bisschop Bremen
+      787, † 8 november 789 te Blexen.
+  - label: "Stadlers Heiligen-Lexikon — Willehad von Bremen"
+    url: "https://www.heiligenlexikon.de/Stadler/Willehad_von_Bremen.html"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Samenvatting van de Vita: Dockum, Humarcha, Thrienta (Drenthe),
+      Wigmodië, Bremen.
+  - label: "Orthodox Benelux — Willehad van Bremen (vitavertailing)"
+    url: "https://orthodoxconnect.be/heiligen/willehad-van-bremen"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Nederlandse vertaling van de Vita beati Willehadi uit Münster-hs.;
+      Dockynchirica = Dokkum, Humarcha, later Bremen.
   - label: "Wikipedia (NL) — Willehad"
     url: "https://nl.wikipedia.org/wiki/Willehad"
-    geraadpleegd: "2026-08-31"
+    geraadpleegd: "2026-11-24"
     inhoud: >
-      Angelsaksische missionaris, bisschop van Bremen, † 789.
+      Overzicht: Dokkum, Humsterland, Drenthe, Bremen; feestdag 8 november.
   - label: "heiligen.net — Willehad van Bremen"
     url: "https://www.heiligen.net/heiligen/11/08/11-08-0789-willehad-bremen.php"
     geraadpleegd: "2026-10-01"

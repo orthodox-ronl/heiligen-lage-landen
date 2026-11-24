@@ -19,7 +19,11 @@
         },
         "bron": { "type": "string" },
         "licentie": { "type": "string" },
-        "rechten": { "type": "string", "enum": ["ok", "onbekend", "nee"] },
+        "rechten": {
+          "type": "string",
+          "enum": ["ok", "onbekend", "nee", "bronvermelding"],
+          "description": "ok = vrije/toegestane licentie; bronvermelding = alleen tonen als site/data/iconen_instellingen.yaml bronvermelding: true"
+        },
         "primair": {
           "type": "boolean",
           "description": "Hoogstens één true per entry; infobox en lijsten tonen dit item."

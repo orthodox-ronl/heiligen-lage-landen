@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from iconen import extra_iconen, icoon_bestand, primair_icoon  # noqa: E402
+from iconen_instellingen import bronvermelding_aan  # noqa: E402
 from load_entries import heilige_in_kalender, load_entries  # noqa: E402
 from plaatsen import (  # noqa: E402
     load_plaatsen,
@@ -286,14 +287,22 @@ def yaml_quote(value: str) -> str:
 
 
 def append_icoon_front_matter(
-    fm: list[str], entry: dict[str, Any], plaatsen: dict[str, Any]
+    fm: list[str],
+    entry: dict[str, Any],
+    plaatsen: dict[str, Any],
+    *,
+    bronvermelding: bool | None = None,
 ) -> None:
     """Hugo: icoon = primair; iconen = overige zichtbare items."""
-    prim = primair_icoon(entry)
+    toon_bron = bronvermelding_aan() if bronvermelding is None else bronvermelding
+    prim = primair_icoon(entry, bronvermelding=toon_bron)
     if not prim:
         return
     rel = icoon_bestand(prim)
     fm.append(f"icoon: {yaml_quote('/' + rel)}")
+    rechten = str(prim.get("rechten") or "").strip()
+    if rechten:
+        fm.append(f"icoon_rechten: {yaml_quote(rechten)}")
     bron = str(prim.get("bron") or "").strip()
     if bron:
         fm.append(f"icoon_bron: {yaml_quote(bron)}")
@@ -303,13 +312,13 @@ def append_icoon_front_matter(
     toelichting = str(prim.get("toelichting") or "").strip()
     if toelichting:
         fm.append(f"icoon_toelichting: {yaml_quote(toelichting)}")
-    extras = extra_iconen(entry)
+    extras = extra_iconen(entry, bronvermelding=toon_bron)
     if not extras:
         return
     fm.append("iconen:")
     for item in extras:
         fm.append(f"  - bestand: {yaml_quote('/' + icoon_bestand(item))}")
-        for key in ("bron", "licentie", "soort", "toelichting"):
+        for key in ("rechten", "bron", "licentie", "soort", "toelichting"):
             val = str(item.get(key) or "").strip()
             if val:
                 fm.append(f"    {key}: {yaml_quote(val)}")
@@ -1601,6 +1610,7 @@ def write_lezingen_json() -> dict[str, Any]:
 
 def write_entries_json(entries: list[dict[str, Any]]) -> None:
     years = list(occurrence_years())
+    toon_bron = bronvermelding_aan()
     payload = []
     for entry in entries:
         dn = entry["datum_norm"]
@@ -1621,7 +1631,10 @@ def write_entries_json(entries: list[dict[str, Any]]) -> None:
             "onderdrukt_wekelijks_vasten": bool(
                 entry.get("onderdrukt_wekelijks_vasten")
             ),
-            "icoon": icoon_bestand(primair_icoon(entry)) or None,
+            "icoon": icoon_bestand(
+                primair_icoon(entry, bronvermelding=toon_bron)
+            )
+            or None,
         }
         if entry.get("soort") == "heilige":
             item["selectie"] = entry.get("selectie") or "nader-onderzoek"

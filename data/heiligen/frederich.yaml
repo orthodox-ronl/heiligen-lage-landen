@@ -15,11 +15,18 @@ namen:
 datum:
   waarde: "07-18"
   stijl: gregoriaans
-icoon:
-  bestand: iconen/frederich.jpg
-  rechten: ok
-  licentie: Public domain
-  bron: "Wikimedia Commons — File:Frederik van Utrecht.jpg"
+iconen:
+  - bestand: iconen/frederich.jpg
+    primair: true
+    rechten: ok
+    licentie: Public domain
+    bron: "Wikimedia Commons — File:Frederik van Utrecht.jpg"
+  - bestand: iconen/frederich-orthochristian.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "OrthoChristian / Pravoslavie.ru — Icon of St. Frederick of Utrecht (artikel Orthodoxy in the Low Countries, part 5)"
+    toelichting: "Orthodox icoon; proef bronvermelding."
 titels:
   - Bisschop van Utrecht
   - Martelaar

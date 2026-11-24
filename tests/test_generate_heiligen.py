@@ -488,6 +488,7 @@ def test_entry_page_icoon_alleen_bij_rechten_ok(
     assert meta["icoon"] == "/iconen/willibrord.jpg"
     assert meta["icoon_bron"] == "Wikimedia Commons"
     assert meta["icoon_licentie"] == "Publiek domein"
+    assert meta["icoon_rechten"] == "ok"
     write_entry_page(
         _heilige(
             id="zonder",
@@ -498,6 +499,48 @@ def test_entry_page_icoon_alleen_bij_rechten_ok(
         (content / "heiligen" / "zonder.md").read_text(encoding="utf-8")
     )
     assert "icoon" not in meta2
+
+
+def test_entry_page_icoon_bronvermelding_volgt_instelling(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    content = tmp_path / "content"
+    monkeypatch.setattr("generate.CONTENT", content)
+    entry = _heilige(
+        iconen=[
+            {
+                "bestand": "iconen/bron.jpg",
+                "rechten": "bronvermelding",
+                "primair": True,
+                "bron": "Cloud of Witnesses",
+                "licentie": "Bronvermelding",
+            },
+            {
+                "bestand": "iconen/ok.jpg",
+                "rechten": "ok",
+                "bron": "Commons",
+                "licentie": "PD",
+            },
+        ]
+    )
+    monkeypatch.setattr("generate.bronvermelding_aan", lambda: False)
+    write_entry_page(entry)
+    meta, _ = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )
+    assert meta["icoon"] == "/iconen/ok.jpg"
+    assert meta["icoon_rechten"] == "ok"
+    assert "iconen" not in meta
+
+    monkeypatch.setattr("generate.bronvermelding_aan", lambda: True)
+    write_entry_page(entry)
+    meta_aan, _ = _split_hugo_markdown(
+        (content / "heiligen" / "voorbeeld.md").read_text(encoding="utf-8")
+    )
+    assert meta_aan["icoon"] == "/iconen/bron.jpg"
+    assert meta_aan["icoon_rechten"] == "bronvermelding"
+    assert meta_aan["iconen"][0]["bestand"] == "/iconen/ok.jpg"
+    assert meta_aan["iconen"][0]["rechten"] == "ok"
 
 
 def test_entry_page_iconen_lijst_primair_en_extra(

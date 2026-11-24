@@ -1,0 +1,97 @@
+id: radfridus-bedum
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaar te Bedum met Walfridus; eigen grafkapel."
+namen:
+  primair: Radfridus (Bedum)
+  alternatief:
+  - Radfridus
+  - Radfried
+  - Rathfried
+  - Radfridus van Bedum
+datum:
+  waarde: "12-03"
+  stijl: gregoriaans
+  extra:
+    - waarde: "06-22"
+      toelichting: overbrenging / translatio (samen met Walfridus)
+iconen:
+  - bestand: iconen/bedum-walfridus.jpg
+    primair: true
+    soort: foto
+    plaats: bedum
+    rechten: ok
+    licentie: CC BY-SA 3.0
+    bron: "Wikimedia Commons — File:Bedum - Walfridus.jpg"
+    toelichting: "Bronzen beeld van Iris Le Rütte te Bedum (cultusplaats vader en zoon); geen vrij herbruikbaar historisch portret van Radfridus alleen gevonden."
+  - bestand: iconen/walfridus-bedum.jpg
+    soort: reproductie
+    rechten: ok
+    licentie: Public domain
+    bron: "Wikimedia Commons — File:Walfridus - kist.jpg"
+    toelichting: "Walfriduskist (Groninger Museum / Bedum); vader Walfridus, dezelfde Bedumse martelaarstraditie."
+titels:
+  - Martelaar
+periode: "omstreeks 1000"
+locaties:
+  - bedum
+  - frisia
+rustplaats:
+  plaats: bedum
+  toelichting: "Grafkapel van Radfridus (verdwenen; Kapelstraat / Oud Kapelle)"
+betekenis_lage_landen: |
+  Radfridus is de zoon van Walfridus van Bedum. Volgens de Passio
+  werden beiden omstreeks 1000 door Noormannen gedood in het Friese
+  land tussen Lauwers en Eems. Over zijn graf verrees een eigen
+  bedevaartkapel (later een stenen kerk), westelijk van de
+  Walfriduskerk. Hij hoort bij dezelfde Bedumse martelaarscultus als
+  zijn vader, met eigen merites: eigen feestdagtraditie (3 december)
+  en eigen cultusplaats.
+verhaal: |
+  De middeleeuwse Passio sanctorum martyrorum Walfridi et Radfridi
+  maakt van Walfridus en zijn zoon Radfridus vrome landbouwers die
+  moeras ontgonnen en als christenen leefden. Bij een Noormanneninval
+  (omstreeks 1000) werden beiden vermoord. Het lichaam van Radfridus
+  zou pas later in het riet zijn gevonden. Over zijn graf bouwde men
+  een kapel; in de dertiende eeuw een bakstenen kerk van circa twintig
+  meter. Die Radfriduskapel verdween omstreeks 1664.
+
+  Walfridus heeft een eigen pagina. Radfridus staat hier op eigen
+  merites als martelaar te Bedum met eigen cultusplaats.
+over_bronnen: |
+  Opname steunt op de Bedumse martelaarstraditie en de Meertens-
+  bedevaartcatalogus voor H. Radfridus ([1], [2]). De Passio is laat
+  (mogelijk 12e eeuw); jaartallen en details wisselen — dezelfde
+  onzekerheid als bij Walfridus, die al als voldoet in de catalogus
+  staat. Geen vrij herbruikbaar historisch icoon van Radfridus alleen
+  gevonden; beeldmateriaal is de Bedumse cultusplaats.
+referenties:
+  - label: "Meertens — Bedevaarten in Nederland: Bedum, H. Radfridus"
+    url: "https://bedevaart.meertens.knaw.nl/plaats/1211"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Cultus, grafkapel, feestdagen 3 december en 22 juni (translatio);
+      bouwgeschiedenis en verdwijning van de kapel.
+  - label: "Meertens — Bedevaarten in Nederland: Bedum, H. Walfridus"
+    url: "https://bedevaart.meertens.knaw.nl/plaats/1009"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Gezamenlijke Passio; martelaarschap met zoon Radfridus omstreeks 1000.
+  - label: "DBNL — Passio sanctorum martyrorum Walfridi et Radfridi"
+    url: "https://www.dbnl.org/tekst/cara006repe01_01/cara006repe01_01_0041.php"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Repertoriumvermelding van de Passio (vóór 1424–1426 overgeleverd).
+  - label: "Wikipedia (NL) — Walfridus"
+    url: "https://nl.wikipedia.org/wiki/Walfridus"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Bedumse martelaarstraditie; zoon Radfridus mee vermoord.
+  - label: "heiligen.net — Walfried van Bedum (met Radfried)"
+    url: "https://www.heiligen.net/heiligen/12/03/12-03-0900-walfried.php"
+    geraadpleegd: "2026-10-01"
+    inhoud: >
+      Gezamenlijke levensschets Walfried en Radfried; feestdag 3 december.

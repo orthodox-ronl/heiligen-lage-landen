@@ -13,6 +13,13 @@ namen:
 datum:
   waarde: "12-22"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/hunger-van-utrecht.jpg
+  soort: reproductie
+  rechten: bronvermelding
+  licentie: Bronvermelding
+  bron: "heiligen.net — Hunger van Utrecht (illustratie)"
+  toelichting: "Westerse illustratie; geen Orthodox icoon gevonden."
 titels:
   - Bisschop van Utrecht
 periode: "ca. 800–866"

@@ -27,6 +27,13 @@ datum:
       toelichting: 14 november (gangbare gedenkdag)
     - waarde: "11-27"
       toelichting: 27 november
+icoon:
+  bestand: iconen/albericus-van-utrecht.jpg
+  soort: foto
+  rechten: bronvermelding
+  licentie: Bronvermelding
+  bron: "heiligen.net — Albericus van Utrecht (beeld ca. 1920?, St-Nicolaaskerk Denekamp)"
+  toelichting: "Standbeeld; geen Orthodox icoon gevonden."
 titels:
   - Vierde bisschop van Utrecht
 periode: "~776–784"

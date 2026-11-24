@@ -269,9 +269,15 @@ díe betekenistekst. Niet hetzelfde als `bronlaag: nagekeken`.
 ## Icoon
 
 Bestand onder `site/static/` (doorgaans `site/static/iconen/<id>.jpg`).
-Alleen tonen als `rechten: ok`, met `bron` en `licentie`. Geen URL als
-afbeeldingsbron: een plaatje op een andere site mag u niet zomaar in de
-browser laden (auteursrecht, kapotte links, hotlink-blokkades).
+Met `bron` en `licentie`. Geen hotlink-URL: lokaal bestand.
+
+**`rechten: ok`** — PD/CC of toestemming; altijd tonen.
+**`rechten: bronvermelding`** — echt icoon van een bron-site (niet
+standbeeld/reliekfoto), alleen tonen als
+`site/data/iconen_instellingen.yaml` → `bronvermelding: true`. Geen
+UI-schakelaar; CI zet dit niet aan. Bijschrift: «Icoon van … ·
+weergegeven met bronvermelding (geen vrije licentie)». Na flip:
+`generate` opnieuw, dan `serve`/`build`. Op main standaard `false`.
 
 ### Script
 

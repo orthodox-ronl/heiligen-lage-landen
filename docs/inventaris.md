@@ -129,7 +129,6 @@ staat niet hier. Live: `/beheer/selectie/`.
 | `macarius-van-gent` | Pelgrim, gestorven te Gent; weinig eigen werk aantoonbaar |
 | `zwentibold` | Koning van Lotharingen; lokale martelaarscultus te Susteren |
 | `eucherius-van-orleans` | Bisschop van Orléans; band via ballingschap |
-| `willehad` | Friese missie mogelijk; hoofdzakelijk Bremen/Saksen |
 | `maternus` | Eerste bisschop van Keulen; Tongeren-band legendarisch |
 | `gaugericus` | Bisschop van Kamerijk; zetel nu in Frankrijk |
 | `audomarus` | Bisschop van Terwaan; Sint-Omaars nu in Frankrijk |
@@ -158,3 +157,66 @@ en Lioba.
 | `herlindis` | Herlindis van Aldeneik | voldoet | Eerste abdis Aldeneik/Maaseik; wijding Willibrord |
 | `relindis` | Relindis van Aldeneik | voldoet | Tweede abdis Aldeneik; opvolgster van Herlindis |
 | `lioba` | Lioba | kandidaat-schrappen | Werk in Germanië; Egmond 1935 is patroonschap |
+
+## Besluit 24 november 2026 — Willehad en Radfridus
+
+| Id                  | Naam              | Selectie | Toets                                                          |
+| ------------------- | ----------------- | -------- | -------------------------------------------------------------- |
+| `willehad`          | Willehad          | voldoet  | Vita: prediking Dokkum, Humsterland, Drenthe vóór Bremen       |
+| `radfridus-bedum`   | Radfridus (Bedum) | voldoet  | Martelaar te Bedum met Walfridus; eigen grafkapel              |
+
+Willehad stond eerder onder *nader onderzoek*; selectie opgewaardeerd
+na Vita/lexikon. Radfridus nieuw; geen vrij historisch portret alleen —
+Bedumse cultusbeelden. Zie YAML.
+
+### Proef iconen bronvermelding (stap 2)
+
+Echte iconen (geen standbeeld/reliek), `rechten: bronvermelding`,
+naast bestaande `ok`-primair. Tonen alleen met
+`site/data/iconen_instellingen.yaml` → `bronvermelding: true` +
+`generate`.
+
+| Id                        | Bestand                                   | Bron                          |
+| ------------------------- | ----------------------------------------- | ----------------------------- |
+| `willibrord`              | `iconen/willibrord-orthochristian.jpg`    | OrthoChristian / Pravoslavie  |
+| `servatius`               | `iconen/servatius-orthochristian.jpg`     | OrthoChristian / Pravoslavie  |
+| `johannes-van-shanghai`   | `iconen/johannes-van-shanghai-oca.jpg`    | OCA icons                     |
+
+## Kandidaten-inventaris 24 november 2026
+
+Geen YAML. Steekproef tegen bestaande catalogus (115 ids) en
+criteria in [uitleg/heiligen](../site/content/uitleg/heiligen.md).
+Bronnen voor *namen* (niet voor opnamebewijs): OrthoChristian-reeks
+«Orthodoxy in the Low Countries», Orthodox Benelux
+([orthodoxconnect.be/heiligen](https://orthodoxconnect.be/heiligen)),
+archiepiskopia.be (heiligenlijst België/Nederland).
+
+### Ingevoerd 24 november 2026 (vier voldoet + NL-nader)
+
+| Id                               | Selectie         | Toets                                            |
+| -------------------------------- | ---------------- | ------------------------------------------------ |
+| `piatus-van-doornik`             | voldoet          | Martelaar/prediking Doornik                      |
+| `amor-van-munsterbilzen`         | voldoet          | Kluizenaar Maastricht; Munsterbilzen             |
+| `benedicta-cecilia-van-susteren` | voldoet          | Abdissen Susteren (NL)                           |
+| `perpetuus-van-maastricht`       | voldoet          | Bisschop Maastricht; Dinant                      |
+| `wigbert`                        | nader-onderzoek  | Friese prediking ~2 jaar (NL); weinig resultaat  |
+| `wilfrid-van-york`               | nader-onderzoek  | Winter 678 Friesland (NL); zwaartepunt York      |
+
+### Nader onderzoek — niet ingevoerd (geen NL-werk)
+
+Striktere filter «ook in Nederland gewerkt» op de eerdere kandidatenlijst:
+
+| Kandidaat                        | Waarom niet nu        |
+| -------------------------------- | --------------------- |
+| Evermarus van Rutten             | Rutten/Tongeren (BE)  |
+| Martin van Tongeren              | Tongeren (BE)         |
+| Mummolinus van Noyon-Doornik     | Zetel Noyon (FR)      |
+| Meingold van Hoei                | Hoei (BE)             |
+
+### Niet invoeren
+
+| Kandidaat                | Waarom niet                              |
+| ------------------------ | ---------------------------------------- |
+| Godelieve van Gistel     | †1070; westerse cultus na het schisma    |
+| Donatianus van Reims     | Alleen patroon van Brugge                |
+| Fursey                   | Werk Engeland/Lagny; LL via Foillan/Ultan |

@@ -4,23 +4,29 @@
   Hugo dict: alleen stringsleutels (geen integers).
 */}}
 {{- $p := .Params -}}
+{{- $toonBronvermelding := false -}}
+{{- with site.Data.iconen_instellingen -}}
+  {{- if .bronvermelding -}}{{- $toonBronvermelding = true -}}{{- end -}}
+{{- end -}}
 {{- $weeknamen := dict "1" "maandag" "2" "dinsdag" "3" "woensdag" "4" "donderdag" "5" "vrijdag" "6" "zaterdag" "7" "zondag" -}}
 {{- $heeftDatum := or $p.feestdatum (and $p.van $p.tot) $p.weekdagen $p.paascyclus_offset (isset $p "van_offset_dagen") $p.anker -}}
 {{- $heeftBox := or $p.icoon $p.titels $p.alternatief $heeftDatum $p.periode $p.locatie_items $p.rustplaats_plaats $p.vastenniveau $p.onderdrukt_wekelijks_vasten -}}
 {{- if $heeftBox -}}
 <aside class="infobox" aria-label="Kerngegevens">
   <div class="infobox-header">{{ .Title }}</div>
-  {{- with $p.icoon }}
+  {{- if and $p.icoon (or (ne $p.icoon_rechten "bronvermelding") $toonBronvermelding) }}
   <figure class="infobox-figure">
-    <img src="{{ . | relURL }}" alt="Afbeelding van {{ $.Title }}" width="220" height="220" loading="lazy">
-    {{- partial "icoon-figcaption.html" (dict "bron" $p.icoon_bron "licentie" $p.icoon_licentie "toelichting" $p.icoon_toelichting) -}}
+    <img src="{{ $p.icoon | relURL }}" alt="Afbeelding van {{ .Title }}" width="220" height="220" loading="lazy">
+    {{- partial "icoon-figcaption.html" (dict "bron" $p.icoon_bron "licentie" $p.icoon_licentie "toelichting" $p.icoon_toelichting "rechten" $p.icoon_rechten) -}}
   </figure>
   {{- end }}
   {{- range $p.iconen }}
+  {{- if or (ne .rechten "bronvermelding") $toonBronvermelding }}
   <figure class="infobox-figure infobox-figure-extra">
     <img src="{{ .bestand | relURL }}" alt="Afbeelding van {{ $.Title }}" width="160" height="160" loading="lazy">
-    {{- partial "icoon-figcaption.html" (dict "bron" .bron "licentie" .licentie "toelichting" .toelichting) -}}
+    {{- partial "icoon-figcaption.html" (dict "bron" .bron "licentie" .licentie "toelichting" .toelichting "rechten" .rechten) -}}
   </figure>
+  {{- end }}
   {{- end }}
   <table class="infobox-table">
     <tbody>

@@ -44,11 +44,16 @@ en [namen]({{% ref "/beheer/how-to-namen" %}}).
 
 ### 5. Beeldmateriaal
 
-- Staat er een icoon of portret met **herbruikbare** licentie?
+- Staat er een **echt icoon** (geen standbeeld/reliekfoto) met
+  herbruikbare licentie, of alleen met bronvermelding?
 - Op Wikimedia Commons: open de **File:**-pagina, lees de licentie
-  (publiek domein, CC0, of CC-BY/-SA met naamsvermelding).
+  (publiek domein, CC0, of CC-BY/-SA met naamsvermelding) →
+  `rechten: ok`.
+- Van een heiligen-site zonder vrije licentie: lokaal bewaren,
+  `rechten: bronvermelding`, `bron` = die site. Tonen alleen als
+  `site/data/iconen_instellingen.yaml` → `bronvermelding: true`.
 - → Bestand lokaal naar `site/static/iconen/<id>.jpg` (of `.png`); in YAML
-  `icoon` of `iconen` met `rechten: ok`, `bron`, `licentie`. Extra
+  `icoon` of `iconen` met `rechten`, `bron`, `licentie`. Extra
   opnamen: commando `icoon` (naam zoeken, parochieplaats). Nieuwe
   bestandsnaam, niet het bestaande bestand overschrijven. Geen hotlinks.
 

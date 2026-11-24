@@ -13,6 +13,13 @@ namen:
 datum:
   waarde: "06-05"
   stijl: gregoriaans
+icoon:
+  bestand: iconen/eoban.jpg
+  soort: foto
+  rechten: bronvermelding
+  licentie: Bronvermelding
+  bron: "heiligen.net — Eoban van Utrecht (crypte Adolar en Eoban, Dom Erfurt, 1353)"
+  toelichting: "Crypte/reliekplaats; geen Orthodox icoon gevonden."
 titels:
   - Bisschop
   - Martelaar

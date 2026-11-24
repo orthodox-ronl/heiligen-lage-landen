@@ -25,6 +25,12 @@ iconen:
     rechten: ok
     licentie: Publiek domein
     bron: "Wikimedia Commons — File:Saint Boniface by Cornelis Bloemaert.jpg"
+  - bestand: iconen/bonifatius-orthodox.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "drjohnhutchisonhall.com — Icon of St. Boniface of Fulda / Enlightener of Germany"
+    toelichting: "Orthodox icoon; proef bronvermelding."
 titels:
   - Aartsbisschop
   - Martelaar

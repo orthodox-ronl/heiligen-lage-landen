@@ -16,11 +16,18 @@ datum:
   extra:
     - waarde: "10-19"
       toelichting: overbrenging van de relieken (Utrecht)
-icoon:
-  bestand: iconen/willibrord.jpg
-  rechten: ok
-  licentie: Publiek domein
-  bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
+iconen:
+  - bestand: iconen/willibrord.jpg
+    primair: true
+    rechten: ok
+    licentie: Publiek domein
+    bron: "Wikimedia Commons — File:Willibrord (Paris, BN Lat. 10510).jpg"
+  - bestand: iconen/willibrord-orthochristian.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "OrthoChristian / Pravoslavie.ru — Icon of St. Willibrord of Utrecht (artikel Orthodoxy in the Low Countries, part 2)"
+    toelichting: "Orthodox icoon; proef bronvermelding."
 titels:
   - Apostel van de Friezen
   - Aartsbisschop van Utrecht

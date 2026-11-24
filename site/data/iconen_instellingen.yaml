@@ -1,0 +1,5 @@
+# Iconen met rechten: bronvermelding (losser: van een bron-site, met
+# vermelding). Standaard uit — zo op main/CI. Lokaal of bewust voor
+# publicatie: zet op true, daarna generate + serve/build. Geen UI-schakelaar;
+# CI zet dit niet automatisch aan.
+bronvermelding: false

@@ -1,0 +1,49 @@
+id: amor-van-munsterbilzen
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Kluizenaar Maastricht; stichting/cultus Munsterbilzen."
+namen:
+  primair: Amor van Munsterbilzen
+  alternatief:
+  - Amor
+  - Amor van Aquitanië
+  - Sint Amor
+datum:
+  waarde: "10-08"
+  stijl: gregoriaans
+titels:
+  - Kluizenaar
+  - Diaken
+periode: "9e/10e eeuw (traditie)"
+locaties:
+  - munsterbilzen
+  - maastricht
+betekenis_lage_landen: |
+  Amor wordt verbonden met een kluis bij de Sint-Servaas te Maastricht
+  (huidig Nederland) en met de abdijcultus van Munsterbilzen (Belgisch
+  Limburg). Hij stierf volgens de overlevering te Maastricht; relieken
+  gingen naar Munsterbilzen. Dat is handeling en cultus in de
+  Maasstreek van de Lage Landen.
+verhaal: |
+  De Vita Sancti Amoris maakt hem tot Aquitaanse edelman die in Rome
+  de opdracht kreeg zich bij Munsterbilzen te vestigen. Hij leefde als
+  kluizenaar bij Maastricht en wordt (naast Landrada) met de abdij van
+  Munsterbilzen verbonden. Overlijden te Maastricht; translatio van
+  relieken naar Munsterbilzen (traditie 850). Feestdag 8 oktober.
+over_bronnen: |
+  Voldoet via Maastricht (NL) en Munsterbilzen (BE) ([1], [2]). Historische
+  details dun; Landrada blijft de vroege stichteres van Munsterbilzen.
+referenties:
+  - label: "Wikipedia (NL) — Amor van Aquitanië"
+    url: "https://nl.wikipedia.org/wiki/Amor_van_Aquitani%C3%AB"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Kluizenaar Maastricht, Munsterbilzen, feestdag 8 oktober.
+  - label: "Orthodox Benelux — Amor van Munsterbilzen"
+    url: "https://orthodoxconnect.be/heiligen"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Op de lijst (8 oktober).

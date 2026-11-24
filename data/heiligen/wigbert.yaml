@@ -1,0 +1,65 @@
+id: wigbert
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Prediking in Friesland (~2 jaar); weinig blijvend resultaat; keerde terug."
+selectie_toelichting_publiek: |
+  **Voor.** Wigbert (Victberct) predikte volgens Beda twee jaar onder de
+  Friezen en koning Radboud — dus in huidig Nederland — op aandringen van
+  Egbert van Rathmelsigi.
+
+  **Twijfel.** Hij behaalde weinig resultaat en keerde terug naar Ierland.
+  Zijn blijvende werk lag elders; de Friese missie werd later door
+  Willibrord voortgezet. Deur open; geen actieve verzameling van dit
+  type grensgevallen.
+namen:
+  primair: Wigbert
+  alternatief:
+  - Wigbert van Ierland
+  - Victberct
+  - Wictbert
+  - Wihtberht
+datum:
+  waarde: "04-12"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/wigbert.jpg
+  soort: reproductie
+  rechten: bronvermelding
+  licentie: Bronvermelding
+  bron: "heiligen.net — Wigbert van Ierland (tekening Paul de Geus, 2002)"
+  toelichting: "Moderne schets «vergeefse prediking»; geen Orthodox icoon gevonden."
+titels:
+  - Monnik
+  - Missionaris
+periode: "† ca. 690"
+locaties:
+  - frisia
+betekenis_lage_landen: |
+  Wigbert predikte twee jaar in Friesland (huidig Nederland) vóór de
+  grote missie van Willibrord. Het resultaat bleef beperkt; hij keerde
+  terug naar Ierland. De band met de Lage Landen is reëel maar kort en
+  zonder blijvende stichting.
+verhaal: |
+  Angelsaksische monnik, leerling van Egbert in Ierland. Na Egberts
+  eigen mislukte plan zond deze Wigbert naar de Friezen. Twee jaar
+  prediking onder Radboud leverde volgens Beda geen bekeringen op;
+  Wigbert keerde terug en stierf in Ierland (~690). Niet te verwarren
+  met Wigbert van Fritzlar (Bonifatius-kring; feestdag 13 augustus).
+over_bronnen: |
+  Prediking in Frisia is bij Beda hard ([1], [2]). Selectie nader
+  onderzoek: kort verblijf, geen blijvend resultaat.
+referenties:
+  - label: "heiligen.net — Wigbert van Ierland"
+    url: "https://www.heiligen.net/heiligen/04/12/04-12-0690-wigbert.php"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Beda over twee jaar Friese prediking; terugkeer naar Ierland;
+      feestdag 12 april.
+  - label: "Wikipedia / Beda — Ecclesiastical History V.9"
+    url: "https://nl.wikipedia.org/wiki/Egbert_van_Rathmelsigi"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Context: Egbert zendt Wigbert, daarna Willibrord.

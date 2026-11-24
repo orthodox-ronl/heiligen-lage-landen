@@ -18,11 +18,18 @@ datum:
   extra:
     - waarde: "06-07"
       toelichting: 7 juni (overbrenging van de relieken)
-icoon:
-  bestand: iconen/servatius.jpg
-  rechten: ok
-  licentie: CC0
-  bron: "Wikimedia Commons — File:Servatius van Maastricht (tg-uact-614).jpg"
+iconen:
+  - bestand: iconen/servatius.jpg
+    primair: true
+    rechten: ok
+    licentie: CC0
+    bron: "Wikimedia Commons — File:Servatius van Maastricht (tg-uact-614).jpg"
+  - bestand: iconen/servatius-orthochristian.jpg
+    soort: reproductie
+    rechten: bronvermelding
+    licentie: Bronvermelding
+    bron: "OrthoChristian / Pravoslavie.ru — St. Servatius of Tongeren (artikel Orthodoxy in the Low Countries, part 1)"
+    toelichting: "Orthodox icoon (Maastricht/Tongeren); proef bronvermelding."
 titels:
   - Bisschop van Tongeren
 periode: "384?"

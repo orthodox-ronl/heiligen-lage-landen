@@ -23,28 +23,43 @@ def iconen_van(entry: dict[str, Any]) -> list[dict[str, Any]]:
     return []
 
 
-def zichtbare_iconen(entry: dict[str, Any]) -> list[dict[str, Any]]:
-    """Items met lokaal bestand en rechten: ok (wat de site mag tonen)."""
+def zichtbare_iconen(
+    entry: dict[str, Any], *, bronvermelding: bool = False
+) -> list[dict[str, Any]]:
+    """Items met lokaal bestand die de site mag tonen.
+
+    ``rechten: ok`` altijd; ``rechten: bronvermelding`` alleen als
+    ``bronvermelding`` True is (zie site/data/iconen_instellingen.yaml).
+    """
+    toegestaan = {"ok"}
+    if bronvermelding:
+        toegestaan.add("bronvermelding")
     return [
         item
         for item in iconen_van(entry)
-        if icoon_bestand(item) and str(item.get("rechten") or "") == "ok"
+        if icoon_bestand(item) and str(item.get("rechten") or "") in toegestaan
     ]
 
 
-def primair_icoon(entry: dict[str, Any]) -> dict[str, Any] | None:
+def primair_icoon(
+    entry: dict[str, Any], *, bronvermelding: bool = False
+) -> dict[str, Any] | None:
     """Hoofdicoon voor infobox, lijsten en entries.json."""
-    items = zichtbare_iconen(entry)
+    items = zichtbare_iconen(entry, bronvermelding=bronvermelding)
     if not items:
         return None
     marked = [item for item in items if item.get("primair") is True]
     return marked[0] if marked else items[0]
 
 
-def extra_iconen(entry: dict[str, Any]) -> list[dict[str, Any]]:
+def extra_iconen(
+    entry: dict[str, Any], *, bronvermelding: bool = False
+) -> list[dict[str, Any]]:
     """Zichtbare iconen die niet het primaire bestand zijn."""
-    prim = primair_icoon(entry)
+    prim = primair_icoon(entry, bronvermelding=bronvermelding)
     prim_pad = icoon_bestand(prim)
     return [
-        item for item in zichtbare_iconen(entry) if icoon_bestand(item) != prim_pad
+        item
+        for item in zichtbare_iconen(entry, bronvermelding=bronvermelding)
+        if icoon_bestand(item) != prim_pad
     ]

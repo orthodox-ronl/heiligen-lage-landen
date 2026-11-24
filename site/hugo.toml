@@ -11,6 +11,8 @@ disableKinds = ["taxonomy", "term"]
   github = "https://github.com/orthodox-ronl/heiligen-lage-landen"
   org = "https://github.com/orthodox-ronl"
   feedback_email = "orthodoxronl@duck.com"
+  # Iconen met rechten: bronvermelding: zie site/data/iconen_instellingen.yaml
+  # (niet hier; Hugo leest die data-file).
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,54 @@
+id: piatus-van-doornik
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Martelaar/prediking te Doornik (~286)."
+namen:
+  primair: Piatus van Doornik
+  alternatief:
+  - Piatus
+  - Plato van Doornik
+  - Piat
+datum:
+  waarde: "10-01"
+  stijl: gregoriaans
+titels:
+  - Priester
+  - Martelaar
+  - Apostel van Doornik
+periode: "† ca. 286/300"
+locaties:
+  - doornik
+betekenis_lage_landen: |
+  Piatus is de traditionele apostel en martelaar van Doornik (Tournai)
+  in huidig België. De cultus is oud (o.a. herontdekking door Eligius);
+  prediking en martelaarschap horen bij de vroegste kerstening van de
+  zuidelijke Lage Landen, vóór het schisma.
+verhaal: |
+  Volgens de late Passio kwam Piatus uit Italië (Benevento) en predikte
+  hij in de streek van Doornik en Rijsel. Onder Maximianus zou hij zijn
+  gemarteld (scalpering). Details zijn legendarisch; de vaste kern is
+  de Doornikse cultus en feestdag 1 oktober. Relieken werden later o.a.
+  naar Chartres gebracht.
+over_bronnen: |
+  Opname: prediking/martelaarschap verbonden met Doornik in huidig
+  België ([1], [2]). Vita laat en deels legendarisch — zelfde klasse
+  als andere vroeg-Gallische martelaarstradities.
+referenties:
+  - label: "Wikipedia (NL) — Piatus"
+    url: "https://nl.wikipedia.org/wiki/Piatus"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Apostel van Doornik, martelaar ~286, feestdag 1 oktober; late Passio.
+  - label: "heiligen.net — Piatus van Doornik"
+    url: "https://www.heiligen.net/heiligen/10/01/10-01-0300-piatus-doornik.php"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Levensschets: Benevento, prediking Doornik/Rijsel, martelaarschap.
+  - label: "Orthodox Benelux — Piatus van Doornik"
+    url: "https://orthodoxconnect.be/heiligen"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Op de lijst heiligen van de Lage Landen (1 oktober).

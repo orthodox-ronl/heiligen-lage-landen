@@ -1,0 +1,63 @@
+id: wilfrid-van-york
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: nader-onderzoek
+selectie_toelichting: "Winter 678 prediking/doop in Friesland; hoofdzakelijk Engeland."
+selectie_toelichting_publiek: |
+  **Voor.** Op doorreis naar Rome (678/679) bleef Wilfrid maanden in
+  Friesland. Volgens zijn vita doopte hij veel Friezen — dus handeling
+  in huidig Nederland.
+
+  **Twijfel.** Zijn levenswerk lag in Northumbrië/York. De Friese episode
+  is kort; continentale bewijzen buiten de Engelse vita zijn schaars.
+  Hij zocht de Friese missie later niet actief. Deur open als grensgeval.
+namen:
+  primair: Wilfrid van York
+  alternatief:
+  - Wilfrid
+  - Wilfried van York
+  - Wilfridus
+datum:
+  waarde: "10-12"
+  stijl: gregoriaans
+icoon:
+  bestand: iconen/wilfrid-van-york.jpg
+  rechten: ok
+  licentie: CC BY-SA 3.0
+  bron: "Wikimedia Commons — File:StWilfrid.jpg (Aidan Hart)"
+titels:
+  - Bisschop van York
+periode: "ca. 633–709"
+locaties:
+  - frisia
+betekenis_lage_landen: |
+  Wilfrid predikte en doopte in de winter van 678/679 in Friesland,
+  gast van koning Aldgisl. Dat is een vroege Angelsaksische missie in
+  huidig Nederland, vóór Willibrord. Zijn hoofdopdracht bleef Engeland.
+verhaal: |
+  Bisschop van York; in ballingschap op weg naar Rome landde hij in
+  Friesland. Stephanus van Ripon beschrijft doop van edelen en volk.
+  Later trok hij verder naar Rome. Willibrord groeide op te Ripon onder
+  Wilfrids abdij, maar de Friese missie van 690 wordt vooral aan Egbert
+  en Willibrord zelf toegeschreven.
+over_bronnen: |
+  Friese episode in de Vita Wilfridi / Beda ([1], [2]). Nader onderzoek:
+  kort verblijf; zwaartepunt Engeland.
+referenties:
+  - label: "Orthodox Europe — Netherlands (Wilfrid / Frisia)"
+    url: "http://www.orthodoxengland.org.uk/oenederl.htm"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Wilfrid 678 in Friesland; doop onder Aldgisl; context Willibrord.
+  - label: "Wikipedia (EN) — Wilfrid"
+    url: "https://en.wikipedia.org/wiki/Wilfrid"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Leven York/Ripon; ballingschap; Friese tussenstop.
+  - label: "Heiligenlexikon — Wilfrid von York"
+    url: "https://www.heiligenlexikon.de/BiographienW/Wilfrid_von_York.html"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Lexikonvita; feestdag 12 oktober.

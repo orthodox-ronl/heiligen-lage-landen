@@ -1,0 +1,54 @@
+id: perpetuus-van-maastricht
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Bisschop van Maastricht; band met Dinant."
+namen:
+  primair: Perpetuus van Maastricht
+  alternatief:
+  - Perpetuus
+  - Perpete
+datum:
+  waarde: "11-04"
+  stijl: gregoriaans
+  extra:
+    - waarde: "04-07"
+      toelichting: overbrenging van de relieken (Dinant)
+titels:
+  - Bisschop van Maastricht
+periode: "† 617? (traditie)"
+locaties:
+  - maastricht
+  - dinant
+betekenis_lage_landen: |
+  Perpetuus wordt genoemd als bisschop van Maastricht (huidig
+  Nederland). Hij koos volgens de overlevering Dinant (België) als
+  residentie, stichtte er een Vincentiuskerk en werd daar begraven.
+  Episcopaat Maastricht plus Maaslandse cultus: band met de Lage Landen
+  vóór het schisma.
+verhaal: |
+  Bronnen zijn laat (o.a. Heriger van Lobbes, 10e eeuw); jaartallen
+  wisselen (soms 6e eeuw). Heiligenlexikon: bisschop van Maastricht
+  607/608, † 4 november 617 te Maastricht, begraven te Dinant. Patroon
+  van Dinant; translatio 7 april. Biografie blijft dun.
+over_bronnen: |
+  Voldoet via Maastrichtse zetel ([1], [2]). Chronologie onzeker;
+  zelfde dunne laag als andere vroege Maastrichtse bisschoppen.
+referenties:
+  - label: "Heiligenlexikon — Perpetuus von Maastricht"
+    url: "https://www.heiligenlexikon.de/BiographienP/Perpetuus_von_Maastricht.html"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Bisschop Maastricht; Dinant; feestdag 4 november; translatio 7 april.
+  - label: "Wikipedia (NL) — Perpetuus van Maastricht"
+    url: "https://nl.wikipedia.org/wiki/Perpetuus_van_Maastricht"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Traditie Maastricht/Dinant; late vermelding; feestdag 4 november.
+  - label: "Orthodox Benelux — Perpetuus"
+    url: "https://orthodoxconnect.be/heiligen"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Op de lijst (4 november, Dinant).

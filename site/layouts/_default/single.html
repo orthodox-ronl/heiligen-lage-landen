@@ -4,10 +4,12 @@
   {{ if or (eq .Params.soort "heilige") (eq .Params.soort "feest") (eq .Params.soort "vasten") }}
     {{ partial "infobox.html" . }}
   {{ else }}
-    {{ with .Params.icoon }}
+    {{ $toonBronvermelding := false }}
+    {{ with site.Data.iconen_instellingen }}{{ if .bronvermelding }}{{ $toonBronvermelding = true }}{{ end }}{{ end }}
+    {{ if and .Params.icoon (or (ne .Params.icoon_rechten "bronvermelding") $toonBronvermelding) }}
       <figure class="icon-figure">
-        <img src="{{ . | relURL }}" alt="Afbeelding van {{ $.Title }}" width="240" height="240" loading="lazy">
-        {{ partial "icoon-figcaption.html" (dict "bron" $.Params.icoon_bron "licentie" $.Params.icoon_licentie "toelichting" $.Params.icoon_toelichting) }}
+        <img src="{{ .Params.icoon | relURL }}" alt="Afbeelding van {{ .Title }}" width="240" height="240" loading="lazy">
+        {{ partial "icoon-figcaption.html" (dict "bron" .Params.icoon_bron "licentie" .Params.icoon_licentie "toelichting" .Params.icoon_toelichting "rechten" .Params.icoon_rechten) }}
       </figure>
     {{ end }}
   {{ end }}

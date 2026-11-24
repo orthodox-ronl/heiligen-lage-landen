@@ -1,14 +1,20 @@
 {{- $bron := .bron -}}
 {{- $licentie := .licentie -}}
 {{- $toelichting := .toelichting -}}
+{{- $rechten := .rechten -}}
 {{- if or $bron $licentie $toelichting }}
 <figcaption>
   {{- with $toelichting -}}
   <span class="icoon-toelichting">{{ . }}</span>
   {{- if or $bron $licentie }}<br>{{ end -}}
   {{- end -}}
+  {{- if eq $rechten "bronvermelding" -}}
+  Icoon van {{ with $bron }}{{ . }}{{ else }}een externe bron{{ end }} ·
+  weergegeven met bronvermelding (geen vrije licentie)
+  {{- else -}}
   {{- with $bron }}{{ . }}{{ end -}}
   {{- if and $bron $licentie }} · {{ end -}}
   {{- with $licentie }}{{ . }}{{ end -}}
+  {{- end -}}
 </figcaption>
 {{- end -}}

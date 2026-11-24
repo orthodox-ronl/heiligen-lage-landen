@@ -1,0 +1,56 @@
+id: benedicta-cecilia-van-susteren
+soort: heilige
+bronlaag: encyclopedie
+cyclus: jaar
+lage_landen: true
+selectie: voldoet
+selectie_toelichting: "Abdissen van Susteren (dochters van Zwentibold)."
+namen:
+  primair: Benedicta en Cecilia van Susteren
+  alternatief:
+  - Benedicta van Susteren
+  - Cecilia van Susteren
+  - Benedikta
+  - Cäcilia
+  - Caecilia van Susteren
+  - Benigna
+datum:
+  waarde: "08-17"
+  stijl: gregoriaans
+titels:
+  - Abdissen van Susteren
+periode: "begin 10e eeuw"
+locaties:
+  - susteren
+betekenis_lage_landen: |
+  Benedicta en Cecilia waren volgens de overlevering dochters van
+  Zwentibold en werden te Susteren (Nederlands Limburg) door Amalberga
+  opgevoed. Beiden werden abdis van het vrouwenstift. Hun relieken
+  werden in Susteren vereerd — kloosterbestuur in huidig Nederland,
+  vóór het schisma.
+verhaal: |
+  Na de Vikingverwoesting van Susteren herstelde Zwentibold het stift.
+  Benedicta en Cecilia traden in; Benedicta volgde Amalberga op als
+  abdis, Cecilia daarna. (Een derde zuster, Relindis van Susteren, leefde
+  als reclusa bij Luik — niet te verwarren met Relindis van Aldeneik.)
+  Feestdag 17 augustus. Historische bewijzen voor het abbatiaat zijn
+  dun; de Susterense cultus is de vaste kern.
+over_bronnen: |
+  Voldoet: abdijbestuur/cultus te Susteren in NL ([1], [2]). Traditie
+  via Zwentibold/Amalberga; zelfde legendarische laag als bij Amalberga.
+referenties:
+  - label: "Heiligenlexikon — Benedikta von Susteren"
+    url: "https://www.heiligenlexikon.de/BiographienB/Benedikta_von_Susteren.html"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Dochters van Zwentibold; abdissen Susteren; feestdag 17 augustus.
+  - label: "Meertens — Bedevaarten: Susteren, Amelberga e.a."
+    url: "https://bedevaart.meertens.knaw.nl/plaats/740"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Benedicta en Caecilia in de Susterense heiligdomsvaarttraditie.
+  - label: "Orthodox Benelux — Benedicta en Cecilia van Susteren"
+    url: "https://orthodoxconnect.be/heiligen"
+    geraadpleegd: "2026-11-24"
+    inhoud: >
+      Op de lijst (17 augustus).
