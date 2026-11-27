@@ -7,10 +7,10 @@ X-WR-CALNAME:Vervallen — nieuwe link op de site
 X-WR-TIMEZONE:UTC
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261001
-DTEND;VALUE=DATE:20261002
-DTSTAMP:20261001T093753Z
-UID:37510543-7869-5f35-a18e-b528d873b9e7
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+DTSTAMP:20261127T215103Z
+UID:f4dfc5ec-2266-5144-a876-537bd4fd739c
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder deze link e
  n kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-lage-la
@@ -19,10 +19,10 @@ URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20261009
-DTSTAMP:20261001T093753Z
-UID:0abc810a-965a-53a4-a06b-345a986768b4
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+DTSTAMP:20261127T215103Z
+UID:a4f4edad-796e-57a6-a15b-7fb561dfff25
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder deze link e
  n kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-lage-la
@@ -31,10 +31,10 @@ URL:https://orthodox-ronl.github.io/heiligen-lage-landen/agenda/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-DTSTAMP:20261001T093753Z
-UID:5e498502-6f90-57f1-9b1a-8026c7abeb29
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+DTSTAMP:20261127T215103Z
+UID:791c5ee4-fa7c-5aa6-9f17-545be426fe42
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder deze link e
  n kies een nieuwe link op https://orthodox-ronl.github.io/heiligen-lage-la
@@ -45,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20270901
 DTEND;VALUE=DATE:20270902
-DTSTAMP:20261001T093753Z
+DTSTAMP:20261127T215103Z
 UID:79ffd600-0f9f-5a73-af4e-4a21e1925caf
 SUMMARY:Deze agenda-link werkt niet meer
 DESCRIPTION:Deze kalender wordt niet meer bijgewerkt. Verwijder deze link e

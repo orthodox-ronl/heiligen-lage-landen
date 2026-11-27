@@ -551,6 +551,18 @@
           ]
         },
         {
+          "mmdd": "04-12",
+          "dag": 12,
+          "items": [
+            {
+              "naam": "Wigbert",
+              "url": "/heiligen/wigbert/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
           "mmdd": "04-18",
           "dag": 18,
           "items": [
@@ -1347,6 +1359,12 @@
           "dag": 17,
           "items": [
             {
+              "naam": "Benedicta en Cecilia van Susteren",
+              "url": "/heiligen/benedicta-cecilia-van-susteren/",
+              "icoon": "",
+              "soort": "Heilige"
+            },
+            {
               "naam": "Jeroen van Noordwijk",
               "url": "/heiligen/jeroen-van-noordwijk/",
               "icoon": "iconen/jeroen-van-noordwijk.jpg",
@@ -1771,6 +1789,12 @@
               "url": "/heiligen/bavo/",
               "icoon": "iconen/bavo.jpg",
               "soort": "Heilige"
+            },
+            {
+              "naam": "Piatus van Doornik",
+              "url": "/heiligen/piatus-van-doornik/",
+              "icoon": "",
+              "soort": "Heilige"
             }
           ]
         },
@@ -1794,6 +1818,18 @@
               "naam": "Gerardus van Brogne",
               "url": "/heiligen/gerardus-van-brogne/",
               "icoon": "iconen/gerardo-de-brogne-cropped.jpg",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "10-08",
+          "dag": 8,
+          "items": [
+            {
+              "naam": "Amor van Munsterbilzen",
+              "url": "/heiligen/amor-van-munsterbilzen/",
+              "icoon": "",
               "soort": "Heilige"
             }
           ]
@@ -1830,6 +1866,12 @@
               "naam": "Herlindis",
               "url": "/heiligen/herlindis/",
               "icoon": "iconen/20180228-li-ge-cath-drale-saint-paul-22-harlindis-relindis.jpg",
+              "soort": "Heilige"
+            },
+            {
+              "naam": "Wilfrid van York",
+              "url": "/heiligen/wilfrid-van-york/",
+              "icoon": "iconen/wilfrid-van-york.jpg",
               "soort": "Heilige"
             }
           ]
@@ -1895,6 +1937,18 @@
             {
               "naam": "Florbertus van Gent",
               "url": "/heiligen/florbertus-van-gent/",
+              "icoon": "",
+              "soort": "Heilige"
+            }
+          ]
+        },
+        {
+          "mmdd": "11-04",
+          "dag": 4,
+          "items": [
+            {
+              "naam": "Perpetuus van Maastricht",
+              "url": "/heiligen/perpetuus-van-maastricht/",
               "icoon": "",
               "soort": "Heilige"
             }
@@ -2288,6 +2342,12 @@
           "mmdd": "12-03",
           "dag": 3,
           "items": [
+            {
+              "naam": "Radfridus (Bedum)",
+              "url": "/heiligen/radfridus-bedum/",
+              "icoon": "iconen/bedum-walfridus.jpg",
+              "soort": "Heilige"
+            },
             {
               "naam": "Geboortevasten",
               "url": "/vasten/geboorte-vasten/",

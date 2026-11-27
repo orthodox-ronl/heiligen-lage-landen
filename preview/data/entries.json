@@ -1168,6 +1168,40 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "wigbert",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Wigbert",
+    "alternatief": [
+      "Wigbert van Ierland",
+      "Victberct",
+      "Wictbert",
+      "Wihtberht"
+    ],
+    "titels": [
+      "Monnik",
+      "Missionaris"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/wigbert/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "nader-onderzoek",
+    "betekenis_lage_landen": "Wigbert predikte twee jaar in Friesland (huidig Nederland) vóór de\ngrote missie van Willibrord. Het resultaat bleef beperkt; hij keerde\nterug naar Ierland. De band met de Lage Landen is reëel maar kort en\nzonder blijvende stichting.",
+    "locaties": [
+      "frisia"
+    ],
+    "feestdatum": "04-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "ursmar-van-lobbes",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -2096,7 +2130,7 @@
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/walfridus-bedum.jpg",
     "selectie": "voldoet",
-    "betekenis_lage_landen": "Walfridus is de heilige van Bedum in Groningen: volgens de\nplaatselijke overlevering een landbouwer (soms met zijn zoon Radfridus)\ndie bij een Noormanneninval werd gedood. De middeleeuwse kerk van Bedum\ndroeg zijn naam. De cultus is Gronings en lokaal.",
+    "betekenis_lage_landen": "Walfridus is de heilige van Bedum in Groningen: volgens de\nplaatselijke overlevering een landbouwer die met zijn zoon Radfridus\nbij een Noormanneninval werd gedood. De middeleeuwse kerk van Bedum\ndroeg zijn naam. De cultus is Gronings en lokaal.",
     "locaties": [
       "bedum"
     ],
@@ -3031,6 +3065,41 @@
     "feestdatum": "08-16"
   },
   {
+    "id": "benedicta-cecilia-van-susteren",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Benedicta en Cecilia van Susteren",
+    "alternatief": [
+      "Benedicta van Susteren",
+      "Cecilia van Susteren",
+      "Benedikta",
+      "Cäcilia",
+      "Caecilia van Susteren",
+      "Benigna"
+    ],
+    "titels": [
+      "Abdissen van Susteren"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/benedicta-cecilia-van-susteren/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Benedicta en Cecilia waren volgens de overlevering dochters van\nZwentibold en werden te Susteren (Nederlands Limburg) door Amalberga\nopgevoed. Beiden werden abdis van het vrouwenstift. Hun relieken\nwerden in Susteren vereerd — kloosterbestuur in huidig Nederland,\nvóór het schisma.",
+    "locaties": [
+      "susteren"
+    ],
+    "feestdatum": "08-17",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "jeroen-van-noordwijk",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -3814,6 +3883,40 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "piatus-van-doornik",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Piatus van Doornik",
+    "alternatief": [
+      "Piatus",
+      "Plato van Doornik",
+      "Piat"
+    ],
+    "titels": [
+      "Priester",
+      "Martelaar",
+      "Apostel van Doornik"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/piatus-van-doornik/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Piatus is de traditionele apostel en martelaar van Doornik (Tournai)\nin huidig België. De cultus is oud (o.a. herontdekking door Eligius);\nprediking en martelaarschap horen bij de vroegste kerstening van de\nzuidelijke Lage Landen, vóór het schisma.",
+    "locaties": [
+      "doornik"
+    ],
+    "feestdatum": "10-01",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "pokrov",
     "soort": "feest",
     "cyclus": "jaar",
@@ -3906,6 +4009,40 @@
       "toelichting": "Abdij van Saint-Gérard"
     },
     "feestdatum": "10-03",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "amor-van-munsterbilzen",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Amor van Munsterbilzen",
+    "alternatief": [
+      "Amor",
+      "Amor van Aquitanië",
+      "Sint Amor"
+    ],
+    "titels": [
+      "Kluizenaar",
+      "Diaken"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/amor-van-munsterbilzen/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Amor wordt verbonden met een kluis bij de Sint-Servaas te Maastricht\n(huidig Nederland) en met de abdijcultus van Munsterbilzen (Belgisch\nLimburg). Hij stierf volgens de overlevering te Maastricht; relieken\ngingen naar Munsterbilzen. Dat is handeling en cultus in de\nMaasstreek van de Lage Landen.",
+    "locaties": [
+      "munsterbilzen",
+      "maastricht"
+    ],
+    "feestdatum": "10-08",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },
@@ -4098,6 +4235,38 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "wilfrid-van-york",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Wilfrid van York",
+    "alternatief": [
+      "Wilfrid",
+      "Wilfried van York",
+      "Wilfridus"
+    ],
+    "titels": [
+      "Bisschop van York"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/wilfrid-van-york/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/wilfrid-van-york.jpg",
+    "selectie": "nader-onderzoek",
+    "betekenis_lage_landen": "Wilfrid predikte en doopte in de winter van 678/679 in Friesland,\ngast van koning Aldgisl. Dat is een vroege Angelsaksische missie in\nhuidig Nederland, vóór Willibrord. Zijn hoofdopdracht bleef Engeland.",
+    "locaties": [
+      "frisia"
+    ],
+    "feestdatum": "10-12",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "muno-van-nassogne",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -4264,6 +4433,38 @@
     "feestdatum_gregoriaans": null
   },
   {
+    "id": "perpetuus-van-maastricht",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Perpetuus van Maastricht",
+    "alternatief": [
+      "Perpetuus",
+      "Perpete"
+    ],
+    "titels": [
+      "Bisschop van Maastricht"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/perpetuus-van-maastricht/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": null,
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Perpetuus wordt genoemd als bisschop van Maastricht (huidig\nNederland). Hij koos volgens de overlevering Dinant (België) als\nresidentie, stichtte er een Vincentiuskerk en werd daar begraven.\nEpiscopaat Maastricht plus Maaslandse cultus: band met de Lage Landen\nvóór het schisma.",
+    "locaties": [
+      "maastricht",
+      "dinant"
+    ],
+    "feestdatum": "11-04",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
     "id": "odrada",
     "soort": "heilige",
     "cyclus": "jaar",
@@ -4372,25 +4573,30 @@
     "naam": "Willehad",
     "alternatief": [
       "Willehad van Bremen",
-      "Willehad van Dokkum"
+      "Willehad van Dokkum",
+      "Willehadus"
     ],
     "titels": [
-      "Bisschop van Bremen"
+      "Bisschop van Bremen",
+      "Missionaris"
     ],
     "samenvatting": "",
     "url": "/heiligen/willehad/",
     "lage_landen": true,
-    "bronlaag": "encyclopedie",
+    "bronlaag": "nagekeken",
     "observances": [
       "heilige"
     ],
     "onderdrukt_wekelijks_vasten": false,
     "icoon": "iconen/bischof-willehad.jpg",
-    "selectie": "nader-onderzoek",
-    "betekenis_lage_landen": "Willehad staat op de Groningse kalender als geloofsverkondiger.\nHet zwaartepunt van zijn werk lag in Saksen en Bremen.",
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Willehad predikte vóór zijn Bremer episcopaat in het Friese en\nGroningse land: lang te Dokkum (waar Bonifatius was gevallen), daarna\nover de Lauwers in Humsterland, en met vrucht in Drenthe. Dat werk in\nhuidig Nederland — niet alleen later Bremen — maakt hem tot heilige\nvan de Lage Landen. De Groningse kalender gedenkt hem op 8 november.",
     "locaties": [
-      "bremen",
-      "frisia"
+      "dokkum",
+      "groningen",
+      "drenthe",
+      "frisia",
+      "bremen"
     ],
     "feestdatum": "11-08",
     "feestdatum_juliaans": null,
@@ -4847,6 +5053,44 @@
       "vlaanderen"
     ],
     "feestdatum": "12-01",
+    "feestdatum_juliaans": null,
+    "feestdatum_gregoriaans": null
+  },
+  {
+    "id": "radfridus-bedum",
+    "soort": "heilige",
+    "cyclus": "jaar",
+    "vorm": "dag",
+    "naam": "Radfridus (Bedum)",
+    "alternatief": [
+      "Radfridus",
+      "Radfried",
+      "Rathfried",
+      "Radfridus van Bedum"
+    ],
+    "titels": [
+      "Martelaar"
+    ],
+    "samenvatting": "",
+    "url": "/heiligen/radfridus-bedum/",
+    "lage_landen": true,
+    "bronlaag": "encyclopedie",
+    "observances": [
+      "heilige"
+    ],
+    "onderdrukt_wekelijks_vasten": false,
+    "icoon": "iconen/bedum-walfridus.jpg",
+    "selectie": "voldoet",
+    "betekenis_lage_landen": "Radfridus is de zoon van Walfridus van Bedum. Volgens de Passio\nwerden beiden omstreeks 1000 door Noormannen gedood in het Friese\nland tussen Lauwers en Eems. Over zijn graf verrees een eigen\nbedevaartkapel (later een stenen kerk), westelijk van de\nWalfriduskerk. Hij hoort bij dezelfde Bedumse martelaarscultus als\nzijn vader, met eigen merites: eigen feestdagtraditie (3 december)\nen eigen cultusplaats.",
+    "locaties": [
+      "bedum",
+      "frisia"
+    ],
+    "rustplaats": {
+      "plaats": "bedum",
+      "toelichting": "Grafkapel van Radfridus (verdwenen; Kapelstraat / Oud Kapelle)"
+    },
+    "feestdatum": "12-03",
     "feestdatum_juliaans": null,
     "feestdatum_gregoriaans": null
   },

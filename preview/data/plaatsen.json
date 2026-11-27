@@ -21,6 +21,17 @@
     "soort": "streek"
   },
   {
+    "id": "drenthe",
+    "naam": "Drenthe",
+    "alternatief": [
+      "Thrianta",
+      "Drenterlant"
+    ],
+    "lat": 52.95,
+    "lon": 6.6,
+    "soort": "streek"
+  },
+  {
     "id": "amay",
     "naam": "Amay",
     "alternatief": [],
@@ -107,6 +118,14 @@
     "lon": 4.264,
     "soort": "plaats",
     "streek": "vlaanderen"
+  },
+  {
+    "id": "dinant",
+    "naam": "Dinant",
+    "alternatief": [],
+    "lat": 50.261,
+    "lon": 4.912,
+    "soort": "plaats"
   },
   {
     "id": "dokkum",
