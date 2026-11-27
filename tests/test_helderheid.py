@@ -21,7 +21,6 @@ def test_nav_heeft_heiligen_en_uitleg() -> None:
     html = (SITE / "layouts" / "_default" / "baseof.html").read_text(encoding="utf-8")
     assert 'href="{{ "" | relURL }}">Heiligen</a>' in html
     assert ">Vandaag</a>" not in html
-    assert ">Agenda</a>" not in html
     assert "Overzichten" in html
     assert 'href="{{ "feesten/" | relURL }}">Feesten</a>' in html
     assert 'href="{{ "vasten/" | relURL }}">Vasten</a>' in html
@@ -31,14 +30,20 @@ def test_nav_heeft_heiligen_en_uitleg() -> None:
     # relURL "kalender/" + canonifyURLs botst met Pages-base /kalender/
     assert 'href="{{ "kalender/" | absURL }}">Kalender</a>' in html
     assert 'href="{{ "kalender/" | relURL }}">Kalender</a>' not in html
+    assert 'href="{{ "agenda/" | absURL }}"' in html
+    assert ">Agenda</a>" in html
+    assert 'href="{{ "agenda/" | relURL }}"' not in html
     assert "brand-mark" in html
     assert "images/favicon-32x32.png" in html
     assert 'data-home=' in html
     heiligen_pos = html.find(">Heiligen</a>")
+    kalender_pos = html.find(">Kalender</a>")
+    agenda_pos = html.find(">Agenda</a>")
     dropdown_pos = html.find("<details")
-    assert 0 <= heiligen_pos < dropdown_pos
+    assert 0 <= heiligen_pos < kalender_pos < agenda_pos < dropdown_pos
     panel = html[html.find("<details") : html.find("</details>")]
     assert ">Heiligen</a>" not in panel
+    assert ">Agenda</a>" not in panel
     assert ">Feesten</a>" in panel
     assert ">Vasten</a>" in panel
     assert ">Synaxarion</a>" in panel
