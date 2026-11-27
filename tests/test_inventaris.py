@@ -36,7 +36,8 @@ NADER = {
     "maternus",
     "medardus",
     "quirillus-van-tongern",
-    "willehad",
+    "wigbert",
+    "wilfrid-van-york",
     "winnocus",
     "zwentibold",
 }

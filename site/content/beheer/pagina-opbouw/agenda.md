@@ -6,9 +6,10 @@ git_date: 2026-09-05
 
 **Contract, geen echte inhoud.** Voor wie: bezoeker. Canonieke URL:
 `/agenda/`. Bron: handmatig [`site/content/agenda/_index.md`]({{% ref "/agenda" %}})
-+ layout (stappen, voorbeeldweek, knoppen). Ingang: popover op de
-titel van de [jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}});
-niet in de hoofdnavigatie.
++ layout (stappen, voorbeeldweek, knoppen). Ingang: hoofdnavigatie
+(**Agenda**), knop **Zet op telefoon** op de
+[jaarkalender]({{% ref "/beheer/pagina-opbouw/jaarkalender" %}}),
+en de popover bij die titel.
 
 ## Titel
 

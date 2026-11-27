@@ -35,7 +35,7 @@ live wijziging vanwege dat slot.
 | [Feest (detail)]({{% ref "/beheer/pagina-opbouw/feest" %}}) | Bezoeker | `/feesten/<id>/` | Gegenereerd uit YAML |
 | [Vastenperiode (detail)]({{% ref "/beheer/pagina-opbouw/vastenperiode" %}}) | Bezoeker | `/vasten/<id>/` | Gegenereerd uit YAML |
 | [Feesten- en vastenoverzicht]({{% ref "/beheer/pagina-opbouw/overzichten-feesten-vasten" %}}) | Bezoeker | `/feesten/`, `/vasten/` (nav: Overzichten) | Gegenereerde indexen |
-| [Agenda]({{% ref "/beheer/pagina-opbouw/agenda" %}}) | Bezoeker | `/agenda/` (via jaarkalender-titel) | Handmatig + layout |
+| [Agenda]({{% ref "/beheer/pagina-opbouw/agenda" %}}) | Bezoeker | `/agenda/` (menu + knop op jaarkalender) | Handmatig + layout |
 | [Uitleg-overzicht]({{% ref "/beheer/pagina-opbouw/uitleg-overzicht" %}}) | Bezoeker | `/uitleg/` | Handmatig + layout |
 | [Uitleg-onderwerp]({{% ref "/beheer/pagina-opbouw/uitleg-onderwerp" %}}) | Bezoeker / clerus | `/uitleg/<onderwerp>/` | Handmatig (`vasten.md` gegenereerd) |
 | [Uitleg-technisch]({{% ref "/beheer/pagina-opbouw/uitleg-technisch" %}}) | Beheerder | `/uitleg/<onderwerp>-technisch/` | Handmatig; niet in het overzicht |

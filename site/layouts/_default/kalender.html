@@ -5,7 +5,13 @@
       <h1 class="kalender-page-title">
         <span class="info-term" tabindex="0" data-info-tip="jaarkalender">{{ .Title }}</span>
       </h1>
-      <div class="kalender-sticky-style" id="kalender-style-slot"></div>
+      <div class="kalender-sticky-actions">
+        <a class="kalender-agenda-link" href="{{ "agenda/" | absURL }}" title="Koppelen aan Apple of Google Agenda">
+          <span class="kalender-agenda-label-long">Zet op telefoon</span>
+          <span class="kalender-agenda-label-short">Agenda</span>
+        </a>
+        <div class="kalender-sticky-style" id="kalender-style-slot"></div>
+      </div>
     </div>
     <ul class="legend compact legend-chips" aria-label="Legenda">
       <li><span class="legend-chip day-feest">feest</span></li>
@@ -21,7 +27,7 @@
       De vaste heiligen en feesten staan in het
       <a href="{{ "synaxarion/" | relURL }}">Synaxarion</a>.
       Op telefoon of computer:
-      <a href="{{ "agenda/" | relURL }}">Agenda (ICS)</a>.
+      <a href="{{ "agenda/" | absURL }}">Agenda</a>.
     </p>
   </div>
 </section>

@@ -8,8 +8,9 @@ git_date: 2026-09-05
 De pagina [Agenda]({{% ref "/agenda" %}}) is bedoeld om de kerkelijke
 kalender **op uw telefoon of computer** te zetten: in Google Calendar,
 Apple Agenda, Outlook of een andere agenda-app. U hoeft deze website dan
-niet elke week te openen. U vindt die pagina via de titel **Jaarkalender**
-op de [jaarkalender]({{% ref "/kalender" %}}) (popup met link).
+niet elke week te openen. U vindt die pagina in het menu (**Agenda**),
+via de knop **Zet op telefoon** op de [jaarkalender]({{% ref "/kalender" %}}),
+of via de tip bij de titel *Jaarkalender*.
 
 Op deze pagina kunt u bepalen wat u wel en wat u niet in de agenda wilt
 zien die u op uw telefoon gaat zetten. Dat noemen we de 'mix' van de
